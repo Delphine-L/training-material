@@ -1,0 +1,74 @@
+name: "RNAseq"
+type: "use"
+title: "RNAseq"
+summary: ""
+docker_image: ""
+
+requirements:
+-
+    title: "Galaxy introduction"
+    type: "internal"
+    link: "/introduction/"
+-
+    title: "Quality Control"
+    type: "internal"
+    link: "/sequence-analysis/"
+
+material:
+# Comment this section out for now until new template is ready. Old template still in use for GCC 2017. (@slugger70)
+#-
+#    title: "Introduction"
+#    type: "introduction"
+#    slides: "no"
+
+-
+    title: "Introduction to RNAseq"
+    type: "tutorial"
+    name: "general-introduction"
+    zenodo_link: ""
+    galaxy_tour: ""
+    slides: "yes"
+    hands_on: "yes"
+    questions:
+    - "Whats is RNAseq?"
+    objectives:
+    - "Identify RNASseq issues"
+    - "Explore the different types of RNAseq"
+    time_estimation: "30 minutes"
+    key_points:
+    - "We explore the different analysis possible with RNAseq Technologies"
+
+-
+    title: "De Novo RNAseq Assembly"
+    type: "tutorial"
+    name: "denovo_rnaseq"
+    zenodo_link: ""
+    galaxy_tour: ""
+    hands_on: "yes"
+    slides: "yes"
+    questions:
+      - "What are the factors that affect transcriptome assembly?"
+      - "How To use Trinity and RNASpades to perform a Transcriptome Assembly?"
+    objectives:
+      - ""
+    time_estimation: "1d/3h/6h"
+    key_points:
+      - ""
+
+maintainers:
+-
+    name: "Delphine Lariviere"
+    github_username: "Delphine-L"
+    email: "delphinel@galaxyproject.org"
+
+contributors:
+-
+    name: "Delphine Lariviere"
+    github_username: "Delphine-L"
+    email: "delphinel@galaxyproject.org"
+
+
+references:
+-
+
+    
