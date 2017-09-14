@@ -21,15 +21,27 @@ Although the transcriptome assembling methods are similar to those used in assem
 
 Assemblers generally use one of two basic algorithms: overlap graphs and de Bruijn graphs. Overlap graphs are utilized for most assemblers designed for Sanger sequenced reads. 
 
+
+> ### Agenda
+>
+> In this tutorial, we will deal with:
+>
+> 1. TOC
+> {:toc}
+>
+{: .agenda}
+
+
 ## Quality Control
 
 The quality of Illumina reads can be assessed with tools such as [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc). A wide variety of tools can be used to improve the quality of the reads that won't be discussed in this tutorial (More info [here](https://galaxyproject.org/tutorials/ngs/)).
 
-## Assembly With Trinity
+## Assembly 
 
-Trinity assembler first divides the sequence data into a number of de Bruijn graphs, each representing transcriptional variations at a single gene or locus. It then extracts full-length splicing isoforms and distinguishes transcripts derived from paralogous genes from each graph separately. 
 
-Trinity consists of three independent software modules, which are used sequentially to produce transcripts:
+### Trinity
+
+Trinity assembler is based on De Bruijn graphs and consists of three independent software modules, which are used sequentially to produce transcripts:
 > *     **Inchworm** Assembles initial contigs by “greedily” extending sequences with most abundant K-mers.
 > *     **Chrysalis** Clusters overlapping Inchworm contigs, builds de Bruijn graphs for each cluster, partitions reads
 between clusters.
@@ -37,28 +49,20 @@ between clusters.
 
 ![Trinity Concept](../../images/Trinity_Concept.png  "<b>Trinity Method</b> (<b>a</b>) Inchworm assemble reads in collection of linear contigs with each k-mers present only once in each contig. (<b>b</b>) Chrysalis pool contigs if they share at least one k – 1-mer and if reads span the junction between contigs, and then it builds individual de Bruijn graphs from each pool. (<b>c</b>) Butterfly takes each de Bruijn graph from Chrysalis and trims spurious edges and compacts linear paths. It then reconciles the graph with reads and pairs, and outputs one linear sequence for each splice form and/or paralogous transcript represented in the graph. (Figure from <a href='https://doi.org/10.1038/nbt.1883'>Grabherr:2011</a>)")
 
-## Assembly with RNASpades
+### RNASpades
 
 [RNASpades](http://cab.spbu.ru/software/rnaspades/) is a modified version of the Spades tool for genome assembly dedicated to *de novo* transcriptome assembly.
 You can find more informations on the Spades method here : * [De Bruijn Graph Assembly](https://galaxyproject.github.io/training-material/topics/assembly/tutorials/debruijn-graph-assembly/slides.html#46) 
 
 ## Assembly Quality 
 
-## Let's try it
+## Annotation
 
-> ### Agenda
->
-> In this tutorial, we will deal with:
->
-> 1. [Get the data](#get-the-data)
-> 2. [Assess reads quality](#assess-read-quality)
-> 3. [Assembly with Trinity](#assemble-with-unicycler)
-> 4. [Assembly with RNASpades](#quast)
-> 5. [Assess Assembly Quality](#annotate-with-prokka)
-> 6. [Visualize the results](#visualize-the-result)
-{: .agenda}
 
-### <a name="get-the-data">Get the data
+# Let's try it
+
+
+## <a name="get-the-data">Get the data
 
 In this example we will use a downsampled version of *E. coli* C Illumina and ONT sequencing data. These include 3 files: forward and reverse reads for Illumina, and Long read file produced by ONT.
 
@@ -78,7 +82,9 @@ Here is what to do to load the data:
 >    > * Copy the files Urls in the text area 
 >    > * Click on the **Start** button
 >    {: .tip}
-> 4. Once the files have been uploaded, change their types to fastqsanger 
+> 4. Use the tool "Download and Extract Reads in FASTA/Q format from NCBI SRA" to download the NCBI files.
+> ![Download read file](../../images/downloadSRA_file.png  )
+> 5. Once the files have been uploaded, change their types to fastqsanger 
 >
 >    > ### :bulb: Tip: Changing a dataset datatype
 >    >
@@ -95,7 +101,7 @@ The datasets will appear in your history:
 
 ![Datasets in History](../../images/starting_data.png  "The datasets appear in your history ")
 
-### <a name="assess-read-quality">Assess Read Quality
+## <a name="assess-read-quality">Assess Read Quality
 
 You can assess the quality of Illumina reads by using FastQC.
 
@@ -110,7 +116,7 @@ Another plot shows the quality per sequence.
 ![FastQC result](../../images/perseq_qual.png  "FastQC result : Per Sequence read Quality. We can see the average quality per read is high for our library. This metric can be useful to detect a problem if a significant portion of the reads are of lower quality.")
 
 
-### <a name="assemble-with-trinity"></a>Assembly with Trinity 
+## Assembly with Trinity 
 
 The Trinity tool takes fastqsanger files as inputs. If your files are identified as generic fastq files you will need to change the type of your files.
 
@@ -131,7 +137,7 @@ You can now run Trinity to perform the assembly with the following parameters:
 Trinity returns two output files: 
 
 
-### <a name="assemble-with-rnaspades"></a>Assembly with RNASpades 
+## <a name="assemble-with-rnaspades"></a>Assembly with RNASpades 
 
 The RNASpades tool takes fastqs files as inputs. If your files are identified as fastqsanger files you will need to change the type of your files.
 
