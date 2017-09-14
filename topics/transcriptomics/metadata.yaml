@@ -57,6 +57,25 @@ material:
         name: "Mo Heydarian"
         github_username: "MoHeydarian"
   -
+    title: "De novo transcriptome reconstruction with Trinity and RNA-Spades"
+    type: "tutorial"
+    name: "denovo_trinity"
+    zenodo_link: ""
+    galaxy_tour: ""
+    hands_on: "yes"
+    slides: "yes"
+    questions:
+      - ""
+    objectives:
+      - ""
+    time_estimation: "6h"
+    key_points:
+      - ""
+    contributors:
+      -
+        name: "Delphine Lariviere"
+        github_username: "Delphine-L"
+  -
     title: "Reference-based RNA-seq data analysis"
     type: "tutorial"
     name: "ref-based"
