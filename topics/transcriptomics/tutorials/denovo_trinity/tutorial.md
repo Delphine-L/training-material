@@ -62,7 +62,7 @@ You can find more informations on the Spades method here : * [De Bruijn Graph As
 # Let's try it
 
 
-## <a name="get-the-data">Get the data
+## Get the data
 
 In this example we will use a downsampled version of *E. coli* C Illumina and ONT sequencing data. These include 3 files: forward and reverse reads for Illumina, and Long read file produced by ONT.
 
@@ -101,7 +101,7 @@ The datasets will appear in your history:
 
 ![Datasets in History](../../images/starting_data.png  "The datasets appear in your history ")
 
-## <a name="assess-read-quality">Assess Read Quality
+## Assess Read Quality
 
 You can assess the quality of Illumina reads by using FastQC.
 
@@ -137,7 +137,7 @@ You can now run Trinity to perform the assembly with the following parameters:
 Trinity returns two output files: 
 
 
-## <a name="assemble-with-rnaspades"></a>Assembly with RNASpades 
+## Assembly with RNASpades 
 
 The RNASpades tool takes fastqs files as inputs. If your files are identified as fastqsanger files you will need to change the type of your files.
 
