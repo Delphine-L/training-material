@@ -64,6 +64,7 @@ icon-tag:
   tool: fa-wrench
   feedback: fa-comments-o
   congratulations: fa-thumbs-up
+  trophy: fa-trophy
   # menus, links
   zenodo_link: fa-files-o
   tutorial: fa-laptop
@@ -82,7 +83,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - CONTRIBUTING.md
-  - CONTRIBUTORS.md
+  - CONTRIBUTORS.yaml
   - LICENSE.md
   - README.md
   - Makefile
@@ -94,6 +95,7 @@ exclude:
   - bin/
   - metadata/
   - templates/
+  - vendor/
 
 # Plugins
 plugins:
