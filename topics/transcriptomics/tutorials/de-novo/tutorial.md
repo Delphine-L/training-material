@@ -7,7 +7,7 @@ tutorial_name: de-novo
 # Introduction
 {:.no_toc}
 
-The data provided here are part of a Galaxy tutorial that analyzes RNA-seq data from a study published by *Wu et al.* in 2014 [DOI:10.1101/gr.164830.113](http://genome.cshlp.org/content/early/2014/10/12/gr.164830.113.abstract). The goal of this study was to investigate "the dynamics of occupancy and the role in gene regulation of the transcription factor Tal1, a critical regulator of hematopoiesis, at multiple stages of hematopoietic differentiation." To this end, RNA-seq libraries were constructed from multiple mouse cell types including G1E - a GATA-null immortalized cell line derived from targeted disruption of GATA-1 in mouse embryonic stem cells - and megakaryocytes. This RNA-seq data was used to determine differential gene expression between G1E and megakaryocytes and later correlated with Tal1 occupancy. This dataset (GEO Accession: GSE51338) consists of biological replicate, paired-end, poly(A) selected RNA-seq libraries. Because of the long processing time for the large original files, we have downsampled the original raw data files to include only reads that align to chromosome 19 and a subset of interesting genomic loci identified by Wu *et al*.
+The data provided here are part of a Galaxy tutorial that analyzes RNA-seq data from a study published by *Wu et al.* in 2014 [DOI:10.1101/gr.164830.113](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4248312/). The goal of this study was to investigate "the dynamics of occupancy and the role in gene regulation of the transcription factor Tal1, a critical regulator of hematopoiesis, at multiple stages of hematopoietic differentiation." To this end, RNA-seq libraries were constructed from multiple mouse cell types including G1E - a GATA-null immortalized cell line derived from targeted disruption of GATA-1 in mouse embryonic stem cells - and megakaryocytes. This RNA-seq data was used to determine differential gene expression between G1E and megakaryocytes and later correlated with Tal1 occupancy. This dataset (GEO Accession: GSE51338) consists of biological replicate, paired-end, poly(A) selected RNA-seq libraries. Because of the long processing time for the large original files, we have downsampled the original raw data files to include only reads that align to chromosome 19 and a subset of interesting genomic loci identified by Wu *et al*.
 
 # Analysis strategy
 
@@ -43,7 +43,8 @@ Due to the large size of this dataset, we have downsampled it to only include re
 >    >
 >    > Below are the links to the read files that can be copied and pasted in the upload manager.
 >    >
->    > ``` https://zenodo.org/record/583140/files/G1E_rep1_forward_read_%28SRR549355_1%29
+>    > ```
+>    > https://zenodo.org/record/583140/files/G1E_rep1_forward_read_%28SRR549355_1%29
 >    > https://zenodo.org/record/583140/files/G1E_rep1_reverse_read_%28SRR549355_2%29
 >    > https://zenodo.org/record/583140/files/G1E_rep2_forward_read_%28SRR549356_1%29
 >    > https://zenodo.org/record/583140/files/G1E_rep2_reverse_read_%28SRR549356_2%29

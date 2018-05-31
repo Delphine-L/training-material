@@ -92,8 +92,15 @@ footer {
     padding-top: 1rem;
 }
 
-.table .fa {
-    font-size: $font-size + 5;
+.table {
+    td {
+        vertical-align: middle;
+    }
+
+    .fa {
+        font-size: $font-size + 5;
+    }
+    
 }
 
 .training-network-map {
@@ -291,4 +298,21 @@ footer {
     .navbar-nav i {
         display: none;
     }
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.label-default {
+    background-color: #999999;
 }
