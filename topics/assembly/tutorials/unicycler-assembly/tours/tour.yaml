@@ -1,7 +1,7 @@
 ---
-name: Small Genome assembly
+name: Genome Informatics 2017 Small Genome assembly
 description: Perform a small bacterial genome Assembly and Annotation with Unicycler and Prokka
-title_default: "Small genome assembly"
+title_default: "Genome Informatics 2017 : Small genome assembly"
 steps:
   - title: "A tutorial on Small Genome Assembly"
     content: "This tour will walk you through the process of genome assembly and annotation.<br><br>
@@ -13,55 +13,13 @@ steps:
   - title: "Create a new history"
     element: '#history-options-button'
     content: "Let's start by creating a new history:<br>
-            (History options :: Create New)"
+            (History options :: Create New), or use an existing one (History options :: Copy history)"
     position: "left"
     preclick:
       - '#center-panel'
   - title: "Rename history"
     element: "#current-history-panel > div.controls > div.title > div"
     content: "Change the name of the new history to 'Genome Assembly', then hit return key."
-    position: "bottom"
-
-  - title: "Data Acquisition"
-    element: ".upload-button"
-    content: "We will import sequencing data into the history we just created.<br>
-            Click 'Next' and the tour will take you to the Upload screen"
-    position: "auto right "
-    postclick:
-      - ".upload-button"
-
-  - title: "Data Acquisition"
-    element: "#btn-new"
-    content: "We will use a downsampled dataset (for quick tutorial purpose) from the Ecoli C sequencing. We are using two library of matte pair reads from Illumina sequencing, and a long read library from Oxford Nanopore sequencing .<br>
-            Simple click 'Next' and the Interface to enter the urls will appear.<br>
-            Later on, when you want to upload other data, you can do so by clicking the 'Paste/Fetch Data' button"
-    position: "top"
-    postclick:
-      - "#btn-new"
-
-  - title: "Data Acquisition"
-    element: ".upload-text-content:first"
-    content: "Insert the url of the files."
-    position: "top"
-    textinsert: |
-      https://zenodo.org/record/940733/files/illumina_f.fq
-      https://zenodo.org/record/940733/files/illumina_r.fq
-      https://zenodo.org/record/940733/files/minion_2d.fq
-
-  - title: "Select File Type"
-    element: "#regular > div > div.upload-footer > span.upload-footer-extension"
-    content: "The tools used in this tutorial are taking fastqsanger as inputs. Select fastqsanger in the list to upload the file in that format"
-    position: "bottom"
-
-  - title: "Data Acquisition"
-    element: "button#btn-start"
-    content: "Click on 'Start' to upload the data into your Galaxy history."
-    position: "bottom"
-
-  - title: "Data Acquisition"
-    element: "button#btn-close"
-    content: "The upload may take awhile.<br>
-            Hit the close button when you see that the files are uploaded into your history."
     position: "bottom"
 
   - title: "Start the Analysis!"
@@ -198,18 +156,19 @@ steps:
     position: "auto right "
     element: "#execute"
 
-  - title: "Visualise Your result in IGV"
-    content: "To visualize the result of your genome assembly and annotation, you need to have IGV installed on you local machine and opened. You can find IGV <a href=\"http://software.broadinstitute.org/software/igv/\">here."
+  - title: "Visualise Your result in Jbrowse"
+    content: "To visualize the result of your genome assembly and annotation, you can use the tool Jbrowse"
     position: "center"
+    element: "#tool-search-query"
 
-  - title: "Send your genome assembly to IGV"
-    content: "To send the genome assembly to IGV, unfold the fasta assembly dataset in the history, and click on the \"display with IGV local\" link."
-    position: "center"
-
-  - title: "Send your genome annotation to IGV"
-    content: "You can now open the genome annotation. As you did previously, unfold the dataset and click on the \"display with IGV local\" link."
-    position: "center"
-
+  - title: "Use a genome from History"
+    content: "Select the 'Use a genome from history' option and select the Unicycler assembly"
+    position: "auto right "
+    
+  - title: "Add an annotation track"
+    content: "Click on Add a track, Add an annotation, then select the Prokka gff output"
+    position: "auto right "    
+    
   - title: "Thank you!"
     content: "Thank you for following us on this Genome Assembly tour! You can find more information on genome assembly on our <a href=\"https://galaxyproject.github.io/training-material/\" > Galaxy Training Material."
     position: "center"

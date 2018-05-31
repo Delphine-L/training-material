@@ -1,9 +1,106 @@
 ---
-layout: introduction_slides
-topic_name: denovo_RNAseq
-tutorial_name: denovo_RNAseq
+layout: tutorial_slides
+topic_name: transcriptomics
+tutorial_name: denovo_RNAseq_trinity
 logo: "GTN"
 class: enlarge120
 
 ---
+
+# Denovo Transcriptome Assembly with Trinity
+
+---
+
+The type of information you can get from RNAseq can be of broadly two type: Qualitative and quantitative data : 
+*   Qualitative: Includes identification of expressed transcripts or intro/exon boundaries, transcriptional start sites (TSS), and poly-A sites... Can also be referred to as annotation. The most important parameter in these analyses is that the reads cover evenly the transcripts. 
+*   Quantitative : Includes measurement of difference of expression, alternative splicing, alternative TSS, and alternative polyadenylation between two or more treatments or groups... 
+
+---
+
+
+
+
+Most analyses are made through the analysis of read counts and variations per sites. This can be made simply my mapping the reads on an existing transcriptome reference.
+If no transcriptome reference is available, The first step of RNAseq analysis is to reconstruct the transcriptome from the sequenced reads.
+This can be made through a mapping of the reads on a genome reference or a *denovo assembly*.
+
+![Rna seq graph](../../images/raseq2.png  "<b>RNA seq analyses process</b>. From you reads data (in purple), two paths can be followed depending on the available references (in green). If an existing transcriptome is available, you can map the read on the transcriptome and perform a quatitative analysis based on the read counts. If no transcriptome is available you need to assemble one. If a Genome is available, you can assemble the transcriptome by mapping the reads on the genome, otherwise you have to performe a denovo transcriptome assembly. Once you have assembles your transcriptome, you can perform your quantitative analysis using the read counts")
+
+---
+
+## RNA-seq analysis Steps
+
+> 1. Initial processing : Demultiplex, filter, and trim sequencing reads.
+> 2. Normalize sequencing reads (if performing de novo assembly)
+> 3. de novo assembly of transcripts (if a reference genome is not available) or Map (align) sequencing reads to reference genome or transcriptome
+> 4. Annotate transcripts assembled or to which reads have been mapped
+> 5. Count mapped reads to estimate transcript abundance
+> 6. Perform statistical analysis to identify differential expression (or differential splicing) among samples or treatments
+> 7. Perform multivariate statistical analysis/visualization to assess transcriptome-wide differences among samples. 
+
+
+---
+
+## Initial Processing  
+
+The reads must go through a number of step before de novo assembly or mapping on a reference.
+
+The steps are the following : 
+*   Demultiplex by index or barcode
+*   Remove adapter sequences
+*   Trim reads by quality
+*   Discard reads by quality/ambiguity
+*   Filter reads by k-mer coverage
+*   Normalize k-mer coverage
+
+A wide variety of tools can be used to improve the quality of the reads, you can find more info [here](https://galaxyproject.org/tutorials/ngs/).
+
+
+---
+
+
+#### Demultiplexing
+
+Multiplexing is the pooling of several different samples into a single pool of molecules read by the sequencer
+
+"Multiplexing of samples is made possible by incorporation of a short (usually at least 6 nt) index or "barcode"; into each DNA fragment during the adapter ligation or PCR amplification steps of library preparation. After sequencing, each read may be traced back to its original sample using the index sequence and binned accordingly. Depending on the library preparation method and sequencing technology, the sequencing instrument software may or may not perform the partitioning. "
+
+Tools : Kraken, deindexer, Drop-seq, Bayexer, Sabre
+
+In galaxy : Kraken, 
+
+
+---
+
+
+#### Removing adapter
+
+"If cDNA insert sizes are sufficiently small and sequencing read lengths sufficiently long, it is possible to generate sequencing reads that contain a portion of adapter sequence at the 3′-end. Therefore, depending on the library preparation method and range of cDNA insert sizes, it may be prudent to trim these artifacts away. Removing these artifacts should improve assembly and/or mapping of sequencing reads. "
+
+Tools : cutadapt, The FASTX-toolkit, Scythe, FAR, BBDuk, clean_reads, condetri, Deconseq, bowtie, htSeqTools, Sabre
+
+In Galaxy : cutadapt, fastx, Scythe, bowtie, 
+
+
+---
+
+
+#### Filtering/trimming
+
+Quality control : AfterQC, FastQC, fastqp, Kraken, HTSeq, mRIN, MultiQC, NGS QC Toolkit, PRINSEQ, RNA-SeQC, Trim galore, 
+
+Tools filtering/trimmimg : AfterQC, NGS QC Toolkit, Sickle, Trimmomatic
+
+In Galaxy : FastQC, Kraken, HTSeq, MultiQC, bamqc, PRINSEQ,  Trim galore, Trimmomatic
+
+
+---
+
+
+#### Error Correction
+
+Tools : AmpliconNoise, BayesHammer, QuorUM, GeneScissors, 
+
+
+For this tutorial we will use already processed reads.
 
