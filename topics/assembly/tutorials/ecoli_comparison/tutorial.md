@@ -30,24 +30,48 @@ Our initial objective is to compare our assembly against all complete *E. coli* 
 
 [NCBI](https://www.ncbi.nlm.nih.gov/) is the resource that would store all complete *E. coli* genomes. Specifically, they can be found [here](https://www.ncbi.nlm.nih.gov/genome/genomes/167). As we will see this list contains over 500 genomes and so uploading them by hand will likely result in carpal tunnel syndrome, which we want to prevent. Galaxy has several features that are specifically designed for uploading and managing large sets of similar types of data. The following two **Hands-on** section show how they can be used to import all completed *E. coli* genomes into Galaxy.
 
+
 <!--
 {% icon hands_on %} will render the hands_on icon as specified in
 _config.yml in the root of this repository.
 -->
 
+> ### {% icon tip %} Tip: Finding tools mentioned in this tutorial
+>Galaxy instances contain hundreds of tools. As a result, it is sometimes hard to find tools mentioned in tutorials such as this one.
+>
+>To help with this challenge, Galaxy has a search box at the top of the left panel. Use this box to find the tools mentioned here.
+>![](../../images/tool_search.png "Use search box to find tools!")
+{: .tip}
+
+
 > ### {% icon hands_on %} Hands-on: Preparing a list of all complete *E. coli* genomes
 >
->Open [the NCBI list of of *E. coli* genomes](https://www.ncbi.nlm.nih.gov/genome/genomes/167) in a new window and position two browser windows (one the tutorial and the one you just opened) side by side. Then follow the steps in the following video.
 >
->---------------------
+> 1. To load data into your Galaxy instance:
+>   - Log in into Galaxy
+>   - Create new history (if you are new to Galaxy see [Galaxy 101 tutorial]({{site.baseurl}}/topics/introduction/tutorials/galaxy-intro-101/tutorial.html) first).
 >
-><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/271328293?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+> 2. **Get data** {% icon tool %} as shown below (see [these slides]({{site.baseurl}}/topics/introduction/tutorials/galaxy-intro-get-data/slides.html) for an introduction on how to load data into Galaxy):
+>  
+>       ![Get Data](../../images/get_data.png "Getting data into history starts with clicking <b>Get data</b> button")
 >
+>  **Choose Local File**  and select the file we just downloaded from NCBI, then set the Type of the file as  tabular and click on Start to upload the file on your history.
+>       ![Get Data](../../images/upload_tabular_genomes.png "Getting data into history starts with clicking <b>Get data</b> button")
+>
+>3. Take a look at the data we can see that we have tabulated file with 20 columns. We won't need all of them, we only need the Assembly name and the ftp URL that we will use to download the genomes.
+> 4. Use the **Cut columns from a table (cut) ** tool to remove non needed columns with parameters as follows before clicking on *Execute*:
+>   -  **File to cut** to the uploaded file
+>   -  **Operation** to *Keep*
+>   -  **Delimited by** to *Tab*
+>   -  **List of Fields** to columns 8 and 20
+> 5. Use the **Remove beginning of a file** tool to remove the header of the file with the parameters as follows:
+ >   -  **Remove first** to *1*
+ >   -  **From** the file generated at the previous steps
 {: .hands_on}
 
 ## Getting complete *E. coli* genomes into Galaxy
 
-Now that the list is formatted as a table in a spreadsheet, it is time to upload it into Galaxy. There is a problem though &uarr; the URLs (web addresses) in the list do not actually point to sequence files that we would need to perform alignments. Instead they point to directories. For example, this URL:
+Now that the list is formatted as a table in a spreadsheet, it is time to use it to get the genomes into Galaxy. There is a problem though &uarr; the URLs (web addresses) in the list do not actually point to sequence files that we would need to perform alignments. Instead they point to directories. For example, this URL:
 
 ```
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.1_ASM886v1					
@@ -95,13 +119,6 @@ The assembly we just uploaded has two issues that need to be addressed before pr
  2. Sequences have unwieldy names like `>1 length=4576293 depth=1.00x circular=true`. We need to rename it to something more meaningful.
 
  Let's fix these two problems.
-
- > ### {% icon tip %} Tip: Finding tools mentioned in this tutorial
- >Galaxy instances contain hundreds of tools. As a result, it is sometimes hard to find tools mentioned in tutorials such as this one.
- >
- >To help with this challenge, Galaxy has a search box at the top of the left panel. Use this box to find the tools mentioned here.
- >![](../../images/tool_search.png "Use search box to find tools!")
- {: .tip}
 
 > ### {% icon hands_on %} Hands-on: Fixing assembly
 >
