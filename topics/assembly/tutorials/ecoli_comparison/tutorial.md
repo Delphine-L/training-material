@@ -71,7 +71,7 @@ _config.yml in the root of this repository.
 
 ## Getting complete *E. coli* genomes into Galaxy
 
-Now that the list is formatted as a table in a spreadsheet, it is time to use it to get the genomes into Galaxy. There is a problem though &uarr; the URLs (web addresses) in the list do not actually point to sequence files that we would need to perform alignments. Instead they point to directories. For example, this URL:
+Now that the list is formatted as a simple table with names and URLs, it is time to use it to get the genomes into Galaxy. There is a problem though &uarr; the URLs (web addresses) in the list do not actually point to sequence files that we would need to perform alignments. Instead they point to directories. For example, this URL:
 
 ```
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.1_ASM886v1					
@@ -280,7 +280,7 @@ Remember, our objective is to find genomes that are most similar to our. Given t
 
 -------
 
-However, to extract this information from our data we need to aggregate it. In other words, for each *E. coli* genome we need to calculate the total number of alignment blocks, their combined length, and average identity. The following section explain how to do this:
+However, to extract this information from our data we need to aggregate it. In other words, for each *E. coli* genome we need to calculate the total number of alignment blocks, their combined length, and average identity. The following section explains how to do this:
 
 > ### {% icon hands_on %} Hands-on: Aggregating the data
 > 1. Select **Datamash (operations on tabular data)**
