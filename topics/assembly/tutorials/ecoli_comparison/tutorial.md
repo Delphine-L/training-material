@@ -173,8 +173,8 @@ Now everything is loaded and ready to go. We will now align our assembly against
 > ### {% icon hands_on %} Hands-on: Running LASTZ
 > 1. Open **LASTZ** interface
 > 2. Change **Select TARGET sequence(s) to align against** to `from your history`
-> 3. In **Select a reference dataset** click on the folder icon (![](../../images/folder-o.png)) and the collection containing all *E. coli* genomes we uploaded earlier.
-> 4. In **Select QUERY sequence(s)** choose our assembly which was prepared in the previous step.
+> 3. In **Select a reference dataset** choose our assembly which was prepared in the previous step.
+> 4. In **Select QUERY sequence(s)** click on the folder icon (![](../../images/folder-o.png)) and the collection containing all *E. coli* genomes we uploaded earlier.
 > 5. Find section of LASTZ interface called **Chaining** and expand it.
 > 6. Set **Perform chaining of HSPs with no penalties** to `Yes`
 > 7. Find section of LASTZ interface called **Output** and expand it.
@@ -354,7 +354,7 @@ Now that we know the three genomes most closely related to ours, let's take a cl
 >At the end of this you should have two collections: one containing genomic sequences and another containing annotations.
 {: .hands_on}
 
-## Visualizing rearrangements
+## Detecting rearrangements
 
 Now we will perform alignments between our assembly and the three most closely related genomes to get a detailed look at any possible genome architecture changes. We will again use LASTZ:
 
@@ -370,8 +370,8 @@ Now we will perform alignments between our assembly and the three most closely r
 > 9. Within **Select which fields to include** select the following:
 >	* `score` - alignment score
 >	* `name1` - name of the *target* sequence
->	* `strand` - strand for the *target* sequence
->	* `zstart1` - 0-based start of alignment in *target*
+>	* `strand1` - strand for the *target* sequence
+>	* `zstart` - 0-based start of alignment in *target*
 >	* `end1` - end of alignment in *target*
 >	* `length1` - length of alignment in *target*
 >	* `name2` - name of *query* sequence
@@ -393,6 +393,8 @@ A quick conclusion that can be drawn here is that there is a large inversion in 
 ![Interpreting Dot Plots](../../images/dotplot.png "A quick reference to interpreting Dot Plots. Our case is identical to <i>Insertion into Reference</i> shown in the upper left.")
 
 For a moment let's leave LASTZ result and create a browser that would allows us to display our results.
+
+# Visualizing Results Dynamically
 
 ## Producing a Genome Browser for this experiment
 
@@ -631,6 +633,8 @@ The result will look like this:
 
 Now it is time to think about the genes.
 
+# Functional analysis
+
 ## Analyzing the deletion for gene content
 
 Earlier we [downloaded](#-hands-on-uploading-sequences-and-annotations) gene annotations for the three genomes most closely related to our assembly. The data was downloaded as a collection containing annotation for `CP020543.1`, `CP024090.1`, and `LT906474.1`. The annotation data contains multiple columns described by NCBI as follows (you can look at the actual data by finding the annotation collection from above (called `GENES` if you followed the video)):
@@ -725,19 +729,20 @@ This will create a 21st column containing `0` for all rows. Now we can cut neces
 > ### {% icon hands_on %} Hands-on: Cutting columns form annotation data
 >
 > 1. Open **Cut columns from a table** tool.
-> 2. In **Cut columns** type `c8,c9,c14,c21,c10`
-> 3. In **From** click on the folder icon (![](../../images/folder-o.png)) and select the collection produced at the previous step (`Add column on collection...`)
+> 2. In **Cut columns** type `c8,c9,c15,c19,c10`
+> 3. In **From** click on the folder icon (![](../../images/folder-o.png)) and select the collection produced at the previous step (`Select on collection...`)
 > 4. Click **Execute**
 {: .hands_on}
 
 This will produce a collection with each element containing data like this:
 
 ```
-   1    2                                              3 4 5
-------------------------------------------------------------
-  49 1452 chromosomal replication initiator protein DnaA 0 +
-1457 2557 DNA polymerase III subunit beta                0 +
-2557 3630 DNA replication and repair protein RecF        0 +
+   1    2          3    4   5
+-----------------------------
+  70	1404	dnaA	0	+
+1409	2509	dnaN	0	+
+2509	3582	recF	0	+
+3611	6025	gyrB	0	+
 ```
 
 As we mentioned above this datasets lacks genome IDs such as `CP020543.1`. However, the individual elements in the collection we've created already have genomes IDs (if you are unsure make sure you followed direction when [creating collection containing annotations](#-hands-on-uploading-sequences-and-annotations)). We will leverage this while collapsing this collection into a single dataset:
@@ -753,11 +758,12 @@ As we mentioned above this datasets lacks genome IDs such as `CP020543.1`. Howev
 Resulting data looks like this:
 
 ```
-         1    2    3                                              4 5 6
------------------------------------------------------------------------
-CP020543.1   49 1452 chromosomal replication initiator protein DnaA 0 +
-CP020543.1 1457 2557 DNA polymerase III subunit beta                0 +
-CP020543.1 2557 3630 DNA replication and repair protein RecF        0 +
+         1     2       3        4   5   6
+-----------------------------------------
+CP020543.1	  49	1452	dnaA	0	+
+CP020543.1	1457	2557		    0	+
+CP020543.1	2557	3630		    0	+
+CP020543.1	3659	6073		    0	+
 ```
 
 you can see that the genome ID is now appended in the beginning and this dataset looks like a legitimate BED that can be displayed in IGV. The one thing that remains is to tell Galaxy that it is BED as [we did before](#-hands-on-changing-dataset-type). After the format of the last dataset is set to BED it can displayed at IGV by clicking **display with IGV local** link (remember to give this new track a ["humane" name](#-tip-naming-igv-tracks):
