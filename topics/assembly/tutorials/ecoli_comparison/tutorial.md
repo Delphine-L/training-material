@@ -371,7 +371,7 @@ Now we will perform alignments between our assembly and the three most closely r
 >	* `score` - alignment score
 >	* `name1` - name of the *target* sequence
 >	* `strand` - strand for the *target* sequence
->	* `zstart` - 0-based start of alignment in *target*
+>	* `zstart1` - 0-based start of alignment in *target*
 >	* `end1` - end of alignment in *target*
 >	* `length1` - length of alignment in *target*
 >	* `name2` - name of *query* sequence
@@ -725,8 +725,8 @@ This will create a 21st column containing `0` for all rows. Now we can cut neces
 > ### {% icon hands_on %} Hands-on: Cutting columns form annotation data
 >
 > 1. Open **Cut columns from a table** tool.
-> 2. In **Cut columns** type `c8,c9,c14,c19,c10`
-> 3. In **From** click on the folder icon (![](../../images/folder-o.png)) and select the collection produced at the previous step (`Select on collection...`)
+> 2. In **Cut columns** type `c8,c9,c14,c21,c10`
+> 3. In **From** click on the folder icon (![](../../images/folder-o.png)) and select the collection produced at the previous step (`Add column on collection...`)
 > 4. Click **Execute**
 {: .hands_on}
 
