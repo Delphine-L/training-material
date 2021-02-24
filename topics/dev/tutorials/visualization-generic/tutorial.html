@@ -1,112 +1,389 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Galaxy Training!</title>
-        <link media="all" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://galaxyproject.github.io/training-material//assets/css/main.css">
-        <link rel="stylesheet" href="https://galaxyproject.github.io/training-material//assets/css/font-awesome.css">
-        <link rel="stylesheet" href="https://galaxyproject.github.io/training-material//assets/css/syntax_highlighting.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Visualizations: generic plugins</title>
+        
+            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+        
+        <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
+        <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
+        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
+        <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
+        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
+        <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+
+        
+        
+        
+        
+        
+        <meta name="description" content="Galaxy is an open-source project. Everyone can contribute..." />
+        <meta property="og:title" content="Galaxy Training: Visualizations: generic plugins" />
+        <meta property="og:description" content="Galaxy is an open-source project. Everyone can contribute..." />
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'galaxyproject/dev'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <header>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                Galaxy Training!
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <a id="site-title" class="navbar-brand" href="https://wiki.galaxyproject.org/Teach/GTN">
-              <img class="pull-left img-responsive" src="https://galaxyproject.github.io/training-material///assets/images/GTN.png">
-            </a>
-            <a id="site-title" class="navbar-brand name-holder" href="https://galaxyproject.github.io/training-material//topics/dev/tutorials/visualization-generic/tutorial.html">
-              Visualizations: generic plugins
-            </a>
-          </div>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/training-material/topics/dev" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">topic</span> Development in Galaxy
+                        </a>
+                    </li>
 
-          <div class="collapse navbar-collapse" id="navbar">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
+                        </a>
+                        <div class="dropdown-menu">
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fdev%2Ftutorials%2Fvisualization-generic%2Ftutorial.html&edit-text=&act=url" title="">
+                                Français
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fdev%2Ftutorials%2Fvisualization-generic%2Ftutorial.html&edit-text=&act=url" title="">
+                                日本語
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fdev%2Ftutorials%2Fvisualization-generic%2Ftutorial.html&edit-text=&act=url" title="">
+                                Español
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fdev%2Ftutorials%2Fvisualization-generic%2Ftutorial.html&edit-text=&act=url" title="">
+                                Português
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fdev%2Ftutorials%2Fvisualization-generic%2Ftutorial.html&edit-text=&act=url" title="">
+                                العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fdev%2Ftutorials%2Fvisualization-generic%2Ftutorial.html&edit-text=&act=url" title="">
+                                And more!
+                            </a>
+                        </div>
+                    </li>
 
-            <ul id="main-menu" class="nav navbar-nav navbar-right">
-              <li><a href="https://galaxyproject.github.io/training-material/" title="Back to front page"><i class="fa fa-home"></i> Home</a></li>
-              <li><a href="https://galaxyproject.github.io/training-material//topics/dev" title="Go back to list of tutorials"><i class="fa fa-file-text-o"></i> Development in Galaxy</a></li>
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
 
-              
-                <li><a href="https://galaxyproject.github.io/training-material//topics/dev/slides" title="Slides for this tutorial"><i class="fa fa-graduation-cap"></i> Introduction slides</a></li>
-              
-              <!--<li><a href="https://galaxyproject.github.io/training-material//dev/slides/visualization-generic/"><i class="fa fa-file-powerpoint-o"></i> Associated slides</a></li>-->
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
+            FAQ
+        </a>
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            Discuss on Galaxy Help
+        </a>
 
-              
-                <li><a href="https://github.com/galaxyproject/training-material/tree/master/topics/dev/docker" title="Docker image for this tutorial"><i class="fa fa-ship"></i> Docker image</a></li>
-              
+        <div class="dropdown-item">
+            <div>
+                Theme
+            </div>
 
-              
+            <div id="theme-selector" data-toggle="buttons">
+                <label data-value="default" class="btn btn-secondary">
+                    <input type="radio" name="options" id="default" autocomplete="off"> Default
+                </label>
+                <label data-value="night" class="btn btn-secondary">
+                    <input type="radio" name="options" id="night" autocomplete="off"> Night
+                </label>
+                <label data-value="midnight" class="btn btn-secondary">
+                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
+                </label>
+                <label data-value="rainbow" class="btn btn-secondary">
+                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
+                </label>
+                <label data-value="halloween" class="btn btn-secondary">
+                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
+                </label>
+                <label data-value="straya" class="btn btn-secondary">
+                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
+                </label>
+            </div>
 
-              
+        </div>
+    </div>
+</li>
 
-              
-                <li><a href="https://galaxyproject.github.io/training-material//topics/dev#references" title="References"><i class="fa fa-book"></i> Literature</a></li>
-              
 
-            </ul>
-          </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/dev/tutorials/visualization-generic/tutorial.md">
+                            <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
 
-<section class="tutorial">
-    <h1>Visualizations: generic plugins</h1>
+<div class="container main-content">
+    <script type="application/ld+json">
+        
 
-    <blockquote class="overview">
-        <h3>Overview</h3>
 
-        <p class="bold"> <img class="emoji" title=":grey_question:" alt=":grey_question:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2754.png" height="20" width="20" align="absmiddle"> Questions</p>
-        <ul>
-        
-          <li>How can visualization plugins benefit science?</li>
-        
-        </ul>
+{
+  "@context": "http://schema.org",
+  "@type": "Course",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "students"
+  },
+  "citation": {
+    "@type": "CreativeWork",
+    "name": "Community-Driven Data Analysis Training for Biology",
+    "url": "https://doi.org/10.1016/j.cels.2018.05.012"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
+  "headline": "Visualizations: generic plugins",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
+  "interactivityType": "mixed",
+  "isAccessibleForFree": true,
+  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "producer": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "provider": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "sourceOrganization": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Development in Galaxy",
+    "description": "Galaxy is an open-source project. Everyone can contribute to its development with core Galaxy development, integration of softwares in Galaxy environment, ...",
+    "url": "https://training.galaxyproject.org//training-material/topics/dev/"
+  },
+  "courseCode": "dev / visualization-generic / hands-on",
+  "learningResourceType": "hands-on tutorial",
+  "name": "Hands-on for 'Visualizations: generic plugins' tutorial",
+  "url": "https://training.galaxyproject.org//training-material/topics/dev/tutorials/visualization-generic/tutorial.html",
+  "timeRequired": "PT90M",
+  "description": "The questions this  addresses are:\n - How can visualization plugins benefit science?\n\n\\nThe objectives are:\n - Implement a first Galaxy visualization\n - Understand the client side vs. server side principle\n\n",
+  "coursePrerequisites": [
+    "Javascript knowledge"
+  ],
+  "hasPart": [
 
-        <p class="bold"> <img class="emoji" title=":dart:" alt=":dart:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f3af.png" height="20" width="20" align="absmiddle"> Objectives</p>
-        <ul>
-        
-          <li>Implement a first Galaxy visualization</li>
-        
-          <li>Understand the client side vs. server side principle</li>
-        
-        </ul>
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Saskia Hiltemann"
+    },
+    {
+      "@type": "Person",
+      "name": "Youri Hoogstrate"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "name": "Saskia Hiltemann"
+    },
+    {
+      "@type": "Person",
+      "name": "Youri Hoogstrate"
+    }
+  ],
+  "about": [
+    {
+      "@type": "CreativeWork",
+      "name": "Development in Galaxy",
+      "description": "Galaxy is an open-source project. Everyone can contribute to its development with core Galaxy development, integration of softwares in Galaxy environment, ...",
+      "url": "https://training.galaxyproject.org//training-material/topics/dev/"
+    }
+  ]
+}
+    </script>
 
+    <section class="tutorial">
+        <h1 data-toc-skip>Visualizations: generic plugins</h1>
         
-        <p class="bold"> <img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2714.png" height="20" width="20" align="absmiddle"> Requirements</p>
-        <ul>
-          
-          
-            <li>
+
+        <div class="contributors-line">By: 
+
+ <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/shiltemann" alt="Saskia Hiltemann">Saskia Hiltemann</a> <a href="/training-material/hall-of-fame/yhoogstrate/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/yhoogstrate" alt="Youri Hoogstrate">Youri Hoogstrate</a>
+
+</div>
+
+        <blockquote class="overview">
+            <h3>Overview</h3>
+            <strong><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</strong>
+            <ul>
+            
+            <li><p>How can visualization plugins benefit science?</p>
+</li>
+            
+            </ul>
+
+            <strong><i class="fas fa-bullseye" aria-hidden="true"></i><span class="visually-hidden">objectives</span> Objectives</strong>
+            <ul>
+            
+            <li><p>Implement a first Galaxy visualization</p>
+</li>
+            
+            <li><p>Understand the client side vs. server side principle</p>
+</li>
+            
+            </ul>
+
+            
+            <strong><i class="fas fa-check-circle" aria-hidden="true"></i><span class="visually-hidden">requirements</span> Requirements</strong>
+            <ul>
+            
+            
+    <li>
+    
+        Javascript knowledge
+    
+    </li>
+
+            </ul>
+            
+
+            
+            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 90 minutes</p>
+            
+
+            
+
+            
+            
+
+            
+            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <ul>
+                <div class="supporting_material">
                 
-                <a href="">Javascript knowledge</a>
+                    <li class="btn btn-default"><a href="/training-material/topics/dev/tutorials/visualization-generic/slides.html" title="Slides for this tutorial">
+                        <i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> Slides
+                    </a></li>
                 
-            </li>
-          
-        </ul>
-        
 
-        <p><span class="bold"> <img class="emoji" title=":hourglass:" alt=":hourglass:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/231b.png" height="20" width="20" align="absmiddle"> Time estimation:</span> 1.5h</p>
+                
 
-    </blockquote>
+                
 
-<h1 class="no_toc" id="introduction">Introduction</h1>
+                
+
+                
+                    <li class="btn btn-default supporting_material">
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies
+    </a>
+    <ul class="dropdown-menu">
+    
+        <li>
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/dev/docker" title="Docker image for this tutorial">
+                <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
+            </a>
+        </li>
+    
+    
+    </ul>
+
+
+</li>
+                
+                </div>
+            </ul>
+            
+
+            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jan 13, 2020 </p>
+        </blockquote>
+
+        <div class="container">
+            <div class="row">
+                <!-- sidebar, which will move to the top on a small screen -->
+                <div class="col-sm-2">
+                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                </div>
+                <div class="col-sm-10">
+                    <h1 class="no_toc" id="introduction">Introduction</h1>
 
 <p>Visualizations may be very helpful in understanding data better. There is a whole
 range of visualizations, from rather simple scatter and barplots up to projections
@@ -114,12 +391,12 @@ of high dimensional data or even entire genomes. Many of these visualizations of
 require a lot of tweaking and changes in settings like zooming in and assigning colors, etc.
 Therefore, visualizations are ideally interactive, and changing settings is often
 an initial step in exploring data. For this reason it may be inconvenient to make use
-of static galaxy tools because it lacks these interactive features. For these situations Galaxy
+of static <span class="notranslate">galaxy</span> tools because it lacks these interactive features. For these situations <span class="notranslate">Galaxy</span>
 offers the option to create <em>visualizations plugins</em>, file format specific javascripts
 that integrate with the history menu, without making redundant copies of data.</p>
 
 <p>In this tutorial we shall go through how this system works and create a simple visualization
-plugin. The tool will create a visualization of the number of aligned reads per
+plugin. The tool will create a visualization of the number of aligned <span class="notranslate">reads</span> per
 chromosome of a BAM file, and we will discuss possible optimizations and advantages
 and disadvantages of the proposed implementation.</p>
 
@@ -127,7 +404,7 @@ and disadvantages of the proposed implementation.</p>
 understanding of HTML5 and JavaScript as these are the basic languages in which they are written.
 However, for this tutorial we will keep it basic.</p>
 
-<p>Additional documentation about Galaxy visualizations can be found here:</p>
+<p>Additional documentation about <span class="notranslate">Galaxy</span> visualizations can be found here:</p>
 
 <ul>
   <li><a href="https://galaxyproject.org/visualizations-registry">VisualizationsRegistry</a></li>
@@ -144,9 +421,8 @@ However, for this tutorial we will keep it basic.</p>
   <p>In this tutorial, we will deal with:</p>
 
 <ol id="markdown-toc">
-  <li>
-<a href="#part-1" id="markdown-toc-part-1">Part 1</a>    <ol>
-      <li><a href="#linking-the-plugin-with-galaxy" id="markdown-toc-linking-the-plugin-with-galaxy">Linking the plugin with Galaxy</a></li>
+  <li><a href="#part-1" id="markdown-toc-part-1">Part 1</a>    <ol>
+      <li><a href="#linking-the-plugin-with-galaxy" id="markdown-toc-linking-the-plugin-with-galaxy">Linking the plugin with <span class="notranslate">Galaxy</span></a></li>
       <li><a href="#creating-the-visualization" id="markdown-toc-creating-the-visualization">Creating the visualization</a></li>
     </ol>
   </li>
@@ -157,64 +433,54 @@ However, for this tutorial we will keep it basic.</p>
 <h1 id="part-1">Part 1</h1>
 
 <p>The visualization we are going to create in this tutorial, is a tool that shows the number of aligned
-reads per chromosome of a BAM file. The first thing we need to do is to come up with a name.
-Let’s call it <em>alignment_rname_boxplot</em>. Note that the reference sequences (usually chromosomes)
-to which we align are named <code class="highlighter-rouge">RNAME</code> in the BAM/SAM specification.</p>
+<span class="notranslate">reads</span> per chromosome of a BAM file. The first thing we need to do is to come up with a name.
+Let’s call it <em>alignment_<span class="notranslate">rna</span>me_boxplot</em>. Note that the reference sequences (usually chromosomes)
+to which we align are named <code class="language-plaintext highlighter-rouge"><span class="notranslate">RNA</span>ME</code> in the BAM/SAM specification.</p>
 
-<p>The development of a Galaxy visualization takes place within the Galaxy codebase.</p>
+<p>The development of a <span class="notranslate">Galaxy</span> visualization takes place within the <span class="notranslate">Galaxy</span> codebase.</p>
 
-<blockquote class="hands_on">
-  <h3 id="pencil2-hands-on-data-upload">
-<img class="emoji" title=":pencil2:" alt=":pencil2:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270f.png" height="20" width="20" align="absmiddle"> Hands-on: Data upload</h3>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>
 
   <ol>
-    <li>Clone an instance of Galaxy in a path, further referred to as <code class="highlighter-rouge">$GALAXY_ROOT</code>
-</li>
+    <li>Clone an instance of <span class="notranslate">Galaxy</span> in a path, further referred to as <code class="language-plaintext highlighter-rouge">$<span class="notranslate">GALAXY</span>_ROOT</code></li>
     <li>
       <p>Explore the plugin directory as follows:</p>
 
-      <div class="language-bash highlighter-rouge">
-<pre class="highlight"><code><span class="gp">$ </span><span class="nb">cd</span> <span class="nv">$GALAXY_ROOT</span>/config/plugins/visualizations
-</code></pre>
-      </div>
+      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> <span class="nv">$<span class="notranslate">GALAXY</span>_ROOT</span>/config/plugins/visualizations
+</code></pre></div>      </div>
     </li>
     <li>
       <p>Create a new directory for our new plugin project</p>
 
-      <div class="language-bash highlighter-rouge">
-<pre class="highlight"><code><span class="gp">$ </span>mkdir alignment_rname_boxplot
-<span class="gp">$ </span><span class="nb">cd </span>alignment_rname_boxplot
-</code></pre>
-      </div>
+      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">mkdir </span>alignment_<span class="notranslate">rna</span>me_boxplot
+<span class="nv">$ </span><span class="nb">cd </span>alignment_<span class="notranslate">rna</span>me_boxplot
+</code></pre></div>      </div>
     </li>
     <li>
       <p>Make three (sub-)directories to complete the structure of the project:</p>
 
-      <div class="language-bash highlighter-rouge">
-<pre class="highlight"><code><span class="gp">$ </span>mkdir config
-<span class="gp">$ </span>mkdir static
-<span class="gp">$ </span>mkdir templates
-</code></pre>
-      </div>
+      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">mkdir </span>config
+<span class="nv">$ </span><span class="nb">mkdir </span>static
+<span class="nv">$ </span><span class="nb">mkdir </span>templates
+</code></pre></div>      </div>
     </li>
   </ol>
 </blockquote>
 
-<h2 id="linking-the-plugin-with-galaxy">Linking the plugin with Galaxy</h2>
+<h2 id="linking-the-plugin-with-galaxy">Linking the plugin with <span class="notranslate">Galaxy</span></h2>
 
-<p>To create a bridge between our not-yet-written plugin and Galaxy, we need to write a
+<p>To create a bridge between our not-yet-written plugin and <span class="notranslate">Galaxy</span>, we need to write a
 configuration in XML format.</p>
 
-<blockquote class="hands_on">
-  <h3 id="pencil2-hands-on-data-upload-1">
-<img class="emoji" title=":pencil2:" alt=":pencil2:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270f.png" height="20" width="20" align="absmiddle"> Hands-on: Data upload</h3>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-data-upload-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>
 
-  <p>Create the file  <code class="highlighter-rouge">config/alignment_rname_boxplot.xml</code> with the following contents:</p>
+  <p>Create the file  <code class="language-plaintext highlighter-rouge">config/alignment_<span class="notranslate">rna</span>me_boxplot.xml</code> with the following contents:</p>
 
-  <div class="language-xml highlighter-rouge">
-<pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+  <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 <span class="cp">&lt;!DOCTYPE visualization SYSTEM "../../visualization.dtd"&gt;</span>
-<span class="nt">&lt;visualization</span> <span class="na">name=</span><span class="s">"alignment_rname_boxplot"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;visualization</span> <span class="na">name=</span><span class="s">"alignment_<span class="notranslate">rna</span>me_boxplot"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;data_sources&gt;</span>
         <span class="nt">&lt;data_source&gt;</span>
             <span class="nt">&lt;model_class&gt;</span>HistoryDatasetAssociation<span class="nt">&lt;/model_class&gt;</span>
@@ -228,10 +494,9 @@ configuration in XML format.</p>
     <span class="nt">&lt;params&gt;</span>
         <span class="nt">&lt;param</span> <span class="na">type=</span><span class="s">"dataset"</span> <span class="na">var_name_in_template=</span><span class="s">"hda"</span> <span class="na">required=</span><span class="s">"true"</span><span class="nt">&gt;</span>dataset_id<span class="nt">&lt;/param&gt;</span>
     <span class="nt">&lt;/params&gt;</span>
-    <span class="nt">&lt;template&gt;</span>alignment_rname_boxplot.mako<span class="nt">&lt;/template&gt;</span>
+    <span class="nt">&lt;template&gt;</span>alignment_<span class="notranslate">rna</span>me_boxplot.mako<span class="nt">&lt;/template&gt;</span>
 <span class="nt">&lt;/visualization&gt;</span>
-</code></pre>
-  </div>
+</code></pre></div>  </div>
 
 </blockquote>
 
@@ -240,8 +505,8 @@ the history menu. It also links the plugin to two file formats: BAM and SAM, whi
 for any history item of these file formats the plugin will automatically become available.</p>
 
 <p>It also includes a reference to a mako template file (HTML + Python syntax), to be found in the
-<code class="highlighter-rouge">templates</code> directory (we will create this file in the next section). The <code class="highlighter-rouge">var_name_in_template</code>
-parameter is set to the value <code class="highlighter-rouge">hda</code>, which will be the name of the variable in the mako template
+<code class="language-plaintext highlighter-rouge">templates</code> directory (we will create this file in the next section). The <code class="language-plaintext highlighter-rouge">var_name_in_template</code>
+parameter is set to the value <code class="language-plaintext highlighter-rouge">hda</code>, which will be the name of the variable in the mako template
 corresponding to the dataset to be visualized.</p>
 
 <h2 id="creating-the-visualization">Creating the visualization</h2>
@@ -253,95 +518,84 @@ mako file will be compiled to render an HTML file.</p>
 <p>Beause we would like the visualization to load quickly, computationally intensive tasks should
 not be done prior to loading. A bit of server-side rendering in itself is not a problem, but the
 visualizations (written in HTML and/or JS) should do most of the actual calculations and
-conversions on the client side (in the browser). Therefore, unlike regular Galaxy tools, parsing
+conversions on the client side (in the browser). Therefore, unlike regular <span class="notranslate">Galaxy</span> tools, parsing
 files does not take place on the server, but instead data will be downloaded by the client via an
-exposed Galaxy URL prior to client-side rendering.</p>
+exposed <span class="notranslate">Galaxy</span> URL prior to client-side rendering.</p>
 
 <p>The most basic part of the mako file are the variables used for further web development, given
 below.</p>
 
-<div class="language-html highlighter-rouge">
-<pre class="highlight"><code><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
-<span class="err">&lt;</span>%
-    import os
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">import</span> <span class="na">os</span>
 
-    ## Generates hash (hdadict['id']) of history item
-    hdadict = trans.security.encode_dict_ids( hda.to_dict() )
+    <span class="na">##</span> <span class="na">Generates</span> <span class="na">hash</span> <span class="err">(</span><span class="na">hdadict</span><span class="err">['</span><span class="na">id</span><span class="err">'])</span> <span class="na">of</span> <span class="na">history</span> <span class="na">item</span>
+    <span class="na">hdadict = </span><span class="s">trans.security.encode_dict_ids(</span> <span class="na">hda.to_dict</span><span class="err">()</span> <span class="err">)</span>
 
-    ## Finds the parent directory of galaxy (/, /galaxy, etc.)
-    root     = h.url_for( '/' )
+    <span class="na">##</span> <span class="na">Finds</span> <span class="na">the</span> <span class="na">parent</span> <span class="na">directory</span> <span class="na">of</span> <span class="na"><span class="notranslate">galaxy</span></span> <span class="err">(/,</span> <span class="err">/</span><span class="na"><span class="notranslate">galaxy</span></span><span class="err">,</span> <span class="na">etc.</span><span class="err">)</span>
+    <span class="na">root     = </span><span class="s">h.url_for(</span> <span class="err">'/'</span> <span class="err">)</span>
 
-    ## Determines the exposed URL of the ./static directory
-    app_root = root + 'plugins/visualizations/'+visualization_name+'/static/'
+    <span class="na">##</span> <span class="na">Determines</span> <span class="na">the</span> <span class="na">exposed</span> <span class="na">URL</span> <span class="na">of</span> <span class="na">the</span> <span class="err">./</span><span class="na">static</span> <span class="na">directory</span>
+    <span class="na">app_root = </span><span class="s">root</span> <span class="err">+</span> <span class="err">'</span><span class="na">plugins</span><span class="err">/</span><span class="na">visualizations</span><span class="err">/'+</span><span class="na">visualization_name</span><span class="err">+'/</span><span class="na">static</span><span class="err">/'</span>
 
-    ## Actual file URL:
-    file_url = os.path.join(root, 'datasets', hdadict['id'], "display?to_ext="+hda.ext)
+    <span class="na">##</span> <span class="na">Actual</span> <span class="na">file</span> <span class="na">URL:</span>
+    <span class="na">file_url = </span><span class="s">os.path.join(root,</span> <span class="err">'</span><span class="na">datasets</span><span class="err">',</span> <span class="na">hdadict</span><span class="err">['</span><span class="na">id</span><span class="err">'],</span> <span class="err">"</span><span class="na">display</span><span class="err">?</span><span class="na">to_ext=</span><span class="s">"+hda.ext)
 %&gt;
-</code></pre>
-</div>
+</span></code></pre></div></div>
 
 <ul>
-  <li>
-<code class="highlighter-rouge">hdadict</code> is a variable that contains a file identifier that has been encoded to it’s
+  <li><code class="language-plaintext highlighter-rouge">hdadict</code> is a variable that contains a file identifier that has been encoded to it’s
  exposed uid.</li>
-  <li>
-<code class="highlighter-rouge">root</code> indicates location of Galaxy on the webserver (e.g. <code class="highlighter-rouge">/</code>, <code class="highlighter-rouge">/galaxy/</code>, <code class="highlighter-rouge">/galaxy-pub/</code>, etc).</li>
-  <li>
-<code class="highlighter-rouge">app_root</code> contains the exposed url of the static files for this visualization.</li>
-  <li>
-<code class="highlighter-rouge">file_url</code> contains the exposed url of the dataset selected (by user) for visualization.</li>
+  <li><code class="language-plaintext highlighter-rouge">root</code> indicates location of <span class="notranslate">Galaxy</span> on the webserver (e.g. <code class="language-plaintext highlighter-rouge">/</code>, <code class="language-plaintext highlighter-rouge">/<span class="notranslate">galaxy</span>/</code>, <code class="language-plaintext highlighter-rouge">/<span class="notranslate">galaxy</span>-pub/</code>, etc).</li>
+  <li><code class="language-plaintext highlighter-rouge">app_root</code> contains the exposed url of the static files for this visualization.</li>
+  <li><code class="language-plaintext highlighter-rouge">file_url</code> contains the exposed url of the dataset selected (by user) for visualization.</li>
 </ul>
 
 <p>We could obtain the BAM file client-side by downloading the BAM/SAM file in its entirety via
 <em>file_url</em>. However, BAM files can become quite large and it is usually not desired to transfer
 such datasets over the network. In our case it is also rather inconvenient to parse the BAM file
-with Javascript, just to count the number of reads.</p>
+with Javascript, just to count the number of <span class="notranslate">reads</span>.</p>
 
 <p>Fortunately, BAM files have indices. These indices are brief summaries describing the
 number of entries per chromosome, in order to be able to access the data contained in them more
 quickly. In the mako template we can access a BAM index as <em>hda.metadata.bam_index</em>.
 (Note that this is a file path on the server, not an exposed URL).</p>
 
-<p>Samtools has a command named <code class="highlighter-rouge">idxstats</code> which is able to leverage this BAM index you. However,
+<p>Samtools has a command named <code class="language-plaintext highlighter-rouge">idxstats</code> which is able to leverage this BAM index you. However,
 since visualizations do not have dependency management, it is very tricky to let the mako template
-do a system call to samtools. Fortunately, the Galaxy ecosystem ships with a built-in <code class="highlighter-rouge">pysam</code>
+do a system call to samtools. Fortunately, the <span class="notranslate">Galaxy</span> ecosystem ships with a built-in <code class="language-plaintext highlighter-rouge">pysam</code>
 dependency, a library that can do any native samtools command within python.</p>
 
-<p>The <code class="highlighter-rouge">*.metadata.bam_index</code> is a special kind of file in the Galaxy ecosystem. It is actually an
-invisible file in Galaxy, linked to another history item, but does have a unique filename.
-So, for the BAM file <code class="highlighter-rouge">./database/files/000/dataset_001.dat</code>, our BAI file (index) is <strong>not</strong>
-<code class="highlighter-rouge">./database/files/000/dataset_001.dat.bai</code> but could be <code class="highlighter-rouge">./database/files/000/dataset_002.dat</code> or
-<code class="highlighter-rouge">./database/files/000/dataset_003.dat</code>. We can create a symlink to this index file to ensure the
+<p>The <code class="language-plaintext highlighter-rouge">*.metadata.bam_index</code> is a special kind of file in the <span class="notranslate">Galaxy</span> ecosystem. It is actually an
+invisible file in <span class="notranslate">Galaxy</span>, linked to another history item, but does have a unique filename.
+So, for the BAM file <code class="language-plaintext highlighter-rouge">./database/files/000/dataset_001.dat</code>, our BAI file (index) is <strong>not</strong>
+<code class="language-plaintext highlighter-rouge">./database/files/000/dataset_001.dat.bai</code> but could be <code class="language-plaintext highlighter-rouge">./database/files/000/dataset_002.dat</code> or
+<code class="language-plaintext highlighter-rouge">./database/files/000/dataset_003.dat</code>. We can create a symlink to this index file to ensure the
 bam file and its index share the same prefix, as expected by samtools and pysam.</p>
 
 <p>We can create this symlink as follows in our mako template:</p>
 
-<div class="language-python highlighter-rouge">
-<pre class="highlight"><code><span class="c">## Ensure BAI index is symlinked</span>
-<span class="n">bai_target</span> <span class="o">=</span> <span class="n">hda</span><span class="o">.</span><span class="n">file_name</span><span class="o">+</span><span class="s">'.bai'</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## Ensure BAI index is symlinked
+</span><span class="n">bai_target</span> <span class="o">=</span> <span class="n">hda</span><span class="p">.</span><span class="n">file_name</span><span class="o">+</span><span class="s">'.bai'</span>
 <span class="kn">import</span> <span class="nn">os</span>
 
-<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">bai_target</span><span class="p">):</span>
-   <span class="n">os</span><span class="o">.</span><span class="n">symlink</span><span class="p">(</span><span class="n">hda</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">bam_index</span><span class="o">.</span><span class="n">file_name</span><span class="p">,</span> <span class="n">bai_target</span><span class="p">)</span>
-</code></pre>
-</div>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">bai_target</span><span class="p">):</span>
+   <span class="n">os</span><span class="p">.</span><span class="n">symlink</span><span class="p">(</span><span class="n">hda</span><span class="p">.</span><span class="n">metadata</span><span class="p">.</span><span class="n">bam_index</span><span class="p">.</span><span class="n">file_name</span><span class="p">,</span> <span class="n">bai_target</span><span class="p">)</span>
+</code></pre></div></div>
 
-<p>Now the BAM file has a <code class="highlighter-rouge">.bai</code> file with the same prefix, and we can run the <code class="highlighter-rouge">idxstats</code>
+<p>Now the BAM file has a <code class="language-plaintext highlighter-rouge">.bai</code> file with the same prefix, and we can run the <code class="language-plaintext highlighter-rouge">idxstats</code>
 as follows:</p>
 
-<div class="language-python highlighter-rouge">
-<pre class="highlight"><code><span class="c">## Extract idxstats</span>
-<span class="kn">import</span> <span class="nn">pysam</span>
-<span class="n">bam_idxstats_data</span> <span class="o">=</span> <span class="n">pysam</span><span class="o">.</span><span class="n">idxstats</span><span class="p">(</span><span class="n">hda</span><span class="o">.</span><span class="n">file_name</span><span class="p">)</span>
-</code></pre>
-</div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## Extract idxstats
+</span><span class="kn">import</span> <span class="nn">pysam</span>
+<span class="n">bam_idxstats_data</span> <span class="o">=</span> <span class="n">pysam</span><span class="p">.</span><span class="n">idxstats</span><span class="p">(</span><span class="n">hda</span><span class="p">.</span><span class="n">file_name</span><span class="p">)</span>
+</code></pre></div></div>
 
 <p>With the lines of python code above, the idxstats data is parsed into the RAM of python
 during compilation on the server, but is not yet exported into the HTML page nor parsed by JS.
 To do that, we add an HTML section to the end of the mako file.</p>
 
-<div class="language-html highlighter-rouge">
-<pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
         <span class="nt">&lt;title&gt;</span>${hda.name | h} | ${visualization_name | h}<span class="nt">&lt;/title&gt;</span>
     <span class="nt">&lt;/head&gt;</span>
@@ -349,74 +603,66 @@ To do that, we add an HTML section to the end of the mako file.</p>
         ${bam_idxstats_data | h}
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<p>Here you see <code class="highlighter-rouge">${bam_idxstats_data | h}</code>, which prints the python variable into
+<p>Here you see <code class="language-plaintext highlighter-rouge">${bam_idxstats_data | h}</code>, which prints the python variable into
 the HTML page and also does HTML escaping by providing the ` | h`-flag (for security reasons).</p>
 
 <p>Let’s put this all together.</p>
 
-<blockquote class="hands_on">
-  <h3 id="pencil2-hands-on-data-upload-2">
-<img class="emoji" title=":pencil2:" alt=":pencil2:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270f.png" height="20" width="20" align="absmiddle"> Hands-on: Data upload</h3>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-data-upload-2"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>
 
   <ol>
-    <li>Create the mako file <code class="highlighter-rouge">templates/alignment_rname_boxplot.mako</code>
-</li>
+    <li>Create the mako file <code class="language-plaintext highlighter-rouge">templates/alignment_<span class="notranslate">rna</span>me_boxplot.mako</code></li>
     <li>
       <p>Fill it with the following code:</p>
 
-      <div class="language-html highlighter-rouge">
-<pre class="highlight"><code><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
-<span class="err">&lt;</span>%
-    import os
-   
-    ## Generates hash (hdadict['id']) of history item
-    hdadict = trans.security.encode_dict_ids( hda.to_dict() )
-   
-    ## Finds the parent directory of galaxy (/, /galaxy, etc.)
-    root     = h.url_for( '/' )
-   
-    ## Determines the exposed URL of the ./static directory
-    app_root = root + 'plugins/visualizations/'+visualization_name+'/static/'
-   
-    ## Actual file URL:
-    file_url = os.path.join(root, 'datasets', hdadict['id'], "display?to_ext="+hda.ext)
-   
+      <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">import</span> <span class="na">os</span>
+
+    <span class="na">##</span> <span class="na">Generates</span> <span class="na">hash</span> <span class="err">(</span><span class="na">hdadict</span><span class="err">['</span><span class="na">id</span><span class="err">'])</span> <span class="na">of</span> <span class="na">history</span> <span class="na">item</span>
+    <span class="na">hdadict = </span><span class="s">trans.security.encode_dict_ids(</span> <span class="na">hda.to_dict</span><span class="err">()</span> <span class="err">)</span>
+
+    <span class="na">##</span> <span class="na">Finds</span> <span class="na">the</span> <span class="na">parent</span> <span class="na">directory</span> <span class="na">of</span> <span class="na"><span class="notranslate">galaxy</span></span> <span class="err">(/,</span> <span class="err">/</span><span class="na"><span class="notranslate">galaxy</span></span><span class="err">,</span> <span class="na">etc.</span><span class="err">)</span>
+    <span class="na">root     = </span><span class="s">h.url_for(</span> <span class="err">'/'</span> <span class="err">)</span>
+
+    <span class="na">##</span> <span class="na">Determines</span> <span class="na">the</span> <span class="na">exposed</span> <span class="na">URL</span> <span class="na">of</span> <span class="na">the</span> <span class="err">./</span><span class="na">static</span> <span class="na">directory</span>
+    <span class="na">app_root = </span><span class="s">root</span> <span class="err">+</span> <span class="err">'</span><span class="na">plugins</span><span class="err">/</span><span class="na">visualizations</span><span class="err">/'+</span><span class="na">visualization_name</span><span class="err">+'/</span><span class="na">static</span><span class="err">/'</span>
+
+    <span class="na">##</span> <span class="na">Actual</span> <span class="na">file</span> <span class="na">URL:</span>
+    <span class="na">file_url = </span><span class="s">os.path.join(root,</span> <span class="err">'</span><span class="na">datasets</span><span class="err">',</span> <span class="na">hdadict</span><span class="err">['</span><span class="na">id</span><span class="err">'],</span> <span class="err">"</span><span class="na">display</span><span class="err">?</span><span class="na">to_ext=</span><span class="s">"+hda.ext)
+
     ## Ensure BAI index is symlinked
     bai_target = hda.file_name+'.bai'
-   
+
     if not os.path.isfile(bai_target):
         os.symlink(hda.metadata.bam_index.file_name, bai_target)
-   
+
     ## Extract idxstats
     import pysam
     bam_idxstats_data = pysam.idxstats(hda.file_name)
 %&gt;
-<span class="nt">&lt;html&gt;</span>
-    <span class="nt">&lt;head&gt;</span>
-        <span class="nt">&lt;title&gt;</span>${hda.name | h} | ${visualization_name | h}<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;/head&gt;</span>
-    <span class="nt">&lt;body&gt;</span>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;${hda.name | h} | ${visualization_name | h}&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
         ${bam_idxstats_data | h}
-    <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-      </div>
+    &lt;/body&gt;
+&lt;/html&gt;
+</span></code></pre></div>      </div>
 
       <p>We are now ready to test this very basic visualization, we just need a (small) BAM file for it.</p>
     </li>
-    <li>Download <a href="https://zenodo.org/record/248730/files/tutorial.bam">the example BAM file</a>
-</li>
+    <li>Download <a href="https://zenodo.org/record/248730/files/tutorial.bam">the example BAM file</a></li>
     <li>
-      <p>Go the galaxy root directory and start Galaxy:</p>
+      <p>Go the <span class="notranslate">galaxy</span> root directory and start <span class="notranslate">Galaxy</span>:</p>
 
-      <div class="language-bash highlighter-rouge">
-<pre class="highlight"><code><span class="gp">$ </span><span class="nb">cd</span> <span class="nv">$GALAXY_ROOT</span>
-<span class="gp">$ </span>./run.sh
-</code></pre>
-      </div>
+      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> <span class="nv">$<span class="notranslate">GALAXY</span>_ROOT</span>
+<span class="nv">$ </span>./run.sh
+</code></pre></div>      </div>
     </li>
     <li>
       <p>Upload the example BAM file to your history</p>
@@ -424,8 +670,7 @@ the HTML page and also does HTML escaping by providing the ` | h`-flag (for secu
       <p>If everything went well, our plugin has appeared as a visualization option for the dataset</p>
 
       <blockquote class="comment">
-        <h3 id="nut_and_bolt-comments">
-<img class="emoji" title=":nut_and_bolt:" alt=":nut_and_bolt:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f529.png" height="20" width="20" align="absmiddle"> Comments</h3>
+        <h3 id="comment-comments"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comments</h3>
         <p>You must be logged in to be able to use visualizations</p>
       </blockquote>
     </li>
@@ -435,48 +680,41 @@ the HTML page and also does HTML escaping by providing the ` | h`-flag (for secu
 
 <p>All the visualization does at the moment, is show the contents of idxstats, compiled to HTML:</p>
 
-<div class="highlighter-rouge">
-<pre class="highlight"><code>['chrA\t5386\t2\t0\n', 'chrB\t5386\t4\t0\n', 'chrC\t5386\t1\t0\n', 'chrD\t5386\t6\t1\n',
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['chrA\t5386\t2\t0\n', 'chrB\t5386\t4\t0\n', 'chrC\t5386\t1\t0\n', 'chrD\t5386\t6\t1\n',
 'chrE\t5386\t3\t0\n', 'chrF\t5386\t2\t0\n', 'chrG\t5386\t1\t0\n', '*\t0\t0\t0\n']
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<p>It contains eight entries, one for each of our (made-up) chromosomes and one to <code class="highlighter-rouge">*</code>, which represents
-the unmapped reads. Entries are tab delimited (<code class="highlighter-rouge">\t</code>) and for the <code class="highlighter-rouge">chrA</code> entry it indicates that the
-length of the RNAME (chromosome) is 5386 bases and 2 reads are aligned to it.</p>
+<p>It contains eight entries, one for each of our (made-up) chromosomes and one to <code class="language-plaintext highlighter-rouge">*</code>, which represents
+the unmapped <span class="notranslate">reads</span>. Entries are tab delimited (<code class="language-plaintext highlighter-rouge">\t</code>) and for the <code class="language-plaintext highlighter-rouge">chrA</code> entry it indicates that the
+length of the <span class="notranslate">RNA</span>ME (chromosome) is 5386 bases and 2 <span class="notranslate">reads</span> are aligned to it.</p>
 
 <p>To make the data a bit more usable for Javascript , we convert it into a simple dictionary
 of the following syntax:</p>
 
-<div class="language-python highlighter-rouge">
-<pre class="highlight"><code><span class="p">{</span><span class="s">'chrA'</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s">'chrB'</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s">'chrC'</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s">'chrD'</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="s">'chrE'</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s">'chrF'</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s">'chrG'</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s">'*'</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
-</code></pre>
-</div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s">'chrA'</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s">'chrB'</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s">'chrC'</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s">'chrD'</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="s">'chrE'</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s">'chrF'</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s">'chrG'</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s">'*'</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+</code></pre></div></div>
 
 <p>Although it is possible to do this in python we recommend doing this in JS.
 The var dump provided by python/pysam is actually a valid syntax for Javascript too,
 so getting the raw data into Javascript is rather easy:</p>
 
-<div class="language-html highlighter-rouge">
-<pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
     <span class="nx">bam_idxstats_data</span> <span class="o">=</span> <span class="nx">$</span><span class="p">{</span><span class="nx">bam_idxstats_data</span><span class="p">};</span>
 <span class="nt">&lt;/script&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Converting the data is not the scope of the tutorial, so here we provide such a function:</p>
 
-<div class="language-html highlighter-rouge">
-<pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
   <span class="nx">bam_idxstats_data</span> <span class="o">=</span> <span class="nx">$</span><span class="p">{</span><span class="nx">bam_idxstats_data</span><span class="p">};</span>
   <span class="kd">function</span> <span class="nx">parse_data</span><span class="p">(</span><span class="nx">bam_idxstats_data</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="p">{};</span>
 
     <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span> <span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
       <span class="kd">var</span> <span class="nx">line</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-      <span class="kd">var</span> <span class="nx">chunks</span> <span class="o">=</span> <span class="nx">line</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"\t"</span><span class="p">);</span>
+      <span class="kd">var</span> <span class="nx">chunks</span> <span class="o">=</span> <span class="nx">line</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">"</span><span class="se">\t</span><span class="dl">"</span><span class="p">);</span>
 
-      <span class="k">if</span><span class="p">(</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">"_"</span><span class="p">).</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// only if it does not contain underscore</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="dl">"</span><span class="s2">_</span><span class="dl">"</span><span class="p">).</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// only if it does not contain underscore</span>
         <span class="nx">output</span><span class="p">[</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
       <span class="p">}</span>
     <span class="p">}</span>
@@ -484,76 +722,72 @@ so getting the raw data into Javascript is rather easy:</p>
    <span class="k">return</span> <span class="nx">output</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="nt">&lt;/script&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<p>The great thing about the mako system is that it does not require to restart galaxy in order to make
+<p>The great thing about the mako system is that it does not require to restart <span class="notranslate">galaxy</span> in order to make
 functional changes to the mako files.</p>
 
-<blockquote class="hands_on">
-  <h3 id="pencil2-hands-on-data-upload-3">
-<img class="emoji" title=":pencil2:" alt=":pencil2:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270f.png" height="20" width="20" align="absmiddle"> Hands-on: Data upload</h3>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-data-upload-3"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>
 
   <ol>
     <li>
       <p>Change the mako file to the following:</p>
 
-      <div class="language-html highlighter-rouge">
-<pre class="highlight"><code><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
-<span class="err">&lt;</span>%
-    import os
-   
-    ## Generates hash (hdadict['id']) of history item
-    hdadict = trans.security.encode_dict_ids( hda.to_dict() )
-   
-    ## Finds the parent directory of galaxy (/, /galaxy, etc.)
-    root     = h.url_for( '/' )
-   
-    ## Determines the exposed URL of the ./static directory
-    app_root = root + 'plugins/visualizations/'+visualization_name+'/static/'
-   
-    ## Actual file URL:
-    file_url = os.path.join(root, 'datasets', hdadict['id'], "display?to_ext="+hda.ext)
-   
+      <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">import</span> <span class="na">os</span>
+
+    <span class="na">##</span> <span class="na">Generates</span> <span class="na">hash</span> <span class="err">(</span><span class="na">hdadict</span><span class="err">['</span><span class="na">id</span><span class="err">'])</span> <span class="na">of</span> <span class="na">history</span> <span class="na">item</span>
+    <span class="na">hdadict = </span><span class="s">trans.security.encode_dict_ids(</span> <span class="na">hda.to_dict</span><span class="err">()</span> <span class="err">)</span>
+
+    <span class="na">##</span> <span class="na">Finds</span> <span class="na">the</span> <span class="na">parent</span> <span class="na">directory</span> <span class="na">of</span> <span class="na"><span class="notranslate">galaxy</span></span> <span class="err">(/,</span> <span class="err">/</span><span class="na"><span class="notranslate">galaxy</span></span><span class="err">,</span> <span class="na">etc.</span><span class="err">)</span>
+    <span class="na">root     = </span><span class="s">h.url_for(</span> <span class="err">'/'</span> <span class="err">)</span>
+
+    <span class="na">##</span> <span class="na">Determines</span> <span class="na">the</span> <span class="na">exposed</span> <span class="na">URL</span> <span class="na">of</span> <span class="na">the</span> <span class="err">./</span><span class="na">static</span> <span class="na">directory</span>
+    <span class="na">app_root = </span><span class="s">root</span> <span class="err">+</span> <span class="err">'</span><span class="na">plugins</span><span class="err">/</span><span class="na">visualizations</span><span class="err">/'+</span><span class="na">visualization_name</span><span class="err">+'/</span><span class="na">static</span><span class="err">/'</span>
+
+    <span class="na">##</span> <span class="na">Actual</span> <span class="na">file</span> <span class="na">URL:</span>
+    <span class="na">file_url = </span><span class="s">os.path.join(root,</span> <span class="err">'</span><span class="na">datasets</span><span class="err">',</span> <span class="na">hdadict</span><span class="err">['</span><span class="na">id</span><span class="err">'],</span> <span class="err">"</span><span class="na">display</span><span class="err">?</span><span class="na">to_ext=</span><span class="s">"+hda.ext)
+
     ## Ensure BAI index is symlinked
     bai_target = hda.file_name+'.bai'
-   
+
     if not os.path.isfile(bai_target):
         os.symlink(hda.metadata.bam_index.file_name, bai_target)
-   
+
     ## Extract idxstats
     import pysam
     bam_idxstats_data = pysam.idxstats(hda.file_name)
-   
+
 %&gt;
-<span class="nt">&lt;html&gt;</span>
-    <span class="nt">&lt;head&gt;</span>
-       <span class="nt">&lt;title&gt;</span>${hda.name | h} | ${visualization_name | h}<span class="nt">&lt;/title&gt;</span>
-        <span class="nt">&lt;script&gt;</span>
-            <span class="nx">bam_idxstats_data</span> <span class="o">=</span> <span class="nx">$</span><span class="p">{</span><span class="nx">bam_idxstats_data</span><span class="p">};</span>
-            <span class="kd">function</span> <span class="nx">parse_data</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-                <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="p">{};</span>
-                <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span> <span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-                    <span class="kd">var</span> <span class="nx">line</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-                    <span class="kd">var</span> <span class="nx">chunks</span> <span class="o">=</span> <span class="nx">line</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"\t"</span><span class="p">);</span>
-   
-                    <span class="k">if</span><span class="p">(</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">"_"</span><span class="p">).</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// only if it does not contain underscore</span>
-                        <span class="nx">output</span><span class="p">[</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
-                    <span class="p">}</span>
-                <span class="p">}</span>
-                <span class="k">return</span> <span class="nx">output</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="nt">&lt;/script&gt;</span>
+&lt;html&gt;
+    &lt;head&gt;
+       &lt;title&gt;${hda.name | h} | ${visualization_name | h}&lt;/title&gt;
+        &lt;script&gt;
+            bam_idxstats_data = ${bam_idxstats_data};
+            function parse_data(data) {
+                var output = {};
+                for(var i = 0; i &lt; data.length ; i++) {
+                    var line = data[i];
+                    var chunks = line.split("</span><span class="err">\</span><span class="na">t</span><span class="err">");</span>
+
+                    <span class="na">if</span><span class="err">(</span><span class="na">chunks</span><span class="err">[0].</span><span class="na">split</span><span class="err">("</span><span class="na">_</span><span class="err">"</span><span class="na">).length =</span><span class="s">=</span> <span class="err">1)</span> <span class="err">{</span> <span class="err">//</span> <span class="na">only</span> <span class="na">if</span> <span class="na">it</span> <span class="na">does</span> <span class="na">not</span> <span class="na">contain</span> <span class="na">underscore</span>
+                        <span class="na">output[chunks[0]] = </span><span class="s">parseInt(chunks[2]);</span>
+                    <span class="err">}</span>
+                <span class="err">}</span>
+                <span class="na">return</span> <span class="na">output</span><span class="err">;</span>
+            <span class="err">}</span>
+        <span class="err">&lt;/</span><span class="na">script</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/head&gt;</span>
     <span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">"bam_idxstats = parse_data(bam_idxstats_data);"</span><span class="nt">&gt;</span>
         ${bam_idxstats_data | h}
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-      </div>
+</code></pre></div>      </div>
     </li>
     <li>
-      <p>Retrigger the visualization and open the developers console of your browser: In the console, type: <code class="highlighter-rouge">bam_idxstats_data</code> and press [Enter]
+      <p>Retrigger the visualization and open the developers console of your browser: In the console, type: <code class="language-plaintext highlighter-rouge">bam_idxstats_data</code> and press <kbd>Enter</kbd>
   This should give the parsed contents as a dictionary, which can directly be used in Javascript.</p>
     </li>
   </ol>
@@ -564,33 +798,32 @@ functional changes to the mako files.</p>
 a simple visualization from this dictionary. Think of tables, DIVs or even more complicated
 solutions :).</p>
 
-<p>Below is an example visualization, which creates a bar plot showing the number of reads per
+<p>Below is an example visualization, which creates a bar plot showing the number of <span class="notranslate">reads</span> per
 chromosome.</p>
 
-<p><img src="../../images/vis_plugins_example.png" alt=""></p>
+<p><img src="../../images/vis_plugins_example.png" alt="Example visualization" /></p>
 
-<p>The full contents of this plugin are provided in the <a href="/tree/master/topics/dev/files/hands_on-visualizations/alignment_rname_boxplot">GitHub repository related to this material in <code class="highlighter-rouge">tree/master/topics/dev/files/hands_on-visualizations/alignment_rname_boxplot</code></a>.
-To try out this example, simply copy this folder to the <code class="highlighter-rouge">$GALAXY_ROOT/config/plugins/visualizations/</code> folder
-on your (local) Galaxy and restart Galaxy.</p>
+<p>The full contents of this plugin are provided in the <a href="https://github.com/galaxyproject/training-material/tree/master/topics/dev/files/hands_on-visualizations/alignment_rname_boxplot">GitHub repository related to this material in <code class="language-plaintext highlighter-rouge">tree/master/topics/dev/files/hands_on-visualizations/alignment_<span class="notranslate">rna</span>me_boxplot</code></a>.
+To try out this example, simply copy this folder to the <code class="language-plaintext highlighter-rouge">$<span class="notranslate">GALAXY</span>_ROOT/config/plugins/visualizations/</code> folder
+on your (local) <span class="notranslate">Galaxy</span> and restart <span class="notranslate">Galaxy</span>.</p>
 
 <p>The contents of the mako file for this example are given below.</p>
 
-<div class="language-html highlighter-rouge">
-<pre class="highlight"><code><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
-<span class="err">&lt;</span>%
-    import os
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">import</span> <span class="na">os</span>
 
-    ## Generates hash (hdadict['id']) of history item
-    hdadict = trans.security.encode_dict_ids( hda.to_dict() )
+    <span class="na">##</span> <span class="na">Generates</span> <span class="na">hash</span> <span class="err">(</span><span class="na">hdadict</span><span class="err">['</span><span class="na">id</span><span class="err">'])</span> <span class="na">of</span> <span class="na">history</span> <span class="na">item</span>
+    <span class="na">hdadict = </span><span class="s">trans.security.encode_dict_ids(</span> <span class="na">hda.to_dict</span><span class="err">()</span> <span class="err">)</span>
 
-    ## Finds the parent directory of galaxy (/, /galaxy, etc.)
-    root     = h.url_for( '/' )
+    <span class="na">##</span> <span class="na">Finds</span> <span class="na">the</span> <span class="na">parent</span> <span class="na">directory</span> <span class="na">of</span> <span class="na"><span class="notranslate">galaxy</span></span> <span class="err">(/,</span> <span class="err">/</span><span class="na"><span class="notranslate">galaxy</span></span><span class="err">,</span> <span class="na">etc.</span><span class="err">)</span>
+    <span class="na">root     = </span><span class="s">h.url_for(</span> <span class="err">'/'</span> <span class="err">)</span>
 
-    ## Determines the exposed URL of the ./static directory
-    app_root = root + 'plugins/visualizations/'+visualization_name+'/static/'
+    <span class="na">##</span> <span class="na">Determines</span> <span class="na">the</span> <span class="na">exposed</span> <span class="na">URL</span> <span class="na">of</span> <span class="na">the</span> <span class="err">./</span><span class="na">static</span> <span class="na">directory</span>
+    <span class="na">app_root = </span><span class="s">root</span> <span class="err">+</span> <span class="err">'</span><span class="na">plugins</span><span class="err">/</span><span class="na">visualizations</span><span class="err">/'+</span><span class="na">visualization_name</span><span class="err">+'/</span><span class="na">static</span><span class="err">/'</span>
 
-    ## Actual file URL:
-    file_url = os.path.join(root, 'datasets', hdadict['id'], "display?to_ext="+hda.ext)
+    <span class="na">##</span> <span class="na">Actual</span> <span class="na">file</span> <span class="na">URL:</span>
+    <span class="na">file_url = </span><span class="s">os.path.join(root,</span> <span class="err">'</span><span class="na">datasets</span><span class="err">',</span> <span class="na">hdadict</span><span class="err">['</span><span class="na">id</span><span class="err">'],</span> <span class="err">"</span><span class="na">display</span><span class="err">?</span><span class="na">to_ext=</span><span class="s">"+hda.ext)
 
     ## Ensure BAI index is symlinked
     bai_target = hda.file_name+'.bai'
@@ -602,75 +835,75 @@ on your (local) Galaxy and restart Galaxy.</p>
     import pysam
     bam_idxstats_data = pysam.idxstats(hda.file_name)
 %&gt;
-<span class="nt">&lt;html&gt;</span>
-     <span class="nt">&lt;head&gt;</span>
-        <span class="nt">&lt;title&gt;</span>${hda.name | h} | ${visualization_name | h}<span class="nt">&lt;/title&gt;</span>
+&lt;html&gt;
+     &lt;head&gt;
+        &lt;title&gt;${hda.name | h} | ${visualization_name | h}&lt;/title&gt;
 
-        <span class="nt">&lt;style&gt;</span>
-             <span class="nc">.chart</span> <span class="nt">div</span> <span class="p">{</span>
-               <span class="nl">font</span><span class="p">:</span> <span class="m">10px</span> <span class="nb">sans-serif</span><span class="p">;</span>
-               <span class="nl">background-color</span><span class="p">:</span> <span class="no">steelblue</span><span class="p">;</span>
-               <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
-               <span class="nl">padding</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
-               <span class="nl">margin</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
-               <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
-             <span class="p">}</span>
-        <span class="nt">&lt;/style&gt;</span>
-        <span class="nt">&lt;script&gt;</span>
-            <span class="nx">bam_idxstats_data</span> <span class="o">=</span> <span class="nx">$</span><span class="p">{</span><span class="nx">bam_idxstats_data</span><span class="p">};</span>
-            <span class="kd">function</span> <span class="nx">parse_data</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-                 <span class="cm">/*
+        &lt;style&gt;
+             .chart div {
+               font: 10px sans-serif;
+               background-color: steelblue;
+               text-align: right;
+               padding: 3px;
+               margin: 1px;
+               color: white;
+             }
+        &lt;/style&gt;
+        &lt;script&gt;
+            bam_idxstats_data = ${bam_idxstats_data};
+            function parse_data(data) {
+                 /*
                   Data comes in as tuple of unsplit lines:
-                  ["chr1\t1000\t0\t0", "chr2\t2500\t0\t0"]
+                  ["</span><span class="na">chr1</span><span class="err">\</span><span class="na">t1000</span><span class="err">\</span><span class="na">t0</span><span class="err">\</span><span class="na">t0</span><span class="err">",</span> <span class="err">"</span><span class="na">chr2</span><span class="err">\</span><span class="na">t2500</span><span class="err">\</span><span class="na">t0</span><span class="err">\</span><span class="na">t0</span><span class="err">"]</span>
 
-                  We need to split it up, and ideally only keep reference names without an underscore
-                 */</span>
-                 <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="p">{};</span>
+                  <span class="na">We</span> <span class="na">need</span> <span class="na">to</span> <span class="na">split</span> <span class="na">it</span> <span class="na">up</span><span class="err">,</span> <span class="na">and</span> <span class="na">ideally</span> <span class="na">only</span> <span class="na">keep</span> <span class="na">reference</span> <span class="na">names</span> <span class="na">without</span> <span class="na">an</span> <span class="na">underscore</span>
+                 <span class="na">*</span><span class="err">/</span>
+                 <span class="na">var</span> <span class="na">output = </span><span class="s">{};</span>
 
-                 <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span> <span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-                     <span class="kd">var</span> <span class="nx">line</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-                     <span class="kd">var</span> <span class="nx">chunks</span> <span class="o">=</span> <span class="nx">line</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"\t"</span><span class="p">);</span>
+                 <span class="na">for</span><span class="err">(</span><span class="na">var</span> <span class="na">i = </span><span class="s">0;</span> <span class="na">i</span> <span class="err">&lt;</span> <span class="na">data.length</span> <span class="err">;</span> <span class="na">i</span><span class="err">++)</span> <span class="err">{</span>
+                     <span class="na">var</span> <span class="na">line = </span><span class="s">data[i];</span>
+                     <span class="na">var</span> <span class="na">chunks = </span><span class="s">line.split("\t");</span>
 
-                     <span class="k">if</span><span class="p">(</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">"_"</span><span class="p">).</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// only if it does not contain underscore</span>
-                         <span class="nx">output</span><span class="p">[</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
-                     <span class="p">}</span>
-                 <span class="p">}</span>
+                     <span class="na">if</span><span class="err">(</span><span class="na">chunks</span><span class="err">[0].</span><span class="na">split</span><span class="err">("</span><span class="na">_</span><span class="err">"</span><span class="na">).length =</span><span class="s">=</span> <span class="err">1)</span> <span class="err">{</span> <span class="err">//</span> <span class="na">only</span> <span class="na">if</span> <span class="na">it</span> <span class="na">does</span> <span class="na">not</span> <span class="na">contain</span> <span class="na">underscore</span>
+                         <span class="na">output[chunks[0]] = </span><span class="s">parseInt(chunks[2]);</span>
+                     <span class="err">}</span>
+                 <span class="err">}</span>
 
-                 <span class="k">return</span> <span class="nx">output</span><span class="p">;</span>
-            <span class="p">}</span>
+                 <span class="na">return</span> <span class="na">output</span><span class="err">;</span>
+            <span class="err">}</span>
 
-            <span class="kd">function</span> <span class="nx">calc_stats</span><span class="p">(</span><span class="nx">parsed</span><span class="p">)</span> <span class="p">{</span>
-                <span class="nx">max</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-                <span class="nx">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-                <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">parsed</span><span class="p">)</span> <span class="p">{</span>
-                    <span class="k">if</span> <span class="p">(</span><span class="nx">parsed</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">max</span><span class="p">){</span>
-                        <span class="nx">max</span> <span class="o">=</span> <span class="nx">parsed</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
-                    <span class="p">}</span>
-                    <span class="nx">sum</span> <span class="o">+=</span> <span class="nx">parsed</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span>
-                <span class="p">}</span>
-                <span class="k">return</span> <span class="p">[</span><span class="nx">max</span><span class="p">,</span> <span class="nx">sum</span><span class="p">];</span>
-            <span class="p">}</span>
+            <span class="na">function</span> <span class="na">calc_stats</span><span class="err">(</span><span class="na">parsed</span><span class="err">)</span> <span class="err">{</span>
+                <span class="na">max = </span><span class="s">0;</span>
+                <span class="na">sum = </span><span class="s">0;</span>
+                <span class="na">for</span> <span class="err">(</span><span class="na">var</span> <span class="na">key</span> <span class="na">in</span> <span class="na">parsed</span><span class="err">)</span> <span class="err">{</span>
+                    <span class="na">if</span> <span class="err">(</span><span class="na">parsed</span><span class="err">[</span><span class="na">key</span><span class="err">]</span> <span class="nt">&gt;</span> max){
+                        max = parsed[key];
+                    }
+                    sum += parsed[key]
+                }
+                return [max, sum];
+            }
 
-            <span class="kd">function</span> <span class="nx">plot_data</span><span class="p">(</span><span class="nx">parsed</span><span class="p">)</span> <span class="p">{</span>
-                <span class="kd">var</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">calc_stats</span><span class="p">(</span><span class="nx">parsed</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
-                <span class="kd">var</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">calc_stats</span><span class="p">(</span><span class="nx">parsed</span><span class="p">)[</span><span class="mi">1</span><span class="p">];</span>
+            function plot_data(parsed) {
+                var max = calc_stats(parsed)[0];
+                var sum = calc_stats(parsed)[1];
 
-                <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">parsed</span><span class="p">)</span> <span class="p">{</span>
-                     <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">parsed</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
-                     <span class="kd">var</span> <span class="nx">ratio</span> <span class="o">=</span> <span class="mf">100.0</span> <span class="o">*</span> <span class="nx">value</span> <span class="o">/</span> <span class="nx">sum</span><span class="p">;</span>
-                     <span class="kd">var</span> <span class="nx">ratio2</span> <span class="o">=</span> <span class="mf">100.0</span> <span class="o">*</span> <span class="nx">value</span> <span class="o">/</span> <span class="nx">max</span><span class="p">;</span>
+                for (var key in parsed) {
+                     var value = parsed[key];
+                     var ratio = 100.0 * value / sum;
+                     var ratio2 = 100.0 * value / max;
 
-                     <span class="kd">var</span> <span class="nx">div</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"div"</span><span class="p">);</span>
-                     <span class="nx">div</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">'&lt;nobr&gt;'</span><span class="o">+</span><span class="nx">key</span><span class="o">+</span><span class="s1">'&lt;/nobr&gt;'</span><span class="p">;</span>
-                     <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"chart_names"</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">div</span><span class="p">);</span>
+                     var div = document.createElement("div");
+                     div.innerHTML = '<span class="nt">&lt;nobr&gt;</span>'+key+'<span class="nt">&lt;/nobr&gt;</span>';
+                     document.getElementById("chart_names").appendChild(div);
 
-                     <span class="kd">var</span> <span class="nx">div</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"div"</span><span class="p">);</span>
-                     <span class="nx">div</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">'&lt;nobr&gt;'</span><span class="o">+</span><span class="nx">value</span><span class="o">+</span><span class="s2">" ("</span><span class="o">+</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">ratio</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span><span class="o">+</span><span class="s2">"%)&lt;/nobr&gt;"</span><span class="p">;</span>
-                     <span class="nx">div</span><span class="p">.</span><span class="nx">title</span> <span class="o">=</span> <span class="nx">key</span><span class="o">+</span><span class="s1">': '</span><span class="o">+</span><span class="nx">value</span><span class="o">+</span><span class="s2">" ("</span><span class="o">+</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">ratio</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span><span class="o">+</span><span class="s2">"%)"</span><span class="p">;</span>
-                     <span class="nx">div</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span>  <span class="nx">ratio2</span><span class="o">+</span><span class="s1">'%'</span><span class="p">;</span>
-                     <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"chart"</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">div</span><span class="p">);</span>
-                <span class="p">}</span>
-            <span class="p">}</span>
+                     var div = document.createElement("div");
+                     div.innerHTML = '<span class="nt">&lt;nobr&gt;</span>'+value+" ("+Math.round(ratio*100)/100+"%)<span class="nt">&lt;/nobr&gt;</span>";
+                     div.title = key+': '+value+" ("+Math.round(ratio*100)/100+"%)";
+                     div.style.width =  ratio2+'%';
+                     document.getElementById("chart").appendChild(div);
+                }
+            }
         <span class="nt">&lt;/script&gt;</span>
      <span class="nt">&lt;/head&gt;</span>
      <span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">"plot_data(parse_data(bam_idxstats_data));"</span><span class="nt">&gt;</span>
@@ -691,22 +924,20 @@ on your (local) Galaxy and restart Galaxy.</p>
      <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<p>In the given example, the <code class="highlighter-rouge">RNAME</code> queries containing an underscore were removed.
-This is because there are many alternative chromosomes, making the list very large
+<p>In the given example, the <code class="language-plaintext highlighter-rouge"><span class="notranslate">RNA</span>ME</code> queries containing an underscore were removed.
+This is because there are many alte<span class="notranslate">rna</span>tive chromosomes, making the list very large
 for certain reference genomes. However, for certain studies it might be desired to
 just look at those.</p>
 
 <p>The current plot is a box plot, but one can imagine a pie-chart may be convenient too.
 All of those additional settings can be implemented for interactive behaviour,
 contributing to quicker understanding of the data which is generally not so convenient
-using static Galaxy tools.</p>
+using static <span class="notranslate">Galaxy</span> tools.</p>
 
-<blockquote class="tip">
-  <h3 id="bulb-tip-static-files">
-<img class="emoji" title=":bulb:" alt=":bulb:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" height="20" width="20" align="absmiddle"> Tip: Static files</h3>
+<blockquote class="comment">
+  <h3 id="comment-static-files"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Static files</h3>
 
   <p>In the example we included Javascript and CSS into the HTML website.
 Remember that for every new invocation of the visualization the entire CSS en JS are copied
@@ -723,9 +954,9 @@ this delay becomes. The underlying problem is that we did not obtain and parse t
 Javascript. This would be a more elaborate solution, but requires more development time as we
 need to develop a function able to parse the binary file.</p>
 
-<p>Another thing we could do is create a static <code class="highlighter-rouge">samtools idxstats</code> tool, that creates a file of
-datatype <code class="highlighter-rouge">tabular.Idxstats</code> and include that datatype into Galaxy. We then make the visualization
-specific for that datatype, just plotting the results of the <code class="highlighter-rouge">idxstats</code>.</p>
+<p>Another thing we could do is create a static <code class="language-plaintext highlighter-rouge">samtools idxstats</code> tool, that creates a file of
+datatype <code class="language-plaintext highlighter-rouge">tabular.Idxstats</code> and include that datatype into <span class="notranslate">Galaxy</span>. We then make the visualization
+specific for that datatype, just plotting the results of the <code class="language-plaintext highlighter-rouge">idxstats</code>.</p>
 
 <p>A fundamental and more complicated problem is that BAM files are simply too big to transfer for
 these kind of applications. It would be ideal to have web server integration that allows querying
@@ -739,49 +970,182 @@ care of at the server side. This is what has been done in Trackster.</p>
 
 <h1 class="no_toc" id="conclusion">Conclusion</h1>
 
-<p>We have just created a visualization plugin in Galaxy to visualize the number of alignments
-per <code class="highlighter-rouge">RNAME</code> (chromosome) in a BAM file.</p>
+<p>We have just created a visualization plugin in <span class="notranslate">Galaxy</span> to visualize the number of alignments
+per <code class="language-plaintext highlighter-rouge"><span class="notranslate">RNA</span>ME</code> (chromosome) in a BAM file.</p>
 
 
-    
-    <blockquote class="key_points">
-        <h3> <img class="emoji" title=":grey_exclamation:" alt=":grey_exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2755.png" height="20" width="20" align="absmiddle"> Key points</h3>
+                    
+                    <blockquote class="key_points">
+                        <h3><i class="fas fa-key" aria-hidden="true"></i><span class="visually-hidden">keypoints</span> Key points</h3>
+                        <ul>
+                            
+                            <li><p>Visualizations require a different way of thinking: server and client side; downloading files rather than system level access</p>
+</li>
+                            
+                            <li><p>Interactivity is what makes visualizations different from static tools</p>
+</li>
+                            
+                            <li><p>Requires understanding of both the Galaxy ecosystem as well as HTML5/JS</p>
+</li>
+                            
+                            <li><p>Performance is more important than for static Galaxy tools</p>
+</li>
+                            
+                        </ul>
+                    </blockquote>
+                    
 
-        <ul>
-        
-           <li>Visualizations require a different way of thinking: server and client side; downloading files rather than system level access</li>
-        
-           <li>Interactivity is what makes visualizations different from static tools</li>
-        
-           <li>Requires understanding of both the Galaxy ecosystem as well as HTML5/JS</li>
-        
-           <li>Performance is more important than for static Galaxy tools</li>
-        
-        </ul>
-    </blockquote>
-    
+                    
 
-    
+                    
 
-    <h3>
-<img class="emoji" title=":clap:" alt=":clap:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44f.png" height="20" width="20" align="absmiddle"> Congratulations on successfully completing this tutorial!</h3>
+                    <h1>Feedback</h1>
+                    <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+
+                    <div id="feedback-button">
+                        <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
+                    </div>
+                    <div id="feedback-form">
+                    </div>
+                    <script type="text/javascript">
+                        (function (window, document) {
+                            function onDocumentReady(fn) {
+                                if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                                    fn();
+                                } else {
+                                    document.addEventListener('DOMContentLoaded', fn);
+                                }
+                            }
+
+                            onDocumentReady(function () {
+                                $("#feedback-button").click(function(evt){
+                                    var e = $(evt.target)
+                                    e.hide();
+
+                                    $("#feedback-form").html(`
+                                        <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Visualizations: generic plugins (Development in Galaxy)">Loading...</iframe>
+                                    `)
+                                })
+                            });
+                        })(window, document);
+                    </script>
 
 
-    <hr>
-    <blockquote class="overview">
-        <h3> <img class="emoji" title=":speech_balloon:" alt=":speech_balloon:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4ac.png" height="20" width="20" align="absmiddle"> Feedback</h3>
-        Please take a moment and provide your feedback on this tutorial. Your feedback will help guide and improve future revisions to this tutorial. <a href="https://tinyurl.com/GTNfeedback" target="_blank">Feedback Form</a>
-    </blockquote>
 
-    <i>This material is the result of a collaborative work. Thanks the <a href="https://wiki.galaxyproject.org/Teach/GTN">Galaxy Training Network</a> and all the contributors
-    
-    !<br>
-    <br>
-    Found a typo? Something is wrong in this tutorial? Edit it on <a href="https://github.com/galaxyproject/training-material/tree/master/topics/dev/tutorials/visualization-generic/tutorial.md">GitHub</a>.</i>
-</section>
+                    <h1>Citing this Tutorial</h1>
+                    <p>
+                        <ol>
+                            <li id="citation-text">Saskia Hiltemann, Youri Hoogstrate, 2020 <b>Visualizations: generic plugins (Galaxy Training Materials)</b>. <a href="/training-material/topics/dev/tutorials/visualization-generic/tutorial.html">/training-material/topics/dev/tutorials/visualization-generic/tutorial.html</a> Online; accessed TODAY
+                            </li>
+                            <li>
+                            Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
+                            </li>
+                        </ol>
+                    </p>
 
+
+                    <blockquote class="details">
+                      <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
+                      <p style="display: none;">
+
+                    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code id="citation-code">@misc{dev-visualization-generic,
+    author = "Saskia Hiltemann and Youri Hoogstrate",
+    title = "Visualizations: generic plugins (Galaxy Training Materials)",
+    year = "2020",
+    month = "01",
+    day = "13"
+    url = "\url{/training-material/topics/dev/tutorials/visualization-generic/tutorial.html}",
+    note = "[Online; accessed TODAY]"
+}
+@article{Batut_2018,
+        doi = {10.1016/j.cels.2018.05.012},
+        url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
+        year = 2018,
+        month = {jun},
+        publisher = {Elsevier {BV}},
+        volume = {6},
+        number = {6},
+        pages = {752--758.e1},
+        author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
+        title = {Community-Driven Data Analysis Training for Biology},
+        journal = {Cell Systems}
+}</code>
+                    </pre></div></div>
+                    </p>
+                    </blockquote>
+
+
+<script type="text/javascript">
+// update the date on load, or leave fallback of 'today'
+d = new Date();
+document.getElementById("citation-code").innerHTML = document.getElementById("citation-code").innerHTML.replace("TODAY", d.toDateString());
+document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
+</script>
+
+                </div>
+            </div>
         </div>
+
+        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+        
+
+        
+    </section>
+</div>
+
+
+<footer>
+    <div class="container">
+        <p>
+            This material is the result of a collaborative work. Thanks to the
+            <a href="https://wiki.galaxyproject.org/Teach/GTN">Galaxy Training Network</a>
+            and all the <a href="/training-material/hall-of-fame">contributors</a> (Saskia Hiltemann, Youri Hoogstrate)!
+        </p>
+        <p>
+            Found a typo? Something is wrong in this tutorial? Edit it on
+            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/dev/tutorials/visualization-generic/tutorial.md">GitHub</a>.
+        </p>
+        <p>
+    The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</p>
+    </div>
+</footer>
+
     </body>
-    <script type="text/javascript" src="https://galaxyproject.github.io/training-material//assets/js/details-element-polyfill.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+    <script type="text/javascript">
+    var snippets=document.querySelectorAll('div.highlight');
+    [].forEach.call(snippets,function(snippet){
+        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+    });
+
+    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+        target:function(trigger){return trigger.nextElementSibling;
+    }});
+    </script>
+    
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
 </html>

@@ -1,106 +1,375 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Galaxy Training!</title>
-        <link media="all" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://galaxyproject.github.io/training-material//assets/css/main.css">
-        <link rel="stylesheet" href="https://galaxyproject.github.io/training-material//assets/css/font-awesome.css">
-        <link rel="stylesheet" href="https://galaxyproject.github.io/training-material//assets/css/syntax_highlighting.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>IGV Introduction</title>
+        
+            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+        
+        <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
+        <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
+        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
+        <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
+        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
+        <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+
+        
+        
+        
+        
+        
+        <meta name="description" content="Galaxy is a scientific workflow, data integration, and da..." />
+        <meta property="og:title" content="Galaxy Training: IGV Introduction" />
+        <meta property="og:description" content="Galaxy is a scientific workflow, data integration, and da..." />
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <header>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                Galaxy Training!
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <a id="site-title" class="navbar-brand" href="https://wiki.galaxyproject.org/Teach/GTN">
-              <img class="pull-left img-responsive" src="https://galaxyproject.github.io/training-material///assets/images/GTN.png">
-            </a>
-            <a id="site-title" class="navbar-brand name-holder" href="https://galaxyproject.github.io/training-material//topics/introduction/tutorials/igv-introduction/tutorial.html">
-              IGV Introduction
-            </a>
-          </div>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/training-material/topics/introduction" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">topic</span> Introduction to Galaxy Analyses
+                        </a>
+                    </li>
 
-          <div class="collapse navbar-collapse" id="navbar">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
+                        </a>
+                        <div class="dropdown-menu">
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Figv-introduction%2Ftutorial.html&edit-text=&act=url" title="">
+                                Français
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Figv-introduction%2Ftutorial.html&edit-text=&act=url" title="">
+                                日本語
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Figv-introduction%2Ftutorial.html&edit-text=&act=url" title="">
+                                Español
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Figv-introduction%2Ftutorial.html&edit-text=&act=url" title="">
+                                Português
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Figv-introduction%2Ftutorial.html&edit-text=&act=url" title="">
+                                العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Figv-introduction%2Ftutorial.html&edit-text=&act=url" title="">
+                                And more!
+                            </a>
+                        </div>
+                    </li>
 
-            <ul id="main-menu" class="nav navbar-nav navbar-right">
-              <li><a href="https://galaxyproject.github.io/training-material/" title="Back to front page"><i class="fa fa-home"></i> Home</a></li>
-              <li><a href="https://galaxyproject.github.io/training-material//topics/introduction" title="Go back to list of tutorials"><i class="fa fa-file-text-o"></i> Galaxy Introduction</a></li>
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
 
-              
-                <li><a href="https://galaxyproject.github.io/training-material//topics/introduction/slides" title="Slides for this tutorial"><i class="fa fa-graduation-cap"></i> Introduction slides</a></li>
-              
-              <!--<li><a href="https://galaxyproject.github.io/training-material//introduction/slides/igv-introduction/"><i class="fa fa-file-powerpoint-o"></i> Associated slides</a></li>-->
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
+            FAQ
+        </a>
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            Discuss on Galaxy Help
+        </a>
 
-              
-                <li><a href="https://github.com/galaxyproject/training-material/tree/master/topics/introduction/docker" title="Docker image for this tutorial"><i class="fa fa-ship"></i> Docker image</a></li>
-              
+        <div class="dropdown-item">
+            <div>
+                Theme
+            </div>
 
-              
+            <div id="theme-selector" data-toggle="buttons">
+                <label data-value="default" class="btn btn-secondary">
+                    <input type="radio" name="options" id="default" autocomplete="off"> Default
+                </label>
+                <label data-value="night" class="btn btn-secondary">
+                    <input type="radio" name="options" id="night" autocomplete="off"> Night
+                </label>
+                <label data-value="midnight" class="btn btn-secondary">
+                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
+                </label>
+                <label data-value="rainbow" class="btn btn-secondary">
+                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
+                </label>
+                <label data-value="halloween" class="btn btn-secondary">
+                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
+                </label>
+                <label data-value="straya" class="btn btn-secondary">
+                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
+                </label>
+            </div>
 
-              
-                <li><a href="url%20to%20Zenodo%20with%20input%20data" title="Links to data"><i class="fa fa-folder-open"></i> Input Dataset</a></li>
-              
+        </div>
+    </div>
+</li>
 
-              
-                <li><a href="https://galaxyproject.github.io/training-material//topics/introduction#references" title="References"><i class="fa fa-book"></i> Literature</a></li>
-              
 
-            </ul>
-          </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/introduction/tutorials/igv-introduction/tutorial.md">
+                            <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
 
-<section class="tutorial">
-    <h1>IGV Introduction</h1>
-
-    <blockquote class="overview">
-        <h3>Overview</h3>
-
-        <p class="bold"> <img class="emoji" title=":grey_question:" alt=":grey_question:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2754.png" height="20" width="20" align="absmiddle"> Questions</p>
-        <ul>
-        
-          <li>First question addressed during the tutorial</li>
-        
-          <li>Second question addressed during the tutorial</li>
-        
-        </ul>
-
-        <p class="bold"> <img class="emoji" title=":dart:" alt=":dart:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f3af.png" height="20" width="20" align="absmiddle"> Objectives</p>
-        <ul>
-        
-          <li>First learning objectives of the tutorial</li>
-        
-          <li>Second learning objectives of the tutorial</li>
-        
-        </ul>
-
+<div class="container main-content">
+    <script type="application/ld+json">
         
 
-        <p><span class="bold"> <img class="emoji" title=":hourglass:" alt=":hourglass:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/231b.png" height="20" width="20" align="absmiddle"> Time estimation:</span> 1h/1d</p>
 
-    </blockquote>
+{
+  "@context": "http://schema.org",
+  "@type": "Course",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "students"
+  },
+  "citation": {
+    "@type": "CreativeWork",
+    "name": "Community-Driven Data Analysis Training for Biology",
+    "url": "https://doi.org/10.1016/j.cels.2018.05.012"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
+  "headline": "IGV Introduction",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
+  "interactivityType": "mixed",
+  "isAccessibleForFree": true,
+  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "producer": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "provider": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "sourceOrganization": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Introduction to Galaxy Analyses",
+    "description": "Galaxy is a scientific workflow, data integration, and data and analysis persistence and publishing platform that aims to make computational biology accessible to research scientists that do not have computer programming experience. ",
+    "url": "https://training.galaxyproject.org//training-material/topics/introduction/"
+  },
+  "courseCode": "introduction / igv-introduction / hands-on",
+  "learningResourceType": "hands-on tutorial",
+  "name": "Hands-on for 'IGV Introduction' tutorial",
+  "url": "https://training.galaxyproject.org//training-material/topics/introduction/tutorials/igv-introduction/tutorial.html",
+  "timeRequired": "PT2H",
+  "description": "",
+  "hasPart": [
 
-<h1 id="using-the-integrative-genomics-viewer">Using the Integrative Genomics Viewer</h1>
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Anton Nekrutenko"
+    },
+    {
+      "@type": "Person",
+      "name": "Joachim Wolff"
+    },
+    {
+      "@type": "Person",
+      "name": "Anne Pajon"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "name": "Anton Nekrutenko"
+    },
+    {
+      "@type": "Person",
+      "name": "Joachim Wolff"
+    },
+    {
+      "@type": "Person",
+      "name": "Anne Pajon"
+    }
+  ],
+  "about": [
+    {
+      "@type": "CreativeWork",
+      "name": "Introduction to Galaxy Analyses",
+      "description": "Galaxy is a scientific workflow, data integration, and data and analysis persistence and publishing platform that aims to make computational biology accessible to research scientists that do not have computer programming experience. ",
+      "url": "https://training.galaxyproject.org//training-material/topics/introduction/"
+    }
+  ]
+}
+    </script>
 
-<p><strong>Bioinformatics Galaxy Course</strong></p>
+    <section class="tutorial">
+        <h1 data-toc-skip>IGV Introduction</h1>
+        
+
+        <div class="contributors-line">By: 
+
+ <a href="/training-material/hall-of-fame/nekrut/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/nekrut" alt="Anton Nekrutenko">Anton Nekrutenko</a> <a href="/training-material/hall-of-fame/joachimwolff/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/joachimwolff" alt="Joachim Wolff">Joachim Wolff</a> <a href="/training-material/hall-of-fame/pajanne/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/pajanne" alt="Anne Pajon">Anne Pajon</a>
+
+</div>
+
+        <blockquote class="overview">
+            <h3>Overview</h3>
+            <strong><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</strong>
+            <ul>
+            
+            </ul>
+
+            <strong><i class="fas fa-bullseye" aria-hidden="true"></i><span class="visually-hidden">objectives</span> Objectives</strong>
+            <ul>
+            
+            </ul>
+
+            
+
+            
+            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 2 hours</p>
+            
+
+            
+
+            
+            
+
+            
+            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <ul>
+                <div class="supporting_material">
+                
+                    <li class="btn btn-default supporting_material"><a href="/training-material/topics/introduction/slides/introduction.html" title="Topic Overview slides">
+                        <i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> Topic Overview slides
+                    </a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                    <li class="btn btn-default supporting_material">
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies
+    </a>
+    <ul class="dropdown-menu">
+    
+        <li>
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/introduction/docker" title="Docker image for this tutorial">
+                <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
+            </a>
+        </li>
+    
+    
+    </ul>
+
+
+</li>
+                
+                </div>
+            </ul>
+            
+
+            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Feb 20, 2019 </p>
+        </blockquote>
+
+        <div class="container">
+            <div class="row">
+                <!-- sidebar, which will move to the top on a small screen -->
+                <div class="col-sm-2">
+                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                </div>
+                <div class="col-sm-10">
+                    <h1 id="using-the-integrative-genomics-viewer">Using the Integrative Genomics Viewer</h1>
+
+<p><strong>Bioinformatics <span class="notranslate">Galaxy</span> Course</strong></p>
 
 <p><strong>MPI-IE &amp; University of Freiburg</strong></p>
 
@@ -110,45 +379,45 @@
 
 <h2 id="main-window">Main Window</h2>
 
-<p><img src="https://www.broadinstitute.org/software/igv/sites/cancerinformatics.org.igv/files/images/igv_desktop_callouts.jpg" alt="MainWindowIGV"></p>
+<p><img src="https://www.broadinstitute.org/software/igv/sites/cancerinformatics.org.igv/files/images/igv_desktop_callouts.jpg" alt="MainWindowIGV" /></p>
 
-<p><strong>Tool bar</strong> <img src="../../images/callout_1.jpg" alt="callout_1.jpg"></p>
+<p><strong>Tool bar</strong> <img src="../../images/callout_1.jpg" alt="callout_1.jpg" /></p>
 
 <ul>
   <li>The <a href="https://www.broadinstitute.org/software/igv/?q=ToolBar">tool bar</a> provides access to commonly used functions. The <a href="https://www.broadinstitute.org/software/igv/?q=MenuBar">menu bar</a> and <a href="http://www.broadinstitute.org/software/igv/?q=PopupMenus">pop-up menus</a> (not shown) provide access to all other functions.</li>
 </ul>
 
-<p><strong>Chromosome</strong> <img src="../../images/callout_2.jpg" alt="callout_2.jpg"></p>
+<p><strong>Chromosome</strong> <img src="../../images/callout_2.jpg" alt="callout_2.jpg" /></p>
 
 <ul>
   <li>The red box on the chromosome ideogram indicates which portion of the chromosome is displayed. When zoomed out to display the full chromosome, the red box disappears from the ideogram.</li>
 </ul>
 
-<p><strong>Ruler</strong> <img src="../../images/callout_3.jpg" alt="callout_3.jpg"></p>
+<p><strong>Ruler</strong> <img src="../../images/callout_3.jpg" alt="callout_3.jpg" /></p>
 
 <ul>
   <li>The ruler reflects the visible portion of the chromosome. The tick marks indicate chromosome locations. The span lists the number of bases currently displayed.</li>
 </ul>
 
-<p><strong>Tracks</strong> <img src="../../images/callout_4.jpg" alt="callout_4.jpg"></p>
+<p><strong>Tracks</strong> <img src="../../images/callout_4.jpg" alt="callout_4.jpg" /></p>
 
 <ul>
-  <li>IGV displays data in horizontal rows called tracks. Typically, each track represents one sample or experiment. This example shows methylation, gene expression, copy number and mutation data.</li>
+  <li>IGV displays data in horizontal rows called tracks. Typically, each track represents one sample or experiment. This example shows methylation, gene <span class="notranslate">expression</span>, copy number and mutation data.</li>
 </ul>
 
-<p><strong>Features</strong> <img src="../../images/callout_5.jpg" alt="callout_5.jpg"></p>
+<p><strong>Features</strong> <img src="../../images/callout_5.jpg" alt="callout_5.jpg" /></p>
 
 <ul>
   <li>IGV also displays features, such as genes, in tracks. By default, IGV displays data in one panel and features in another, as shown here. Drag-and-drop a track name to move a track from one panel to another. Combine data and feature panels by selecting that option on the General tab of the <a href="https://www.broadinstitute.org/software/igv/?q=Preferences">Preferences window</a>.</li>
 </ul>
 
-<p><strong>Track names</strong> <img src="../../images/callout_6.jpg" alt="callout_6.jpg"></p>
+<p><strong>Track names</strong> <img src="../../images/callout_6.jpg" alt="callout_6.jpg" /></p>
 
 <ul>
   <li>Track names are listed in the far left panel. Legibility of the names depends on the height of the tracks; i.e., the smaller the track the less legible the name.</li>
 </ul>
 
-<p><strong>Attributes</strong> <img src="../../images/callout_7.jpg" alt="callout_7.jpg"></p>
+<p><strong>Attributes</strong> <img src="../../images/callout_7.jpg" alt="callout_7.jpg" /></p>
 
 <ul>
   <li>Attribute names are listed at the top of the attribute panel. Colored blocks represent attribute values, where each unique value is assigned a unique color. Hover over a colored block to see the attribute value. Click an attribute name to sort tracks based on that attribute value.</li>
@@ -270,10 +539,10 @@
     <p>Gene Lists - Opens the gene lists window.</p>
   </li>
   <li>
-    <p>Export Regions - Saves currently defined regions of interest to a BED file. If no regions of interest are defined, no BED file is created.</p>
+    <p>Export Regions - Saves currently defined regions of interest to a <span class="notranslate">BED</span> file. If no regions of interest are defined, no <span class="notranslate">BED</span> file is created.</p>
   </li>
   <li>
-    <p>Import Regions - Imports regions of interest from a BED file.</p>
+    <p>Import Regions - Imports regions of interest from a <span class="notranslate">BED</span> file.</p>
   </li>
 </ul>
 
@@ -293,7 +562,7 @@
     <p>Gitools Heatmaps - Data and results are represented as browsable heatmaps. Data can be exported from IGV in gitools format, or loaded directly into a running gitools session. See http://www.gitools.org for details.</p>
   </li>
   <li>
-    <p>BEDTools - A fast, flexible suite of tools used to compare sets of genomic features. IGV uses BEDTools to compare features in loaded tracks, and view the results as a new track. See more details under <a href="https://www.broadinstitute.org/software/igv/third_party_tools#_blank">Third Party Tools Integration</a>.</p>
+    <p><span class="notranslate">BED</span>Tools - A fast, flexible suite of tools used to compare sets of genomic features. IGV uses <span class="notranslate">BED</span>Tools to compare features in loaded tracks, and view the results as a new track.</p>
   </li>
 </ul>
 
@@ -336,62 +605,62 @@
 
 <h2 id="tool-bar">Tool Bar</h2>
 
-<p><strong>Genome drop-down box</strong> <img src="../../images/icon_genome_dropdown.jpg" alt="icon_genome_dropdown"></p>
+<p><strong>Genome drop-down box</strong> <img src="../../images/icon_genome_dropdown.jpg" alt="icon_genome_dropdown" /></p>
 
 <ul>
   <li>Loads a genome.</li>
 </ul>
 
-<p><strong>Chromosome drop-down box</strong> <img src="../../images/igv_chromdrop.jpg" alt="igv_chromdrop"></p>
+<p><strong>Chromosome drop-down box</strong> <img src="../../images/igv_chromdrop.jpg" alt="igv_chromdrop" /></p>
 
 <ul>
   <li>Zooms to a chromosome.</li>
 </ul>
 
-<p><strong>Search box</strong> <img src="../../images/searchbox.jpg" alt="searchbox"></p>
+<p><strong>Search box</strong> <img src="../../images/searchbox.jpg" alt="searchbox" /></p>
 
 <ul>
   <li>Displays the chromosome location being shown.
 To scroll to a different location, enter the gene name, locus, or track name and click Go.</li>
 </ul>
 
-<p><strong>Whole genome view</strong> <img src="../../images/icon_genome.jpg" alt="icon_genome"></p>
+<p><strong>Whole genome view</strong> <img src="../../images/icon_genome.jpg" alt="icon_genome" /></p>
 
 <ul>
   <li>Zooms to whole genome view.</li>
 </ul>
 
-<p><img src="../../images/icon_backforward.jpg" alt="icon_backforward"></p>
+<p><img src="../../images/icon_backforward.jpg" alt="icon_backforward" /></p>
 
 <ul>
   <li>Moves backward and forward through views of the genome like the back and forward buttons in a web browser.</li>
 </ul>
 
-<p><strong>Refresh</strong> <img src="../../images/icon_refresh.jpg" alt="icon_refresh"></p>
+<p><strong>Refresh</strong> <img src="../../images/icon_refresh.jpg" alt="icon_refresh" /></p>
 
 <ul>
   <li>Refreshes the display.</li>
 </ul>
 
-<p><strong>Define a region</strong> <img src="../../images/icon_region_of_interest.jpg" alt="icon_region_of_interest"></p>
+<p><strong>Define a region</strong> <img src="../../images/icon_region_of_interest.jpg" alt="icon_region_of_interest" /></p>
 
 <ul>
   <li>Defines a region of interest on the chromosome.</li>
 </ul>
 
-<p><img src="../../images/icon_squish.jpg" alt="icon_squish"></p>
+<p><img src="../../images/icon_squish.jpg" alt="icon_squish" /></p>
 
 <ul>
   <li>Reduces the row height on all tracks to fit all data for the region in view into the window; will also expand tracks (to their maximum preferred size) to fill the view, if needed.</li>
 </ul>
 
-<p><img src="../../images/icon_popuponoff.jpg" alt="icon_popuponoff"></p>
+<p><img src="../../images/icon_popuponoff.jpg" alt="icon_popuponoff" /></p>
 
 <ul>
   <li>Toggles the pop-up information windows in IGV on or off.</li>
 </ul>
 
-<p><strong>Zoom slider</strong> <img src="../../images/icon_zoom.jpg" alt="icon_zoom"></p>
+<p><strong>Zoom slider</strong> <img src="../../images/icon_zoom.jpg" alt="icon_zoom" /></p>
 
 <ul>
   <li>Zooms in and out on a chromosome.</li>
@@ -417,7 +686,7 @@ To scroll to a different location, enter the gene name, locus, or track name and
 
 <h2 id="using-igv-examples">Using IGV: Examples</h2>
 
-<h3 id="looking-at-encode-rna-seq-data">LOOKING AT ENCODE RNA-SEQ DATA</h3>
+<h3 id="looking-at-encode-rna-seq-data">LOOKING AT ENCODE <span class="notranslate">RNA</span>-SEQ DATA</h3>
 
 <ul>
   <li>
@@ -427,28 +696,28 @@ To scroll to a different location, enter the gene name, locus, or track name and
     <p>Load the human genome :  In the toolbar, Click Genome &gt; Load Genome from Server &gt; Search and select Human (hg19)</p>
   </li>
   <li>
-    <p>Load the encode RNA-Seq BAM files: Go to File &gt; Load from ENCODE &gt; Select C2C12 RNA-Seq BAM files (See image in the Pdf)</p>
+    <p>Load the encode <span class="notranslate">RNA</span>-Seq BAM files: Go to File &gt; Load from ENCODE &gt; Select C2C12 <span class="notranslate">RNA</span>-Seq BAM files (See image in the Pdf)</p>
   </li>
 </ul>
 
-<p><img src="../../images/load_encode_RNA-seq_BAM.png" alt="load_encode_RNA-seq_BAM"></p>
+<p><img src="../../images/load_encode_RNA-seq_BAM.png" alt="load_encode_RNA-seq_BAM" /></p>
 
 <ul>
   <li>
-    <p>Go to your favorite location in the genome by entering the location in the Search box, zoom in to the reads by using Zoom button.</p>
+    <p>Go to your favorite location in the genome by entering the location in the Search box, zoom in to the <span class="notranslate">reads</span> by using Zoom button.</p>
   </li>
   <li>
-    <p>You can change the track properties by right-click on the track. Select View as pairs to see the left and right pairs of paired-end reads.</p>
+    <p>You can change the track properties by right-click on the track. Select View as pairs to see the left and right pairs of paired-end <span class="notranslate">reads</span>.</p>
   </li>
 </ul>
 
-<p><img src="../../images/view_pairs.png" alt="view_pairs"></p>
+<p><img src="../../images/view_pairs.png" alt="view_pairs" /></p>
 
 <ul>
-  <li>You can make a sashimi plot to see reads aligning to each junction. Right-click &gt; Sashimi plot.</li>
+  <li>You can make a sashimi plot to see <span class="notranslate">reads</span> aligning to each junction. Right-click &gt; Sashimi plot.</li>
 </ul>
 
-<p><img src="../../images/sashimi_plot.png" alt="sashimi_plot"></p>
+<p><img src="../../images/sashimi_plot.png" alt="sashimi_plot" /></p>
 
 <ul>
   <li>Save what you see by going to File &gt; Save Image.</li>
@@ -460,13 +729,13 @@ To scroll to a different location, enter the gene name, locus, or track name and
   <li>Go to File &gt; Load from ENCODE &gt; Select C2C12 ChIP-Seq bigwig files</li>
 </ul>
 
-<p><img src="../../images/ChIP-Seq_bigwig.png" alt="ChIP-Seq_bigwig"></p>
+<p><img src="../../images/ChIP-Seq_bigwig.png" alt="ChIP-Seq_bigwig" /></p>
 
 <ul>
   <li>Reset the track heights to make them comparable. Right click on the track &gt; Set data range. Then change the scale.</li>
 </ul>
 
-<p><img src="../../images/data_range.png" alt="data_range"></p>
+<p><img src="../../images/data_range.png" alt="data_range" /></p>
 
 <ul>
   <li>
@@ -484,10 +753,10 @@ To scroll to a different location, enter the gene name, locus, or track name and
     <p>BAM</p>
   </li>
   <li>
-    <p>BED</p>
+    <p><span class="notranslate">BED</span></p>
   </li>
   <li>
-    <p>BedGraph</p>
+    <p><span class="notranslate">Bed</span>Graph</p>
   </li>
   <li>
     <p>bigBed</p>
@@ -524,7 +793,7 @@ To scroll to a different location, enter the gene name, locus, or track name and
 <h2 id="some-other-things-you-can-do">SOME OTHER THINGS YOU CAN DO</h2>
 <ul>
   <li>
-    <p>Take multiple images from regions in a bed file. First make a batch file from the bed file using bedtools (bedtoIgv). Then load the script in Tools &gt; Run Batch Script.</p>
+    <p>Take multiple images from regions in a <span class="notranslate">bed</span> file. First make a batch file from the <span class="notranslate">bed</span> file using <span class="notranslate">bed</span>tools (<span class="notranslate">bed</span>toIgv). Then load the script in Tools &gt; Run Batch Script.</p>
   </li>
   <li>
     <p>Find a given motif. Tools &gt; Find Motif.</p>
@@ -542,43 +811,159 @@ To scroll to a different location, enter the gene name, locus, or track name and
 <p><strong>GOTO: https://www.broadinstitute.org/igv/ or Click on Help in IGV menu.</strong></p>
 
 
-    
-    <blockquote class="key_points">
-        <h3> <img class="emoji" title=":grey_exclamation:" alt=":grey_exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2755.png" height="20" width="20" align="absmiddle"> Key points</h3>
+                    
 
-        <ul>
-        
-           <li>First take home message</li>
-        
-           <li>Second take home message</li>
-        
-           <li>Third take home message</li>
-        
-        </ul>
-    </blockquote>
-    
+                    
 
-    
+                    
 
-    <h3>
-<img class="emoji" title=":clap:" alt=":clap:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44f.png" height="20" width="20" align="absmiddle"> Congratulations on successfully completing this tutorial!</h3>
+                    <h1>Feedback</h1>
+                    <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+
+                    <div id="feedback-button">
+                        <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
+                    </div>
+                    <div id="feedback-form">
+                    </div>
+                    <script type="text/javascript">
+                        (function (window, document) {
+                            function onDocumentReady(fn) {
+                                if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                                    fn();
+                                } else {
+                                    document.addEventListener('DOMContentLoaded', fn);
+                                }
+                            }
+
+                            onDocumentReady(function () {
+                                $("#feedback-button").click(function(evt){
+                                    var e = $(evt.target)
+                                    e.hide();
+
+                                    $("#feedback-form").html(`
+                                        <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=IGV Introduction (Introduction to Galaxy Analyses)">Loading...</iframe>
+                                    `)
+                                })
+                            });
+                        })(window, document);
+                    </script>
 
 
-    <hr>
-    <blockquote class="overview">
-        <h3> <img class="emoji" title=":speech_balloon:" alt=":speech_balloon:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4ac.png" height="20" width="20" align="absmiddle"> Feedback</h3>
-        Please take a moment and provide your feedback on this tutorial. Your feedback will help guide and improve future revisions to this tutorial. <a href="https://tinyurl.com/GTNfeedback" target="_blank">Feedback Form</a>
-    </blockquote>
 
-    <i>This material is the result of a collaborative work. Thanks the <a href="https://wiki.galaxyproject.org/Teach/GTN">Galaxy Training Network</a> and all the contributors
-    
-    !<br>
-    <br>
-    Found a typo? Something is wrong in this tutorial? Edit it on <a href="https://github.com/galaxyproject/training-material/tree/master/topics/introduction/tutorials/igv-introduction/tutorial.md">GitHub</a>.</i>
-</section>
+                    <h1>Citing this Tutorial</h1>
+                    <p>
+                        <ol>
+                            <li id="citation-text">Anton Nekrutenko, Joachim Wolff, Anne Pajon, 2019 <b>IGV Introduction (Galaxy Training Materials)</b>. <a href="/training-material/topics/introduction/tutorials/igv-introduction/tutorial.html">/training-material/topics/introduction/tutorials/igv-introduction/tutorial.html</a> Online; accessed TODAY
+                            </li>
+                            <li>
+                            Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
+                            </li>
+                        </ol>
+                    </p>
 
+
+                    <blockquote class="details">
+                      <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
+                      <p style="display: none;">
+
+                    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code id="citation-code">@misc{introduction-igv-introduction,
+    author = "Anton Nekrutenko and Joachim Wolff and Anne Pajon",
+    title = "IGV Introduction (Galaxy Training Materials)",
+    year = "2019",
+    month = "02",
+    day = "20"
+    url = "\url{/training-material/topics/introduction/tutorials/igv-introduction/tutorial.html}",
+    note = "[Online; accessed TODAY]"
+}
+@article{Batut_2018,
+        doi = {10.1016/j.cels.2018.05.012},
+        url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
+        year = 2018,
+        month = {jun},
+        publisher = {Elsevier {BV}},
+        volume = {6},
+        number = {6},
+        pages = {752--758.e1},
+        author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
+        title = {Community-Driven Data Analysis Training for Biology},
+        journal = {Cell Systems}
+}</code>
+                    </pre></div></div>
+                    </p>
+                    </blockquote>
+
+
+<script type="text/javascript">
+// update the date on load, or leave fallback of 'today'
+d = new Date();
+document.getElementById("citation-code").innerHTML = document.getElementById("citation-code").innerHTML.replace("TODAY", d.toDateString());
+document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
+</script>
+
+                </div>
+            </div>
         </div>
+
+        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+        
+
+        
+    </section>
+</div>
+
+
+<footer>
+    <div class="container">
+        <p>
+            This material is the result of a collaborative work. Thanks to the
+            <a href="https://wiki.galaxyproject.org/Teach/GTN">Galaxy Training Network</a>
+            and all the <a href="/training-material/hall-of-fame">contributors</a> (Anton Nekrutenko, Joachim Wolff, Anne Pajon)!
+        </p>
+        <p>
+            Found a typo? Something is wrong in this tutorial? Edit it on
+            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/introduction/tutorials/igv-introduction/tutorial.md">GitHub</a>.
+        </p>
+        <p>
+    The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</p>
+    </div>
+</footer>
+
     </body>
-    <script type="text/javascript" src="https://galaxyproject.github.io/training-material//assets/js/details-element-polyfill.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+    <script type="text/javascript">
+    var snippets=document.querySelectorAll('div.highlight');
+    [].forEach.call(snippets,function(snippet){
+        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+    });
+
+    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+        target:function(trigger){return trigger.nextElementSibling;
+    }});
+    </script>
+    
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
 </html>
