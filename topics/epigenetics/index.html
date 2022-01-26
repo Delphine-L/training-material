@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
@@ -29,7 +30,7 @@
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
@@ -42,37 +43,107 @@
             <div class="collapse navbar-collapse" id="top-navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                         <a class="nav-link" href="/training-material/hall-of-fame" title="Hall of Fame">
-                            <i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span> Contributors
+                        
+                        <a class="nav-link" href="/training-material/hall-of-fame" title="Hall of Fame">
+                           <i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span> Contributors
                         </a>
+
+                        
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material" title="View on GitHub">
-                            <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> View on GitHub
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
                         </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
                     </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/epigenetics/faqs/" title="Check our FAQs for the Epigenetics topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/epigenetics/" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/epigenetics/" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        
+            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+            </a>
+        
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -88,6 +159,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -97,13 +171,27 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
 
                     <!-- Search bar-->
                     <li class="nav-item">
-                      <div id="navbarSupportedContent">
+                      <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
                         <form class="form-inline mr-auto" method="GET" action="/training-material/search">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
@@ -119,8 +207,8 @@
     </nav>
 </header>
 
-
-
+        <div class="container main-content" role="main">
+        
 
 
 
@@ -137,17 +225,17 @@
 </script>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
-<div class="container main-content">
-	<section class="tutorials-list epigenetics topic-type-use">
-        <h1>Epigenetics</h1>
-        <p>DNA methylation is an epigenetic mechanism used by higher eukaryotes and involved in e.g. gene expression, X-Chromosome inactivating, imprinting, and gene silencing of germline specific gene and repetitive elements.</p>
+<section class="tutorials-list epigenetics topic-type-use">
+    <h1>Epigenetics</h1>
+    <p>DNA methylation is an epigenetic mechanism used by higher eukaryotes and involved in e.g. gene expression, X-Chromosome inactivating, imprinting, and gene silencing of germline specific gene and repetitive elements.</p>
+    <i>You can view the tutorial materials in different languages by clicking the dropdown icon next to the slides (<i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span>) and tutorial (<i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>) buttons below. </i>
 
+    
+    <h2 id="requirements">Requirements</h2>
+    <p>Before diving into this topic, we recommend you to have a look at:</p>
+
+    <ul>
         
-        <h2 id="requirements">Requirements</h2>
-        <p>Before diving into this topic, we recommend you to have a look at:</p>
-
-        <ul>
-            
     <li>
     
         
@@ -183,6 +271,8 @@
                             </li>
                         
                     
+                        
+                    
                 
                     
                         
@@ -202,26 +292,28 @@
                     
                         
                     
+                        
+                    
                 
             </ul>
         
     
     </li>
 
-        </ul>
-        
+    </ul>
+    
 
-        <div id="tutorial_list">
-            <h2 id="material">Material</h2>
-            
-            <div class="search_box">
-                <i class="fas fa fa-search" aria-hidden="true"></i><span class="visually-hidden">search</span>
-                <input data-search-type="tutorial_title" class="search" id="tutorial_search" placeholder="Search" />
-                <span id="clear_search" title="Clear filters"> <i class="fas fa-times" aria-hidden="true"></i><span class="visually-hidden">galaxy-cross</span> </span>
-            </div>
-            
-            
-               <table class="table table-responsive table-striped" >
+    <div id="tutorial_list">
+        <h2 id="material">Material</h2>
+        
+        <div class="search_box">
+            <i class="fas fa fa-search" aria-hidden="true"></i><span class="visually-hidden">search</span>
+            <input data-search-type="tutorial_title" class="search" id="tutorial_search" placeholder="Search" />
+            <span id="clear_search" title="Clear filters"> <i class="fas fa-times" aria-hidden="true"></i><span class="visually-hidden">galaxy-cross</span> </span>
+        </div>
+        
+        
+           <table class="table table-responsive table-striped" >
   <thead>
     <tr>
       <th>Lesson</th>
@@ -267,6 +359,10 @@
                 </a>
                 <ul class="dropdown-menu">
                   
+                    <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=en&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Fslides%2Fintroduction-chip-seq.html&edit-text=&act=url" title="">
+                      English
+                    </a>
+                  
                     <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Fslides%2Fintroduction-chip-seq.html&edit-text=&act=url" title="">
                       Français
                     </a>
@@ -291,6 +387,7 @@
                       And more!
                   </a>
                 </ul>
+                
               </span>
             
             </td>
@@ -332,6 +429,10 @@
                 </a>
                 <ul class="dropdown-menu">
                   
+                    <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=en&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Fslides%2Fintroduction-dna-methylation.html&edit-text=&act=url" title="">
+                      English
+                    </a>
+                  
                     <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Fslides%2Fintroduction-dna-methylation.html&edit-text=&act=url" title="">
                       Français
                     </a>
@@ -356,6 +457,7 @@
                       And more!
                   </a>
                 </ul>
+                
               </span>
             
             </td>
@@ -387,7 +489,66 @@
           </td>
           
             <td> 
+	<a class="visually-hidden" href="/training-material/topics/epigenetics/tutorials/atac-seq/slides-plain.html" aria-label="more accessible, plain text slides">plain text</a>
+    <span class="btn-group">
+        <a class="btn btn-default topic-icon" href="/training-material/topics/epigenetics/tutorials/atac-seq/slides.html" title="Slides">
+            <i class="fab fa-slideshare" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
 
+        <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fatac-seq%2Fslides.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fatac-seq%2Fslides.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fatac-seq%2Fslides.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fatac-seq%2Fslides.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fatac-seq%2Fslides.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fatac-seq%2Fslides.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+
+	<a class="btn btn-default topic-icon" href="/training-material/topics/epigenetics/tutorials/atac-seq/slides-plain.html" aria-label="more accessible, plain text slides">
+		<i class="fas fa-file-alt" aria-hidden="true"></i> Plain text slides
+	</a>
+    </ul>
+    
+    </span>
+
+<!-- video slides -->
+
+<span class="btn-group">
+  <!-- add video button -->
+  <a class="btn btn-default topic-icon" href="/training-material/videos/watch.html?v=epigenetics/tutorials/atac-seq/slides" title="Video">
+    <i class="fas fa-video" aria-hidden="true"></i>
+  </a>
+
+
+  <!-- add dropdown with links to different languages for the video-->
+  
+
+
+
+</span>
  </td>
             <td> 
     <span class="btn-group">
@@ -398,6 +559,9 @@
             <span class="sr-only">Toggle Dropdown</span>
         </a>
         <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fatac-seq%2Ftutorial.html&edit-text=&act=url" title="">
                 Français
@@ -420,7 +584,7 @@
             </a>
         
         <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fatac-seq%2Ftutorial.html&edit-text=&act=url" title="">
-            And more!
+            More Languages
         </a>
     </span>
 
@@ -428,14 +592,18 @@
 
             
               <td> 
+
+
 <a class="topic-icon" href="https://zenodo.org/record/3862793">
-    <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span>
+    <i class="far fa-copy" aria-hidden="true"></i>
 </a>
 
  </td>
               <td> 
+
+
     <a class="topic-icon" href="/training-material/topics/epigenetics/tutorials/atac-seq/workflows/" title="Workflows" alt="ATAC-Seq data analysis workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span>
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
     </a>
 
  </td>
@@ -444,6 +612,7 @@
             
             
               <td> 
+
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
         <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
@@ -502,6 +671,14 @@
         
     
         
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
+        
+    
+        
     
         
     
@@ -518,7 +695,9 @@
         
     
         
-    
+        <a class="dropdown-item" href="https://hicexplorer.usegalaxy.eu" title="HiCExplorer">
+            HiCExplorer
+        </a>
         
     
         
@@ -555,6 +734,14 @@
     
         
     
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
+            Plant Anaylsis Workbench
+        </a>
         
     
         
@@ -565,8 +752,6 @@
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
-        
-    
         
     
         
@@ -584,10 +769,6 @@
         
     
         
-        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
-            UseGalaxy.no
-        </a>
-        
     
         
         <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
@@ -599,6 +780,10 @@
         <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
             UseGalaxy.org.au
         </a>
+        
+    
+        
+    
         
     
         
@@ -629,7 +814,12 @@
           </td>
           
             <td> 
+    </span>
 
+<!-- video slides -->
+
+
+</span>
  </td>
             <td> 
     <span class="btn-group">
@@ -640,6 +830,9 @@
             <span class="sr-only">Toggle Dropdown</span>
         </a>
         <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fmethylation-seq%2Ftutorial.html&edit-text=&act=url" title="">
                 Français
@@ -662,7 +855,7 @@
             </a>
         
         <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fmethylation-seq%2Ftutorial.html&edit-text=&act=url" title="">
-            And more!
+            More Languages
         </a>
     </span>
 
@@ -670,26 +863,31 @@
 
             
               <td> 
+
+
 <a class="topic-icon" href="https://zenodo.org/record/557099">
-    <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span>
+    <i class="far fa-copy" aria-hidden="true"></i>
 </a>
 
  </td>
               <td> 
+
+
     <a class="topic-icon" href="/training-material/topics/epigenetics/tutorials/methylation-seq/workflows/" title="Workflows" alt="DNA Methylation data analysis workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span>
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
     </a>
 
  </td>
               <td> 
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/epigenetics/tutorials/methylation-seq/tours/">
-    <i class="fas fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span>
+<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/main/topics/epigenetics/tutorials/methylation-seq/tours/" title="Galaxy interactive tour" >
+    <i class="fas fa-magic" aria-hidden="true"></i>
 </a>
 
  </td>
             
             
               <td> 
+
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
         <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
@@ -745,6 +943,14 @@
         <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
             Galaxy Africa
         </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
         
     
         
@@ -808,11 +1014,11 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
-        
-    
         
     
         
@@ -841,6 +1047,10 @@
         <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
             UseGalaxy.org.au
         </a>
+        
+    
+        
+    
         
     
         
@@ -877,14 +1087,19 @@
           </td>
           
             <td> 
+	<a class="visually-hidden" href="/training-material/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/slides-plain.html" aria-label="more accessible, plain text slides">plain text</a>
     <span class="btn-group">
-        <a class="btn btn-default topic-icon" href="/training-material/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/slides.html">
-            <i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span>
+        <a class="btn btn-default topic-icon" href="/training-material/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/slides.html" title="Slides">
+            <i class="fab fa-slideshare" aria-hidden="true"></i>
         </a>
         <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="sr-only">Toggle Dropdown</span>
         </a>
         <ul class="dropdown-menu">
+        
+        
+
+        <div class="dropdown-item"><strong>Automatic translations</strong></div>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fformation_of_super-structures_on_xi%2Fslides.html&edit-text=&act=url" title="">
                 Français
@@ -907,12 +1122,20 @@
             </a>
         
         <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fformation_of_super-structures_on_xi%2Fslides.html&edit-text=&act=url" title="">
-            And more!
+            More Languages
         </a>
+
+	<a class="btn btn-default topic-icon" href="/training-material/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/slides-plain.html" aria-label="more accessible, plain text slides">
+		<i class="fas fa-file-alt" aria-hidden="true"></i> Plain text slides
+	</a>
     </ul>
+    
     </span>
 
+<!-- video slides -->
 
+
+</span>
  </td>
             <td> 
     <span class="btn-group">
@@ -923,6 +1146,9 @@
             <span class="sr-only">Toggle Dropdown</span>
         </a>
         <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fformation_of_super-structures_on_xi%2Ftutorial.html&edit-text=&act=url" title="">
                 Français
@@ -945,7 +1171,7 @@
             </a>
         
         <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fformation_of_super-structures_on_xi%2Ftutorial.html&edit-text=&act=url" title="">
-            And more!
+            More Languages
         </a>
     </span>
 
@@ -953,26 +1179,31 @@
 
             
               <td> 
+
+
 <a class="topic-icon" href="https://zenodo.org/record/1324070">
-    <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span>
+    <i class="far fa-copy" aria-hidden="true"></i>
 </a>
 
  </td>
               <td> 
+
+
     <a class="topic-icon" href="/training-material/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/workflows/" title="Workflows" alt="Formation of the Super-Structures on the Inactive X workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span>
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
     </a>
 
  </td>
               <td> 
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tours/">
-    <i class="fas fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span>
+<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/main/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tours/" title="Galaxy interactive tour" >
+    <i class="fas fa-magic" aria-hidden="true"></i>
 </a>
 
  </td>
             
             
               <td> 
+
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
         <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
@@ -1000,6 +1231,10 @@
     
         
     
+        
+        <a class="dropdown-item" href="https://clipseq.usegalaxy.eu/" title="CLIP-Explorer">
+            CLIP-Explorer
+        </a>
         
     
         
@@ -1031,6 +1266,14 @@
         
     
         
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
+        
+    
+        
     
         
     
@@ -1047,7 +1290,9 @@
         
     
         
-    
+        <a class="dropdown-item" href="https://hicexplorer.usegalaxy.eu" title="HiCExplorer">
+            HiCExplorer
+        </a>
         
     
         
@@ -1084,6 +1329,14 @@
     
         
     
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
+            Plant Anaylsis Workbench
+        </a>
         
     
         
@@ -1094,8 +1347,6 @@
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
-        
-    
         
     
         
@@ -1132,6 +1383,10 @@
         <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
             UseGalaxy.org.au
         </a>
+        
+    
+        
+    
         
     
         
@@ -1162,7 +1417,12 @@
           </td>
           
             <td> 
+    </span>
 
+<!-- video slides -->
+
+
+</span>
  </td>
             <td> 
     <span class="btn-group">
@@ -1173,6 +1433,9 @@
             <span class="sr-only">Toggle Dropdown</span>
         </a>
         <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fhicexplorer%2Ftutorial.html&edit-text=&act=url" title="">
                 Français
@@ -1195,7 +1458,7 @@
             </a>
         
         <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fhicexplorer%2Ftutorial.html&edit-text=&act=url" title="">
-            And more!
+            More Languages
         </a>
     </span>
 
@@ -1203,26 +1466,31 @@
 
             
               <td> 
+
+
 <a class="topic-icon" href="https://doi.org/10.5281/zenodo.1183661">
-    <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span>
+    <i class="far fa-copy" aria-hidden="true"></i>
 </a>
 
  </td>
               <td> 
+
+
     <a class="topic-icon" href="/training-material/topics/epigenetics/tutorials/hicexplorer/workflows/" title="Workflows" alt="Hi-C analysis of Drosophila melanogaster cells using HiCExplorer workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span>
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
     </a>
 
  </td>
               <td> 
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/epigenetics/tutorials/hicexplorer/tours/">
-    <i class="fas fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span>
+<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/main/topics/epigenetics/tutorials/hicexplorer/tours/" title="Galaxy interactive tour" >
+    <i class="fas fa-magic" aria-hidden="true"></i>
 </a>
 
  </td>
             
             
               <td> 
+
 
 
  </td>
@@ -1230,6 +1498,12 @@
           
          </tr>
          
+       
+    
+    
+
+    
+      
        
     
     
@@ -1252,7 +1526,12 @@
           </td>
           
             <td> 
+    </span>
 
+<!-- video slides -->
+
+
+</span>
  </td>
             <td> 
     <span class="btn-group">
@@ -1263,6 +1542,9 @@
             <span class="sr-only">Toggle Dropdown</span>
         </a>
         <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Ftal1-binding-site-identification%2Ftutorial.html&edit-text=&act=url" title="">
                 Français
@@ -1285,7 +1567,7 @@
             </a>
         
         <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Ftal1-binding-site-identification%2Ftutorial.html&edit-text=&act=url" title="">
-            And more!
+            More Languages
         </a>
     </span>
 
@@ -1293,26 +1575,31 @@
 
             
               <td> 
+
+
 <a class="topic-icon" href="https://doi.org/10.5281/zenodo.197100">
-    <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span>
+    <i class="far fa-copy" aria-hidden="true"></i>
 </a>
 
  </td>
               <td> 
+
+
     <a class="topic-icon" href="/training-material/topics/epigenetics/tutorials/tal1-binding-site-identification/workflows/" title="Workflows" alt="Identification of the binding sites of the T-cell acute lymphocytic leukemia protein 1 (TAL1) workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span>
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
     </a>
 
  </td>
               <td> 
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/epigenetics/tutorials/tal1-binding-site-identification/tours/">
-    <i class="fas fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span>
+<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/main/topics/epigenetics/tutorials/tal1-binding-site-identification/tours/" title="Galaxy interactive tour" >
+    <i class="fas fa-magic" aria-hidden="true"></i>
 </a>
 
  </td>
             
             
               <td> 
+
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
         <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
@@ -1340,6 +1627,10 @@
     
         
     
+        
+        <a class="dropdown-item" href="https://clipseq.usegalaxy.eu/" title="CLIP-Explorer">
+            CLIP-Explorer
+        </a>
         
     
         
@@ -1371,6 +1662,14 @@
         
     
         
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
+        
+    
+        
     
         
     
@@ -1387,7 +1686,9 @@
         
     
         
-    
+        <a class="dropdown-item" href="https://hicexplorer.usegalaxy.eu" title="HiCExplorer">
+            HiCExplorer
+        </a>
         
     
         
@@ -1424,6 +1725,14 @@
     
         
     
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
+            Plant Anaylsis Workbench
+        </a>
         
     
         
@@ -1434,8 +1743,6 @@
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
-        
-    
         
     
         
@@ -1478,6 +1785,10 @@
     
         
     
+        
+    
+        
+    
     </ul>
 
 
@@ -1502,14 +1813,19 @@
           </td>
           
             <td> 
+	<a class="visually-hidden" href="/training-material/topics/epigenetics/tutorials/ewas-suite/slides-plain.html" aria-label="more accessible, plain text slides">plain text</a>
     <span class="btn-group">
-        <a class="btn btn-default topic-icon" href="/training-material/topics/epigenetics/tutorials/ewas-suite/slides.html">
-            <i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span>
+        <a class="btn btn-default topic-icon" href="/training-material/topics/epigenetics/tutorials/ewas-suite/slides.html" title="Slides">
+            <i class="fab fa-slideshare" aria-hidden="true"></i>
         </a>
         <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="sr-only">Toggle Dropdown</span>
         </a>
         <ul class="dropdown-menu">
+        
+        
+
+        <div class="dropdown-item"><strong>Automatic translations</strong></div>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fewas-suite%2Fslides.html&edit-text=&act=url" title="">
                 Français
@@ -1532,12 +1848,20 @@
             </a>
         
         <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fewas-suite%2Fslides.html&edit-text=&act=url" title="">
-            And more!
+            More Languages
         </a>
+
+	<a class="btn btn-default topic-icon" href="/training-material/topics/epigenetics/tutorials/ewas-suite/slides-plain.html" aria-label="more accessible, plain text slides">
+		<i class="fas fa-file-alt" aria-hidden="true"></i> Plain text slides
+	</a>
     </ul>
+    
     </span>
 
+<!-- video slides -->
 
+
+</span>
  </td>
             <td> 
     <span class="btn-group">
@@ -1548,6 +1872,9 @@
             <span class="sr-only">Toggle Dropdown</span>
         </a>
         <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fewas-suite%2Ftutorial.html&edit-text=&act=url" title="">
                 Français
@@ -1570,7 +1897,7 @@
             </a>
         
         <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fewas-suite%2Ftutorial.html&edit-text=&act=url" title="">
-            And more!
+            More Languages
         </a>
     </span>
 
@@ -1578,22 +1905,27 @@
 
             
               <td> 
+
+
 <a class="topic-icon" href="https://zenodo.org/record/1251211#.WwREQ1Mvz-Y">
-    <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span>
+    <i class="far fa-copy" aria-hidden="true"></i>
 </a>
 
  </td>
               <td> 
+
+
  </td>
               <td> 
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/epigenetics/tutorials/ewas-suite/tours/">
-    <i class="fas fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span>
+<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/main/topics/epigenetics/tutorials/ewas-suite/tours/" title="Galaxy interactive tour" >
+    <i class="fas fa-magic" aria-hidden="true"></i>
 </a>
 
  </td>
             
             
               <td> 
+
 
 
  </td>
@@ -1608,65 +1940,122 @@
 
 
 
-            
+           </div>
+        
+
+    
+        <h2 id="docker_image">Galaxy instances</h2>
+        <p>You can use a public Galaxy instance which has been tested for the availability of the used tools. They are listed along with the tutorials above.</p>
+        
+            <p>You can also use the following Docker image for these tutorials:</p>
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -p 8080:80 quay.io/galaxy/epigenetics-training</code></pre></div></div>
+            <p>NOTE: Use the -d flag at the end of the command if you want to automatically download all the data-libraries into the container.</p>
+            <p>It will launch a flavored Galaxy instance available on <a href="http://localhost:8080">http://localhost:8080</a>. This instance will contain all the tools and workflows to follow the tutorials in this topic. Login as <b>admin</b> with password <b>password</b> to access everything.</p>
+        
+    
+
+    <h2 id="topic-faq">Frequently Asked Questions</h2>
+    Common questions regarding this topic have been collected on a <a href="faqs/">dedicated FAQ page </a>. Common questions related to specific tutorials can be accessed from the tutorials themselves.
+
+    <h2 id="maintainers">Maintainers</h2>
+    <p>This material is maintained by:</p>
+    
+    
+<a href="/training-material/hall-of-fame/lldelisle/" class="contributor-badge contributor-lldelisle"><img src="https://avatars.githubusercontent.com/lldelisle?s=27" alt="Avatar">Lucille Delisle</a>
+
+
+<a href="/training-material/hall-of-fame/heylf/" class="contributor-badge contributor-heylf"><img src="https://avatars.githubusercontent.com/heylf?s=27" alt="Avatar">Florian Heyl</a>
+
+
+<a href="/training-material/hall-of-fame/joachimwolff/" class="contributor-badge contributor-joachimwolff"><img src="https://avatars.githubusercontent.com/joachimwolff?s=27" alt="Avatar">Joachim Wolff</a>
+
+
+<a href="/training-material/hall-of-fame/dpryan79/" class="contributor-badge contributor-dpryan79"><img src="https://avatars.githubusercontent.com/dpryan79?s=27" alt="Avatar">Devon Ryan</a>
+
+
+
+    <p>
+        <em>For any question related to this topic and the content, you can contact them or visit our <a href="https://gitter.im/Galaxy-Training-Network/Lobby">Gitter channel</a>.</em>
+    </p>
+
+    <h2 id="contributors">Contributors</h2>
+    <p>This material was contributed to by:</p>
+    
+    
+    
+    
+<a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge contributor-bebatut"><img src="https://avatars.githubusercontent.com/bebatut?s=27" alt="Avatar">Bérénice Batut</a>
+
+
+<a href="/training-material/hall-of-fame/joachimwolff/" class="contributor-badge contributor-joachimwolff"><img src="https://avatars.githubusercontent.com/joachimwolff?s=27" alt="Avatar">Joachim Wolff</a>
+
+
+<a href="/training-material/hall-of-fame/yvanlebras/" class="contributor-badge contributor-yvanlebras"><img src="https://avatars.githubusercontent.com/yvanlebras?s=27" alt="Avatar">Yvan Le Bras</a>
+
+
+<a href="/training-material/hall-of-fame/lldelisle/" class="contributor-badge contributor-lldelisle"><img src="https://avatars.githubusercontent.com/lldelisle?s=27" alt="Avatar">Lucille Delisle</a>
+
+
+<a href="/training-material/hall-of-fame/mblue9/" class="contributor-badge contributor-mblue9"><img src="https://avatars.githubusercontent.com/mblue9?s=27" alt="Avatar">Maria Doyle</a>
+
+
+<a href="/training-material/hall-of-fame/heylf/" class="contributor-badge contributor-heylf"><img src="https://avatars.githubusercontent.com/heylf?s=27" alt="Avatar">Florian Heyl</a>
+
+
+<a href="/training-material/hall-of-fame/dpryan79/" class="contributor-badge contributor-dpryan79"><img src="https://avatars.githubusercontent.com/dpryan79?s=27" alt="Avatar">Devon Ryan</a>
+
+
+<a href="/training-material/hall-of-fame/friedue/" class="contributor-badge contributor-friedue"><img src="https://avatars.githubusercontent.com/friedue?s=27" alt="Avatar">Friederike Dündar</a>
+
+
+<a href="/training-material/hall-of-fame/erxleben/" class="contributor-badge contributor-erxleben"><img src="https://avatars.githubusercontent.com/erxleben?s=27" alt="Avatar">Anika Erxleben</a>
+
+
+<a href="/training-material/hall-of-fame/vivekbhr/" class="contributor-badge contributor-vivekbhr"><img src="https://avatars.githubusercontent.com/vivekbhr?s=27" alt="Avatar">Vivek Bhardwaj</a>
+
+
+<a href="/training-material/hall-of-fame/fidelram/" class="contributor-badge contributor-fidelram"><img src="https://avatars.githubusercontent.com/fidelram?s=27" alt="Avatar">Fidel Ramirez</a>
+
+
+<a href="/training-material/hall-of-fame/LeilyR/" class="contributor-badge contributor-LeilyR"><img src="https://avatars.githubusercontent.com/LeilyR?s=27" alt="Avatar">Leily Rabbani</a>
+
+
+<a href="/training-material/hall-of-fame/polkhe/" class="contributor-badge contributor-polkhe"><img src="https://avatars.githubusercontent.com/polkhe?s=27" alt="Avatar">Ekaterina Polkh</a>
+
+
+<a href="/training-material/hall-of-fame/malloryfreeberg/" class="contributor-badge contributor-malloryfreeberg"><img src="https://avatars.githubusercontent.com/malloryfreeberg?s=27" alt="Avatar">Mallory Freeberg</a>
+
+
+<a href="/training-material/hall-of-fame/moheydarian/" class="contributor-badge contributor-moheydarian"><img src="https://avatars.githubusercontent.com/moheydarian?s=27" alt="Avatar">Mo Heydarian</a>
+
+
+<a href="/training-material/hall-of-fame/kpbioteam/" class="contributor-badge contributor-kpbioteam"><img src="https://avatars.githubusercontent.com/kpbioteam?s=27" alt="Avatar">Katarzyna Murat</a>
+
+
+<a href="/training-material/hall-of-fame/kpoterlowicz/" class="contributor-badge contributor-kpoterlowicz"><img src="https://avatars.githubusercontent.com/kpoterlowicz?s=27" alt="Avatar">Krzysztof Poterlowicz</a>
+
+
+
+    
+</section>
+
         </div>
-
         
-            <h2 id="docker_image">Galaxy instances</h2>
-            <p>You can use a public Galaxy instance which has been tested for the availability of the used tools. They are listed along with the tutorials above.</p>
-            
-                <p>You can also use the following Docker image for these tutorials:</p>
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -p 8080:80 quay.io/galaxy/epigenetics-training</code></pre></div></div>
-                <p>NOTE: Use the -d flag at the end of the command if you want to automatically download all the data-libraries into the container.</p>
-                <p>It will launch a flavored Galaxy instance available on <a href="http://localhost:8080">http://localhost:8080</a>. This instance will contain all the tools and workflows to follow the tutorials in this topic. Login as <b>admin</b> with password <b>password</b> to access everything.</p>
-            
-        
-
-        <h2 id="maintainers">Maintainers</h2>
-        <p>This material is maintained by:</p>
-        
-        
-
- <a href="/training-material/hall-of-fame/joachimwolff/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/joachimwolff" alt="Joachim Wolff">Joachim Wolff</a> <a href="/training-material/hall-of-fame/dpryan79/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/dpryan79" alt="Devon Ryan">Devon Ryan</a>
-
-
-
-        <p>
-            <em>For any question related to this topic and the content, you can contact them or visit our <a href="https://gitter.im/Galaxy-Training-Network/Lobby">Gitter channel</a>.</em>
-        </p>
-
-        <h2 id="contributors">Contributors</h2>
-        <p>This material was contributed to by:</p>
-        
-        
-        
-        
-
- <a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/bebatut" alt="Bérénice Batut">Bérénice Batut</a> <a href="/training-material/hall-of-fame/joachimwolff/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/joachimwolff" alt="Joachim Wolff">Joachim Wolff</a> <a href="/training-material/hall-of-fame/yvanlebras/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/yvanlebras" alt="Yvan Le Bras">Yvan Le Bras</a> <a href="/training-material/hall-of-fame/lldelisle/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/lldelisle" alt="Lucille Delisle">Lucille Delisle</a> <a href="/training-material/hall-of-fame/mblue9/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/mblue9" alt="Maria Doyle">Maria Doyle</a> <a href="/training-material/hall-of-fame/heylf/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/heylf" alt="Florian Heyl">Florian Heyl</a> <a href="/training-material/hall-of-fame/dpryan79/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/dpryan79" alt="Devon Ryan">Devon Ryan</a> <a href="/training-material/hall-of-fame/friedue/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/friedue" alt="Friederike Dündar">Friederike Dündar</a> <a href="/training-material/hall-of-fame/erxleben/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/erxleben" alt="Anika Erxleben">Anika Erxleben</a> <a href="/training-material/hall-of-fame/vivekbhr/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/vivekbhr" alt="Vivek Bhardwaj">Vivek Bhardwaj</a> <a href="/training-material/hall-of-fame/fidelram/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/fidelram" alt="Fidel Ramirez">Fidel Ramirez</a> <a href="/training-material/hall-of-fame/LeilyR/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/LeilyR" alt="Leily Rabbani">Leily Rabbani</a> <a href="/training-material/hall-of-fame/polkhe/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/polkhe" alt="Ekaterina Polkh">Ekaterina Polkh</a> <a href="/training-material/hall-of-fame/malloryfreeberg/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/malloryfreeberg" alt="Mallory Freeberg">Mallory Freeberg</a> <a href="/training-material/hall-of-fame/moheydarian/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/moheydarian" alt="Mo Heydarian">Mo Heydarian</a> <a href="/training-material/hall-of-fame/kpbioteam/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/kpbioteam" alt="Katarzyna Murat">Katarzyna Murat</a> <a href="/training-material/hall-of-fame/kpoterlowicz/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/kpoterlowicz" alt="Krzysztof Poterlowicz">Krzysztof Poterlowicz</a>
-
-
-
-        
-    </section>
-</div>
-
-<footer>
+            <footer>
     <div class="container">
+        <br><br>
         <p>
             The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
             provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
         </p>
         <p>
-    The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
 </p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/01a64c4b5dc6206de026ab2b1c9b54e9ecef1da8">01a64c4b5dc6206de026ab2b1c9b54e9ecef1da8</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/768750816dc33d635cb8d217a0f8814d29ee3d28">768750816dc33d635cb8d217a0f8814d29ee3d28</a></p>
     </div>
 </footer>
 
-
-
-
-
+        
     </body>
     <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
     <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
