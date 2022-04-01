@@ -270,7 +270,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:33:42 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Enable upload via FTP",
   "interactivityType": "mixed",
@@ -306,6 +306,7 @@
   "name": "Hands-on for 'Enable upload via FTP' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ftp/tutorial.html",
   "timeRequired": "PT1H",
+  "keywords": "data, git-gat",
   "description": "The questions this  addresses are:\n - How can I setup FTP to be easy for my users?\n - Can I authenticate ftp users with Galaxy credentials?\n\n\\nThe objectives are:\n - Configure galaxy and install a FTP server.\n - Use an Ansible playbook for this.\n\n",
   "inLanguage": {
     "@type": "Language",
@@ -542,6 +543,8 @@
                     
                         
                     
+                        
+                    
                 
                     
                         
@@ -635,6 +638,8 @@
                     
                         
                     
+                        
+                    
                 
             </ul>
         
@@ -673,9 +678,18 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/admin/tutorials/ftp/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
 
             <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
             
+
 
 
 
@@ -694,7 +708,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jul 23, 2021 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 10, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -710,7 +724,7 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
-                
+                 
 
                 <h1 class="no_toc" id="overview">Overview</h1>
 
@@ -781,7 +795,7 @@
 
       <div data-commit="Add requirement" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/requirements.yml
 </span><span class="gi">+++ b/requirements.yml
-</span><span class="p">@@ -36,3 +36,5 @@</span>
+</span><span class="p">@@ -38,3 +38,5 @@</span>
    version: 0.12.0
  - src: use<span class="notranslate">galaxy</span>_eu.tiaas2
    version: 0.0.8
@@ -804,7 +818,7 @@
 
       <div data-commit="Add proftpd in certbot" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -162,9 +162,11 @@</span> certbot_well_known_root: /srv/nginx/_well-known_root
+</span><span class="p">@@ -164,9 +164,11 @@</span> certbot_well_known_root: /srv/nginx/_well-known_root
  certbot_share_key_users:
    - nginx
    - rabbitmq
@@ -826,10 +840,10 @@
 
       <div data-commit="Add ftp vars in galaxy" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -98,6 +98,9 @@</span> <span class="notranslate">galaxy</span>_config:
-     allow_user_impersonation: true
-     # Tool security
+</span><span class="p">@@ -100,6 +100,9 @@</span> <span class="notranslate">galaxy</span>_config:
      outputs_to_working_directory: true
+     # TUS
+     tus_upload_store: /data/tus
 <span class="gi">+    # FTP
 +    ftp_upload_dir: /data/uploads
 +    ftp_upload_site: "{{ inventory_hostname }}"
@@ -849,7 +863,7 @@
 
       <div data-commit="Add proftpd variables" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -231,6 +231,27 @@</span> rabbitmq_users:
+</span><span class="p">@@ -233,6 +233,27 @@</span> rabbitmq_users:
      password: "{{ vault_rabbitmq_password_vhost }}"
      vhost: /pulsar/<span class="notranslate">galaxy</span>_au
     
@@ -957,9 +971,9 @@ To relax the requirement that the SSL session from the control connection be reu
      - use<span class="notranslate">galaxy</span>_eu.rabbitmq
      - <span class="notranslate">galaxy</span>project.nginx
 <span class="gi">+    - <span class="notranslate">galaxy</span>project.proftpd
-</span>     - <span class="notranslate">galaxy</span>project.cvmfs
+</span>     - <span class="notranslate">galaxy</span>project.tusd
+     - <span class="notranslate">galaxy</span>project.cvmfs
      - <span class="notranslate">galaxy</span>project.gxadmin
-     - dj-wasabi.telegraf
    
 </code></pre></div>      </div>
     </li>
@@ -1177,6 +1191,9 @@ echo "set ssl:ca-file \"/etc/ssl/certs/cert.pem\"" &gt; .lftp/rc
 
 <p>Congratulations! Let your users know this is an option, many of them will prefer to start large uploads from an FTP client.</p>
 
+<!--SNIPPET-->
+<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-14">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-13...step-14#files_bucket">the previous tutorial</a>.</p></blockquote>
+
 
                 
                 <blockquote class="key_points">
@@ -1194,7 +1211,7 @@ echo "set ssl:ca-file \"/etc/ssl/certs/cert.pem\"" &gt; .lftp/rc
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
@@ -1257,7 +1274,7 @@ echo "set ssl:ca-file \"/etc/ssl/certs/cert.pem\"" &gt; .lftp/rc
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Lucille Delisle, 2021 <b>Enable upload via FTP (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/ftp/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/ftp/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">Lucille Delisle, 2022 <b>Enable upload via FTP (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/ftp/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/ftp/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1274,9 +1291,9 @@ echo "set ssl:ca-file \"/etc/ssl/certs/cert.pem\"" &gt; .lftp/rc
 <code id="citation-code">@misc{admin-ftp,
 author = "Lucille Delisle",
 title = "Enable upload via FTP (Galaxy Training Materials)",
-year = "2021",
-month = "07",
-day = "23"
+year = "2022",
+month = "03",
+day = "10"
 url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/ftp/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }

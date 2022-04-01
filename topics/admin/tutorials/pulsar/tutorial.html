@@ -270,7 +270,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:33:42 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Running Jobs on Remote Resources with Pulsar",
   "interactivityType": "mixed",
@@ -306,7 +306,7 @@
   "name": "Hands-on for 'Running Jobs on Remote Resources with Pulsar' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/pulsar/tutorial.html",
   "timeRequired": "PT60M",
-  "keywords": "jobs",
+  "keywords": "ansible, jobs, git-gat",
   "description": "The questions this  addresses are:\n - How does pulsar work?\n - How can I deploy it?\n\n\\nThe objectives are:\n - Have an understanding of what Pulsar is and how it works\n - Install and configure a RabbitMQ message queueing server\n - Install and configure a Pulsar server on a remote linux machine\n - Be able to get Galaxy to send jobs to a remote Pulsar server\n\n",
   "inLanguage": {
     "@type": "Language",
@@ -664,6 +664,8 @@
                     
                         
                     
+                        
+                    
                 
                     
                         
@@ -757,6 +759,8 @@
                     
                         
                     
+                        
+                    
                 
                     
                         
@@ -780,6 +784,8 @@
                                 
                             
                             </li>
+                        
+                    
                         
                     
                         
@@ -940,7 +946,11 @@
                     
                         
                     
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -1077,6 +1087,14 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/admin/tutorials/pulsar/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
 
             <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
             
@@ -1090,24 +1108,34 @@
 
 
 
+
   
   <li class="btn btn-default supporting_material">
-    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Video Library for these Training Materials">
-        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> GTN Video Library
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Recordings
     </a>
     <ul class="dropdown-menu">
         
         
+
+        
+        
+        
+
         <li>
             <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/admin/pulsar/tutorial" title="View GTN Video Library for this Tutorial">
-                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (June 2021)
             </a>
         </li>
         
         
+          
+          
+          
+
         <li>
             <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/admin/pulsar/slides" title="View GTN Video Library for these Slides">
-                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture (February 2021)
             </a>
         </li>
         
@@ -1122,7 +1150,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jul 2, 2021 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 30, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -1138,7 +1166,7 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
-                
+                 
 
                 <h1 class="no_toc" id="overview">Overview</h1>
 
@@ -1282,7 +1310,7 @@
 
       <div data-commit="Add requirements" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/requirements.yml
 </span><span class="gi">+++ b/requirements.yml
-</span><span class="p">@@ -22,3 +22,7 @@</span>
+</span><span class="p">@@ -24,3 +24,7 @@</span>
    version: 0.0.2
  - src: <span class="notranslate">galaxy</span>project.slurm
    version: 0.1.3
@@ -1292,6 +1320,9 @@
 +  version: 1.0.8
 </span>   
 </code></pre></div>      </div>
+
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-how-to-read-a-diff"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: How to read a Diff</h3>  <p>If you haven’t worked with diffs before, this can be something quite new or different.</p>  <p>If we have two files, let’s say a grocery list, in two files. We’ll call them ‘a’ and ‘b’.</p>  <blockquote class="code-2col">  <blockquote class="code-in">    <h3 data-toc-skip="" id="code-in-old"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Old</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat old<br />🍎<br />🍐<br />🍊<br />🍋<br />🍒<br />🥑<br /></code></pre></div>    </div>  </blockquote>  <blockquote class="code-out">    <h3 data-toc-skip="" id="code-out-new"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden">code-out</span> New</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat new<br />🍎<br />🍐<br />🍊<br />🍋<br />🍍<br />🥑<br /></code></pre></div>    </div>  </blockquote></blockquote>  <p>We can see that they have some different entries. We’ve removed 🍒 because they’re awful, and replaced them with an 🍍</p>  <p>Diff lets us compare these files</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff old new<br />5c5<br />&lt; 🍒<br /><span class="nt">---</span><br /><span class="o">&gt;</span> 🍍<br /></code></pre></div></div>  <p>Here we see that ‘pears’ is only in a, and ‘ananas’ is only in b. But otherwise the files are identical.</p>  <p>There are a couple different formats to diffs, one is the ‘unified diff’</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> old new<br /><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:06:36.340962616 +0100<br />@@ <span class="nt">-3</span>,4 +3,4 @@<br /> 🍊<br /> 🍋<br />-🍒<br />+🍍<br /> 🥑<br /></code></pre></div></div>  <p>This is basically what you see in the training materials which gives you a lot of context about the changes:</p>  <ul>  <li><code class="language-plaintext highlighter-rouge">--- old</code> is the ‘old’ file in our view</li>  <li><code class="language-plaintext highlighter-rouge">+++ new</code> is the ‘new’ file</li>  <li>@@ these lines tell us where the change occurs and how many lines are added or removed.</li>  <li>Lines starting with a - are removed from our ‘new’ file</li>  <li>Lines with a + have been added.</li></ul>  <p>So when you go to apply these diffs to your files in the training:</p>  <ol>  <li>Ignore the header</li>  <li>Remove lines starting with - from your file</li>  <li>Add lines starting with + to your file</li></ol>  <p>The other lines (🍊/🍋 and 🥑) above just provide “context”, they help you know where a change belongs in a file, but <strong>should not be edited</strong> when you’re making the above change. Given the above diff, you would find a line with a 🍒, and replace it with a 🍍</p>  <h4 id="added--removed-lines">Added &amp; Removed Lines</h4>  <p>Removals are very easy to spot, we just have removed lines</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:10:14.370722802 +0100<br />@@ <span class="nt">-4</span>,3 +4,2 @@<br /> 🍋<br /> 🍒<br />-🥑<br /></code></pre></div></div>  <p>And additions likewise are very easy, just add a new line, between the other lines in your file.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:11:11.422135393 +0100<br />@@ <span class="nt">-1</span>,3 +1,4 @@<br /> 🍎<br />+🍍<br /> 🍐<br /> 🍊<br /></code></pre></div></div>  <h4 id="completely-new-files">Completely new files</h4>  <p>Completely new files look a bit different, there the “old” file is <code class="language-plaintext highlighter-rouge">/dev/null</code>, the empty file in a Linux machine.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> /dev/null old<br /><span class="nt">---</span> /dev/null	2022-02-15 11:47:16.100000270 +0100<br />+++ old	2022-02-16 14:06:19.697132568 +0100<br />@@ <span class="nt">-0</span>,0 +1,6 @@<br />+🍎<br />+🍐<br />+🍊<br />+🍋<br />+🍒<br />+🥑<br /></code></pre></div></div>  <p>And removed files are similar, except with the the new file being /dev/null</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ /dev/null	2022-02-15 11:47:16.100000270 +0100<br />@@ <span class="nt">-1</span>,6 +0,0 @@<br />-🍎<br />-🍐<br />-🍊<br />-🍋<br />-🍒<br />-🥑<br /></code></pre></div></div></blockquote>
     </li>
     <li>
       <p>Now install it with:</p>
@@ -1397,7 +1428,7 @@
 
       <div data-commit="Configure RabbitMQ" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -126,8 +126,10 @@</span> certbot_environment: staging
+</span><span class="p">@@ -128,8 +128,10 @@</span> certbot_environment: staging
  certbot_well_known_root: /srv/nginx/_well-known_root
  certbot_share_key_users:
    - nginx
@@ -1408,12 +1439,11 @@
 </span> certbot_domains:
   - "{{ inventory_hostname }}"
  certbot_agree_tos: --agree-tos
-<span class="p">@@ -160,3 +162,31 @@</span> slurm_config:
-   SlurmdParameters: config_overrides   # Ignore errors if the host actually has cores != 2
+<span class="p">@@ -163,6 +165,34 @@</span> slurm_config:
    SelectType: select/cons_res
    SelectTypeParameters: CR_CPU_Memory  # Allocate individual cores/memory instead of entire node
-<span class="gi">+
-+# RabbitMQ
+    
+<span class="gi">+# RabbitMQ
 +rabbitmq_version: 3.8.16-1
 +rabbitmq_plugins: rabbitmq_management
 +
@@ -1440,7 +1470,11 @@
 +  - user: <span class="notranslate">galaxy</span>_au
 +    password: "{{ vault_rabbitmq_password_vhost }}"
 +    vhost: /pulsar/<span class="notranslate">galaxy</span>_au
-</span>   
++
+</span> # TUS
+ <span class="notranslate">galaxy</span>_tusd_port: 1080
+ tusd_instances:
+   
 </code></pre></div>      </div>
     </li>
     <li>
@@ -1448,12 +1482,13 @@
 
       <div data-commit="Add role" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/<span class="notranslate">galaxy</span>.yml
 </span><span class="gi">+++ b/<span class="notranslate">galaxy</span>.yml
-</span><span class="p">@@ -29,5 +29,6 @@</span>
+</span><span class="p">@@ -29,6 +29,7 @@</span>
      - role: uchida.miniconda
        become: true
        become_user: "{{ <span class="notranslate">galaxy</span>_user.name }}"
 <span class="gi">+    - use<span class="notranslate">galaxy</span>_eu.rabbitmq
 </span>     - <span class="notranslate">galaxy</span>project.nginx
+     - <span class="notranslate">galaxy</span>project.tusd
      - <span class="notranslate">galaxy</span>project.cvmfs
    
 </code></pre></div>      </div>
@@ -2007,7 +2042,7 @@ https://zenodo.org/record/582600/files/mutant_R2.fastq
 <p>How awesome is that? Pulsar in another continent with reference data automatically from CVMFS :)</p>
 
 <!--SNIPPET-->
-<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-8">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-7...step-8#files_bucket">the previous tutorial</a>.</p></blockquote>
+<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-9">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-8...step-9#files_bucket">the previous tutorial</a>.</p></blockquote>
 
 <h1 id="retries-of-the-staging-actions">Retries of the staging actions</h1>
 
@@ -2095,7 +2130,7 @@ The aim of these parameters is to control the retrying of staging actions in the
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
@@ -2143,7 +2178,7 @@ The aim of these parameters is to control the retrying of staging actions in the
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Nate Coraor, Simon Gladman, Marius van den Beek, Helena Rasche, Gianmauro Cuccuru, 2021 <b>Running Jobs on Remote Resources with Pulsar (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/pulsar/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/pulsar/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">Nate Coraor, Simon Gladman, Marius van den Beek, Helena Rasche, Gianmauro Cuccuru, 2022 <b>Running Jobs on Remote Resources with Pulsar (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/pulsar/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/pulsar/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -2160,9 +2195,9 @@ The aim of these parameters is to control the retrying of staging actions in the
 <code id="citation-code">@misc{admin-pulsar,
 author = "Nate Coraor and Simon Gladman and Marius van den Beek and Helena Rasche and Gianmauro Cuccuru",
 title = "Running Jobs on Remote Resources with Pulsar (Galaxy Training Materials)",
-year = "2021",
-month = "07",
-day = "02"
+year = "2022",
+month = "03",
+day = "30"
 url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/pulsar/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }

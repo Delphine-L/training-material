@@ -125,7 +125,7 @@
           "joined": "2020-09",
           "github": false,
           "funder": true,
-          "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         }
@@ -136,7 +136,9 @@
       "tutorial_name": "jbrowse",
       "hands_on": true,
       "slides": true,
-      "workflows": false,
+      "tools": [
+        "toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.9+galaxy0"
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -208,7 +210,24 @@
       "tutorial_name": "circos",
       "hands_on": true,
       "slides": true,
-      "workflows": true,
+      "workflows": [
+        {
+          "workflow": "main_workflow.ga",
+          "tests": false
+        },
+        {
+          "workflow": "nature_workflow.ga",
+          "tests": false
+        }
+      ],
+      "tools": [
+        "Cut1",
+        "Grep1",
+        "Remove beginning1",
+        "random_lines1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7",
+        "upload1"
+      ],
       "tours": false,
       "video": false,
       "translations": {

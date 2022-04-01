@@ -191,7 +191,7 @@
           "joined": "2020-09",
           "github": false,
           "funder": true,
-          "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         },
@@ -199,22 +199,23 @@
           "name": "Avans Hogeschool",
           "joined": "2020-11",
           "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)\n",
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)",
           "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json"
         }
       ],
       "tags": [
-        "jupyter-notebook",
         "bash"
       ],
-      "last_modified_at": "2021-12-14T14:52:15+00:00",
+      "last_modified_at": "2021-12-21T10:14:03+00:00",
       "url": "/topics/data-science/tutorials/cli-advanced/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "cli-advanced",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -291,7 +292,7 @@
           "joined": "2020-09",
           "github": false,
           "funder": true,
-          "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         }
@@ -306,7 +307,9 @@
       "tutorial_name": "python-advanced-np-pd",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -419,7 +422,7 @@
           "joined": "2020-09",
           "github": false,
           "funder": true,
-          "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         }
@@ -433,7 +436,9 @@
       "tutorial_name": "r-advanced",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -555,7 +560,7 @@
           "name": "Avans Hogeschool",
           "joined": "2020-11",
           "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)\n",
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)",
           "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json"
         }
@@ -568,16 +573,17 @@
         "SQL": "Structured Query Language"
       },
       "tags": [
-        "SQL",
-        "jupyter-notebook"
+        "SQL"
       ],
-      "last_modified_at": "2021-12-14T14:52:15+00:00",
+      "last_modified_at": "2021-12-21T10:14:03+00:00",
       "url": "/topics/data-science/tutorials/sql-advanced/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "sql-advanced",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -695,7 +701,7 @@
           "joined": "2020-09",
           "github": false,
           "funder": true,
-          "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         },
@@ -703,22 +709,23 @@
           "name": "Avans Hogeschool",
           "joined": "2020-11",
           "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)\n",
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)",
           "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json"
         }
       ],
       "tags": [
-        "jupyter-notebook",
         "bash"
       ],
-      "last_modified_at": "2021-12-14T14:52:15+00:00",
+      "last_modified_at": "2021-12-21T10:14:03+00:00",
       "url": "/topics/data-science/tutorials/cli-basics/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "cli-basics",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -789,23 +796,24 @@
           "joined": "2020-09",
           "github": false,
           "funder": true,
-          "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         }
       ],
       "tags": [
         "game",
-        "jupyter-notebook",
         "bash"
       ],
-      "last_modified_at": "2021-12-14T14:52:15+00:00",
+      "last_modified_at": "2021-12-21T10:14:03+00:00",
       "url": "/topics/data-science/tutorials/cli-bashcrawl/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "cli-bashcrawl",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -827,7 +835,6 @@
       "layout": "tutorial_hands_on",
       "title": "dplyr & tidyverse for data processing",
       "level": "Advanced",
-      "enable": false,
       "zenodo_link": null,
       "requirements": [
         {
@@ -872,7 +879,7 @@
           "joined": "2020-09",
           "github": false,
           "funder": true,
-          "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         },
@@ -880,28 +887,29 @@
           "name": "Avans Hogeschool",
           "joined": "2020-11",
           "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)\n",
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)",
           "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json"
         }
       ],
-      "subtopic": "sql",
+      "subtopic": "r",
       "notebook": {
         "language": "r"
       },
+      "priority": 3,
       "tags": [
-        "R",
-        "jupyter-notebook",
-        "work-in-progress"
+        "R"
       ],
       "license": "MIT",
-      "last_modified_at": "2021-12-14T14:52:15+00:00",
+      "last_modified_at": "2021-12-21T10:14:03+00:00",
       "url": "/topics/data-science/tutorials/r-dplyr/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "r-dplyr",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -977,7 +985,7 @@
           "joined": "2020-09",
           "github": false,
           "funder": true,
-          "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         }
@@ -992,7 +1000,9 @@
       "tutorial_name": "python-basics",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -1103,7 +1113,7 @@
           "name": "Avans Hogeschool",
           "joined": "2020-11",
           "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)\n",
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)",
           "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json"
         }
@@ -1116,16 +1126,17 @@
         "SQL": "Structured Query Language"
       },
       "tags": [
-        "SQL",
-        "jupyter-notebook"
+        "SQL"
       ],
-      "last_modified_at": "2021-12-14T14:52:15+00:00",
+      "last_modified_at": "2021-12-21T10:14:03+00:00",
       "url": "/topics/data-science/tutorials/sql-basic/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "sql-basic",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -1210,7 +1221,7 @@
           "name": "Avans Hogeschool",
           "joined": "2020-11",
           "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)\n",
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)",
           "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json"
         }
@@ -1225,7 +1236,9 @@
       "tutorial_name": "snakemake",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -1301,7 +1314,7 @@
           "joined": "2020-09",
           "github": false,
           "funder": true,
-          "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         }
@@ -1316,7 +1329,9 @@
       "tutorial_name": "python-plotting",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -1421,7 +1436,7 @@
           "joined": "2020-09",
           "github": false,
           "funder": true,
-          "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         }
@@ -1432,7 +1447,9 @@
       "tutorial_name": "r-basics",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+        "interactive_tool_rstudio"
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -1505,7 +1522,7 @@
           "joined": "2020-09",
           "github": false,
           "funder": true,
-          "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         },
@@ -1513,23 +1530,24 @@
           "name": "Avans Hogeschool",
           "joined": "2020-11",
           "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)\n",
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)",
           "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json"
         }
       ],
       "tags": [
         "game",
-        "SQL",
-        "jupyter-notebook"
+        "SQL"
       ],
-      "last_modified_at": "2021-12-14T14:52:15+00:00",
+      "last_modified_at": "2021-12-21T10:14:03+00:00",
       "url": "/topics/data-science/tutorials/sql-game/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "sql-game",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -1601,7 +1619,7 @@
           "name": "Avans Hogeschool",
           "joined": "2020-11",
           "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)\n",
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)",
           "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json"
         }
@@ -1612,16 +1630,17 @@
       },
       "tags": [
         "SQL",
-        "Python",
-        "jupyter-notebook"
+        "Python"
       ],
-      "last_modified_at": "2021-12-14T14:52:15+00:00",
+      "last_modified_at": "2021-12-21T10:14:03+00:00",
       "url": "/topics/data-science/tutorials/sql-python/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "sql-python",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {
@@ -1702,7 +1721,7 @@
           "name": "Avans Hogeschool",
           "joined": "2020-11",
           "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)\n",
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)",
           "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json"
         }
@@ -1713,16 +1732,17 @@
       },
       "tags": [
         "SQL",
-        "R",
-        "jupyter-notebook"
+        "R"
       ],
-      "last_modified_at": "2021-12-14T14:52:15+00:00",
+      "last_modified_at": "2021-12-21T10:14:03+00:00",
       "url": "/topics/data-science/tutorials/sql-r/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "sql-r",
       "hands_on": true,
       "slides": false,
-      "workflows": false,
+      "tools": [
+
+      ],
       "tours": false,
       "video": false,
       "translations": {

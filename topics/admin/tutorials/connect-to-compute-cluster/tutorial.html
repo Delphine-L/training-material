@@ -270,7 +270,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:33:42 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Connecting Galaxy to a compute cluster",
   "interactivityType": "mixed",
@@ -306,7 +306,7 @@
   "name": "Hands-on for 'Connecting Galaxy to a compute cluster' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html",
   "timeRequired": "PT1H",
-  "keywords": "jobs",
+  "keywords": "jobs, ansible, git-gat",
   "description": "The questions this  addresses are:\n - How to connect Galaxy to a compute cluster?\n - What are job metrics?\n - What sort of information can I collect?\n - Where can I find this information?\n\n\\nThe objectives are:\n - Be familiar with the basics of installing, configuring, and using Slurm\n - Understand all components of the Galaxy job running stack\n - Understand how the `job_conf.xml` file controls Galaxy's jobs subsystem\n - Have a strong understanding of Galaxy job destinations\n - Understand the purpose and function of Galaxy job metrics\n\n",
   "inLanguage": {
     "@type": "Language",
@@ -580,6 +580,8 @@
                     
                         
                     
+                        
+                    
                 
                     
                         
@@ -673,6 +675,8 @@
                     
                         
                     
+                        
+                    
                 
             </ul>
         
@@ -711,9 +715,18 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/admin/tutorials/connect-to-compute-cluster/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
 
             <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
             
+
 
 
 
@@ -732,7 +745,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jul 2, 2021 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 30, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -748,7 +761,7 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
-                
+                 
 
                 <h1 id="running-galaxy-jobs-with-slurm">Running <span class="notranslate">Galaxy</span> Jobs with Slurm</h1>
 
@@ -806,7 +819,7 @@ be taken into consideration when choosing where to run jobs and what parameters 
 
       <div data-commit="Add requirements" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/requirements.yml
 </span><span class="gi">+++ b/requirements.yml
-</span><span class="p">@@ -18,3 +18,7 @@</span>
+</span><span class="p">@@ -20,3 +20,7 @@</span>
    version: 2.6.3
  - src: <span class="notranslate">galaxy</span>project.cvmfs
    version: 0.2.13
@@ -816,6 +829,9 @@ be taken into consideration when choosing where to run jobs and what parameters 
 +  version: 0.1.3
 </span>   
 </code></pre></div>      </div>
+
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-how-to-read-a-diff"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: How to read a Diff</h3>  <p>If you haven’t worked with diffs before, this can be something quite new or different.</p>  <p>If we have two files, let’s say a grocery list, in two files. We’ll call them ‘a’ and ‘b’.</p>  <blockquote class="code-2col">  <blockquote class="code-in">    <h3 data-toc-skip="" id="code-in-old"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Old</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat old<br />🍎<br />🍐<br />🍊<br />🍋<br />🍒<br />🥑<br /></code></pre></div>    </div>  </blockquote>  <blockquote class="code-out">    <h3 data-toc-skip="" id="code-out-new"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden">code-out</span> New</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat new<br />🍎<br />🍐<br />🍊<br />🍋<br />🍍<br />🥑<br /></code></pre></div>    </div>  </blockquote></blockquote>  <p>We can see that they have some different entries. We’ve removed 🍒 because they’re awful, and replaced them with an 🍍</p>  <p>Diff lets us compare these files</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff old new<br />5c5<br />&lt; 🍒<br /><span class="nt">---</span><br /><span class="o">&gt;</span> 🍍<br /></code></pre></div></div>  <p>Here we see that ‘pears’ is only in a, and ‘ananas’ is only in b. But otherwise the files are identical.</p>  <p>There are a couple different formats to diffs, one is the ‘unified diff’</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> old new<br /><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:06:36.340962616 +0100<br />@@ <span class="nt">-3</span>,4 +3,4 @@<br /> 🍊<br /> 🍋<br />-🍒<br />+🍍<br /> 🥑<br /></code></pre></div></div>  <p>This is basically what you see in the training materials which gives you a lot of context about the changes:</p>  <ul>  <li><code class="language-plaintext highlighter-rouge">--- old</code> is the ‘old’ file in our view</li>  <li><code class="language-plaintext highlighter-rouge">+++ new</code> is the ‘new’ file</li>  <li>@@ these lines tell us where the change occurs and how many lines are added or removed.</li>  <li>Lines starting with a - are removed from our ‘new’ file</li>  <li>Lines with a + have been added.</li></ul>  <p>So when you go to apply these diffs to your files in the training:</p>  <ol>  <li>Ignore the header</li>  <li>Remove lines starting with - from your file</li>  <li>Add lines starting with + to your file</li></ol>  <p>The other lines (🍊/🍋 and 🥑) above just provide “context”, they help you know where a change belongs in a file, but <strong>should not be edited</strong> when you’re making the above change. Given the above diff, you would find a line with a 🍒, and replace it with a 🍍</p>  <h4 id="added--removed-lines">Added &amp; Removed Lines</h4>  <p>Removals are very easy to spot, we just have removed lines</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:10:14.370722802 +0100<br />@@ <span class="nt">-4</span>,3 +4,2 @@<br /> 🍋<br /> 🍒<br />-🥑<br /></code></pre></div></div>  <p>And additions likewise are very easy, just add a new line, between the other lines in your file.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:11:11.422135393 +0100<br />@@ <span class="nt">-1</span>,3 +1,4 @@<br /> 🍎<br />+🍍<br /> 🍐<br /> 🍊<br /></code></pre></div></div>  <h4 id="completely-new-files">Completely new files</h4>  <p>Completely new files look a bit different, there the “old” file is <code class="language-plaintext highlighter-rouge">/dev/null</code>, the empty file in a Linux machine.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> /dev/null old<br /><span class="nt">---</span> /dev/null	2022-02-15 11:47:16.100000270 +0100<br />+++ old	2022-02-16 14:06:19.697132568 +0100<br />@@ <span class="nt">-0</span>,0 +1,6 @@<br />+🍎<br />+🍐<br />+🍊<br />+🍋<br />+🍒<br />+🥑<br /></code></pre></div></div>  <p>And removed files are similar, except with the the new file being /dev/null</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ /dev/null	2022-02-15 11:47:16.100000270 +0100<br />@@ <span class="nt">-1</span>,6 +0,0 @@<br />-🍎<br />-🍐<br />-🍊<br />-🍋<br />-🍒<br />-🥑<br /></code></pre></div></div></blockquote>
 
       <p>The <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>project.repos</code> role adds the <a href="https://depot.galaxyproject.org/yum/"><span class="notranslate">Galaxy</span> Packages for Enterprise Linux (GPEL)</a> repository for RedHat/CentOS, which provides both Slurm and Slurm-DRMAA (neither are available in standard repositories or EPEL). For Ubuntu versions 18.04 or newer, it adds the <a href="https://launchpad.net/~natefoo/+archive/ubuntu/slurm-drmaa">Slurm-DRMAA PPA</a> (Slurm-DRMAA was removed from Debian/Ubuntu in buster/bionic).</p>
     </li>
@@ -850,12 +866,11 @@ be taken into consideration when choosing where to run jobs and what parameters 
 
       <div data-commit="Add slurm configuration" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -137,3 +137,13 @@</span> golang_gopath: '/opt/workspace-go'
- # Singularity target version
+</span><span class="p">@@ -140,6 +140,16 @@</span> golang_gopath: '/opt/workspace-go'
  singularity_version: "3.7.4"
  singularity_go_path: "{{ golang_install_dir }}"
-<span class="gi">+
-+# Slurm
+    
+<span class="gi">+# Slurm
 +slurm_roles: ['controller', 'exec'] # Which roles should the machine play? exec are execution hosts.
 +slurm_nodes:
 +- name: localhost # Name of our host
@@ -864,7 +879,11 @@ be taken into consideration when choosing where to run jobs and what parameters 
 +  SlurmdParameters: config_overrides   # Ignore errors if the host actually has cores != 2
 +  SelectType: select/cons_res
 +  SelectTypeParameters: CR_CPU_Memory  # Allocate individual cores/memory instead of entire node
-</span>   
++
+</span> # TUS
+ <span class="notranslate">galaxy</span>_tusd_port: 1080
+ tusd_instances:
+   
 </code></pre></div>      </div>
     </li>
     <li>
@@ -1106,7 +1125,7 @@ sleep </span>30
 
       <div data-commit="Configure DRMAA_LIBRARY_PATH" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -101,6 +101,7 @@</span> <span class="notranslate">galaxy</span>_config_templates:
+</span><span class="p">@@ -103,6 +103,7 @@</span> <span class="notranslate">galaxy</span>_config_templates:
     
  # systemd
  <span class="notranslate">galaxy</span>_manage_systemd: yes
@@ -1428,7 +1447,7 @@ However most of the metrics exposed by this setting are quite safe (e.g. cgroups
 <p>You can access the data via BioBlend (<a href="https://bioblend.readthedocs.io/en/latest/api_docs/galaxy/all.html#bioblend.galaxy.jobs.JobsClient.get_metrics"><code class="language-plaintext highlighter-rouge">JobsClient.get_metrics</code></a>), or via SQL with <a href="https://usegalaxy-eu.github.io/gxadmin/#/README.query?id=query-tool-metrics"><code class="language-plaintext highlighter-rouge">gxadmin</code></a>.</p>
 
 <!--SNIPPET-->
-<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-6">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-5...step-6#files_bucket">the previous tutorial</a>.</p></blockquote>
+<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-7">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-6...step-7#files_bucket">the previous tutorial</a>.</p></blockquote>
 
 <h2 id="further-reading">Further Reading</h2>
 
@@ -1459,7 +1478,7 @@ However most of the metrics exposed by this setting are quite safe (e.g. cgroups
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
@@ -1510,7 +1529,7 @@ However most of the metrics exposed by this setting are quite safe (e.g. cgroups
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Nate Coraor, Björn Grüning, Helena Rasche, 2021 <b>Connecting Galaxy to a compute cluster (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">Nate Coraor, Björn Grüning, Helena Rasche, 2022 <b>Connecting Galaxy to a compute cluster (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1527,9 +1546,9 @@ However most of the metrics exposed by this setting are quite safe (e.g. cgroups
 <code id="citation-code">@misc{admin-connect-to-compute-cluster,
 author = "Nate Coraor and Björn Grüning and Helena Rasche",
 title = "Connecting Galaxy to a compute cluster (Galaxy Training Materials)",
-year = "2021",
-month = "07",
-day = "02"
+year = "2022",
+month = "03",
+day = "30"
 url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -1640,6 +1659,8 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                                 
                             
                             </li>
+                        
+                    
                         
                     
                         

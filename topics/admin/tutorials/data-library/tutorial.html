@@ -270,7 +270,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:33:42 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Data Libraries",
   "interactivityType": "mixed",
@@ -306,7 +306,7 @@
   "name": "Hands-on for 'Data Libraries' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/data-library/tutorial.html",
   "timeRequired": "PT30M",
-  "keywords": "storage",
+  "keywords": "ansible, storage, git-gat",
   "description": "The questions this  addresses are:\n - How do data libraries work?\n - What are they good for?\n - How can I use them?\n - How can I setup permissions for them?\n\n\\nThe objectives are:\n - Setup a data library\n - Manage permissions\n - Import data from disk\n\n",
   "inLanguage": {
     "@type": "Language",
@@ -591,6 +591,8 @@
                     
                         
                     
+                        
+                    
                 
                     
                         
@@ -638,6 +640,8 @@
                                 
                             
                             </li>
+                        
+                    
                         
                     
                         
@@ -777,6 +781,8 @@
                     
                         
                     
+                        
+                    
                 
             </ul>
         
@@ -815,6 +821,14 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/admin/tutorials/data-library/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
 
             <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
             
@@ -828,17 +842,23 @@
 
 
 
+
   
   <li class="btn btn-default supporting_material">
-    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Video Library for these Training Materials">
-        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> GTN Video Library
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Recordings
     </a>
     <ul class="dropdown-menu">
         
         
+
+        
+        
+        
+
         <li>
             <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/admin/data-library/tutorial" title="View GTN Video Library for this Tutorial">
-                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
             </a>
         </li>
         
@@ -854,7 +874,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jul 9, 2021 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 30, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -870,7 +890,7 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
-                
+                 
 
                 <p>Data libraries are a great way to provide structured repositories of data to
 everyone on your server, or to a subset of your users. Datasets in libraries do
@@ -922,6 +942,12 @@ of a sequencing run or similar project to a group of users on the servers.</p>
      - role: natefoo.postgresql_objects
    
 </code></pre></div>      </div>
+
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-how-to-read-a-diff"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: How to read a Diff</h3>  <p>If you haven’t worked with diffs before, this can be something quite new or different.</p>  <p>If we have two files, let’s say a grocery list, in two files. We’ll call them ‘a’ and ‘b’.</p>  <blockquote class="code-2col">  <blockquote class="code-in">    <h3 data-toc-skip="" id="code-in-old"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Old</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat old<br />🍎<br />🍐<br />🍊<br />🍋<br />🍒<br />🥑<br /></code></pre></div>    </div>  </blockquote>  <blockquote class="code-out">    <h3 data-toc-skip="" id="code-out-new"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden">code-out</span> New</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat new<br />🍎<br />🍐<br />🍊<br />🍋<br />🍍<br />🥑<br /></code></pre></div>    </div>  </blockquote></blockquote>  <p>We can see that they have some different entries. We’ve removed 🍒 because they’re awful, and replaced them with an 🍍</p>  <p>Diff lets us compare these files</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff old new<br />5c5<br />&lt; 🍒<br /><span class="nt">---</span><br /><span class="o">&gt;</span> 🍍<br /></code></pre></div></div>  <p>Here we see that ‘pears’ is only in a, and ‘ananas’ is only in b. But otherwise the files are identical.</p>  <p>There are a couple different formats to diffs, one is the ‘unified diff’</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> old new<br /><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:06:36.340962616 +0100<br />@@ <span class="nt">-3</span>,4 +3,4 @@<br /> 🍊<br /> 🍋<br />-🍒<br />+🍍<br /> 🥑<br /></code></pre></div></div>  <p>This is basically what you see in the training materials which gives you a lot of context about the changes:</p>  <ul>  <li><code class="language-plaintext highlighter-rouge">--- old</code> is the ‘old’ file in our view</li>  <li><code class="language-plaintext highlighter-rouge">+++ new</code> is the ‘new’ file</li>  <li>@@ these lines tell us where the change occurs and how many lines are added or removed.</li>  <li>Lines starting with a - are removed from our ‘new’ file</li>  <li>Lines with a + have been added.</li></ul>  <p>So when you go to apply these diffs to your files in the training:</p>  <ol>  <li>Ignore the header</li>  <li>Remove lines starting with - from your file</li>  <li>Add lines starting with + to your file</li></ol>  <p>The other lines (🍊/🍋 and 🥑) above just provide “context”, they help you know where a change belongs in a file, but <strong>should not be edited</strong> when you’re making the above change. Given the above diff, you would find a line with a 🍒, and replace it with a 🍍</p>  <h4 id="added--removed-lines">Added &amp; Removed Lines</h4>  <p>Removals are very easy to spot, we just have removed lines</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:10:14.370722802 +0100<br />@@ <span class="nt">-4</span>,3 +4,2 @@<br /> 🍋<br /> 🍒<br />-🥑<br /></code></pre></div></div>  <p>And additions likewise are very easy, just add a new line, between the other lines in your file.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:11:11.422135393 +0100<br />@@ <span class="nt">-1</span>,3 +1,4 @@<br /> 🍎<br />+🍍<br /> 🍐<br /> 🍊<br /></code></pre></div></div>  <h4 id="completely-new-files">Completely new files</h4>  <p>Completely new files look a bit different, there the “old” file is <code class="language-plaintext highlighter-rouge">/dev/null</code>, the empty file in a Linux machine.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> /dev/null old<br /><span class="nt">---</span> /dev/null	2022-02-15 11:47:16.100000270 +0100<br />+++ old	2022-02-16 14:06:19.697132568 +0100<br />@@ <span class="nt">-0</span>,0 +1,6 @@<br />+🍎<br />+🍐<br />+🍊<br />+🍋<br />+🍒<br />+🥑<br /></code></pre></div></div>  <p>And removed files are similar, except with the the new file being /dev/null</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ /dev/null	2022-02-15 11:47:16.100000270 +0100<br />@@ <span class="nt">-1</span>,6 +0,0 @@<br />-🍎<br />-🍐<br />-🍊<br />-🍋<br />-🍒<br />-🥑<br /></code></pre></div></div></blockquote>
+    </li>
+    <li>
+      <p>Take a minute to explore the <a href="https://github.com/usegalaxy-eu/libraries-training-repo">folders in our sample library.</a>. These will be important when we start loading data.</p>
     </li>
     <li>
       <p>Edit the file <code class="language-plaintext highlighter-rouge">group_vars/<span class="notranslate">galaxy</span>servers.yml</code> and set the following variables:</p>
@@ -939,6 +965,8 @@ of a sequencing run or similar project to a group of users on the servers.</p>
      containers_resolvers_config_file: "{{ <span class="notranslate">galaxy</span>_config_dir }}/container_resolvers_conf.xml"
    
 </code></pre></div>      </div>
+
+      <p>Note that the <code class="language-plaintext highlighter-rouge">/libraries/admin</code> will refer to a folder within the libraries-training-repo that we cloned in the pre-task, and likewise for <code class="language-plaintext highlighter-rouge">/libraries/user</code></p>
     </li>
     <li>
       <p>Run the playbook:</p>
@@ -982,6 +1010,11 @@ of a sequencing run or similar project to a group of users on the servers.</p>
   </blockquote>
 </blockquote>
 
+<blockquote class="tip">
+  <h3 id="tip-tip-adminexampleorg"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: admin@example.org</h3>
+  <p>Note that in the user directories, admin@example.com and example.org are used, if you’ve used a different email address for <em>your</em> admin user, you’ll need to copy one of these directories.</p>
+</blockquote>
+
 <blockquote class="hidden">
   <div data-test="true" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.sh
 </code></pre></div>  </div>
@@ -1013,7 +1046,7 @@ of a sequencing run or similar project to a group of users on the servers.</p>
   <h3 id="tip-tip-do-you-not-see-a-directory-here"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Do you not see a directory here?</h3>
   <p>We pre-created a directory for someone registered as <code class="language-plaintext highlighter-rouge">admin@example.org</code>, but if you are logged in with an account registered with a different email, you’ll see nothing.</p>
 
-  <p>You can fix this by going into /libraries/user and <code class="language-plaintext highlighter-rouge">ln -s admin@example.org whatever-email-you-used</code>
+  <p>You can fix this by going into /libraries/user and <code class="language-plaintext highlighter-rouge">cp -Rv admin@example.org whatever-email-you-used</code>
 Then it should appear in <span class="notranslate">Galaxy</span>.</p>
 </blockquote>
 
@@ -1128,7 +1161,7 @@ library already exists! <span class="nb">id</span>: f597429621d6eb2b
 </blockquote>
 
 <!--SNIPPET-->
-<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-5">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-4...step-5#files_bucket">the previous tutorial</a>.</p></blockquote>
+<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-6">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-5...step-6#files_bucket">the previous tutorial</a>.</p></blockquote>
 
 <p>Note that we’ve used some special flags here, <code class="language-plaintext highlighter-rouge">--training</code> and <code class="language-plaintext highlighter-rouge">--legacy</code>. Training sets some defaults that make sense for the GTN (mostly around library descriptions / etc.)</p>
 
@@ -1174,7 +1207,7 @@ library already exists! <span class="nb">id</span>: f597429621d6eb2b
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
@@ -1222,7 +1255,7 @@ library already exists! <span class="nb">id</span>: f597429621d6eb2b
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Helena Rasche, Saskia Hiltemann, 2021 <b>Data Libraries (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">Helena Rasche, Saskia Hiltemann, 2022 <b>Data Libraries (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1239,9 +1272,9 @@ library already exists! <span class="nb">id</span>: f597429621d6eb2b
 <code id="citation-code">@misc{admin-data-library,
 author = "Helena Rasche and Saskia Hiltemann",
 title = "Data Libraries (Galaxy Training Materials)",
-year = "2021",
-month = "07",
-day = "09"
+year = "2022",
+month = "03",
+day = "30"
 url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }

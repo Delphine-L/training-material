@@ -270,7 +270,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:33:42 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Analysis of molecular dynamics simulations",
   "interactivityType": "mixed",
@@ -369,6 +369,10 @@
     {
       "@type": "Person",
       "name": "Simon Bray"
+    },
+    {
+      "@type": "Person",
+      "name": "Nadia Goué"
     }
   ],
   "contributor": [
@@ -383,6 +387,10 @@
     {
       "@type": "Person",
       "name": "Simon Bray"
+    },
+    {
+      "@type": "Person",
+      "name": "Nadia Goué"
     }
   ],
   "about": [
@@ -410,6 +418,9 @@
 
 
 <a href="/training-material/hall-of-fame/simonbray/" class="contributor-badge contributor-simonbray"><img src="https://avatars.githubusercontent.com/simonbray?s=27" alt="Avatar">Simon Bray</a>
+
+
+<a href="/training-material/hall-of-fame/nagoue/" class="contributor-badge contributor-nagoue"><img src="https://avatars.githubusercontent.com/nagoue?s=27" alt="Avatar">Nadia Goué</a>
 
 
 <a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
@@ -475,6 +486,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Setting up molecular systems:
                             
@@ -489,6 +502,8 @@
                         
                     
                 
+                    
+                        
                     
                         
                     
@@ -552,7 +567,7 @@
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" href="https://zenodo.org/record/2537734">
+<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/2537734">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
 
@@ -577,9 +592,18 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/computational-chemistry/tutorials/analysis-md-simulations/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
 
             <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
             
+
 
 
 
@@ -737,15 +761,13 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
         
     
-        
-        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
-            UseGalaxy.be
-        </a>
         
     
         
@@ -765,10 +787,6 @@
         
     
         
-        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
-            UseGalaxy.org.au
-        </a>
-        
     
         
     
@@ -786,7 +804,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Sep 2, 2021 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 17, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -802,7 +820,7 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
-                
+                 
 
                 <h1 class="no_toc" id="introduction">Introduction</h1>
 
@@ -867,7 +885,7 @@ https://zenodo.org/record/2537734/files/cbh1test.pdb
 
 <h1 id="analysis-with-bio3d">Analysis with BIO3D</h1>
 
-<p>We’ll carry out some basic analysis by calculating RMSD, RMSF and PCA. The tools use the <a href="http://thegrantlab.org/bio3d/index.php">Bio3D package</a>, developed by the <a href="http://thegrantlab.org/">Grant lab</a>.</p>
+<p>We’ll carry out some basic analysis by calculating RMSD, RMSF and PCA. The tools use the <a href="http://thegrantlab.org/bio3d">Bio3D package</a>, developed by the <a href="http://thegrantlab.org/">Grant lab</a>.</p>
 
 <h2 id="rmsd">RMSD</h2>
 
@@ -964,7 +982,7 @@ https://zenodo.org/record/2537734/files/cbh1test.pdb
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“pdb input”</em>: Structure file</li>
         <li><em>“Use singular value decomposition (SVD) instead of default eigenvalue decomposition ?”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
         <li><em>“Select domains”</em>: <code class="language-plaintext highlighter-rouge">Calpha</code></li>
-        <li><em>“Principal component id”</em>: <code class="language-plaintext highlighter-rouge">Calpha</code></li>
+        <li><em>“Principal component id”</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
       </ul>
     </li>
   </ol>
@@ -1008,7 +1026,7 @@ https://zenodo.org/record/2537734/files/cbh1test.pdb
 
 <h1 id="further-analysis">Further analysis</h1>
 
-<p>Further analyses are available; try out the <a href="https://github.com/galaxyproject/training-material/tree/master/topics/computational-chemistry/tutorials/analysis-md-simulations/workflows/advanced_workflow.ga">MDAnalysis <span class="notranslate">workflow</span></a>, which includes a Ramachandran plot and various timeseries.</p>
+<p>Further analyses are available; try out the <a href="/training-material/topics/computational-chemistry/tutorials/analysis-md-simulations/workflows/advanced_workflow.ga">MDAnalysis <span class="notranslate">workflow</span></a>, which includes a Ramachandran plot and various timeseries.</p>
 
 <figure id="figure-6"><img src="/training-material/topics/computational-chemistry/images/workflow_mdanalysis.png" alt="MDAnalysis workflow. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> MD analysis <span class="notranslate">workflow</span></figcaption></figure>
 
@@ -1032,7 +1050,7 @@ https://zenodo.org/record/2537734/files/cbh1test.pdb
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/computational-chemistry/faqs/">FAQ page for the Computational chemistry topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/computational-chemistry/faqs/">FAQ page for the Computational chemistry topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
@@ -1083,7 +1101,7 @@ https://zenodo.org/record/2537734/files/cbh1test.pdb
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Christopher Barnett, Tharindu Senapathi, Simon Bray, 2021 <b>Analysis of molecular dynamics simulations (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/computational-chemistry/tutorials/analysis-md-simulations/tutorial.html">https://training.galaxyproject.org/training-material/topics/computational-chemistry/tutorials/analysis-md-simulations/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">Christopher Barnett, Tharindu Senapathi, Simon Bray, Nadia Goué, 2022 <b>Analysis of molecular dynamics simulations (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/computational-chemistry/tutorials/analysis-md-simulations/tutorial.html">https://training.galaxyproject.org/training-material/topics/computational-chemistry/tutorials/analysis-md-simulations/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1098,11 +1116,11 @@ https://zenodo.org/record/2537734/files/cbh1test.pdb
 
                 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
 <code id="citation-code">@misc{computational-chemistry-analysis-md-simulations,
-author = "Christopher Barnett and Tharindu Senapathi and Simon Bray",
+author = "Christopher Barnett and Tharindu Senapathi and Simon Bray and Nadia Goué",
 title = "Analysis of molecular dynamics simulations (Galaxy Training Materials)",
-year = "2021",
-month = "09",
-day = "02"
+year = "2022",
+month = "03",
+day = "17"
 url = "\url{https://training.galaxyproject.org/training-material/topics/computational-chemistry/tutorials/analysis-md-simulations/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -1159,6 +1177,8 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                                 
                             
                             </li>
+                        
+                    
                         
                     
                         
