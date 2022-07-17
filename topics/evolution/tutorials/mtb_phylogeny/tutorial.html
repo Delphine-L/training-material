@@ -17,6 +17,17 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/evolution/tutorials/mtb_phylogeny/tutorial.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Tree thinking for tuberculosis evolution and epidemiology" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:18 +0000" />
+<meta name="DC.creator" content="Christoph Stritt" />
+<meta name="DC.creator" content="Daniela Brites" />
+<meta name="DC.creator" content="Galo A. Goig" />
 
         
         
@@ -24,9 +35,11 @@
         
         
         <meta name="description" content="phylogenetics" />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Tree thinking for tuberculosis evolution and epidemiology" />
         <meta property="og:description" content="phylogenetics" />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -237,27 +250,14 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -295,28 +295,46 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Evolution",
     "description": "phylogenetics",
-    "url": "https://training.galaxyproject.org//training-material/topics/evolution/"
+    "url": "https://training.galaxyproject.org/training-material/topics/evolution/"
   },
-  "courseCode": "evolution / mtb_phylogeny / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Tree thinking for tuberculosis evolution and epidemiology' tutorial",
-  "url": "https://training.galaxyproject.org//training-material/topics/evolution/tutorials/mtb_phylogeny/tutorial.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/evolution/tutorials/mtb_phylogeny/tutorial.html",
   "timeRequired": "PT1H",
-  "keywords": "prokaryotes, phylogenetics, evolution, work-in-progress",
+  "keywords": "evolution, prokaryotes, phylogenetics, evolution, work-in-progress",
   "description": "The questions this  addresses are:\n - What information can I get from a phylogenetic tree?\n - How do I estimate a phylogeny?\n\n\\nThe objectives are:\n - Understand the basic concepts behind phylogenetic trees, as applied to *Mycobacterium tuberculosis*\n - Be able to read and interrogate a phylogeny encountered in the literature\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
-      "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
       "provider": {
@@ -327,35 +345,134 @@
       }
     }
   ],
-  "hasPart": [
-
-  ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Christoph Stritt"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/cstritt/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/cstritt/",
+      "name": "Christoph Stritt",
+      "image": "https://avatars.githubusercontent.com/cstritt",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Daniela Brites"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/dbrites/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/dbrites/",
+      "name": "Daniela Brites",
+      "image": "https://avatars.githubusercontent.com/dbrites",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Galo A. Goig"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/GaloGS/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/GaloGS/",
+      "name": "Galo A. Goig",
+      "image": "https://avatars.githubusercontent.com/GaloGS",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Christoph Stritt"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/cstritt/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/cstritt/",
+      "name": "Christoph Stritt",
+      "image": "https://avatars.githubusercontent.com/cstritt",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Daniela Brites"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/dbrites/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/dbrites/",
+      "name": "Daniela Brites",
+      "image": "https://avatars.githubusercontent.com/dbrites",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Galo A. Goig"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/GaloGS/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/GaloGS/",
+      "name": "Galo A. Goig",
+      "image": "https://avatars.githubusercontent.com/GaloGS",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "about": [
@@ -363,10 +480,10 @@
       "@type": "CreativeWork",
       "name": "Evolution",
       "description": "phylogenetics",
-      "url": "https://training.galaxyproject.org//training-material/topics/evolution/"
+      "url": "https://training.galaxyproject.org/training-material/topics/evolution/"
     }
   ],
-  "skillLevel": "Introductory"
+  "educationalLevel": "Beginner"
 }
 </script>
 
@@ -380,18 +497,23 @@
     </div>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/cstritt/" class="contributor-badge contributor-cstritt"><img src="https://avatars.githubusercontent.com/cstritt?s=27" alt="Avatar">Christoph Stritt</a>
+
 
 
 <a href="/training-material/hall-of-fame/dbrites/" class="contributor-badge contributor-dbrites"><img src="https://avatars.githubusercontent.com/dbrites?s=27" alt="Avatar">Daniela Brites</a>
 
 
+
 <a href="/training-material/hall-of-fame/GaloGS/" class="contributor-badge contributor-GaloGS"><img src="https://avatars.githubusercontent.com/GaloGS?s=27" alt="Avatar">Galo A. Goig</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+	</div>
 
 </div>
 
@@ -508,6 +630,8 @@
 
 
 
+
+
   
 
 
@@ -517,7 +641,7 @@
 
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>&nbsp;Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -527,172 +651,6 @@
             </a>
         </li>
     
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
-            Galaxy Africa
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
-            Galaxy India
-        </a>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
-            Galaxy@GenOuest
-        </a>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
-            Street Science
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
-            UseGalaxy.be
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
-            UseGalaxy.eu
-        </a>
-        
-    
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
-            UseGalaxy.no
-        </a>
-        
-    
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
-            UseGalaxy.org.au
-        </a>
-        
-    
-        
-    
-        
-    
-        
-        <a class="dropdown-item" href="https://virology.usegalaxy.eu/" title="Virology">
-            Virology
-        </a>
-        
-    
-        
     
     </ul>
 
@@ -1254,6 +1212,9 @@
                 
 
                 
+
+
+                
                 <h1 id="bibliography">References</h1>
                 <ol class="bibliography"><li id="Ford2013">Ford, C. B., R. R. Shah, M. K. Maeda, S. Gagneux, M. B. Murray <i>et al.</i>, 2013 <b>Mycobacterium tuberculosis mutation rate estimates from different lineages predict substantial differences in the emergence of drug-resistant tuberculosis</b>. Nature Genetics 45: 784–790. <a href="https://doi.org/10.1038/ng.2656">10.1038/ng.2656</a></li>
 <li id="Eldholm2016">Eldholm, V., J. H.-O. Pettersson, O. B. Brynildsrud, A. Kitchen, E. M. Rasmussen <i>et al.</i>, 2016 <b>Armed conflict and population displacement as drivers of the evolution and dispersal of \lessi\greaterMycobacterium tuberculosis\less/i\greater</b>. Proceedings of the National Academy of Sciences 113: 13881–13886. <a href="https://doi.org/10.1073/pnas.1611283113">10.1073/pnas.1611283113</a></li>
@@ -1297,8 +1258,6 @@
                     })(window, document);
                 </script>
 
-
-
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
@@ -1341,6 +1300,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">

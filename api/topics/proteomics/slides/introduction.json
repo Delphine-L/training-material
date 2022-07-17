@@ -13,11 +13,12 @@
       "gitter": "foellmelanie",
       "orcid": "0000-0002-1887-7543",
       "joined": "2018-10",
+      "elixir_node": "de",
       "id": "foellmelanie",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/foellmelanie.json"
     }
   ],
-  "last_modified_at": "10-Jul-21",
+  "last_modified_at": "11-Apr-22",
   "url": "/topics/proteomics/slides/introduction.html",
   "topic_name": "proteomics",
   "tutorial_name": "introduction",

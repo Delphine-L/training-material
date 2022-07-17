@@ -14,6 +14,7 @@
       "orcid": "0000-0003-3803-468X",
       "joined": "2017-09",
       "bio": "Researcher at Erasmus Medical Center",
+      "elixir_node": "nl",
       "id": "shiltemann",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json"
     }
@@ -21,26 +22,5 @@
   "last_modified_at": "10-Jul-21",
   "url": "/topics/instructors/tutorials/workshop-intro/slides.html",
   "topic_name": "instructors",
-  "tutorial_name": "workshop-intro",
-  "hands_on": false,
-  "slides": true,
-  "tools": [
-
-  ],
-  "tours": false,
-  "video": false,
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-
-    ],
-    "video": false
-  },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//instructors/tutorials/workshop-intro/slides.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//instructors/tutorials/workshop-intro/slides.json"
-  }
+  "tutorial_name": "workshop-intro"
 }

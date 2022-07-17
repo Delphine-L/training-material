@@ -40,6 +40,7 @@
       "orcid": "0000-0002-3079-6586",
       "linkedin": "bgruening",
       "joined": "2017-09",
+      "elixir_node": "de",
       "id": "bgruening",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
     },
@@ -50,6 +51,7 @@
       "maintainer_contact": "gitter",
       "gitter": "hexylena",
       "joined": "2017-09",
+      "elixir_node": "nl",
       "id": "hexylena",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
     }
@@ -79,29 +81,8 @@
       ]
     }
   ],
-  "last_modified_at": "30-Mar-22",
+  "last_modified_at": "06-Jul-22",
   "url": "/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html",
   "topic_name": "admin",
-  "tutorial_name": "connect-to-compute-cluster",
-  "hands_on": true,
-  "slides": true,
-  "tools": [
-
-  ],
-  "tours": false,
-  "video": true,
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-
-    ],
-    "video": true
-  },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//admin/tutorials/connect-to-compute-cluster/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//admin/tutorials/connect-to-compute-cluster/tutorial.json"
-  }
+  "tutorial_name": "connect-to-compute-cluster"
 }

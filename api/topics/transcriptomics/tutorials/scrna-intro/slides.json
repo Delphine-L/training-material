@@ -11,15 +11,9 @@
     "single-cell",
     "español"
   ],
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-      "es"
-    ],
-    "video": true
-  },
+  "translations": [
+    "es"
+  ],
   "questions": [
     "How are samples compared?",
     "How are cells captured?",
@@ -53,6 +47,7 @@
       "name": "Mehmet Tekman",
       "email": "mtekman89@gmail.com",
       "joined": "2018-11",
+      "elixir_node": "de",
       "id": "mtekman",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/mtekman.json"
     }
@@ -60,16 +55,5 @@
   "last_modified_at": "24-Nov-21",
   "url": "/topics/transcriptomics/tutorials/scrna-intro/slides.html",
   "topic_name": "transcriptomics",
-  "tutorial_name": "scrna-intro",
-  "hands_on": false,
-  "slides": true,
-  "tools": [
-
-  ],
-  "tours": false,
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/scrna-intro/slides.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/scrna-intro/slides.json"
-  }
+  "tutorial_name": "scrna-intro"
 }

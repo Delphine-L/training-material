@@ -34,6 +34,7 @@
     {
       "name": "Gildas Le Corguillé",
       "joined": "2017-09",
+      "elixir_node": "fr",
       "id": "lecorguille",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/lecorguille.json"
     },
@@ -47,26 +48,5 @@
   "last_modified_at": "01-Jul-21",
   "url": "/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html",
   "topic_name": "metabolomics",
-  "tutorial_name": "lcms-preprocessing",
-  "hands_on": true,
-  "slides": true,
-  "tools": [
-
-  ],
-  "tours": false,
-  "video": false,
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-
-    ],
-    "video": false
-  },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//metabolomics/tutorials/lcms-preprocessing/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//metabolomics/tutorials/lcms-preprocessing/tutorial.json"
-  }
+  "tutorial_name": "lcms-preprocessing"
 }

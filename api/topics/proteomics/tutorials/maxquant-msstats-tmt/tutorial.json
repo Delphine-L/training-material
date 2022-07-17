@@ -30,6 +30,7 @@
       "gitter": "foellmelanie",
       "orcid": "0000-0002-1887-7543",
       "joined": "2018-10",
+      "elixir_node": "de",
       "id": "foellmelanie",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/foellmelanie.json"
     },
@@ -52,33 +53,5 @@
   "last_modified_at": "16-Jan-22",
   "url": "/topics/proteomics/tutorials/maxquant-msstats-tmt/tutorial.html",
   "topic_name": "proteomics",
-  "tutorial_name": "maxquant-msstats-tmt",
-  "hands_on": true,
-  "slides": false,
-  "workflows": [
-    {
-      "workflow": "main_workflow.ga",
-      "tests": false
-    }
-  ],
-  "tools": [
-    "toolshed.g2.bx.psu.edu/repos/galaxyp/maxquant/maxquant/1.6.17.0+galaxy2",
-    "toolshed.g2.bx.psu.edu/repos/galaxyp/msstatstmt/msstatstmt/2.0.0+galaxy0"
-  ],
-  "tours": false,
-  "video": false,
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-
-    ],
-    "video": false
-  },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//proteomics/tutorials/maxquant-msstats-tmt/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//proteomics/tutorials/maxquant-msstats-tmt/tutorial.json"
-  }
+  "tutorial_name": "maxquant-msstats-tmt"
 }

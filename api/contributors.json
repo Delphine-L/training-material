@@ -27,6 +27,7 @@
     "gitter": "abretaud",
     "orcid": "0000-0003-0914-2470",
     "joined": "2017-09",
+    "elixir_node": "fr",
     "id": "abretaud",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json"
   },
@@ -121,6 +122,7 @@
     "name": "Anne Fouilloux",
     "twitter": "AnneFouilloux",
     "joined": "2019-07",
+    "elixir_node": "no",
     "id": "annefou",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/annefou.json"
   },
@@ -131,10 +133,18 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/annesiegel.json"
   },
   {
+    "name": "Adaora Okwo",
+    "email": "adaorao60@gmail.com",
+    "joined": "2022-04",
+    "id": "AnomalyCodes",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/AnomalyCodes.json"
+  },
+  {
     "name": "Anup Kumar",
     "email": "anup.rulez@gmail.com",
     "twitter": "musafirtweetsz",
     "joined": "2018-08",
+    "elixir_node": "de",
     "id": "anuprulez",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/anuprulez.json"
   },
@@ -182,11 +192,19 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/bagnacan.json"
   },
   {
+    "name": "Eshaan Deshmukh",
+    "email": "eshaan.deshmukh99@gmail.com",
+    "joined": "2022-04",
+    "id": "beachyesh",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/beachyesh.json"
+  },
+  {
     "name": "Beatriz Serrano-Solano",
     "email": "beatrizserrano.galaxy@gmail.com",
     "twitter": "Birthae",
     "gitter": "beatrizserrano",
     "joined": "2020-07",
+    "elixir_node": "de",
     "id": "beatrizserrano",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/beatrizserrano.json"
   },
@@ -198,6 +216,7 @@
     "gitter": "bebatut",
     "orcid": "0000-0001-9852-1987",
     "joined": "2017-09",
+    "elixir_node": "de",
     "id": "bebatut",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json"
   },
@@ -207,12 +226,21 @@
     "gitter": "bedroesb",
     "orcid": "0000-0003-0522-5674",
     "joined": "2019-12",
+    "elixir_node": "be",
     "id": "bedroesb",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/bedroesb.json"
   },
   {
+    "name": "Alouzeh Brandone",
+    "email": "alouzehm@gmail.com",
+    "joined": "2022-03",
+    "id": "bernandez",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/bernandez.json"
+  },
+  {
     "name": "Matthias Bernt",
     "joined": "2017-09",
+    "elixir_node": "de",
     "id": "bernt-matthias",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/bernt-matthias.json"
   },
@@ -231,6 +259,7 @@
     "orcid": "0000-0002-3079-6586",
     "linkedin": "bgruening",
     "joined": "2017-09",
+    "elixir_node": "de",
     "id": "bgruening",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
   },
@@ -251,6 +280,7 @@
     "name": "Clemens Blank",
     "email": "blankclemens@gmail.com",
     "joined": "2017-09",
+    "elixir_node": "de",
     "id": "blankclemens",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/blankclemens.json"
   },
@@ -275,9 +305,20 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/bfranicevic.json"
   },
   {
+    "name": "Joan Hérisson",
+    "email": "joan.herisson@univ-evry.fr",
+    "orcid": "0000-0001-9741-0847",
+    "gitter": "breakthewall",
+    "linkedin": "joanherisson",
+    "joined": "2022-03",
+    "id": "breakthewall",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/breakthewall.json"
+  },
+  {
     "name": "Catherine Bromhead",
     "gitter": "cat-bro",
     "joined": "2019-12",
+    "elixir_node": "au",
     "id": "cat-bro",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/cat-bro.json"
   },
@@ -317,6 +358,7 @@
   {
     "name": "Clare Sloggett",
     "joined": "2018-07",
+    "elixir_node": "au",
     "id": "claresloggett",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/claresloggett.json"
   },
@@ -332,6 +374,7 @@
     "twitter": "ColineRoyaux",
     "orcid": "0000-0003-4308-5617",
     "joined": "2020-11",
+    "elixir_node": "fr",
     "id": "colineroyaux",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/colineroyaux.json"
   },
@@ -339,6 +382,7 @@
     "name": "Florence Combes",
     "email": "florence.combes@cea.fr",
     "joined": "2019-04",
+    "elixir_node": "fr",
     "id": "combesf",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/combesf.json"
   },
@@ -367,13 +411,6 @@
     "joined": "2022-03",
     "id": "cstritt",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/cstritt.json"
-  },
-  {
-    "name": "Krzys Poterlowicz",
-    "github": false,
-    "joined": "2017-09",
-    "id": "daltis20012009",
-    "url": "https://training.galaxyproject.org/training-material/api/contributors/daltis20012009.json"
   },
   {
     "name": "Daniela Butano",
@@ -455,6 +492,7 @@
     "name": "Estelle Ancelet",
     "email": "estelle.ancelet@inrae.fr",
     "joined": "2021-01",
+    "elixir_node": "fr",
     "id": "eancelet",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/eancelet.json"
   },
@@ -476,6 +514,7 @@
     "email": "engynasr94@gmail.com",
     "gitter": "EngyNasr",
     "joined": "2021-05",
+    "elixir_node": "de",
     "id": "EngyNasr",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/EngyNasr.json"
   },
@@ -491,6 +530,7 @@
     "email": "anikaerxleben@gmail.com",
     "orcid": "0000-0002-7427-6478",
     "joined": "2017-09",
+    "elixir_node": "de",
     "id": "erxleben",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/erxleben.json"
   },
@@ -498,6 +538,7 @@
     "name": "Esteban Perez-Wohlfeil",
     "email": "estebanpw@uma.es",
     "joined": "2020-11",
+    "elixir_node": "es",
     "id": "estebanpw",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/estebanpw.json"
   },
@@ -539,6 +580,7 @@
     "gitter": "foellmelanie",
     "orcid": "0000-0002-1887-7543",
     "joined": "2018-10",
+    "elixir_node": "de",
     "id": "foellmelanie",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/foellmelanie.json"
   },
@@ -550,6 +592,7 @@
     "orcid": "0000-0002-0222-4273",
     "linkedin": "fpsom",
     "joined": "2019-03",
+    "elixir_node": "gr",
     "id": "fpsom",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/fpsom.json"
   },
@@ -569,6 +612,7 @@
   {
     "name": "Frederik Coppens",
     "joined": "2018-07",
+    "elixir_node": "be",
     "id": "frederikcoppens",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/frederikcoppens.json"
   },
@@ -582,12 +626,14 @@
     "name": "Ross Lazarus",
     "email": "ross.lazarus@gmail.com",
     "joined": "2021-02",
+    "elixir_node": "au",
     "id": "fubar2",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/fubar2.json"
   },
   {
     "name": "Cristóbal Gallardo",
     "joined": "2020-11",
+    "elixir_node": "de",
     "id": "gallardoalba",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/gallardoalba.json"
   },
@@ -621,6 +667,7 @@
   {
     "name": "Gianmauro Cuccuru",
     "joined": "2019-03",
+    "elixir_node": "de",
     "id": "gmauro",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/gmauro.json"
   },
@@ -631,6 +678,15 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/guerler.json"
   },
   {
+    "name": "Guillaume Gricourt",
+    "email": "guillaume.gricourt@inrae.fr",
+    "orcid": "0000-0003-0143-5535",
+    "linkedin": "guillaume-gricourt",
+    "joined": "2022-03",
+    "id": "guillaume-gricourt",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/guillaume-gricourt.json"
+  },
+  {
     "name": "Harriet Dashnow",
     "joined": "2018-09",
     "id": "hdashnow",
@@ -639,6 +695,7 @@
   {
     "name": "Florian Heyl",
     "joined": "2018-08",
+    "elixir_node": "de",
     "id": "heylf",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/heylf.json"
   },
@@ -649,12 +706,14 @@
     "maintainer_contact": "gitter",
     "gitter": "hexylena",
     "joined": "2017-09",
+    "elixir_node": "nl",
     "id": "hexylena",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
   },
   {
     "name": "Hervé Ménager",
     "joined": "2017-09",
+    "elixir_node": "fr",
     "id": "hmenager",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/hmenager.json"
   },
@@ -666,6 +725,7 @@
     "orcid": "0000-0002-2799-424X",
     "linkedin": "hans-rudolf-hotz-542b31",
     "joined": "2017-09",
+    "elixir_node": "ch",
     "id": "hrhotz",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/hrhotz.json"
   },
@@ -677,16 +737,20 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/huitang-earth.json"
   },
   {
-    "name": "Sergey Golitsynskiy",
-    "joined": "2019-06",
-    "id": "ic4f",
-    "url": "https://training.galaxyproject.org/training-material/api/contributors/ic4f.json"
-  },
-  {
     "name": "IGC Bioinformatics Unit",
     "joined": "2018-12",
     "id": "igcbioinformatics",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/igcbioinformatics.json"
+  },
+  {
+    "name": "Ioana Popescu",
+    "email": "ioana.popescu@univ-evry.fr",
+    "orcid": "0000-0003-2547-8935",
+    "twitter": "ioanagrig",
+    "linkedin": "ioana-popescu-8207a026",
+    "joined": "2022-03",
+    "id": "ioanagry",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/ioanagry.json"
   },
   {
     "name": "Irelka Colina",
@@ -715,6 +779,13 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/jbmihoub.json"
   },
   {
+    "name": "John Davis",
+    "email": "jdavcs@gmail.com",
+    "joined": "2019-06",
+    "id": "jdavcs",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/jdavcs.json"
+  },
+  {
     "name": "Jennifer Hillman-Jackson",
     "maintainer_contact": "https://help.galaxyproject.org/",
     "email": "jen@galaxyproject.org",
@@ -737,6 +808,17 @@
     "joined": "2017-09",
     "id": "jfallmann",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/jfallmann.json"
+  },
+  {
+    "name": "Jean-Loup Faulon",
+    "email": "Jean-loup.Faulon@inrae.fr",
+    "orcid": "0000-0003-4274-2953",
+    "linkedin": "jean-loup-faulon-6b85976",
+    "twitter": "jeanloupfaulon",
+    "joined": "2022-03",
+    "elixir_node": "fr",
+    "id": "jfaulon",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/jfaulon.json"
   },
   {
     "name": "Jean-François Martin",
@@ -778,9 +860,20 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/pinin4fjords.json"
   },
   {
+    "name": "Jasper Ouwerkerk",
+    "email": "j.ouwerkerk.1@erasmusmc.nl",
+    "joined": "2022-04",
+    "elixir_node": "nl",
+    "id": "JasperO98",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/JasperO98.json"
+  },
+  {
     "name": "John Chilton",
     "email": "jmchilton@gmail.com",
     "joined": "2017-09",
+    "twitter": "jmchilton",
+    "gitter": "jmchilton",
+    "orcid": "0000-0002-6794-0756",
     "id": "jmchilton",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/jmchilton.json"
   },
@@ -788,6 +881,7 @@
     "name": "Joachim Wolff",
     "email": "wolffj@informatik.uni-freiburg.de",
     "joined": "2017-09",
+    "elixir_node": "de",
     "id": "joachimwolff",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/joachimwolff.json"
   },
@@ -844,6 +938,15 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/kenjifujihara.json"
   },
   {
+    "name": "Kenza Bazi-Kabbaj",
+    "email": "kenza.bazi-kabbaj@inrae.fr",
+    "orcid": "0000-0002-4319-5616",
+    "gitter": "kenza12",
+    "joined": "2022-03",
+    "id": "kenza12",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/kenza12.json"
+  },
+  {
     "name": "Alireza Khanteymoori",
     "email": "khanteymoori@gmail.com",
     "orcid": "0000-0001-6811-9196",
@@ -868,11 +971,12 @@
     "name": "Lain Pavot",
     "email": "lain.pavot@inrae.fr",
     "joined": "2022-02",
+    "elixir_node": "fr",
     "id": "Lain-inrae",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/Lain-inrae.json"
   },
   {
-    "name": "Love O'tudor",
+    "name": "Love O’tudor",
     "email": "loveotudor@gmail.com",
     "twitter": "lamouresparus",
     "joined": "2021-10",
@@ -882,6 +986,7 @@
   {
     "name": "Gildas Le Corguillé",
     "joined": "2017-09",
+    "elixir_node": "fr",
     "id": "lecorguille",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/lecorguille.json"
   },
@@ -908,6 +1013,7 @@
     "email": "lucille.delisle@epfl.ch",
     "orcid": "0000-0002-1964-4960",
     "joined": "2019-08",
+    "elixir_node": "ch",
     "id": "lldelisle",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/lldelisle.json"
   },
@@ -941,7 +1047,8 @@
     "name": "Krzysztof Poterlowicz",
     "twitter": "bioinfbrad",
     "orcid": "0000-0001-6173-5674",
-    "joined": "2018-08",
+    "joined": "2017-09",
+    "elixir_node": "uk",
     "id": "kpoterlowicz",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/kpoterlowicz.json"
   },
@@ -1017,6 +1124,7 @@
     "email": "mateo.boudet@inrae.fr",
     "orcid": "0000-0002-7028-7620",
     "joined": "2021-05",
+    "elixir_node": "fr",
     "id": "mboudet",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/mboudet.json"
   },
@@ -1029,8 +1137,15 @@
   {
     "name": "Maria Christina Maniou",
     "joined": "2021-09",
+    "elixir_node": "gr",
     "id": "mcmaniou",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/mcmaniou.json"
+  },
+  {
+    "name": "Melkeberhan Berhanu Degefa",
+    "joined": "2022-03",
+    "id": "Melkeb",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/Melkeb.json"
   },
   {
     "name": "Mélanie Petera",
@@ -1098,6 +1213,7 @@
     "name": "Mehmet Tekman",
     "email": "mtekman89@gmail.com",
     "joined": "2018-11",
+    "elixir_node": "de",
     "id": "mtekman",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/mtekman.json"
   },
@@ -1158,6 +1274,7 @@
     "email": "c.hyde@qcif.edu.au",
     "orcid": "0000-0002-5913-9766",
     "joined": "2022-02",
+    "elixir_node": "au",
     "id": "neoformit",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/neoformit.json"
   },
@@ -1179,6 +1296,7 @@
     "email": "wendi@open.ac.uk",
     "twitter": "WendiBacon1",
     "joined": "2020-03",
+    "elixir_node": "uk",
     "id": "nomadscientist",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/nomadscientist.json"
   },
@@ -1194,14 +1312,27 @@
     "orcid": "0000-0003-3627-5340",
     "twitter": "NicolaSoranzo",
     "joined": "2017-09",
+    "elixir_node": "uk",
     "id": "nsoranzo",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/nsoranzo.json"
+  },
+  {
+    "name": "Nitesh Turaga",
+    "joined": "2017-09",
+    "id": "nturaga",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/nturaga.json"
   },
   {
     "name": "NU Knight Lab",
     "joined": "2021-10",
     "id": "NUKnightLab",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/NUKnightLab.json"
+  },
+  {
+    "name": "Nurzhamalyrys",
+    "joined": "2022-04",
+    "id": "Nurzhamalyrys",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/Nurzhamalyrys.json"
   },
   {
     "name": "Nuwan Goonasekera",
@@ -1224,6 +1355,7 @@
   {
     "name": "Olivia Doppelt-Azeroual",
     "joined": "2017-09",
+    "elixir_node": "fr",
     "id": "odoppelt",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/odoppelt.json"
   },
@@ -1237,6 +1369,7 @@
     "name": "Olivier Norvez",
     "email": "olivier.norvez@mnhn.fr",
     "joined": "2022-02",
+    "elixir_node": "fr",
     "id": "onorvez",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/onorvez.json"
   },
@@ -1360,6 +1493,7 @@
     "email": "andrewsr9@cardiff.ac.uk",
     "orcid": "0000-0002-3491-2361",
     "joined": "2021-10",
+    "elixir_node": "uk",
     "id": "robertmand",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/robertmand.json"
   },
@@ -1368,6 +1502,12 @@
     "joined": "2018-06",
     "id": "reginaesinamabotsi",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/reginaesinamabotsi.json"
+  },
+  {
+    "name": "Samantha Anjei",
+    "joined": "2022-04",
+    "id": "samanthaanjei",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/samanthaanjei.json"
   },
   {
     "name": "Goodnews Sandy",
@@ -1405,6 +1545,7 @@
     "email": "simon.benateau@mnhn.fr",
     "twitter": "sbenateau",
     "joined": "2019-03",
+    "elixir_node": "fr",
     "id": "sbenateau",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/sbenateau.json"
   },
@@ -1424,12 +1565,21 @@
     "orcid": "0000-0003-3803-468X",
     "joined": "2017-09",
     "bio": "Researcher at Erasmus Medical Center",
+    "elixir_node": "nl",
     "id": "shiltemann",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json"
   },
   {
+    "name": "Olushola Ogunkelu",
+    "email": "Sogunkelu@gmail.com",
+    "joined": "2021-10",
+    "id": "Shorla",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/Shorla.json"
+  },
+  {
     "name": "Simon Bray",
     "joined": "2019-05",
+    "elixir_node": "de",
     "id": "simonbray",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/simonbray.json"
   },
@@ -1443,8 +1593,17 @@
     "name": "Simon Gladman",
     "email": "simon.gladman@unimelb.edu.au",
     "joined": "2017-09",
+    "elixir_node": "au",
     "id": "slugger70",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
+  },
+  {
+    "name": "Sofoklis Keisaris",
+    "email": "sofoskeisaris@gmail.com",
+    "orcid": "0000-0002-4833-4726",
+    "joined": "2022-05",
+    "id": "Sofokli5",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/Sofokli5.json"
   },
   {
     "name": "Stéphanie Robin",
@@ -1492,6 +1651,15 @@
     "joined": "2022-03",
     "id": "sylviamahara",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/sylviamahara.json"
+  },
+  {
+    "name": "Thomas Duigou",
+    "email": "thomas.duigou@inrae.fr",
+    "orcid": "0000-0002-2649-2950",
+    "linkedin": "thomas-duigou-ba281730",
+    "joined": "2022-03",
+    "id": "tduigou",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/tduigou.json"
   },
   {
     "name": "tealiie",
@@ -1556,18 +1724,21 @@
   {
     "name": "Torsten Houwaart",
     "joined": "2017-09",
+    "elixir_node": "de",
     "id": "torhou",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/torhou.json"
   },
   {
     "name": "Torfinn Nome",
     "joined": "2021-01",
+    "elixir_node": "no",
     "id": "torfinnnome",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/torfinnnome.json"
   },
   {
     "name": "Torsten Seemann",
     "joined": "2018-06",
+    "elixir_node": "au",
     "id": "tseemann",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/tseemann.json"
   },
@@ -1584,6 +1755,7 @@
     "gitter": "tklingstrom",
     "orcid": "0000-0002-9504-1352",
     "joined": "2018-11",
+    "elixir_node": "se",
     "id": "tklingstrom",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/tklingstrom.json"
   },
@@ -1619,6 +1791,13 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/vloux.json"
   },
   {
+    "name": "Julia Jakiela",
+    "email": "juliajot36@gmail.com",
+    "joined": "2022-06",
+    "id": "wee-snufkin",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/wee-snufkin.json"
+  },
+  {
     "name": "William Durand",
     "joined": "2017-09",
     "id": "willdurand",
@@ -1627,6 +1806,7 @@
   {
     "name": "Willem de Koning",
     "joined": "2018-09",
+    "elixir_node": "nl",
     "id": "willemdek11",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/willemdek11.json"
   },
@@ -1639,6 +1819,7 @@
   {
     "name": "Wolfgang Maier",
     "joined": "2017-09",
+    "elixir_node": "de",
     "id": "wm75",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json"
   },
@@ -1687,6 +1868,7 @@
     "gitter": "yvanlebras",
     "orcid": "0000-0002-8504-068X",
     "joined": "2017-09",
+    "elixir_node": "fr",
     "id": "yvanlebras",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/yvanlebras.json"
   },
@@ -1699,9 +1881,11 @@
   {
     "name": "Erasmus+ Programme",
     "joined": "2020-09",
+    "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
     "github": false,
     "funder": true,
-    "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+    "funding_id": "2020-1-NL01-KA203-064717",
+    "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
     "id": "erasmusplus",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
   },
@@ -1709,8 +1893,15 @@
     "name": "Avans Hogeschool",
     "joined": "2020-11",
     "funder": true,
-    "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. [avans.nl](https://avans.nl/)",
+    "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
     "id": "avans-atgm",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json"
+  },
+  {
+    "name": "ELIXIR Europe",
+    "joined": "2017-09",
+    "funder": true,
+    "id": "elixir-europe",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/elixir-europe.json"
   }
 ]

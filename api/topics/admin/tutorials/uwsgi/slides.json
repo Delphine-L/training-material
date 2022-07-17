@@ -16,6 +16,7 @@
       "name": "Simon Gladman",
       "email": "simon.gladman@unimelb.edu.au",
       "joined": "2017-09",
+      "elixir_node": "au",
       "id": "slugger70",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
     }
@@ -24,26 +25,5 @@
   "last_modified_at": "01-Mar-22",
   "url": "/topics/admin/tutorials/uwsgi/slides.html",
   "topic_name": "admin",
-  "tutorial_name": "uwsgi",
-  "hands_on": false,
-  "slides": true,
-  "tools": [
-
-  ],
-  "tours": false,
-  "video": false,
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-
-    ],
-    "video": false
-  },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//admin/tutorials/uwsgi/slides.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//admin/tutorials/uwsgi/slides.json"
-  }
+  "tutorial_name": "uwsgi"
 }

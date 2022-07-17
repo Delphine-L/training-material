@@ -18,6 +18,7 @@
       "maintainer_contact": "gitter",
       "gitter": "hexylena",
       "joined": "2017-09",
+      "elixir_node": "nl",
       "id": "hexylena",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
     },
@@ -25,6 +26,7 @@
       "name": "Simon Gladman",
       "email": "simon.gladman@unimelb.edu.au",
       "joined": "2017-09",
+      "elixir_node": "au",
       "id": "slugger70",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
     },
@@ -35,6 +37,7 @@
       "gitter": "abretaud",
       "orcid": "0000-0003-0914-2470",
       "joined": "2017-09",
+      "elixir_node": "fr",
       "id": "abretaud",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json"
     }
@@ -55,6 +58,7 @@
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
+          "elixir_node": "fr",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json"
         },
@@ -65,6 +69,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -228,11 +233,12 @@
           "gitter": "bebatut",
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json"
         }
       ],
-      "last_modified_at": "23-Mar-21",
+      "last_modified_at": "31-Mar-22",
       "url": "/topics/genome-annotation/tutorials/tnseq/tutorial.html",
       "topic_name": "genome-annotation",
       "tutorial_name": "tnseq",
@@ -309,6 +315,7 @@
           "name": "Esteban Perez-Wohlfeil",
           "email": "estebanpw@uma.es",
           "joined": "2020-11",
+          "elixir_node": "es",
           "id": "estebanpw",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/estebanpw.json"
         }
@@ -372,6 +379,7 @@
           "email": "anikaerxleben@gmail.com",
           "orcid": "0000-0002-7427-6478",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "erxleben",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erxleben.json"
         },
@@ -383,6 +391,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         }
@@ -449,6 +458,7 @@
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
+          "elixir_node": "fr",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json"
         },
@@ -490,9 +500,11 @@
         {
           "name": "Erasmus+ Programme",
           "joined": "2020-09",
+          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
-          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         }
@@ -583,6 +595,7 @@
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
+          "elixir_node": "fr",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json"
         }
@@ -658,6 +671,7 @@
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
+          "elixir_node": "fr",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json"
         }
@@ -732,6 +746,7 @@
         {
           "name": "Torsten Seemann",
           "joined": "2018-06",
+          "elixir_node": "au",
           "id": "tseemann",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/tseemann.json"
         },
@@ -739,6 +754,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         }
@@ -806,6 +822,7 @@
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
+          "elixir_node": "fr",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json"
         },
@@ -847,9 +864,11 @@
         {
           "name": "Erasmus+ Programme",
           "joined": "2020-09",
+          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
-          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         }
@@ -935,6 +954,7 @@
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
+          "elixir_node": "fr",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json"
         },
@@ -945,6 +965,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
@@ -962,15 +983,18 @@
           "email": "mateo.boudet@inrae.fr",
           "orcid": "0000-0002-7028-7620",
           "joined": "2021-05",
+          "elixir_node": "fr",
           "id": "mboudet",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/mboudet.json"
         },
         {
           "name": "Erasmus+ Programme",
           "joined": "2020-09",
+          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
-          "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+          "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
         }

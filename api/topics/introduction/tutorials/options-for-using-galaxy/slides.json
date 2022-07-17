@@ -25,6 +25,7 @@
       "gitter": "abretaud",
       "orcid": "0000-0003-0914-2470",
       "joined": "2017-09",
+      "elixir_node": "fr",
       "id": "abretaud",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json"
     },
@@ -40,6 +41,7 @@
       "orcid": "0000-0003-3627-5340",
       "twitter": "NicolaSoranzo",
       "joined": "2017-09",
+      "elixir_node": "uk",
       "id": "nsoranzo",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/nsoranzo.json"
     },
@@ -53,25 +55,5 @@
   "last_modified_at": "09-Nov-21",
   "url": "/topics/introduction/tutorials/options-for-using-galaxy/slides.html",
   "topic_name": "introduction",
-  "tutorial_name": "options-for-using-galaxy",
-  "hands_on": false,
-  "slides": true,
-  "tools": [
-
-  ],
-  "tours": false,
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-
-    ],
-    "video": true
-  },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//introduction/tutorials/options-for-using-galaxy/slides.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//introduction/tutorials/options-for-using-galaxy/slides.json"
-  }
+  "tutorial_name": "options-for-using-galaxy"
 }

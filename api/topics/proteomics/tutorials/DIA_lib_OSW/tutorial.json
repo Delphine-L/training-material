@@ -35,6 +35,7 @@
       "gitter": "foellmelanie",
       "orcid": "0000-0002-1887-7543",
       "joined": "2018-10",
+      "elixir_node": "de",
       "id": "foellmelanie",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/foellmelanie.json"
     }
@@ -46,40 +47,5 @@
   "last_modified_at": "06-Aug-21",
   "url": "/topics/proteomics/tutorials/DIA_lib_OSW/tutorial.html",
   "topic_name": "proteomics",
-  "tutorial_name": "DIA_lib_OSW",
-  "hands_on": true,
-  "slides": false,
-  "workflows": [
-    {
-      "workflow": "Galaxy-Workflow-DIA_lib_Training_HEK_Ecoli_3_EG_data.ga",
-      "tests": false
-    }
-  ],
-  "tools": [
-    "Filter1",
-    "toolshed.g2.bx.psu.edu/repos/galaxyp/diapysef/diapysef/0.3.5.0",
-    "toolshed.g2.bx.psu.edu/repos/galaxyp/maxquant/maxquant/1.6.10.43+galaxy3",
-    "toolshed.g2.bx.psu.edu/repos/galaxyp/openms_openswathassaygenerator/OpenSwathAssayGenerator/2.5+galaxy0",
-    "toolshed.g2.bx.psu.edu/repos/galaxyp/openms_openswathassaygenerator/OpenSwathAssayGenerator/2.6+galaxy0",
-    "toolshed.g2.bx.psu.edu/repos/galaxyp/openms_openswathdecoygenerator/OpenSwathDecoyGenerator/2.5+galaxy0",
-    "toolshed.g2.bx.psu.edu/repos/galaxyp/openms_openswathdecoygenerator/OpenSwathDecoyGenerator/2.6+galaxy0",
-    "toolshed.g2.bx.psu.edu/repos/galaxyp/openms_targetedfileconverter/TargetedFileConverter/2.5+galaxy0",
-    "toolshed.g2.bx.psu.edu/repos/galaxyp/openms_targetedfileconverter/TargetedFileConverter/2.6+galaxy0"
-  ],
-  "tours": false,
-  "video": false,
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-
-    ],
-    "video": false
-  },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//proteomics/tutorials/DIA_lib_OSW/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//proteomics/tutorials/DIA_lib_OSW/tutorial.json"
-  }
+  "tutorial_name": "DIA_lib_OSW"
 }

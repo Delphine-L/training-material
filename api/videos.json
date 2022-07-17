@@ -182,6 +182,8 @@
                                
                        
                                
+                       
+                               
 			{
 				"id": "admin/tutorials/cvmfs/slides",
 				"topic": "Galaxy Server administration",
@@ -228,6 +230,8 @@
 					
                        
                        
+                       
+                               
                        
                                
                        
@@ -346,12 +350,16 @@
                                
                        
                                
+                       
+                               
 			{
 				"id": "contributing/tutorials/create-new-tutorial-slides/slides",
 				"topic": "Contributing to the Galaxy Training Material",
 				"title": "Creating Slides"
 			},
 								
+                               
+                       
                                
                        
                                
@@ -398,6 +406,36 @@
 					
                        
                        
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
                        
                                
                        
@@ -490,6 +528,8 @@
 								
                                
                        
+                               
+                       
                
 					
                        
@@ -559,6 +599,8 @@
 					
                        
                        
+                       
+                               
                        
                                
                        
@@ -801,6 +843,31 @@
                        
                        
                        
+               
+					
+                       
+                       
+                       
+               
+					
+                       
+                       
+                       
+               
+					
+                       
+                       
+                       
+               
+					
+                       
+                       
+                       
+               
+					
+                       
+                       
+                       
                                
                        
                                
@@ -847,10 +914,23 @@
                        
                                
                        
+                               
+                       
                
 					
                        
                        
+                       
+               
+					
+                       
+                       
+                       
+                               
+                       
+                               
+                       
+                               
                        
                
 					
@@ -956,6 +1036,8 @@
 					
                        
                        
+                       
+                               
                        
                                
                        

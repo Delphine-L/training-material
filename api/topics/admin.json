@@ -54,6 +54,7 @@
       "maintainer_contact": "gitter",
       "gitter": "hexylena",
       "joined": "2017-09",
+      "elixir_node": "nl",
       "id": "hexylena",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
     },
@@ -70,6 +71,7 @@
       "name": "Simon Gladman",
       "email": "simon.gladman@unimelb.edu.au",
       "joined": "2017-09",
+      "elixir_node": "au",
       "id": "slugger70",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
     },
@@ -81,6 +83,7 @@
       "orcid": "0000-0002-3079-6586",
       "linkedin": "bgruening",
       "joined": "2017-09",
+      "elixir_node": "de",
       "id": "bgruening",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
     },
@@ -138,6 +141,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         },
@@ -148,12 +152,13 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
       ],
       "subtopic": "core",
-      "last_modified_at": "09-Jul-21",
+      "last_modified_at": "14-Jun-22",
       "url": "/topics/admin/slides/introduction.html",
       "topic_name": "admin",
       "tutorial_name": "introduction",
@@ -175,6 +180,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         },
@@ -185,6 +191,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
@@ -250,6 +257,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
@@ -263,6 +271,7 @@
           "orcid": "0000-0003-3803-468X",
           "joined": "2017-09",
           "bio": "Researcher at Erasmus Medical Center",
+          "elixir_node": "nl",
           "id": "shiltemann",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json"
         }
@@ -271,7 +280,7 @@
       "tags": [
         "ansible"
       ],
-      "last_modified_at": "01-Mar-22",
+      "last_modified_at": "31-May-22",
       "url": "/topics/admin/tutorials/ansible/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "ansible",
@@ -330,6 +339,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -412,6 +422,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         },
@@ -422,6 +433,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -451,7 +463,7 @@
           ]
         }
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "06-Jul-22",
       "url": "/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "connect-to-compute-cluster",
@@ -499,6 +511,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -554,6 +567,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
@@ -567,6 +581,7 @@
           "orcid": "0000-0003-3803-468X",
           "joined": "2017-09",
           "bio": "Researcher at Erasmus Medical Center",
+          "elixir_node": "nl",
           "id": "shiltemann",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json"
         }
@@ -588,7 +603,7 @@
           ]
         }
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "14-Jun-22",
       "url": "/topics/admin/tutorials/data-library/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "data-library",
@@ -641,6 +656,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -710,12 +726,14 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
         {
           "name": "Gianmauro Cuccuru",
           "joined": "2019-03",
+          "elixir_node": "de",
           "id": "gmauro",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/gmauro.json"
         }
@@ -735,7 +753,7 @@
           ]
         }
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "14-Jun-22",
       "url": "/topics/admin/tutorials/object-store/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "object-store",
@@ -792,6 +810,7 @@
           "gitter": "bebatut",
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json"
         },
@@ -803,6 +822,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         }
@@ -845,6 +865,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
@@ -858,6 +879,7 @@
           "orcid": "0000-0003-3803-468X",
           "joined": "2017-09",
           "bio": "Researcher at Erasmus Medical Center",
+          "elixir_node": "nl",
           "id": "shiltemann",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json"
         }
@@ -911,6 +933,7 @@
           "email": "lucille.delisle@epfl.ch",
           "orcid": "0000-0002-1964-4960",
           "joined": "2019-08",
+          "elixir_node": "ch",
           "id": "lldelisle",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/lldelisle.json"
         }
@@ -934,7 +957,7 @@
         "data",
         "git-gat"
       ],
-      "last_modified_at": "10-Mar-22",
+      "last_modified_at": "06-Jul-22",
       "url": "/topics/admin/tutorials/ftp/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "ftp",
@@ -993,6 +1016,7 @@
           "orcid": "0000-0003-3627-5340",
           "twitter": "NicolaSoranzo",
           "joined": "2017-09",
+          "elixir_node": "uk",
           "id": "nsoranzo",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/nsoranzo.json"
         },
@@ -1003,6 +1027,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -1021,7 +1046,7 @@
           ]
         }
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "14-Jun-22",
       "url": "/topics/admin/tutorials/external-auth/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "external-auth",
@@ -1066,6 +1091,7 @@
           "orcid": "0000-0003-3627-5340",
           "twitter": "NicolaSoranzo",
           "joined": "2017-09",
+          "elixir_node": "uk",
           "id": "nsoranzo",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/nsoranzo.json"
         },
@@ -1085,11 +1111,12 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
       ],
-      "last_modified_at": "06-Apr-21",
+      "last_modified_at": "14-Jun-22",
       "url": "/topics/admin/tutorials/database/slides.html",
       "topic_name": "admin",
       "tutorial_name": "database",
@@ -1142,6 +1169,7 @@
           "orcid": "0000-0002-2799-424X",
           "linkedin": "hans-rudolf-hotz-542b31",
           "joined": "2017-09",
+          "elixir_node": "ch",
           "id": "hrhotz",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hrhotz.json"
         },
@@ -1153,6 +1181,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         }
@@ -1226,10 +1255,11 @@
           "url": "https://training.galaxyproject.org/training-material/api/contributors/almahmoud.json"
         },
         {
-          "name": "Sergey Golitsynskiy",
+          "name": "John Davis",
+          "email": "jdavcs@gmail.com",
           "joined": "2019-06",
-          "id": "ic4f",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/ic4f.json"
+          "id": "jdavcs",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/jdavcs.json"
         }
       ],
       "tags": [
@@ -1246,7 +1276,7 @@
         }
       ],
       "priority": 2,
-      "last_modified_at": "01-Mar-22",
+      "last_modified_at": "29-May-22",
       "url": "/topics/admin/tutorials/k8s-deploying-galaxy/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "k8s-deploying-galaxy",
@@ -1296,6 +1326,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
@@ -1312,6 +1343,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         },
@@ -1325,6 +1357,7 @@
           "orcid": "0000-0003-3803-468X",
           "joined": "2017-09",
           "bio": "Researcher at Erasmus Medical Center",
+          "elixir_node": "nl",
           "id": "shiltemann",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json"
         },
@@ -1334,6 +1367,7 @@
           "orcid": "0000-0003-3627-5340",
           "twitter": "NicolaSoranzo",
           "joined": "2017-09",
+          "elixir_node": "uk",
           "id": "nsoranzo",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/nsoranzo.json"
         }
@@ -1357,7 +1391,7 @@
           "title": "A VM with at least 2 vCPUs and 4 GB RAM, preferably running Ubuntu 18.04 - 20.04."
         }
       ],
-      "last_modified_at": "15-Mar-22",
+      "last_modified_at": "07-Jul-22",
       "url": "/topics/admin/tutorials/ansible-galaxy/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "ansible-galaxy",
@@ -1417,6 +1451,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         },
@@ -1427,6 +1462,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
@@ -1437,6 +1473,7 @@
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
+          "elixir_node": "fr",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json"
         }
@@ -1458,7 +1495,7 @@
         }
       ],
       "subtopic": "features",
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "14-Jun-22",
       "url": "/topics/admin/tutorials/interactive-tools/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "interactive-tools",
@@ -1506,6 +1543,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         },
@@ -1513,6 +1551,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         },
@@ -1523,6 +1562,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -1580,6 +1620,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -1649,6 +1690,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         },
@@ -1656,6 +1698,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         },
@@ -1666,6 +1709,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -1686,7 +1730,7 @@
           ]
         }
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "28-Jun-22",
       "url": "/topics/admin/tutorials/reports/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "reports",
@@ -1749,6 +1793,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -1764,7 +1809,7 @@
           ]
         }
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "06-Jul-22",
       "url": "/topics/admin/tutorials/monitoring/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "monitoring",
@@ -1799,6 +1844,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         }
@@ -1863,6 +1909,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
@@ -1872,6 +1919,7 @@
           "orcid": "0000-0003-3627-5340",
           "twitter": "NicolaSoranzo",
           "joined": "2017-09",
+          "elixir_node": "uk",
           "id": "nsoranzo",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/nsoranzo.json"
         }
@@ -1930,7 +1978,7 @@
         }
       ],
       "subtopic": "maintenance",
-      "last_modified_at": "01-Mar-22",
+      "last_modified_at": "14-Jun-22",
       "url": "/topics/admin/tutorials/troubleshooting/slides.html",
       "topic_name": "admin",
       "tutorial_name": "troubleshooting",
@@ -2021,6 +2069,109 @@
     },
     {
       "layout": "tutorial_hands_on",
+      "title": "How I learned to stop worrying and love the systemd",
+      "questions": [
+        "Unix is supposed to be about FILES™",
+        "What is this systemd stuff?",
+        "Why should I love it?",
+        "I have so many worries!"
+      ],
+      "objectives": [
+        "Have an objective understanding of systemd allowing the user to obtain the benefits of this new system",
+        "Realise the joys of journald, and how it makes logging easier and simpler"
+      ],
+      "time_estimation": "30m",
+      "key_points": [
+        "systemd units are actually kinda nice",
+        "In most versions you even can limit memory, cpu usage of process groups. In recent versions, disk usage!",
+        "No more PID files! Cgroups mean the processes are actually cleaned up!",
+        "journalctl makes accessing logs incredibly easy; view multiple logs simultaneously, properly interlaced.",
+        "journalctl-vacuum replaces onerous cleaning processes and even can clean by relative timestamps"
+      ],
+      "contributions": {
+        "authorship": [
+          "hexylena"
+        ],
+        "editing": [
+          "natefoo"
+        ],
+        "testing": [
+          "natefoo"
+        ]
+      },
+      "tags": [
+        "ansible",
+        "systemd"
+      ],
+      "subtopic": "features",
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "admin",
+          "tutorials": [
+            "ansible-galaxy"
+          ]
+        }
+      ],
+      "last_modified_at": "04-Jul-22",
+      "url": "/topics/admin/tutorials/stop-worrying-love-systemd/tutorial.html",
+      "topic_name": "admin",
+      "tutorial_name": "stop-worrying-love-systemd",
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "contributors": [
+        {
+          "name": "Helena Rasche",
+          "email": "helena.rasche@gmail.com",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
+        },
+        {
+          "name": "Nate Coraor",
+          "gitter": "natefoo",
+          "twitter": "natefoo",
+          "email": "nate@bx.psu.edu",
+          "joined": "2017-12",
+          "id": "natefoo",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/natefoo.json"
+        },
+        {
+          "name": "Nate Coraor",
+          "gitter": "natefoo",
+          "twitter": "natefoo",
+          "email": "nate@bx.psu.edu",
+          "joined": "2017-12",
+          "id": "natefoo",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/natefoo.json"
+        }
+      ],
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//admin/tutorials/stop-worrying-love-systemd/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics//admin/tutorials/stop-worrying-love-systemd/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
       "title": "Managing Galaxy on Kubernetes",
       "level": "Intermediate",
       "questions": [
@@ -2065,10 +2216,11 @@
           "url": "https://training.galaxyproject.org/training-material/api/contributors/pcm32.json"
         },
         {
-          "name": "Sergey Golitsynskiy",
+          "name": "John Davis",
+          "email": "jdavcs@gmail.com",
           "joined": "2019-06",
-          "id": "ic4f",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/ic4f.json"
+          "id": "jdavcs",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/jdavcs.json"
         }
       ],
       "tags": [
@@ -2085,7 +2237,7 @@
         }
       ],
       "priority": 1,
-      "last_modified_at": "01-Mar-22",
+      "last_modified_at": "29-May-22",
       "url": "/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "k8s-managing-galaxy",
@@ -2150,6 +2302,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         },
@@ -2160,6 +2313,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -2181,7 +2335,7 @@
           ]
         }
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "28-Jun-22",
       "url": "/topics/admin/tutorials/job-destinations/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "job-destinations",
@@ -2234,6 +2388,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
@@ -2242,6 +2397,7 @@
           "email": "lucille.delisle@epfl.ch",
           "orcid": "0000-0002-1964-4960",
           "joined": "2019-08",
+          "elixir_node": "ch",
           "id": "lldelisle",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/lldelisle.json"
         }
@@ -2257,7 +2413,7 @@
           ]
         }
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "06-Jul-22",
       "url": "/topics/admin/tutorials/tus/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "tus",
@@ -2301,6 +2457,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         },
@@ -2311,6 +2468,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -2335,7 +2493,7 @@
         "ansible",
         "git-gat"
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "14-Jun-22",
       "url": "/topics/admin/tutorials/cvmfs/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "cvmfs",
@@ -2378,6 +2536,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         },
@@ -2388,6 +2547,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -2436,6 +2596,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         }
@@ -2502,6 +2663,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         },
@@ -2518,12 +2680,14 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
         {
           "name": "Gianmauro Cuccuru",
           "joined": "2019-03",
+          "elixir_node": "de",
           "id": "gmauro",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/gmauro.json"
         }
@@ -2551,7 +2715,7 @@
           "type": "none"
         }
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "06-Jul-22",
       "url": "/topics/admin/tutorials/pulsar/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "pulsar",
@@ -2615,6 +2779,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         },
@@ -2622,6 +2787,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         },
@@ -2632,6 +2798,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -2698,6 +2865,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         },
@@ -2705,6 +2873,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         },
@@ -2715,6 +2884,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -2772,6 +2942,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         },
@@ -2785,6 +2956,7 @@
           "orcid": "0000-0003-3803-468X",
           "joined": "2017-09",
           "bio": "Researcher at Erasmus Medical Center",
+          "elixir_node": "nl",
           "id": "shiltemann",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json"
         }
@@ -2809,7 +2981,7 @@
           ]
         }
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "06-Jul-22",
       "url": "/topics/admin/tutorials/tiaas/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "tiaas",
@@ -2860,6 +3032,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         }
@@ -2918,6 +3091,7 @@
         {
           "name": "Torfinn Nome",
           "joined": "2021-01",
+          "elixir_node": "no",
           "id": "torfinnnome",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/torfinnnome.json"
         },
@@ -2930,6 +3104,7 @@
         {
           "name": "Matthias Bernt",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bernt-matthias",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bernt-matthias.json"
         },
@@ -2940,6 +3115,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -2960,7 +3136,7 @@
           ]
         }
       ],
-      "last_modified_at": "30-Mar-22",
+      "last_modified_at": "06-Jul-22",
       "url": "/topics/admin/tutorials/singularity/tutorial.html",
       "topic_name": "admin",
       "tutorial_name": "singularity",
@@ -3022,6 +3198,7 @@
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
           "joined": "2017-09",
+          "elixir_node": "de",
           "id": "bgruening",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
         },
@@ -3032,6 +3209,7 @@
           "maintainer_contact": "gitter",
           "gitter": "hexylena",
           "joined": "2017-09",
+          "elixir_node": "nl",
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
         }
@@ -3080,6 +3258,7 @@
           "name": "Simon Gladman",
           "email": "simon.gladman@unimelb.edu.au",
           "joined": "2017-09",
+          "elixir_node": "au",
           "id": "slugger70",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
         }

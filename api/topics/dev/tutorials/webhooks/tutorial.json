@@ -21,6 +21,7 @@
       "name": "Clemens Blank",
       "email": "blankclemens@gmail.com",
       "joined": "2017-09",
+      "elixir_node": "de",
       "id": "blankclemens",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/blankclemens.json"
     },
@@ -39,6 +40,7 @@
       "orcid": "0000-0002-3079-6586",
       "linkedin": "bgruening",
       "joined": "2017-09",
+      "elixir_node": "de",
       "id": "bgruening",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
     }
@@ -47,26 +49,5 @@
   "last_modified_at": "27-May-21",
   "url": "/topics/dev/tutorials/webhooks/tutorial.html",
   "topic_name": "dev",
-  "tutorial_name": "webhooks",
-  "hands_on": true,
-  "slides": true,
-  "tools": [
-
-  ],
-  "tours": false,
-  "video": false,
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-
-    ],
-    "video": false
-  },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//dev/tutorials/webhooks/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//dev/tutorials/webhooks/tutorial.json"
-  }
+  "tutorial_name": "webhooks"
 }

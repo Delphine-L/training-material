@@ -17,6 +17,16 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible-galaxy/slides-plain.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Galaxy Installation with Ansible" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:33:42 +0000" />
+<meta name="DC.creator" content="Simon Gladman" />
+<meta name="DC.creator" content="Nate Coraor" />
 
         
         
@@ -24,9 +34,11 @@
         
         
         <meta name="description" content="Resources related to configuration and maintenance of Gal..." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Galaxy Installation with Ansible" />
         <meta property="og:description" content="Resources related to configuration and maintenance of Gal..." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -212,12 +224,21 @@
 	<a href="https://github.com/galaxyproject/training-material/blob/main//topics/admin/tutorials/ansible-galaxy/slides.html">View markdown source on GitHub</a>
 	<h1>Galaxy Installation with Ansible</h1>
 		<h2>Contributors</h2>
-		
+<div markdown="0">
+
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge contributor-slugger70"><img src="https://avatars.githubusercontent.com/slugger70?s=27" alt="Avatar">Simon Gladman</a>
 
- 
+
+
 <a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a>
 
+
+
+	</div>
+
+</div>
 
 
 		
@@ -245,7 +266,7 @@
 
 		
 
-		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Apr 6, 2021 </div>
+		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 14, 2022 </div>
 
 	<hr />
 
@@ -265,13 +286,13 @@
 
 <h2 id="install-galaxy--attach-storage">Install Galaxy &amp; Attach Storage</h2>
 
-<p><img src="../../images/ansible-galaxy-intro-1.png" alt="Galaxy is now attached to the DB. uWSGI, storage, and compute are attached to Galaxy. " loading="lazy" /></p>
+<p><img src="../../images/ansible-galaxy-intro-1.png" alt="Galaxy is now attached to the DB. Gunicorn, storage, and compute are attached to Galaxy. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
 <ul>
   <li>Galaxy is deployed, and attached to the database.</li>
-  <li>Next, UWSGI is setup to run the Galaxy app.</li>
+  <li>Next, Gunicorn is setup to run the Galaxy app.</li>
   <li>Storage is attached to Galaxy for storing data.</li>
   <li>And lastly compute is attached to Galaxy and the storage.</li>
 </ul>
@@ -280,7 +301,7 @@
 
 <h2 id="configure-nginx">Configure NGINX</h2>
 
-<p><img src="../../images/ansible-galaxy-intro-2.png" alt="NGINX is added to proxy uWSGI. " loading="lazy" /></p>
+<p><img src="../../images/ansible-galaxy-intro-2.png" alt="NGINX is added to proxy Gunicorn. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -454,14 +475,14 @@ This material is the result of a collaborative work. Thanks to the <a href="http
 
 
 
-
-
 <img src="/training-material/assets/images/gat.png" alt="page logo" style="height: 100px;"/>
 
 
 
 This material is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 </section>
+
+
 
 
 
@@ -475,9 +496,10 @@ This material is licensed under the <a rel="license" href="https://creativecommo
             provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
         </p>
         <p>
-The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-</p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/a13366092d50d5d38414d972338186b6099b66f4">a13366092d50d5d38414d972338186b6099b66f4</a></p>
+        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
+        </p>
+
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/3bbc71c4bb429fad29e0c27c5878ecbcfe1a0d9f">3bbc71c4bb429fad29e0c27c5878ecbcfe1a0d9f</a></p>
     </div>
 </footer>
 

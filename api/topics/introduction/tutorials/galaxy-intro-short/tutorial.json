@@ -28,15 +28,9 @@
     "Log out of your Galaxy server. When you log back in (to the same server), your histories will all be there."
   ],
   "subtopic": "core",
-  "translations": {
-    "tutorial": [
-      "es"
-    ],
-    "slides": [
-      "es"
-    ],
-    "video": true
-  },
+  "translations": [
+    "es"
+  ],
   "contributors": [
     {
       "name": "Anna Syme",
@@ -50,6 +44,7 @@
       "orcid": "0000-0003-3627-5340",
       "twitter": "NicolaSoranzo",
       "joined": "2017-09",
+      "elixir_node": "uk",
       "id": "nsoranzo",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/nsoranzo.json"
     }
@@ -57,26 +52,5 @@
   "last_modified_at": "28-Mar-22",
   "url": "/topics/introduction/tutorials/galaxy-intro-short/tutorial.html",
   "topic_name": "introduction",
-  "tutorial_name": "galaxy-intro-short",
-  "hands_on": true,
-  "slides": true,
-  "workflows": [
-    {
-      "workflow": "Galaxy-Workflow-galaxy-intro-short.ga",
-      "tests": false
-    }
-  ],
-  "tools": [
-    "toolshed.g2.bx.psu.edu/repos/devteam/fastq_quality_filter/cshl_fastq_quality_filter/1.0.1",
-    "toolshed.g2.bx.psu.edu/repos/devteam/fastq_quality_filter/cshl_fastq_quality_filter/1.0.2+galaxy0",
-    "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72",
-    "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0"
-  ],
-  "tours": false,
-  "video": true,
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//introduction/tutorials/galaxy-intro-short/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//introduction/tutorials/galaxy-intro-short/tutorial.json"
-  }
+  "tutorial_name": "galaxy-intro-short"
 }

@@ -17,6 +17,17 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/job-destinations/tutorial.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Mapping Jobs to Destinations" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:28 +0000" />
+<meta name="DC.creator" content="Nate Coraor" />
+<meta name="DC.creator" content="Björn Grüning" />
+<meta name="DC.creator" content="Helena Rasche" />
 
         
         
@@ -24,9 +35,11 @@
         
         
         <meta name="description" content="Resources related to configuration and maintenance of Gal..." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Mapping Jobs to Destinations" />
         <meta property="og:description" content="Resources related to configuration and maintenance of Gal..." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -237,27 +250,14 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -270,7 +270,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:00:30 +0000",
+  "dateModified": "1970-01-01 00:00:28 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Mapping Jobs to Destinations",
   "interactivityType": "mixed",
@@ -295,28 +295,46 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Galaxy Server administration",
     "description": "Resources related to configuration and maintenance of Galaxy servers",
-    "url": "https://training.galaxyproject.org//training-material/topics/admin/"
+    "url": "https://training.galaxyproject.org/training-material/topics/admin/"
   },
-  "courseCode": "admin / job-destinations / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Mapping Jobs to Destinations' tutorial",
-  "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/job-destinations/tutorial.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/job-destinations/tutorial.html",
   "timeRequired": "PT2H",
-  "keywords": "ansible, jobs, git-gat",
+  "keywords": "admin, ansible, jobs, git-gat",
   "description": "The questions this  addresses are:\n - How can I configure job dependent resources, like cores, memory for my DRM?\n - How can I map jobs to resources and destinations\n\n\\nThe objectives are:\n - Know how to map tools to job destinations\n - Be able to use the dynamic job runner to make arbitrary destination mappings\n - Understand the job resource selector config and dynamic rule creation\n - The various ways in which tools can be mapped to destinations, both statically and dynamically\n - How to write a dynamic tool destination (DTD)\n - How to write a dynamic python function destination\n - How to use the job resource parameter selection feature\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible/slides.html",
       "name": "Ansible",
       "description": "Slides for 'Ansible' tutorial",
       "learningResourceType": "slides",
@@ -329,8 +347,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible/tutorial.html",
       "name": "Ansible",
       "description": "Hands-on for 'Ansible' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -343,22 +362,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible/slides.html",
-      "name": "Ansible",
-      "description": "Slides for 'Ansible' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible-galaxy/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible-galaxy/slides.html",
       "name": "Galaxy Installation with Ansible",
       "description": "Slides for 'Galaxy Installation with Ansible' tutorial",
       "learningResourceType": "slides",
@@ -371,8 +377,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html",
       "name": "Galaxy Installation with Ansible",
       "description": "Hands-on for 'Galaxy Installation with Ansible' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -385,22 +392,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible-galaxy/slides.html",
-      "name": "Galaxy Installation with Ansible",
-      "description": "Slides for 'Galaxy Installation with Ansible' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/connect-to-compute-cluster/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/connect-to-compute-cluster/slides.html",
       "name": "Connecting Galaxy to a compute cluster",
       "description": "Slides for 'Connecting Galaxy to a compute cluster' tutorial",
       "learningResourceType": "slides",
@@ -413,8 +407,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html",
       "name": "Connecting Galaxy to a compute cluster",
       "description": "Hands-on for 'Connecting Galaxy to a compute cluster' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -425,51 +420,144 @@
         "name": "Galaxy Training Network",
         "url": "https://galaxyproject.org/teach/gtn/"
       }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/connect-to-compute-cluster/slides.html",
-      "name": "Connecting Galaxy to a compute cluster",
-      "description": "Slides for 'Connecting Galaxy to a compute cluster' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
     }
-  ],
-  "hasPart": [
-
   ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Nate Coraor"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/natefoo/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/natefoo/",
+      "name": "Nate Coraor",
+      "image": "https://avatars.githubusercontent.com/natefoo",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Björn Grüning"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
+      "name": "Björn Grüning",
+      "image": "https://avatars.githubusercontent.com/bgruening",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-3079-6586",
+      "orcid": "https://orcid.org/0000-0002-3079-6586"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Nate Coraor"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/natefoo/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/natefoo/",
+      "name": "Nate Coraor",
+      "image": "https://avatars.githubusercontent.com/natefoo",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Björn Grüning"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
+      "name": "Björn Grüning",
+      "image": "https://avatars.githubusercontent.com/bgruening",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-3079-6586",
+      "orcid": "https://orcid.org/0000-0002-3079-6586"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     }
   ],
   "about": [
@@ -477,7 +565,7 @@
       "@type": "CreativeWork",
       "name": "Galaxy Server administration",
       "description": "Resources related to configuration and maintenance of Galaxy servers",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/"
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/"
     }
   ]
 }
@@ -487,18 +575,23 @@
     <h1 data-toc-skip>Mapping Jobs to Destinations</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a>
 
 
-<a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
+
+<a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
 
 
-<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+	</div>
 
 </div>
 
@@ -576,6 +669,8 @@
                                 
                             
                             </li>
+                        
+                    
                         
                     
                         
@@ -747,6 +842,8 @@
                     
                         
                     
+                        
+                    
                 
                     
                         
@@ -770,6 +867,8 @@
                                 
                             
                             </li>
+                        
+                    
                         
                     
                         
@@ -902,10 +1001,12 @@
 
 
 
+
+
   
   <li class="btn btn-default supporting_material">
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
-        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Recordings
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>&nbsp;Recordings
     </a>
     <ul class="dropdown-menu">
         
@@ -923,6 +1024,7 @@
         
         
         
+        
     </ul>
    </li>
    
@@ -933,7 +1035,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 30, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jun 28, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -1016,14 +1118,14 @@
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-how-to-read-a-diff"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: How to read a Diff</h3>  <p>If you haven’t worked with diffs before, this can be something quite new or different.</p>  <p>If we have two files, let’s say a grocery list, in two files. We’ll call them ‘a’ and ‘b’.</p>  <blockquote class="code-2col">  <blockquote class="code-in">    <h3 data-toc-skip="" id="code-in-old"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Old</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat old<br />🍎<br />🍐<br />🍊<br />🍋<br />🍒<br />🥑<br /></code></pre></div>    </div>  </blockquote>  <blockquote class="code-out">    <h3 data-toc-skip="" id="code-out-new"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden">code-out</span> New</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat new<br />🍎<br />🍐<br />🍊<br />🍋<br />🍍<br />🥑<br /></code></pre></div>    </div>  </blockquote></blockquote>  <p>We can see that they have some different entries. We’ve removed 🍒 because they’re awful, and replaced them with an 🍍</p>  <p>Diff lets us compare these files</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff old new<br />5c5<br />&lt; 🍒<br /><span class="nt">---</span><br /><span class="o">&gt;</span> 🍍<br /></code></pre></div></div>  <p>Here we see that ‘pears’ is only in a, and ‘ananas’ is only in b. But otherwise the files are identical.</p>  <p>There are a couple different formats to diffs, one is the ‘unified diff’</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> old new<br /><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:06:36.340962616 +0100<br />@@ <span class="nt">-3</span>,4 +3,4 @@<br /> 🍊<br /> 🍋<br />-🍒<br />+🍍<br /> 🥑<br /></code></pre></div></div>  <p>This is basically what you see in the training materials which gives you a lot of context about the changes:</p>  <ul>  <li><code class="language-plaintext highlighter-rouge">--- old</code> is the ‘old’ file in our view</li>  <li><code class="language-plaintext highlighter-rouge">+++ new</code> is the ‘new’ file</li>  <li>@@ these lines tell us where the change occurs and how many lines are added or removed.</li>  <li>Lines starting with a - are removed from our ‘new’ file</li>  <li>Lines with a + have been added.</li></ul>  <p>So when you go to apply these diffs to your files in the training:</p>  <ol>  <li>Ignore the header</li>  <li>Remove lines starting with - from your file</li>  <li>Add lines starting with + to your file</li></ol>  <p>The other lines (🍊/🍋 and 🥑) above just provide “context”, they help you know where a change belongs in a file, but <strong>should not be edited</strong> when you’re making the above change. Given the above diff, you would find a line with a 🍒, and replace it with a 🍍</p>  <h4 id="added--removed-lines">Added &amp; Removed Lines</h4>  <p>Removals are very easy to spot, we just have removed lines</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:10:14.370722802 +0100<br />@@ <span class="nt">-4</span>,3 +4,2 @@<br /> 🍋<br /> 🍒<br />-🥑<br /></code></pre></div></div>  <p>And additions likewise are very easy, just add a new line, between the other lines in your file.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:11:11.422135393 +0100<br />@@ <span class="nt">-1</span>,3 +1,4 @@<br /> 🍎<br />+🍍<br /> 🍐<br /> 🍊<br /></code></pre></div></div>  <h4 id="completely-new-files">Completely new files</h4>  <p>Completely new files look a bit different, there the “old” file is <code class="language-plaintext highlighter-rouge">/dev/null</code>, the empty file in a Linux machine.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> /dev/null old<br /><span class="nt">---</span> /dev/null	2022-02-15 11:47:16.100000270 +0100<br />+++ old	2022-02-16 14:06:19.697132568 +0100<br />@@ <span class="nt">-0</span>,0 +1,6 @@<br />+🍎<br />+🍐<br />+🍊<br />+🍋<br />+🍒<br />+🥑<br /></code></pre></div></div>  <p>And removed files are similar, except with the the new file being /dev/null</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ /dev/null	2022-02-15 11:47:16.100000270 +0100<br />@@ <span class="nt">-1</span>,6 +0,0 @@<br />-🍎<br />-🍐<br />-🍊<br />-🍋<br />-🍒<br />-🥑<br /></code></pre></div></div></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-how-to-read-a-diff"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: How to read a Diff</h3>  <p>If you haven’t worked with diffs before, this can be something quite new or different.</p>  <p>If we have two files, let’s say a grocery list, in two files. We’ll call them ‘a’ and ‘b’.</p>  <blockquote class="code-2col">  <blockquote class="code-in">    <h3 data-toc-skip="" id="code-in-old"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Old</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat old<br />🍎<br />🍐<br />🍊<br />🍋<br />🍒<br />🥑<br /></code></pre></div>    </div>  </blockquote>  <blockquote class="code-out">    <h3 data-toc-skip="" id="code-out-new"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden">code-out</span> New</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat new<br />🍎<br />🍐<br />🍊<br />🍋<br />🍍<br />🥑<br /></code></pre></div>    </div>  </blockquote></blockquote>  <p>We can see that they have some different entries. We’ve removed 🍒 because they’re awful, and replaced them with an 🍍</p>  <p>Diff lets us compare these files</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff old new<br />5c5<br />&lt; 🍒<br /><span class="nt">---</span><br /><span class="o">&gt;</span> 🍍<br /></code></pre></div></div>  <p>Here we see that 🍒 is only in a, and 🍍 is only in b. But otherwise the files are identical.</p>  <p>There are a couple different formats to diffs, one is the ‘unified diff’</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> old new<br /><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:06:36.340962616 +0100<br />@@ <span class="nt">-3</span>,4 +3,4 @@<br /> 🍊<br /> 🍋<br />-🍒<br />+🍍<br /> 🥑<br /></code></pre></div></div>  <p>This is basically what you see in the training materials which gives you a lot of context about the changes:</p>  <ul>  <li><code class="language-plaintext highlighter-rouge">--- old</code> is the ‘old’ file in our view</li>  <li><code class="language-plaintext highlighter-rouge">+++ new</code> is the ‘new’ file</li>  <li>@@ these lines tell us where the change occurs and how many lines are added or removed.</li>  <li>Lines starting with a - are removed from our ‘new’ file</li>  <li>Lines with a + have been added.</li></ul>  <p>So when you go to apply these diffs to your files in the training:</p>  <ol>  <li>Ignore the header</li>  <li>Remove lines starting with - from your file</li>  <li>Add lines starting with + to your file</li></ol>  <p>The other lines (🍊/🍋 and 🥑) above just provide “context”, they help you know where a change belongs in a file, but <strong>should not be edited</strong> when you’re making the above change. Given the above diff, you would find a line with a 🍒, and replace it with a 🍍</p>  <h4 id="added--removed-lines">Added &amp; Removed Lines</h4>  <p>Removals are very easy to spot, we just have removed lines</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:10:14.370722802 +0100<br />@@ <span class="nt">-4</span>,3 +4,2 @@<br /> 🍋<br /> 🍒<br />-🥑<br /></code></pre></div></div>  <p>And additions likewise are very easy, just add a new line, between the other lines in your file.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:11:11.422135393 +0100<br />@@ <span class="nt">-1</span>,3 +1,4 @@<br /> 🍎<br />+🍍<br /> 🍐<br /> 🍊<br /></code></pre></div></div>  <h4 id="completely-new-files">Completely new files</h4>  <p>Completely new files look a bit different, there the “old” file is <code class="language-plaintext highlighter-rouge">/dev/null</code>, the empty file in a Linux machine.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> /dev/null old<br /><span class="nt">---</span> /dev/null	2022-02-15 11:47:16.100000270 +0100<br />+++ old	2022-02-16 14:06:19.697132568 +0100<br />@@ <span class="nt">-0</span>,0 +1,6 @@<br />+🍎<br />+🍐<br />+🍊<br />+🍋<br />+🍒<br />+🥑<br /></code></pre></div></div>  <p>And removed files are similar, except with the new file being /dev/null</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ /dev/null	2022-02-15 11:47:16.100000270 +0100<br />@@ <span class="nt">-1</span>,6 +0,0 @@<br />-🍎<br />-🍐<br />-🍊<br />-🍋<br />-🍒<br />-🥑<br /></code></pre></div></div></blockquote>
     </li>
     <li>
       <p>Add the tool to the <span class="notranslate">Galaxy</span> group variables under the new item <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>_local_tools</code> :</p>
 
       <div data-commit="Deploy testing tool" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -101,6 +101,9 @@</span> <span class="notranslate">galaxy</span>_config_templates:
+</span><span class="p">@@ -96,6 +96,9 @@</span> <span class="notranslate">galaxy</span>_config_templates:
    - src: templates/<span class="notranslate">galaxy</span>/config/dependency_resolvers_conf.xml
      dest: "{{ <span class="notranslate">galaxy</span>_config.<span class="notranslate">galaxy</span>.dependency_resolvers_config_file }}"
     
@@ -1031,7 +1133,7 @@
 +- testing.xml
 +
 </span> # systemd
- <span class="notranslate">galaxy</span>_manage_systemd: yes
+ <span class="notranslate">galaxy</span>_manage_systemd: true
  <span class="notranslate">galaxy</span>_systemd_env: [DRMAA_LIBRARY_PATH="/usr/lib/slurm-drmaa/lib/libdrmaa.so.1"]
    
 </code></pre></div>      </div>
@@ -1082,36 +1184,39 @@
 
   <ol>
     <li>
-      <p>Edit your <code class="language-plaintext highlighter-rouge">templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2</code> and add the following destination. Then, map the new tool to the new destination using the tool ID (<code class="language-plaintext highlighter-rouge">&lt;tool id="testing"&gt;</code>) and destination id (<code class="language-plaintext highlighter-rouge">&lt;destination id="slurm-2c"&gt;</code>) by adding a new section to the job config, <code class="language-plaintext highlighter-rouge">&lt;tools&gt;</code>, below the destinations:</p>
+      <p>Edit your <code class="language-plaintext highlighter-rouge">templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2</code> and add the following destination. Then, map the new tool to the new destination using the tool ID (<code class="language-plaintext highlighter-rouge">&lt;tool id="testing"&gt;</code>) and destination id (<code class="language-plaintext highlighter-rouge">&lt;destination id="slurm-2c"&gt;</code>) by adding a new section to the job config, <code class="language-plaintext highlighter-rouge">&lt;tools&gt;</code>, below the destinations:</p>
 
-      <div data-commit="Configure testing tool in job conf" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="p">@@ -11,6 +11,13 @@</span>
-             &lt;env id="SINGULARITY_CACHEDIR"&gt;/tmp/singularity&lt;/env&gt;
-             &lt;env id="SINGULARITY_TMPDIR"&gt;/tmp&lt;/env&gt;
-         &lt;/destination&gt;
-<span class="gi">+        &lt;destination id="slurm-2c" runner="slurm"&gt;
-+            &lt;param id="nativeSpecification"&gt;--nodes=1 --ntasks=1 --cpus-per-task=2&lt;/param&gt;
-+            &lt;param id="singularity_enabled"&gt;true&lt;/param&gt;
-+            &lt;env id="LC_ALL"&gt;C&lt;/env&gt;
-+            &lt;env id="SINGULARITY_CACHEDIR"&gt;/tmp/singularity&lt;/env&gt;
-+            &lt;env id="SINGULARITY_TMPDIR"&gt;/tmp&lt;/env&gt;
-+        &lt;/destination&gt;
-</span>         &lt;destination id="singularity" runner="local_plugin"&gt;
-             &lt;param id="singularity_enabled"&gt;true&lt;/param&gt;
-             &lt;!-- Ensuring a consistent collation environment is good for reproducibility. --&gt;
-<span class="p">@@ -22,5 +29,6 @@</span>
-         &lt;/destination&gt;
-     &lt;/destinations&gt;
-     &lt;tools&gt;
-<span class="gi">+        &lt;tool id="testing" destination="slurm-2c"/&gt;
-</span>     &lt;/tools&gt;
- &lt;/job_conf&gt;
-   
+      <div data-commit="Configure testing tool in job conf" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="p">@@ -20,6 +20,17 @@</span> execution:
+         value: /tmp/singularity
+       - name: SINGULARITY_TMPDIR
+         value: /tmp
+<span class="gi">+    slurm-2c:
++      runner: slurm
++      singularity_enabled: true
++      native_specification: --nodes=1 --ntasks=1 --cpus-per-task=2
++      env:
++      - name: LC_ALL
++        value: C
++      - name: SINGULARITY_CACHEDIR
++        value: /tmp/singularity
++      - name: SINGULARITY_TMPDIR
++        value: /tmp
+</span>     singularity:
+       runner: local_runner
+       singularity_enabled: true
+<span class="p">@@ -37,3 +48,5 @@</span> execution:
+ tools:
+ - class: local # these special tools that aren't parameterized for remote execution - <span class="notranslate">expression</span> tools, upload, etc
+   execution: local_dest
+<span class="gi">+- id: testing
++  execution: slurm-2c
+</span>   
 </code></pre></div>      </div>
     </li>
     <li>
-      <p>Run the <span class="notranslate">Galaxy</span> playbook. Because we modified <code class="language-plaintext highlighter-rouge">job_conf.xml</code>, <span class="notranslate">Galaxy</span> will be restarted to reread its config files.</p>
+      <p>Run the <span class="notranslate">Galaxy</span> playbook. Because we modified <code class="language-plaintext highlighter-rouge">job_conf.yml</code>, <span class="notranslate">Galaxy</span> will be restarted to reread its config files.</p>
 
       <blockquote class="code-in">
         <h3 id="code-in-input-bash-1"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
@@ -1187,7 +1292,7 @@
 
       <div data-commit="Deploy my_rules dynamic rule" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -103,6 +103,8 @@</span> <span class="notranslate">galaxy</span>_config_templates:
+</span><span class="p">@@ -98,6 +98,8 @@</span> <span class="notranslate">galaxy</span>_config_templates:
     
  <span class="notranslate">galaxy</span>_local_tools:
  - testing.xml
@@ -1195,45 +1300,42 @@
 +- my_rules.py
 </span>    
  # systemd
- <span class="notranslate">galaxy</span>_manage_systemd: yes
+ <span class="notranslate">galaxy</span>_manage_systemd: true
    
 </code></pre></div>      </div>
     </li>
     <li>
       <p>We next need to configure this plugin in our job configuration:</p>
 
-      <div data-commit="Add dynamic admin only destination" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="p">@@ -27,6 +27,10 @@</span>
-             &lt;!-- Singularity uses a temporary directory to build the squashfs filesystem. --&gt;
-             &lt;env id="SINGULARITY_TMPDIR"&gt;/tmp&lt;/env&gt;
-         &lt;/destination&gt;
-<span class="gi">+        &lt;destination id="dynamic_admin_only" runner="dynamic"&gt;
-+            &lt;param id="type"&gt;python&lt;/param&gt;
-+            &lt;param id="function"&gt;admin_only&lt;/param&gt;
-+        &lt;/destination&gt;
-</span>     &lt;/destinations&gt;
-     &lt;tools&gt;
-         &lt;tool id="testing" destination="slurm-2c"/&gt;
+      <div data-commit="Add dynamic admin only destination" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="p">@@ -44,6 +44,9 @@</span> execution:
+       # Singularity uses a temporary directory to build the squashfs filesystem
+       - name: SINGULARITY_TMPDIR
+         value: /tmp
+<span class="gi">+    dynamic_admin_only:
++      runner: dynamic
++      function: admin_only
+</span>    
+ tools:
+ - class: local # these special tools that aren't parameterized for remote execution - <span class="notranslate">expression</span> tools, upload, etc
    
 </code></pre></div>      </div>
 
-      <p>This is a <strong>Python function dynamic destination</strong>. <span class="notranslate">Galaxy</span> will load all python files in the <code class="language-plaintext highlighter-rouge">{{ <span class="notranslate">galaxy</span>_dynamic_rule_dir }}</code>, and all functions defined in those will be available <code class="language-plaintext highlighter-rouge">my_rules.py</code> to be used in the <code class="language-plaintext highlighter-rouge">job_conf.xml</code></p>
+      <p>This is a <strong>Python function dynamic destination</strong>. <span class="notranslate">Galaxy</span> will load all python files in the <code class="language-plaintext highlighter-rouge">{{ <span class="notranslate">galaxy</span>_dynamic_rule_dir }}</code>, and all functions defined in those will be available <code class="language-plaintext highlighter-rouge">my_rules.py</code> to be used in the <code class="language-plaintext highlighter-rouge">job_conf.yml</code></p>
     </li>
     <li>
-      <p>Finally, in <code class="language-plaintext highlighter-rouge">job_conf.xml</code>, update the <code class="language-plaintext highlighter-rouge">&lt;tool&gt;</code> definition and point it to this destination:</p>
+      <p>Finally, in <code class="language-plaintext highlighter-rouge">job_conf.yml</code>, update the <code class="language-plaintext highlighter-rouge">&lt;tool&gt;</code> definition and point it to this destination:</p>
 
-      <div data-commit="Send testing tool to the dynamic admin only destination." class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="p">@@ -33,6 +33,6 @@</span>
-         &lt;/destination&gt;
-     &lt;/destinations&gt;
-     &lt;tools&gt;
-<span class="gd">-        &lt;tool id="testing" destination="slurm-2c"/&gt;
-</span><span class="gi">+        &lt;tool id="testing" destination="dynamic_admin_only" /&gt;
-</span>     &lt;/tools&gt;
- &lt;/job_conf&gt;
-   
+      <div data-commit="Send testing tool to the dynamic admin only destination." class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="p">@@ -52,4 +52,4 @@</span> tools:
+ - class: local # these special tools that aren't parameterized for remote execution - <span class="notranslate">expression</span> tools, upload, etc
+   execution: local_dest
+ - id: testing
+<span class="gd">-  execution: slurm-2c
+</span><span class="gi">+  execution: dynamic_admin_only
+</span>   
 </code></pre></div>      </div>
     </li>
     <li>
@@ -1309,8 +1411,8 @@
 <span class="gi">+    tool_destinations_config_file: "{{ <span class="notranslate">galaxy</span>_config_dir }}/tool_destinations.yml"
 </span>     library_import_dir: /libraries/admin
      user_library_import_dir: /libraries/user
-     tool_data_table_config_path: /cvmfs/data.<span class="notranslate">galaxy</span>project.org/byhand/location/tool_data_table_conf.xml,/cvmfs/data.<span class="notranslate">galaxy</span>project.org/managed/location/tool_data_table_conf.xml
-<span class="p">@@ -100,6 +101,8 @@</span> <span class="notranslate">galaxy</span>_config_templates:
+     dependency_resolvers_config_file: "{{ <span class="notranslate">galaxy</span>_config_dir }}/dependency_resolvers_conf.xml"
+<span class="p">@@ -95,6 +96,8 @@</span> <span class="notranslate">galaxy</span>_config_templates:
      dest: "{{ <span class="notranslate">galaxy</span>_config.<span class="notranslate">galaxy</span>.containers_resolvers_config_file }}"
    - src: templates/<span class="notranslate">galaxy</span>/config/dependency_resolvers_conf.xml
      dest: "{{ <span class="notranslate">galaxy</span>_config.<span class="notranslate">galaxy</span>.dependency_resolvers_config_file }}"
@@ -1323,25 +1425,26 @@
 </code></pre></div>      </div>
     </li>
     <li>
-      <p>We need to update <span class="notranslate">Galaxy</span>’s job configuration to use this rule. Open <code class="language-plaintext highlighter-rouge">templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2</code> and add a DTD destination.
+      <p>We need to update <span class="notranslate">Galaxy</span>’s job configuration to use this rule. Open <code class="language-plaintext highlighter-rouge">templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2</code> and add a DTD destination.
 Also, comment out or remove the previous <code class="language-plaintext highlighter-rouge">&lt;tool&gt;</code> definition for the <code class="language-plaintext highlighter-rouge">testing</code> tool, and replace it with a <span class="notranslate">mapping</span> to the dtd destination like so:</p>
 
-      <div data-commit="Configure dtd in job conf" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="p">@@ -31,8 +31,11 @@</span>
-             &lt;param id="type"&gt;python&lt;/param&gt;
-             &lt;param id="function"&gt;admin_only&lt;/param&gt;
-         &lt;/destination&gt;
-<span class="gi">+        &lt;destination id="dtd" runner="dynamic"&gt;
-+            &lt;param id="type"&gt;dtd&lt;/param&gt;
-+        &lt;/destination&gt;
-</span>     &lt;/destinations&gt;
-     &lt;tools&gt;
-<span class="gd">-        &lt;tool id="testing" destination="dynamic_admin_only" /&gt;
-</span><span class="gi">+        &lt;tool id="testing" destination="dtd" /&gt;
-</span>     &lt;/tools&gt;
- &lt;/job_conf&gt;
-   
+      <div data-commit="Configure dtd in job conf" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="p">@@ -47,9 +47,12 @@</span> execution:
+     dynamic_admin_only:
+       runner: dynamic
+       function: admin_only
+<span class="gi">+    dtd:
++      runner: dynamic
++      type: dtd
+</span>    
+ tools:
+ - class: local # these special tools that aren't parameterized for remote execution - <span class="notranslate">expression</span> tools, upload, etc
+   execution: local_dest
+ - id: testing
+<span class="gd">-  execution: dynamic_admin_only
+</span><span class="gi">+  execution: dtd
+</span>   
 </code></pre></div>      </div>
     </li>
     <li>
@@ -1418,74 +1521,75 @@ Also, comment out or remove the previous <code class="language-plaintext highlig
 
       <div data-commit="Deploy job resource params configuration" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -95,6 +95,8 @@</span> <span class="notranslate">galaxy</span>_config:
-     farm: job-handlers:1,2
+</span><span class="p">@@ -90,6 +90,8 @@</span> <span class="notranslate">galaxy</span>_config:
+           - <span class="notranslate">workflow</span>-scheduler
     
  <span class="notranslate">galaxy</span>_config_templates:
 <span class="gi">+  - src: templates/<span class="notranslate">galaxy</span>/config/job_resource_params_conf.xml.j2
 +    dest: "{{ <span class="notranslate">galaxy</span>_config.<span class="notranslate">galaxy</span>.job_resource_params_file }}"
-</span>   - src: templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
+</span>   - src: templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
      dest: "{{ <span class="notranslate">galaxy</span>_config.<span class="notranslate">galaxy</span>.job_config_file }}"
    - src: templates/<span class="notranslate">galaxy</span>/config/container_resolvers_conf.xml.j2
    
 </code></pre></div>      </div>
     </li>
     <li>
-      <p>Next, we define a new section in <code class="language-plaintext highlighter-rouge">job_conf.xml</code>: <code class="language-plaintext highlighter-rouge">&lt;resources&gt;</code>. This groups together parameters that should appear together on a tool form. Add the following section to your <code class="language-plaintext highlighter-rouge">templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2</code>:</p>
+      <p>Next, we define a new section in <code class="language-plaintext highlighter-rouge">job_conf.yml</code>: <code class="language-plaintext highlighter-rouge">&lt;resources&gt;</code>. This groups together parameters that should appear together on a tool form. Add the following section to your <code class="language-plaintext highlighter-rouge">templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2</code>:</p>
 
-      <div data-commit="Configure resources in job conf" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="p">@@ -35,6 +35,9 @@</span>
-             &lt;param id="type"&gt;dtd&lt;/param&gt;
-         &lt;/destination&gt;
-     &lt;/destinations&gt;
-<span class="gi">+    &lt;resources&gt;
-+        &lt;group id="testing"&gt;cores,time&lt;/group&gt;
-+    &lt;/resources&gt;
-</span>     &lt;tools&gt;
-         &lt;tool id="testing" destination="dtd" /&gt;
-     &lt;/tools&gt;
+      <div data-commit="Configure resources in job conf" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="p">@@ -51,6 +51,12 @@</span> execution:
+       runner: dynamic
+       type: dtd
+    
+<span class="gi">+resources:
++  default: default
++  groups:
++    default: []
++    testing: [cores, time]
++
+</span> tools:
+ - class: local # these special tools that aren't parameterized for remote execution - <span class="notranslate">expression</span> tools, upload, etc
+   execution: local_dest
    
 </code></pre></div>      </div>
 
       <p>The group ID will be used to map a tool to job resource parameters, and the text value of the <code class="language-plaintext highlighter-rouge">&lt;group&gt;</code> tag is a comma-separated list of <code class="language-plaintext highlighter-rouge">name</code>s from <code class="language-plaintext highlighter-rouge">job_resource_params_conf.xml</code> to include on the form of any tool that is mapped to the defined <code class="language-plaintext highlighter-rouge">&lt;group&gt;</code>.</p>
     </li>
     <li>
-      <p>Finally, in <code class="language-plaintext highlighter-rouge">job_conf.xml</code>, move the previous <code class="language-plaintext highlighter-rouge">&lt;tool&gt;</code> definition for the <code class="language-plaintext highlighter-rouge">testing</code> tool into the comment and define a new <code class="language-plaintext highlighter-rouge">&lt;tool&gt;</code> that defines the <code class="language-plaintext highlighter-rouge">resources</code> for the tool:</p>
+      <p>Finally, in <code class="language-plaintext highlighter-rouge">job_conf.yml</code>, move the previous <code class="language-plaintext highlighter-rouge">&lt;tool&gt;</code> definition for the <code class="language-plaintext highlighter-rouge">testing</code> tool into the comment and define a new <code class="language-plaintext highlighter-rouge">&lt;tool&gt;</code> that defines the <code class="language-plaintext highlighter-rouge">resources</code> for the tool:</p>
 
-      <div data-commit="Configure resources in job conf" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="p">@@ -39,6 +39,6 @@</span>
-         &lt;group id="testing"&gt;cores,time&lt;/group&gt;
-     &lt;/resources&gt;
-     &lt;tools&gt;
-<span class="gd">-        &lt;tool id="testing" destination="dtd" /&gt;
-</span><span class="gi">+        &lt;tool id="testing" destination="dynamic_cores_time" resources="testing" /&gt;
-</span>     &lt;/tools&gt;
- &lt;/job_conf&gt;
-   
+      <div data-commit="Configure resources in job conf" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="p">@@ -61,4 +61,5 @@</span> tools:
+ - class: local # these special tools that aren't parameterized for remote execution - <span class="notranslate">expression</span> tools, upload, etc
+   execution: local_dest
+ - id: testing
+<span class="gd">-  execution: dtd
+</span><span class="gi">+  execution: dynamic_cores_time
++  resources: testing
+</span>   
 </code></pre></div>      </div>
     </li>
     <li>
       <p>We have assigned the <code class="language-plaintext highlighter-rouge">testing</code> tool to a new destination: <code class="language-plaintext highlighter-rouge">dynamic_cores_time</code>, but this destination does not exist. We need to create it. Add the following destination in your job conf:</p>
 
-      <div data-commit="Add dynamic_cores_time destination" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
-</span><span class="p">@@ -34,6 +34,10 @@</span>
-         &lt;destination id="dtd" runner="dynamic"&gt;
-             &lt;param id="type"&gt;dtd&lt;/param&gt;
-         &lt;/destination&gt;
-<span class="gi">+        &lt;destination id="dynamic_cores_time" runner="dynamic"&gt;
-+            &lt;param id="type"&gt;python&lt;/param&gt;
-+            &lt;param id="function"&gt;dynamic_cores_time&lt;/param&gt;
-+        &lt;/destination&gt;
-</span>     &lt;/destinations&gt;
-     &lt;resources&gt;
-         &lt;group id="testing"&gt;cores,time&lt;/group&gt;
+      <div data-commit="Add dynamic_cores_time destination" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.yml.j2
+</span><span class="p">@@ -50,6 +50,9 @@</span> execution:
+     dtd:
+       runner: dynamic
+       type: dtd
+<span class="gi">+    dynamic_cores_time:
++      runner: dynamic
++      function: dynamic_cores_time
+</span>    
+ resources:
+   default: default
    
 </code></pre></div>      </div>
 
-      <p>This will be another dynamic destination. <span class="notranslate">Galaxy</span> will load all python files in the <code class="language-plaintext highlighter-rouge">{{ <span class="notranslate">galaxy</span>_dynamic_rule_dir }}</code>, and all functions defined in those will be available <code class="language-plaintext highlighter-rouge">dynamic_cores_time</code> to be used in the <code class="language-plaintext highlighter-rouge">job_conf.xml</code></p>
+      <p>This will be another dynamic destination. <span class="notranslate">Galaxy</span> will load all python files in the <code class="language-plaintext highlighter-rouge">{{ <span class="notranslate">galaxy</span>_dynamic_rule_dir }}</code>, and all functions defined in those will be available <code class="language-plaintext highlighter-rouge">dynamic_cores_time</code> to be used in the <code class="language-plaintext highlighter-rouge">job_conf.yml</code></p>
     </li>
   </ol>
 
@@ -1555,7 +1659,7 @@ Also, comment out or remove the previous <code class="language-plaintext highlig
 +            destination.params['nativeSpecification'] = ''
 +        destination.params['nativeSpecification'] += ' --time=%s:00:00' % time
 +    except:
-+        # resource param selector not sent with tool form, job_conf.xml misconfigured
++        # resource param selector not sent with tool form, job_conf.yml misconfigured
 +        log.warning('(%s) error, keys were: %s', job.id, param_dict.keys())
 +        raise Job<span class="notranslate">Mapping</span>Exception(FAILURE_MESSAGE)
 +
@@ -1580,14 +1684,14 @@ Also, comment out or remove the previous <code class="language-plaintext highlig
 </span>     tool_destinations_config_file: "{{ <span class="notranslate">galaxy</span>_config_dir }}/tool_destinations.yml"
      library_import_dir: /libraries/admin
      user_library_import_dir: /libraries/user
-<span class="p">@@ -110,6 +111,7 @@</span> <span class="notranslate">galaxy</span>_local_tools:
+<span class="p">@@ -105,6 +106,7 @@</span> <span class="notranslate">galaxy</span>_local_tools:
  - testing.xml
  <span class="notranslate">galaxy</span>_dynamic_job_rules:
  - my_rules.py
 <span class="gi">+- map_resources.py
 </span>    
  # systemd
- <span class="notranslate">galaxy</span>_manage_systemd: yes
+ <span class="notranslate">galaxy</span>_manage_systemd: true
    
 </code></pre></div>      </div>
     </li>
@@ -1659,7 +1763,7 @@ Also, comment out or remove the previous <code class="language-plaintext highlig
 </blockquote>
 
 <!--SNIPPET-->
-<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-8">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-7...step-8#files_bucket">the previous tutorial</a>.</p></blockquote>
+<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-8">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-7...step-8#files_bucket">the previous tutorial</a>.</p>  <p>If you’re using <code class="language-plaintext highlighter-rouge">git</code> to track your progress, remember to add your changes and commit with a good commit message!</p></blockquote>
 
 <h2 id="further-reading">Further Reading</h2>
 
@@ -1667,7 +1771,7 @@ Also, comment out or remove the previous <code class="language-plaintext highlig
   <li>The <a href="https://github.com/galaxyproject/galaxy/blob/dev/config/tool_destinations.yml.sample">sample dynamic tool destination config file</a> fully describes the configuration language</li>
   <li><a href="https://docs.galaxyproject.org/en/latest/admin/jobs.html">Dynamic destination documentation</a></li>
   <li>Job resource parameters are not as well documented as they could be, but the <a href="https://github.com/galaxyproject/usegalaxy-playbook/blob/master/env/test/files/galaxy/config/job_resource_params_conf.xml">sample configuration file</a> shows some of the possibilities.</li>
-  <li><a href="https://github.com/galaxyproject/usegalaxy-playbook/blob/master/env/main/templates/galaxy/config/job_conf.xml.j2">use<span class="notranslate">galaxy</span>.org’s job_conf.xml</a> is publicly available for reference.</li>
+  <li><a href="https://github.com/galaxyproject/usegalaxy-playbook/blob/master/env/common/templates/galaxy/config/job_conf.yml.j2">use<span class="notranslate">galaxy</span>.org’s job_conf.yml</a> is publicly available for reference.</li>
   <li><a href="https://github.com/usegalaxy-eu/infrastructure-playbook/search?l=YAML&amp;q=galaxy_jobconf">use<span class="notranslate">galaxy</span>.eu’s job_conf.xml</a> is likewise (see the <code class="language-plaintext highlighter-rouge">group_vars/<span class="notranslate">galaxy</span>.yml</code> result)</li>
 </ul>
 
@@ -1693,6 +1797,9 @@ Also, comment out or remove the previous <code class="language-plaintext highlig
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
                 
+
+                
+
 
                 
 
@@ -1731,8 +1838,6 @@ Also, comment out or remove the previous <code class="language-plaintext highlig
                     })(window, document);
                 </script>
 
-
-
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
@@ -1754,8 +1859,8 @@ Also, comment out or remove the previous <code class="language-plaintext highlig
 author = "Nate Coraor and Björn Grüning and Helena Rasche",
 title = "Mapping Jobs to Destinations (Galaxy Training Materials)",
 year = "2022",
-month = "03",
-day = "30"
+month = "06",
+day = "28"
 url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/job-destinations/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -1775,6 +1880,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">

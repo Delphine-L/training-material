@@ -17,6 +17,15 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/tutorial.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Pangeo Notebook in Galaxy - Introduction to Xarray" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:08 +0000" />
+<meta name="DC.creator" content="Anne Fouilloux" />
 
         
         
@@ -24,9 +33,11 @@
         
         
         <meta name="description" content="Learn to analyze climate data through Galaxy." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Pangeo Notebook in Galaxy - Introduction to Xarray" />
         <meta property="og:description" content="Learn to analyze climate data through Galaxy." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -237,27 +248,14 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -295,28 +293,46 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Climate",
     "description": "Learn to analyze climate data through Galaxy.",
-    "url": "https://training.galaxyproject.org//training-material/topics/climate/"
+    "url": "https://training.galaxyproject.org/training-material/topics/climate/"
   },
-  "courseCode": "climate / pangeo-notebook / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Pangeo Notebook in Galaxy - Introduction to Xarray' tutorial",
-  "url": "https://training.galaxyproject.org//training-material/topics/climate/tutorials/pangeo-notebook/tutorial.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/tutorial.html",
   "timeRequired": "PT1H",
-  "keywords": "pangeo, interactive-tools, jupyter-notebook, jupyter-notebook",
+  "keywords": "climate, pangeo, interactive-tools, jupyter-notebook, jupyter-notebook",
   "description": "The questions this  addresses are:\n - What is Pangeo notebook?\n - How to start Pangeo Notebook in Galaxy?\n - What are the main software components of the Pangeo ecosystem?\n - What is Xarray?\n - How to manipulate Xarrays?\n - How to print metadata information?\n - How to make a selection?\n - How to visualize?\n - How to filter?\n - How to make reduction operations (mean, max, min)?\n - How to resample my data?\n - Where to go next?\n\n\\nThe objectives are:\n - Learn to get metadata information using Xarray Galaxy Tools\n - Learn to select data\n - Learn to visualize data\n - Learn to filter, make reduction operations (mean, max, min)\n - Learn to resample my data\n - Learn to cite and contribute to Pangeo\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
-      "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
       "provider": {
@@ -327,8 +343,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/data-science/tutorials/python-basics/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-basics/tutorial.html",
       "name": "Introduction to Python",
       "description": "Hands-on for 'Introduction to Python' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -341,8 +358,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/data-science/tutorials/python-plotting/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-plotting/tutorial.html",
       "name": "Plotting in Python",
       "description": "Hands-on for 'Plotting in Python' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -355,8 +373,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/data-science/tutorials/python-advanced-np-pd/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-advanced-np-pd/tutorial.html",
       "name": "Advanced Python",
       "description": "Hands-on for 'Advanced Python' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -374,19 +393,50 @@
       "name": "Data Carpentry Geospatial Workshop"
     }
   ],
-  "hasPart": [
-
-  ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anne Fouilloux"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anne Fouilloux"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "about": [
@@ -394,7 +444,7 @@
       "@type": "CreativeWork",
       "name": "Climate",
       "description": "Learn to analyze climate data through Galaxy.",
-      "url": "https://training.galaxyproject.org//training-material/topics/climate/"
+      "url": "https://training.galaxyproject.org/training-material/topics/climate/"
     }
   ]
 }
@@ -404,12 +454,15 @@
     <h1 data-toc-skip>Pangeo Notebook in Galaxy - Introduction to Xarray</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/annefou/" class="contributor-badge contributor-annefou"><img src="https://avatars.githubusercontent.com/annefou?s=27" alt="Avatar">Anne Fouilloux</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+	</div>
 
 </div>
 
@@ -521,6 +574,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Introduction to Python:
                             
@@ -530,6 +585,34 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -582,6 +665,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Plotting in Python:
                             
@@ -591,6 +676,34 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -615,6 +728,36 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -737,10 +880,12 @@
 
 
 
+
+
   
   <li class="btn btn-default supporting_material">
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
-        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Recordings
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>&nbsp;Recordings
     </a>
     <ul class="dropdown-menu">
         
@@ -758,6 +903,7 @@
         
         
         
+        
     </ul>
    </li>
    
@@ -769,7 +915,7 @@
 
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>&nbsp;Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -779,396 +925,6 @@
             </a>
         </li>
     
-    
-        
-        <a class="dropdown-item" href="http://motherbox.chemeng.ntua.gr/anastasia_dev/" title="ANASTASIA">
-            ANASTASIA
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://apostl.moffitt.org/" title="APOSTL">
-            APOSTL
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://mem.rcees.ac.cn:8083/" title="ARGA">
-            ARGA
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://smile.hku.hk/SARGs" title="ARGs-OAP">
-            ARGs-OAP
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://bf2i-galaxy.insa-lyon.fr:8080/" title="BF2I-MAP">
-            BF2I-MAP
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://galaxy.ugent.be/" title="BioBix">
-            BioBix
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://143.169.238.104/galaxy/" title="Biomina">
-            Biomina
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://pistacho.ac.uma.es/galaxy-bitlab" title="BitLAB">
-            BitLAB
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://iris.angers.inra.fr/galaxypub-cfbp" title="CIRM-CFBP">
-            CIRM-CFBP
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://clipseq.usegalaxy.eu/" title="CLIP-Explorer">
-            CLIP-Explorer
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://cpt.tamu.edu/galaxy-public/" title="Center for Phage Technology (CPT)">
-            Center for Phage Technology (CPT)
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://vm-chemflow-francegrille.eu/" title="ChemFlow">
-            ChemFlow
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://cheminformatics.usegalaxy.eu/" title="ChemicalToolbox">
-            ChemicalToolbox
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://climate.usegalaxy.eu/" title="Climate Science Workbench">
-            Climate Science Workbench
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://hyperbrowser.uio.no/coloc-stats" title="Coloc-stats">
-            Coloc-stats
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://cropgalaxy.excellenceinbreeding.org/" title="CropGalaxy">
-            CropGalaxy
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://dintor.eurac.edu/" title="Dintor">
-            Dintor
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://www.freebioinfo.org/" title="FreeBioinfo">
-            FreeBioinfo
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
-            Galaxy Africa
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
-            Galaxy India
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://gio.sbcs.qmul.ac.uk/" title="Galaxy Integrated Omics (GIO)">
-            Galaxy Integrated Omics (GIO)
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://test.galaxyproject.org/" title="Galaxy Test">
-            Galaxy Test
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://ecology.usegalaxy.eu/" title="Galaxy for Ecology">
-            Galaxy for Ecology
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://galaxy.mesocentre.uca.fr" title="Galaxy@AuBi">
-            Galaxy@AuBi
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
-            Galaxy@GenOuest
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://galaxy.pasteur.fr/" title="Galaxy@Pasteur">
-            Galaxy@Pasteur
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://hyperbrowser.uio.no/hb/" title="Genomic Hyperbrowser">
-            Genomic Hyperbrowser
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://gigagalaxy.net/" title="GigaGalaxy">
-            GigaGalaxy
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://hicexplorer.usegalaxy.eu" title="HiCExplorer">
-            HiCExplorer
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://humancellatlas.usegalaxy.eu/" title="Human Cell Atlas">
-            Human Cell Atlas
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://huttenhower.sph.harvard.edu/galaxy/" title="Huttenhower Lab">
-            Huttenhower Lab
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://galaxy.hyphy.org/" title="HyPhy HIV NGS Tools">
-            HyPhy HIV NGS Tools
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://mem.rcees.ac.cn:8081/" title="IDENAP">
-            IDENAP
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://galaxy-web.ipk-gatersleben.de" title="IPK Galaxy Blast Suite">
-            IPK Galaxy Blast Suite
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://www.immportgalaxy.org/" title="ImmPort Galaxy">
-            ImmPort Galaxy
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://galaxy.interactomix.com/" title="InteractoMIX">
-            InteractoMIX
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://galaxy.lappsgrid.org/" title="LAPPS Grid">
-            LAPPS Grid
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://galaxy.morganlangille.com/" title="Langille Lab">
-            Langille Lab
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://galaxy.ul.edu.lb/" title="Lebanese University Galaxy">
-            Lebanese University Galaxy
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://ml.usegalaxy.eu/" title="Machine Learning Workbench">
-            Machine Learning Workbench
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://neo.engr.uconn.edu/" title="Mandoiu Lab">
-            Mandoiu Lab
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://galaxy.informatik.uni-halle.de" title="Martin Luther U. Halle-Wittenberg">
-            Martin Luther U. Halle-Wittenberg
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://metabolomics.usegalaxy.eu/" title="Metabolomics">
-            Metabolomics
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://metagenomics.usegalaxy.eu/" title="Metagenomics">
-            Metagenomics
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://mapping-by-sequencing.vm.uni-freiburg.de:8080/" title="MiModD NacreousMap">
-            MiModD NacreousMap
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://galaxy.migale.inra.fr/" title="Migale">
-            Migale
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://nanopore.usegalaxy.eu/" title="NanoGalaxy">
-            NanoGalaxy
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://galaxy.inf.ethz.ch" title="Oqtans">
-            Oqtans
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://palfinder.ls.manchester.ac.uk/" title="Palfinder">
-            Palfinder
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://pepsimili.e-nios.com:8080/" title="PepSimili">
-            PepSimili
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
-            Plant Anaylsis Workbench
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://protologger.de/" title="Protologger">
-            Protologger
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://ribogalaxy.ucc.ie/" title="RiboGalaxy">
-            RiboGalaxy
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://singlecell.usegalaxy.eu/" title="Single Cell Omics workbench">
-            Single Cell Omics workbench
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
-            Street Science
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
-            UseGalaxy.be
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
-            UseGalaxy.eu
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.fr/" title="UseGalaxy.fr">
-            UseGalaxy.fr
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
-            UseGalaxy.no
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
-            UseGalaxy.org (Main)
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
-            UseGalaxy.org.au
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://galaxy.bio.ku.dk/" title="Vinther Lab">
-            Vinther Lab
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://viralvariant.anses.fr/" title="Viral Variant Visualizer (VVV)">
-            Viral Variant Visualizer (VVV)
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://virology.usegalaxy.eu/" title="Virology">
-            Virology
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://covid19.usegalaxy.fr/" title="covid19.UseGalaxy.fr">
-            covid19.UseGalaxy.fr
-        </a>
-        
     
     </ul>
 
@@ -1195,6 +951,9 @@
             </div>
             <div class="col-sm-10">
                  
+                     
+                     
+                     
                      
                     
                         
@@ -1886,6 +1645,9 @@ Data variables:
                 
 
                 
+
+
+                
                 <h1 id="bibliography">References</h1>
                 <ol class="bibliography"><li id="Abernathey2017">Abernathey, R., kevin paul, joe hamman, matthew rocklin, chiara lepore <i>et al.</i>, 2017 <b>Pangeo NSF Earthcube Proposal</b>. <a href="https://doi.org/10.6084/m9.figshare.5361094.v1">10.6084/m9.figshare.5361094.v1</a> <a href="https://figshare.com/articles/Pangeo_NSF_Earthcube_Proposal/5361094">https://figshare.com/articles/Pangeo_NSF_Earthcube_Proposal/5361094</a></li>
 <li id="Abernathey2021">Abernathey, R. P., T. Augspurger, A. Banihirwe, C. C. Blackmon-Luca, T. J. Crone <i>et al.</i>, 2021 <b>Cloud-Native Repositories for Big Scientific Data</b>. Computing in Science &amp; Engineering 23: 26–35. <a href="https://doi.org/10.1109/mcse.2021.3059437">10.1109/mcse.2021.3059437</a></li>
@@ -1927,8 +1689,6 @@ Data variables:
                         });
                     })(window, document);
                 </script>
-
-
 
                 <h1>Citing this Tutorial</h1>
                 <p>
@@ -1972,6 +1732,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">
