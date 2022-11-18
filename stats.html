@@ -440,8 +440,8 @@
                 Galaxy Server administration
             </a>
 </td>
-        <td><a href="/training-material//topics/admin/tutorials/gxadmin/tutorial.html">
-            Galaxy Monitoring with gxadmin
+        <td><a href="/training-material//topics/admin/tutorials/pulsar/tutorial.html">
+            Running Jobs on Remote Resources with Pulsar
             </a></td>
       </tr>
     
@@ -468,8 +468,22 @@
                 Galaxy Server administration
             </a>
 </td>
-        <td><a href="/training-material//topics/admin/tutorials/tool-management/tutorial.html">
-            Galaxy Tool Management with Ephemeris
+        <td><a href="/training-material//topics/admin/tutorials/connect-to-compute-cluster/tutorial.html">
+            Connecting Galaxy to a compute cluster
+            </a></td>
+      </tr>
+    
+            
+            
+      <tr>
+        <td>Jul 21, 2022</td>
+        <td style="text-align:right">
+            <a href="/training-material/topics/admin">
+                Galaxy Server administration
+            </a>
+</td>
+        <td><a href="/training-material//topics/admin/tutorials/job-destinations/tutorial.html">
+            Mapping Jobs to Destinations
             </a></td>
       </tr>
     
@@ -510,36 +524,22 @@
                 Galaxy Server administration
             </a>
 </td>
-        <td><a href="/training-material//topics/admin/tutorials/job-destinations/tutorial.html">
-            Mapping Jobs to Destinations
-            </a></td>
-      </tr>
-    
-            
-            
-      <tr>
-        <td>Jul 21, 2022</td>
-        <td style="text-align:right">
-            <a href="/training-material/topics/admin">
-                Galaxy Server administration
-            </a>
-</td>
-        <td><a href="/training-material//topics/admin/tutorials/monitoring/tutorial.html">
-            Galaxy Monitoring with Telegraf and Grafana
-            </a></td>
-      </tr>
-    
-            
-            
-      <tr>
-        <td>Jul 21, 2022</td>
-        <td style="text-align:right">
-            <a href="/training-material/topics/admin">
-                Galaxy Server administration
-            </a>
-</td>
         <td><a href="/training-material//topics/admin/tutorials/singularity/tutorial.html">
             Use Singularity containers for running Galaxy jobs
+            </a></td>
+      </tr>
+    
+            
+            
+      <tr>
+        <td>Jul 21, 2022</td>
+        <td style="text-align:right">
+            <a href="/training-material/topics/admin">
+                Galaxy Server administration
+            </a>
+</td>
+        <td><a href="/training-material//topics/admin/tutorials/tool-management/tutorial.html">
+            Galaxy Tool Management with Ephemeris
             </a></td>
       </tr>
     
@@ -624,8 +624,8 @@ var tutorialsBar = new Chart(tutoBar, {
 // Chart displaying number of tutorials per topic
 var tutoBarTechnical = document.getElementById('tutorialsBarTechnical');
 
-var data_tutos = [30,0,0,42,22,0,0,0,16,22,6];
-var labels_topics = ["Foundations of Data Science","","","Galaxy Server administration","Development in Galaxy","","","","Contributing to the Galaxy Training Material","Using Galaxy and Managing your Data","Teaching and Hosting Galaxy training"];
+var data_tutos = [30,0,6,22,0,16,42,0,0,0,22];
+var labels_topics = ["Foundations of Data Science","","Teaching and Hosting Galaxy training","Development in Galaxy","","Contributing to the Galaxy Training Material","Galaxy Server administration","","","","Using Galaxy and Managing your Data"];
 
 var tutorialsBar = new Chart(tutoBarTechnical, {
   type: 'horizontalBar',
