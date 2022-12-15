@@ -60,7 +60,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:00:16 +0000",
+  "dateModified": "2022-11-17 11:37:55 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Whole transcriptome analysis of Arabidopsis thaliana",
   "interactivityType": "mixed",
@@ -329,29 +329,36 @@ class: center, middle, inverse
 
 # Whole transcriptome analysis of Arabidopsis thaliana
 
+
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a>
-
-
-
-<a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a><a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
 	</div>
 
 </div>
 
 
-<div class="footnote" style="bottom: 5.5em;"><i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Updated: Apr 16, 2021</div>
+<!-- modified date -->
+<div class="footnote" style="bottom: 8em;"><i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Updated: </div>
 
-<div class="footnote" style="bottom: 4em;"><a href="/training-material/videos/watch.html?v=/transcriptomics/tutorials/mirna-target-finder/slides"><i class="far fa-play-circle" aria-hidden="true"></i><span class="visually-hidden">video-slides</span> View video slides for this lecture</a></div>
 
-<div class="footnote" style="bottom: 2.5em;"><i class="fas fa-file-alt" aria-hidden="true"></i><span class="visually-hidden">text-document</span><a href="slides-plain.html"> Plain-text slides</a></div>
-<div class="footnote" style="bottom: 1em;"><strong>Tip: </strong>press <kbd>P</kbd> to view the presenter notes</div>
+<!-- other slide formats (video and plain-text) -->
+<div class="footnote" style="bottom: 6em;">
+
+  <i class="far fa-play-circle" aria-hidden="true"></i><span class="visually-hidden">video-slides</span> <a href="/training-material/videos/watch.html?v=/transcriptomics/tutorials/mirna-target-finder/slides">Video slides</a> |
+
+
+  <i class="fas fa-file-alt" aria-hidden="true"></i><span class="visually-hidden">text-document</span><a href="slides-plain.html"> Plain-text slides</a>
+</div>
+
+
+<!-- usage tips -->
+<div class="footnote" style="bottom: 2em;">
+    <strong>Tip: </strong>press <kbd>P</kbd> to view the presenter notes
+    | <i class="fa fa-arrows" aria-hidden="true"></i><span class="visually-hidden">arrow-keys</span> Use arrow keys to move between slides
+
+</div>
 
 ???
 Presenter notes contain extra information which might be useful if you intend to use these slides for teaching.
@@ -417,7 +424,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ## Introduction: plant response to stress
 
-![plant response to stress](../../images/plant_stress_response.png)
+![plant response to stress](/training-material/topics/transcriptomics/images/transcriptomics_images/plant_stress_response.png)
 
 ???
 - As sessile organisms, the survival of plants under adverse environmental conditions depends, to a large extent, on their ability to perceive stress stimuli and respond appropriately to counteract the potentially damaging effects.
@@ -428,7 +435,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ## Introduction: role of brassinosteroids
 
-![role of brassinosteroids](../../images/role_of_brassinosteroids.png)
+![role of brassinosteroids](/training-material/topics/transcriptomics/images/transcriptomics_images/brassinosteroids.png)
 
 ???
 - Brassinosteroids are a group of plant steroid hormones essential for plant growth and development, as well as for controlling abiotic and biotic stress.
@@ -440,7 +447,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ## Introduction: plant microRNAs
 
-![plant microRNAs](../../images/plant_mirna_synthesis_simple.png)
+![plant microRNAs](/training-material/topics/transcriptomics/images/transcriptomics_images/plant_mirna_synthesis_simple.png)
 
 ???
 - miRNAs, mainly 20–22 nucleotide small RNAs, are characterized for regulating gene expression at the post-transcriptional level.
@@ -478,7 +485,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ## Experimental design
 
-![Experimental design](../../images/miRNA_pipeline.png)
+![Experimental design](/training-material/topics/transcriptomics/images/transcriptomics_images/miRNA_pipeline.png)
 
 ???
 - As shown here, we can divide the analysis into three stages. Differential expression analysis of miRNAs, differential expression analysis of mRNAs, and miRNA target identification.
@@ -494,7 +501,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 ---
 
 ## Background on data
-![Background on data](../../images/plant_rnaseq_data.png)
+![Background on data](/training-material/topics/transcriptomics/images/transcriptomics_images/plant_rnaseq_data.png)
 
 .footnote[[*E Oh, Elife, 2014*](https://www.ncbi.nlm.nih.gov/pubmed/24867218) and [*SY Park, Genes Genomics, 2020*](https://www.ncbi.nlm.nih.gov/pubmed/32648234)]
 
@@ -507,7 +514,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 ---
 
 ## Tools used in the analysis
-![Tools used in the analysis](../../images/plant_rnaseq_tools.png)
+![Tools used in the analysis](/training-material/topics/transcriptomics/images/transcriptomics_images/plant_rnaseq_tools.png)
 
 ???
 - Now we will look at the tools that are used in the tutorial.
@@ -525,7 +532,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ## Background on tools
 
-![Tools used in the analysis](../../images/plant_rnaseq_tools.png)
+![Tools used in the analysis](/training-material/topics/transcriptomics/images/transcriptomics_images/plant_rnaseq_tools.png)
 
 - In mRNA-Seq data analysis:
     - No adapter clipping!
@@ -542,7 +549,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ### Salmon overview
 
-![Salmon overview](../../images/salmon_steps.jpg)
+![Salmon overview](/training-material/topics/transcriptomics/images/transcriptomics_images/salmon_steps.jpg)
 
 .footnote[[*Patro, Nat Methods, 2017*](https://www.ncbi.nlm.nih.gov/pubmed/28263959)]
 
@@ -558,7 +565,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ### Salmon quasi-mapping
 
-![Salmon quasi-mapping](../../images/salmon_quasialignment.png)
+![Salmon quasi-mapping](../../images/transcriptomics_images/salmon_quasialignment.png)
 
 .footnote[[*Srivastava, Bioinformatics, 2016*](https://www.ncbi.nlm.nih.gov/pubmed/27307617)]
 
@@ -646,15 +653,7 @@ This material is the result of a collaborative work. Thanks to the [Galaxy Train
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a>
-
-
-
-<a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a><a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
 	</div>
 
 </div>

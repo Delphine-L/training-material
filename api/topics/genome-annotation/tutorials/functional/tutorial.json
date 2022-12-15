@@ -3,8 +3,7 @@
   "title": "Functional annotation of protein sequences",
   "zenodo_link": "https://zenodo.org/record/6861851",
   "tags": [
-    "eukaryote",
-    "prokaryote"
+    "eukaryote"
   ],
   "questions": [
     "How to perform functional annotation on protein sequences?"
@@ -26,7 +25,8 @@
       "erasmusplus"
     ]
   },
-  "last_modified_at": "20-Jul-22",
+  "subtopic": "eukaryote",
+  "priority": 6,
   "url": "/topics/genome-annotation/tutorials/functional/tutorial.html",
   "topic_name": "genome-annotation",
   "tutorial_name": "functional",

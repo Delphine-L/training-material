@@ -61,7 +61,9 @@
       ]
     }
   ],
-  "last_modified_at": "21-Jul-22",
+  "abbreviations": {
+    "TIaaS": "Training Infrastructure as a Service"
+  },
   "url": "/topics/admin/tutorials/tiaas/tutorial.html",
   "topic_name": "admin",
   "tutorial_name": "tiaas"

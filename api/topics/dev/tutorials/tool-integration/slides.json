@@ -113,7 +113,6 @@
       "url": "https://training.galaxyproject.org/training-material/api/contributors/lecorguille.json"
     }
   ],
-  "last_modified_at": "10-Jul-21",
   "url": "/topics/dev/tutorials/tool-integration/slides.html",
   "topic_name": "dev",
   "tutorial_name": "tool-integration"

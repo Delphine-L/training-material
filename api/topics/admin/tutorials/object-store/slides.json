@@ -20,6 +20,7 @@
       "twitter": "natefoo",
       "email": "nate@bx.psu.edu",
       "joined": "2017-12",
+      "orcid": "0000-0001-8083-2963",
       "id": "natefoo",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/natefoo.json"
     },
@@ -43,7 +44,6 @@
     }
   ],
   "subtopic": "data",
-  "last_modified_at": "01-Mar-22",
   "url": "/topics/admin/tutorials/object-store/slides.html",
   "topic_name": "admin",
   "tutorial_name": "object-store"

@@ -24,7 +24,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="GTN Metadata" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:00:20 +0000" />
+<meta name="DC.date" content="2022-09-23 13:01:08 +0000" />
 <meta name="DC.creator" content="Helena Rasche" />
 
         
@@ -145,10 +145,14 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
         
-            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-            </a>
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
         
 
         <div class="dropdown-item">
@@ -187,7 +191,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
@@ -268,7 +271,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:00:20 +0000",
+  "dateModified": "2022-09-23 13:01:08 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "GTN Metadata",
   "interactivityType": "mixed",
@@ -322,7 +325,7 @@
   "url": "https://training.galaxyproject.org/training-material/topics/contributing/tutorials/schemas/tutorial.html",
   "timeRequired": "PT10M",
   "keywords": "contributing",
-  "description": "The questions this  addresses are:\n - What metadata is required or possible to set in a Tutorial, Slide, Topic, or FAQ\n\n\\nThe objectives are:\n - Know where to find all of the available metadata, so you can reference it later.\n\n",
+  "description": "The questions this  addresses are:\n - What metadata is required or possible to set in a Tutorial, Slide, Topic, or FAQ\n\n\nThe objectives are:\n - Know where to find all of the available metadata, so you can reference it later.\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
@@ -396,18 +399,14 @@
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
 	</div>
 
 </div>
 
 
     <blockquote class="overview">
-        <h3>Overview</h3>
+        <div class="box-title" aria-label="overview box">Overview</div>
         
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
         
@@ -502,7 +501,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> May 20, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Sep 23, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -522,11 +521,18 @@
 
                 
 <blockquote class="tip">
-<h3>
-	
-		<code>Tutorial Schema</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: Tutorial Schema">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>Tutorial Schema</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -558,11 +564,14 @@
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>layout</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>layout</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -614,11 +623,14 @@
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>title</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>title</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -683,11 +695,14 @@
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>contributions</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>contributions</code>
+			
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -717,6 +732,8 @@
         <span class="pi">-</span> <span class="s">bebatut</span>
     <span class="na">infrastructure</span><span class="pi">:</span>
         <span class="pi">-</span> <span class="s">natefoo</span>
+    <span class="na">translation</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">shiltemann</span>
     <span class="na">funding</span><span class="pi">:</span>
         <span class="pi">-</span> <span class="s">erasmusplus</span>
 
@@ -745,6 +762,8 @@
 	
 		
 	
+		
+	
 
 	
 	
@@ -754,11 +773,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>authorship</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: authorship">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>authorship</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -796,11 +822,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>editing</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: editing">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>editing</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -838,11 +871,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>funding</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: funding">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>funding</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -880,11 +920,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>infrastructure</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: infrastructure">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>infrastructure</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -922,11 +969,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>testing</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: testing">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>testing</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -964,11 +1018,67 @@
 			
 
 			<blockquote class="tip">
-<h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: translation">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>translation</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>List of Items</b>
+
+<p>
+<p>These entities did translation and localisation work on this resource</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
-		<code>ux</code>
+
 	
-	</h3>
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: ux">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>ux</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -1027,11 +1137,14 @@
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>time_estimation</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>time_estimation</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -1108,11 +1221,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>abbreviations</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: abbreviations">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>abbreviations</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -1158,11 +1278,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		Any key permitted
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: =">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				Any key permitted
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -1203,11 +1330,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>contributors</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: contributors">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>contributors</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -1253,11 +1387,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>edam_ontology</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: edam_ontology">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>edam_ontology</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -1310,11 +1451,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>enable</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: enable">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>enable</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Boolean</b>
 
@@ -1348,11 +1496,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>follow_up_training</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: follow_up_training">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>follow_up_training</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -1395,15 +1550,18 @@
 
 
 	
-		
+	
 		
 		
 		<blockquote class="comment">
-<h3>
-	
-		<code>Sequence Value</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>Sequence Value (List of items)</code>
+			
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -1435,11 +1593,14 @@
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>type</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>type</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -1516,11 +1677,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>link</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: link">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>link</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -1554,11 +1722,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>title</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: title">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>title</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -1592,11 +1767,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>topic_name</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: topic_name">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>topic_name</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -1630,11 +1812,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>tutorials</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: tutorials">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>tutorials</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -1683,11 +1872,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code><span class="notranslate">galaxy</span>_version</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: galaxy_version">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code><span class="notranslate">galaxy</span>_version</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Decimal Number</b>
 
@@ -1721,11 +1917,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>gitter</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: gitter">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>gitter</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -1773,11 +1976,18 @@
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>key_points</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: key_points">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>key_points</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -1827,11 +2037,18 @@ the tutorial.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>lang</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: lang">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>lang</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -1892,11 +2109,18 @@ the tutorial.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>level</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: level">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>level</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -1962,11 +2186,18 @@ the tutorial.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>license</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: license">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>license</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -2009,11 +2240,18 @@ the tutorial.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>notebook</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: notebook">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>notebook</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -2062,11 +2300,14 @@ the tutorial.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>language</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>language</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -2144,11 +2385,18 @@ the tutorial.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>pyolite</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: pyolite">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>pyolite</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Boolean</b>
 
@@ -2196,11 +2444,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>snippet</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: snippet">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>snippet</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -2250,11 +2505,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>objectives</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: objectives">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>objectives</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -2309,11 +2571,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>priority</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: priority">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>priority</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Integer Number</b>
 
@@ -2351,11 +2620,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>questions</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: questions">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>questions</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -2403,11 +2679,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>redirect_from</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: redirect_from">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>redirect_from</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -2452,11 +2735,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>requirements</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: requirements">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>requirements</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -2499,15 +2789,18 @@ switch pages.</p>
 
 
 	
-		
+	
 		
 		
 		<blockquote class="comment">
-<h3>
-	
-		<code>Sequence Value</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>Sequence Value (List of items)</code>
+			
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -2539,11 +2832,14 @@ switch pages.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>type</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>type</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -2620,11 +2916,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>link</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: link">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>link</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -2658,11 +2961,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>title</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: title">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>title</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -2696,11 +3006,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>topic_name</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: topic_name">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>topic_name</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -2734,11 +3051,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>tutorials</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: tutorials">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>tutorials</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -2787,11 +3111,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>subtopic</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: subtopic">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>subtopic</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -2834,11 +3165,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>tags</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: tags">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>tags</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -2888,11 +3226,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>translations</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: translations">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>translations</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -2937,11 +3282,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>voice</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: voice">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>voice</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -2983,11 +3335,14 @@ switch pages.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>id</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>id</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3021,11 +3376,14 @@ switch pages.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>lang</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>lang</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3059,11 +3417,14 @@ switch pages.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>neural</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>neural</code>
+			
+		
+	</div>
 
 <b>Boolean</b>
 
@@ -3111,11 +3472,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>zenodo_link</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: zenodo_link">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>zenodo_link</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3156,11 +3524,18 @@ switch pages.</p>
 </blockquote>
 
 <blockquote class="tip">
-<h3>
-	
-		<code>Contributor Schema</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: Contributor Schema">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>Contributor Schema</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -3207,11 +3582,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		Any key permitted
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: =">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				Any key permitted
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -3243,11 +3625,14 @@ switch pages.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>name</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>name</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3328,11 +3713,14 @@ switch pages.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>joined</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>joined</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3391,6 +3779,8 @@ switch pages.</p>
 	
 		
 	
+		
+	
 
 	
 	
@@ -3400,11 +3790,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>avatar</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: avatar">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>avatar</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3438,11 +3835,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>bio</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: bio">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>bio</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3485,11 +3889,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>elixir_node</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: elixir_node">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>elixir_node</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3688,11 +4099,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>email</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: email">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>email</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3745,11 +4163,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>funder</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: funder">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>funder</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Boolean</b>
 
@@ -3783,11 +4208,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>funding_id</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: funding_id">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>funding_id</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3830,11 +4262,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>funding_statement</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: funding_statement">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>funding_statement</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3877,11 +4316,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>github</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: github">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>github</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Boolean</b>
 
@@ -3915,11 +4361,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>gitter</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: gitter">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>gitter</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -3972,11 +4425,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>halloffame</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: halloffame">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>halloffame</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -4023,6 +4483,53 @@ switch pages.</p>
 		
 	
 		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: in_memoriam">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>in_memoriam</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>If this community member is deceased, you can use this field
+to write a small in memoriam section that will display in
+their Hall of Fame profile.</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
 	
 		
 			
@@ -4030,11 +4537,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>linkedin</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: linkedin">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>linkedin</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -4078,11 +4592,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>maintainer_contact</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: maintainer_contact">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>maintainer_contact</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -4116,11 +4637,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>matrix</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: matrix">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>matrix</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -4175,11 +4703,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>orcid</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: orcid">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>orcid</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -4232,11 +4767,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>twitter</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: twitter">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>twitter</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -4292,11 +4834,18 @@ switch pages.</p>
 </blockquote>
 
 <blockquote class="tip">
-<h3>
-	
-		<code>Slides Schema</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: Slides Schema">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>Slides Schema</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -4328,11 +4877,14 @@ switch pages.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>layout</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>layout</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -4352,8 +4904,6 @@ switch pages.</p>
 
 	<li><code>tutorial_slides</code></li>
 
-	<li><code>rdmbites_slides</code></li>
-
 </ul>
 </p>
 
@@ -4371,11 +4921,6 @@ switch pages.</p>
 	
 <div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">tutorial_slides"</span>
-</code></pre></div>        </div>
-      </div>
-	
-<div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">rdmbites_slides"</span>
 </code></pre></div>        </div>
       </div>
 	</p>
@@ -4398,11 +4943,14 @@ switch pages.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>title</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>title</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -4467,11 +5015,14 @@ switch pages.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>contributions</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>contributions</code>
+			
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -4501,6 +5052,8 @@ switch pages.</p>
         <span class="pi">-</span> <span class="s">bebatut</span>
     <span class="na">infrastructure</span><span class="pi">:</span>
         <span class="pi">-</span> <span class="s">natefoo</span>
+    <span class="na">translation</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">shiltemann</span>
     <span class="na">funding</span><span class="pi">:</span>
         <span class="pi">-</span> <span class="s">erasmusplus</span>
 
@@ -4529,6 +5082,8 @@ switch pages.</p>
 	
 		
 	
+		
+	
 
 	
 	
@@ -4538,11 +5093,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>authorship</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: authorship">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>authorship</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -4580,11 +5142,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>editing</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: editing">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>editing</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -4622,11 +5191,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>funding</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: funding">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>funding</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -4664,11 +5240,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>infrastructure</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: infrastructure">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>infrastructure</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -4706,11 +5289,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>testing</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: testing">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>testing</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -4748,11 +5338,67 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: translation">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>translation</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>List of Items</b>
+
+<p>
+<p>These entities did translation and localisation work on this resource</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
-		<code>ux</code>
+
 	
-	</h3>
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: ux">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>ux</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -4805,11 +5451,14 @@ switch pages.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>logo</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>logo</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -4821,22 +5470,54 @@ switch pages.</p>
 
 
 
+<p>
+<b>Possible Values:</b>
+<ul>
+
+	<li><code>GTN</code></li>
+
+	<li><code>assets/images/gat.png</code></li>
+
+	<li><code>assets/images/gga.png</code></li>
+
+	<li><code>assets/images/ncbi.png</code></li>
+
+	<li><code>/assets/images/elixir-uk.png</code></li>
+
+</ul>
+</p>
+
 
 
 
 
 <p>
 	<b>Example(s)</b>
+	
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">logo</span><span class="pi">:</span> <span class="s">GTN</span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">logo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">GTN"</span>
 </code></pre></div>        </div>
       </div>
 	
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">logo</span><span class="pi">:</span> <span class="s">assets/images/gat.png</span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">logo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">assets/images/gat.png"</span>
 </code></pre></div>        </div>
       </div>
 	
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">logo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">assets/images/gga.png"</span>
+</code></pre></div>        </div>
+      </div>
+	
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">logo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">assets/images/ncbi.png"</span>
+</code></pre></div>        </div>
+      </div>
+	
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">logo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/assets/images/elixir-uk.png"</span>
+</code></pre></div>        </div>
+      </div>
 	</p>
 
 
@@ -4882,11 +5563,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>class</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: class">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>class</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -4922,11 +5610,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>contributors</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: contributors">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>contributors</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -4972,11 +5667,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>edam_ontology</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: edam_ontology">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>edam_ontology</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -5029,11 +5731,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>enable</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: enable">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>enable</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Boolean</b>
 
@@ -5067,11 +5776,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>follow_up_training</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: follow_up_training">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>follow_up_training</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -5114,15 +5830,18 @@ switch pages.</p>
 
 
 	
-		
+	
 		
 		
 		<blockquote class="comment">
-<h3>
-	
-		<code>Sequence Value</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>Sequence Value (List of items)</code>
+			
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -5154,11 +5873,14 @@ switch pages.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>type</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>type</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -5235,11 +5957,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>link</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: link">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>link</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -5273,11 +6002,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>title</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: title">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>title</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -5311,11 +6047,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>topic_name</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: topic_name">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>topic_name</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -5349,11 +6092,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>tutorials</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: tutorials">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>tutorials</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -5402,11 +6152,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>hands_on</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: hands_on">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>hands_on</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -5458,11 +6215,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>hands_on_url</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: hands_on_url">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>hands_on_url</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -5496,11 +6260,18 @@ switch pages.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>key_points</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: key_points">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>key_points</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -5550,11 +6321,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>lang</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: lang">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>lang</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -5615,11 +6393,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>level</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: level">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>level</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -5687,11 +6472,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>objectives</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: objectives">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>objectives</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -5746,11 +6538,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>priority</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: priority">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>priority</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Integer Number</b>
 
@@ -5788,11 +6587,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>questions</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: questions">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>questions</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -5839,11 +6645,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>redirect_from</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: redirect_from">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>redirect_from</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -5888,11 +6701,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>requirements</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: requirements">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>requirements</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -5935,15 +6755,18 @@ the slides.</p>
 
 
 	
-		
+	
 		
 		
 		<blockquote class="comment">
-<h3>
-	
-		<code>Sequence Value</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>Sequence Value (List of items)</code>
+			
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -5975,11 +6798,14 @@ the slides.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>type</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>type</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -6056,11 +6882,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>link</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: link">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>link</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -6094,11 +6927,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>title</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: title">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>title</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -6132,11 +6972,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>topic_name</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: topic_name">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>topic_name</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -6170,11 +7017,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>tutorials</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: tutorials">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>tutorials</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -6223,11 +7077,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>subtopic</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: subtopic">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>subtopic</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -6270,11 +7131,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>tags</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: tags">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>tags</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -6320,11 +7188,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>time_estimation</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: time_estimation">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>time_estimation</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -6370,11 +7245,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>translations</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: translations">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>translations</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -6419,11 +7301,18 @@ the slides.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>video</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: video">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>video</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Boolean</b>
 
@@ -6458,11 +7347,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>voice</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: voice">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>voice</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -6504,11 +7400,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>id</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>id</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -6542,11 +7441,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>lang</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>lang</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -6580,11 +7482,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>neural</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>neural</code>
+			
+		
+	</div>
 
 <b>Boolean</b>
 
@@ -6625,11 +7530,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>endOfSentencePause</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: endOfSentencePause">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>endOfSentencePause</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Decimal Number</b>
 
@@ -6663,11 +7575,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>endOfSlidePause</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: endOfSlidePause">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>endOfSlidePause</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Decimal Number</b>
 
@@ -6712,11 +7631,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>zenodo_link</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: zenodo_link">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>zenodo_link</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -6757,11 +7683,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 </blockquote>
 
 <blockquote class="tip">
-<h3>
-	
-		<code>FAQ Schema</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: FAQ Schema">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>FAQ Schema</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -6793,11 +7726,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>layout</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>layout</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -6849,11 +7785,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>title</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>title</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -6910,16 +7849,19 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>box_type</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>box_type</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
 <p>
-<p>The type of box that should be used when rendering this FAQ.</p>
+<p>The type of box that should be used when rendering this FAQ. Use <code class="language-plaintext highlighter-rouge">none</code> if it should not be in a box, but just plain text.</p>
 
 </p>
 
@@ -6937,6 +7879,12 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 	<li><code>question</code></li>
 
 	<li><code>comment</code></li>
+
+	<li><code>warning</code></li>
+
+	<li><code>details</code></li>
+
+	<li><code>none</code></li>
 
 </ul>
 </p>
@@ -6967,6 +7915,21 @@ If enabled, you must provide good speaker notes for every single slide.</p>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">box_type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">comment"</span>
 </code></pre></div>        </div>
       </div>
+	
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">box_type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">warning"</span>
+</code></pre></div>        </div>
+      </div>
+	
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">box_type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">details"</span>
+</code></pre></div>        </div>
+      </div>
+	
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">box_type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">none"</span>
+</code></pre></div>        </div>
+      </div>
 	</p>
 
 
@@ -6987,11 +7950,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>contributors</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>contributors</code>
+			
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -7031,6 +7997,8 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 
 		
 	
+		
+	
 
 	
 	
@@ -7040,11 +8008,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>area</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: area">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>area</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7101,11 +8076,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>description</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: description">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>description</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7155,16 +8137,79 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 		
 	
 		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: redirect_from">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>redirect_from</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>List of Items</b>
+
+<p>
+<p>If a tutorial is renamed to a new location, use this field to list prior locations from which this tutorial was accessible.</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b><div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">redirect_from</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">/topics/sequence-analysis/tutorials/de-novo-rad-seq/tutorial</span>
+</code></pre></div>        </div>
+      </div></p>
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+</blockquote>
+
+		
+	
+		
 	
 
 </blockquote>
 
 <blockquote class="tip">
-<h3>
-	
-		<code>Topic Schema</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: Topic Schema">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>Topic Schema</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -7196,11 +8241,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>name</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>name</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7263,11 +8311,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>type</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>type</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7360,11 +8411,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>title</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>title</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7412,11 +8466,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>summary</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>summary</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7463,11 +8520,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>maintainers</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>maintainers</code>
+			
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -7518,11 +8578,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>docker_image</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: docker_image">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>docker_image</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7565,11 +8632,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>edam_ontology</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: edam_ontology">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>edam_ontology</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7622,11 +8696,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>enable</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: enable">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>enable</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Boolean</b>
 
@@ -7660,11 +8741,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>gitter</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: gitter">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>gitter</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7716,11 +8804,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>references</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: references">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>references</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -7757,15 +8852,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 
 
 	
-		
+	
 		
 		
 		<blockquote class="comment">
-<h3>
-	
-		<code>Sequence Value</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>Sequence Value (List of items)</code>
+			
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -7797,11 +8895,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>authors</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>authors</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7835,11 +8936,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>title</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>title</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7873,11 +8977,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>link</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>link</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7920,11 +9027,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>summary</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: summary">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>summary</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -7969,11 +9083,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>requirements</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: requirements">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>requirements</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -8009,15 +9130,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 
 
 	
-		
+	
 		
 		
 		<blockquote class="comment">
-<h3>
-	
-		<code>Sequence Value</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>Sequence Value (List of items)</code>
+			
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -8049,11 +9173,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>type</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>type</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -8112,11 +9239,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>topic_name</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: topic_name">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>topic_name</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -8150,11 +9284,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>tutorials</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: tutorials">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>tutorials</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -8203,11 +9344,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>subtopics</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: subtopics">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>subtopics</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>List of Items</b>
 
@@ -8232,15 +9380,22 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 
 
 	
-		
+	
 		
 		
 		<blockquote class="tip">
-<h3>
-	
-		<code>Sequence Value</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: Sequence Value (List of items)">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>Sequence Value (List of items)</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>A dictionary/map</b>
 
@@ -8272,11 +9427,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>id</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>id</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -8329,11 +9487,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>title</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>title</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -8381,11 +9542,14 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="comment">
-<h3>
-	
-		<code>description</code>
-	
-	 <b>required</b></h3>
+
+	<div class="box-title">
+		
+			
+				<code>description</code>
+			
+		
+	</div>
 
 <b>Free Text</b>
 
@@ -8439,11 +9603,18 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 			
 
 			<blockquote class="tip">
-<h3>
-	
-		<code>enable</code>
-	
-	</h3>
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: enable">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>enable</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
 
 <b>Boolean</b>
 
@@ -8493,6 +9664,664 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 
 </blockquote>
 
+<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: Quiz Schema">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>Quiz Schema</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>A dictionary/map</b>
+
+<p>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+			
+
+			<blockquote class="comment">
+
+	<div class="box-title">
+		
+			
+				<code>title</code>
+			
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>Title of the Quiz</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Diagnostic Assessment</span>
+</code></pre></div>        </div>
+      </div>
+	
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">SQL Basics Recap</span>
+</code></pre></div>        </div>
+      </div>
+	
+	</p>
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="comment">
+
+	<div class="box-title">
+		
+			
+				<code>contributors</code>
+			
+		
+	</div>
+
+<b>List of Items</b>
+
+<p>
+<p>Who contributed to this FAQ</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b><div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">contributors</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">shiltemann</span>
+<span class="pi">-</span> <span class="s">hexylena</span>
+</code></pre></div>        </div>
+      </div></p>
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="comment">
+
+	<div class="box-title">
+		
+			
+				<code>questions</code>
+			
+		
+	</div>
+
+<b>List of Items</b>
+
+<p>
+<p>The questions that are part of the quiz</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+		<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: Sequence Value (List of items)">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>Sequence Value (List of items)</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>A dictionary/map</b>
+
+<p>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+			
+
+			<blockquote class="comment">
+
+	<div class="box-title">
+		
+			
+				<code>title</code>
+			
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>The question title, displayed on the teacher and student screens simultaneously</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">How you could collect information from learners at the beginning of a course or lesson and how you can use it?</span>
+</code></pre></div>            </div>
+          </div>
+	
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">What keyword do you use to retrieve data in SQL</span>
+</code></pre></div>            </div>
+          </div>
+	
+	</p>
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="comment">
+
+	<div class="box-title">
+		
+			
+				<code>timeout</code>
+			
+		
+	</div>
+
+<b>Integer Number</b>
+
+<p>
+<p>How long the students have to answer the question</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="comment">
+
+	<div class="box-title">
+		
+			
+				<code>type</code>
+			
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>What type of question to display.</p>
+
+</p>
+
+
+
+
+<p>
+<b>Possible Values:</b>
+<ul>
+
+	<li><code>choose-1</code></li>
+
+	<li><code>choose-many</code></li>
+
+	<li><code>free-text</code></li>
+
+	<li><code>poll</code></li>
+
+</ul>
+</p>
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+	
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">choose-1"</span>
+</code></pre></div>            </div>
+          </div>
+	
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">choose-many"</span>
+</code></pre></div>            </div>
+          </div>
+	
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">free-text"</span>
+</code></pre></div>            </div>
+          </div>
+	
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">poll"</span>
+</code></pre></div>            </div>
+          </div>
+	</p>
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+
+	
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: answers">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>answers</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>List of Items</b>
+
+<p>
+<p>The possible answers to the question you’ve asked. Consider
+including common wrong answers, or answers based on common
+mistakes to help students identify where they went wrong.</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b><div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">answers</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">OBTAIN</span>
+<span class="pi">-</span> <span class="s">SELECT</span>
+<span class="pi">-</span> <span class="s">RETRIEVE</span>
+<span class="pi">-</span> <span class="s">RETURN</span>
+</code></pre></div>            </div>
+          </div></p>
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: correct">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>correct</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b></b>
+
+<p>
+<p>The correct answer, it MUST be part of the answers list. It can be a list of correct answers if it is a choose-many question</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">correct</span><span class="pi">:</span> <span class="s">SELECT</span>
+</code></pre></div>            </div>
+          </div>
+	
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">correct</span><span class="pi">:</span> <span class="s">AB</span>
+</code></pre></div>            </div>
+          </div>
+	
+	</p>
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: image">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>image</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>Path to an image, if you’d like to include one along with the question. Should be the full path starting with /</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">image</span><span class="pi">:</span> <span class="s">/training-material/topics/data-science/images/carpentries-sql/sql-join-structure.svg</span>
+</code></pre></div>            </div>
+          </div>
+	
+	</p>
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: live">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>live</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Boolean</b>
+
+<p>
+<p>Used ONLY with the poll type questions to enable displaying the results as they come in. Great for polling audiences for how they’re feeling.</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+	
+		
+	
+		
+	
+
+</blockquote>
+
+	
+
+</blockquote>
+
+		
+	
+
+	
+	
+		
+	
+		
+	
+		
+	
+
+</blockquote>
+
 
 
                 
@@ -8512,7 +10341,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452">how it went</a>.
                 <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
                 </p>
 
@@ -8547,7 +10376,8 @@ If enabled, you must provide good speaker notes for every single slide.</p>
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Helena Rasche, 2022 <b>GTN Metadata (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/contributing/tutorials/schemas/tutorial.html">https://training.galaxyproject.org/training-material/topics/contributing/tutorials/schemas/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">
+                            Helena Rasche,  <b>GTN Metadata (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/contributing/tutorials/schemas/tutorial.html">https://training.galaxyproject.org/training-material/topics/contributing/tutorials/schemas/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -8555,18 +10385,26 @@ If enabled, you must provide good speaker notes for every single slide.</p>
                     </ol>
                 </p>
 
-
+                <!-- collapsible boxcontaining the BibTeX-formatted citation -->
                 <blockquote class="details">
-                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                  <p style="display: none;">
 
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                  <div id="citation-bibtex" class="box-title">
+                    <button type="button" aria-controls="citation-bibtex" aria-expanded="false" aria-label="Toggle details box: BibTeX for citing this tutorial">
+                      <i class="fas fa-info-circle" aria-hidden="true"></i>
+                      <span class="visually-hidden"></span> BibTeX<span role="button" class="fold-unfold fa fa-minus-square" aria-hidden="true"></span>
+                    </button>
+                   </div>
+                   <p style="display: none;">
+
+                   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
+
 <code id="citation-code">@misc{contributing-schemas,
 author = "Helena Rasche",
 title = "GTN Metadata (Galaxy Training Materials)",
-year = "2022",
-month = "05",
-day = "20"
+year = "",
+month = "",
+day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/contributing/tutorials/schemas/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -8583,8 +10421,8 @@ note = "[Online; accessed TODAY]"
     title = {Community-Driven Data Analysis Training for Biology},
     journal = {Cell Systems}
 }</code>
-                </pre></div></div>
-                </p>
+                   </pre></div></div>
+                   </p>
                 </blockquote>
 
                 
@@ -8597,11 +10435,11 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+                <i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!
 
                 
                 <blockquote class="agenda">
-                    <h3>Developing GTN training material</h3>
+                    <div class="box-title" aria-label="agenda box">Developing GTN training material</div>
                     This tutorial is part of a series to develop GTN training material, feel free to also look at:
                     
                     <ol>
@@ -8679,6 +10517,14 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                         
                             
                                 
+                    <li><a href="/training-material/topics/contributing/tutorials/design/tutorial.html">Design and plan session, course, materials</a></li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
                     <li><a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html">Generating PDF artefacts of the website</a></li>
                                 
                             
@@ -8703,6 +10549,14 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                         
                             
                                 
+                    <li><a href="/training-material/topics/contributing/tutorials/learning-principles/tutorial.html">Principles of learning and how they apply to training and teaching</a></li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
                     <li><a href="/training-material/topics/contributing/tutorials/running-jekyll/tutorial.html">Running the GTN website locally</a></li>
                                 
                             
@@ -8712,6 +10566,14 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                             
                                 
                     <li><a href="/training-material/topics/contributing/tutorials/gitpod/tutorial.html">Running the GTN website online using GitPod</a></li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/python/tutorial.html">Teaching Python</a></li>
                                 
                             
                         
@@ -8748,39 +10610,39 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
 
         </div>
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

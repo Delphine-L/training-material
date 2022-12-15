@@ -22,6 +22,7 @@
       "name": "John Davis",
       "email": "jdavcs@gmail.com",
       "joined": "2019-06",
+      "orcid": "0000-0002-1363-1245",
       "id": "jdavcs",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/jdavcs.json"
     },
@@ -58,7 +59,6 @@
     }
   ],
   "subtopic": "core",
-  "last_modified_at": "15-Jul-22",
   "url": "/topics/dev/tutorials/writing_tests/tutorial.html",
   "topic_name": "dev",
   "tutorial_name": "writing_tests"

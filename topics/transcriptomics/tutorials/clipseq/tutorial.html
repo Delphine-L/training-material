@@ -24,7 +24,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="CLIP-Seq data analysis from pre-processing to motif detection" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:00:28 +0000" />
+<meta name="DC.date" content="2022-11-28 10:10:13 +0000" />
 <meta name="DC.creator" content="Florian Heyl" />
 <meta name="DC.creator" content="Daniel Maticzka" />
 <meta name="DC.creator" content="Bérénice Batut" />
@@ -147,10 +147,14 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
         
-            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-            </a>
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
         
 
         <div class="dropdown-item">
@@ -189,7 +193,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
@@ -270,7 +273,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:00:28 +0000",
+  "dateModified": "2022-11-28 10:10:13 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "CLIP-Seq data analysis from pre-processing to motif detection",
   "interactivityType": "mixed",
@@ -324,7 +327,7 @@
   "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/clipseq/tutorial.html",
   "timeRequired": "PT6H",
   "keywords": "transcriptomics",
-  "description": "The questions this  addresses are:\n - How is raw CLIP-Seq data processed and analysed?\n - How do I find binding motifs and targets for a protein (e.g., RBFOX2)?\n\n\\nThe objectives are:\n - Remove Adapters, Barcodes and Unique Molecular Identifiers (UMIs) from the reads\n - Align trimmed reads with STAR\n - De-duplicate the read library\n - Inspect the read mapping and de-duplication quality\n - Perform peak calling with PEAKachu\n - Analyse the peaks and find potential binding motifs and targets\n - Check the quality of the peak calling\n\n",
+  "description": "The questions this  addresses are:\n - How is raw CLIP-Seq data processed and analysed?\n - How do I find binding motifs and targets for a protein (e.g., RBFOX2)?\n\n\nThe objectives are:\n - Remove Adapters, Barcodes and Unique Molecular Identifiers (UMIs) from the reads\n - Align trimmed reads with STAR\n - De-duplicate the read library\n - Inspect the read mapping and de-duplication quality\n - Perform peak calling with PEAKachu\n - Analyse the peaks and find potential binding motifs and targets\n - Check the quality of the peak calling\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
@@ -564,26 +567,14 @@
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/heylf/" class="contributor-badge contributor-heylf"><img src="https://avatars.githubusercontent.com/heylf?s=27" alt="Avatar">Florian Heyl</a>
-
-
-
-<a href="/training-material/hall-of-fame/dmaticzka/" class="contributor-badge contributor-dmaticzka"><img src="https://avatars.githubusercontent.com/dmaticzka?s=27" alt="Avatar">Daniel Maticzka</a>
-
-
-
-<a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge contributor-bebatut"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bebatut?s=27" alt="Avatar">Bérénice Batut</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/heylf/" class="contributor-badge contributor-heylf"><img src="https://avatars.githubusercontent.com/heylf?s=27" alt="Avatar">Florian Heyl</a><a href="/training-material/hall-of-fame/dmaticzka/" class="contributor-badge contributor-dmaticzka"><img src="https://avatars.githubusercontent.com/dmaticzka?s=27" alt="Avatar">Daniel Maticzka</a><a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge contributor-bebatut"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bebatut?s=27" alt="Avatar">Bérénice Batut</a>
 	</div>
 
 </div>
 
 
     <blockquote class="overview">
-        <h3>Overview</h3>
+        <div class="box-title" aria-label="overview box">Overview</div>
         
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
         
@@ -718,7 +709,7 @@
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/1327423">
+<a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/1327423">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
 
@@ -729,7 +720,7 @@
                 <li class="btn btn-default supporting_material">
 
 
-    <a class="topic-icon" href="/training-material/topics/transcriptomics/tutorials/clipseq/workflows/" title="Workflows" alt="CLIP-Seq data analysis from pre-processing to motif detection workflows">
+    <a class="btn btn-default topic-icon" href="/training-material/topics/transcriptomics/tutorials/clipseq/workflows/" title="Workflows" alt="CLIP-Seq data analysis from pre-processing to motif detection workflows">
         <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
     </a>
 
@@ -911,8 +902,6 @@
         
     
         
-    
-        
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
@@ -958,7 +947,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Apr 28, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Nov 28, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -976,11 +965,11 @@
             <div class="col-sm-10">
                  
 
-                <h1 class="no_toc" id="introduction">Introduction</h1>
+                <h1 id="introduction">Introduction</h1>
 
-<p>The eCLIP data provided here is a subset of the eCLIP data of RBFOX2 from a study published by <em>Nostrand et al.</em> (<a href="https://doi.org/10.1038/nmeth.3810">2016</a>). The dataset contains the first biological replicate of RBFOX2 CLIP-seq and the input control experiment (FASTQ files). The data was changed and downsampled to reduce data processing time, consequently the data does not correspond to the original source pulled from <em>Nostrand et al.</em> (<a href="https://doi.org/10.1038/nmeth.3810">2016</a>). Also included is a text file (.txt) encompassing the chromosome sizes of hg38 and a genome annotation (.gtf) file taken from <a href="http://ftp.ensemblorg.ebi.ac.uk/pub/release-74/gtf/homo_sapiens/">Ensembl</a>.</p>
+<p>The eCLIP data provided here is a subset of the eCLIP data of RBFOX2 from a study published by <em>Nostrand et al.</em> (<span class="citation"><a href="#VanNostrand2016">Nostrand <i>et al.</i> 2016</a></span>). The dataset contains the first biological replicate of RBFOX2 CLIP-seq and the input control experiment (FASTQ files). The data was changed and downsampled to reduce data processing time, consequently the data does not correspond to the original source pulled from <em>Nostrand et al.</em> (<span class="citation"><a href="#VanNostrand2016">Nostrand <i>et al.</i> 2016</a></span>). Also included is a text file (.txt) encompassing the chromosome sizes of hg38 and a genome annotation (.gtf) file taken from <a href="http://ftp.ensemblorg.ebi.ac.uk/pub/release-74/gtf/homo_sapiens/">Ensembl</a>.</p>
 
-<p><strong>Table 1</strong>: Data from RBFOX2 CLIP-Seq and control experiment which we are going to use in this tutorial from a study published by <em>Nostrand et al.</em> (<a href="https://doi.org/10.1038/nmeth.3810">2016</a>). PE stands for a paired-end read library. Hep G2 is a human liver cancer cell line. Replicate is the number of the biological replicate. Stranded means, if the read-library is strand specific, i.e., in a specific forward-reverse direction.</p>
+<p><strong>Table 1</strong>: Data from RBFOX2 CLIP-Seq and control experiment which we are going to use in this tutorial from a study published by <em>Nostrand et al.</em> ([2016](<span class="citation"><a href="#VanNostrand2016">Nostrand <i>et al.</i> 2016</a></span>). PE stands for a paired-end read library. Hep G2 is a human liver cancer cell line. Replicate is the number of the biological replicate. Stranded means, if the read-library is strand specific, i.e., in a specific forward-reverse direction.</p>
 
 <table>
   <thead>
@@ -998,7 +987,7 @@
   <tbody>
     <tr>
       <td>Hep G2</td>
-      <td><a href="https://doi.org/10.1038/nmeth.3810">eCLIP</a></td>
+      <td>eCLIP</td>
       <td style="text-align: center">RBFOX2</td>
       <td style="text-align: center">1</td>
       <td>ENCSR987FTF</td>
@@ -1008,7 +997,7 @@
     </tr>
     <tr>
       <td>Hep G2</td>
-      <td><a href="https://doi.org/10.1038/nmeth.3810">eCLIP</a></td>
+      <td>eCLIP</td>
       <td style="text-align: center">input</td>
       <td style="text-align: center">1</td>
       <td>ENCSR799EKA</td>
@@ -1020,11 +1009,12 @@
 </table>
 
 <blockquote class="agenda">
-  <h3 id="agenda">Agenda</h3>
+  <div id="agenda" class="box-title" aria-label="agenda box: ">Agenda</div>
 
   <p>In this tutorial, we will cover:</p>
 
 <ol id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#finding-binding-motifs-for-rbfox2" id="markdown-toc-finding-binding-motifs-for-rbfox2">Finding Binding Motifs for RBFOX2</a>    <ol>
       <li><a href="#step-1-get-data" id="markdown-toc-step-1-get-data">Step 1: Get data</a></li>
     </ol>
@@ -1066,6 +1056,7 @@
       <li><a href="#inspection-of-peaks-and-aligned-data-with-igv" id="markdown-toc-inspection-of-peaks-and-aligned-data-with-igv">Inspection of peaks and aligned data with IGV</a></li>
     </ol>
   </li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
 </ol>
 
 </blockquote>
@@ -1077,13 +1068,13 @@
 <h2 id="step-1-get-data">Step 1: Get data</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>
+  <div id="hands-on-data-upload" class="box-title" aria-label="hands-on box: Data upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Data upload</div>
   <ol>
     <li>
       <p>Create and name a new history for this tutorial.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
+      <blockquote class="tip">  <div id="tip-creating-a-new-history" class="box-title"><button type="button" aria-controls="tip-creating-a-new-history-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
     </li>
     <li>
       <p>Import the following files from <a href="https://zenodo.org/record/2579279">Zenodo</a>.</p>
@@ -1097,31 +1088,31 @@ https://zenodo.org/record/2579279/files/RBFOX2-204-INPUT_S2_R2.fastq
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
+      <blockquote class="tip">  <div id="tip-importing-via-links" class="box-title"><button type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
 
-      <figure id="figure-1"><img src="../../images/upload_data_page.png" alt="upload. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Data can be imported directly with links.</figcaption></figure>
+      <figure id="figure-1"><img src="../../images/transcriptomics_images/upload_data_page.png" alt="upload. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Data can be imported directly with links.</figcaption></figure>
     </li>
   </ol>
 
-  <figure id="figure-2"><img src="../../images/clipseq_data_uploaded.png" alt="data. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Imported datasets will appear in the history panel.</figcaption></figure>
+  <figure id="figure-2"><img src="../../images/transcriptomics_images/clipseq_data_uploaded.png" alt="data. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Imported datasets will appear in the history panel.</figcaption></figure>
 
 </blockquote>
 
 <h1 id="step-2-quality-control">Step 2: Quality Control</h1>
 
-<p>As for any NGS data analysis, CLIP-seq data must be quality controlled before being aligned to a reference genome. For more detailed information on NGS quality control, check out the tutorial for NGS <a href="/training-material/topics/sequence-analysis">here</a>. One crucial thing to check for CLIP-Seq data is the sequence duplication levels. PCR duplications occur naturally in any NGS experiment during the PCR amplification of the genetic material. CLIP-Seq is prone to many PCR duplicates because of the sparse material that is obtained during a CLIP-Seq experiment resulting in high PCR cycles in many occasions. More information about the problem of PCR duplicates can be found <a href="http://www.cureffi.org/2012/12/11/how-pcr-duplicates-arise-in-next-generation-sequencing/">here</a>.</p>
+<p>As for any NGS data analysis, CLIP-seq data must be quality controlled before being aligned to a reference genome. For more detailed information on NGS quality control, check out the <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html">tutorial for NGS</a>. One crucial thing to check for CLIP-Seq data is the sequence duplication levels. PCR duplications occur naturally in any NGS experiment during the PCR amplification of the genetic material. CLIP-Seq is prone to many PCR duplicates because of the sparse material that is obtained during a CLIP-Seq experiment resulting in high PCR cycles in many occasions. More information about the problem of PCR duplicates can be found <a href="http://www.cureffi.org/2012/12/11/how-pcr-duplicates-arise-in-next-generation-sequencing/">in this guide</a>.</p>
 
 <h2 id="report-with-fastqc">Report with <strong>FastQC</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-quality-control-with-fastqc"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Quality control with FastQC</h3>
+  <div id="hands-on-quality-control-with-fastqc" class="box-title" aria-label="hands-on box: Quality control with FastQC"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Quality control with FastQC</div>
 
   <ol>
     <li>
       <p><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>: Run the tool <strong>FastQC</strong> on each FASTQ file to assess the quality of the raw data. An explanation of the results can be found on the <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC web page</a>.</p>
 
       <blockquote class="tip">
-        <h3 id="tip-tip-running-a-tool-on-multiple-data-files"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Running a tool on multiple data files</h3>
+        <div id="tip-running-a-tool-on-multiple-data-files" class="box-title"><button type="button" aria-controls="tip-running-a-tool-on-multiple-data-files-contents" aria-expanded="true" aria-label="Toggle tip box: Running a tool on multiple data files"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Running a tool on multiple data files<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
         <p>You can run this tool - and many other tools - on all the FASTQ files at once!
 To do this, first select the “Multiple datasets” icon (two stacked pages) under the “Input FASTQ file” heading in the <strong>FASTQC</strong> Tool Form, then shift+click to select multiple FASTQ files.</p>
@@ -1132,10 +1123,10 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
     </li>
   </ol>
 
-  <figure id="figure-3"><img src="../../images/clipseq_duplication_level_1.png" alt="fastqbefore. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> Sequence duplication levels <b>before</b> de-duplication; The y-axis represents the portion of <span class="notranslate">reads</span> with the specific duplication level. An exact sequence match is needed to detect a duplicated read. The blue line shows the duplication level distribution of the full sequence set. The red line depicts an ideal curve after a de-duplication step (duplicates are filtered out).</figcaption></figure>
+  <figure id="figure-3"><img src="../../images/transcriptomics_images/clipseq_duplication_level_1.png" alt="fastqbefore. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> Sequence duplication levels <b>before</b> de-duplication; The y-axis represents the portion of <span class="notranslate">reads</span> with the specific duplication level. An exact sequence match is needed to detect a duplicated read. The blue line shows the duplication level distribution of the full sequence set. The red line depicts an ideal curve after a de-duplication step (duplicates are filtered out).</figcaption></figure>
 
   <blockquote class="question">
-    <h3 id="question-questions"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div id="question" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>Has our data high sequence duplication levels?</li>
@@ -1144,7 +1135,7 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div id="solution" class="box-title"><button type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
       <ol>
         <li>Yes, ideally we would see a blue line with one high peak in a duplication of one, everything else should be zero.</li>
         <li>Spikes in the red line come from different duplication levels in the original data (blue line).</li>
@@ -1163,17 +1154,18 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
 
 <h2 id="removal-of-adapter-sequences-with-cutadapt">Removal of adapter sequences with <strong>Cutadapt</strong></h2>
 
-<p>In this task we are going to remove two 3’ and two 5’ adapters from the <span class="notranslate">reads</span> (Note: The eCLIP protocol uses more adapter sequences, for more information take a look <a href="https://doi.org/10.1038/nmeth.3810">here</a>). Because <strong>Cutadapt</strong> can only process one site of the read pair, we have to trigger <strong>Cutadapt</strong> twice, i.e., for the forward and the reverse pair.</p>
+<p>In this task we are going to remove two 3’ and two 5’ adapters from the <span class="notranslate">reads</span> (Note: The eCLIP protocol uses more adapter sequences, for more information take a look in the original publication <span class="citation"><a href="#VanNostrand2016">Nostrand <i>et al.</i> 2016</a></span>).</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-adapter-removal"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Adapter Removal</h3>
+  <div id="hands-on-adapter-removal" class="box-title" aria-label="hands-on box: Adapter Removal"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Adapter Removal</div>
 
-  <ol>
-    <li><strong>Cutadapt (v. 1.6)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
+  <p><strong>Cutadapt (v. 4.0)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:</p>
+  <ul>
+    <li><em>“Single-end or Paired-end <span class="notranslate">reads</span>?”</em>: <code class="language-plaintext highlighter-rouge">Paired-end</code></li>
+    <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“FASTQ/A file #1”</em>: <code class="language-plaintext highlighter-rouge">FASTQ R1</code></li>
+    <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“FASTQ/A file #2”</em>: <code class="language-plaintext highlighter-rouge">FASTQ R2</code></li>
+    <li><em>“Read 1 Options”</em>:
       <ul>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Fastq file to trim”</em>: <code class="language-plaintext highlighter-rouge">FASTQ R1</code></li>
-        <li><em>“Track Paired <span class="notranslate">Reads</span>”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Paired fastq file (NOT trimmed)”</em>: <code class="language-plaintext highlighter-rouge">FASTQ R2</code></li>
         <li>In <em>“3’ Adapters”</em>:
           <ul>
             <li>Click on <em>“Insert 3’ Adapters”</em>:</li>
@@ -1222,25 +1214,11 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
             </li>
           </ul>
         </li>
-        <li><em>“Minimum overlap length”</em>: <code class="language-plaintext highlighter-rouge">5</code></li>
-        <li><em>“Output filtering options”</em>: <code class="language-plaintext highlighter-rouge">Set Filters</code>
-          <ul>
-            <li><em>“Minimum length”</em>: <code class="language-plaintext highlighter-rouge">10</code></li>
-          </ul>
-        </li>
-        <li><em>“Additional output options”</em>: <code class="language-plaintext highlighter-rouge">Default</code></li>
-        <li><em>“Additional modifications to <span class="notranslate">reads</span>”</em>: <code class="language-plaintext highlighter-rouge">Set Modification Options</code>
-          <ul>
-            <li><em>“Cut bases from <span class="notranslate">reads</span> before adapter trimming”</em>: <code class="language-plaintext highlighter-rouge">-5</code></li>
-          </ul>
-        </li>
+        <li><em>“Cut bases from <span class="notranslate">reads</span> before adapter trimming”</em>: <code class="language-plaintext highlighter-rouge">-5</code></li>
       </ul>
     </li>
-    <li><strong>Cutadapt (v. 1.6)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
+    <li><em>“Read 2 Options”</em>:
       <ul>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Fastq file to trim”</em>: <code class="language-plaintext highlighter-rouge">FASTQ R2</code> (output from the <strong>first</strong> <strong>Cutadapt</strong> call <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
-        <li><em>“Track Paired <span class="notranslate">Reads</span>”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Paired fastq file (NOT trimmed)”</em>: <code class="language-plaintext highlighter-rouge">FASTQ R1</code> (output from the <strong>first</strong> <strong>Cutadapt</strong> call <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
         <li>In <em>“3’ Adapters”</em>:
           <ul>
             <li>Click on <em>“Insert 3’ Adapters”</em>:</li>
@@ -1289,25 +1267,28 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
             </li>
           </ul>
         </li>
-        <li><em>“Minimum overlap length”</em>: <code class="language-plaintext highlighter-rouge">5</code></li>
-        <li><em>“Output filtering options”</em>: <code class="language-plaintext highlighter-rouge">Set Filters</code>
-          <ul>
-            <li><em>“Minimum length”</em>: <code class="language-plaintext highlighter-rouge">10</code></li>
-          </ul>
-        </li>
-        <li><em>“Additional output options”</em>: <code class="language-plaintext highlighter-rouge">Default</code></li>
-        <li><em>“Additional modifications to <span class="notranslate">reads</span>”</em>: <code class="language-plaintext highlighter-rouge">No Read Modifications</code></li>
       </ul>
     </li>
-  </ol>
+    <li><em>“Adapter Options”</em>:
+      <ul>
+        <li><em>“Minimum overlap length”</em>: <code class="language-plaintext highlighter-rouge">5</code></li>
+      </ul>
+    </li>
+    <li><em>“Filter Options”</em>:
+      <ul>
+        <li><em>“Minimum length (R1)”</em>: <code class="language-plaintext highlighter-rouge">10</code></li>
+        <li><em>“Specify a minimum/maximum length for reverse <span class="notranslate">reads</span> (R2)”</em>: <code class="language-plaintext highlighter-rouge">Disabled</code></li>
+      </ul>
+    </li>
+  </ul>
 
   <blockquote class="comment">
-    <h3 id="comment-why-do-we-remove-5-bp-from-the-first-read"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Why do we remove 5 bp from the first read?</h3>
+    <div id="comment-why-do-we-remove-5-bp-from-the-first-read" class="box-title" aria-label="comment box: Why do we remove 5 bp from the first read?"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Why do we remove 5 bp from the first read?</div>
     <p>In eCLIP it can happen that the sequencing goes over the first read into the UMI, which is at the 3’ end of the first read. The UMI is 5 bp long in our data. To make sure our first read in the read pair does not contain the UMI, we simply remove the last 5 bp from it. The UMI that we actually need for the de-duplication is located on the 5’ end of our second read in the read pair.</p>
   </blockquote>
 
   <blockquote class="comment">
-    <h3 id="comment-do-the-same-thing-for-the-input-control-data-set"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Do the same thing for the input control data set.</h3>
+    <div id="comment-do-the-same-thing-for-the-input-control-data-set" class="box-title" aria-label="comment box: Do the same thing for the input control data set."><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Do the same thing for the input control data set.</div>
 
     <p>If you processed the RBFOX2 FASTQ dataset then do the same thing for the input control dataset or <em>vice verca</em>.</p>
   </blockquote>
@@ -1319,14 +1300,14 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
 <p>In this task we are going to remove the UMI at the 5’ end of the second read. We are then going to use the removed UMIs later on to de-duplicate our read library and account for PCR duplicates.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-umi-removal"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: UMI Removal</h3>
+  <div id="hands-on-umi-removal" class="box-title" aria-label="hands-on box: UMI Removal"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: UMI Removal</div>
 
   <ol>
     <li><strong>UMI-tools extract</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
       <ul>
         <li><em>“Library type”</em>: <code class="language-plaintext highlighter-rouge">Paired-end</code></li>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“<span class="notranslate">Reads</span> in FASTQ format”</em>: <code class="language-plaintext highlighter-rouge">FASTQ R2</code> (output from the <strong>second</strong> <strong>Cutadapt</strong> call <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“<span class="notranslate">Reads</span> in FASTQ format”</em>: <code class="language-plaintext highlighter-rouge">FASTQ R1</code>  (output from the <strong>second</strong> <strong>Cutadapt</strong> call <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“<span class="notranslate">Reads</span> in FASTQ format”</em>: <code class="language-plaintext highlighter-rouge">FASTQ R2</code> (output from the <strong>Cutadapt</strong> call <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“<span class="notranslate">Reads</span> in FASTQ format”</em>: <code class="language-plaintext highlighter-rouge">FASTQ R1</code>  (output from the <strong>Cutadapt</strong> call <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
         <li><em>“Barcode on both <span class="notranslate">reads</span>?”</em>: <code class="language-plaintext highlighter-rouge">Barcode on first read only</code></li>
         <li><em>“Use Known Barcodes?”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
         <li><em>“Method to extract barcodes”</em>: <code class="language-plaintext highlighter-rouge">String</code></li>
@@ -1339,19 +1320,19 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
   </ol>
 
   <blockquote class="comment">
-    <h3 id="comment-do-the-same-thing-for-the-input-control-data-set-1"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Do the same thing for the input control data set.</h3>
+    <div id="comment-do-the-same-thing-for-the-input-control-data-set-1" class="box-title" aria-label="comment box: Do the same thing for the input control data set."><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Do the same thing for the input control data set.</div>
 
     <p>If you processed the RBFOX2 FASTQ dataset then do the same thing for the input control dataset or <em>vice verca</em>.</p>
   </blockquote>
 
   <blockquote class="question">
-    <h3 id="question-questions-1"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div id="question-1" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
     <ol>
       <li>What is the meaning of the barcode pattern?</li>
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-1"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div id="solution-1" class="box-title"><button type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
       <ol>
         <li>The symbol “N” defines our UMI. The symbol “X” are nucleotides that we would reattach to our read. It is important to note, that the UMI can be encompassed by an in-line barcode, that is why we need two distinct symbols “N” and “X”.</li>
       </ol>
@@ -1362,12 +1343,12 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
 
 <h1 id="step-4-aligning-reads-to-a-reference-genome">Step 4: Aligning <span class="notranslate">Reads</span> to a Reference Genome</h1>
 
-<p>To determine where <span class="notranslate">DNA</span> fragments originated in the genome, the sequenced <span class="notranslate">reads</span> must be aligned to a reference genome. This is equivalent to solving a jigsaw puzzle, but unfortunately, not all pieces are unique. In principle, you could do a BLAST analysis to figure out where the sequenced pieces fit best in the known genome. However, this can take a couple of weeks. Nowadays, there are many read alignment programs. <a href="https://doi.org/10.1093/bioinformatics/bts635">STAR</a> is one of them that works well with CLIP-Seq data. <a href="https://doi.org/10.1093/bioinformatics/bts635">STAR</a> is able to use genome as well as transcriptome data. This ability is handy, since CLIP-Seq generates transcriptome data, consequently we have to take <span class="notranslate">RNA</span> processing steps like splicing events into account.</p>
+<p>To determine where <span class="notranslate">DNA</span> fragments originated in the genome, the sequenced <span class="notranslate">reads</span> must be aligned to a reference genome. This is equivalent to solving a jigsaw puzzle, but unfortunately, not all pieces are unique. In principle, you could do a BLAST analysis to figure out where the sequenced pieces fit best in the known genome. However, this can take a couple of weeks. Nowadays, there are many read alignment programs. STAR <span class="citation"><a href="#Dobin2012">Dobin <i>et al.</i> 2012</a></span> is one of them that works well with CLIP-Seq data. STAR is able to use genome as well as transcriptome data. This ability is handy, since CLIP-Seq generates transcriptome data, consequently we have to take <span class="notranslate">RNA</span> processing steps like splicing events into account.</p>
 
 <h2 id="aligning-with-rna-star">Aligning with <strong><span class="notranslate">RNA</span> STAR</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-alignment"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Alignment</h3>
+  <div id="hands-on-alignment" class="box-title" aria-label="hands-on box: Alignment"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Alignment</div>
 
   <ol>
     <li><strong><span class="notranslate">RNA</span> STAR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
@@ -1407,32 +1388,32 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
   </ol>
 
   <blockquote class="comment">
-    <h3 id="comment-note-we-have-switched-r1-and-r2-as-forward-and-reverse-reads"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Note: We have switched R1 and R2 as forward and reverse <span class="notranslate">reads</span>!</h3>
+    <div id="comment-note-we-have-switched-r1-and-r2-as-forward-and-reverse-reads" class="box-title" aria-label="comment box: Note: We have switched R1 and R2 as forward and reverse reads!"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Note: We have switched R1 and R2 as forward and reverse <span class="notranslate">reads</span>!</div>
 
     <p>We need to do that because the eCLIP read library is organised in a way such that the first mate (R1) is in reverse and the second mate (R2) in forward orientation.</p>
   </blockquote>
 
   <blockquote class="comment">
-    <h3 id="comment-soft-clipping-vs-hard-clipping"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Soft-Clipping vs Hard-Clipping</h3>
+    <div id="comment-soft-clipping-vs-hard-clipping" class="box-title" aria-label="comment box: Soft-Clipping vs Hard-Clipping"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Soft-Clipping vs Hard-Clipping</div>
 
     <p>Clipping is a way to deal with low quality bases during the alignment step. In <strong>Soft-Clipping</strong> the bases at the 5’ and 3’ end of the read are not part of the alignment. In <strong>Hard-Clipping</strong> the bases at the 5’ and 3’ end of the read are not part of the alignment <strong>and</strong> will be completely removed from the read sequence in the BAM file.</p>
   </blockquote>
 
   <blockquote class="comment">
-    <h3 id="comment-do-the-same-thing-for-the-input-control-data-set-2"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Do the same thing for the input control data set.</h3>
+    <div id="comment-do-the-same-thing-for-the-input-control-data-set-2" class="box-title" aria-label="comment box: Do the same thing for the input control data set."><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Do the same thing for the input control data set.</div>
 
     <p>If you processed the RBFOX2 FASTQ dataset then do the same thing for the input control dataset or <em>vice verca</em>.</p>
   </blockquote>
 
   <blockquote class="question">
-    <h3 id="question-questions-2"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div id="question-2" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>Can you think of a reason why we disabled the soft-clipping?</li>
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-2"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div id="solution-2" class="box-title"><button type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
       <ol>
         <li>In eCLIP the cross linking position should be at the beginning of the second read. If we would enable soft-clipping, we would add potential bases with low quality at the end of our second <span class="notranslate">reads</span> that would blur our cross linking position and we would lose precision to detect potential binding regions of RBFOX2.</li>
@@ -1444,12 +1425,12 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
 
 <h1 id="step-5-de-duplication">Step 5: De-Duplication</h1>
 
-<p>Lets return to the UMIs which we extracted in step three. Since we have mapped the <span class="notranslate">reads</span> to our reference genome, we can now identify which <span class="notranslate">reads</span> might be duplicated or not. The <a href="https://doi.org/10.1101/gr.209601.116">UMI-tools</a> will help us again in this matter.</p>
+<p>Lets return to the UMIs which we extracted in step three. Since we have mapped the <span class="notranslate">reads</span> to our reference genome, we can now identify which <span class="notranslate">reads</span> might be duplicated or not. The UMI-tools <span class="citation"><a href="#Smith2017">Smith <i>et al.</i> 2017</a></span> will help us again in this matter.</p>
 
 <h2 id="de-duplication-with-umi-tools-deduplicate">De-duplication with <strong>UMI-tools deduplicate</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-de-duplication"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: De-Duplication</h3>
+  <div id="hands-on-de-duplication" class="box-title" aria-label="hands-on box: De-Duplication"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: De-Duplication</div>
 
   <ol>
     <li><strong>UMI-tools deduplicate</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
@@ -1465,19 +1446,19 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
   </ol>
 
   <blockquote class="comment">
-    <h3 id="comment-what-is-the-purpose-of-the-method-we-have-chosen-for-the-de-duplication"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> What is the purpose of the method we have chosen for the de-duplication?</h3>
+    <div id="comment-what-is-the-purpose-of-the-method-we-have-chosen-for-the-de-duplication" class="box-title" aria-label="comment box: What is the purpose of the method we have chosen for the de-duplication?"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: What is the purpose of the method we have chosen for the de-duplication?</div>
 
-    <p><code class="language-plaintext highlighter-rouge">UMI-tools deduplication</code> has several methods. The method we have picked is called the  <strong>adjacency</strong> method. For detailed information have a look at method descriptions of   <a href="https://doi.org/10.1101/gr.209601.116">UMI-tools</a>. For a brief explanation: the method fuses <span class="notranslate">reads</span> together when they have the same coordinates and the same UMI. However, sequencing errors can occur in the UMI. Thus, in the <strong>adjacency</strong> method we fuse also UMIs that differ in a maximal number of characters and where we identify a lot of copies, i.e., the method creates clusters of nodes, a node for each individual UMI, and fuses these nodes based on the <a href="https://en.wikipedia.org/wiki/Hamming_distance">hamming distance</a> and read counts.</p>
+    <p><code class="language-plaintext highlighter-rouge">UMI-tools deduplication</code> has several methods. The method we have picked is called the  <strong>adjacency</strong> method. For detailed information have a look at method descriptions of UMI-tools <span class="citation"><a href="#Smith2017">Smith <i>et al.</i> 2017</a></span>. For a brief explanation: the method fuses <span class="notranslate">reads</span> together when they have the same coordinates and the same UMI. However, sequencing errors can occur in the UMI. Thus, in the <strong>adjacency</strong> method we fuse also UMIs that differ in a maximal number of characters and where we identify a lot of copies, i.e., the method creates clusters of nodes, a node for each individual UMI, and fuses these nodes based on the <a href="https://en.wikipedia.org/wiki/Hamming_distance">hamming distance</a> and read counts.</p>
   </blockquote>
 
   <blockquote class="comment">
-    <h3 id="comment-do-the-same-thing-for-the-input-control-data-set-3"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Do the same thing for the input control data set.</h3>
+    <div id="comment-do-the-same-thing-for-the-input-control-data-set-3" class="box-title" aria-label="comment box: Do the same thing for the input control data set."><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Do the same thing for the input control data set.</div>
 
     <p>If you processed the RBFOX2 bam file then do the same thing for the input control bam or <em>vice verca</em>.</p>
   </blockquote>
 
   <blockquote class="question">
-    <h3 id="question-questions-3"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div id="question-3" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>Why are we doing the de-duplication after the read <span class="notranslate">mapping</span>?</li>
@@ -1485,7 +1466,7 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-3"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div id="solution-3" class="box-title"><button type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
       <ol>
         <li>Because we need the coordinates of the <span class="notranslate">reads</span> to see if some <span class="notranslate">reads</span> have the same coordinates and the same UMI.</li>
@@ -1499,7 +1480,7 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
 <h2 id="quality-check-of-the-de-duplication-with-fastqc">Quality check of the de-duplication with <strong>FastQC</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-de-duplication-quality-control"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: De-duplication quality control</h3>
+  <div id="hands-on-de-duplication-quality-control" class="box-title" aria-label="hands-on box: De-duplication quality control"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: De-duplication quality control</div>
 
   <ol>
     <li><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
@@ -1509,10 +1490,10 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
     </li>
     <li>View the <strong>Sequence Duplication Levels</strong> plot.</li>
   </ol>
-  <figure id="figure-4"><img src="../../images/clipseq_duplication_level_2.png" alt="fastqafter. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> Sequence duplication levels <b>after</b> de-duplication.</figcaption></figure>
+  <figure id="figure-4"><img src="../../images/transcriptomics_images/clipseq_duplication_level_2.png" alt="fastqafter. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> Sequence duplication levels <b>after</b> de-duplication.</figcaption></figure>
 
   <blockquote class="question">
-    <h3 id="question-questions-4"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div id="question-4" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>What can you see, if you compare the duplication levels to our first quality control in step two?</li>
@@ -1520,7 +1501,7 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-4"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div id="solution-4" class="box-title"><button type="button" aria-controls="solution-4-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
       <ol>
         <li>We have reduced the duplication levels.</li>
@@ -1538,7 +1519,7 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
 <h2 id="check-the-read-coverage-with-plotfingerprint">Check the read coverage with <strong>plotFingerprint</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-check-the-read-coverage"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Check the read coverage</h3>
+  <div id="hands-on-check-the-read-coverage" class="box-title" aria-label="hands-on box: Check the read coverage"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Check the read coverage</div>
 
   <ol>
     <li><strong>plotFingerprint</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
@@ -1552,16 +1533,16 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
     </li>
     <li>View the output image.</li>
   </ol>
-  <figure id="figure-5"><img src="../../images/clipseq_fingerprint.png" alt="fingerprint. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> Graph of IP strength from <b>plotFingerprint</b>. The y-axis represents the fraction of the total number of <span class="notranslate">reads</span>. `plotFingerprint` randomly samples genome regions (bins) of a specified length and sums the per-base coverage that overlap with those regions. The x-axis therefore orders the bins from lowest coverage to highest coverage. The plot here is too idealistic which is because of our small data set.</figcaption></figure>
+  <figure id="figure-5"><img src="../../images/transcriptomics_images/clipseq_fingerprint.png" alt="fingerprint. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> Graph of IP strength from <b>plotFingerprint</b>. The y-axis represents the fraction of the total number of <span class="notranslate">reads</span>. `plotFingerprint` randomly samples genome regions (bins) of a specified length and sums the per-base coverage that overlap with those regions. The x-axis therefore orders the bins from lowest coverage to highest coverage. The plot here is too idealistic which is because of our small data set.</figcaption></figure>
 
   <blockquote class="comment">
-    <h3 id="comment-what-does-this-graph-represent-especially-for-clip-seq-data"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> What does this graph represent, especially for CLIP-Seq data?</h3>
+    <div id="comment-what-does-this-graph-represent-especially-for-clip-seq-data" class="box-title" aria-label="comment box: What does this graph represent, especially for CLIP-Seq data?"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: What does this graph represent, especially for CLIP-Seq data?</div>
 
     <p>It shows us how good the CLIP Signal compared to the control signal is. Now be careful, CLIP-Seq experiments involve either a total <span class="notranslate">RNA</span> control or a negative control with another protein that unspecifically binds <span class="notranslate">RNA</span> (e.g., IgG). An ideal total <span class="notranslate">RNA</span> control (input control) like ours with perfect uniform distribution of <span class="notranslate">reads</span> along the genome/transcriptome (i.e. without enrichments) and infinite sequencing coverage should generate a straighter, diagonal line. On the other hand, a very specific and strong CLIP enrichment will be indicated by a prominent and steep rise of the cumulative sum towards the highest rank. Yet, a negative control often has the same sharp slope at the end as a CLIP experiment but often depicts a straighter, diagonal line in the beginning like the input control.</p>
   </blockquote>
 
   <blockquote class="question">
-    <h3 id="question-questions-5"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div id="question-5" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>How do (or should) input datasets differ from CLIP datasets?</li>
@@ -1569,7 +1550,7 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-5"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div id="solution-5" class="box-title"><button type="button" aria-controls="solution-5-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
       <ol>
         <li>We expect that the control (input) has a different, more straighter, diagonal slope than the CLIP experiment.</li>
@@ -1580,7 +1561,7 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
 
 </blockquote>
 
-<p>For additional information on how to interpret <strong>plotFingerprint</strong> plots, read the information <a href="https://deeptools.readthedocs.io/en/latest/content/tools/plotFingerprint.html#background">here</a>.</p>
+<p>For additional information on how to interpret <strong>plotFingerprint</strong> plots, read the information <a href="https://deeptools.readthedocs.io/en/latest/content/tools/plotFingerprint.html#background">the DeepTools documentation</a>.</p>
 
 <h2 id="correlation-between-samples">Correlation between Samples</h2>
 
@@ -1588,7 +1569,7 @@ To do this, first select the “Multiple datasets” icon (two stacked pages) un
 We are therefore going to further check the correlation between our control and CLIP experiment.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-assessing-correlation-between-samples"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Assessing correlation between samples</h3>
+  <div id="hands-on-assessing-correlation-between-samples" class="box-title" aria-label="hands-on box: Assessing correlation between samples"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Assessing correlation between samples</div>
 
   <ol>
     <li><strong>multiBamSummary</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
@@ -1611,10 +1592,10 @@ We are therefore going to further check the correlation between our control and 
     </li>
     <li>View the output image.</li>
   </ol>
-  <figure id="figure-6"><img src="../../images/clipseq_correlation.png" alt="correlation. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> Heatmap of correlation matrix generated by <b>plotCorrelation</b>. The y-axis shows you on the left site the histogram of the clustering. The colored scale depicts the correlation value. Like  `plotFingerprint`, `multiBamSummary` randomly samples genome regions (bins) of a specified length and sums the per-base coverage that overlap with those regions. The correlation between these bins is then calculated for each pair of samples. An ideal plot would result in two disparate clusters: one for the biological replicates of your CLIP-Seq experiment and one for the replicates of your control. A bad plot would happen if your control and CLIP-Seq experiment end up in one cluster, which means that they are closely related and something went wrong in the laboratory.</figcaption></figure>
+  <figure id="figure-6"><img src="../../images/transcriptomics_images/clipseq_correlation.png" alt="correlation. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> Heatmap of correlation matrix generated by <b>plotCorrelation</b>. The y-axis shows you on the left site the histogram of the clustering. The colored scale depicts the correlation value. Like  `plotFingerprint`, `multiBamSummary` randomly samples genome regions (bins) of a specified length and sums the per-base coverage that overlap with those regions. The correlation between these bins is then calculated for each pair of samples. An ideal plot would result in two disparate clusters: one for the biological replicates of your CLIP-Seq experiment and one for the replicates of your control. A bad plot would happen if your control and CLIP-Seq experiment end up in one cluster, which means that they are closely related and something went wrong in the laboratory.</figcaption></figure>
 
   <blockquote class="question">
-    <h3 id="question-questions-6"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div id="question-6" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>Why do we want to skip zeros in plotCorrelation?</li>
@@ -1623,7 +1604,7 @@ We are therefore going to further check the correlation between our control and 
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-6"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div id="solution-6" class="box-title"><button type="button" aria-controls="solution-6-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
       <ol>
         <li>Large areas of zeros would lead to a correlation of these areas. The information we would get out of this computation would be meaningless.</li>
@@ -1637,13 +1618,12 @@ We are therefore going to further check the correlation between our control and 
 
 <h1 id="step-7-peak-calling">Step 7: Peak Calling</h1>
 
-<p>Peak calling is one of the most important steps in the data analysis of CLIP-Seq, next to <span class="notranslate">mapping</span>. There exist a variety of peak callers like <a href="https://github.com/tbischler/PEAKachu">PEAKachu</a>, <a href="https://doi.org/10.1186/s13059-017-1364-2">PureCLIP</a> or <a href="https://doi.org/10.1093/bioinformatics/bts569">Piranha</a> each with different underlying assumptions and parameters. It is difficult (nearly impossible) to find a generic solution for every data set. We are going to use <code class="language-plaintext highlighter-rouge">PEAKachu</code> to find possible binding motifs for our data. <code class="language-plaintext highlighter-rouge">PEAKachu</code> is able to incorporate control data in contrast to other peak callers like <code class="language-plaintext highlighter-rouge">Piranha</code>, thus allowing to find binding regions that are significantly enriched in comparison to our control (input) data.</p>
+<p>Peak calling is one of the most important steps in the data analysis of CLIP-Seq, next to <span class="notranslate">mapping</span>. There exist a variety of peak callers like <a href="https://github.com/tbischler/PEAKachu">PEAKachu</a>, PureCLIP (<span class="citation"><a href="#Krakau2017">Krakau <i>et al.</i> 2017</a></span>) or Piranha (<span class="citation"><a href="#Uren2012">Uren <i>et al.</i> 2012</a></span>) each with different underlying assumptions and parameters. It is difficult (nearly impossible) to find a generic solution for every data set. We are going to use <code class="language-plaintext highlighter-rouge">PEAKachu</code> to find possible binding motifs for our data. <code class="language-plaintext highlighter-rouge">PEAKachu</code> is able to incorporate control data in contrast to other peak callers like <code class="language-plaintext highlighter-rouge">Piranha</code>, thus allowing to find binding regions that are significantly enriched in comparison to our control (input) data.</p>
 
 <h2 id="peak-calling-with-peakachu">Peak calling with <strong>PEAKachu</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-peak"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Peak</h3>
-  <p>calling</p>
+  <div id="hands-on-peak-calling" class="box-title" aria-label="hands-on box: Peak calling"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Peak calling</div>
 
   <ol>
     <li><strong>PEAKachu</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
@@ -1665,22 +1645,22 @@ We are therefore going to further check the correlation between our control and 
     </li>
     <li>Take a look at the MA plot of <strong>PEAKachu</strong>.</li>
   </ol>
-  <figure id="figure-7"><img src="../../images/clipseq_ma_plot.png" alt="ma. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 7:</span> MA plot of <b>PEAKachu</b>.  MA stands for M (log ratio) and A (mean average). It shows you the general trend of the log2 fold-change in dependence of the average mean of the <span class="notranslate">expression</span> rate of the peaks. Points in a straight, diagonal line symbolise the behavior of the logarithm which is often visible for low expressed peaks, because one read can change the fold-change quite drastically. The blue lines depict the normalisation constants. Read dots are significant peaks. It is hard to tell what a good MA plot would look like. Even a small number of significant peaks can be enough, depending on the biological question you ask.</figcaption></figure>
+  <figure id="figure-7"><img src="../../images/transcriptomics_images/clipseq_ma_plot.png" alt="ma. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 7:</span> MA plot of <b>PEAKachu</b>.  MA stands for M (log ratio) and A (mean average). It shows you the general trend of the log2 fold-change in dependence of the average mean of the <span class="notranslate">expression</span> rate of the peaks. Points in a straight, diagonal line symbolise the behavior of the logarithm which is often visible for low expressed peaks, because one read can change the fold-change quite drastically. The blue lines depict the normalisation constants. Read dots are significant peaks. It is hard to tell what a good MA plot would look like. Even a small number of significant peaks can be enough, depending on the biological question you ask.</figcaption></figure>
 
   <blockquote class="comment">
-    <h3 id="comment-adjusted-p-value-threshold"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Adjusted p-value Threshold</h3>
+    <div id="comment-adjusted-p-value-threshold" class="box-title" aria-label="comment box: Adjusted p-value Threshold"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Adjusted p-value Threshold</div>
 
-    <p>P-values are calculated by DESeq2. A low p-value represent a significantly enriched binding region. Since we are doing thousands of independent hypothesis testings, we have to correct for significant p-values that happen just by chance. DESeq2 uses the Benjamini-Hochberg procedure as a correction. For more information read <a href="http://www.biostathandbook.com/multiplecomparisons.html">here</a>.</p>
+    <p>P-values are calculated by DESeq2. A low p-value represent a significantly enriched binding region. Since we are doing thousands of independent hypothesis testings, we have to correct for significant p-values that happen just by chance. DESeq2 uses the Benjamini-Hochberg procedure as a correction. For more information read <a href="http://www.biostathandbook.com/multiplecomparisons.html">this handbook</a>.</p>
   </blockquote>
 
   <blockquote class="comment">
-    <h3 id="comment-fold-change-threshold"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Fold-Change Threshold</h3>
+    <div id="comment-fold-change-threshold" class="box-title" aria-label="comment box: Fold-Change Threshold"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Fold-Change Threshold</div>
 
     <p>The fold-change is calculated by DESeq2 and is actually a log2 fold-change. Because we want significantly enriched binding regions, we basically search for peaks that are at least four times higher in our CLIP experiment than in our control.</p>
   </blockquote>
 
   <blockquote class="question">
-    <h3 id="question-questions-7"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div id="question-7" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>What happens if we decrease or increase the log2 fold-change threshold of 2.0?</li>
@@ -1689,7 +1669,7 @@ We are therefore going to further check the correlation between our control and 
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-7"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div id="solution-7" class="box-title"><button type="button" aria-controls="solution-7-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
       <ol>
         <li>If we would <strong>decrease</strong> the log2 fold-change threshold then we would get more peaks. However, we would also increase the number of false positives, i.e., peaks that are <strong>not</strong> significantly enriched.<br />
@@ -1712,7 +1692,7 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
 <p>Lets first find out which sequence motifs RBFOX2 might preferentially bind to.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-motif-detection"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Motif detection</h3>
+  <div id="hands-on-motif-detection" class="box-title" aria-label="hands-on box: Motif detection"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Motif detection</div>
 
   <ol>
     <li><strong>Text reformatting</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
@@ -1720,6 +1700,12 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“File to process”</em>: <code class="language-plaintext highlighter-rouge">tabular</code> (output of <strong>PEAKachu</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
         <li><em>“AWK Program”</em>: <code class="language-plaintext highlighter-rouge">NR&gt;1{if($3 &lt; $4) {print $1,$3,$4,"clip_peak_"NR-1,$9,$5;}else {print $1,$4,$3,"clip_peak_"NR-1,$9,$5;}}</code></li>
       </ul>
+    </li>
+    <li>
+      <p>Set the datatype of the output generated by <strong>Text reformatting</strong> as <code class="language-plaintext highlighter-rouge"><span class="notranslate">bed</span></code></p>
+
+      <!--SNIPPET-->
+      <blockquote class="tip">  <div id="tip-changing-the-datatype" class="box-title"><button type="button" aria-controls="tip-changing-the-datatype-contents" aria-expanded="true" aria-label="Toggle tip box: Changing the datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge"><span class="notranslate">bed</span></code>    <ul>      <li>tip: you can start typing the datatype into the field to filter the dropdown menu</li>    </ul>  </li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
     <li><strong>SlopBed</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
       <ul>
@@ -1772,28 +1758,28 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
     <li>View the <strong>MEME-ChIP</strong> html.</li>
   </ol>
 
-  <figure id="figure-8"><img src="../../images/clipseq_motif.png" alt="motif. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 8:</span> Plot of a sequence motif. The x-axis of the sequence plots represents the nucleotide position of the motif. The y-axis stands for the total information (uncertainty) of each position and thus stands for the probability that the nucleotide at a certain position is the specific letter (for <span class="notranslate">DNA</span>: T,C,G,A). Bigger letters stand for a higher probability. For more information read [here](https://en.wikipedia.org/wiki/Sequence_logo).</figcaption></figure>
+  <figure id="figure-8"><img src="../../images/transcriptomics_images/clipseq_motif.png" alt="motif. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 8:</span> Plot of a sequence motif. The x-axis of the sequence plots represents the nucleotide position of the motif. The y-axis stands for the total information (uncertainty) of each position and thus stands for the probability that the nucleotide at a certain position is the specific letter (for <span class="notranslate">DNA</span>: T,C,G,A). Bigger letters stand for a higher probability. For more information read [this Wikipedia article](https://en.wikipedia.org/wiki/Sequence_logo).</figcaption></figure>
 
   <blockquote class="comment">
-    <h3 id="comment-meme-and-dreme"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> MEME and DREME</h3>
+    <div id="comment-meme-and-dreme" class="box-title" aria-label="comment box: MEME and DREME"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: MEME and DREME</div>
 
-    <p><strong>MEME</strong> and <strong>DREME</strong> are two motif finding tools that MEME-ChIP uses. More information about theses tools can be found <a href="http://meme-suite.org/">here</a>.</p>
+    <p><strong>MEME</strong> and <strong>DREME</strong> are two motif finding tools that MEME-ChIP uses. More information about theses tools can be found on <a href="http://meme-suite.org/">meme-suite.org</a>.</p>
   </blockquote>
 
   <blockquote class="comment">
-    <h3 id="comment-what-is-the-purpose-of-slopbed"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> What is the purpose of SlopBED?</h3>
+    <div id="comment-what-is-the-purpose-of-slopbed" class="box-title" aria-label="comment box: What is the purpose of SlopBED?"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: What is the purpose of SlopBED?</div>
 
     <p><strong>PEAKachu</strong> might underestimate the length of the binding regions, because the actually protein-<span class="notranslate">RNA</span>-binding concentrates on the cross linking site that is one nucleotide long. Thus, we extend the peaks from <strong>PEAKachu</strong> by 20 bp at each site. A true conserved binding motif will not be affected by it, if we make the region to wide.</p>
   </blockquote>
 
   <blockquote class="comment">
-    <h3 id="comment-what-is-the-meaning-of-the-e-value"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> What is the meaning of the E-value?</h3>
+    <div id="comment-what-is-the-meaning-of-the-e-value" class="box-title" aria-label="comment box: What is the meaning of the E-value?"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: What is the meaning of the E-value?</div>
 
     <p>The E-value represents the expected number of times we would find our sequence motif in a database (peak file), just by chance. This means, that a small E-value correspond to a very significant motif, because the expected number we would find that motif in our peak file just by chance is very low. Other sequences like repeats will have a high E-value on the other hand.</p>
   </blockquote>
 
   <blockquote class="question">
-    <h3 id="question-questions-8"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div id="question-8" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>Click on the link under the column <strong>Discovery/​Enrichment Program</strong> for two of the motifs one from <strong>MEME</strong> and one from <strong>DREME</strong>. What is the site-count for the most significant motif? How many sequences have we checked for <strong>MEME</strong> and for <strong>DREME</strong>? What is the fraction of sequences that covered that motif? (MEME-ChIP version 4.11.2)</li>
@@ -1801,7 +1787,7 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-8"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div id="solution-8" class="box-title"><button type="button" aria-controls="solution-8-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
       <ol>
         <li>For the result with MEME-ChIP version 4.11.2: <strong>MEME</strong> site count = 37, total sequences = 100, fraction = 37%; <strong>DREME</strong> site count = 103, total sequences = 247, fraction = 41.7%.</li>
@@ -1817,7 +1803,7 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
 <p>Lets move to the next step and find out where these motifs might come from, i.e., which kind of <span class="notranslate">RNA</span>s RBFOX2 preferentially bind to. For that we will use the <code class="language-plaintext highlighter-rouge"><span class="notranslate">RNA</span> Centric Annotation System</code>. Run the tool and then try to answer the subsequent questions.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-functional-analysis"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Functional analysis</h3>
+  <div id="hands-on-functional-analysis" class="box-title" aria-label="hands-on box: Functional analysis"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Functional analysis</div>
 
   <ol>
     <li><strong><span class="notranslate">RNA</span> Centric Annotation System (v. 1.5.4)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
@@ -1836,7 +1822,7 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
   </ol>
 
   <blockquote class="question">
-    <h3 id="question-questions-9"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div id="question-9" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>What is the main target region of RBFOX2 (e.g., cds, exon, 5’ UTR)? Does this confirm the literature.</li>
@@ -1845,7 +1831,7 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-9"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div id="solution-9" class="box-title"><button type="button" aria-controls="solution-9-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
       <ol>
         <li>Introns and transcripts. Yes.</li>
@@ -1866,7 +1852,7 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
 <p>We will first generate coverage files that gives us a better visualization for our read coverage along the genome. SAM or BAM files can be used too, but they are often to big and harder to handle, if you try to inspect the read coverage. Therefore we are going to generate a bigWig (binary form of a <span class="notranslate">Bed</span>Graph) file.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-task-description"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Task description</h3>
+  <div id="hands-on-task-description" class="box-title" aria-label="hands-on box: Task description"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Task description</div>
 
   <ol>
     <li><strong>Extract alignment ends</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
@@ -1897,7 +1883,7 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
   </ol>
 
   <blockquote class="comment">
-    <h3 id="comment-do-the-same-thing-for-the-input-control-data-set-4"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Do the Same thing for the input control data set.</h3>
+    <div id="comment-do-the-same-thing-for-the-input-control-data-set-4" class="box-title" aria-label="comment box: Do the Same thing for the input control data set."><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Do the Same thing for the input control data set.</div>
 
     <p>If you processed the RBFOX2 bam dataset then do the same thing for the input control dataset or <em>vice verca</em>.</p>
   </blockquote>
@@ -1911,7 +1897,7 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
 <p><strong>Try to answer the questions for this hands-on.</strong> It will give you an idea why it would be wise to inspect the read coverage of the peaks.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-igv"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: IGV</h3>
+  <div id="hands-on-igv" class="box-title" aria-label="hands-on box: IGV"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: IGV</div>
 
   <ol>
     <li>Open IGV on your local computer.</li>
@@ -1925,10 +1911,10 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
     </li>
     <li>Inspect the peaks (e.g., <b>chr11:peak_2</b> chr11:2152602-2152742)</li>
   </ol>
-  <figure id="figure-9"><img src="../../images/clipseq_peak_igv.png" alt="igv_peak. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 9:</span> Inspection of a peak in IGV.</figcaption></figure>
+  <figure id="figure-9"><img src="../../images/transcriptomics_images/clipseq_peak_igv.png" alt="igv_peak. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 9:</span> Inspection of a peak in IGV.</figcaption></figure>
 
   <blockquote class="question">
-    <h3 id="question-questions-10"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div id="question-10" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>What are the ideal conditions that PEAKachu <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> will call a peak.</li>
@@ -1937,7 +1923,7 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-10"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div id="solution-10" class="box-title"><button type="button" aria-controls="solution-10-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
       <ol>
         <li>High read coverage in the region for the CLIP experiment and low read coverage in the region for the input control.</li>
@@ -1949,30 +1935,30 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
 
 </blockquote>
 
-<h1 class="no_toc" id="conclusion">Conclusion</h1>
+<h1 id="conclusion">Conclusion</h1>
 
 <p>In this tutorial you imported raw eCLIP data, evaluated the quality of the read library before the read processing, removed adapter sequences and unique molecular identifier from the <span class="notranslate">reads</span>, aligned the <span class="notranslate">reads</span> to a reference genome, de-duplicated the read library, analysed the quality of the de-duplication and read <span class="notranslate">mapping</span>, found significantly enriched regions (peaks) for the protein RBFOX2 and finally scrutinised the peaks on potential conserved motifs and target <span class="notranslate">RNA</span>s. In addition, you took a short glimpse on the quality of the peak calling. Keep in mind, the read library for CLIP-Seq data might have different formats for different protocols (e.g, PAR-CLIP). However, the overall analysis you learned in this tutorial stays nearly the same.</p>
 
-<h1 class="no_toc" id="remark-to-workflow">Remark to <span class="notranslate">Workflow</span></h1>
+<h3 id="remark-about-workflow">Remark about <span class="notranslate">Workflow</span></h3>
 
 <p>In order to use the <span class="notranslate">workflow</span> linked to this tutorial, you have to create two lists of dataset pairs; one for you control and one for your CLIP experiment.</p>
 
 <blockquote class="tip">
-  <h3 id="tip-tip-creating-a-list-of-dataset-pairs"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a list of dataset pairs.</h3>
+  <div id="tip-creating-a-list-of-dataset-pairs" class="box-title"><button type="button" aria-controls="tip-creating-a-list-of-dataset-pairs-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a list of dataset pairs."><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a list of dataset pairs.<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
   <ul>
     <li>Click on the check box icon in the history.</li>
   </ul>
-  <figure id="figure-10"><img src="../../images/clipseq_build_list_data_set_pairs_1.png" alt="builddatasetpairs1. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 10:</span> Select data sets for your list of data set pairs.</figcaption></figure>
+  <figure id="figure-10"><img src="../../images/transcriptomics_images/clipseq_build_list_data_set_pairs_1.png" alt="builddatasetpairs1. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 10:</span> Select data sets for your list of data set pairs.</figcaption></figure>
   <ul>
     <li>Select the data files for your experiment (or control).</li>
     <li>Select <strong>For all selected…</strong> below the check box icon.</li>
     <li>Select <strong>Build List of Dataset Paris</strong></li>
     <li>In the new window, if you see no files and a warning, then select <strong>Clear filters</strong>. After that, organise the files into forward-reverse pairs.</li>
   </ul>
-  <figure id="figure-11"><img src="../../images/clipseq_build_list_data_set_pairs_2.png" alt="builddatasetpairs2. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 11:</span> Organise the data sets into pairs.</figcaption></figure>
+  <figure id="figure-11"><img src="../../images/transcriptomics_images/clipseq_build_list_data_set_pairs_2.png" alt="builddatasetpairs2. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 11:</span> Organise the data sets into pairs.</figcaption></figure>
 
-  <figure id="figure-12"><img src="../../images/clipseq_build_list_data_set_pairs_3.png" alt="builddatasetpairs3. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 12:</span> Result after organising the data sets into pairs.</figcaption></figure>
+  <figure id="figure-12"><img src="../../images/transcriptomics_images/clipseq_build_list_data_set_pairs_3.png" alt="builddatasetpairs3. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 12:</span> Result after organising the data sets into pairs.</figcaption></figure>
   <ul>
     <li>Give the list a name and click on the button <strong>Create list</strong>.</li>
   </ul>
@@ -1981,7 +1967,7 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
 
                 
                 <blockquote class="key_points">
-                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <div class="box-title" aria-label="key-points box"><i class="fas fa-key" aria-hidden="true"></i> Key points</div>
                     <ul>
                         
                         <li><p>Sophisticated analysis of CLIP-Seq data is possible using tools hosted by Galaxy.</p>
@@ -2014,11 +2000,18 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
 
 
                 
+                <h1 id="bibliography">References</h1>
+                <ol class="bibliography"><li id="Dobin2012">Dobin, A., C. A. Davis, F. Schlesinger, J. Drenkow, C. Zaleski <i>et al.</i>, 2012 <b>STAR: ultrafast universal RNA-seq aligner</b>. Bioinformatics 29: 15–21. <a href="https://doi.org/10.1093/bioinformatics/bts635">10.1093/bioinformatics/bts635</a></li>
+<li id="Uren2012">Uren, P. J., E. Bahrami-Samani, S. C. Burns, M. Qiao, F. V. Karginov <i>et al.</i>, 2012 <b>Site identification in high-throughput RNA–protein interaction data</b>. Bioinformatics 28: 3013–3020. <a href="https://doi.org/10.1093/bioinformatics/bts569">10.1093/bioinformatics/bts569</a></li>
+<li id="VanNostrand2016">Nostrand, E. L. V., G. A. Pratt, A. A. Shishkin, C. Gelboin-Burkhart, M. Y. Fang <i>et al.</i>, 2016 <b>Robust transcriptome-wide discovery of RNA-binding protein binding sites with enhanced CLIP (eCLIP)</b>. Nature Methods 13: 508–514. <a href="https://doi.org/10.1038/nmeth.3810">10.1038/nmeth.3810</a></li>
+<li id="Krakau2017">Krakau, S., H. Richard, and A. Marsico, 2017 <b>PureCLIP: capturing target-specific protein–RNA interaction footprints from single-nucleotide CLIP-seq data</b>. Genome Biology 18: <a href="https://doi.org/10.1186/s13059-017-1364-2">10.1186/s13059-017-1364-2</a></li>
+<li id="Smith2017">Smith, T., A. Heger, and I. Sudbery, 2017 <b>UMI-tools: modeling sequencing errors in Unique Molecular Identifiers to improve quantification accuracy</b>. Genome Research 27: 491–499. <a href="https://doi.org/10.1101/gr.209601.116">10.1101/gr.209601.116</a></li></ol>
+                
 
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452">how it went</a>.
                 <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
                 </p>
 
@@ -2053,7 +2046,8 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Florian Heyl, Daniel Maticzka, Bérénice Batut, 2022 <b>CLIP-Seq data analysis from pre-processing to motif detection (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/clipseq/tutorial.html">https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/clipseq/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">
+                            Florian Heyl, Daniel Maticzka, Bérénice Batut,  <b>CLIP-Seq data analysis from pre-processing to motif detection (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/clipseq/tutorial.html">https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/clipseq/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -2061,18 +2055,26 @@ If we would <strong>increase</strong> the log2 fold-change threshold, then we wo
                     </ol>
                 </p>
 
-
+                <!-- collapsible boxcontaining the BibTeX-formatted citation -->
                 <blockquote class="details">
-                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                  <p style="display: none;">
 
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                  <div id="citation-bibtex" class="box-title">
+                    <button type="button" aria-controls="citation-bibtex" aria-expanded="false" aria-label="Toggle details box: BibTeX for citing this tutorial">
+                      <i class="fas fa-info-circle" aria-hidden="true"></i>
+                      <span class="visually-hidden"></span> BibTeX<span role="button" class="fold-unfold fa fa-minus-square" aria-hidden="true"></span>
+                    </button>
+                   </div>
+                   <p style="display: none;">
+
+                   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
+
 <code id="citation-code">@misc{transcriptomics-clipseq,
 author = "Florian Heyl and Daniel Maticzka and Bérénice Batut",
 title = "CLIP-Seq data analysis from pre-processing to motif detection (Galaxy Training Materials)",
-year = "2022",
-month = "04",
-day = "28"
+year = "",
+month = "",
+day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/clipseq/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -2089,8 +2091,8 @@ note = "[Online; accessed TODAY]"
     title = {Community-Driven Data Analysis Training for Biology},
     journal = {Cell Systems}
 }</code>
-                </pre></div></div>
-                </p>
+                   </pre></div></div>
+                   </p>
                 </blockquote>
 
                 
@@ -2103,7 +2105,7 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+                <i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!
 
                 
 
@@ -2119,39 +2121,39 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
 
         </div>
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

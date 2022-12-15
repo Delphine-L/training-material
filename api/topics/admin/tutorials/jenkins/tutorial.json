@@ -46,7 +46,9 @@
       ]
     }
   ],
-  "last_modified_at": "01-Mar-22",
+  "abbreviations": {
+    "CI": "Continuous Integration"
+  },
   "url": "/topics/admin/tutorials/jenkins/tutorial.html",
   "topic_name": "admin",
   "tutorial_name": "jenkins"

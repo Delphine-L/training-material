@@ -81,7 +81,6 @@
           "url": "https://training.galaxyproject.org/training-material/api/contributors/thomaswollmann.json"
         }
       ],
-      "last_modified_at": "23-Mar-21",
       "url": "/topics/imaging/tutorials/hela-screen-analysis/tutorial.html",
       "topic_name": "imaging",
       "tutorial_name": "hela-screen-analysis",
@@ -98,7 +97,6 @@
         }
       ],
       "tools": [
-        "7ddb0fe3ba37c4cf",
         "toolshed.g2.bx.psu.edu/repos/imgteam/2d_auto_threshold/ip_threshold/0.0.3",
         "toolshed.g2.bx.psu.edu/repos/imgteam/2d_feature_extraction/ip_2d_feature_extraction/0.1.1",
         "toolshed.g2.bx.psu.edu/repos/imgteam/2d_filter_segmentation_by_features/ip_2d_filter_segmentation_by_features/0.0.1",
@@ -177,7 +175,6 @@
           "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json"
         }
       ],
-      "last_modified_at": "12-Mar-21",
       "url": "/topics/imaging/tutorials/imaging-introduction/tutorial.html",
       "topic_name": "imaging",
       "tutorial_name": "imaging-introduction",
@@ -248,10 +245,11 @@
         {
           "name": "Beatriz Serrano-Solano",
           "email": "beatrizserrano.galaxy@gmail.com",
-          "twitter": "Birthae",
+          "twitter": "BSerranoSolano",
+          "linkedin": "beatriz-serrano",
           "gitter": "beatrizserrano",
+          "orcid": "0000-0002-5862-6132",
           "joined": "2020-07",
-          "elixir_node": "de",
           "id": "beatrizserrano",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/beatrizserrano.json"
         },
@@ -263,7 +261,6 @@
         }
       ],
       "zenodo_link": "",
-      "last_modified_at": "12-Mar-21",
       "url": "/topics/imaging/tutorials/tutorial-CP/tutorial.html",
       "topic_name": "imaging",
       "tutorial_name": "tutorial-CP",
@@ -349,10 +346,11 @@
         {
           "name": "Beatriz Serrano-Solano",
           "email": "beatrizserrano.galaxy@gmail.com",
-          "twitter": "Birthae",
+          "twitter": "BSerranoSolano",
+          "linkedin": "beatriz-serrano",
           "gitter": "beatrizserrano",
+          "orcid": "0000-0002-5862-6132",
           "joined": "2020-07",
-          "elixir_node": "de",
           "id": "beatrizserrano",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/beatrizserrano.json"
         },
@@ -363,7 +361,6 @@
           "url": "https://training.galaxyproject.org/training-material/api/contributors/jkh1.json"
         }
       ],
-      "last_modified_at": "23-Mar-21",
       "url": "/topics/imaging/tutorials/object-tracking-using-cell-profiler/tutorial.html",
       "topic_name": "imaging",
       "tutorial_name": "object-tracking-using-cell-profiler",

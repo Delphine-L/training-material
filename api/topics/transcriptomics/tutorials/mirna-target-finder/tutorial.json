@@ -4,7 +4,8 @@
   "zenodo_link": "https://zenodo.org/record/4710649",
   "tags": [
     "miRNA",
-    "plants"
+    "plants",
+    "stress tolerance"
   ],
   "questions": [
     "Which miRNAs are upregulated in response to brassinosteroids?",
@@ -38,15 +39,15 @@
     {
       "name": "Beatriz Serrano-Solano",
       "email": "beatrizserrano.galaxy@gmail.com",
-      "twitter": "Birthae",
+      "twitter": "BSerranoSolano",
+      "linkedin": "beatriz-serrano",
       "gitter": "beatrizserrano",
+      "orcid": "0000-0002-5862-6132",
       "joined": "2020-07",
-      "elixir_node": "de",
       "id": "beatrizserrano",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/beatrizserrano.json"
     }
   ],
-  "last_modified_at": "17-Jun-21",
   "url": "/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html",
   "topic_name": "transcriptomics",
   "tutorial_name": "mirna-target-finder"
