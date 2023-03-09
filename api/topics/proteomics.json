@@ -201,11 +201,11 @@
       "slides": false,
       "workflows": [
         {
-          "workflow": "Galaxy-Workflow-_Proteome_annotation_.ga",
+          "workflow": "main_workflow.ga",
           "tests": false
         },
         {
-          "workflow": "main_workflow.ga",
+          "workflow": "Galaxy-Workflow-_Proteome_annotation_.ga",
           "tests": false
         }
       ],
@@ -1837,11 +1837,11 @@
       "slides": false,
       "workflows": [
         {
-          "workflow": "wf_proteinID_SG_PS_multipleFiles.ga",
+          "workflow": "wf_proteinID_SG_PS.ga",
           "tests": false
         },
         {
-          "workflow": "wf_proteinID_SG_PS.ga",
+          "workflow": "wf_proteinID_SG_PS_multipleFiles.ga",
           "tests": false
         }
       ],
@@ -2651,11 +2651,11 @@
       "slides": false,
       "workflows": [
         {
-          "workflow": "Galaxy-Workflow-DIA_MSstats_Training_msstats_input_tabular.ga",
+          "workflow": "Galaxy-Workflow-DIA_MSstats_Training_export_tabular.ga",
           "tests": true
         },
         {
-          "workflow": "Galaxy-Workflow-DIA_MSstats_Training_export_tabular.ga",
+          "workflow": "Galaxy-Workflow-DIA_MSstats_Training_msstats_input_tabular.ga",
           "tests": true
         }
       ],

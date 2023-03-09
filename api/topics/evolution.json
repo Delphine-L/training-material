@@ -75,11 +75,11 @@
       "slides": false,
       "workflows": [
         {
-          "workflow": "Galaxy-Workflow-From_BAMs_to_drug_resistance_prediction_with_TB-profiler.ga",
+          "workflow": "main_workflow.ga",
           "tests": false
         },
         {
-          "workflow": "main_workflow.ga",
+          "workflow": "Galaxy-Workflow-From_BAMs_to_drug_resistance_prediction_with_TB-profiler.ga",
           "tests": false
         },
         {

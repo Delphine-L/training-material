@@ -1657,7 +1657,7 @@
       "slides": true,
       "workflows": [
         {
-          "workflow": "Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
+          "workflow": "Galaxy-Workflow-Monocle3_workflow.ga",
           "tests": false
         },
         {
@@ -1665,7 +1665,7 @@
           "tests": false
         },
         {
-          "workflow": "Galaxy-Workflow-Monocle3_workflow.ga",
+          "workflow": "Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
           "tests": false
         }
       ],
