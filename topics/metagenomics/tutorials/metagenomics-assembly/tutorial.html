@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html" />
@@ -32,222 +31,16 @@
         
         
         
-        
         <meta name="description" content="Metagenomics is a discipline that enables the genomic stu..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Assembly of metagenomic sequencing data" />
         <meta property="og:description" content="Metagenomics is a discipline that enables the genomic stu..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/metagenomics" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Metagenomics
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
+        
+        <script type="application/ld+json">
             
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
-        
-        <a class="dropdown-item" href="/training-material/topics/metagenomics/faqs/" title="Check our FAQs for the Metagenomics topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        <!-- link to feedback -->
-        
-            
-            
-                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-                </a>
-            
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -364,7 +157,209 @@
   ],
   "educationalLevel": "Beginner"
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/metagenomics" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Metagenomics
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/metagenomics/faqs/" title="Check our FAQs for the Metagenomics topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-metagenomics">
     <h1 data-toc-skip>Assembly of metagenomic sequencing data</h1>
@@ -500,17 +495,13 @@
         <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
             
-                <li class="btn btn-default supporting_material"><a href="/training-material/topics/metagenomics/slides/introduction.html" title="Topic Overview slides">
-                    <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
-                </a></li>
-            
 
             
                 <li class="btn btn-default supporting_material">
 
 
 <a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/6958893">
-    <i class="far fa-copy" aria-hidden="true"></i> Datasets
+    <i class="far fa-copy" aria-hidden="true"></i>&nbsp;Datasets
 </a>
 
 </li>
@@ -521,7 +512,7 @@
 
 
     <a class="btn btn-default topic-icon" href="/training-material/topics/metagenomics/tutorials/metagenomics-assembly/workflows/" title="Workflows" alt="Assembly of metagenomic sequencing data workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
+        <i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Workflows
     </a>
 
 </li>
@@ -607,6 +598,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
             Galaxy Africa
         </a>
@@ -627,17 +620,9 @@
         
     
         
-        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
-            Galaxy@GenOuest
-        </a>
-        
     
         
     
-        
-        <a class="dropdown-item" href="https://galaxytrakr.org/" title="GalaxyTrakr">
-            GalaxyTrakr
-        </a>
         
     
         
@@ -750,16 +735,16 @@
 
                 <h1 id="introduction">Introduction</h1>
 
-<p>Metagenomics involves the extraction, sequencing and analysis of combined genomic <span class="notranslate">DNA</span> from <strong>entire microbiome</strong> samples. It includes then <span class="notranslate">DNA</span> from <strong>many different organisms</strong>, with different taxonomic background.</p>
+<p>Metagenomics involves the extraction, sequencing and analysis of combined genomic DNA from <strong>entire microbiome</strong> samples. It includes then DNA from <strong>many different organisms</strong>, with different taxonomic background.</p>
 
-<p>Reconstructing the genomes of microorganisms in the sampled communities is critical step in analyzing metagenomic data. To do that, we can use <strong>assembly</strong> and assemblers, <em>i.e.</em> computational programs that stich together the small fragments of sequenced <span class="notranslate">DNA</span> produced by sequencing instruments.</p>
+<p>Reconstructing the genomes of microorganisms in the sampled communities is critical step in analyzing metagenomic data. To do that, we can use <strong>assembly</strong> and assemblers, <em>i.e.</em> computational programs that stich together the small fragments of sequenced DNA produced by sequencing instruments.</p>
 
-<p>Assembling seems intuitively similar to putting together a jigsaw puzzle. Essentially, it looks for <span class="notranslate">reads</span> “that work together” or more precisely, <span class="notranslate">reads</span> that overlap. Tasks like this are <strong>not straightforward</strong>, but rather complex because of the complexity of the genomics (specially the repeats), the missing pieces and the errors introduced during sequencing.</p>
+<p>Assembling seems intuitively similar to putting together a jigsaw puzzle. Essentially, it looks for reads “that work together” or more precisely, reads that overlap. Tasks like this are <strong>not straightforward</strong>, but rather complex because of the complexity of the genomics (specially the repeats), the missing pieces and the errors introduced during sequencing.</p>
 
 <blockquote class="comment">
-  <div id="comment" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+  <div class="box-title comment-title" id="comment" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
-  <p>Do you want to learn more about the principles behind single genome assembly? Follow our <a href="/training-material/topics/assembly/">tutorials</a>.</p>
+  <p>Do you want to learn more about the principles behind single genome assembly? Follow our <a href="/training-material/topics/assembly/index.html">tutorials</a>.</p>
 </blockquote>
 
 <p><strong>Metagenomic assembly</strong> is further complicated by</p>
@@ -773,7 +758,7 @@
 </ul>
 
 <blockquote class="details">
-  <div id="details-strategies-for-assembly" class="box-title"><button type="button" aria-controls="details-strategies-for-assembly-contents" aria-expanded="true" aria-label="Toggle details box: Strategies for assembly"><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Details: Strategies for assembly<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+  <div class="box-title details-title" id="details-strategies-for-assembly"><button class="gtn-boxify-button details" type="button" aria-controls="details-strategies-for-assembly-contents" aria-expanded="true" aria-label="Toggle details box: Strategies for assembly"><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Details: Strategies for assembly<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
   <p>For assembly, there are 3 main strategies:</p>
   <ol>
     <li>Greedy extension</li>
@@ -793,7 +778,7 @@
 <p>Based on the 6 original dataset of the coffee fermentation system, we generated mock datasets for this tutorial.</p>
 
 <blockquote class="agenda">
-  <div id="agenda" class="box-title" aria-label="agenda box: ">Agenda</div>
+  <div class="box-title agenda-title" id="agenda" aria-label="agenda box: ">Agenda</div>
 
   <p>In this tutorial, we will cover:</p>
 
@@ -810,23 +795,23 @@
 
 <h1 id="prepare-analysis-history-and-data">Prepare analysis history and data</h1>
 
-<p>To run assembly, we first need to get the data into <span class="notranslate">Galaxy</span>. Any analysis should get its own <span class="notranslate">Galaxy</span> history. So let’s start by creating a new one:</p>
+<p>To run assembly, we first need to get the data into Galaxy. Any analysis should get its own Galaxy history. So let’s start by creating a new one:</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-prepare-the-galaxy-history" class="box-title" aria-label="hands-on box: Prepare the Galaxy history"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Prepare the <span class="notranslate">Galaxy</span> history</div>
+  <div class="box-title hands-on-title" id="hands-on-prepare-the-galaxy-history" aria-label="hands-on box: Prepare the Galaxy history"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Prepare the Galaxy history</div>
 
   <ol>
     <li>
       <p>Create a new history for this analysis</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-creating-a-new-history" class="box-title"><button type="button" aria-controls="tip-creating-a-new-history-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-creating-a-new-history"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-creating-a-new-history-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>   <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>   <ol>   <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden">galaxy-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>   <li>Select the option <strong>Create New</strong> from the menu</li> </ol> </blockquote>
     </li>
     <li>
       <p>Rename the history</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-renaming-a-history" class="box-title"><button type="button" aria-controls="tip-renaming-a-history-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ol>  <li>Click on <strong>Unnamed history</strong> (or the current name of the history) (<strong>Click to rename history</strong>) at the top of your history panel</li>  <li>Type the new name</li>  <li>Press <kbd>Enter</kbd></li></ol></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-renaming-a-history"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-renaming-a-history-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ol>   <li>Click on <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> (<strong>Edit</strong>) next to the history name (which by default is “Unnamed history”)</li>   <li>Type the new name</li>   <li>Click on <strong>Save</strong></li> </ol>   <p>If you do not have the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> (<strong>Edit</strong>) next to the history name:</p>   <ol>   <li>Click on <strong>Unnamed history</strong> (or the current name of the history) (<strong>Click to rename history</strong>) at the top of your history panel</li>   <li>Type the new name</li>   <li>Press <kbd>Enter</kbd></li> </ol> </blockquote>
     </li>
   </ol>
 
@@ -834,10 +819,10 @@
 
 <p>We need to get the data into our history.</p>
 
-<p>In case of a not very large dataset it’s more convenient to upload data directly from your computer to <span class="notranslate">Galaxy</span>.</p>
+<p>In case of a not very large dataset it’s more convenient to upload data directly from your computer to Galaxy.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-upload-data-into-galaxy" class="box-title" aria-label="hands-on box: Upload data into Galaxy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Upload data into <span class="notranslate">Galaxy</span></div>
+  <div class="box-title hands-on-title" id="hands-on-upload-data-into-galaxy" aria-label="hands-on box: Upload data into Galaxy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Upload data into Galaxy</div>
 
   <ol>
     <li>
@@ -858,20 +843,20 @@ https://zenodo.org/record/6958893/files/ERR2231572_Read_2.fastqsanger.gz
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-via-links" class="box-title"><button type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-data-from-a-data-library" class="box-title"><button type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-data-from-a-data-library"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>As an alternative to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>   <ul>   <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>   <li>Navigate to  the correct folder as indicated by your instructor</li>   <li>Select the desired files</li>   <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>   <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>   <li>Click on <strong>Import</strong></li> </ul> </blockquote>
 
       <blockquote class="comment">
-        <div id="comment-1" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
-        <p>In case of large dataset, we can use FTP server or the <a href="/training-material/topics/galaxy-interface/tutorials/upload-rules/tutorial.html"><span class="notranslate">Galaxy</span> Rule-based Uploader</a>.</p>
+        <div class="box-title comment-title" id="comment-1" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+        <p>In case of large dataset, we can use FTP server or the <a href="/training-material/topics/galaxy-interface/tutorials/upload-rules/tutorial.html">Galaxy Rule-based Uploader</a>.</p>
       </blockquote>
     </li>
     <li>
-      <p>Create a paired collection named <code class="language-plaintext highlighter-rouge">Raw <span class="notranslate">reads</span></code>, rename your pairs with the sample name</p>
+      <p>Create a paired collection named <code class="language-plaintext highlighter-rouge">Raw reads</code>, rename your pairs with the sample name</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-creating-a-paired-collection" class="box-title"><button type="button" aria-controls="tip-creating-a-paired-collection-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a paired collection"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a paired collection<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Click on <strong>Operations on multiple datasets</strong> (check box icon) at the top of the history panel <img src="/training-material/topics/galaxy-interface/images/historyItemControls.png" alt="Operations on multiple datasets button" /></li>  <li>Check all the datasets in your history you would like to include</li>  <li>    <p>Click <strong>For all selected..</strong> and choose <strong>Build List of Dataset Pairs</strong></p>  </li>  <li>Change the text of <em>unpaired forward</em> to a common selector for the forward <span class="notranslate">reads</span></li>  <li>Change the text of <em>unpaired reverse</em> to a common selector for the reverse <span class="notranslate">reads</span></li>  <li>Click <strong>Pair these datasets</strong> for each valid <em>forward</em> and <em>reverse</em> pair.</li>  <li>Enter a name for your collection</li>  <li>Click <strong>Create List</strong> to build your collection</li>  <li>Click on the checkmark icon at the top of your history again</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-creating-a-paired-collection"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-creating-a-paired-collection-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a paired collection"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a paired collection<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">galaxy-selector</span> <strong>Select Items</strong> at the top of the history panel <img src="/training-material/topics/galaxy-interface/images/historyItemControls.png" alt="Select Items button" /></li>   <li>Check all the datasets in your history you would like to include</li>   <li>     <p>Click <strong>n of N selected</strong> and choose <strong>Build List of Dataset Pairs</strong></p>   </li>   <li>Change the text of <em>unpaired forward</em> to a common selector for the forward reads</li>   <li>Change the text of <em>unpaired reverse</em> to a common selector for the reverse reads</li>   <li>Click <strong>Pair these datasets</strong> for each valid <em>forward</em> and <em>reverse</em> pair.</li>   <li>Enter a name for your collection</li>   <li>Click <strong>Create List</strong> to build your collection</li>   <li>Click on the checkmark icon at the top of your history again</li> </ul> </blockquote>
     </li>
   </ol>
 
@@ -887,7 +872,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_Read_2.fastqsanger.gz
   <li>the presence of multiple strains of a single species (<span class="citation"><a href="#miller2010">Miller <i>et al.</i> 2010</a></span>).</li>
 </ol>
 
-<p>To reduce the differences in coverage between samples, we can use a <strong>co-assembly</strong> approach, where <span class="notranslate">reads</span> from all samples are aligned together.:</p>
+<p>To reduce the differences in coverage between samples, we can use a <strong>co-assembly</strong> approach, where reads from all samples are aligned together.:</p>
 
 <figure id="figure-2"><img src="./images/co-assembly.png" alt="Image show one pile of sample1 reads and another pile of sample2 reads, then, green arrow leads to assembled reads from both piles. " width="60%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Co-assembly</figcaption></figure>
 
@@ -937,7 +922,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_Read_2.fastqsanger.gz
 <p>Co-assembly is more commonly used than individual assembly and then de-replication after binning. But in this tutorial, to show all steps, we will run an <strong>individual assembly</strong>.</p>
 
 <blockquote class="comment">
-  <div id="comment-2" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+  <div class="box-title comment-title" id="comment-2" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
   <p>Sometimes it is important to run assembly tools both on individual samples and on all pooled samples, and use both outputs to get the better outputs for the certain dataset.</p>
 </blockquote>
 
@@ -949,21 +934,21 @@ https://zenodo.org/record/6958893/files/ERR2231572_Read_2.fastqsanger.gz
 
     <p>MetaSPAdes is part of the SPAdes toolkit, which has several assembly pipelines. Since SPAdes handles non-uniform coverage, it is useful for assembling simple communities, but metaSPAdes also handles other problems, allowing it to assemble complex communities’ metagenomes.</p>
 
-    <p>As input for metaSPAdes it can accept short <span class="notranslate">reads</span>. However, there is an option to use additionally long <span class="notranslate">reads</span> besides short <span class="notranslate">reads</span> to produce hybrid input.</p>
+    <p>As input for metaSPAdes it can accept short reads. However, there is an option to use additionally long reads besides short reads to produce hybrid input.</p>
   </li>
   <li>
-    <p><strong>MEGAHIT</strong> (<span class="citation"><a href="#li2015">Li <i>et al.</i> 2015</a></span>): a single node assembler for large and complex metagenomics NGS <span class="notranslate">reads</span>, such as soil</p>
+    <p><strong>MEGAHIT</strong> (<span class="citation"><a href="#li2015">Li <i>et al.</i> 2015</a></span>): a single node assembler for large and complex metagenomics NGS reads, such as soil</p>
 
     <p>It makes use of succinct de Bruijn graph (SdBG) to achieve low memory assembly.</p>
   </li>
 </ul>
 
-<p>Both tools are available in <span class="notranslate">Galaxy</span>. But currently, only MEGAHIT can be used in individual mode for several samples.</p>
+<p>Both tools are available in Galaxy. But currently, only MEGAHIT can be used in individual mode for several samples.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-individual-assembly-of-short-reads-with-megahit" class="box-title" aria-label="hands-on box: Individual assembly of short-reads with MEGAHIT"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Individual assembly of short-<span class="notranslate">reads</span> with MEGAHIT</div>
+  <div class="box-title hands-on-title" id="hands-on-individual-assembly-of-short-reads-with-megahit" aria-label="hands-on box: Individual assembly of short-reads with MEGAHIT"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Individual assembly of short-reads with MEGAHIT</div>
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/megahit/megahit/1.2.9+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/megahit/megahit/1.2.9+galaxy0"><strong>MEGAHIT</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/megahit/megahit/1.2.9+<span class="notranslate">galaxy</span>0</span></span>  with parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/megahit/megahit/1.2.9+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/megahit/megahit/1.2.9+galaxy0"><strong>MEGAHIT</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/megahit/megahit/1.2.9+galaxy0</span></span>  with parameters:
       <ul>
         <li><em>“Select your input option”</em>: <code class="language-plaintext highlighter-rouge">Paired-end collection</code>
           <ul>
@@ -971,12 +956,12 @@ https://zenodo.org/record/6958893/files/ERR2231572_Read_2.fastqsanger.gz
               <p><em>“Run in batch mode?”</em>: <code class="language-plaintext highlighter-rouge">Run individually</code></p>
 
               <blockquote class="comment">
-                <div id="comment-3" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+                <div class="box-title comment-title" id="comment-3" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
                 <p>To run as co-assembly, select <code class="language-plaintext highlighter-rouge">Merge all fastq pair-end</code>, instead of <code class="language-plaintext highlighter-rouge">Run individually</code></p>
               </blockquote>
             </li>
             <li>
-              <p><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“Select a paired collection”</em>: <code class="language-plaintext highlighter-rouge">Raw <span class="notranslate">reads</span></code></p>
+              <p><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“Select a paired collection”</em>: <code class="language-plaintext highlighter-rouge">Raw reads</code></p>
             </li>
           </ul>
         </li>
@@ -999,15 +984,15 @@ https://zenodo.org/record/6958893/files/ERR2231572_Read_2.fastqsanger.gz
 
 <p><strong>MEGAHIT</strong> produced a collection of output assemblies - one per sample - that can be proceeded further in binning step and then de-replication. The output contains <strong>contigs</strong>, contiguous lengths of genomic sequences in which bases are known to a high degree of certainty.</p>
 
-<p>Contrary to <strong>MetaSPAdes</strong>, <strong>MEGAHIT</strong> does not output <strong>scaffolds</strong>, i.e. segments of genome sequence reconstructed fron contigs and gaps. The gaps occur when <span class="notranslate">reads</span> from the two sequenced ends of at least one fragment overlap with other <span class="notranslate">reads</span> from two different contigs (as long as the arrangement is otherwise consistent with the contigs being adjacent). It is possible to estimate the number of bases between contigs based on fragment lengths.</p>
+<p>Contrary to <strong>MetaSPAdes</strong>, <strong>MEGAHIT</strong> does not output <strong>scaffolds</strong>, i.e. segments of genome sequence reconstructed fron contigs and gaps. The gaps occur when reads from the two sequenced ends of at least one fragment overlap with other reads from two different contigs (as long as the arrangement is otherwise consistent with the contigs being adjacent). It is possible to estimate the number of bases between contigs based on fragment lengths.</p>
 
 <blockquote class="comment">
-  <div id="comment-4" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+  <div class="box-title comment-title" id="comment-4" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
   <p>Since the assembly process would take ~1h we are just going to import the results of the assembly previously run.</p>
 
   <blockquote class="notranslate hands_on">
-    <div id="hands-on-import-generated-assembly-files" class="box-title" aria-label="hands-on box: Import generated assembly files"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Import generated assembly files</div>
+    <div class="box-title hands-on-title" id="hands-on-import-generated-assembly-files" aria-label="hands-on box: Import generated assembly files"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Import generated assembly files</div>
 
     <ol>
       <li>
@@ -1030,7 +1015,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_assembly.fasta
 </blockquote>
 
 <blockquote class="question">
-  <div id="question" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
     <li>How many contigs has been for ERR2231568 sample?</li>
@@ -1039,7 +1024,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_assembly.fasta
   </ol>
 
   <blockquote class="solution">
-    <div id="solution" class="box-title"><button type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
       <li>There are 228,719 sequences in the file so 228,719 contigs</li>
@@ -1052,17 +1037,17 @@ https://zenodo.org/record/6958893/files/ERR2231572_assembly.fasta
 </blockquote>
 
 <blockquote class="details">
-  <div id="details-co-assembly-with-metaspades" class="box-title"><button type="button" aria-controls="details-co-assembly-with-metaspades-contents" aria-expanded="true" aria-label="Toggle details box: Co-assembly with MetaSPAdes"><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Details: Co-assembly with MetaSPAdes<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+  <div class="box-title details-title" id="details-co-assembly-with-metaspades"><button class="gtn-boxify-button details" type="button" aria-controls="details-co-assembly-with-metaspades-contents" aria-expanded="true" aria-label="Toggle details box: Co-assembly with MetaSPAdes"><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Details: Co-assembly with MetaSPAdes<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
   <blockquote class="notranslate hands_on">
-    <div id="hands-on-assembly-with-metaspades" class="box-title" aria-label="hands-on box: Assembly with MetaSPAdes"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Assembly with MetaSPAdes</div>
+    <div class="box-title hands-on-title" id="hands-on-assembly-with-metaspades" aria-label="hands-on box: Assembly with MetaSPAdes"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Assembly with MetaSPAdes</div>
 
     <ol>
-      <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/nml/metaspades/metaspades/3.15.4+galaxy2" title="Tested with toolshed.g2.bx.psu.edu/repos/nml/metaspades/metaspades/3.15.4+galaxy2"><strong>MetaSPAdes</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/nml/metaspades/metaspades/3.15.4+<span class="notranslate">galaxy</span>2</span></span>  with following parameters
+      <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/nml/metaspades/metaspades/3.15.4+galaxy2" title="Tested with toolshed.g2.bx.psu.edu/repos/nml/metaspades/metaspades/3.15.4+galaxy2"><strong>MetaSPAdes</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/nml/metaspades/metaspades/3.15.4+galaxy2</span></span>  with following parameters
         <ul>
-          <li><em>“Pair-end <span class="notranslate">reads</span> input format”</em>: <code class="language-plaintext highlighter-rouge">Paired-end: list of dataset pairs</code>
+          <li><em>“Pair-end reads input format”</em>: <code class="language-plaintext highlighter-rouge">Paired-end: list of dataset pairs</code>
             <ul>
-              <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“FASTQ file(s): collection”</em>: <code class="language-plaintext highlighter-rouge">Raw <span class="notranslate">reads</span></code></li>
+              <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“FASTQ file(s): collection”</em>: <code class="language-plaintext highlighter-rouge">Raw reads</code></li>
             </ul>
           </li>
           <li><em>“Select k-mer detection option”</em>: <code class="language-plaintext highlighter-rouge">User specific</code>
@@ -1083,10 +1068,10 @@ https://zenodo.org/record/6958893/files/ERR2231572_assembly.fasta
 <p>Assemblies can be evaluated with <strong>metaQUAST</strong> (<span class="citation"><a href="#mikheenko2016">Mikheenko <i>et al.</i> 2016</a></span>), the metagenomics mode of <strong>QUAST</strong> (<span class="citation"><a href="#gurevich2013">Gurevich <i>et al.</i> 2013</a></span>).</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-evaluation-assembly-quality-with-metaquast" class="box-title" aria-label="hands-on box: Evaluation assembly quality with metaQUAST"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Evaluation assembly quality with metaQUAST</div>
+  <div class="box-title hands-on-title" id="hands-on-evaluation-assembly-quality-with-metaquast" aria-label="hands-on box: Evaluation assembly quality with metaQUAST"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Evaluation assembly quality with metaQUAST</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.2.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.2.0+galaxy0"><strong>Quast</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/quast/quast/5.2.0+<span class="notranslate">galaxy</span>0</span></span>  with parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.2.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.2.0+galaxy0"><strong>Quast</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.2.0+galaxy0</span></span>  with parameters:
       <ul>
         <li><em>“Use customized names for the input files?”</em>: <code class="language-plaintext highlighter-rouge">No, use dataset names</code>
           <ul>
@@ -1094,15 +1079,15 @@ https://zenodo.org/record/6958893/files/ERR2231572_assembly.fasta
           </ul>
         </li>
         <li>
-          <p><em>“<span class="notranslate">Reads</span> options”</em>: <code class="language-plaintext highlighter-rouge">Illumina paired-end <span class="notranslate">reads</span> in paired collection</code></p>
+          <p><em>“Reads options”</em>: <code class="language-plaintext highlighter-rouge">Illumina paired-end reads in paired collection</code></p>
 
           <blockquote class="comment">
-            <div id="comment-5" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
-            <p>To make the job quicker, you can select <code class="language-plaintext highlighter-rouge">Disabled</code> here. The raw <span class="notranslate">reads</span> will then not been mapped to the assembly to compute metrics, like the coverage.</p>
+            <div class="box-title comment-title" id="comment-5" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+            <p>To make the job quicker, you can select <code class="language-plaintext highlighter-rouge">Disabled</code> here. The raw reads will then not been mapped to the assembly to compute metrics, like the coverage.</p>
           </blockquote>
 
           <ul>
-            <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“FASTQ/FASTA files”</em>: <code class="language-plaintext highlighter-rouge">Raw <span class="notranslate">reads</span></code></li>
+            <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“FASTQ/FASTA files”</em>: <code class="language-plaintext highlighter-rouge">Raw reads</code></li>
           </ul>
         </li>
         <li><em>“Type of assembly”</em>: <code class="language-plaintext highlighter-rouge">Metagenome</code></li>
@@ -1114,12 +1099,12 @@ https://zenodo.org/record/6958893/files/ERR2231572_assembly.fasta
 </blockquote>
 
 <blockquote class="comment">
-  <div id="comment-6" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+  <div class="box-title comment-title" id="comment-6" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
   <p>Since the Quast process would take times we are just going to import the results:</p>
 
   <blockquote class="notranslate hands_on">
-    <div id="hands-on-import-generated-metaquast-results" class="box-title" aria-label="hands-on box: Import generated metaQuast results"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Import generated metaQuast results</div>
+    <div class="box-title hands-on-title" id="hands-on-import-generated-metaquast-results" aria-label="hands-on box: Import generated metaQuast results"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Import generated metaQuast results</div>
 
     <ol>
       <li>
@@ -1152,12 +1137,12 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
 
         <p>A base in the reference genome is counted as aligned if at least one contig has at least one alignment to this base.</p>
 
-        <p>We did not provide any reference there, but metaQuast try to identify genome content of the metagenome by aligning contigs to <a href="https://www.arb-silva.de/">SILVA</a> 16S r<span class="notranslate">RNA</span> database. For each assembly, 50 reference genomes with top scores are chosen. The full reference genomes of the identified organisms are afterwards downloaded from NCBI to map the assemblies on them and compute the genome fractions.</p>
+        <p>We did not provide any reference there, but metaQuast try to identify genome content of the metagenome by aligning contigs to <a href="https://www.arb-silva.de/">SILVA</a> 16S rRNA database. For each assembly, 50 reference genomes with top scores are chosen. The full reference genomes of the identified organisms are afterwards downloaded from NCBI to map the assemblies on them and compute the genome fractions.</p>
 
         <p>For each identified genomes, the genome fraction is given when clicking on <strong>Genome fraction (%)</strong></p>
 
         <blockquote class="question">
-          <div id="question-1" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+          <div class="box-title question-title" id="question-1" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
           <ol>
             <li>What is the genome fraction for ERR2231568? And for ERR2231572?</li>
@@ -1165,7 +1150,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
           </ol>
 
           <blockquote class="solution">
-            <div id="solution-1" class="box-title"><button type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+            <div class="box-title solution-title" id="solution-1"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
             <ol>
               <li>The genome fraction is 20.8% for ERR2231568 (column ERR2231568 in ERR2231568 report) and 24.8% for ERR2231572 (column ERR2231572 in ERR2231572 report)</li>
@@ -1182,7 +1167,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
         <p>If an assembly contains many contigs that cover the same regions of the reference, the duplication ratio may be much larger than 1.</p>
 
         <blockquote class="question">
-          <div id="question-2" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+          <div class="box-title question-title" id="question-2" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
           <ol>
             <li>What is the duplication ratio for ERR2231568? And for ERR2231572?</li>
@@ -1190,7 +1175,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
           </ol>
 
           <blockquote class="solution">
-            <div id="solution-2" class="box-title"><button type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+            <div class="box-title solution-title" id="solution-2"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
             <ol>
               <li>The duplication ratio is 1.061% for ERR2231568 and 1.1% for ERR2231572 (column ERR2231572 in ERR2231572 report)</li>
@@ -1204,50 +1189,50 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
     </ul>
   </li>
   <li>
-    <p><strong>Read <span class="notranslate">mapping</span></strong>: results of the <span class="notranslate">mapping</span> of the raw <span class="notranslate">reads</span> on the different assemblies (only if the <em>“<span class="notranslate">Reads</span> options”</em> is not disabled)</p>
+    <p><strong>Read mapping</strong>: results of the mapping of the raw reads on the different assemblies (only if the <em>“Reads options”</em> is not disabled)</p>
 
-    <p>Here the <span class="notranslate">reads</span> for the selected sample are mapped to all assemblies</p>
+    <p>Here the reads for the selected sample are mapped to all assemblies</p>
 
     <blockquote class="question">
-      <div id="question-3" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+      <div class="box-title question-title" id="question-3" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
       <ol>
-        <li>By opening the report for ERR2231568, to which raw <span class="notranslate">reads</span> are the different sample assemblies compared to to extract information like percentage of mapped <span class="notranslate">reads</span>?</li>
+        <li>By opening the report for ERR2231568, to which raw reads are the different sample assemblies compared to to extract information like percentage of mapped reads?</li>
         <li>To get good information for each sample, which report and information should we look at?</li>
-        <li>What is the % of read mapped for ERR2231568 assembly to ERR2231568 raw <span class="notranslate">reads</span>? And for ERR2231572 assembly to ERR2231572 raw <span class="notranslate">reads</span>?</li>
-        <li>What is the percentage of <span class="notranslate">reads</span> used to build the assemblies for ERR2231568? and ERR2231572?</li>
+        <li>What is the % of read mapped for ERR2231568 assembly to ERR2231568 raw reads? And for ERR2231572 assembly to ERR2231572 raw reads?</li>
+        <li>What is the percentage of reads used to build the assemblies for ERR2231568? and ERR2231572?</li>
       </ol>
 
       <blockquote class="solution">
-        <div id="solution-3" class="box-title"><button type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+        <div class="box-title solution-title" id="solution-3"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
         <ol>
-          <li>To ERR2231568. That is a bug in the <span class="notranslate">Galaxy</span> tool. We are working on fix it so each sample assembly is compared to its corresponding raw <span class="notranslate">reads</span>.</li>
+          <li>To ERR2231568. That is a bug in the Galaxy tool. We are working on fix it so each sample assembly is compared to its corresponding raw reads.</li>
           <li>To get the good information for ERR2231568, we should open the ERR2231568  and look only at column ERR2231568.</li>
-          <li>…% of ERR2231568 raw <span class="notranslate">reads</span> were mapped to ERR2231568 assembly (column ERR2231568 in ERR2231568 report) and 86.97% of ERR2231572 raw <span class="notranslate">reads</span> to ERR2231572 assembly (column ERR2231572 in ERR2231572 report).</li>
-          <li>…% of <span class="notranslate">reads</span> were used to the assemblies for ERR2231568 and  86.97% for ERR2231572.</li>
+          <li>…% of ERR2231568 raw reads were mapped to ERR2231568 assembly (column ERR2231568 in ERR2231568 report) and 86.97% of ERR2231572 raw reads to ERR2231572 assembly (column ERR2231572 in ERR2231572 report).</li>
+          <li>…% of reads were used to the assemblies for ERR2231568 and  86.97% for ERR2231572.</li>
         </ol>
       </blockquote>
 
     </blockquote>
 
     <blockquote class="details">
-      <div id="details-alternative-ways-to-compute-coverage" class="box-title"><button type="button" aria-controls="details-alternative-ways-to-compute-coverage-contents" aria-expanded="true" aria-label="Toggle details box: Alternative ways to compute coverage"><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Details: Alte<span class="notranslate">rna</span>tive ways to compute coverage<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+      <div class="box-title details-title" id="details-alternative-ways-to-compute-coverage"><button class="gtn-boxify-button details" type="button" aria-controls="details-alternative-ways-to-compute-coverage-contents" aria-expanded="true" aria-label="Toggle details box: Alternative ways to compute coverage"><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Details: Alternative ways to compute coverage<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
-      <p>2 alte<span class="notranslate">rna</span>tive ways to compute coverage are to</p>
+      <p>2 alternative ways to compute coverage are to</p>
       <ol>
         <li>
-          <p>Use <a href="https://github.com/wwood/CoverM">CoverM</a>, which is available in <span class="notranslate">Galaxy</span></p>
+          <p>Use <a href="https://github.com/wwood/CoverM">CoverM</a>, which is available in Galaxy</p>
 
           <blockquote class="notranslate hands_on">
-            <div id="hands-on-calculate-coverage-using-coverm" class="box-title" aria-label="hands-on box: Calculate coverage using CoverM"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Calculate coverage using CoverM</div>
+            <div class="box-title hands-on-title" id="hands-on-calculate-coverage-using-coverm" aria-label="hands-on box: Calculate coverage using CoverM"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Calculate coverage using CoverM</div>
 
             <ol>
-              <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.2.1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.2.1"><strong>CoverM-CONTIG</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.2.1</span></span>  with parameters:
+              <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.2.1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.2.1"><strong>CoverM-CONTIG</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.2.1</span></span>  with parameters:
                 <ul>
                   <li><em>“Read type”</em>: <code class="language-plaintext highlighter-rouge">Paired collection</code>
                     <ul>
-                      <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“One or more pairs of forward and reverse possibly gzipped FASTA/Q files for <span class="notranslate">mapping</span> in order”</em>: <code class="language-plaintext highlighter-rouge">Raw <span class="notranslate">reads</span></code></li>
+                      <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“One or more pairs of forward and reverse possibly gzipped FASTA/Q files for mapping in order”</em>: <code class="language-plaintext highlighter-rouge">Raw reads</code></li>
                     </ul>
                   </li>
                   <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span>  <em>“FASTA file(s) of contigs”</em>: output of MEGAGIT</li>
@@ -1258,17 +1243,17 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
           </blockquote>
         </li>
         <li>
-          <p>Map the original <span class="notranslate">reads</span> onto contigs and extract the percentage of mapped <span class="notranslate">reads</span>:</p>
+          <p>Map the original reads onto contigs and extract the percentage of mapped reads:</p>
 
           <blockquote class="notranslate hands_on">
-            <div id="hands-on-computation-of-the-reads-used-in-assemblies" class="box-title" aria-label="hands-on box: Computation of the % reads used in assemblies"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Computation of the % <span class="notranslate">reads</span> used in assemblies</div>
+            <div class="box-title hands-on-title" id="hands-on-computation-of-the-reads-used-in-assemblies" aria-label="hands-on box: Computation of the % reads used in assemblies"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Computation of the % reads used in assemblies</div>
 
             <ol>
-              <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.5.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.5.0+galaxy0"><strong>Bowtie2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.5.0+<span class="notranslate">galaxy</span>0</span></span>  with the following parameters:
+              <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.5.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.5.0+galaxy0"><strong>Bowtie2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.5.0+galaxy0</span></span>  with the following parameters:
                 <ul>
                   <li><em>“Is this single or paired library”</em>: <code class="language-plaintext highlighter-rouge">Paired-end Dataset Collection</code>
                     <ul>
-                      <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“FASTQ Paired Dataset”</em>: <code class="language-plaintext highlighter-rouge">Raw <span class="notranslate">reads</span></code></li>
+                      <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“FASTQ Paired Dataset”</em>: <code class="language-plaintext highlighter-rouge">Raw reads</code></li>
                     </ul>
                   </li>
                   <li><em>“Will you select a reference genome from your history or use a built-in index?”</em>: <code class="language-plaintext highlighter-rouge">Use a genome from the history and build index</code>
@@ -1276,27 +1261,27 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
                       <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“Select reference genome”</em>: MEGAHIT output</li>
                     </ul>
                   </li>
-                  <li><em>“Save the Bowtie2 <span class="notranslate">mapping</span> statistics to the history”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
+                  <li><em>“Save the Bowtie2 mapping statistics to the history”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
                 </ul>
               </li>
-              <li>Inspect the <span class="notranslate">mapping</span> statistics output</li>
+              <li>Inspect the mapping statistics output</li>
             </ol>
           </blockquote>
 
           <blockquote class="question">
-            <div id="question-4" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+            <div class="box-title question-title" id="question-4" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
             <ol>
               <li>What is the overall alignment rate for ERR2231567? and ERR2231571?</li>
-              <li>What is the percentage of <span class="notranslate">reads</span> used in assemblies for ERR2231567? and ERR2231571?</li>
+              <li>What is the percentage of reads used in assemblies for ERR2231567? and ERR2231571?</li>
             </ol>
 
             <blockquote class="solution">
-              <div id="solution-4" class="box-title"><button type="button" aria-controls="solution-4-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+              <div class="box-title solution-title" id="solution-4"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-4-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
               <ol>
                 <li>The overall alignment rate for ERR2231567 is 65.97% and 73.67% for ERR2231571</li>
-                <li>65.97% of the <span class="notranslate">reads</span> were used in assemblies for ERR2231567 and 73.67% for ERR2231571.</li>
+                <li>65.97% of the reads were used in assemblies for ERR2231567 and 73.67% for ERR2231571.</li>
               </ol>
 
             </blockquote>
@@ -1309,21 +1294,21 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
   <li>
     <p><strong>Misassemblies</strong>: joining sequences that should not be adjacent.</p>
 
-    <p>Quast identifies missassemblies by <span class="notranslate">mapping</span> the contigs to the reference genomes of the identified organisms. 3 types of misassemblies can be identified:</p>
+    <p>Quast identifies missassemblies by mapping the contigs to the reference genomes of the identified organisms. 3 types of misassemblies can be identified:</p>
 
     <figure id="figure-5"><img src="./images/quast_misassemblies.png" alt="Image shows on the top a contig with a blue and a gren parts with white arrows (pointing on the right) on them and below a reference with 2 chromosomes. The 3 types of misassemblies are after schematized. Relocation: the blue and gren parts of the contig are on chr 1 but separated. Inversion: the blue and gren parts of the contig are on chr 1 but separated and with the arrows facing each other. Translocation: the blue part is on chr 1 and gren part on chr 2." width="60%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> Source: <a href="https://quast.sourceforge.net/docs/manual.html#sec3.1.2">QUAST manual</a></figcaption></figure>
 
     <ol>
-      <li><strong>Relocation</strong> occur based on signal from two <span class="notranslate">mapping</span>s of the same contig against the same chromosome, with 2 cases:
+      <li><strong>Relocation</strong> occur based on signal from two mappings of the same contig against the same chromosome, with 2 cases:
         <ol>
-          <li>the 2 <span class="notranslate">mapping</span>s are separated by an unmapped region of at least 1 kbp</li>
-          <li>they map on the same chromosome with a shared <span class="notranslate">mapping</span> area of at least 1 kbp</li>
+          <li>the 2 mappings are separated by an unmapped region of at least 1 kbp</li>
+          <li>they map on the same chromosome with a shared mapping area of at least 1 kbp</li>
         </ol>
 
         <figure id="figure-6"><img src="./images/relocation.svg" alt="Image shows on the top a contig with a blue and a gren parts with white arrows (pointing on the right) on them and below a reference with 2 chromosomes. The 3 types of misassemblies are after schematized. Relocation: the blue and gren parts of the contig are on chr 1 but separated. Inversion: the blue and gren parts of the contig are on chr 1 but separated and with the arrows facing each other. Translocation: the blue part is on chr 1 and gren part on chr 2." width="80%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> Source: <a href="https://blog.pierre.marijon.fr/misassemblies-in-noisy-assemblies/">Yet Another Bioinformatic blog by Pierre Marijon</a></figcaption></figure>
 
         <blockquote class="question">
-          <div id="question-5" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+          <div class="box-title question-title" id="question-5" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
           <ol>
             <li>How many relocations has been found for ERR2231568? And for ERR2231572?</li>
@@ -1331,7 +1316,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
           </ol>
 
           <blockquote class="solution">
-            <div id="solution-5" class="box-title"><button type="button" aria-controls="solution-5-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+            <div class="box-title solution-title" id="solution-5"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-5-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
             <ol>
               <li>88 for ERR2231568 and 158 for ERR2231572</li>
@@ -1345,7 +1330,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
         <p><strong>Translocation</strong> occur when a contig has mapped on more than one reference chromosomes</p>
 
         <blockquote class="question">
-          <div id="question-6" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+          <div class="box-title question-title" id="question-6" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
           <ol>
             <li>How many translocations has been found for ERR2231568? And for ERR2231572?</li>
@@ -1355,7 +1340,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
           </ol>
 
           <blockquote class="solution">
-            <div id="solution-6" class="box-title"><button type="button" aria-controls="solution-6-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+            <div class="box-title solution-title" id="solution-6"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-6-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
             <ol>
               <li>47 for ERR2231568 and 62 for ERR2231572.</li>
@@ -1368,10 +1353,10 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
         </blockquote>
       </li>
       <li>
-        <p><strong>Inversion</strong> occurs when a contig has two consecutive <span class="notranslate">mapping</span>s on the same chromosome but in different strands</p>
+        <p><strong>Inversion</strong> occurs when a contig has two consecutive mappings on the same chromosome but in different strands</p>
 
         <blockquote class="question">
-          <div id="question-7" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+          <div class="box-title question-title" id="question-7" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
           <ol>
             <li>How many inversion has been found for ERR2231568? And for ERR2231572?</li>
@@ -1379,7 +1364,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
           </ol>
 
           <blockquote class="solution">
-            <div id="solution-7" class="box-title"><button type="button" aria-controls="solution-7-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+            <div class="box-title solution-title" id="solution-7"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-7-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
             <ol>
               <li>4 for ERR2231568 and 5 for ERR2231572.</li>
@@ -1395,7 +1380,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
     <p><strong>Mismatches</strong> or mismatched bases in the contig-reference alignment</p>
 
     <blockquote class="question">
-      <div id="question-8" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+      <div class="box-title question-title" id="question-8" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
       <ol>
         <li>How many mismatches have been identified for ERR2231568? And for ERR2231572?</li>
@@ -1403,7 +1388,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
       </ol>
 
       <blockquote class="solution">
-        <div id="solution-8" class="box-title"><button type="button" aria-controls="solution-8-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+        <div class="box-title solution-title" id="solution-8"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-8-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
         <ol>
           <li>764,853 for ERR2231568 and 414,142 for ERR2231572.</li>
@@ -1421,7 +1406,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
         <p><strong># contigs</strong>: total number of contigs</p>
 
         <blockquote class="question">
-          <div id="question-9" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+          <div class="box-title question-title" id="question-9" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
           <ol>
             <li>How many contigs are for ERR2231568? And for ERR2231572?</li>
@@ -1432,7 +1417,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
           </ol>
 
           <blockquote class="solution">
-            <div id="solution-9" class="box-title"><button type="button" aria-controls="solution-9-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+            <div class="box-title solution-title" id="solution-9"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-9-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
             <ol>
               <li>66,434 contigs for ERR2231568 and 36,112 for ERR2231572.</li>
@@ -1449,7 +1434,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
         <p><strong>Largest contig</strong>: length of the longest contig in the assembly</p>
 
         <blockquote class="question">
-          <div id="question-10" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+          <div class="box-title question-title" id="question-10" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
           <ol>
             <li>What is the length of the longest contig in ERR2231568? And in ERR2231572?</li>
@@ -1457,7 +1442,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
           </ol>
 
           <blockquote class="solution">
-            <div id="solution-10" class="box-title"><button type="button" aria-controls="solution-10-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+            <div class="box-title solution-title" id="solution-10"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-10-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
             <ol>
               <li>63,871 bp in ERR2231568 and 65,608 for ERR2231572.</li>
@@ -1481,7 +1466,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
         </ul>
 
         <blockquote class="question">
-          <div id="question-11" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+          <div class="box-title question-title" id="question-11" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
           <ol>
             <li>What is N50 for ERR2231568? And for ERR2231572?</li>
@@ -1489,7 +1474,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
           </ol>
 
           <blockquote class="solution">
-            <div id="solution-11" class="box-title"><button type="button" aria-controls="solution-11-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+            <div class="box-title solution-title" id="solution-11"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-11-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
             <ol>
               <li>921 for ERR2231568 and 1,233 for ERR2231572.</li>
@@ -1517,14 +1502,14 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
         <p>If we take the previous example in N50, L50 = 3.</p>
 
         <blockquote class="question">
-          <div id="question-12" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+          <div class="box-title question-title" id="question-12" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
           <ol>
             <li>What is the L50 for ERR2231568? And for ERR2231572?</li>
           </ol>
 
           <blockquote class="solution">
-            <div id="solution-12" class="box-title"><button type="button" aria-controls="solution-12-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+            <div class="box-title solution-title" id="solution-12"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-12-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
             <ol>
               <li>17,280 for ERR2231568 and 7,496 for ERR2231572.</li>
@@ -1539,24 +1524,24 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
 
 <h1 id="visualization-of-the-de-novo-assembly-graph">Visualization of the <em>de novo</em> assembly graph</h1>
 
-<p>Current metagenome assemblers like MEGAHIT and MetaSPAdes use <strong>graphs</strong>, most typically a de Bruijn graph to stich <span class="notranslate">reads</span> together. In an ideal case, the graph would contain one distinct path for each genome of each micro-organisms, but complexities such as repeated sequences usually prevent this.</p>
+<p>Current metagenome assemblers like MEGAHIT and MetaSPAdes use <strong>graphs</strong>, most typically a de Bruijn graph to stich reads together. In an ideal case, the graph would contain one distinct path for each genome of each micro-organisms, but complexities such as repeated sequences usually prevent this.</p>
 
-<p>Assembly graphs contain then <strong>branching structures</strong>: one node may lead into multiple others. <strong>Contigs</strong> correspond to the longest sequences in the graph that can be determined unambiguously. They are the final results of most assembler. But the assembly graph contains more information. It can be useful for finding sections of the graph, such as r<span class="notranslate">RNA</span>, or to try to find parts of a genome.</p>
+<p>Assembly graphs contain then <strong>branching structures</strong>: one node may lead into multiple others. <strong>Contigs</strong> correspond to the longest sequences in the graph that can be determined unambiguously. They are the final results of most assembler. But the assembly graph contains more information. It can be useful for finding sections of the graph, such as rRNA, or to try to find parts of a genome.</p>
 
 <p><strong>Bandage</strong> (<span class="citation"><a href="#wick2015bandage">Wick <i>et al.</i> 2015</a></span>) is a tool creating interactive visualisations of assembly graphs.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-visualization-the-assembly-graph" class="box-title" aria-label="hands-on box: Visualization the assembly graph"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Visualization the assembly graph</div>
+  <div class="box-title hands-on-title" id="hands-on-visualization-the-assembly-graph" aria-label="hands-on box: Visualization the assembly graph"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Visualization the assembly graph</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/megahit_contig2fastg/megahit_contig2fastg/1.1.3+galaxy10" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/megahit_contig2fastg/megahit_contig2fastg/1.1.3+galaxy10"><strong>megahit contig2fastg</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/megahit_contig2fastg/megahit_contig2fastg/1.1.3+<span class="notranslate">galaxy</span>10</span></span>  with parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/megahit_contig2fastg/megahit_contig2fastg/1.1.3+galaxy10" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/megahit_contig2fastg/megahit_contig2fastg/1.1.3+galaxy10"><strong>megahit contig2fastg</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/megahit_contig2fastg/megahit_contig2fastg/1.1.3+galaxy10</span></span>  with parameters:
       <ul>
         <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“Contig file”</em>: Output of <strong>MEGAHIT</strong></li>
         <li>
           <p><em>“K-mer length”</em>: <code class="language-plaintext highlighter-rouge">91</code></p>
 
           <blockquote class="comment">
-            <div id="comment-7" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+            <div class="box-title comment-title" id="comment-7" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
             <p>To get the value, you need to</p>
             <ol>
               <li>Go into the <strong>MEGAHIT</strong> output collection</li>
@@ -1568,7 +1553,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
         </li>
       </ul>
     </li>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy4" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy4"><strong>Bandage Image</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+<span class="notranslate">galaxy</span>4</span></span>  with parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy4" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy4"><strong>Bandage Image</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy4</span></span>  with parameters:
       <ul>
         <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“Graphical Fragment Assembly”</em>: Output of <strong>megahit contig2fastg</strong></li>
       </ul>
@@ -1584,15 +1569,15 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
 <p>But it is really hard to read or extract any information from the graph. Let’s inspect the information about the assembly graph</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-visualization-the-de-novo-assembly-graph" class="box-title" aria-label="hands-on box: Visualization the *de novo* assembly graph"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Visualization the *de novo* assembly graph</div>
+  <div class="box-title hands-on-title" id="hands-on-visualization-the-de-novo-assembly-graph" aria-label="hands-on box: Visualization the *de novo* assembly graph"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Visualization the *de novo* assembly graph</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy2" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy2"><strong>Bandage Info</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+<span class="notranslate">galaxy</span>2</span></span>  with parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy2" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy2"><strong>Bandage Info</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy2</span></span>  with parameters:
       <ul>
         <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“Graphical Fragment Assembly”</em>: Output of <strong>megahit contig2fastg</strong></li>
       </ul>
     </li>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3"><strong>Column join</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3</span></span>  with parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3"><strong>Column join</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3</span></span>  with parameters:
       <ul>
         <li><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <em>“Tabular files”</em>: Output of <strong>Bandage Info</strong></li>
       </ul>
@@ -1602,7 +1587,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
 </blockquote>
 
 <blockquote class="question">
-  <div id="question-13" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-13" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
     <li>How many nodes are in the graph for ERR2231568? And for ERR2231572? What does they correspond to?</li>
@@ -1615,7 +1600,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
   </ol>
 
   <blockquote class="solution">
-    <div id="solution-13" class="box-title"><button type="button" aria-controls="solution-13-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-13"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-13-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
       <li>There are 228,719 nodes for ERR2231568 and 122,526 for ERR2231572. They correspond to the number of contigs</li>
@@ -1635,7 +1620,7 @@ https://zenodo.org/record/6958893/files/ERR2231572_quast_report.html
 
 De-replication is the process of identifying sets of genomes that are the "same" in a list of genomes, and removing all but the “best” genome from each redundant set. How similar genomes need to be to be considered “same”, how to determine which genome is “best”, and other important decisions are discussed in [Important Concepts](https://drep.readthedocs.io/en/latest/choosing_parameters.html).
 
-A common use for genome de-replication is the case of individual assembly of metagenomic data. If metagenomic samples are collected in a series, a common way to assemble the short <span class="notranslate">reads</span> is with a “co-assembly”. That is, combining the <span class="notranslate">reads</span> from all samples and assembling them together. The problem with this is assembling similar strains together can severely fragment assemblies, precluding recovery of a good genome bin. An alte<span class="notranslate">rna</span>tive option is to assemble each sample separately, and then “de-replicate” the bins from each assembly to make a final genome set.
+A common use for genome de-replication is the case of individual assembly of metagenomic data. If metagenomic samples are collected in a series, a common way to assemble the short reads is with a “co-assembly”. That is, combining the reads from all samples and assembling them together. The problem with this is assembling similar strains together can severely fragment assemblies, precluding recovery of a good genome bin. An alternative option is to assemble each sample separately, and then “de-replicate” the bins from each assembly to make a final genome set.
 
 <figure id="figure-8"><img src="./images/individual-assembly.png" alt="Image shows the process of individual assembly on two strains and five samples, after individual assembly of samples two samples are chosen for de-replication process. In parallel, co-assembly on all five samples is performed. " width="80%" loading="lazy"><figcaption><span class="figcaption-prefix">Figure 8:</span> Individual assembly followed by de-replication vs co-assembly</figcaption></figure>
 
@@ -1647,7 +1632,7 @@ Individual assembly is a good practice as well as co-assembly. They both have pr
 
 Co-assembly is a more common practice. But in case of co-assembly the genome might be more fragmented afterwards (like it is shown in the figure)  and sometimes it can be less proper. However, it should be decided in every single case which approach to use (co- or individual). More comprehensive information about de-replication you can learn from paper <span class="citation"><a href="#evans2020">Evans and Denef 2020</a></span> to get more intuition about how de-replication works.
 
-> <div id="hands-on-general-list-of-actions-for-de-replication" class="box-title" aria-label="hands-on box: General list of actions for de-replication"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: General list of actions for de-replication</div>
+> <div class="box-title hands-on-title" id="hands-on-general-list-of-actions-for-de-replication" aria-label="hands-on box: General list of actions for de-replication"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: General list of actions for de-replication</div>
 > 1. Create new history
 > 2. Assemble each sample separately using your favorite assembler
 > 3. Perform a co-assembly to catch low-abundance microbes
@@ -1800,19 +1785,21 @@ day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
                    </pre></div></div>
                    </p>
                 </blockquote>
@@ -1853,8 +1840,6 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

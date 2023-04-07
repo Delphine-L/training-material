@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/annotation-with-prokka/slides-plain.html" />
@@ -24,7 +23,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Genome annotation with Prokka" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2023-04-06 00:03:42 +0000" />
+<meta name="DC.date" content="2023-04-07 00:03:52 +0000" />
 <meta name="DC.creator" content="Anna Syme" />
 <meta name="DC.creator" content="Torsten Seemann" />
 <meta name="DC.creator" content="Simon Gladman" />
@@ -33,21 +32,25 @@
         
         
         
-        
-        <meta name="description" content="Genome annotation is a multi-level process that includes ..." />
+        <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Genome annotation with Prokka" />
-        <meta property="og:description" content="Genome annotation is a multi-level process that includes ..." />
+        <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,10 +118,6 @@
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
         
-        <a class="dropdown-item" href="/training-material/topics/genome-annotation/faqs/" title="Check our FAQs for the Genome Annotation topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
             <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
@@ -161,27 +160,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -220,6 +206,7 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         <section class="tutorial">
 	<a href="https://github.com/galaxyproject/training-material/blob/main//topics/genome-annotation/tutorials/annotation-with-prokka/slides.html">View markdown source on GitHub</a>
@@ -228,7 +215,7 @@
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/annasyme/" class="contributor-badge contributor-annasyme"><img src="https://avatars.githubusercontent.com/annasyme?s=27" alt="Avatar">Anna Syme</a><a href="/training-material/hall-of-fame/tseemann/" class="contributor-badge contributor-tseemann"><img src="https://avatars.githubusercontent.com/tseemann?s=27" alt="Avatar">Torsten Seemann</a><a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge contributor-slugger70"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/slugger70?s=27" alt="Avatar">Simon Gladman</a>
+		Authors: <a href="/training-material/hall-of-fame/annasyme/" class="contributor-badge contributor-annasyme"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/annasyme?s=27" alt="Avatar">Anna Syme</a><a href="/training-material/hall-of-fame/tseemann/" class="contributor-badge contributor-tseemann"><img src="https://avatars.githubusercontent.com/tseemann?s=27" alt="Avatar">Torsten Seemann</a><a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge contributor-slugger70"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/slugger70?s=27" alt="Avatar">Simon Gladman</a>
 	</div>
 
 </div>
@@ -265,7 +252,7 @@
 
 		
 
-		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Apr 6, 2023 </div>
+		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Apr 7, 2023 </div>
 
 	<hr />
 
@@ -338,7 +325,7 @@ display the other window
 <hr />
 
 <h3 id="first-assemble-the-genome">First: assemble the genome</h3>
-<p><img src="../../images/contigs.png" alt="annotation pic. " loading="lazy" /></p>
+<p><img src="../../images/contigs.png" alt="annotation pic" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -350,7 +337,7 @@ display the other window
 <hr />
 
 <h3 id="then-annotate">Then: annotate</h3>
-<p><img src="../../images/seq_annotation.jpg" alt="annotation pic. " loading="lazy" /></p>
+<p><img src="../../images/seq_annotation.jpg" alt="annotation pic" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -363,7 +350,7 @@ display the other window
 <hr />
 
 <h3 id="annotation">Annotation</h3>
-<p><img src="../../images/annotation_details.png" alt="annotation pic. " loading="lazy" /></p>
+<p><img src="../../images/annotation_details.png" alt="annotation pic" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -399,7 +386,7 @@ display the other window
 <hr />
 
 <h3 id="prokka">Prokka</h3>
-<p><img src="../../images/prokka_pipeline.png" alt="annotation pic. " loading="lazy" /></p>
+<p><img src="../../images/prokka_pipeline.png" alt="annotation pic" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -417,7 +404,7 @@ display the other window
 
 <hr />
 <h3 id="more-information">More information</h3>
-<p>Galaxy Training Network Slides: <a href="../../slides/introduction.html">Introduction to Genome Annotation</a></p>
+<p>Galaxy Training Network Slides: <a href="../introduction/slides.html">Introduction to Genome Annotation</a></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -473,7 +460,7 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
         </p>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/bf603e8fe230f5085d78111456044319ff76cb0a">bf603e8fe230f5085d78111456044319ff76cb0a</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/7ea653060476a45e3ea7aed76c459f7e447264fc">7ea653060476a45e3ea7aed76c459f7e447264fc</a></p>
     </div>
 </footer>
 
@@ -485,8 +472,6 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

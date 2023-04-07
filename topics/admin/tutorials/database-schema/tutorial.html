@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/database-schema/tutorial.html" />
@@ -24,11 +23,10 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Galaxy Database schema" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2022-09-28 13:44:21 +0000" />
+<meta name="DC.date" content="2023-01-23 14:28:11 +0000" />
 <meta name="DC.creator" content="Hans-Rudolf Hotz" />
 <meta name="DC.creator" content="Björn Grüning" />
 
-        
         
         
         
@@ -37,217 +35,12 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Galaxy Database schema" />
         <meta property="og:description" content="Resources related to configuration and maintenance of Gal..." />
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+        
+        <meta property="og:image" content="/training-material/assets/images/gat.png" />
 
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/admin" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Galaxy Server administration
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
+        
+        <script type="application/ld+json">
             
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
-        
-        <a class="dropdown-item" href="/training-material/topics/admin/faqs/" title="Check our FAQs for the Galaxy Server administration topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/database-schema/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/admin/tutorials/database-schema/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        <!-- link to feedback -->
-        
-            
-            
-                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-                </a>
-            
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'galaxyproject/admins'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -272,7 +65,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "2022-09-28 13:44:21 +0000",
+  "dateModified": "2023-01-23 14:28:11 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Galaxy Database schema",
   "interactivityType": "mixed",
@@ -437,7 +230,209 @@
     }
   ]
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/admin" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Galaxy Server administration
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/database-schema/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/admin/faqs/" title="Check our FAQs for the Galaxy Server administration topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/database-schema/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/admin/tutorials/database-schema/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'galaxyproject/admins'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-admin">
     <h1 data-toc-skip>Galaxy Database schema</h1>
@@ -503,10 +498,6 @@
         <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
             
-                <li class="btn btn-default supporting_material"><a href="/training-material/topics/admin/slides/introduction.html" title="Topic Overview slides">
-                    <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
-                </a></li>
-            
 
             
 
@@ -551,7 +542,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Sep 28, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jan 23, 2023 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -569,18 +560,18 @@
             <div class="col-sm-10">
                  
 
-                <h1 id="galaxy-database-schema"><span class="notranslate">Galaxy</span> Database Schema</h1>
+                <h1 id="galaxy-database-schema">Galaxy Database Schema</h1>
 
 <h1 id="requirements">Requirements</h1>
 
-<p>For the hands-on examples you need access to a <span class="notranslate">Galaxy</span> server and access to its PostgreSQL database. You can set-up this yourself, or use the <span class="notranslate">Galaxy</span> Docker Image provided by Björn Grüning (https://github.com/bgruening/docker-<span class="notranslate">galaxy</span>-stable). During this tutorial, we will work with the <span class="notranslate">Galaxy</span> Docker Image.</p>
+<p>For the hands-on examples you need access to a Galaxy server and access to its PostgreSQL database. You can set-up this yourself, or use the Galaxy Docker Image provided by Björn Grüning (https://github.com/bgruening/docker-galaxy-stable). During this tutorial, we will work with the Galaxy Docker Image.</p>
 
-<p>Setting up Docker and using the <span class="notranslate">Galaxy</span> Docker Image:
+<p>Setting up Docker and using the Galaxy Docker Image:
 (please do this before the tutorial, preferably when you are still at home using a fast internet connection)</p>
 
 <p>Follow the instruction to install the Docker engine: https://docs.docker.com/engine/installation/ <br />
-Execute:  docker run -d -p 8080:80 bgruening/<span class="notranslate">galaxy</span>-stable
-(this will download the <span class="notranslate">Galaxy</span> Docker Image, when executed the first time, and
+Execute:  docker run -d -p 8080:80 bgruening/galaxy-stable
+(this will download the Galaxy Docker Image, when executed the first time, and
 start it)
 Test the Docker image in your web browser: http://localhost:8080
 (see first paragraph of Björn’s introduction, for special cases when using the
@@ -591,26 +582,26 @@ Docker Toolbox on Mac and Windows). Quit by: docker kill NAME (you get the name 
 <h2 id="database-versus-object-model">Database versus Object Model</h2>
 
 <p>The session description is database centric and we’ll be focusing on the relational
-database that backs <span class="notranslate">Galaxy</span> servers.  But that’s only half the picture of the this data.
+database that backs Galaxy servers.  But that’s only half the picture of the this data.
 The other is the object model which is the object-oriented view of this same data.
 The object model is used by the code to manipulate and access the database.
-The translation between the two worlds is handled by an object-relational <span class="notranslate">mapping</span> implemented with SQLAlchemy (https://www.sqlalchemy.org).</p>
+The translation between the two worlds is handled by an object-relational mapping implemented with SQLAlchemy (https://www.sqlalchemy.org).</p>
 
-<p>Today we are covering the database and how to access it with SQL.  We aren’t going to cover the corresponding object model or object relational <span class="notranslate">mapping</span>.</p>
+<p>Today we are covering the database and how to access it with SQL.  We aren’t going to cover the corresponding object model or object relational mapping.</p>
 
 <h2 id="database-platform">Database Platform</h2>
 
-<p>The default out-of-the-box <span class="notranslate">Galaxy</span> installation uses SQLite (https://www.sqlite.org).
-SQLite is a lightweight database management system (DBMS) that can be packaged inside <span class="notranslate">Galaxy</span> and does not require any additional steps at initial setup time.</p>
+<p>The default out-of-the-box Galaxy installation uses SQLite (https://www.sqlite.org).
+SQLite is a lightweight database management system (DBMS) that can be packaged inside Galaxy and does not require any additional steps at initial setup time.</p>
 
-<p>However, SQLite is not the recommended DBMS for running a <span class="notranslate">Galaxy</span> server. The recommended production DMBS for
-<span class="notranslate">Galaxy</span> is PostgreSQL (https://www.postgresql.org). PostgreSQL offers a full set of DBMS features and robust support for multiple simultaneous users.</p>
+<p>However, SQLite is not the recommended DBMS for running a Galaxy server. The recommended production DMBS for
+Galaxy is PostgreSQL (https://www.postgresql.org). PostgreSQL offers a full set of DBMS features and robust support for multiple simultaneous users.</p>
 
 <p>This workshop will be entirely based in PostgreSQL (also referred to as Postgres).</p>
 
-<h2 id="what-is-in-and-not-in-the-galaxy-database">What is in (and not in) the <span class="notranslate">Galaxy</span> database?</h2>
+<h2 id="what-is-in-and-not-in-the-galaxy-database">What is in (and not in) the Galaxy database?</h2>
 
-<p>The <span class="notranslate">Galaxy</span> database contains management information about your server.  The database tracks users, groups, jobs, histories, datasets, workflows and so on.</p>
+<p>The Galaxy database contains management information about your server.  The database tracks users, groups, jobs, histories, datasets, workflows and so on.</p>
 
 <p>What’s not in the database is the data. Datasets are stored outside the database. The database does keep metadata – information about the datasets such as data type. The tools themselves are not stored in the database either.</p>
 
@@ -620,7 +611,7 @@ SQLite is a lightweight database management system (DBMS) that can be packaged i
 
 <p>Entity-relationship diagrams are a way to understand tables and the relationships between them
 inside a relational database.  SchemaSpy (http://schemaspy.org) is a free (and remarkable tool) for
-generating ER diagrams. Here’s a <a href="../../images/galaxy_schema.png">diagram of the <span class="notranslate">Galaxy</span> database</a>
+generating ER diagrams. Here’s a <a href="../../images/galaxy_schema.png">diagram of the Galaxy database</a>
 (generated by SchemaSpy on June 6 2020; 6Mb).</p>
 
 <p>The “Tables” tab is a good place to start learning the structure of the database.  Each table represents a different type of thing, and often that thing is itself a relationship. For example, each record in the dataset table has information about a specific dataset, while records in the history_dataset_association table have information about what histories that dataset is in.</p>
@@ -630,7 +621,7 @@ generating ER diagrams. Here’s a <a href="../../images/galaxy_schema.png">diag
 <p>Also see the “Run SchemaSpy in this container” section below for how to install and then run SchemaSpy yourself.</p>
 
 <h4 id="database-conventions">Database conventions</h4>
-<p>The <span class="notranslate">Galaxy</span> database uses a number of naming and design conventions.  Understanding these can make navigating the database much easier.</p>
+<p>The Galaxy database uses a number of naming and design conventions.  Understanding these can make navigating the database much easier.</p>
 
 <h4 id="id-attributes">id attributes</h4>
 <p>Every table has an id column that uniquely identifies each row.  (The id column is the primary key in database terminology.) Beyond uniquely identifying a row in the table, ID values have no meaning.  ID values are unique within a table, but not across the database.</p>
@@ -639,7 +630,7 @@ generating ER diagrams. Here’s a <a href="../../images/galaxy_schema.png">diag
 <p>Relationships between tables are implemented by exporting id columns from one table into another.  Imported ids are called foreign keys in database nomenclature, and are uniformly named
    table_the_id_came_from_id</p>
 
-<p>There are a few notable exceptions to this rule.  If the ID is from a table that is prefixed with <span class="notranslate">galaxy</span>_, for example, <span class="notranslate">galaxy</span>_user or <span class="notranslate">galaxy</span>_session, the  <span class="notranslate">galaxy</span>_ will be dropped from the column name.  For example, <span class="notranslate">galaxy</span>_user.id becomes user_id in the over 50 tables it is imported into</p>
+<p>There are a few notable exceptions to this rule.  If the ID is from a table that is prefixed with galaxy_, for example, galaxy_user or galaxy_session, the  galaxy_ will be dropped from the column name.  For example, galaxy_user.id becomes user_id in the over 50 tables it is imported into</p>
 
 <h4 id="relationship-tables">Relationship tables</h4>
 
@@ -651,24 +642,24 @@ generating ER diagrams. Here’s a <a href="../../images/galaxy_schema.png">diag
 We have no idea.  In practice, they aren’t nulls in most of those columns.</p>
 
 <p>Why aren’t there comments, on anything?
-PostgreSQL supports comments to table definitions, but there are none shown in the SchemaSpy report. Why? The table definitions are actually generated by SQLAlchemy, the object-relational <span class="notranslate">mapping</span> software used by <span class="notranslate">Galaxy</span>, and SQLAlchemy does not support it.</p>
+PostgreSQL supports comments to table definitions, but there are none shown in the SchemaSpy report. Why? The table definitions are actually generated by SQLAlchemy, the object-relational mapping software used by Galaxy, and SQLAlchemy does not support it.</p>
 
 <p>There is nothing in the database that results from direct manipulation of the table definitions through DDL.  Everything comes in through SQLAlchemy.</p>
 
-<h2 id="start-docker-and-galaxy">Start Docker and <span class="notranslate">Galaxy</span></h2>
+<h2 id="start-docker-and-galaxy">Start Docker and Galaxy</h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on" class="box-title" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
 
   <ol>
-    <li>Start the <span class="notranslate">Galaxy</span> Docker Image -  this time as an interactive session</li>
+    <li>Start the Galaxy Docker Image -  this time as an interactive session</li>
   </ol>
 
-  <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      docker run <span class="nt">-i</span> <span class="nt">-t</span> <span class="nt">-p</span> 8080:80 bgruening/<span class="notranslate">galaxy</span>-stable /bin/bash
+  <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      docker run <span class="nt">-i</span> <span class="nt">-t</span> <span class="nt">-p</span> 8080:80 bgruening/galaxy-stable /bin/bash
 </code></pre></div>  </div>
 
   <ol>
-    <li>Start <span class="notranslate">Galaxy</span> and its PostgreSQL server</li>
+    <li>Start Galaxy and its PostgreSQL server</li>
   </ol>
 
   <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      startup <span class="o">&gt;</span> log 2&gt;&amp;1 &amp;
@@ -685,14 +676,14 @@ PostgreSQL supports comments to table definitions, but there are none shown in t
 <h2 id="important-tables">Important tables</h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-1" class="box-title" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-1" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
 
   <ol>
-    <li>Connect to the PostgreSQL database (change to user <span class="notranslate">galaxy</span> first)</li>
+    <li>Connect to the PostgreSQL database (change to user galaxy first)</li>
   </ol>
 
-  <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       su <span class="notranslate">galaxy</span>
-       psql <span class="nt">-d</span> <span class="notranslate">galaxy</span> <span class="nt">-U</span> <span class="notranslate">galaxy</span>
+  <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       su galaxy
+       psql <span class="nt">-d</span> galaxy <span class="nt">-U</span> galaxy
 </code></pre></div>  </div>
 
   <ol>
@@ -705,37 +696,37 @@ PostgreSQL supports comments to table definitions, but there are none shown in t
 
 <p>Enter <code class="language-plaintext highlighter-rouge">q</code> to exit the view results page, and space to see the next results page.</p>
 
-<h3 id="table-galaxy_user">Table “<span class="notranslate">galaxy</span>_user”</h3>
+<h3 id="table-galaxy_user">Table “galaxy_user”</h3>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-hands-on" class="box-title" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-2" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
 
-  <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n"><span class="notranslate">galaxy</span>_user</span><span class="p">;</span>
+  <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">galaxy_user</span><span class="p">;</span>
 </code></pre></div>  </div>
 </blockquote>
 
-<p>As described in Björn’s introduction, an Admin user is already pre-set (email: ‘admin@<span class="notranslate">galaxy</span>.org’, password: ‘admin’). Now let’s add (i.e. register) a new user via the <span class="notranslate">Galaxy</span> website. And check the database:</p>
+<p>As described in Björn’s introduction, an Admin user is already pre-set (email: ‘admin@galaxy.org’, password: ‘admin’). Now let’s add (i.e. register) a new user via the Galaxy website. And check the database:</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-hands-on-1" class="box-title" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-3" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
 
-  <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n"><span class="notranslate">galaxy</span>_user</span><span class="p">;</span>
+  <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">galaxy_user</span><span class="p">;</span>
 </code></pre></div>  </div>
 </blockquote>
 
 <h3 id="table-job">Table “job”</h3>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-hands-on-2" class="box-title" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-4" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
 
   <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">job</span><span class="p">;</span>
 </code></pre></div>  </div>
 </blockquote>
 
-<p>Run a few jobs on the <span class="notranslate">galaxy</span> website (e.g <em>upload file</em> a simple table and <em>add column</em> with ‘Iterate’ no and yes) and check the database again:</p>
+<p>Run a few jobs on the galaxy website (e.g <em>upload file</em> a simple table and <em>add column</em> with ‘Iterate’ no and yes) and check the database again:</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-hands-on-3" class="box-title" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-5" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
 
   <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">job</span> <span class="err">\</span><span class="n">x</span><span class="err">\</span><span class="k">g</span><span class="err">\</span><span class="n">x</span>
 </code></pre></div>  </div>
@@ -744,7 +735,7 @@ PostgreSQL supports comments to table definitions, but there are none shown in t
 <h3 id="table-job_parameter">Table “job_parameter”</h3>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-hands-on-4" class="box-title" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-6" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
 
   <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">job_parameter</span><span class="p">;</span>
 </code></pre></div>  </div>
@@ -753,7 +744,7 @@ PostgreSQL supports comments to table definitions, but there are none shown in t
 <h3 id="table-history">Table “history”</h3>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-hands-on-5" class="box-title" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-7" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
 
   <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">history</span><span class="p">;</span>
 </code></pre></div>  </div>
@@ -764,7 +755,7 @@ PostgreSQL supports comments to table definitions, but there are none shown in t
 <h3 id="table-dataset">Table “dataset”</h3>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-hands-on-6" class="box-title" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-8" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
 
   <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">dataset</span><span class="p">;</span>
 </code></pre></div>  </div>
@@ -773,7 +764,7 @@ PostgreSQL supports comments to table definitions, but there are none shown in t
 <h3 id="table-history_dataset_association">Table “history_dataset_association”</h3>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-hands-on-7" class="box-title" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-9" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
 
   <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">history_dataset_association</span><span class="p">;</span>
 </code></pre></div>  </div>
@@ -792,7 +783,7 @@ PostgreSQL supports comments to table definitions, but there are none shown in t
 <p>You can add the numbers per month from the reports, or:</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-hands-on-8" class="box-title" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-10" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
   <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="k">select</span> <span class="n">j</span><span class="p">.</span><span class="n">id</span><span class="p">,</span> <span class="n">j</span><span class="p">.</span><span class="n">create_time</span> <span class="k">from</span> <span class="n">job</span> <span class="n">j</span> <span class="k">limit</span> <span class="mi">5</span><span class="p">;</span>
 </code></pre></div>  </div>
 
@@ -808,14 +799,14 @@ PostgreSQL supports comments to table definitions, but there are none shown in t
 
   <p>…and now include the user</p>
 
-  <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       <span class="k">select</span> <span class="k">count</span><span class="p">(</span><span class="n">j</span><span class="p">.</span><span class="n">id</span><span class="p">)</span> <span class="k">from</span> <span class="n">job</span> <span class="n">j</span><span class="p">,</span> <span class="n"><span class="notranslate">galaxy</span>_user</span> <span class="n">u</span>
+  <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       <span class="k">select</span> <span class="k">count</span><span class="p">(</span><span class="n">j</span><span class="p">.</span><span class="n">id</span><span class="p">)</span> <span class="k">from</span> <span class="n">job</span> <span class="n">j</span><span class="p">,</span> <span class="n">galaxy_user</span> <span class="n">u</span>
           <span class="k">where</span> <span class="n">j</span><span class="p">.</span><span class="n">user_id</span> <span class="o">=</span> <span class="n">u</span><span class="p">.</span><span class="n">id</span>
           <span class="k">and</span> <span class="n">u</span><span class="p">.</span><span class="n">email</span> <span class="o">=</span> <span class="s1">'hansrudolf.hotz@fmi.ch'</span>
           <span class="k">and</span> <span class="k">EXTRACT</span><span class="p">(</span><span class="nb">year</span> <span class="k">FROM</span> <span class="n">j</span><span class="p">.</span><span class="n">create_time</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
           <span class="k">and</span> <span class="n">j</span><span class="p">.</span><span class="n">tool_id</span><span class="o">=</span><span class="s1">'upload1'</span><span class="p">;</span>
 </code></pre></div>  </div>
 
-  <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       <span class="k">select</span> <span class="n">u</span><span class="p">.</span><span class="n">email</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">from</span> <span class="n">job</span> <span class="n">j</span><span class="p">,</span> <span class="n"><span class="notranslate">galaxy</span>_user</span> <span class="n">u</span>
+  <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       <span class="k">select</span> <span class="n">u</span><span class="p">.</span><span class="n">email</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">from</span> <span class="n">job</span> <span class="n">j</span><span class="p">,</span> <span class="n">galaxy_user</span> <span class="n">u</span>
           <span class="k">where</span> <span class="n">j</span><span class="p">.</span><span class="n">user_id</span> <span class="o">=</span> <span class="n">u</span><span class="p">.</span><span class="n">id</span>
           <span class="k">and</span> <span class="k">EXTRACT</span><span class="p">(</span><span class="nb">year</span> <span class="k">FROM</span> <span class="n">j</span><span class="p">.</span><span class="n">create_time</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2016</span>
           <span class="k">and</span> <span class="n">j</span><span class="p">.</span><span class="n">tool_id</span><span class="o">=</span><span class="s1">'upload1'</span>
@@ -831,7 +822,7 @@ all the users who have used the broken version, without alerting users who never
 <p>The following example is from the development server at the FMI</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-2" class="box-title" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-11" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
   <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="k">select</span> <span class="k">distinct</span><span class="p">(</span><span class="n">j</span><span class="p">.</span><span class="n">tool_version</span><span class="p">)</span> <span class="k">from</span> <span class="n">job</span> <span class="n">j</span>
           <span class="k">where</span> <span class="n">j</span><span class="p">.</span><span class="n">tool_id</span> <span class="o">=</span> <span class="s1">'qAlign'</span><span class="p">;</span>
 </code></pre></div>  </div>
@@ -841,7 +832,7 @@ all the users who have used the broken version, without alerting users who never
           <span class="k">and</span> <span class="n">j</span><span class="p">.</span><span class="n">tool_version</span> <span class="o">=</span> <span class="s1">'1.0.4quasr'</span><span class="p">;</span>
 </code></pre></div>  </div>
 
-  <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="k">select</span> <span class="n">u</span><span class="p">.</span><span class="n">email</span><span class="p">,</span> <span class="n">j</span><span class="p">.</span><span class="n">create_time</span> <span class="k">from</span> <span class="n">job</span> <span class="n">j</span><span class="p">,</span> <span class="n"><span class="notranslate">galaxy</span>_user</span> <span class="n">u</span>
+  <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="k">select</span> <span class="n">u</span><span class="p">.</span><span class="n">email</span><span class="p">,</span> <span class="n">j</span><span class="p">.</span><span class="n">create_time</span> <span class="k">from</span> <span class="n">job</span> <span class="n">j</span><span class="p">,</span> <span class="n">galaxy_user</span> <span class="n">u</span>
           <span class="k">where</span> <span class="n">j</span><span class="p">.</span><span class="n">user_id</span> <span class="o">=</span> <span class="n">u</span><span class="p">.</span><span class="n">id</span>
           <span class="k">and</span> <span class="n">j</span><span class="p">.</span><span class="n">tool_id</span> <span class="o">=</span> <span class="s1">'qAlign'</span>
           <span class="k">and</span> <span class="n">j</span><span class="p">.</span><span class="n">tool_version</span> <span class="o">=</span> <span class="s1">'1.0.4quasr'</span><span class="p">;</span>
@@ -851,14 +842,14 @@ all the users who have used the broken version, without alerting users who never
 <h2 id="all-users-running-a-job-using-a-certain-parameter">All users running a job using a certain parameter</h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-3" class="box-title" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-12" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
 
   <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="k">select</span> <span class="n">jp</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">jp</span><span class="p">.</span><span class="n">value</span>  <span class="k">from</span> <span class="n">job_parameter</span> <span class="n">jp</span>
           <span class="k">where</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">'iterate'</span><span class="nv">`
 </span></code></pre></div>  </div>
 
   <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="k">select</span> <span class="n">u</span><span class="p">.</span><span class="n">email</span><span class="p">,</span> <span class="n">jp</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">jp</span><span class="p">.</span><span class="n">value</span>
-          <span class="k">from</span> <span class="n">job_parameter</span> <span class="n">jp</span><span class="p">,</span> <span class="n">job</span> <span class="n">j</span><span class="p">,</span> <span class="n"><span class="notranslate">galaxy</span>_user</span> <span class="n">u</span>
+          <span class="k">from</span> <span class="n">job_parameter</span> <span class="n">jp</span><span class="p">,</span> <span class="n">job</span> <span class="n">j</span><span class="p">,</span> <span class="n">galaxy_user</span> <span class="n">u</span>
           <span class="k">where</span> <span class="n">jp</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'iterate'</span>
           <span class="k">and</span> <span class="n">j</span><span class="p">.</span><span class="n">tool_id</span> <span class="o">=</span> <span class="s1">'addValue'</span>
           <span class="k">and</span> <span class="n">jp</span><span class="p">.</span><span class="n">job_id</span> <span class="o">=</span> <span class="n">j</span><span class="p">.</span><span class="n">id</span>
@@ -870,7 +861,7 @@ all the users who have used the broken version, without alerting users who never
 <h2 id="close-postgresql-client-and-quit-docker">Close PostgreSQL client and quit docker</h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-4" class="box-title" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-13" aria-label="hands-on box: "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on</div>
   <p>Close the PostgreSQL client</p>
 
   <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="err">\</span><span class="n">q</span>
@@ -889,7 +880,7 @@ all the users who have used the broken version, without alerting users who never
 
 <p>Slides: https://docs.google.com/presentation/d/1N3BDNQT3s7eQEO3BO89TQbTYwKp92fxHDRWQwC-T1kA</p>
 
-<p>https://wiki.<span class="notranslate">galaxy</span>project.org/Community/Log/2015/MySQL2PostgreSQL</p>
+<p>https://wiki.galaxyproject.org/Community/Log/2015/MySQL2PostgreSQL</p>
 
 <h4 id="is-there-ever-a-need-to-manually-change-the-contents-of-a-table">Is there ever a need to manually change the contents of a table</h4>
 
@@ -901,7 +892,7 @@ https://docs.google.com/presentation/d/1l4DD0IaJjuvk1zAT1Sjv26bLyrSOg3VUm7rD-TQl
 <p>To run SchemaSpy in your container you’ll need to get it, and also install some required software packages.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-schema-spy" class="box-title" aria-label="hands-on box: Schema Spy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Schema Spy</div>
+  <div class="box-title hands-on-title" id="hands-on-schema-spy" aria-label="hands-on box: Schema Spy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Schema Spy</div>
   <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  wget https://github.com/schemaspy/schemaspy/releases/download/v6.1.0/schemaspy-6.1.0.jar
   apt-get update
   apt-get <span class="nb">install </span>libpostgresql-jdbc-java
@@ -909,7 +900,7 @@ https://docs.google.com/presentation/d/1l4DD0IaJjuvk1zAT1Sjv26bLyrSOg3VUm7rD-TQl
 </code></pre></div>  </div>
 
   <p>To run SchemaSpy:</p>
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  java -jar schemaspy-6.1.0.jar -t pgsql -db <span class="notranslate">galaxy</span> -u <span class="notranslate">galaxy</span> -host localhost -s public -dp /usr/share/java/postgresql-jdbc4-9.2.jar -o SpyOut
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  java -jar schemaspy-6.1.0.jar -t pgsql -db galaxy -u galaxy -host localhost -s public -dp /usr/share/java/postgresql-jdbc4-9.2.jar -o SpyOut
 </code></pre></div>  </div>
 
 </blockquote>
@@ -918,7 +909,7 @@ https://docs.google.com/presentation/d/1l4DD0IaJjuvk1zAT1Sjv26bLyrSOg3VUm7rD-TQl
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p>There is a lot of information stored in the <span class="notranslate">Galaxy</span> database. Use this information for trouble shooting when necessary and use it as a source for extended user statistics.</p>
+<p>There is a lot of information stored in the Galaxy database. Use this information for trouble shooting when necessary and use it as a source for extended user statistics.</p>
 
 
                 
@@ -1015,19 +1006,21 @@ day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/database-schema/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
                    </pre></div></div>
                    </p>
                 </blockquote>
@@ -1065,8 +1058,6 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

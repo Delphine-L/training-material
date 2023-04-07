@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html" />
@@ -24,7 +23,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="M. tuberculosis Variant Analysis" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2022-11-28 10:10:13 +0000" />
+<meta name="DC.date" content="2023-03-05 09:19:48 +0000" />
 <meta name="DC.creator" content="Peter van Heusden" />
 <meta name="DC.creator" content="Simon Gladman" />
 <meta name="DC.creator" content="Thoba Lose" />
@@ -33,222 +32,16 @@
         
         
         
-        
         <meta name="description" content="Genetic differences (variants) between healthy and diseas..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: M. tuberculosis Variant Analysis" />
         <meta property="og:description" content="Genetic differences (variants) between healthy and diseas..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/variant-analysis" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Variant Analysis
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
+        
+        <script type="application/ld+json">
             
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
-        
-        <a class="dropdown-item" href="/training-material/topics/variant-analysis/faqs/" title="Check our FAQs for the Variant Analysis topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        <!-- link to feedback -->
-        
-            
-            
-                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-                </a>
-            
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -273,7 +66,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "2022-11-28 10:10:13 +0000",
+  "dateModified": "2023-03-05 09:19:48 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "M. tuberculosis Variant Analysis",
   "interactivityType": "mixed",
@@ -563,7 +356,209 @@
   ],
   "educationalLevel": "Intermediate"
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/variant-analysis" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Variant Analysis
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/variant-analysis/faqs/" title="Check our FAQs for the Variant Analysis topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-variant-analysis">
     <h1 data-toc-skip>M. tuberculosis Variant Analysis</h1>
@@ -646,6 +641,8 @@
                     
                         
                     
+                        
+                    
                 
                     
                         
@@ -661,6 +658,8 @@
                                 
                             
                             </li>
+                        
+                    
                         
                     
                         
@@ -701,17 +700,13 @@
         <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
             
-                <li class="btn btn-default supporting_material"><a href="/training-material/topics/variant-analysis/slides/introduction.html" title="Topic Overview slides">
-                    <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
-                </a></li>
-            
 
             
                 <li class="btn btn-default supporting_material">
 
 
 <a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.3496437">
-    <i class="far fa-copy" aria-hidden="true"></i> Datasets
+    <i class="far fa-copy" aria-hidden="true"></i>&nbsp;Datasets
 </a>
 
 </li>
@@ -722,7 +717,7 @@
 
 
     <a class="btn btn-default topic-icon" href="/training-material/topics/variant-analysis/tutorials/tb-variant-analysis/workflows/" title="Workflows" alt="M. tuberculosis Variant Analysis workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
+        <i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Workflows
     </a>
 
 </li>
@@ -812,6 +807,8 @@
             </a>
         </li>
     
+    
+        
     
         
     
@@ -985,7 +982,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Nov 28, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 5, 2023 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -1019,7 +1016,7 @@ as RefSeq entry <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962.3/">NC_0
 <p>The data for today is a sample of <em>M. tuberculosis</em> <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJEB18529">collected</a> from a <a href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-017-0834-4">southern African patient</a>. In addition to the bacterial sequence sample we will work with a Genbank format version of the genome of the <a href="https://www.nature.com/articles/ng.590">inferred</a> most recent common <a href="https://zenodo.org/record/3497110">ancestor</a> of the M. tuberculosis complex which is combined with the annotation of the H37Rv reference sequence. This ancestral genome only differs from the H37Rv version 3 genome (<a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962.3">NC_000962.3</a>) by the insertion of SNPs to try and model the ancestor of all lineages of Mtb.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-get-the-data" class="box-title" aria-label="hands-on box: Get the data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Get the data</div>
+  <div class="box-title hands-on-title" id="hands-on-get-the-data" aria-label="hands-on box: Get the data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Get the data</div>
 
   <ol>
     <li><span class="tool" data-tool="upload1" title="Tested with upload1"><strong>Import</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: upload1</span></span>  the following files from <a href="https://doi.org/10.5281/zenodo.3960260">Zenodo</a> or from the shared data library
@@ -1030,9 +1027,9 @@ https://zenodo.org/record/3960260/files/Mycobacterium_tuberculosis_h37rv.ASM1959
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-via-links" class="box-title"><button type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-data-from-a-data-library" class="box-title"><button type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-data-from-a-data-library"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>As an alternative to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>   <ul>   <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>   <li>Navigate to  the correct folder as indicated by your instructor</li>   <li>Select the desired files</li>   <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>   <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>   <li>Click on <strong>Import</strong></li> </ul> </blockquote>
     </li>
   </ol>
 
@@ -1041,10 +1038,10 @@ https://zenodo.org/record/3960260/files/Mycobacterium_tuberculosis_h37rv.ASM1959
 <h1 id="quality-control">Quality control</h1>
 
 <p>This step serves the purpose of identifying possible issues with the raw
-sequenced <span class="notranslate">reads</span> input data before embarking on any “real” analysis steps.</p>
+sequenced reads input data before embarking on any “real” analysis steps.</p>
 
 <p>Some of the typical problems with NGS data can be mitigated by preprocessing
-affected sequencing <span class="notranslate">reads</span> before trying to map them to the reference genome.
+affected sequencing reads before trying to map them to the reference genome.
 Detecting some other, more severe problems early on may at least save you a lot
 of time spent on analyzing low-quality data that is not worth the effort.</p>
 
@@ -1054,18 +1051,18 @@ of NGS data quality control, you may want to have a look at the dedicated
 tutorial on <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html">“Quality control”</a>.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-quality-control-of-the-input-datasets" class="box-title" aria-label="hands-on box: Quality control of the input datasets"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Quality control of the input datasets</div>
+  <div class="box-title hands-on-title" id="hands-on-quality-control-of-the-input-datasets" aria-label="hands-on box: Quality control of the input datasets"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Quality control of the input datasets</div>
 
   <ol>
     <li>
-      <p>Execute <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0"><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+<span class="notranslate">galaxy</span>0</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on both of your fastq datasets</p>
+      <p>Execute <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0"><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0</span></span>  on both of your fastq datasets</p>
 
       <ul>
         <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Short read data from your current history”</em>: select both FASTQ datasets.</li>
       </ul>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-select-multiple-datasets" class="box-title"><button type="button" aria-controls="tip-select-multiple-datasets-contents" aria-expanded="true" aria-label="Toggle tip box: Select multiple datasets"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Select multiple datasets<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ol>  <li>Click on <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <strong>Multiple datasets</strong></li>  <li>Select several files by keeping the <kbd>Ctrl</kbd> (or<kbd>COMMAND</kbd>) key pressed and clicking on the files of interest</li></ol></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-select-multiple-datasets"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-select-multiple-datasets-contents" aria-expanded="true" aria-label="Toggle tip box: Select multiple datasets"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Select multiple datasets<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ol>   <li>Click on <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <strong>Multiple datasets</strong></li>   <li>Select several files by keeping the <kbd>Ctrl</kbd> (or <kbd>COMMAND</kbd>) key pressed and clicking on the files of interest</li> </ol> </blockquote>
 
       <p>The <strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> input form looks like this. You only need to pay attention to the top part
 where <em>Short read data from your current history</em> is selected. Leave all the other parameters at their default
@@ -1081,13 +1078,13 @@ dataset) will get added to your history.</p>
 
 </blockquote>
 
-<p>While one could examine the quality control report for each set of <span class="notranslate">reads</span> (forward and reverse) independently it can be quite useful to inspect them side by side using the <strong>MultiQC</strong> tool.</p>
+<p>While one could examine the quality control report for each set of reads (forward and reverse) independently it can be quite useful to inspect them side by side using the <strong>MultiQC</strong> tool.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-combining-qc-results" class="box-title" aria-label="hands-on box: Combining QC results"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Combining QC results</div>
+  <div class="box-title hands-on-title" id="hands-on-combining-qc-results" aria-label="hands-on box: Combining QC results"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Combining QC results</div>
 
   <ol>
-    <li>Use <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.9+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.9+galaxy1"><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.9+<span class="notranslate">galaxy</span>1</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to aggregate the raw <strong>FastQC</strong> data of all input datasets into one report
+    <li>Use <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.9+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.9+galaxy1"><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.9+galaxy1</span></span>  to aggregate the raw <strong>FastQC</strong> data of all input datasets into one report
       <ul>
         <li>In <em>“Results”</em>
           <ul>
@@ -1104,24 +1101,24 @@ outputs of <strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"><
       </ul>
     </li>
     <li>
-      <p>Using the <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> button, inspect the <em>Webpage</em> output produced by the tool</p>
+      <p>Using the <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">galaxy-eye</span> button, inspect the <em>Webpage</em> output produced by the tool</p>
 
       <blockquote class="question">
-        <div id="question" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+        <div class="box-title question-title" id="question" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
-          <li>Based on the report, do you think preprocessing of the <span class="notranslate">reads</span>
-(trimming and/or filtering) will be necessary before <span class="notranslate">mapping</span>?</li>
+          <li>Based on the report, do you think preprocessing of the reads
+(trimming and/or filtering) will be necessary before mapping?</li>
         </ol>
 
         <blockquote class="solution">
-          <div id="solution" class="box-title"><button type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+          <div class="box-title solution-title" id="solution"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
             <li>Sequence quality is quite good overall. If anything you might
-consider trimming the 3’ ends of <span class="notranslate">reads</span> (base qualities decline
+consider trimming the 3’ ends of reads (base qualities decline
 slightly towards the 3’ ends) or to filter out the small fraction
-of <span class="notranslate">reads</span> with a mean base quality &lt; 5.
+of reads with a mean base quality &lt; 5.
 We will run <strong>Trimmomatic</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on the
 fastq datasets in the next step</li>
           </ol>
@@ -1133,14 +1130,14 @@ fastq datasets in the next step</li>
 
 </blockquote>
 
-<p>As these <span class="notranslate">reads</span> look like they need a bit of trimming, we can turn to the <strong>Trimmomatic</strong> tool to clean up our data.</p>
+<p>As these reads look like they need a bit of trimming, we can turn to the <strong>Trimmomatic</strong> tool to clean up our data.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-quality-trimming" class="box-title" aria-label="hands-on box: Quality trimming"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Quality trimming</div>
+  <div class="box-title hands-on-title" id="hands-on-quality-trimming" aria-label="hands-on box: Quality trimming"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Quality trimming</div>
   <ol>
-    <li>Use <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1" title="Tested with toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1"><strong>Trimmomatic</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to clean up the <span class="notranslate">reads</span> and remove the poor quality sections.
+    <li>Use <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1" title="Tested with toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1"><strong>Trimmomatic</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1</span></span>  to clean up the reads and remove the poor quality sections.
       <ul>
-        <li><em>“Single-end or paired-end <span class="notranslate">reads</span>?”</em>: <code class="language-plaintext highlighter-rouge">Paired End (two separate input files)</code></li>
+        <li><em>“Single-end or paired-end reads?”</em>: <code class="language-plaintext highlighter-rouge">Paired End (two separate input files)</code></li>
         <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Input FASTQ file (R1/first of pair)”</em>: <code class="language-plaintext highlighter-rouge">004-2_1.fastq.gz</code></li>
         <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Input FASTQ file (R2/second of pair)”</em>: <code class="language-plaintext highlighter-rouge">004-2_2.fastq.gz</code></li>
         <li><em>“Select Trimmomatic operation to perform”</em>
@@ -1151,8 +1148,8 @@ fastq datasets in the next step</li>
         </li>
         <li><em>“+Insert Trimmomatic Operation”</em>
           <ul>
-            <li><em>“Select Trimmomatic operation to perform”</em>: <code class="language-plaintext highlighter-rouge">Drop <span class="notranslate">reads</span> below a specified length (MINLEN)</code></li>
-            <li><em>“Minimum length of <span class="notranslate">reads</span> to be kept”</em>: <code class="language-plaintext highlighter-rouge">20</code></li>
+            <li><em>“Select Trimmomatic operation to perform”</em>: <code class="language-plaintext highlighter-rouge">Drop reads below a specified length (MINLEN)</code></li>
+            <li><em>“Minimum length of reads to be kept”</em>: <code class="language-plaintext highlighter-rouge">20</code></li>
           </ul>
         </li>
       </ul>
@@ -1161,17 +1158,17 @@ fastq datasets in the next step</li>
       <p>Inspect the output produced by Trimmomatic</p>
 
       <blockquote class="question">
-        <div id="question-1" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+        <div class="box-title question-title" id="question-1" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
           <li>Why are there 4 output read files instead of 2?</li>
         </ol>
 
         <blockquote class="solution">
-          <div id="solution-1" class="box-title"><button type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+          <div class="box-title solution-title" id="solution-1"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
-            <li>There are 4 output files: Forwards paired and single <span class="notranslate">reads</span> and reverse paired and single <span class="notranslate">reads</span>. The single <span class="notranslate">reads</span> come about when one read in a pair of <span class="notranslate">reads</span> has failed the quality checks and so is deleted. The other half of the pair may still be good and so it is put into the single <span class="notranslate">reads</span> file for the appropriate direction. While un-paired <span class="notranslate">reads</span> might sometimes be useful, paired <span class="notranslate">reads</span> are more useful because both their sequence and the gap between them (the “insert size”) can be used for further analysis. In a typical analysis, only the paired <span class="notranslate">reads</span> are used.</li>
+            <li>There are 4 output files: Forwards paired and single reads and reverse paired and single reads. The single reads come about when one read in a pair of reads has failed the quality checks and so is deleted. The other half of the pair may still be good and so it is put into the single reads file for the appropriate direction. While un-paired reads might sometimes be useful, paired reads are more useful because both their sequence and the gap between them (the “insert size”) can be used for further analysis. In a typical analysis, only the paired reads are used.</li>
           </ol>
 
         </blockquote>
@@ -1180,19 +1177,19 @@ fastq datasets in the next step</li>
   </ol>
 </blockquote>
 
-<p><em>Note:</em> We would normally examine our trimmed <span class="notranslate">reads</span> with <strong>FastQC</strong> and <strong>MultiQC</strong> again to see if the quality trimming has been successful, but in this tutorial we will move straight on to save time.</p>
+<p><em>Note:</em> We would normally examine our trimmed reads with <strong>FastQC</strong> and <strong>MultiQC</strong> again to see if the quality trimming has been successful, but in this tutorial we will move straight on to save time.</p>
 
 <h1 id="look-for-contamination-with-kraken2-optional">Look for contamination with Kraken2 (optional)</h1>
 
-<p>We should also look for contamination in our <span class="notranslate">reads</span>. Sometimes, other sources of <span class="notranslate">DNA</span> accidentally or inadvertantly get mixed in with our sample. Any <span class="notranslate">reads</span> from non-sample sources will confound our SNP analysis. <strong>Kraken2</strong> is an effective way of looking at which species is represented in our <span class="notranslate">reads</span> and so we can easily spot possible contamination of our sample. Unfortunately the tool uses a lot of RAM (typically 50GB when used with the <em>Standard</em> database), so you might want to skip this step if your environment doesn’t have enough computing nodes able to process such jobs. For an example of a probably-contaminated sample that does not use <strong>Kraken2</strong> as part of its analysis, see the optional section on analysing <em>SRR12416842</em> at the end of this tutorial.</p>
+<p>We should also look for contamination in our reads. Sometimes, other sources of DNA accidentally or inadvertantly get mixed in with our sample. Any reads from non-sample sources will confound our SNP analysis. <strong>Kraken2</strong> is an effective way of looking at which species is represented in our reads and so we can easily spot possible contamination of our sample. Unfortunately the tool uses a lot of RAM (typically 50GB when used with the <em>Standard</em> database), so you might want to skip this step if your environment doesn’t have enough computing nodes able to process such jobs. For an example of a probably-contaminated sample that does not use <strong>Kraken2</strong> as part of its analysis, see the optional section on analysing <em>SRR12416842</em> at the end of this tutorial.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-run-kraken2" class="box-title" aria-label="hands-on box: Run Kraken2"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Run Kraken2</div>
+  <div class="box-title hands-on-title" id="hands-on-run-kraken2" aria-label="hands-on box: Run Kraken2"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Run Kraken2</div>
 
   <ol>
-    <li>Execute <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1"><strong>Kraken2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+<span class="notranslate">galaxy</span>1</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
+    <li>Execute <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1"><strong>Kraken2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1</span></span>  with the following parameters
       <ul>
-        <li><em>“Single or paired <span class="notranslate">reads</span>”</em>: <code class="language-plaintext highlighter-rouge">Paired</code></li>
+        <li><em>“Single or paired reads”</em>: <code class="language-plaintext highlighter-rouge">Paired</code></li>
       </ul>
       <ul>
         <li><em>“Forward Strand”</em>: <code class="language-plaintext highlighter-rouge">Trimmomatic on X (R1 paired)</code></li>
@@ -1217,17 +1214,17 @@ fastq datasets in the next step</li>
       <p>Inspect the report produced by Kraken</p>
 
       <blockquote class="question">
-        <div id="question-2" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+        <div class="box-title question-title" id="question-2" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
           <li>Was there any significant contamination of the sample?</li>
         </ol>
 
         <blockquote class="solution">
-          <div id="solution-2" class="box-title"><button type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+          <div class="box-title solution-title" id="solution-2"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
-            <li>Over 85% of the <span class="notranslate">reads</span> here have been positively identified as <em>Mycobacterium</em> (the precise % will differ depending on which version of the Kraken database you are using). The others found were bacteria from the same kingdom. There were no contaminating human or viral sequences detected.</li>
+            <li>Over 85% of the reads here have been positively identified as <em>Mycobacterium</em> (the precise % will differ depending on which version of the Kraken database you are using). The others found were bacteria from the same kingdom. There were no contaminating human or viral sequences detected.</li>
           </ol>
 
         </blockquote>
@@ -1238,9 +1235,9 @@ fastq datasets in the next step</li>
 
 <h1 id="find-variants-with-snippy">Find variants with Snippy</h1>
 
-<p>We will now run the Snippy tool on our <span class="notranslate">reads</span>, comparing them to the reference.</p>
+<p>We will now run the Snippy tool on our reads, comparing them to the reference.</p>
 
-<p>Snippy is a tool for rapid bacterial SNP calling and core genome alignments. Snippy finds SNPs between a haploid reference genome and your NGS sequence <span class="notranslate">reads</span>. It will find both substitutions (SNPs) and insertions/deletions (indels).</p>
+<p>Snippy is a tool for rapid bacterial SNP calling and core genome alignments. Snippy finds SNPs between a haploid reference genome and your NGS sequence reads. It will find both substitutions (SNPs) and insertions/deletions (indels).</p>
 
 <p>If we give Snippy an annotated reference in Genbank format, it will run a tool called SnpEff which will figure out the effect of any changes on the genes and other features. If we just give Snippy the reference sequence alone without the annotations, it will not run SnpEff.</p>
 
@@ -1248,18 +1245,18 @@ fastq datasets in the next step</li>
 gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962.3">H37Rv strain</a> so will use it in this case.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-run-snippy" class="box-title" aria-label="hands-on box: Run Snippy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Run Snippy</div>
+  <div class="box-title hands-on-title" id="hands-on-run-snippy" aria-label="hands-on box: Run Snippy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Run Snippy</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+galaxy0"><strong>Snippy</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+<span class="notranslate">galaxy</span>0</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+galaxy0"><strong>Snippy</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+galaxy0</span></span>  with the following parameters
       <ul>
         <li><em>“Will you select a reference genome from your history or use a built-in index?”</em>: <code class="language-plaintext highlighter-rouge">Use a genome from history and build index</code></li>
         <li><em>“Use the following dataset as the reference sequence”</em>: <code class="language-plaintext highlighter-rouge">Mycobacterium_tuberculosis_ancestral_reference.gbk</code></li>
-        <li><em>“Single or Paired-end <span class="notranslate">reads</span>”</em>: <code class="language-plaintext highlighter-rouge">Paired</code></li>
+        <li><em>“Single or Paired-end reads”</em>: <code class="language-plaintext highlighter-rouge">Paired</code></li>
       </ul>
       <ul>
-        <li><em>“Select first set of <span class="notranslate">reads</span>”</em>: <code class="language-plaintext highlighter-rouge">Trimmomatic on X (R1 paired)</code></li>
-        <li><em>“Select second set of <span class="notranslate">reads</span>”</em>: <code class="language-plaintext highlighter-rouge">Trimmomatic on X (R2 paired)</code></li>
+        <li><em>“Select first set of reads”</em>: <code class="language-plaintext highlighter-rouge">Trimmomatic on X (R1 paired)</code></li>
+        <li><em>“Select second set of reads”</em>: <code class="language-plaintext highlighter-rouge">Trimmomatic on X (R2 paired)</code></li>
       </ul>
     </li>
   </ol>
@@ -1285,7 +1282,7 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
       <p>Inspect the Snippy VCF output</p>
 
       <blockquote class="question">
-        <div id="question-3" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+        <div class="box-title question-title" id="question-3" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
           <li>
@@ -1300,11 +1297,11 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
         </ol>
 
         <blockquote class="solution">
-          <div id="solution-3" class="box-title"><button type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+          <div class="box-title solution-title" id="solution-3"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
             <li>
-              <p>Substitution of a <code class="language-plaintext highlighter-rouge">C</code> to a <code class="language-plaintext highlighter-rouge">T</code>. This variant is supported by 134 <span class="notranslate">reads</span>.</p>
+              <p>Substitution of a <code class="language-plaintext highlighter-rouge">C</code> to a <code class="language-plaintext highlighter-rouge">T</code>. This variant is supported by 134 reads.</p>
             </li>
             <li>
               <p>According to SnpEff, it’s a Synonymous change in Rv0002.</p>
@@ -1320,43 +1317,43 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
   </ol>
 </blockquote>
 
-<p><strong>RECAP</strong>: So far we have taken our sample <span class="notranslate">reads</span>, cleaned them up a bit, checked for taxonomic assocation, compared the <span class="notranslate">reads</span> with our reference sequence and then called variants (SNPs and indels) between our sample and the reference genome. We have tried to mitigate a few errors along the way:</p>
+<p><strong>RECAP</strong>: So far we have taken our sample reads, cleaned them up a bit, checked for taxonomic assocation, compared the reads with our reference sequence and then called variants (SNPs and indels) between our sample and the reference genome. We have tried to mitigate a few errors along the way:</p>
 
 <ol>
   <li>Sequencing errors: these were addressed by the quality trimming step</li>
   <li>Sample contamination: we used <strong>Kraken2</strong> to assess the extent of this problem in our sample</li>
   <li>Appropriate choice of a reference genome: we used a genome that is inferred to be ancestral to all <em>M. tuberculosis</em> for our analysis and the diversity within Mtb is limited enough for us to rely on a single reference genome for the entire species.</li>
-  <li>Quality filtering in the <span class="notranslate">mapping</span> and variant calling stage: Inte<span class="notranslate">rna</span>lly <code class="language-plaintext highlighter-rouge">snippy</code> uses tools like <code class="language-plaintext highlighter-rouge">bwa-mem</code> and <code class="language-plaintext highlighter-rouge">freebayes</code> that judge the quality of their predictions. <code class="language-plaintext highlighter-rouge">snippy</code> then uses this information to perform some filtering on variant calling predictions.</li>
+  <li>Quality filtering in the mapping and variant calling stage: Internally <code class="language-plaintext highlighter-rouge">snippy</code> uses tools like <code class="language-plaintext highlighter-rouge">bwa-mem</code> and <code class="language-plaintext highlighter-rouge">freebayes</code> that judge the quality of their predictions. <code class="language-plaintext highlighter-rouge">snippy</code> then uses this information to perform some filtering on variant calling predictions.</li>
 </ol>
 
 <h1 id="further-variant-filtering-and-tb-profiling">Further variant filtering and TB-profiling</h1>
 
-<p>We still cannot entirely trust the proposed variants. In particular, there are regions of the <em>M. tuberculosis</em> genome that are difficult to effectively map <span class="notranslate">reads</span> to. These include the PE/PPE/PGRS genes, which are highly repetitive, and the IS (insertion sequence sites). Secondly, when an insertion or deletion (indel) occurs in our sample relative to the reference it can cause apparent, but false, single nucleotide variants to appear near the indel. Finally where few <span class="notranslate">reads</span> map to a region of the reference genome, either because of a sequence deletion or because of a high GC content in the genomic region, we cannot be confident about the quality of variant calling in the region. The <code class="language-plaintext highlighter-rouge">TB Variant Filter</code> can help filter out variants based on a variety of criteria, including those listed above.</p>
+<p>We still cannot entirely trust the proposed variants. In particular, there are regions of the <em>M. tuberculosis</em> genome that are difficult to effectively map reads to. These include the PE/PPE/PGRS genes, which are highly repetitive, and the IS (insertion sequence sites). Secondly, when an insertion or deletion (indel) occurs in our sample relative to the reference it can cause apparent, but false, single nucleotide variants to appear near the indel. Finally where few reads map to a region of the reference genome, either because of a sequence deletion or because of a high GC content in the genomic region, we cannot be confident about the quality of variant calling in the region. The <code class="language-plaintext highlighter-rouge">TB Variant Filter</code> can help filter out variants based on a variety of criteria, including those listed above.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-run-snippy-1" class="box-title" aria-label="hands-on box: Run Snippy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Run Snippy</div>
+  <div class="box-title hands-on-title" id="hands-on-run-snippy-1" aria-label="hands-on box: Run Snippy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Run Snippy</div>
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/tb_variant_filter/tb_variant_filter/0.3.5+galaxy2" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/tb_variant_filter/tb_variant_filter/0.3.5+galaxy2"><strong>TB Variant Filter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/tb_variant_filter/tb_variant_filter/0.3.5+<span class="notranslate">galaxy</span>2</span></span> : <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/tb_variant_filter/tb_variant_filter/0.3.6+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/tb_variant_filter/tb_variant_filter/0.3.6+galaxy0"><strong>TB Variant Filter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/tb_variant_filter/tb_variant_filter/0.3.6+galaxy0</span></span>  with the following parameters
       <ul>
-        <li><em>“VCF file to be filter”</em>: <code class="language-plaintext highlighter-rouge">snippy on data XX, data XX, and data XX mapped <span class="notranslate">reads</span> vcf file</code></li>
-        <li><em>“Filters to apply”</em>: Select <code class="language-plaintext highlighter-rouge">Filter variants by region</code>, <code class="language-plaintext highlighter-rouge">Filter variants close to indels</code> and <code class="language-plaintext highlighter-rouge">Filter sites by read alignment depth</code>.</li>
+        <li><em>“VCF file to be filter”</em>: <code class="language-plaintext highlighter-rouge">snippy on data XX, data XX, and data XX mapped reads vcf file</code></li>
+        <li><em>“Filters to apply”</em>: Select <code class="language-plaintext highlighter-rouge">Filter variants by region</code> and <code class="language-plaintext highlighter-rouge">Filter sites by read alignment depth</code>.</li>
       </ul>
     </li>
     <li>
       <p>Open the new VCF file.</p>
 
       <blockquote class="question">
-        <div id="question-4" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+        <div class="box-title question-title" id="question-4" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
           <li>How many of the original variants have now been filtered out?</li>
         </ol>
 
         <blockquote class="solution">
-          <div id="solution-4" class="box-title"><button type="button" aria-controls="solution-4-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+          <div class="box-title solution-title" id="solution-4"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-4-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
-            <li><code class="language-plaintext highlighter-rouge">218</code> (The difference in the number of lines between the snippy vcf file and the filtered vcf file.)</li>
+            <li><code class="language-plaintext highlighter-rouge">159</code> (The difference in the number of lines between the snippy vcf file and the filtered vcf file.)</li>
           </ol>
 
         </blockquote>
@@ -1365,19 +1362,43 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
   </ol>
 </blockquote>
 
-<p>Now that we have a collection of <em>high quality variants</em> we can search them against variants known to be associated with drug resistance. The <em>TB Profiler</em> tool does this using a database of variants curated by Dr Jody Phelan at the London School of Hygiene and Tropical Medicine. It can do its own <span class="notranslate">mapping</span> and variant calling but also accepts mapped <span class="notranslate">reads</span> in BAM format as input. It does its own variant calling and filtering.</p>
+<blockquote class="details">
+  <div class="box-title details-title" id="details-which-filters-to-apply"><button class="gtn-boxify-button details" type="button" aria-controls="details-which-filters-to-apply-contents" aria-expanded="true" aria-label="Toggle details box: Which filters to apply?"><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Details: Which filters to apply?<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+
+  <p>TB Variant Filter tries to provide reasonable defaults for filtering
+variants predicted in the M. tuberculosis
+genome, using multiple different strategies.
+Firstly, certain regions of the Mtb genome
+contain repetitive sequences, e.g. from
+the PE/PPE gene family. Historically all of the genomic regions corresponding to
+those genes were filtered out but 
+the new default draws on work from
+Maximillian Marin and others. This
+list of “refined low confidence” (RLC)
+regions is the current region filter in
+TB Variant Filter for reads over 100 bp.
+If you are using shorter reads (e.g. from Illumina iSeq) the “Refined Low Confidence and Low Mappability” region list should be used instead.
+For more on how these regions were calculated read the <a href="https://academic.oup.com/bioinformatics/article-abstract/38/7/1781/6502279?login=false">paper</a> or <a href="https://www.biorxiv.org/content/10.1101/2021.04.08.438862v3.full">preprint</a>.</p>
+
+  <p>In addition to region filters, filters for variant type, allele frequency, coverage depth and distance from indels are provided.
+Older variant callers struggled to accurately
+call insertions and deletions (indels) but more recent tools (e.g. GATK v4 and the variant caller used in Snippy, Freebayes) no longer have this weakness. One remaining reason to filter SNVs/SNPs near indels is that they might have a different
+evolutionary history to “free standing” SNVs/SNPs, so the “close to indel filter” is still available in TB Variant Filter in case such SNPs/SNVs should be filtered out.</p>
+</blockquote>
+
+<p>Now that we have a collection of <em>high quality variants</em> we can search them against variants known to be associated with drug resistance. The <em>TB Profiler</em> tool does this using a database of variants curated by Dr Jody Phelan at the London School of Hygiene and Tropical Medicine. It can do its own mapping and variant calling but also accepts mapped reads in BAM format as input. It does its own variant calling and filtering.</p>
 
 <p>Finally, TB Variant Report use the COMBAT-TB <a href="https://explorer.sanbi.ac.za">eXplorer</a> <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz658/5554700">database</a> of <em>M. tuberculosis</em> genome annotation to annotate variants in Mtb. It also takes the output of <em>TB Profiler</em> and produces a neat report that is easy to browse and search.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-run-tb-profiler-and-tb-variant-report" class="box-title" aria-label="hands-on box: Run TB Profiler and TB Variant Report"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Run TB Profiler and TB Variant Report</div>
+  <div class="box-title hands-on-title" id="hands-on-run-tb-profiler-and-tb-variant-report" aria-label="hands-on box: Run TB Profiler and TB Variant Report"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Run TB Profiler and TB Variant Report</div>
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/tbprofiler/tb_profiler_profile/4.1.1+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/tbprofiler/tb_profiler_profile/4.1.1+galaxy0"><strong>TB-Profiler profile</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/tbprofiler/tb_profiler_profile/4.1.1+<span class="notranslate">galaxy</span>0</span></span> : <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/tbprofiler/tb_profiler_profile/4.4.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/tbprofiler/tb_profiler_profile/4.4.0+galaxy0"><strong>TB-Profiler profile</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/tbprofiler/tb_profiler_profile/4.4.0+galaxy0</span></span>  with the following parameters
       <ul>
         <li><em>“Input File Type”</em>: <code class="language-plaintext highlighter-rouge">BAM</code></li>
       </ul>
       <ul>
-        <li><em>“Bam”</em>: <code class="language-plaintext highlighter-rouge">snippy on data XX, data XX, and data X mapped <span class="notranslate">reads</span> (bam)</code></li>
+        <li><em>“Bam”</em>: <code class="language-plaintext highlighter-rouge">snippy on data XX, data XX, and data X mapped reads (bam)</code></li>
       </ul>
 
       <p><strong>TB Profiler</strong> produces 3 output files, it’s own VCF file, a report about the sample including it’s likely lineages and any AMR found. There is also a <code class="language-plaintext highlighter-rouge">.json</code> formatted results file.</p>
@@ -1385,14 +1406,14 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
     <li>
       <p>When <em>snippy</em> is run with Genbank format input it prepends <code class="language-plaintext highlighter-rouge">GENE_</code> to gene names in the VCF annotation. This causes a problem for <em>TB Variant report</em>, so we need to edit the output with sed.</p>
 
-      <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1" title="Tested with toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1"><strong>Text transformation with sed</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1</span></span> : <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:</p>
+      <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1" title="Tested with toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1"><strong>Text transformation with sed</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1</span></span>  with the following parameters:</p>
 
       <ul>
         <li><em>“File to process”</em>: <code class="language-plaintext highlighter-rouge">TB Variant Filter on data XX</code></li>
         <li><em>“SED Program”</em>: <code class="language-plaintext highlighter-rouge">s/GENE_//g</code></li>
       </ul>
     </li>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/tbvcfreport/tbvcfreport/0.1.10+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/tbvcfreport/tbvcfreport/0.1.10+galaxy0"><strong>TB Variant Report</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/tbvcfreport/tbvcfreport/0.1.10+<span class="notranslate">galaxy</span>0</span></span> : <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/tbvcfreport/tbvcfreport/0.1.10+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/tbvcfreport/tbvcfreport/0.1.10+galaxy0"><strong>TB Variant Report</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/tbvcfreport/tbvcfreport/0.1.10+galaxy0</span></span>  with the following parameters
       <ul>
         <li><em>“Input SnpEff annotated M.tuberculosis VCF(s)”</em>: <code class="language-plaintext highlighter-rouge">Text transformation on data XX</code></li>
         <li><em>“TBProfiler Drug Resistance Report (Optional)”</em>: <code class="language-plaintext highlighter-rouge">TB-Profiler Profile on data XX: Results.json</code></li>
@@ -1402,7 +1423,7 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
       <p>Open the drug resistance and variant report html files.</p>
 
       <blockquote class="question">
-        <div id="question-5" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+        <div class="box-title question-title" id="question-5" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
           <li>
@@ -1414,14 +1435,14 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
         </ol>
 
         <blockquote class="solution">
-          <div id="solution-5" class="box-title"><button type="button" aria-controls="solution-5-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+          <div class="box-title solution-title" id="solution-5"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-5-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
             <li>
               <p><code class="language-plaintext highlighter-rouge">4</code></p>
             </li>
             <li>
-              <p>Yes, resistance to isoniazid, rifampicin, ethambutol, pyrazinamide and streptomycin as well as to the flouroquinolines (amikacin, capreomycin and kanamycin) is predicted from mutations in the katG, rpoB, embB, pncA, rpsL and rrs (ribosomal <span class="notranslate">RNA</span>) genes respectively.</p>
+              <p>Yes, resistance to isoniazid, rifampicin, ethambutol, pyrazinamide and streptomycin as well as to the flouroquinolines (amikacin, capreomycin and kanamycin) is predicted from mutations in the katG, rpoB, embB, pncA, rpsL and rrs (ribosomal RNA) genes respectively.</p>
             </li>
           </ol>
 
@@ -1433,13 +1454,14 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
 
 <h1 id="view-snippy-output-in-jbrowse">View Snippy output in JBrowse</h1>
 
-<p>We could go through all of the variants in the VCF files and read them out of a text table, but this is onerous and doesn’t really give the context of the changes very well. It would be much nicer to have a visualisation of the SNPs and the other relevant data. In <span class="notranslate">Galaxy</span> we can use a tool called JBrowse.</p>
+<p>We could go through all of the variants in the VCF files and read them out of a text table, but this is onerous and doesn’t really give the context of the changes very well. It would be much nicer to have a visualisation of the SNPs and the other relevant data. In Galaxy we can use a tool called JBrowse.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-run-jbrowse" class="box-title" aria-label="hands-on box: Run JBrowse"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Run JBrowse</div>
+  <div class="box-title hands-on-title" id="hands-on-run-jbrowse" aria-label="hands-on box: Run JBrowse"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Run JBrowse</div>
 
+  <!-- GTN:IGNORE:006 -->
   <ol>
-    <li>Use <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS:%20seqret84/5.0.0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS:%20seqret84/5.0.0"><strong>seqret</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS:%20seqret84/5.0.0</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to convert the Genbank format reference (<code class="language-plaintext highlighter-rouge">Mycobacterium_tuberculosis_ancestral_reference.gbk</code>) to FASTA format. Use the following parameters:
+    <li>Use <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS:%20seqret84/5.0.0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS:%20seqret84/5.0.0"><strong>seqret</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS:%20seqret84/5.0.0</span></span>  to convert the Genbank format reference (<code class="language-plaintext highlighter-rouge">Mycobacterium_tuberculosis_ancestral_reference.gbk</code>) to FASTA format. Use the following parameters:
       <ul>
         <li><em>“Sequences”</em>: <code class="language-plaintext highlighter-rouge">Mycobacterium_tuberculosis_ancestral_reference.gbk</code></li>
         <li><em>“Use feature information”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
@@ -1447,7 +1469,7 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
         <li><em>“Output sequence file format”</em>: <code class="language-plaintext highlighter-rouge">FASTA (m)</code></li>
       </ul>
     </li>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11+galaxy1"><strong>JBrowse</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11+<span class="notranslate">galaxy</span>1</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11+galaxy1"><strong>JBrowse</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11+galaxy1</span></span>  with the following parameters
       <ul>
         <li><em>“Reference genome to display”</em>: <code class="language-plaintext highlighter-rouge">Use a genome from history</code>
           <ul>
@@ -1457,20 +1479,20 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
           <p>This sequence will be the reference against which annotations are displayed</p>
         </li>
         <li><em>“Genetic Code”</em>: <code class="language-plaintext highlighter-rouge">11: The Bacterial, Archaeal and Plant Plastid Code</code></li>
-        <li><em>“JBrowse-in-<span class="notranslate">Galaxy</span> Action”</em>: <code class="language-plaintext highlighter-rouge">New JBrowse Instance</code></li>
+        <li><em>“JBrowse-in-Galaxy Action”</em>: <code class="language-plaintext highlighter-rouge">New JBrowse Instance</code></li>
         <li>
           <p><em>“Track Group”</em></p>
 
-          <p>We will now set up three different tracks - these are datasets displayed underneath the reference sequence (which is displayed as nucleotides in FASTA format). We will choose to display the sequence <span class="notranslate">reads</span> (the .bam file), the variants found by snippy (the .gff file) and the annotated reference genome (the wildtype.gff)</p>
+          <p>We will now set up three different tracks - these are datasets displayed underneath the reference sequence (which is displayed as nucleotides in FASTA format). We will choose to display the sequence reads (the .bam file), the variants found by snippy (the .gff file) and the annotated reference genome (the wildtype.gff)</p>
 
           <ul>
-            <li><strong>Track 1 - sequence <span class="notranslate">reads</span></strong>: Click on <code class="language-plaintext highlighter-rouge">Insert Track Group</code> and fill it with
+            <li><strong>Track 1 - sequence reads</strong>: Click on <code class="language-plaintext highlighter-rouge">Insert Track Group</code> and fill it with
               <ul>
-                <li>“Track Category” to <code class="language-plaintext highlighter-rouge">sequence <span class="notranslate">reads</span></code></li>
+                <li>“Track Category” to <code class="language-plaintext highlighter-rouge">sequence reads</code></li>
                 <li>Click on <code class="language-plaintext highlighter-rouge">Insert Annotation Track</code> and fill it with
                   <ul>
                     <li>“Track Type” to <code class="language-plaintext highlighter-rouge">BAM Pileups</code></li>
-                    <li>“BAM Track Data” to <code class="language-plaintext highlighter-rouge">snippy on data XX, data XX, and data XX mapped <span class="notranslate">reads</span> (bam)</code></li>
+                    <li>“BAM Track Data” to <code class="language-plaintext highlighter-rouge">snippy on data XX, data XX, and data XX mapped reads (bam)</code></li>
                     <li>“Autogenerate SNP Track” to <code class="language-plaintext highlighter-rouge">Yes</code></li>
                     <li>“Track Visibility” to <code class="language-plaintext highlighter-rouge">On for new users</code></li>
                   </ul>
@@ -1494,8 +1516,8 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
                 <li>“Track Category” to <code class="language-plaintext highlighter-rouge">annotated reference</code></li>
                 <li>Click on <code class="language-plaintext highlighter-rouge">Insert Annotation Track</code> and fill it with
                   <ul>
-                    <li>“Track Type” to <code class="language-plaintext highlighter-rouge">GFF/GFF3/<span class="notranslate">BED</span> Features</code></li>
-                    <li>“GFF/GFF3/<span class="notranslate">BED</span> Track Data” to <code class="language-plaintext highlighter-rouge">https://zenodo.org/record/3531703/files/Mycobacterium_tuberculosis_h37rv.ASM19595v2.45.chromosome.Chromosome.gff3</code></li>
+                    <li>“Track Type” to <code class="language-plaintext highlighter-rouge">GFF/GFF3/BED Features</code></li>
+                    <li>“GFF/GFF3/BED Track Data” to <code class="language-plaintext highlighter-rouge">https://zenodo.org/record/3531703/files/Mycobacterium_tuberculosis_h37rv.ASM19595v2.45.chromosome.Chromosome.gff3</code></li>
                     <li>“JBrowse Track Type [Advanced]” to <code class="language-plaintext highlighter-rouge">Canvas Features</code></li>
                     <li>Click on “JBrowse Styling Options [Advanced]”</li>
                     <li>“JBrowse style.label” to <code class="language-plaintext highlighter-rouge">product</code></li>
@@ -1512,7 +1534,7 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
   </ol>
 </blockquote>
 
-<p>A new dataset will be created in your history, containing the JBrowse interactive visualisation. We will now view its contents and play with it by clicking the <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> (eye) icon of the <code class="language-plaintext highlighter-rouge">JBrowse on data XX and data XX - Complete</code> dataset. The JBrowse window will appear in the centre <span class="notranslate">Galaxy</span> panel.</p>
+<p>A new dataset will be created in your history, containing the JBrowse interactive visualisation. We will now view its contents and play with it by clicking the <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">galaxy-eye</span> (eye) icon of the <code class="language-plaintext highlighter-rouge">JBrowse on data XX and data XX - Complete</code> dataset. The JBrowse window will appear in the centre Galaxy panel.</p>
 
 <p>You can now click on the names of the tracks to add them in, try the vcf file and gff file. You can see where the variants are located and which genes they are in. If you click on the BAM file you can zoom right in to see the read alignments for each variant if you wish.</p>
 
@@ -1523,7 +1545,7 @@ gene annotation from the <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000962
 far.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-take-a-closer-look-at-sample-18-1" class="box-title" aria-label="hands-on box: Take a closer look at sample 18-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Take a closer look at sample 18-1</div>
+  <div class="box-title hands-on-title" id="hands-on-take-a-closer-look-at-sample-18-1" aria-label="hands-on box: Take a closer look at sample 18-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Take a closer look at sample 18-1</div>
 
   <ol>
     <li>Fetch the data from Zenodo
@@ -1532,13 +1554,13 @@ https://zenodo.org/record/3960260/files/018-1_2.fastq.gz
 </code></pre></div>      </div>
     </li>
     <li>
-      <p>Examine the sequence quality with <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0"><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+<span class="notranslate">galaxy</span>0</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>.</p>
+      <p>Examine the sequence quality with <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0"><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0</span></span> .</p>
     </li>
     <li>
-      <p>Examine the sample composition with <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1"><strong>Kraken2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+<span class="notranslate">galaxy</span>1</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>.</p>
+      <p>Examine the sample composition with <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1"><strong>Kraken2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1</span></span> .</p>
 
       <blockquote class="question">
-        <div id="question-6" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+        <div class="box-title question-title" id="question-6" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
           <li>
@@ -1550,14 +1572,14 @@ https://zenodo.org/record/3960260/files/018-1_2.fastq.gz
         </ol>
 
         <blockquote class="solution">
-          <div id="solution-6" class="box-title"><button type="button" aria-controls="solution-6-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+          <div class="box-title solution-title" id="solution-6"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-6-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
             <li>
               <p>The quality of the sequence drops sharply towards the end of the sequences. Even more concerning, the sequence content changes across the length of the sample, which is not what we would expect at all. Finally, the sample seems to contain sequencing adapters, an artefact of the sequencing process that should be trimmed out before any sequence analysis.</p>
             </li>
             <li>
-              <p>Less than 60% of the sequence <span class="notranslate">reads</span> are associated with the genus <em>Mycobacterium</em>. Perhaps the quality problems in the sequence <span class="notranslate">reads</span> contribute to this poor classification? They certainly will make variant calling less reliable. You might get too many (false positive) or too few (false negative) variants reported compared to what is actually present in the sample.</p>
+              <p>Less than 60% of the sequence reads are associated with the genus <em>Mycobacterium</em>. Perhaps the quality problems in the sequence reads contribute to this poor classification? They certainly will make variant calling less reliable. You might get too many (false positive) or too few (false negative) variants reported compared to what is actually present in the sample.</p>
             </li>
           </ol>
 
@@ -1567,12 +1589,12 @@ https://zenodo.org/record/3960260/files/018-1_2.fastq.gz
   </ol>
 </blockquote>
 
-<p>As you can see, quality of sequence data strongly determines how useful it is for subsequent analysis. This is why quality control is always a first step before trying to call and interpret variants. What we do with a sample like this will depend on what resources we have available. Can we discard it and use other data for our analysis? Can we re-sequence? Can we clean it up, remove the adapters (using <strong>Trimmomatic</strong>, <strong>fastp</strong> or <strong>cutadapt</strong>) and perhaps use the <strong>Kraken2</strong> output to decide which <span class="notranslate">reads</span> to keep? These are all possible strategies and there is no one answer for which is the correct one to pursue.</p>
+<p>As you can see, quality of sequence data strongly determines how useful it is for subsequent analysis. This is why quality control is always a first step before trying to call and interpret variants. What we do with a sample like this will depend on what resources we have available. Can we discard it and use other data for our analysis? Can we re-sequence? Can we clean it up, remove the adapters (using <strong>Trimmomatic</strong>, <strong>fastp</strong> or <strong>cutadapt</strong>) and perhaps use the <strong>Kraken2</strong> output to decide which reads to keep? These are all possible strategies and there is no one answer for which is the correct one to pursue.</p>
 
 <p>The next example is <em>SRR12416842</em> from an Indonesia <a href="https://www.microbiologyresearch.org/content/journal/jmm/10.1099/jmm.0.001221">study</a> of multi-drug resistant (MDR) tuberculosis.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-take-a-closer-look-at-sample-srr12416842" class="box-title" aria-label="hands-on box: Take a closer look at sample SRR12416842"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Take a closer look at sample SRR12416842</div>
+  <div class="box-title hands-on-title" id="hands-on-take-a-closer-look-at-sample-srr12416842" aria-label="hands-on box: Take a closer look at sample SRR12416842"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Take a closer look at sample SRR12416842</div>
 
   <ol>
     <li>Fetch the data from EBI European Nucleotide Archive
@@ -1581,16 +1603,16 @@ ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR124/042/SRR12416842/SRR12416842_2.fastq.gz
 </code></pre></div>      </div>
     </li>
     <li>
-      <p>Examine the sequence quality with <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0"><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+<span class="notranslate">galaxy</span>0</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>.</p>
+      <p>Examine the sequence quality with <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0"><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0</span></span> .</p>
     </li>
     <li>
-      <p>Perform quality trimming with <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1" title="Tested with toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1"><strong>Trimmomatic</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></p>
+      <p>Perform quality trimming with <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1" title="Tested with toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1"><strong>Trimmomatic</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1</span></span></p>
     </li>
     <li>
-      <p>Map the samples to the <em>M. tuberculosis</em> reference genome with <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+galaxy0"><strong>Snippy</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+<span class="notranslate">galaxy</span>0</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></p>
+      <p>Map the samples to the <em>M. tuberculosis</em> reference genome with <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+galaxy0"><strong>Snippy</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/snippy/snippy/4.6.0+galaxy0</span></span></p>
 
       <blockquote class="question">
-        <div id="question-7" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+        <div class="box-title question-title" id="question-7" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
           <li>
@@ -1602,11 +1624,11 @@ ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR124/042/SRR12416842/SRR12416842_2.fastq.gz
         </ol>
 
         <blockquote class="solution">
-          <div id="solution-7" class="box-title"><button type="button" aria-controls="solution-7-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+          <div class="box-title solution-title" id="solution-7"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-7-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
             <li>
-              <p>The <strong>FastQC</strong> result shows that while there is some dropoff in sequence quality (especially towards the end of the <span class="notranslate">reads</span> from the second dataset), the sequences are of good enough quality to analyse.</p>
+              <p>The <strong>FastQC</strong> result shows that while there is some dropoff in sequence quality (especially towards the end of the reads from the second dataset), the sequences are of good enough quality to analyse.</p>
             </li>
             <li>
               <p><em>*snippy</em> discovered more than 15,000 variants. This is unusual for a <em>M. tuberculosis</em> sample where we expect at most a few thousand variants across the length of the genome.</p>
@@ -1616,17 +1638,17 @@ ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR124/042/SRR12416842/SRR12416842_2.fastq.gz
       </blockquote>
     </li>
     <li>
-      <p>Run <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.3+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.3+galaxy0"><strong>samtools stats</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.3+<span class="notranslate">galaxy</span>0</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on the <em>snippy on data XX, data XX, and data XX mapped <span class="notranslate">reads</span> (bam)</em> file. In the output, pay attention to the <em>sequences</em>, <em><span class="notranslate">reads</span> mapped</em> and <em><span class="notranslate">reads</span> unmapped</em> results.</p>
+      <p>Run <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.3+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.3+galaxy0"><strong>samtools stats</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.3+galaxy0</span></span>  on the <em>snippy on data XX, data XX, and data XX mapped reads (bam)</em> file. In the output, pay attention to the <em>sequences</em>, <em>reads mapped</em> and <em>reads unmapped</em> results.</p>
     </li>
     <li>
-      <p>Run the <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/jvarkit_wgscoverageplotter/jvarkit_wgscoverageplotter/20201223+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/jvarkit_wgscoverageplotter/jvarkit_wgscoverageplotter/20201223+galaxy0"><strong>BAM Coverage Plotter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/jvarkit_wgscoverageplotter/jvarkit_wgscoverageplotter/20201223+<span class="notranslate">galaxy</span>0</span></span>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on the mapped <span class="notranslate">reads</span> BAM file that you got from <strong>snippy</strong>.</p>
+      <p>Run the <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/jvarkit_wgscoverageplotter/jvarkit_wgscoverageplotter/20201223+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/jvarkit_wgscoverageplotter/jvarkit_wgscoverageplotter/20201223+galaxy0"><strong>BAM Coverage Plotter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/jvarkit_wgscoverageplotter/jvarkit_wgscoverageplotter/20201223+galaxy0</span></span>  on the mapped reads BAM file that you got from <strong>snippy</strong> using the FASTA format reference you made with <strong>seqret</strong> as the reference.</p>
 
       <blockquote class="question">
-        <div id="question-8" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+        <div class="box-title question-title" id="question-8" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
           <li>
-            <p>What percentage of <span class="notranslate">reads</span> mapped to the reference genome?</p>
+            <p>What percentage of reads mapped to the reference genome?</p>
           </li>
           <li>
             <p>If you could run the <strong>BAM Coverage Plotter</strong> tool, was the coverage even across the genome?</p>
@@ -1634,20 +1656,20 @@ ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR124/042/SRR12416842/SRR12416842_2.fastq.gz
         </ol>
 
         <blockquote class="solution">
-          <div id="solution-8" class="box-title"><button type="button" aria-controls="solution-8-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+          <div class="box-title solution-title" id="solution-8"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-8-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
             <li>
-              <p>Less than 110000 out of 7297618, that is 1.5%, of the <span class="notranslate">reads</span> mapped to the reference genome.</p>
+              <p>Less than 110000 out of 7297618, that is 1.5%, of the reads mapped to the reference genome.</p>
             </li>
             <li>
-              <p>The image from the <strong>BAM Coverage Plotter</strong> tool shows just a few vertical bars, suggestion that almost no <span class="notranslate">reads</span> mapped to the reference genome.</p>
+              <p>The image from the <strong>BAM Coverage Plotter</strong> tool shows just a few vertical bars, suggestion that almost no reads mapped to the reference genome.</p>
             </li>
           </ol>
 
           <p><img src="../../images/mtb_poor_mapping.png" alt="BAM Coverage Plot of SRR12416842 showing few reads mapped. " loading="lazy" /></p>
 
-          <p>By contrast, <span class="notranslate">reads</span> from the <code class="language-plaintext highlighter-rouge">004-02</code> map evenly across the <em>M. tuberculosis</em> genome, with an average depth of over 100 <span class="notranslate">reads</span>, as shown in this output from <strong>BAM Coverage Plotter</strong>:</p>
+          <p>By contrast, reads from the <code class="language-plaintext highlighter-rouge">004-02</code> map evenly across the <em>M. tuberculosis</em> genome, with an average depth of over 100 reads, as shown in this output from <strong>BAM Coverage Plotter</strong>:</p>
 
           <p><img src="../../images/mtb_good_mapping.png" alt="BAM Coverage Plot of 004-02 showing reads mapped evenly. " loading="lazy" /></p>
 
@@ -1766,19 +1788,21 @@ day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
                    </pre></div></div>
                    </p>
                 </blockquote>
@@ -1816,8 +1840,6 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

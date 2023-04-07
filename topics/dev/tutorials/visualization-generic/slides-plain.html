@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/dev/tutorials/visualization-generic/slides-plain.html" />
@@ -24,7 +23,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Generic plugins" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2023-04-06 00:03:41 +0000" />
+<meta name="DC.date" content="2023-04-07 00:03:51 +0000" />
 <meta name="DC.creator" content="Saskia Hiltemann" />
 <meta name="DC.creator" content="Youri Hoogstrate" />
 
@@ -32,21 +31,25 @@
         
         
         
-        
-        <meta name="description" content="Galaxy is an open-source project. Everyone can contribute..." />
+        <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Generic plugins" />
-        <meta property="og:description" content="Galaxy is an open-source project. Everyone can contribute..." />
+        <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -114,10 +117,6 @@
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
         
-        <a class="dropdown-item" href="/training-material/topics/dev/faqs/" title="Check our FAQs for the Development in Galaxy topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
             <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
@@ -160,27 +159,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -219,6 +205,7 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         <section class="tutorial">
 	<a href="https://github.com/galaxyproject/training-material/blob/main//topics/dev/tutorials/visualization-generic/slides.html">View markdown source on GitHub</a>
@@ -270,14 +257,14 @@
 		</ul>
 		
 
-		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Apr 6, 2023 </div>
+		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Apr 7, 2023 </div>
 
 	<hr />
 
 
 	<h2 id="why-visualizations">Why visualizations?</h2>
 
-<p><img src="../../images/anscombe-quartet-animated.gif" alt="Animated gif cycling through Anscombe's quartet and various variations that all have the same mean, SD, and correlation but look vastly different to someone's eyes." loading="lazy" /></p>
+<p><img src="../../images/anscombe-quartet-animated.gif" alt="Animated gif cycling through Anscombe's quartet and various variations that all have the same mean, SD, and correlation but look vastly different to someone's eyes." /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span> <span class="n">mean</span><span class="p">:</span> <span class="mf">54.26</span><span class="p">,</span> <span class="n">X</span> <span class="n">SD</span><span class="p">:</span> <span class="mf">16.76</span>
 <span class="n">Y</span> <span class="n">mean</span><span class="p">:</span> <span class="mf">47.83</span><span class="p">,</span> <span class="n">Y</span> <span class="n">SD</span><span class="p">:</span> <span class="mf">26.93</span>
@@ -294,7 +281,7 @@ yet when visualizing them it is revealed they have vastly different structures.<
 
 <p>Bam files - textual</p>
 
-<p><img src="../../images/vis_alignment_plaintext.png" alt="Screenshot of a terminal showing a wall of text with lines from a BAM file. " loading="lazy" /></p>
+<p><img src="../../images/vis_alignment_plaintext.png" alt="Screenshot of a terminal showing a wall of text with lines from a BAM file" /></p>
 
 <hr />
 
@@ -302,7 +289,7 @@ yet when visualizing them it is revealed they have vastly different structures.<
 
 <p>Bam files - visualized</p>
 
-<p><img src="../../images/vis_alignment.png" alt="Screenshot of IGV with presumably the same bam file from before showing a large gap in the alignment, now clear due to a visualisation." loading="lazy" /></p>
+<p><img src="../../images/vis_alignment.png" alt="Screenshot of IGV with presumably the same bam file from before showing a large gap in the alignment, now clear due to a visualisation." /></p>
 
 <hr />
 
@@ -341,7 +328,7 @@ yet when visualizing them it is revealed they have vastly different structures.<
 
 <h2 id="which-should-i-use">Which should I use?</h2>
 
-<p><img src="../../images/which_viz_flowchart.png" alt="Flowchart. Only available on an external website? If yes use a display application. Does it need to be served (e.g. python), if yes use an interactive tool. Is it computationally intensive, then it needs to be a regular tool. Is it written in javascript? Then it shold be a generic plugin. If it passes all these tests it can be a charts plugin." loading="lazy" /></p>
+<p><img src="../../images/which_viz_flowchart.png" alt="Flowchart. Only available on an external website? If yes use a display application. Does it need to be served (e.g. python), if yes use an interactive tool. Is it computationally intensive, then it needs to be a regular tool. Is it written in javascript? Then it shold be a generic plugin. If it passes all these tests it can be a charts plugin." /></p>
 
 <hr />
 
@@ -352,7 +339,7 @@ yet when visualizing them it is revealed they have vastly different structures.<
   <li>Different options depending on file type</li>
 </ul>
 
-<p><img src="../../images/vis_plugin_menu.png" alt="Screenshot of the history in galaxy with viz dropdown clicked. On one dataset the options are charts and scatterplots for a tabular dataset. On the other is 'visualise in trackster' for a BAM dataset. " loading="lazy" /></p>
+<p><img src="../../images/vis_plugin_menu.png" alt="Screenshot of the history in galaxy with viz dropdown clicked. On one dataset the options are charts and scatterplots for a tabular dataset. On the other is 'visualise in trackster' for a BAM dataset" /></p>
 
 <hr />
 
@@ -360,11 +347,11 @@ yet when visualizing them it is revealed they have vastly different structures.<
 <h2 id="plugins-charts">Plugins: Charts</h2>
 <p>]
 .pull-left[
-<img src="../../images/vis_charts_02.png" alt="Charts selection interface showing a number of chart types that can be selected. " loading="lazy" />
+<img src="../../images/vis_charts_02.png" alt="Charts selection interface showing a number of chart types that can be selected" />
 ]</p>
 
 <p>.pull-right[
-<img src="../../images/charts_examples.png" alt="Montage of several charts, bar, dot, stacked bar/line, box and whisker, and doughnut charts." loading="lazy" />
+<img src="../../images/charts_examples.png" alt="Montage of several charts, bar, dot, stacked bar/line, box and whisker, and doughnut charts." />
 ]</p>
 
 <hr />
@@ -375,7 +362,7 @@ yet when visualizing them it is revealed they have vastly different structures.<
   <li>Allows exporting screenshots</li>
 </ul>
 
-<p><img src="../../images/vis_charts_05.png" alt="A screenshot button is clicked providing optinos to save as PNG, SVG, or PDF. " loading="lazy" /></p>
+<p><img src="../../images/vis_charts_05.png" alt="A screenshot button is clicked providing optinos to save as PNG, SVG, or PDF" /></p>
 
 <ul>
   <li>For more information, see the charts plugin development
@@ -421,7 +408,7 @@ yet when visualizing them it is revealed they have vastly different structures.<
   <li>Hooks visualizations into Galaxy</li>
 </ul>
 
-<p><img src="../../images/vis_plugin_conf_xml.png" alt="Screenshot of code with boxes highlighting Draw RNA.js and the datatypes that it can accept. A template drawrnajs.mako is also highlighted. " loading="lazy" /></p>
+<p><img src="../../images/vis_plugin_conf_xml.png" alt="Screenshot of code with boxes highlighting Draw RNA.js and the datatypes that it can accept. A template drawrnajs.mako is also highlighted" /></p>
 
 <ul>
   <li>Data types must match with class names in <code class="language-plaintext highlighter-rouge">$GALAXY_ROOT/lib/galaxy/datatypes/</code></li>
@@ -443,7 +430,7 @@ yet when visualizing them it is revealed they have vastly different structures.<
   </li>
 </ul>
 
-<p><img src="../../images/vis_mako_hello_world_dual.png" alt="Screenshot of more code showing a mako template being rendered. " loading="lazy" /></p>
+<p><img src="../../images/vis_mako_hello_world_dual.png" alt="Screenshot of more code showing a mako template being rendered" /></p>
 
 <hr />
 
@@ -474,7 +461,7 @@ yet when visualizing them it is revealed they have vastly different structures.<
   </li>
 </ul>
 
-<p><img src="../../images/vis_nested_url.png" alt="Screenshot of a URL bar reading https://bioinf-galaxian.erasmusmc.nl/galaxy/. " loading="lazy" /></p>
+<p><img src="../../images/vis_nested_url.png" alt="Screenshot of a URL bar reading https://bioinf-galaxian.erasmusmc.nl/galaxy/" /></p>
 
 <hr />
 
@@ -489,7 +476,7 @@ yet when visualizing them it is revealed they have vastly different structures.<
   </li>
 </ul>
 
-<p><img src="../../images/vis_important_variables.png" alt="A mako template with a python codeblock section highlighting hdadict, root, app_root, file_url. " loading="lazy" /></p>
+<p><img src="../../images/vis_important_variables.png" alt="A mako template with a python codeblock section highlighting hdadict, root, app_root, file_url" /></p>
 
 <hr />
 
@@ -510,7 +497,7 @@ yet when visualizing them it is revealed they have vastly different structures.<
 
 <h2 id="plugins-generic-template">Plugins: Generic template</h2>
 
-<p><img src="../../images/vis_generic_template.png" alt="Another code screenshot showing a generic template that can be used for viz." loading="lazy" /></p>
+<p><img src="../../images/vis_generic_template.png" alt="Another code screenshot showing a generic template that can be used for viz." /></p>
 
 <hr />
 
@@ -520,8 +507,8 @@ yet when visualizing them it is revealed they have vastly different structures.<
   <li>External libraries and static files go in <code class="language-plaintext highlighter-rouge">./static</code> dir:</li>
 </ul>
 
-<p><img src="../../images/vis_generic_template_static.png" alt="Code screenshot showing a cool_vis_plugin.js being loaded. " loading="lazy" />
-<img src="../../images/vis_static_dir.png" alt="Screenshot of its location in the static directory." loading="lazy" /></p>
+<p><img src="../../images/vis_generic_template_static.png" alt="Code screenshot showing a cool_vis_plugin.js being loaded" />
+<img src="../../images/vis_static_dir.png" alt="Screenshot of its location in the static directory." /></p>
 
 <hr />
 
@@ -613,7 +600,7 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
         </p>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/bf603e8fe230f5085d78111456044319ff76cb0a">bf603e8fe230f5085d78111456044319ff76cb0a</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/7ea653060476a45e3ea7aed76c459f7e447264fc">7ea653060476a45e3ea7aed76c459f7e447264fc</a></p>
     </div>
 </footer>
 
@@ -625,8 +612,6 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

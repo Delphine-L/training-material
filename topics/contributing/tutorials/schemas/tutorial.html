@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/contributing/tutorials/schemas/tutorial.html" />
@@ -31,222 +30,16 @@
         
         
         
-        
         <meta name="description" content="Galaxy is a great solution to train the bioinformatics co..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: GTN Metadata" />
         <meta property="og:description" content="Galaxy is a great solution to train the bioinformatics co..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/contributing" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Contributing to the Galaxy Training Material
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
+        
+        <script type="application/ld+json">
             
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
-        
-        <a class="dropdown-item" href="/training-material/topics/contributing/faqs/" title="Check our FAQs for the Contributing to the Galaxy Training Material topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/contributing/tutorials/schemas/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/contributing/tutorials/schemas/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        <!-- link to feedback -->
-        
-            
-            
-                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-                </a>
-            
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -390,7 +183,209 @@
     }
   ]
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/contributing" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Contributing to the Galaxy Training Material
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/schemas/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/contributing/faqs/" title="Check our FAQs for the Contributing to the Galaxy Training Material topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/contributing/tutorials/schemas/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/contributing/tutorials/schemas/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-contributing">
     <h1 data-toc-skip>GTN Metadata</h1>
@@ -440,10 +435,6 @@
         
         <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
-            
-                <li class="btn btn-default supporting_material"><a href="/training-material/topics/contributing/slides/introduction.html" title="Topic Overview slides">
-                    <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
-                </a></li>
             
 
             
@@ -654,12 +645,12 @@
       </div>
 	
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Breve introducción a <span class="notranslate">Galaxy</span> - en español</span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Breve introducción a Galaxy - en español</span>
 </code></pre></div>        </div>
       </div>
 	
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Pangeo ecosystem 101 for everyone - Introduction to Xarray <span class="notranslate">Galaxy</span> Tools</span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools</span>
 </code></pre></div>        </div>
       </div>
 	
@@ -789,7 +780,7 @@
 <b>List of Items</b>
 
 <p>
-<p>These entities wrote the bulk of the training material, they may have done the analysis, built the <span class="notranslate">workflow</span>, and wrote the text themselves.</p>
+<p>These entities wrote the bulk of the training material, they may have done the analysis, built the workflow, and wrote the text themselves.</p>
 
 </p>
 
@@ -1179,7 +1170,7 @@
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/^(?:([0-9]*)[Hh])*(?:([0-9]*)[Mm])*(?:([0-9.]*)[Ss])*$/</span>
@@ -1194,6 +1185,8 @@
 
 </blockquote>
 
+		
+	
 		
 	
 		
@@ -1390,6 +1383,51 @@
 
 	<div class="box-title">
 		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: draft">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>draft</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Boolean</b>
+
+<p>
+<p><code class="language-plaintext highlighter-rouge">true</code> to hide your tutorial from the topic page (optional). This is useful if you need a tutorial for a workshop, but have not finished making it up to GTN standards.</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
 		<button type="button" aria-expanded="true" aria-label="Toggle tip box: edam_ontology">
 			<i class="far fa-lightbulb" aria-hidden="true"></i>
 			
@@ -1428,7 +1466,7 @@
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/^topic_[0-9]+$/</span>
@@ -1436,51 +1474,6 @@
       </div>
 
 </p>
-
-
-
-
-
-</blockquote>
-
-		
-	
-		
-			
-			
-			
-
-			<blockquote class="tip">
-
-	<div class="box-title">
-		
-		<button type="button" aria-expanded="true" aria-label="Toggle tip box: enable">
-			<i class="far fa-lightbulb" aria-hidden="true"></i>
-			
-				<code>enable</code>
-			
-			<span role="button" class="fold-unfold fa fa-plus-square"></span>
-		</button>
-		
-	</div>
-
-<b>Boolean</b>
-
-<p>
-<p><code class="language-plaintext highlighter-rouge">false</code> to hide your tutorial from the topic page (optional). This is useful if you need a tutorial for a workshop, but have not finished making it up to GTN standards.</p>
-
-</p>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1526,12 +1519,12 @@
 <p>
 	<b>Example(s)</b><div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">follow_up_training</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">inte<span class="notranslate">rna</span>l</span>
+<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">internal</span>
   <span class="na">topic_name</span><span class="pi">:</span> <span class="s">statistics</span>
   <span class="na">tutorials</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">age-prediction-with-ml</span>
   
-<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">exte<span class="notranslate">rna</span>l</span>
+<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">external</span>
   <span class="na">title</span><span class="pi">:</span> <span class="s">The Unix Shell</span>
   <span class="na">link</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://swcarpentry.github.io/shell-novice/"</span>
   
@@ -1616,9 +1609,9 @@
 <b>Possible Values:</b>
 <ul>
 
-	<li><code>inte<span class="notranslate">rna</span>l</code></li>
+	<li><code>internal</code></li>
 
-	<li><code>exte<span class="notranslate">rna</span>l</code></li>
+	<li><code>external</code></li>
 
 	<li><code>none</code></li>
 
@@ -1633,12 +1626,12 @@
 	<b>Example(s)</b>
 	
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">inte<span class="notranslate">rna</span>l"</span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">internal"</span>
 </code></pre></div>            </div>
           </div>
 	
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">exte<span class="notranslate">rna</span>l"</span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">external"</span>
 </code></pre></div>            </div>
           </div>
 	
@@ -1693,7 +1686,7 @@
 <b>Free Text</b>
 
 <p>
-<p>URL of the exte<span class="notranslate">rna</span>l resource</p>
+<p>URL of the external resource</p>
 
 </p>
 
@@ -1738,7 +1731,7 @@
 <b>Free Text</b>
 
 <p>
-<p>Title of the exte<span class="notranslate">rna</span>l resource</p>
+<p>Title of the external resource</p>
 
 </p>
 
@@ -1783,7 +1776,7 @@
 <b>Free Text</b>
 
 <p>
-<p>[Inte<span class="notranslate">rna</span>l Only] The name of the topic</p>
+<p>[Internal Only] The name of the topic</p>
 
 </p>
 
@@ -1828,7 +1821,7 @@
 <b>List of Items</b>
 
 <p>
-<p>[Inte<span class="notranslate">rna</span>l Only] List of required tutorials inside that topic</p>
+<p>[Internal Only] List of required tutorials inside that topic</p>
 
 </p>
 
@@ -1878,7 +1871,7 @@
 		<button type="button" aria-expanded="true" aria-label="Toggle tip box: galaxy_version">
 			<i class="far fa-lightbulb" aria-hidden="true"></i>
 			
-				<code><span class="notranslate">galaxy</span>_version</code>
+				<code>galaxy_version</code>
 			
 			<span role="button" class="fold-unfold fa fa-plus-square"></span>
 		</button>
@@ -1933,7 +1926,7 @@
 <b>Free Text</b>
 
 <p>
-<p>Link to a gitter channel that is more relevant for the tutorial than the default. E.g. a <span class="notranslate">single cell</span> tutorial could use <code class="language-plaintext highlighter-rouge"><span class="notranslate">Galaxy</span>-Training-Network/<span class="notranslate">galaxy</span>-<span class="notranslate">single-cell</span></code> to link to their specific chat room.</p>
+<p>Link to a gitter channel that is more relevant for the tutorial than the default. E.g. a single cell tutorial could use <code class="language-plaintext highlighter-rouge">Galaxy-Training-Network/galaxy-single-cell</code> to link to their specific chat room.</p>
 
 </p>
 
@@ -1947,12 +1940,12 @@
 <p>
 	<b>Example(s)</b>
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gitter</span><span class="pi">:</span> <span class="s"><span class="notranslate">Galaxy</span>-Training-Network/<span class="notranslate">galaxy</span>-<span class="notranslate">single-cell</span></span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gitter</span><span class="pi">:</span> <span class="s">Galaxy-Training-Network/galaxy-single-cell</span>
 </code></pre></div>        </div>
       </div>
 	
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gitter</span><span class="pi">:</span> <span class="s"><span class="notranslate">galaxy</span>-genome-annotation/Lobby</span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gitter</span><span class="pi">:</span> <span class="s">galaxy-genome-annotation/Lobby</span>
 </code></pre></div>        </div>
       </div>
 	
@@ -2010,7 +2003,7 @@ the tutorial.</p>
 	<b>Example(s)</b><div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">key_points</span><span class="pi">:</span>
 <span class="pi">-</span> <span class="s">Pangeo ecosystem enables big data analysis in geosciences</span>
-<span class="pi">-</span> <span class="s">The MiModD suite of tools bundles most of the functionality required to perform <span class="notranslate">mapping</span>-by-sequencing analyses with <span class="notranslate">Galaxy</span></span>
+<span class="pi">-</span> <span class="s">The MiModD suite of tools bundles most of the functionality required to perform mapping-by-sequencing analyses with Galaxy</span>
 <span class="pi">-</span> <span class="s">It can drastically simplify management of large numbers of VMs</span>
 </code></pre></div>        </div>
       </div></p>
@@ -2068,6 +2061,8 @@ the tutorial.</p>
 
 	<li><code>en</code></li>
 
+	<li><code>fr</code></li>
+
 </ul>
 </p>
 
@@ -2085,6 +2080,11 @@ the tutorial.</p>
 	
 <div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">lang</span><span class="pi">:</span> <span class="s2">"</span><span class="s">en"</span>
+</code></pre></div>        </div>
+      </div>
+	
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">lang</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span>
 </code></pre></div>        </div>
       </div>
 	</p>
@@ -2202,7 +2202,7 @@ the tutorial.</p>
 <b>Free Text</b>
 
 <p>
-<p>An <a href="https://spdx.org/">SPDX</a> identifier for the alte<span class="notranslate">rna</span>tive license that is used for that particular material. This is <strong>only</strong> relevant for materials which have been imported from an exte<span class="notranslate">rna</span>l source and were originally licensed under another license. For new materials we strongly encourage contributors to not use this key as materials are CC-BY, by default.</p>
+<p>An <a href="https://spdx.org/">SPDX</a> identifier for the alternative license that is used for that particular material. This is <strong>only</strong> relevant for materials which have been imported from an external source and were originally licensed under another license. For new materials we strongly encourage contributors to not use this key as materials are CC-BY, by default.</p>
 
 </p>
 
@@ -2460,9 +2460,9 @@ switch pages.</p>
 <b>Free Text</b>
 
 <p>
-<p>If you have an alte<span class="notranslate">rna</span>tive preamble for your notebook that students should know before following (e.g. they must load X datasets in their history), it can be listed here.</p>
+<p>If you have an alternative preamble for your notebook that students should know before following (e.g. they must load X datasets in their history), it can be listed here.</p>
 
-<p>This text will be shown in the GTN tutorial, but it will <strong>not</strong> be included in the notebook, giving you a bit better control over mixing setup content which is relevant for <span class="notranslate">Galaxy</span>, with notebook content that can be easy to run for students.</p>
+<p>This text will be shown in the GTN tutorial, but it will <strong>not</strong> be included in the notebook, giving you a bit better control over mixing setup content which is relevant for Galaxy, with notebook content that can be easy to run for students.</p>
 
 </p>
 
@@ -2574,6 +2574,70 @@ switch pages.</p>
 
 	<div class="box-title">
 		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: og_image">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>og_image</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>A custom image to show on the link preview in external applications (e.g. when the URL is pasted into Twitter)</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">og_image</span><span class="pi">:</span> <span class="s">/assets/images/gat.png</span>
+</code></pre></div>        </div>
+      </div>
+	
+	</p>
+
+
+
+
+
+<p>
+<b>Required Pattern:</b> Must match the following regular expression
+
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/^\/.*/</span>
+</code></pre></div>        </div>
+      </div>
+
+</p>
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
 		<button type="button" aria-expanded="true" aria-label="Toggle tip box: priority">
 			<i class="far fa-lightbulb" aria-hidden="true"></i>
 			
@@ -2651,7 +2715,7 @@ switch pages.</p>
 	<b>Example(s)</b><div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">questions</span><span class="pi">:</span>
 <span class="pi">-</span> <span class="s">How does Genome assembly work?</span>
-<span class="pi">-</span> <span class="s">How do I change <span class="notranslate">Galaxy</span> configs?</span>
+<span class="pi">-</span> <span class="s">How do I change Galaxy configs?</span>
 <span class="pi">-</span> <span class="s">How to detect and quantify differentially abundant proteins in a HEK-Ecoli Benchmark DIA datatset?</span>
 <span class="pi">-</span> <span class="s">What kinds of data do programs store?</span>
 </code></pre></div>        </div>
@@ -2765,12 +2829,12 @@ switch pages.</p>
 <p>
 	<b>Example(s)</b><div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">requirements</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">inte<span class="notranslate">rna</span>l</span>
+<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">internal</span>
   <span class="na">topic_name</span><span class="pi">:</span> <span class="s">statistics</span>
   <span class="na">tutorials</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">age-prediction-with-ml</span>
   
-<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">exte<span class="notranslate">rna</span>l</span>
+<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">external</span>
   <span class="na">title</span><span class="pi">:</span> <span class="s">The Unix Shell</span>
   <span class="na">link</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://swcarpentry.github.io/shell-novice/"</span>
   
@@ -2855,9 +2919,9 @@ switch pages.</p>
 <b>Possible Values:</b>
 <ul>
 
-	<li><code>inte<span class="notranslate">rna</span>l</code></li>
+	<li><code>internal</code></li>
 
-	<li><code>exte<span class="notranslate">rna</span>l</code></li>
+	<li><code>external</code></li>
 
 	<li><code>none</code></li>
 
@@ -2872,12 +2936,12 @@ switch pages.</p>
 	<b>Example(s)</b>
 	
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">inte<span class="notranslate">rna</span>l"</span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">internal"</span>
 </code></pre></div>            </div>
           </div>
 	
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">exte<span class="notranslate">rna</span>l"</span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">external"</span>
 </code></pre></div>            </div>
           </div>
 	
@@ -2932,7 +2996,7 @@ switch pages.</p>
 <b>Free Text</b>
 
 <p>
-<p>URL of the exte<span class="notranslate">rna</span>l resource</p>
+<p>URL of the external resource</p>
 
 </p>
 
@@ -2977,7 +3041,7 @@ switch pages.</p>
 <b>Free Text</b>
 
 <p>
-<p>Title of the exte<span class="notranslate">rna</span>l resource</p>
+<p>Title of the external resource</p>
 
 </p>
 
@@ -3022,7 +3086,7 @@ switch pages.</p>
 <b>Free Text</b>
 
 <p>
-<p>[Inte<span class="notranslate">rna</span>l Only] The name of the topic</p>
+<p>[Internal Only] The name of the topic</p>
 
 </p>
 
@@ -3067,7 +3131,7 @@ switch pages.</p>
 <b>List of Items</b>
 
 <p>
-<p>[Inte<span class="notranslate">rna</span>l Only] List of required tutorials inside that topic</p>
+<p>[Internal Only] List of required tutorials inside that topic</p>
 
 </p>
 
@@ -3141,7 +3205,7 @@ switch pages.</p>
 <p>
 	<b>Example(s)</b>
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">subtopic</span><span class="pi">:</span> <span class="s"><span class="notranslate">single-cell</span></span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">subtopic</span><span class="pi">:</span> <span class="s">single-cell</span>
 </code></pre></div>        </div>
       </div>
 	
@@ -3242,7 +3306,7 @@ switch pages.</p>
 <b>List of Items</b>
 
 <p>
-<p>If alte<span class="notranslate">rna</span>tive translations of a material are available, then use this key to indicate which languages have been manually translated.</p>
+<p>If alternative translations of a material are available, then use this key to indicate which languages have been manually translated.</p>
 
 </p>
 
@@ -3598,7 +3662,7 @@ switch pages.</p>
 <b>A dictionary/map</b>
 
 <p>
-<p>This ideally is your GitHub handle. If you do not have, or do not wish to provide a GitHub use<span class="notranslate">rna</span>me, you may make up another identifier here, but then you must set <code class="language-plaintext highlighter-rouge">github: false</code> as described below.</p>
+<p>This ideally is your GitHub handle. If you do not have, or do not wish to provide a GitHub username, you may make up another identifier here, but then you must set <code class="language-plaintext highlighter-rouge">github: false</code> as described below.</p>
 
 </p>
 
@@ -3708,6 +3772,8 @@ switch pages.</p>
 		
 	
 		
+	
+		
 			
 			
 			
@@ -3750,7 +3816,7 @@ switch pages.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
           <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/[0-9]{4,}-[0-9]{2}/</span>
@@ -3765,6 +3831,10 @@ switch pages.</p>
 
 </blockquote>
 
+		
+	
+		
+	
 		
 	
 		
@@ -3870,6 +3940,51 @@ switch pages.</p>
         </div>
 	
 	</p>
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: contact_for_training">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>contact_for_training</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Boolean</b>
+
+<p>
+<p>Are you open to being contacted for hosting training, or being involved with local training events? Instructors might use this to contact you, if they are looking for regional trainers who can help with their event.</p>
+
+</p>
+
+
+
+
+
+
+
 
 
 
@@ -4140,10 +4255,74 @@ switch pages.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
           <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/@/</span>
+</code></pre></div>          </div>
+        </div>
+
+</p>
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: fediverse">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>fediverse</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>Your handle on the fediverse, without the leading <code class="language-plaintext highlighter-rouge">@</code></p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+          <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">fediverse</span><span class="pi">:</span> <span class="s">abretaud@genomic.social</span>
+</code></pre></div>          </div>
+        </div>
+	
+	</p>
+
+
+
+
+
+<p>
+<b>Required Pattern:</b> Must match the following regular expression
+
+<div>
+          <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/^[0-9a-zA-Z]+@[0-9a-zA-Z.]+$/</span>
 </code></pre></div>          </div>
         </div>
 
@@ -4402,7 +4581,7 @@ switch pages.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
           <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/[0-9a-zA-Z]+/</span>
@@ -4569,7 +4748,7 @@ their Hall of Fame profile.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
           <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/[0-9a-zA-Z]+/</span>
@@ -4581,6 +4760,230 @@ their Hall of Fame profile.</p>
 
 
 
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: location">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>location</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>A dictionary/map</b>
+
+<p>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+		
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: country">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>country</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>The country you work in, ISO-3166-2 code.</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">country</span><span class="pi">:</span> <span class="s">NL</span>
+</code></pre></div>            </div>
+          </div>
+	
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">country</span><span class="pi">:</span> <span class="s">DE</span>
+</code></pre></div>            </div>
+          </div>
+	
+	</p>
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: lat">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>lat</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Decimal Number</b>
+
+<p>
+<p>Latitude in decimal numbers</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">lat</span><span class="pi">:</span> <span class="m">4.12</span>
+</code></pre></div>            </div>
+          </div>
+	
+	</p>
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: lon">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>lon</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Decimal Number</b>
+
+<p>
+<p>Longitude in decimal numbers</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">lon</span><span class="pi">:</span> <span class="m">55.0</span>
+</code></pre></div>            </div>
+          </div>
+	
+	</p>
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
 
 </blockquote>
 
@@ -4678,7 +5081,7 @@ their Hall of Fame profile.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
           <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/@[0-9a-zA-Z]+:.*/</span>
@@ -4744,7 +5147,7 @@ their Hall of Fame profile.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
           <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{4}/</span>
@@ -4808,7 +5211,7 @@ their Hall of Fame profile.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
           <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/[0-9a-zA-Z]+/</span>
@@ -4904,6 +5307,10 @@ their Hall of Fame profile.</p>
 
 	<li><code>tutorial_slides</code></li>
 
+	<li><code>introduction_slides</code></li>
+
+	<li><code>tutorial_slides_ai4life</code></li>
+
 </ul>
 </p>
 
@@ -4921,6 +5328,16 @@ their Hall of Fame profile.</p>
 	
 <div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">tutorial_slides"</span>
+</code></pre></div>        </div>
+      </div>
+	
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">introduction_slides"</span>
+</code></pre></div>        </div>
+      </div>
+	
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">tutorial_slides_ai4life"</span>
 </code></pre></div>        </div>
       </div>
 	</p>
@@ -5109,7 +5526,7 @@ their Hall of Fame profile.</p>
 <b>List of Items</b>
 
 <p>
-<p>These entities wrote the bulk of the training material, they may have done the analysis, built the <span class="notranslate">workflow</span>, and wrote the text themselves.</p>
+<p>These entities wrote the bulk of the training material, they may have done the analysis, built the workflow, and wrote the text themselves.</p>
 
 </p>
 
@@ -5484,6 +5901,8 @@ their Hall of Fame profile.</p>
 
 	<li><code>/assets/images/elixir-uk.png</code></li>
 
+	<li><code>topics/ai4life/images/AI4Life-logo_giraffe-nodes.png</code></li>
+
 </ul>
 </p>
 
@@ -5518,6 +5937,11 @@ their Hall of Fame profile.</p>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">logo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/assets/images/elixir-uk.png"</span>
 </code></pre></div>        </div>
       </div>
+	
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">logo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">topics/ai4life/images/AI4Life-logo_giraffe-nodes.png"</span>
+</code></pre></div>        </div>
+      </div>
 	</p>
 
 
@@ -5530,6 +5954,8 @@ their Hall of Fame profile.</p>
 
 </blockquote>
 
+		
+	
 		
 	
 		
@@ -5670,6 +6096,51 @@ their Hall of Fame profile.</p>
 
 	<div class="box-title">
 		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: draft">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>draft</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Boolean</b>
+
+<p>
+<p><code class="language-plaintext highlighter-rouge">true</code> to hide your tutorial from the topic page (optional). This is useful if you need a tutorial for a workshop, but have not finished making it up to GTN standards.</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
 		<button type="button" aria-expanded="true" aria-label="Toggle tip box: edam_ontology">
 			<i class="far fa-lightbulb" aria-hidden="true"></i>
 			
@@ -5708,7 +6179,7 @@ their Hall of Fame profile.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/^topic_[0-9]+$/</span>
@@ -5716,51 +6187,6 @@ their Hall of Fame profile.</p>
       </div>
 
 </p>
-
-
-
-
-
-</blockquote>
-
-		
-	
-		
-			
-			
-			
-
-			<blockquote class="tip">
-
-	<div class="box-title">
-		
-		<button type="button" aria-expanded="true" aria-label="Toggle tip box: enable">
-			<i class="far fa-lightbulb" aria-hidden="true"></i>
-			
-				<code>enable</code>
-			
-			<span role="button" class="fold-unfold fa fa-plus-square"></span>
-		</button>
-		
-	</div>
-
-<b>Boolean</b>
-
-<p>
-<p><code class="language-plaintext highlighter-rouge">false</code> to hide your tutorial from the topic page (optional). This is useful if you need a tutorial for a workshop, but have not finished making it up to GTN standards.</p>
-
-</p>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -5806,12 +6232,12 @@ their Hall of Fame profile.</p>
 <p>
 	<b>Example(s)</b><div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">follow_up_training</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">inte<span class="notranslate">rna</span>l</span>
+<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">internal</span>
   <span class="na">topic_name</span><span class="pi">:</span> <span class="s">statistics</span>
   <span class="na">tutorials</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">age-prediction-with-ml</span>
   
-<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">exte<span class="notranslate">rna</span>l</span>
+<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">external</span>
   <span class="na">title</span><span class="pi">:</span> <span class="s">The Unix Shell</span>
   <span class="na">link</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://swcarpentry.github.io/shell-novice/"</span>
   
@@ -5896,9 +6322,9 @@ their Hall of Fame profile.</p>
 <b>Possible Values:</b>
 <ul>
 
-	<li><code>inte<span class="notranslate">rna</span>l</code></li>
+	<li><code>internal</code></li>
 
-	<li><code>exte<span class="notranslate">rna</span>l</code></li>
+	<li><code>external</code></li>
 
 	<li><code>none</code></li>
 
@@ -5913,12 +6339,12 @@ their Hall of Fame profile.</p>
 	<b>Example(s)</b>
 	
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">inte<span class="notranslate">rna</span>l"</span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">internal"</span>
 </code></pre></div>            </div>
           </div>
 	
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">exte<span class="notranslate">rna</span>l"</span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">external"</span>
 </code></pre></div>            </div>
           </div>
 	
@@ -5973,7 +6399,7 @@ their Hall of Fame profile.</p>
 <b>Free Text</b>
 
 <p>
-<p>URL of the exte<span class="notranslate">rna</span>l resource</p>
+<p>URL of the external resource</p>
 
 </p>
 
@@ -6018,7 +6444,7 @@ their Hall of Fame profile.</p>
 <b>Free Text</b>
 
 <p>
-<p>Title of the exte<span class="notranslate">rna</span>l resource</p>
+<p>Title of the external resource</p>
 
 </p>
 
@@ -6063,7 +6489,7 @@ their Hall of Fame profile.</p>
 <b>Free Text</b>
 
 <p>
-<p>[Inte<span class="notranslate">rna</span>l Only] The name of the topic</p>
+<p>[Internal Only] The name of the topic</p>
 
 </p>
 
@@ -6108,7 +6534,7 @@ their Hall of Fame profile.</p>
 <b>List of Items</b>
 
 <p>
-<p>[Inte<span class="notranslate">rna</span>l Only] List of required tutorials inside that topic</p>
+<p>[Internal Only] List of required tutorials inside that topic</p>
 
 </p>
 
@@ -6179,7 +6605,7 @@ their Hall of Fame profile.</p>
 <b>Possible Values:</b>
 <ul>
 
-	<li><code>exte<span class="notranslate">rna</span>l</code></li>
+	<li><code>external</code></li>
 
 </ul>
 </p>
@@ -6192,7 +6618,7 @@ their Hall of Fame profile.</p>
 	<b>Example(s)</b>
 	
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hands_on</span><span class="pi">:</span> <span class="s2">"</span><span class="s">exte<span class="notranslate">rna</span>l"</span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hands_on</span><span class="pi">:</span> <span class="s2">"</span><span class="s">external"</span>
 </code></pre></div>        </div>
       </div>
 	</p>
@@ -6295,7 +6721,7 @@ the slides.</p>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">key_points</span><span class="pi">:</span>
 <span class="pi">-</span> <span class="s">Pangeo is an inclusive community promoting open, reproducible and scalable science.</span>
 <span class="pi">-</span> <span class="s">Balanced batches and replicates allow bioinformatic batch correction</span>
-<span class="pi">-</span> <span class="s"><span class="notranslate">Galaxy</span> workflows can download images from the IDR, selecting specific channels, time points, z-stack positions and crop the image in different ways.</span>
+<span class="pi">-</span> <span class="s">Galaxy workflows can download images from the IDR, selecting specific channels, time points, z-stack positions and crop the image in different ways.</span>
 </code></pre></div>        </div>
       </div></p>
 
@@ -6541,6 +6967,70 @@ the slides.</p>
 
 	<div class="box-title">
 		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: og_image">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>og_image</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>A custom image to show on the link preview in external applications (e.g. when the URL is pasted into Twitter)</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">og_image</span><span class="pi">:</span> <span class="s">/assets/images/gat.png</span>
+</code></pre></div>        </div>
+      </div>
+	
+	</p>
+
+
+
+
+
+<p>
+<b>Required Pattern:</b> Must match the following regular expression
+
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/^\/.*/</span>
+</code></pre></div>        </div>
+      </div>
+
+</p>
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
 		<button type="button" aria-expanded="true" aria-label="Toggle tip box: priority">
 			<i class="far fa-lightbulb" aria-hidden="true"></i>
 			
@@ -6618,7 +7108,7 @@ the slides.</p>
 	<b>Example(s)</b><div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">questions</span><span class="pi">:</span>
 <span class="pi">-</span> <span class="s">What is ATAC-Seq?</span>
-<span class="pi">-</span> <span class="s">What are <span class="notranslate">Galaxy</span> Interactive Environments (GIEs)?</span>
+<span class="pi">-</span> <span class="s">What are Galaxy Interactive Environments (GIEs)?</span>
 <span class="pi">-</span> <span class="s">How to visualize your genome after automated annotations have been performed?</span>
 </code></pre></div>        </div>
       </div></p>
@@ -6731,12 +7221,12 @@ the slides.</p>
 <p>
 	<b>Example(s)</b><div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">requirements</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">inte<span class="notranslate">rna</span>l</span>
+<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">internal</span>
   <span class="na">topic_name</span><span class="pi">:</span> <span class="s">statistics</span>
   <span class="na">tutorials</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">age-prediction-with-ml</span>
   
-<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">exte<span class="notranslate">rna</span>l</span>
+<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">external</span>
   <span class="na">title</span><span class="pi">:</span> <span class="s">The Unix Shell</span>
   <span class="na">link</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://swcarpentry.github.io/shell-novice/"</span>
   
@@ -6821,9 +7311,9 @@ the slides.</p>
 <b>Possible Values:</b>
 <ul>
 
-	<li><code>inte<span class="notranslate">rna</span>l</code></li>
+	<li><code>internal</code></li>
 
-	<li><code>exte<span class="notranslate">rna</span>l</code></li>
+	<li><code>external</code></li>
 
 	<li><code>none</code></li>
 
@@ -6838,12 +7328,12 @@ the slides.</p>
 	<b>Example(s)</b>
 	
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">inte<span class="notranslate">rna</span>l"</span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">internal"</span>
 </code></pre></div>            </div>
           </div>
 	
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">exte<span class="notranslate">rna</span>l"</span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">external"</span>
 </code></pre></div>            </div>
           </div>
 	
@@ -6898,7 +7388,7 @@ the slides.</p>
 <b>Free Text</b>
 
 <p>
-<p>URL of the exte<span class="notranslate">rna</span>l resource</p>
+<p>URL of the external resource</p>
 
 </p>
 
@@ -6943,7 +7433,7 @@ the slides.</p>
 <b>Free Text</b>
 
 <p>
-<p>Title of the exte<span class="notranslate">rna</span>l resource</p>
+<p>Title of the external resource</p>
 
 </p>
 
@@ -6988,7 +7478,7 @@ the slides.</p>
 <b>Free Text</b>
 
 <p>
-<p>[Inte<span class="notranslate">rna</span>l Only] The name of the topic</p>
+<p>[Internal Only] The name of the topic</p>
 
 </p>
 
@@ -7033,7 +7523,7 @@ the slides.</p>
 <b>List of Items</b>
 
 <p>
-<p>[Inte<span class="notranslate">rna</span>l Only] List of required tutorials inside that topic</p>
+<p>[Internal Only] List of required tutorials inside that topic</p>
 
 </p>
 
@@ -7107,7 +7597,7 @@ the slides.</p>
 <p>
 	<b>Example(s)</b>
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">subtopic</span><span class="pi">:</span> <span class="s"><span class="notranslate">single-cell</span></span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">subtopic</span><span class="pi">:</span> <span class="s">single-cell</span>
 </code></pre></div>        </div>
       </div>
 	
@@ -7220,7 +7710,7 @@ the slides.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/^(?:([0-9]*)[Hh])*(?:([0-9]*)[Mm])*(?:([0-9.]*)[Ss])*$/</span>
@@ -7261,7 +7751,7 @@ the slides.</p>
 <b>List of Items</b>
 
 <p>
-<p>If alte<span class="notranslate">rna</span>tive translations of a material are available, then use this key to indicate which languages have been manually translated.</p>
+<p>If alternative translations of a material are available, then use this key to indicate which languages have been manually translated.</p>
 
 </p>
 
@@ -7821,7 +8311,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
       </div>
 	
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Ways to use <span class="notranslate">Galaxy</span></span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Ways to use Galaxy</span>
 </code></pre></div>        </div>
       </div>
 	
@@ -8106,12 +8596,12 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 <p>
 	<b>Example(s)</b>
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">description</span><span class="pi">:</span> <span class="s"><span class="notranslate">Galaxy</span> may have several reference genomes built-in, but you can also create your own.</span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">description</span><span class="pi">:</span> <span class="s">Galaxy may have several reference genomes built-in, but you can also create your own.</span>
 </code></pre></div>        </div>
       </div>
 	
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">description</span><span class="pi">:</span> <span class="s">Quickly learn what the identifiers are in any **BAM** dataset that is the result from <span class="notranslate">mapping</span></span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">description</span><span class="pi">:</span> <span class="s">Quickly learn what the identifiers are in any **BAM** dataset that is the result from mapping</span>
 </code></pre></div>        </div>
       </div>
 	
@@ -8253,7 +8743,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 <b>Free Text</b>
 
 <p>
-<p>The inte<span class="notranslate">rna</span>l identifier for a topic, it should be the same as the folder name.</p>
+<p>The internal identifier for a topic, it should be the same as the folder name.</p>
 
 </p>
 
@@ -8288,7 +8778,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/^[a-z0-9_-]+$/</span>
@@ -8329,13 +8819,13 @@ If enabled, you must provide good speaker notes for every single slide.</p>
   <dt><code class="language-plaintext highlighter-rouge">admin-dev</code></dt>
   <dd>should be used for admin and developer topics that are not scientifically focused.</dd>
   <dt><code class="language-plaintext highlighter-rouge">basics</code></dt>
-  <dd>Only used for <span class="notranslate">galaxy</span>-interface type topics</dd>
+  <dd>Only used for galaxy-interface type topics</dd>
   <dt><code class="language-plaintext highlighter-rouge">data-science</code></dt>
-  <dd>Topics which are not necessarily <span class="notranslate">Galaxy</span> focused but expand into broader communities</dd>
+  <dd>Topics which are not necessarily Galaxy focused but expand into broader communities</dd>
   <dt><code class="language-plaintext highlighter-rouge">use</code></dt>
-  <dd>These topics use <span class="notranslate">galaxy</span> for some analysis</dd>
+  <dd>These topics use galaxy for some analysis</dd>
   <dt><code class="language-plaintext highlighter-rouge">instructors</code></dt>
-  <dd>Specific to topics related to instruction of <span class="notranslate">Galaxy</span></dd>
+  <dd>Specific to topics related to instruction of Galaxy</dd>
 </dl>
 
 </p>
@@ -8492,7 +8982,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 <p>
 	<b>Example(s)</b>
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">summary</span><span class="pi">:</span> <span class="s">Statistical Analyses for omics data and machine learning using <span class="notranslate">Galaxy</span> tools</span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">summary</span><span class="pi">:</span> <span class="s">Statistical Analyses for omics data and machine learning using Galaxy tools</span>
 </code></pre></div>        </div>
       </div>
 	
@@ -8569,8 +9059,75 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 	
 		
 	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
 
 	
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: custom_css">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>custom_css</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>Any custom CSS you might want to apply to a specific topic. This could be overriding e.g. the masthead colour (beware, will potentially conflict with themes.)</p>
+
+<p>This is generally not a recommended property to set on topics, and something that is only used as part of outreach efforts to import content into the GTN.</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">custom_css</span><span class="pi">:</span> <span class="s">- :root { --brand-color</span><span class="err">:</span> <span class="s">red; }</span>
+
+</code></pre></div>        </div>
+      </div>
+	
+	</p>
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
 	
 		
 			
@@ -8608,11 +9165,56 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 <p>
 	<b>Example(s)</b>
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">docker_image</span><span class="pi">:</span> <span class="s">quay.io/<span class="notranslate">galaxy</span>/sequence-analysis-training</span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">docker_image</span><span class="pi">:</span> <span class="s">quay.io/galaxy/sequence-analysis-training</span>
 </code></pre></div>        </div>
       </div>
 	
 	</p>
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: draft">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>draft</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Boolean</b>
+
+<p>
+<p><code class="language-plaintext highlighter-rouge">true</code> to hide your tutorial from the topic page (optional). This is useful if you need a tutorial for a workshop, but have not finished making it up to GTN standards.</p>
+
+</p>
+
+
+
+
+
+
+
 
 
 
@@ -8673,7 +9275,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/^topic_[0-9]+$/</span>
@@ -8681,51 +9283,6 @@ If enabled, you must provide good speaker notes for every single slide.</p>
       </div>
 
 </p>
-
-
-
-
-
-</blockquote>
-
-		
-	
-		
-			
-			
-			
-
-			<blockquote class="tip">
-
-	<div class="box-title">
-		
-		<button type="button" aria-expanded="true" aria-label="Toggle tip box: enable">
-			<i class="far fa-lightbulb" aria-hidden="true"></i>
-			
-				<code>enable</code>
-			
-			<span role="button" class="fold-unfold fa fa-plus-square"></span>
-		</button>
-		
-	</div>
-
-<b>Boolean</b>
-
-<p>
-<p><code class="language-plaintext highlighter-rouge">false</code> to hide your topic from the production GTN. This is useful if you need a topic for a workshop, but have not finished making it up to GTN standards.</p>
-
-</p>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -8757,7 +9314,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 <b>Free Text</b>
 
 <p>
-<p>Link to a gitter channel that is more relevant for this topic than the default. E.g. a <span class="notranslate">single cell</span> topic, you could use <code class="language-plaintext highlighter-rouge"><span class="notranslate">Galaxy</span>-Training-Network/<span class="notranslate">galaxy</span>-<span class="notranslate">single-cell</span></code> to link to their specific chat room in all of the child tutorials by default.</p>
+<p>Link to a gitter channel that is more relevant for this topic than the default. E.g. a single cell topic, you could use <code class="language-plaintext highlighter-rouge">Galaxy-Training-Network/galaxy-single-cell</code> to link to their specific chat room in all of the child tutorials by default.</p>
 
 </p>
 
@@ -8771,12 +9328,12 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 <p>
 	<b>Example(s)</b>
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gitter</span><span class="pi">:</span> <span class="s"><span class="notranslate">Galaxy</span>-Training-Network/<span class="notranslate">galaxy</span>-<span class="notranslate">single-cell</span></span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gitter</span><span class="pi">:</span> <span class="s">Galaxy-Training-Network/galaxy-single-cell</span>
 </code></pre></div>        </div>
       </div>
 	
 <div>
-        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gitter</span><span class="pi">:</span> <span class="s"><span class="notranslate">galaxy</span>-genome-annotation/Lobby</span>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gitter</span><span class="pi">:</span> <span class="s">galaxy-genome-annotation/Lobby</span>
 </code></pre></div>        </div>
       </div>
 	
@@ -8795,7 +9352,161 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 		
 	
 		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: logo">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>logo</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>A logo identifier (e.g. GTN) should be used by default, but may be swapped out for special logos from the assets folder.</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
 	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: logo_alt">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>logo_alt</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>The alt text for the logo (MANDATORY).</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+		
+	
+		
+	
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: og_image">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>og_image</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Free Text</b>
+
+<p>
+<p>A custom image to show on the link preview in external applications (e.g. when the URL is pasted into Twitter)</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b>
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">og_image</span><span class="pi">:</span> <span class="s">/assets/images/gat.png</span>
+</code></pre></div>        </div>
+      </div>
+	
+	</p>
+
+
+
+
+
+<p>
+<b>Required Pattern:</b> Must match the following regular expression
+
+<div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/^\/.*/</span>
+</code></pre></div>        </div>
+      </div>
+
+</p>
+
+
+
+
+
+</blockquote>
+
 		
 	
 		
@@ -9113,7 +9824,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 <p>
 	<b>Example(s)</b><div>
         <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">requirements</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">inte<span class="notranslate">rna</span>l</span>
+<span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">internal</span>
   <span class="na">topic_name</span><span class="pi">:</span> <span class="s">statistics</span>
   <span class="na">tutorials</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">age-prediction-with-ml</span>
@@ -9196,7 +9907,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 <b>Possible Values:</b>
 <ul>
 
-	<li><code>inte<span class="notranslate">rna</span>l</code></li>
+	<li><code>internal</code></li>
 
 </ul>
 </p>
@@ -9209,7 +9920,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 	<b>Example(s)</b>
 	
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">inte<span class="notranslate">rna</span>l"</span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">internal"</span>
 </code></pre></div>            </div>
           </div>
 	</p>
@@ -9453,7 +10164,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 <p>
 	<b>Example(s)</b>
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">id</span><span class="pi">:</span> <span class="s"><span class="notranslate">single-cell</span></span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">id</span><span class="pi">:</span> <span class="s">single-cell</span>
 </code></pre></div>            </div>
           </div>
 	
@@ -9464,7 +10175,7 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 
 
 <p>
-<b>Required Pattern:</b> Must match the following regular <span class="notranslate">expression</span>
+<b>Required Pattern:</b> Must match the following regular expression
 
 <div>
             <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/^[A-Za-z0-9_-]+$/</span>
@@ -9513,12 +10224,12 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 <p>
 	<b>Example(s)</b>
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Maintaining a Production <span class="notranslate">Galaxy</span></span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Maintaining a Production Galaxy</span>
 </code></pre></div>            </div>
           </div>
 	
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s"><span class="notranslate">Single-cell</span> <span class="notranslate">RNA</span>-seq</span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Single-cell RNA-seq</span>
 </code></pre></div>            </div>
           </div>
 	
@@ -9568,10 +10279,10 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 <p>
 	<b>Example(s)</b>
 <div>
-            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">description</span><span class="pi">:</span> <span class="s">- "Start here if you are new to <span class="notranslate">RNA</span>-Seq analysis in <span class="notranslate">Galaxy</span>"</span>
-<span class="pi">-</span> <span class="s2">"</span><span class="s">These</span><span class="nv"> </span><span class="s">tutorials</span><span class="nv"> </span><span class="s">take</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">raw</span><span class="nv"> </span><span class="s">sequencing</span><span class="nv"> </span><span class="s"><span class="notranslate">reads</span></span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">pathway</span><span class="nv"> </span><span class="s">analysis"</span>
-<span class="pi">-</span> <span class="s2">"</span><span class="s">Tutorials</span><span class="nv"> </span><span class="s">about</span><span class="nv"> </span><span class="s">analysis</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s"><span class="notranslate">single-cell</span></span><span class="nv"> </span><span class="s"><span class="notranslate">RNA</span>-seq</span><span class="nv"> </span><span class="s">data"</span>
-<span class="pi">-</span> <span class="s2">"</span><span class="s">Tutorials</span><span class="nv"> </span><span class="s">using</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">single</span><span class="nv"> </span><span class="s">published</span><span class="nv"> </span><span class="s"><span class="notranslate">single-cell</span></span><span class="nv"> </span><span class="s"><span class="notranslate">RNA</span>-seq</span><span class="nv"> </span><span class="s">dataset</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">variety</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">analyses"</span>
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">description</span><span class="pi">:</span> <span class="s">- "Start here if you are new to RNA-Seq analysis in Galaxy"</span>
+<span class="pi">-</span> <span class="s2">"</span><span class="s">These</span><span class="nv"> </span><span class="s">tutorials</span><span class="nv"> </span><span class="s">take</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">raw</span><span class="nv"> </span><span class="s">sequencing</span><span class="nv"> </span><span class="s">reads</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">pathway</span><span class="nv"> </span><span class="s">analysis"</span>
+<span class="pi">-</span> <span class="s2">"</span><span class="s">Tutorials</span><span class="nv"> </span><span class="s">about</span><span class="nv"> </span><span class="s">analysis</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">single-cell</span><span class="nv"> </span><span class="s">RNA-seq</span><span class="nv"> </span><span class="s">data"</span>
+<span class="pi">-</span> <span class="s2">"</span><span class="s">Tutorials</span><span class="nv"> </span><span class="s">using</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">single</span><span class="nv"> </span><span class="s">published</span><span class="nv"> </span><span class="s">single-cell</span><span class="nv"> </span><span class="s">RNA-seq</span><span class="nv"> </span><span class="s">dataset</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">variety</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">analyses"</span>
 
 </code></pre></div>            </div>
           </div>
@@ -9655,6 +10366,53 @@ If enabled, you must provide good speaker notes for every single slide.</p>
 
 		
 	
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: tag_based">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>tag_based</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>Boolean</b>
+
+<p>
+<p>If this is a synthetic tag based topic (no tutorials of it’s own)
+then you must set this flag to indicate it as such, otherwise you
+will find yourself with an empty topic page.</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</blockquote>
+
 		
 	
 		
@@ -10408,19 +11166,21 @@ day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/contributing/tutorials/schemas/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
                    </pre></div></div>
                    </p>
                 </blockquote>
@@ -10445,153 +11205,117 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                     <ol>
                     
                         
-                            
-                    <li><a href="/training-material/topics/contributing/slides/introduction.html">Overview of the Galaxy Training Material</a></li>
-                            
-                        
-                    
-                        
-                            
-                                
-                    <li><a href="/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html">Adding auto-generated video to your slides</a></li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                    <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-quiz/tutorial.html">Adding Quizzes to your Tutorial</a></li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                    <li><a href="/training-material/topics/contributing/tutorials/github-command-line-contribution/tutorial.html">Contributing with GitHub via command-line</a></li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                    <li><a href="/training-material/topics/contributing/tutorials/github-interface-contribution/tutorial.html">Contributing with GitHub via its interface</a></li>
-                                
-                            
-                        
-                    
-                        
-                            
                                 
                     <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html">Creating a new tutorial</a></li>
                                 
-                            
                         
                     
                         
-                            
                                 
-                    <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">Creating content in Markdown</a></li>
+                    <li><a href="/training-material/topics/contributing/tutorials/github-command-line-contribution/tutorial.html">Contributing with GitHub via command-line</a></li>
                                 
-                            
                         
                     
                         
-                            
                                 
-                    <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-tours/tutorial.html">Creating Interactive Galaxy Tours</a></li>
+                    <li><a href="/training-material/topics/contributing/tutorials/introduction/slides.html">Overview of the Galaxy Training Material</a></li>
                                 
-                            
                         
                     
                         
-                            
                                 
                     <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-slides/slides.html">Creating Slides</a></li>
                                 
-                            
                         
                     
                         
-                            
-                                
-                    <li><a href="/training-material/topics/contributing/tutorials/design/tutorial.html">Design and plan session, course, materials</a></li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                    <li><a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html">Generating PDF artefacts of the website</a></li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                    <li><a href="/training-material/topics/contributing/tutorials/schemas/tutorial.html">GTN Metadata</a></li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                    <li><a href="/training-material/topics/contributing/tutorials/create-new-topic/tutorial.html">Including a new topic</a></li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                    <li><a href="/training-material/topics/contributing/tutorials/learning-principles/tutorial.html">Principles of learning and how they apply to training and teaching</a></li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                    <li><a href="/training-material/topics/contributing/tutorials/running-jekyll/tutorial.html">Running the GTN website locally</a></li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                    <li><a href="/training-material/topics/contributing/tutorials/gitpod/tutorial.html">Running the GTN website online using GitPod</a></li>
-                                
-                            
-                        
-                    
-                        
-                            
                                 
                     <li><a href="/training-material/topics/contributing/tutorials/python/tutorial.html">Teaching Python</a></li>
                                 
-                            
                         
                     
                         
-                            
                                 
-                    <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-technical/tutorial.html">Tools, Data, and Workflows for tutorials</a></li>
+                    <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-quiz/tutorial.html">Adding Quizzes to your Tutorial</a></li>
                                 
-                            
                         
                     
                         
-                            
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/design/tutorial.html">Design and plan session, course, materials</a></li>
+                                
+                        
+                    
+                        
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/gitpod/tutorial.html">Running the GTN website online using GitPod</a></li>
+                                
+                        
+                    
+                        
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html">Adding auto-generated video to your slides</a></li>
+                                
+                        
+                    
+                        
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/create-new-topic/tutorial.html">Including a new topic</a></li>
+                                
+                        
+                    
+                        
                                 
                     <li><a href="/training-material/topics/contributing/tutorials/admin-knitting/tutorial.html">Updating diffs in admin training</a></li>
                                 
-                            
+                        
+                    
+                        
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/schemas/tutorial.html">GTN Metadata</a></li>
+                                
+                        
+                    
+                        
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/running-jekyll/tutorial.html">Running the GTN website locally</a></li>
+                                
+                        
+                    
+                        
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/learning-principles/tutorial.html">Principles of learning and how they apply to training and teaching</a></li>
+                                
+                        
+                    
+                        
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/github-interface-contribution/tutorial.html">Contributing with GitHub via its interface</a></li>
+                                
+                        
+                    
+                        
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html">Generating PDF artefacts of the website</a></li>
+                                
+                        
+                    
+                        
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-technical/tutorial.html">Tools, Data, and Workflows for tutorials</a></li>
+                                
+                        
+                    
+                        
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-tours/tutorial.html">Creating Interactive Galaxy Tours</a></li>
+                                
+                        
+                    
+                        
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">Creating content in Markdown</a></li>
+                                
                         
                     
                     </ol>
@@ -10617,8 +11341,6 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

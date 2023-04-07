@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/teaching/tutorials/hybrid-training/tutorial.html" />
@@ -24,11 +23,10 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Hybrid training" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2022-09-23 13:01:08 +0000" />
+<meta name="DC.date" content="2023-02-17 10:40:02 +0000" />
 <meta name="DC.creator" content="Bérénice Batut" />
 <meta name="DC.creator" content="Fotis E. Psomopoulos" />
 
-        
         
         
         
@@ -37,217 +35,12 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Hybrid training" />
         <meta property="og:description" content="Galaxy is a great solution to train the bioinformatics co..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/teaching" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Teaching and Hosting Galaxy training
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
+        
+        <script type="application/ld+json">
             
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
-        
-        <a class="dropdown-item" href="/training-material/topics/teaching/faqs/" title="Check our FAQs for the Teaching and Hosting Galaxy training topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/teaching/tutorials/hybrid-training/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/teaching/tutorials/hybrid-training/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        <!-- link to feedback -->
-        
-            
-            
-                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-                </a>
-            
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -272,7 +65,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "2022-09-23 13:01:08 +0000",
+  "dateModified": "2023-02-17 10:40:02 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Hybrid training",
   "interactivityType": "mixed",
@@ -341,7 +134,209 @@
     }
   ]
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/teaching" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Teaching and Hosting Galaxy training
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/hybrid-training/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/teaching/faqs/" title="Check our FAQs for the Teaching and Hosting Galaxy training topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/teaching/tutorials/hybrid-training/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/teaching/tutorials/hybrid-training/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-teaching">
     <h1 data-toc-skip>Hybrid training</h1>
@@ -428,7 +423,7 @@
 
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Sep 23, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Feb 17, 2023 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -446,7 +441,10 @@
             <div class="col-sm-10">
                  
 
-                <p><strong>Combine with Australia Biocommon paper: https://jou<span class="notranslate">rna</span>ls.plos.org/ploscompbiol/article?id=10.1371/jou<span class="notranslate">rna</span>l.pcbi.1008715</strong></p>
+                <blockquote class="tip">
+  <div class="box-title tip-title" id="tip-combine-with-australia-biocommon-paper"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-combine-with-australia-biocommon-paper-contents" aria-expanded="true" aria-label="Toggle tip box: Combine with Australia Biocommon paper"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Combine with Australia Biocommon paper<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+  <p>This is an excellent companion paper: <span class="citation"><a href="#Hall_2021">Hall <i>et al.</i> 2021</a></span></p>
+</blockquote>
 
 <p><strong>hybrid training events</strong>, i.e. pairing-up on-site helpers with remote instructors across multiple sites simultaneously:</p>
 
@@ -458,17 +456,17 @@
 
 <p><em>To illustrate a typical Gallantries event and the different roles (1 person can have several roles), we have decided to share a story with several fictional characters</em></p>
 
-<p><strong>Max</strong> is a training coordinator of an inte<span class="notranslate">rna</span>tional research consortium. They recently surveyed researchers in the consortium on their need in HTS data analysis. The results were overwhelming: over 60 scientists at the several locations would like to learn how to analyze their own <span class="notranslate">RNA</span>-seq data. To fulfill this demand, Max decided to organize a Gallantries event: a 3-days workshop with 4 different locations simultaneously (Greece, Estonia, France and Spain). Max is the <strong>global organizer</strong> of this event, in charge of finding the date, contact and coordinate with the local hosts, advertize the event, find the instructors, etc. After the event, Max will aggregate all feedback from participants, helpers and hosts and share them.</p>
+<p><strong>Max</strong> is a training coordinator of an international research consortium. They recently surveyed researchers in the consortium on their need in HTS data analysis. The results were overwhelming: over 60 scientists at the several locations would like to learn how to analyze their own RNA-seq data. To fulfill this demand, Max decided to organize a Gallantries event: a 3-days workshop with 4 different locations simultaneously (Greece, Estonia, France and Spain). Max is the <strong>global organizer</strong> of this event, in charge of finding the date, contact and coordinate with the local hosts, advertize the event, find the instructors, etc. After the event, Max will aggregate all feedback from participants, helpers and hosts and share them.</p>
 
 <p>Max first contacted 4 <strong>local hosts</strong> (1 at each site):</p>
 
 <p>One of them is <strong>Imani</strong> who is based in Greece. Imani is in charge of finding a suitable room (preferably with computers), checking the local setup, recruiting local helpers, advertizing the event locally to participants, and organizing the local catering and social event. Imani will also give the introduction and wrap-up on each day, and collecting feedback from participants.</p>
 
-<p>Imani recruited 2 <strong>local helpers</strong> for each day. One of the helpers, <strong>Casey</strong>,  has some previous experience with <span class="notranslate">RNA</span>-seq data analysis and <span class="notranslate">Galaxy</span>. Before the workshop, they went through the training material and tested it. They will help participants during the workshop when they are stuck or get different results than the instructors. They will also give direct feedback to the instructor about the pace, any possible local issues etc.</p>
+<p>Imani recruited 2 <strong>local helpers</strong> for each day. One of the helpers, <strong>Casey</strong>,  has some previous experience with RNA-seq data analysis and Galaxy. Before the workshop, they went through the training material and tested it. They will help participants during the workshop when they are stuck or get different results than the instructors. They will also give direct feedback to the instructor about the pace, any possible local issues etc.</p>
 
-<p>Max also recruited 4 <strong>instructors</strong>, <strong>Farah</strong> among them. Farah is a trained bioinformatician and experienced instructor, regularly giving training to scientists on HTS data analysis. They will teach in the morning of the 2nd day (introduction and the first steps of <span class="notranslate">RNA</span>-seq data analysis). Farah is located in Germany and teaches from a room at their institute in front of their computer. During their session, they will adapt their pace given the feedback they receive from the local helpers, check the status of participants job on a dedicated page, and will also answer questions from participants written on chat.</p>
+<p>Max also recruited 4 <strong>instructors</strong>, <strong>Farah</strong> among them. Farah is a trained bioinformatician and experienced instructor, regularly giving training to scientists on HTS data analysis. They will teach in the morning of the 2nd day (introduction and the first steps of RNA-seq data analysis). Farah is located in Germany and teaches from a room at their institute in front of their computer. During their session, they will adapt their pace given the feedback they receive from the local helpers, check the status of participants job on a dedicated page, and will also answer questions from participants written on chat.</p>
 
-<p><strong>Alex</strong> is a PhD student in molecular biology based in Greece. They would like to learn about <span class="notranslate">RNA</span>-seq data analysis to be able to analyze the data they generated. They heard about the workshop and join one site for the workshop close to their institute. As a <strong>participant</strong>, Alex will actively participate in the workshop by running their first <span class="notranslate">RNA</span>-seq data analysis given the instructor’s instructions, ask for help from local helpers when stuck, will raise their questions on the participant chat, and will give feedback using sticky notes and the dedicated feedback form.</p>
+<p><strong>Alex</strong> is a PhD student in molecular biology based in Greece. They would like to learn about RNA-seq data analysis to be able to analyze the data they generated. They heard about the workshop and join one site for the workshop close to their institute. As a <strong>participant</strong>, Alex will actively participate in the workshop by running their first RNA-seq data analysis given the instructor’s instructions, ask for help from local helpers when stuck, will raise their questions on the participant chat, and will give feedback using sticky notes and the dedicated feedback form.</p>
 
 <h1 id="cost-of-an-event">Cost of an event</h1>
 
@@ -520,7 +518,7 @@
     <p>We created a <a href="https://github.com/galaxy-carpentries/workshop-template">template of such a page</a> that can easily adapted.</p>
   </li>
   <li>
-    <p>Identify places you can promote your event. <a href="https://github.com/galaxyproject/galaxy-hub"><span class="notranslate">Galaxy</span> Hub</a> or <a href="https://carpentries.topicbox.com/groups/discuss">Carpentries Discuss List</a> are the primary places to do this</p>
+    <p>Identify places you can promote your event. <a href="https://github.com/galaxyproject/galaxy-hub">Galaxy Hub</a> or <a href="https://carpentries.topicbox.com/groups/discuss">Carpentries Discuss List</a> are the primary places to do this</p>
 
     <p>You should do this 1-3 month in advance of your event (if you can).</p>
   </li>
@@ -546,7 +544,7 @@
 
     <p>To avoid audio issues (full vs empty room), the test should be hearable at 75% volume (so room to go up if need be)</p>
   </li>
-  <li>Request <a href="https://galaxyproject.eu/tiaas">TiaaS infrastructure</a> if using use<span class="notranslate">galaxy</span>.eu</li>
+  <li>Request <a href="https://galaxyproject.eu/tiaas">TiaaS infrastructure</a> if using usegalaxy.eu</li>
   <li>Remind instructors to arrange microphone/headphones</li>
   <li>
     <p>Create name badges, with space for people to specify pronouns, and send them to local hosts</p>
@@ -626,7 +624,7 @@
   <li>Review the training material and suggest changes at max 2 days before</li>
   <li>Make sure good quality wifi or wired internet connection in the room</li>
   <li>Prepare microphone/headphones</li>
-  <li>Help organizer to create the recap slides for the end of each day (including newly learned file formats, usual HTS data analysis <span class="notranslate">workflow</span>)</li>
+  <li>Help organizer to create the recap slides for the end of each day (including newly learned file formats, usual HTS data analysis workflow)</li>
 </ul>
 
 <h2 id="during-the-workshop">During the workshop</h2>
@@ -674,7 +672,7 @@ put sticky notes there quickly</p>
   <li>Explain and show the use of participant chat</li>
   <li>Remind learners to use post-it notes to give feedback</li>
   <li>Answer questions on the participant chat</li>
-  <li>Publish <span class="notranslate">Galaxy</span> history regularly, for the participants who might be left behind</li>
+  <li>Publish Galaxy history regularly, for the participants who might be left behind</li>
   <li>Check the instructor - helper chat regularly and adapt the pace in function</li>
 </ul>
 
@@ -713,7 +711,7 @@ put sticky notes there quickly</p>
 
 <ul>
   <li>Report any lesson errors or suggest improvements on GitHub</li>
-  <li>Give feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452"><span class="notranslate">Galaxy</span> Training Material GitHub issue</a></li>
+  <li>Give feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452">Galaxy Training Material GitHub issue</a></li>
   <li>Fill the instructor feedback form</li>
   <li>Review feedback from helpers</li>
 </ul>
@@ -758,7 +756,7 @@ put sticky notes there quickly</p>
     <p>We created a <a href="https://github.com/galaxy-carpentries/workshop-template">template of such a page</a> that can easily adapted.</p>
   </li>
   <li>
-    <p>Identify places you can promote your event. <a href="https://github.com/galaxyproject/galaxy-hub"><span class="notranslate">Galaxy</span> Hub</a> or <a href="https://carpentries.topicbox.com/groups/discuss">Carpentries Discuss List</a> are the primary places to do this</p>
+    <p>Identify places you can promote your event. <a href="https://github.com/galaxyproject/galaxy-hub">Galaxy Hub</a> or <a href="https://carpentries.topicbox.com/groups/discuss">Carpentries Discuss List</a> are the primary places to do this</p>
 
     <p>You should do this 1-3 month in advance of your event (if you can).</p>
   </li>
@@ -784,7 +782,7 @@ put sticky notes there quickly</p>
 
     <p>To avoid audio issues (full vs empty room), the test should be hearable at 75% volume (so room to go up if need be)</p>
   </li>
-  <li>Request <a href="https://galaxyproject.eu/tiaas">TiaaS infrastructure</a> if using use<span class="notranslate">galaxy</span>.eu</li>
+  <li>Request <a href="https://galaxyproject.eu/tiaas">TiaaS infrastructure</a> if using usegalaxy.eu</li>
   <li>Remind instructors to arrange microphone/headphones</li>
   <li>
     <p>Create name badges, with space for people to specify pronouns, and send them to local hosts</p>
@@ -925,7 +923,7 @@ put sticky notes there quickly</p>
   <li>Review the training material and suggest changes at max 2 days before</li>
   <li>Make sure good quality wifi or wired internet connection in the room</li>
   <li>Prepare microphone/headphones</li>
-  <li>Help organizer to create the recap slides for the end of each day (including newly learned file formats, usual HTS data analysis <span class="notranslate">workflow</span>)</li>
+  <li>Help organizer to create the recap slides for the end of each day (including newly learned file formats, usual HTS data analysis workflow)</li>
 </ul>
 
 <h3 id="during-the-workshop-4">During the workshop</h3>
@@ -935,7 +933,7 @@ put sticky notes there quickly</p>
   <li>Explain and show the use of participant chat</li>
   <li>Remind learners to use post-it notes to give feedback</li>
   <li>Answer questions on the participant chat</li>
-  <li>Publish <span class="notranslate">Galaxy</span> history regularly, for the participants who might be left behind</li>
+  <li>Publish Galaxy history regularly, for the participants who might be left behind</li>
   <li>Check the instructor - helper chat regularly and adapt the pace in function</li>
 </ul>
 
@@ -943,7 +941,7 @@ put sticky notes there quickly</p>
 
 <ul>
   <li>Report any lesson errors or suggest improvements on GitHub</li>
-  <li>Give feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452"><span class="notranslate">Galaxy</span> Training Material GitHub issue</a></li>
+  <li>Give feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452">Galaxy Training Material GitHub issue</a></li>
   <li>Fill the instructor feedback form</li>
   <li>Review feedback from helpers</li>
 </ul>
@@ -974,6 +972,9 @@ put sticky notes there quickly</p>
                 
 
 
+                
+                <h1 id="bibliography">References</h1>
+                <ol class="bibliography"><li id="Hall_2021">Hall, C. R., P. C. Griffin, A. J. Lonie, and J. H. Christiansen, 2021 <b>Application of a bioinformatics training delivery method for reaching dispersed and distant trainees</b> (P. M. Palagi, Ed.). PLoS Comput Biol 17: e1008715. <a href="https://doi.org/10.1371/journal.pcbi.1008715">10.1371/journal.pcbi.1008715</a></li></ol>
                 
 
                 
@@ -1046,19 +1047,21 @@ day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/teaching/tutorials/hybrid-training/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
                    </pre></div></div>
                    </p>
                 </blockquote>
@@ -1120,8 +1123,6 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

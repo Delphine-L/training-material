@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/visualisation/tutorials/circos/tutorial.html" />
@@ -33,222 +32,16 @@
         
         
         
-        
         <meta name="description" content="Training material for data visualisation in Galaxy" />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Visualisation with Circos" />
         <meta property="og:description" content="Training material for data visualisation in Galaxy" />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/visualisation" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Visualisation
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
+        
+        <script type="application/ld+json">
             
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
-        
-        <a class="dropdown-item" href="/training-material/topics/visualisation/faqs/" title="Check our FAQs for the Visualisation topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/visualisation/tutorials/circos/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/visualisation/tutorials/circos/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        <!-- link to feedback -->
-        
-            
-            
-                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-                </a>
-            
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -414,7 +207,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-5752-2155",
+      "orcid": "https://orcid.org/0000-0002-5752-2155"
     }
   ],
   "contributor": [
@@ -483,7 +278,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-5752-2155",
+      "orcid": "https://orcid.org/0000-0002-5752-2155"
     }
   ],
   "about": [
@@ -492,10 +289,219 @@
       "name": "Visualisation",
       "description": "Training material for data visualisation in Galaxy",
       "url": "https://training.galaxyproject.org/training-material/topics/visualisation/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "http://edamontology.org/topic_0337",
+      "inDefinedTermSet": "http://edamontology.org",
+      "termCode": "topic_0337",
+      "url": "https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=http%3A%2F%2Fedamontology.org%2Ftopic_0337"
     }
   ]
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/visualisation" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Visualisation
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/visualisation/faqs/" title="Check our FAQs for the Visualisation topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/visualisation/tutorials/circos/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/visualisation/tutorials/circos/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-visualisation">
     <h1 data-toc-skip>Visualisation with Circos</h1>
@@ -504,7 +510,7 @@
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a><a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a>
+		Authors: <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a><a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a>
 	</div>
 
 </div>
@@ -577,7 +583,7 @@
 
 
 <a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/4494146">
-    <i class="far fa-copy" aria-hidden="true"></i> Datasets
+    <i class="far fa-copy" aria-hidden="true"></i>&nbsp;Datasets
 </a>
 
 </li>
@@ -588,7 +594,7 @@
 
 
     <a class="btn btn-default topic-icon" href="/training-material/topics/visualisation/tutorials/circos/workflows/" title="Workflows" alt="Visualisation with Circos workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
+        <i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Workflows
     </a>
 
 </li>
@@ -672,6 +678,8 @@
     </a>
     <ul class="dropdown-menu">
     
+    
+        
     
         
     
@@ -909,10 +917,10 @@
 
 <p><img src="../../images/circos-sample-panel.png" alt="Panel of example Circos images. " loading="lazy" /></p>
 
-<p>In this tutorial you will learn how to create such publication-ready Circos plots within <span class="notranslate">Galaxy</span>, and hopefully you can draw inspiration from these for developing your own plots.</p>
+<p>In this tutorial you will learn how to create such publication-ready Circos plots within Galaxy, and hopefully you can draw inspiration from these for developing your own plots.</p>
 
 <blockquote class="agenda">
-  <div id="agenda" class="box-title" aria-label="agenda box: ">Agenda</div>
+  <div class="box-title agenda-title" id="agenda" aria-label="agenda box: ">Agenda</div>
 
   <p>In this tutorial, we will deal with:</p>
 
@@ -966,13 +974,13 @@
 
 <figure id="figure-1"><img src="../../images/circos2.gif" alt="Gif of a circos plots through the development process. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Circos plots are an iterative process, requiring many iterative steps, each improving your plot and getting you closer to a final image.</figcaption></figure>
 
-<p>Circos is an extremely flexible but also very complex tool. The <span class="notranslate">Galaxy</span> Circos tool covers the most commonly used Circos features, but in order to avoid becoming too complex, it does not expose every single configuration option available in Circos. However, the <span class="notranslate">Galaxy</span> Circos tool allows you to download the full set of configuration files it uses, allowing you to manually tweak the plot further.</p>
+<p>Circos is an extremely flexible but also very complex tool. The Galaxy Circos tool covers the most commonly used Circos features, but in order to avoid becoming too complex, it does not expose every single configuration option available in Circos. However, the Galaxy Circos tool allows you to download the full set of configuration files it uses, allowing you to manually tweak the plot further.</p>
 
 <blockquote class="comment">
-  <div id="comment-circos-tutorials" class="box-title" aria-label="comment box: Circos tutorials"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Circos tutorials</div>
+  <div class="box-title comment-title" id="comment-circos-tutorials" aria-label="comment box: Circos tutorials"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Circos tutorials</div>
 
-  <p>To learn more about using Circos outside of <span class="notranslate">Galaxy</span> (e.g. for tweaking the
-Circos configuration output by the <span class="notranslate">Galaxy</span> tool), there are a wide range
+  <p>To learn more about using Circos outside of Galaxy (e.g. for tweaking the
+Circos configuration output by the Galaxy tool), there are a wide range
 of tutorials available from the <a href="http://circos.ca">Circos website</a></p>
 </blockquote>
 
@@ -1002,7 +1010,7 @@ of tutorials available from the <a href="http://circos.ca">Circos website</a></p
 				<b>Scatter plot</b> track type. All data points are indicated by a glyph (shape).
 				<br /><br />
 
-				<u>Data format</u>: four or five columns, tab separated. While Circos accepts space or tab separated, to use <span class="notranslate">Galaxy</span>'s data manipulation tools you will need tab separated data. The attributes colum is completely optional but can be used to override colours, or provide extra context like "strand" or something else on which it might be diserable to filter. The format is <code>key=value,key2=value2,...</code>
+				<u>Data format</u>: four or five columns, tab separated. While Circos accepts space or tab separated, to use Galaxy's data manipulation tools you will need tab separated data. The attributes colum is completely optional but can be used to override colours, or provide extra context like "strand" or something else on which it might be diserable to filter. The format is <code>key=value,key2=value2,...</code>
 				<table>
 					<thead><tr><th>Chromosome</th><th>Start</th><th>End</th><th>Value</th><th>Attributes (optional)</th></tr></thead>
 						<tbody>
@@ -1034,7 +1042,7 @@ of tutorials available from the <a href="http://circos.ca">Circos website</a></p
 		<tr>
 			<td><img src="../../images/circos/data_tracks_tiles.png" alt="Example of a Circos tile track" /></td>
 			<td>
-				<strong>Tile</strong> track type. This is useful to indicate a range of the chromosome, for example to show genes, <span class="notranslate"><span class="notranslate">reads</span></span>, repeat regions, etc.
+				<strong>Tile</strong> track type. This is useful to indicate a range of the chromosome, for example to show genes, <span class="notranslate">reads</span>, repeat regions, etc.
 				<br /><br />
 
 				<u>Data format</u>: four or five columns, similar to scatter plot but instead of a value or a score, we have a text label that can be displayed.
@@ -1175,14 +1183,14 @@ of tutorials available from the <a href="http://circos.ca">Circos website</a></p
 <h2 id="data-upload">Data upload</h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-obtaining-our-data" class="box-title" aria-label="hands-on box: Obtaining our data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Obtaining our data</div>
+  <div class="box-title hands-on-title" id="hands-on-obtaining-our-data" aria-label="hands-on box: Obtaining our data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Obtaining our data</div>
 
   <ol>
     <li>
       <p>Make sure you have an empty analysis history. Give it a name.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-creating-a-new-history" class="box-title"><button type="button" aria-controls="tip-creating-a-new-history-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-creating-a-new-history"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-creating-a-new-history-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>   <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>   <ol>   <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden">galaxy-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>   <li>Select the option <strong>Create New</strong> from the menu</li> </ol> </blockquote>
     </li>
     <li>
       <p><span class="tool" data-tool="upload1" title="Tested with upload1"><strong>Import Data</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: upload1</span></span></p>
@@ -1197,10 +1205,10 @@ https://zenodo.org/record/4494146/files/hg18_karyotype_withbands.txt
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-via-links" class="box-title"><button type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-data-from-a-data-library" class="box-title"><button type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-data-from-a-data-library"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>As an alternative to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>   <ul>   <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>   <li>Navigate to  the correct folder as indicated by your instructor</li>   <li>Select the desired files</li>   <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>   <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>   <li>Click on <strong>Import</strong></li> </ul> </blockquote>
     </li>
   </ol>
 
@@ -1211,10 +1219,10 @@ https://zenodo.org/record/4494146/files/hg18_karyotype_withbands.txt
 <p>As the first step to this Circos plot, let’s configure the ideogram (set of chromosomes to draw). You can use one of the built-in genomes, or you can supply your own karyotype file.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-set-ideogram-configuration" class="box-title" aria-label="hands-on box: Set ideogram configuration"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Set ideogram configuration</div>
+  <div class="box-title hands-on-title" id="hands-on-set-ideogram-configuration" aria-label="hands-on box: Set ideogram configuration"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Set ideogram configuration</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7"><strong>Circos</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+<span class="notranslate">galaxy</span>7</span></span>  visualizes data in a circular layout with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7"><strong>Circos</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7</span></span>  visualizes data in a circular layout with the following parameters:
       <ul>
         <li>In <em>“Karyotype”</em>:
           <ul>
@@ -1246,10 +1254,10 @@ https://zenodo.org/record/4494146/files/hg18_karyotype_withbands.txt
       </ul>
     </li>
     <li>
-      <p><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> the output <code class="language-plaintext highlighter-rouge">Circos Plot ideogram</code></p>
+      <p><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> the output <code class="language-plaintext highlighter-rouge">Circos Plot ideogram</code></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-renaming-a-dataset" class="box-title"><button type="button" aria-controls="tip-renaming-a-dataset-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field  to <code class="language-plaintext highlighter-rouge">Circos Plot ideogram</code></li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-renaming-a-dataset"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-renaming-a-dataset-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>   <li>In the central panel, change the <strong>Name</strong> field  to <code class="language-plaintext highlighter-rouge">Circos Plot ideogram</code></li>   <li>Click the <strong>Save</strong> button</li> </ul> </blockquote>
     </li>
   </ol>
 
@@ -1262,7 +1270,7 @@ https://zenodo.org/record/4494146/files/hg18_karyotype_withbands.txt
 <p>We will use this as the basis for our plot, and add data tracks one at a time.</p>
 
 <blockquote class="comment">
-  <div id="comment-advanced-info-defining-your-karyotype-file" class="box-title" aria-label="comment box: Advanced info: defining your karyotype file"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Advanced info: defining your karyotype file</div>
+  <div class="box-title comment-title" id="comment-advanced-info-defining-your-karyotype-file" aria-label="comment box: Advanced info: defining your karyotype file"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Advanced info: defining your karyotype file</div>
 
   <p>Since our data uses <code class="language-plaintext highlighter-rouge">hg18</code> reference genome, we supply a corresponding karyotype file:</p>
 
@@ -1305,19 +1313,19 @@ There are other parameters we can use to draw only a subset of the data (e.g. ju
   <p>More information about this format (including karyotype definitions for several species) can be found on the <a href="http://circos.ca/documentation/tutorials/ideograms/karyotypes/">Circos website</a></p>
 
   <blockquote class="question">
-    <div id="question" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+    <div class="box-title question-title" id="question" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>Why didn’t we use the <code class="language-plaintext highlighter-rouge">hg18</code> built-in genome (using the <code class="language-plaintext highlighter-rouge">Locally Cached</code> option)?</li>
     </ol>
 
     <blockquote class="solution">
-      <div id="solution" class="box-title"><button type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+      <div class="box-title solution-title" id="solution"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
       <ol>
         <li>
           <p>These built-in definitions often include more than the canonical chromosomes (chr1-chr22, chrX, chrY), which we might not want to plot. For example, using
-The full definition of <code class="language-plaintext highlighter-rouge">hg18</code> built-in to <span class="notranslate">Galaxy</span>, we get the following ideogram:</p>
+The full definition of <code class="language-plaintext highlighter-rouge">hg18</code> built-in to Galaxy, we get the following ideogram:</p>
 
           <p><img src="../../images/circos/cancer_ideogram_cached.png" alt="Example of ideogram generated using built-in genome definition. " width="85%" loading="lazy" /></p>
 
@@ -1334,9 +1342,9 @@ The full definition of <code class="language-plaintext highlighter-rouge">hg18</
 <p>The first data track we will configure, will be the structural variants (SVs) using the <em>link</em> track type in Circos. We will colour the links differently depending on whether the SVs are intrachromosomal (within a single chromosome) or interchromosomal (between different chromosomes).</p>
 
 <blockquote class="comment">
-  <div id="comment-background-structural-variants" class="box-title" aria-label="comment box: Background: Structural Variants"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background: Structural Variants</div>
+  <div class="box-title comment-title" id="comment-background-structural-variants" aria-label="comment box: Background: Structural Variants"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background: Structural Variants</div>
 
-  <p>Structural variants (SVs) are large-scale genomic rearrangements. SVs involve large segments of <span class="notranslate">DNA</span> (&gt;50 bp) that are deleted, duplicated, translocated or inverted.</p>
+  <p>Structural variants (SVs) are large-scale genomic rearrangements. SVs involve large segments of DNA (&gt;50 bp) that are deleted, duplicated, translocated or inverted.</p>
 
   <figure id="figure-4"><img src="../../images/circos/sv-types.jpg" alt="Overview of types of SVs. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> Different types of SVs</figcaption></figure>
 
@@ -1360,7 +1368,7 @@ The full definition of <code class="language-plaintext highlighter-rouge">hg18</
 #GENERATED_AT	2012-Mar-07 19:33:32.930656
 #FORMAT_VERSION	2.0
 #GENOME_REFERENCE	NCBI build 36
-#SAMPLE	GS00669-<span class="notranslate">DNA</span>_D02
+#SAMPLE	GS00669-DNA_D02
 #TYPE	JUNCTIONS
 #DBSNP_BUILD	dbSNP build 130
 #GENE_ANNOTATIONS	NCBI build 36.3
@@ -1382,13 +1390,13 @@ The full definition of <code class="language-plaintext highlighter-rouge">hg18</
 </ul>
 
 <!--SNIPPET-->
-<blockquote class="warning">  <div id="warning-beware-of-cuts" class="box-title" aria-label="warning box: Beware of Cuts"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="visually-hidden"></span> Warning: Beware of Cuts</div>  <p>The section below uses <strong>Cut</strong> tool. There are two <strong>cut</strong> tools in <span class="notranslate">Galaxy</span> due to historical reasons. This example uses tool with the full name <strong>Cut columns from a table (cut)</strong>. However, the same logic applies to the other tool. It simply has a slightly different interface.</p></blockquote>
+<blockquote class="warning">   <div class="box-title warning-title" id="warning-beware-of-cuts" aria-label="warning box: Beware of Cuts"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="visually-hidden"></span> Warning: Beware of Cuts</div>   <p>The section below uses <strong>Cut</strong> tool. There are two <strong>cut</strong> tools in Galaxy due to historical reasons. This example uses tool with the full name <strong>Cut columns from a table (cut)</strong>. However, the same logic applies to the other tool. It simply has a slightly different interface.</p> </blockquote>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-prepare-input-data" class="box-title" aria-label="hands-on box: Prepare input data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Prepare input data</div>
+  <div class="box-title hands-on-title" id="hands-on-prepare-input-data" aria-label="hands-on box: Prepare input data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Prepare input data</div>
 
   <ol>
-    <li><span class="tool" data-tool="Grep1" title="Tested with Grep1"><strong>Select</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Grep1</span></span>  lines that match an <span class="notranslate">expression</span> with the following parameters:
+    <li><span class="tool" data-tool="Grep1" title="Tested with Grep1"><strong>Select</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Grep1</span></span>  lines that match an expression with the following parameters:
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Select lines from”</em>: <code class="language-plaintext highlighter-rouge">VCaP highConfidenceJunctions.tsv</code></li>
         <li><em>“that”</em>: <code class="language-plaintext highlighter-rouge">NOT Matching</code></li>
@@ -1401,7 +1409,7 @@ The full definition of <code class="language-plaintext highlighter-rouge">hg18</
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“From”</em>: output of <strong>Select</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
       </ul>
     </li>
-    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> this output to <code class="language-plaintext highlighter-rouge">SVs Circos.tsv</code></li>
+    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> this output to <code class="language-plaintext highlighter-rouge">SVs Circos.tsv</code></li>
   </ol>
 
 </blockquote>
@@ -1411,11 +1419,11 @@ The full definition of <code class="language-plaintext highlighter-rouge">hg18</
 <p>Given that Circos is a very complex with dozens of parameters to set, we re-run previous circos runs to build on the existing configuration we have done, without losing the progress and having to re-specify parameters every time.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-add-circos-link-track-for-svs" class="box-title" aria-label="hands-on box: Add Circos link track for SVs"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add Circos link track for SVs</div>
+  <div class="box-title hands-on-title" id="hands-on-add-circos-link-track-for-svs" aria-label="hands-on box: Add Circos link track for SVs"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add Circos link track for SVs</div>
 
   <ol>
     <li>
-      <p>Click <strong>Re-run</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot ideogram</code>)</p>
+      <p>Click <strong>Re-run</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot ideogram</code>)</p>
     </li>
     <li>Add a new Link Track for the SV data, colouring by SV type:
       <ul>
@@ -1469,7 +1477,7 @@ The full definition of <code class="language-plaintext highlighter-rouge">hg18</
         </li>
       </ul>
     </li>
-    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> the output <code class="language-plaintext highlighter-rouge">Circos Plot SVs</code></li>
+    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> the output <code class="language-plaintext highlighter-rouge">Circos Plot SVs</code></li>
   </ol>
 
 </blockquote>
@@ -1479,7 +1487,7 @@ The full definition of <code class="language-plaintext highlighter-rouge">hg18</
 <figure id="figure-6"><img src="../../images/circos/cancer_svs1.png" alt="The plot with an SV track. " width="60%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> SVs on the VCaP cell line. Red lines indicate <i>interchromosomal</i> SVs, where pieces originating from different chromosomes have fused together. Black lines show breaks withing in single chromosome.</figcaption></figure>
 
 <blockquote class="question">
-  <div id="question-1" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-1" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
     <li>Are there more interchromosomal or intrachromosomal SVs?</li>
@@ -1487,7 +1495,7 @@ The full definition of <code class="language-plaintext highlighter-rouge">hg18</
   </ol>
 
   <blockquote class="solution">
-    <div id="solution-1" class="box-title"><button type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-1"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
       <li>Interchromosomal SVs (between different chromosomes) are coloured red in this
@@ -1502,11 +1510,11 @@ at a glance that there are more intrachromosomal SVs (black) than interchromosom
 <p>We see from this image that chromosome 5 has an unusually large number of SVs, let’s look at that chromosome more closely, by limiting the chromosomes Circos should draw:</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-plot-only-chromosome-5" class="box-title" aria-label="hands-on box: Plot only Chromosome 5"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Plot only Chromosome 5</div>
+  <div class="box-title hands-on-title" id="hands-on-plot-only-chromosome-5" aria-label="hands-on box: Plot only Chromosome 5"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Plot only Chromosome 5</div>
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
     </li>
     <li>
       <p><strong>Change</strong> the following tool parameters:</p>
@@ -1528,7 +1536,7 @@ at a glance that there are more intrachromosomal SVs (black) than interchromosom
 <figure id="figure-7"><img src="../../images/circos/cancer_svs_chr5.png" alt="Circos plot of chromosome 5 SVs. " width="50%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 7:</span> Chromosome 5 of the VCaP cancer cell line. The <a href="https://en.wikipedia.org/wiki/Locus_(genetics)">q arm</a> of this chromosome appears to be affected by an unusually large number of SVs</figcaption></figure>
 
 <blockquote class="question">
-  <div id="question-2" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-2" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
     <li>Are there indeed significantly more SVs on chromosome 5 than on the other chromosomes? (hint: plot some of the other chromosomes as well)</li>
@@ -1536,7 +1544,7 @@ at a glance that there are more intrachromosomal SVs (black) than interchromosom
   </ol>
 
   <blockquote class="solution">
-    <div id="solution-2" class="box-title"><button type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-2"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
       <li>
@@ -1557,20 +1565,20 @@ This could be caused by a phenomenon known as <em>chromothripsis</em> (see next 
 </blockquote>
 
 <blockquote class="comment">
-  <div id="comment-background-chromothripsis" class="box-title" aria-label="comment box: Background: Chromothripsis"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background: Chromothripsis</div>
+  <div class="box-title comment-title" id="comment-background-chromothripsis" aria-label="comment box: Background: Chromothripsis"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background: Chromothripsis</div>
 
   <p><strong>Chromothripsis</strong> is a phenomenon whereby (part of) a chromosome is shattered in a single catastrophic event, and subsequently imprecisely stitched
 together by the cell’s repair mechanisms. This leads to a huge number of SV junctions.</p>
 
-  <figure id="figure-9"><img src="../../images/circos/chromothripsis.png" alt="Chromothripsis. " width="60%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 9:</span> Chromothripsis is a scattering of the <span class="notranslate">DNA</span>, followed by an imprecise repair process, leading to many structural rearrangements.</figcaption></figure>
+  <figure id="figure-9"><img src="../../images/circos/chromothripsis.png" alt="Chromothripsis. " width="60%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 9:</span> Chromothripsis is a scattering of the DNA, followed by an imprecise repair process, leading to many structural rearrangements.</figcaption></figure>
 
   <blockquote class="quote">
     <p><strong>Characteristics of chromothripsis:</strong></p>
 
     <ol>
       <li><strong>Large numbers of complex rearrangements</strong> in localised regions of single chromosomes or chromosome arms (showed by high density and clustered breakpoints) which suggests that chromosomes need to be condensed e.g. in mitosis for chromothripsis to occur.</li>
-      <li>Low <strong>copy number states- alte<span class="notranslate">rna</span>tion between 2 states</strong> (sometimes 3) suggesting that rearrangements occurred in a short period of time.</li>
-      <li>In chromothriptic areas you get <strong>alte<span class="notranslate">rna</span>tion of regions which retain heterozygosity-two copy (no loss or gain), with regions that have loss of heterozygosity- one copy</strong> (heterozygous deletion). This suggest that the rearrangements took place at a time that both parental copies of the chromosome were present and hence early on the development of the cancer cell.</li>
+      <li>Low <strong>copy number states- alternation between 2 states</strong> (sometimes 3) suggesting that rearrangements occurred in a short period of time.</li>
+      <li>In chromothriptic areas you get <strong>alternation of regions which retain heterozygosity-two copy (no loss or gain), with regions that have loss of heterozygosity- one copy</strong> (heterozygous deletion). This suggest that the rearrangements took place at a time that both parental copies of the chromosome were present and hence early on the development of the cancer cell.</li>
     </ol>
 
     <p><em>from <a href="https://en.wikipedia.org/wiki/Chromothripsis">https://en.wikipedia.org/wiki/Chromothripsis</a></em></p>
@@ -1585,13 +1593,13 @@ together by the cell’s repair mechanisms. This leads to a huge number of SV ju
 <p>Next, we will create a track displaying copy number. This data comes from Affymetrix SNP arrays.</p>
 
 <blockquote class="comment">
-  <div id="comment-background-copy-number-variation-cnv" class="box-title" aria-label="comment box: Background: Copy Number Variation (CNV)"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background: Copy Number Variation (CNV)</div>
+  <div class="box-title comment-title" id="comment-background-copy-number-variation-cnv" aria-label="comment box: Background: Copy Number Variation (CNV)"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background: Copy Number Variation (CNV)</div>
 
-  <p>The human genome is a <em>diploid</em> genome, meaning there are 2 copies of each chromosome, one pate<span class="notranslate">rna</span>l, and one mate<span class="notranslate">rna</span>l. This means that for any given gene, humans have two different copies of it in our genome.</p>
+  <p>The human genome is a <em>diploid</em> genome, meaning there are 2 copies of each chromosome, one paternal, and one maternal. This means that for any given gene, humans have two different copies of it in our genome.</p>
 
   <p><br /></p>
 
-  <p>Some structural variants will lead to a change in this copy number, for example duplications and deletions. Other SVs (such as inversions and translocations) do not result in a change in copy number, since the piece of <span class="notranslate">DNA</span> is just moved, but the number of copies of it remains the same.</p>
+  <p>Some structural variants will lead to a change in this copy number, for example duplications and deletions. Other SVs (such as inversions and translocations) do not result in a change in copy number, since the piece of DNA is just moved, but the number of copies of it remains the same.</p>
 
   <figure id="figure-10"><img src="../../images/circos/cancer-cnv-intro.png" alt="SVs lead to CNVs. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 10:</span> Duplications and deletions lead to a change in copy number, measurable by a change in read depth. Other SVs such as inversions are copy-number neutral.</figcaption></figure>
 
@@ -1601,9 +1609,9 @@ the normal variation within the human population. In highly rearranged genomes s
 </blockquote>
 
 <blockquote class="comment">
-  <div id="comment-background-dna-microarrays" class="box-title" aria-label="comment box: Background: DNA Microarrays"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background: <span class="notranslate">DNA</span> Microarrays</div>
+  <div class="box-title comment-title" id="comment-background-dna-microarrays" aria-label="comment box: Background: DNA Microarrays"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background: DNA Microarrays</div>
 
-  <p><strong>Microarrays</strong> are used to measure the <span class="notranslate">expression</span> levels of large number of genes simultaneously, or to genotype multiple regions of a genome. In this example in our tutorial, we have data from a <strong>SNP array</strong>. This type of microarray detects the presence and proportion (homozyogous/heterozygous) of a
+  <p><strong>Microarrays</strong> are used to measure the expression levels of large number of genes simultaneously, or to genotype multiple regions of a genome. In this example in our tutorial, we have data from a <strong>SNP array</strong>. This type of microarray detects the presence and proportion (homozyogous/heterozygous) of a
 wide range of SNPs (Single Nucleotide Polymorphisms) known to exist within the population. A set of <strong>probes</strong> targeting positions of a large number of known SNPs
 are used to detect the presence or absence of the SNPs in the sample.</p>
 
@@ -1632,7 +1640,7 @@ chr1	72017	72017	-0.1353417	0
 <p>This is pretty close to the format expected by Circos for 2D data tracks (<code class="language-plaintext highlighter-rouge">chr - start - end - value</code>), all we need to do to prepare this file is remove the first header line, and remove column 5. Furthermore, because this file is quite large, we do a subsampling down to 25000 lines; this is enough to get a genome-level overview of the data, but small enough that Circos will complete plotting quickly.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-prepare-cnv-input-file" class="box-title" aria-label="hands-on box: Prepare CNV input file"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Prepare CNV input file</div>
+  <div class="box-title hands-on-title" id="hands-on-prepare-cnv-input-file" aria-label="hands-on box: Prepare CNV input file"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Prepare CNV input file</div>
 
   <ol>
     <li><span class="tool" data-tool="Remove beginning1" title="Tested with Remove beginning1"><strong>Remove beginning</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Remove beginning1</span></span>  of a file with the following parameters:
@@ -1653,7 +1661,7 @@ chr1	72017	72017	-0.1353417	0
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“from”</em>: output of <strong>Cut</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
       </ul>
     </li>
-    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> the output file <code class="language-plaintext highlighter-rouge">cnv-circos.txt</code></li>
+    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> the output file <code class="language-plaintext highlighter-rouge">cnv-circos.txt</code></li>
   </ol>
 
 </blockquote>
@@ -1661,11 +1669,11 @@ chr1	72017	72017	-0.1353417	0
 <p>Now that our file is prepared, we can add a track to our Circos image. We will create a scatterplot, and colour each data point depending on copy number state (green=gain, red=loss)</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-add-copy-number-track-to-circos" class="box-title" aria-label="hands-on box: Add Copy Number track to Circos"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add Copy Number track to Circos</div>
+  <div class="box-title hands-on-title" id="hands-on-add-copy-number-track-to-circos" aria-label="hands-on box: Add Copy Number track to Circos"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add Copy Number track to Circos</div>
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the Circos plot containing the SV track <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot SVs</code>)</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> on the Circos plot containing the SV track <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot SVs</code>)</p>
     </li>
     <li>Add a new scatterplot track to the image
       <ul>
@@ -1700,10 +1708,10 @@ chr1	72017	72017	-0.1353417	0
       </ul>
     </li>
     <li>
-      <p><strong>Examine</strong> <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> the resulting plot</p>
+      <p><strong>Examine</strong> <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">galaxy-eye</span> the resulting plot</p>
 
       <blockquote class="question">
-        <div id="question-3" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+        <div class="box-title question-title" id="question-3" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
           <li>Examine the resulting plot, what do you see?</li>
@@ -1711,7 +1719,7 @@ chr1	72017	72017	-0.1353417	0
         </ol>
 
         <blockquote class="solution">
-          <div id="solution-3" class="box-title"><button type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+          <div class="box-title solution-title" id="solution-3"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
             <li>
@@ -1730,7 +1738,7 @@ all at once, rather, you build it up step by step and frequently check the outpu
         </blockquote>
       </blockquote>
     </li>
-    <li><strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> the tool, changing the following parameters.
+    <li><strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> the tool, changing the following parameters.
       <ul>
         <li>In <em>“Link Tracks”</em>:
           <ul>
@@ -1754,11 +1762,11 @@ all at once, rather, you build it up step by step and frequently check the outpu
 <p>Now that we are happy with the placement of our track, let’s tweak it a bit more. Let’s colour positions showing a significant copy number loss (&lt; <code class="language-plaintext highlighter-rouge">-0.15</code>) red, and positions with a copy number gain (&gt; <code class="language-plaintext highlighter-rouge">0.15</code>) green, leaving everything inbetween gray (expected copy number):</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-colour-data-points-by-copy-number-state" class="box-title" aria-label="hands-on box: Colour data points by copy number state"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Colour data points by copy number state</div>
+  <div class="box-title hands-on-title" id="hands-on-colour-data-points-by-copy-number-state" aria-label="hands-on box: Colour data points by copy number state"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Colour data points by copy number state</div>
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
     </li>
     <li>
       <p>In the <strong>2D data track</strong> of the CNV track we just created, add the following rules:</p>
@@ -1841,11 +1849,11 @@ all at once, rather, you build it up step by step and frequently check the outpu
 We can do this as follows:</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-add-plot-axes" class="box-title" aria-label="hands-on box: Add plot axes"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add plot axes</div>
+  <div class="box-title hands-on-title" id="hands-on-add-plot-axes" aria-label="hands-on box: Add plot axes"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add plot axes</div>
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
     </li>
     <li>In the <strong>2D data track</strong> of the CNV track we just created, add plot axes as follows:
       <ul>
@@ -1867,7 +1875,7 @@ We can do this as follows:</p>
         </li>
       </ul>
     </li>
-    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> the output <code class="language-plaintext highlighter-rouge">Circos Plot CopyNumber</code></li>
+    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> the output <code class="language-plaintext highlighter-rouge">Circos Plot CopyNumber</code></li>
   </ol>
 
 </blockquote>
@@ -1883,7 +1891,7 @@ We can do this as follows:</p>
 <p>Next, we will visualize the B-allele frequency (also known as minor allele frequency)</p>
 
 <blockquote class="comment">
-  <div id="comment-background-b-allele-frequency-baf" class="box-title" aria-label="comment box: Background: B-allele Frequency (BAF)"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background: B-allele Frequency (BAF)</div>
+  <div class="box-title comment-title" id="comment-background-b-allele-frequency-baf" aria-label="comment box: Background: B-allele Frequency (BAF)"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background: B-allele Frequency (BAF)</div>
 
   <p>The B-allele frequency is closely related to copy number. There are many nuances to the measurement of B-allele frequency,
 but roughly speaking it indicates the frequency (ratio) of the non-reference allele of the SNP within the sample</p>
@@ -1924,7 +1932,7 @@ chr1	110905	110905	0.9918569
 <p>We will make another scatterplot, so our data should be in the same format as the copynumber track: <code class="language-plaintext highlighter-rouge">chr - start - end - value</code>. Luckily, this data is already in the correct format, all we have to do is remove the header line! We will also subset the data again by selecting lines randomly from the file.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-prepare-the-b-allele-frequency-table" class="box-title" aria-label="hands-on box: Prepare the B-allele frequency table"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Prepare the B-allele frequency table</div>
+  <div class="box-title hands-on-title" id="hands-on-prepare-the-b-allele-frequency-table" aria-label="hands-on box: Prepare the B-allele frequency table"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Prepare the B-allele frequency table</div>
 
   <ol>
     <li><span class="tool" data-tool="Remove beginning1" title="Tested with Remove beginning1"><strong>Remove beginning</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Remove beginning1</span></span>  with the following parameters:
@@ -1940,7 +1948,7 @@ chr1	110905	110905	0.9918569
         <li><em>“Set a random seed”</em>: <code class="language-plaintext highlighter-rouge">Don't set seed</code></li>
       </ul>
     </li>
-    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> this file to <code class="language-plaintext highlighter-rouge">baf-circos.tsv</code></li>
+    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> this file to <code class="language-plaintext highlighter-rouge">baf-circos.tsv</code></li>
   </ol>
 
 </blockquote>
@@ -1948,11 +1956,11 @@ chr1	110905	110905	0.9918569
 <p>Now are data is ready to be plotted in Circos. We will plot this track directly inside the CNV track, which means we will have to change the radius of the SV link track again as well.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-add-b-allele-frequency-track-to-circos" class="box-title" aria-label="hands-on box: Add B-allele Frequency track to Circos"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add B-allele Frequency track to Circos</div>
+  <div class="box-title hands-on-title" id="hands-on-add-b-allele-frequency-track-to-circos" aria-label="hands-on box: Add B-allele Frequency track to Circos"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add B-allele Frequency track to Circos</div>
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot CopyNumber</code>)</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot CopyNumber</code>)</p>
     </li>
     <li>Add a new scatterplot track to the image
       <ul>
@@ -2008,7 +2016,7 @@ chr1	110905	110905	0.9918569
         </li>
       </ul>
     </li>
-    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> this plot to <code class="language-plaintext highlighter-rouge">Circos Plot BAF</code></li>
+    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> this plot to <code class="language-plaintext highlighter-rouge">Circos Plot BAF</code></li>
   </ol>
 
 </blockquote>
@@ -2020,7 +2028,7 @@ chr1	110905	110905	0.9918569
 <p>Great! we can see our B-allele frequency plot track added.</p>
 
 <blockquote class="question">
-  <div id="question-4" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-4" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
     <li>Look at the B-allele frequency track, try to identify chromosome(s) having a copy number of:
@@ -2036,7 +2044,7 @@ chr1	110905	110905	0.9918569
   </ol>
 
   <blockquote class="solution">
-    <div id="solution-4" class="box-title"><button type="button" aria-controls="solution-4-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-4"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-4-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
       <li>Compare the B-allele frequency plot to the expected plot shown above for the different copynumber states.
@@ -2057,11 +2065,11 @@ chr1	110905	110905	0.9918569
 There is a parameter of the link track type called <em>Bezier</em>, which controls how tightly the links arc (i.e. how close to the center they reach. By playing around with this parameter, we can fine a more pleasing</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-change-bezier-radius" class="box-title" aria-label="hands-on box: Change Bezier radius"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Change Bezier radius</div>
+  <div class="box-title hands-on-title" id="hands-on-change-bezier-radius" aria-label="hands-on box: Change Bezier radius"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Change Bezier radius</div>
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot BAF</code>)</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot BAF</code>)</p>
     </li>
     <li>
       <p>Change the Bezier parameter of the SV track:</p>
@@ -2086,7 +2094,7 @@ There is a parameter of the link track type called <em>Bezier</em>, which contro
 <p>Another thing you may have noticed, is that in the original image we showed at the start of this section, the red links (interchromosomal SVs) were displayed as a completely different track. To do this, instead of creating a single track with a rule to change the colour of a subset of the data, we can make 2 separate tracks, with rules to only plot a subset of the data.</p>
 
 <blockquote class="question">
-  <div id="question-exercise-split-sv-track-into-two" class="box-title" aria-label="question box: Exercise: Split SV track into two"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question: Exercise: Split SV track into two</div>
+  <div class="box-title question-title" id="question-exercise-split-sv-track-into-two" aria-label="question box: Exercise: Split SV track into two"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question: Exercise: Split SV track into two</div>
 
   <ol>
     <li>Try to split the link track in two so that it matches the original image. This may take some trial and error. The full configuration is shown in the answer box below, but we provede some hints if you want to try it yourself first:
@@ -2110,16 +2118,16 @@ There is a parameter of the link track type called <em>Bezier</em>, which contro
   <figure id="figure-12"><img src="../../images/circos/vcap.png" alt="VCaP cancer Circos plot. " width="40%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 12:</span> The original image from the paper. Try to make the two link tracks look like this</figcaption></figure>
 
   <blockquote class="solution">
-    <div id="solution-5" class="box-title"><button type="button" aria-controls="solution-5-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-5"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-5-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <p>The full configuration  of the two link tracks is:</p>
 
     <blockquote class="notranslate hands_on">
-      <div id="hands-on-hands-on-two-link-tracks" class="box-title" aria-label="hands-on box: Hands on: Two link tracks"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands on: Two link tracks</div>
+      <div class="box-title hands-on-title" id="hands-on-hands-on-two-link-tracks" aria-label="hands-on box: Hands on: Two link tracks"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands on: Two link tracks</div>
 
       <ol>
         <li>
-          <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
+          <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
         </li>
         <li>
           <p>Configure two separate link tracks:</p>
@@ -2228,7 +2236,7 @@ There is a parameter of the link track type called <em>Bezier</em>, which contro
   </blockquote>
 </blockquote>
 
-<p>Awesome! You have now created a publication-quality Circos plot within <span class="notranslate">Galaxy</span>! There are more example plots in the sections below if you would like to get some more practice with the tool.</p>
+<p>Awesome! You have now created a publication-quality Circos plot within Galaxy! There are more example plots in the sections below if you would like to get some more practice with the tool.</p>
 
 <h1 id="example-presidential-debate">Example: Presidential Debate</h1>
 
@@ -2237,7 +2245,7 @@ There is a parameter of the link track type called <em>Bezier</em>, which contro
 <figure id="figure-13"><img src="../../images/circos/presidential_debate_nyt.png" alt="Original plot from the NYT article. " width="80%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 13:</span> Plot showing how many times each presidential candidate mentioned each other candidate in the debates leading up to the 2008 US presidential election.</figcaption></figure>
 
 <blockquote class="comment">
-  <div id="comment-note" class="box-title" aria-label="comment box: Note"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Note</div>
+  <div class="box-title comment-title" id="comment-note" aria-label="comment box: Note"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Note</div>
 
   <p>This tutorial is based on one of the <a href="http://circos.ca/documentation/tutorials/recipes/naming_names/">tutorials on the Circos website</a>.</p>
 
@@ -2252,14 +2260,14 @@ There is a parameter of the link track type called <em>Bezier</em>, which contro
 <p>First, let’s get the data we need for this plot:</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-obtaining-our-data-1" class="box-title" aria-label="hands-on box: Obtaining our data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Obtaining our data</div>
+  <div class="box-title hands-on-title" id="hands-on-obtaining-our-data-1" aria-label="hands-on box: Obtaining our data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Obtaining our data</div>
 
   <ol>
     <li>
       <p>Make sure you have an empty analysis history. Give it a name.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-creating-a-new-history-1" class="box-title"><button type="button" aria-controls="tip-creating-a-new-history-1-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-creating-a-new-history-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-creating-a-new-history-1-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>   <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>   <ol>   <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden">galaxy-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>   <li>Select the option <strong>Create New</strong> from the menu</li> </ol> </blockquote>
     </li>
     <li>
       <p><strong>Import Data.</strong></p>
@@ -2273,10 +2281,10 @@ https://zenodo.org/record/4494146/files/debate_slices.tab
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-via-links-1" class="box-title"><button type="button" aria-controls="tip-importing-via-links-1-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-1-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-data-from-a-data-library-1" class="box-title"><button type="button" aria-controls="tip-importing-data-from-a-data-library-1-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-data-from-a-data-library-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-data-from-a-data-library-1-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>As an alternative to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>   <ul>   <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>   <li>Navigate to  the correct folder as indicated by your instructor</li>   <li>Select the desired files</li>   <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>   <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>   <li>Click on <strong>Import</strong></li> </ul> </blockquote>
     </li>
   </ol>
 
@@ -2302,10 +2310,10 @@ The last column indicates the party of each candidate (democratic or republican)
 <p>Let’s start by creating the ideogram for our plot:</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-set-ideogram-configuration-1" class="box-title" aria-label="hands-on box: Set ideogram configuration"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Set ideogram configuration</div>
+  <div class="box-title hands-on-title" id="hands-on-set-ideogram-configuration-1" aria-label="hands-on box: Set ideogram configuration"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Set ideogram configuration</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7"><strong>Circos</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+<span class="notranslate">galaxy</span>7</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7"><strong>Circos</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7</span></span>  with the following parameters:
       <ul>
         <li>In <em>“Karyotype”</em>:
           <ul>
@@ -2330,10 +2338,10 @@ The last column indicates the party of each candidate (democratic or republican)
       </ul>
     </li>
     <li>
-      <p><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> the output <code class="language-plaintext highlighter-rouge">Circos Plot karyotype</code></p>
+      <p><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> the output <code class="language-plaintext highlighter-rouge">Circos Plot karyotype</code></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-renaming-a-dataset-1" class="box-title"><button type="button" aria-controls="tip-renaming-a-dataset-1-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-renaming-a-dataset-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-renaming-a-dataset-1-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>   <li>In the central panel, change the <strong>Name</strong> field</li>   <li>Click the <strong>Save</strong> button</li> </ul> </blockquote>
     </li>
   </ol>
 
@@ -2365,11 +2373,11 @@ richardson  251  750    stroke_thickness=5,stroke_color=white
 <p>Now, let’s use this file to create our highlights track</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-add-highlights-track-to-circos-plot" class="box-title" aria-label="hands-on box: Add Highlights track to Circos Plot"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add Highlights track to Circos Plot</div>
+  <div class="box-title hands-on-title" id="hands-on-add-highlights-track-to-circos-plot" aria-label="hands-on box: Add Highlights track to Circos Plot"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add Highlights track to Circos Plot</div>
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot karyotype</code>)</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot karyotype</code>)</p>
     </li>
     <li>Add highlights to the ideogram:
       <ul>
@@ -2420,7 +2428,7 @@ richardson  251  750    stroke_thickness=5,stroke_color=white
         </li>
       </ul>
     </li>
-    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> the output <code class="language-plaintext highlighter-rouge">Circos Plot highlights</code></li>
+    <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> the output <code class="language-plaintext highlighter-rouge">Circos Plot highlights</code></li>
   </ol>
 
 </blockquote>
@@ -2443,11 +2451,11 @@ huckabee	525	525	clinton	750	750
 <p>Let’s add it to our plot:</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-add-highlights-track-to-circos-plot-1" class="box-title" aria-label="hands-on box: Add Highlights track to Circos Plot"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add Highlights track to Circos Plot</div>
+  <div class="box-title hands-on-title" id="hands-on-add-highlights-track-to-circos-plot-1" aria-label="hands-on box: Add Highlights track to Circos Plot"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Add Highlights track to Circos Plot</div>
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot highlights</code>)</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot highlights</code>)</p>
     </li>
     <li>
       <p>Add a link track:</p>
@@ -2477,7 +2485,7 @@ huckabee	525	525	clinton	750	750
 <p><img src="../../images/circos/debate_links.png" alt="Debate plot with link track. " width="50%" loading="lazy" /></p>
 
 <blockquote class="question">
-  <div id="question-exercise-focus-on-a-single" class="box-title" aria-label="question box: Exercise: Focus on a single"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question: Exercise: Focus on a single</div>
+  <div class="box-title question-title" id="question-exercise-focus-on-a-single" aria-label="question box: Exercise: Focus on a single"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question: Exercise: Focus on a single</div>
 
   <ol>
     <li>As an exercise, try to add rules to the link track to colour the links red or blue depending on party of the person who spoke (<code class="language-plaintext highlighter-rouge">from_chromosom</code>)
@@ -2492,16 +2500,16 @@ huckabee	525	525	clinton	750	750
   <figure id="figure-14"><img src="../../images/circos/presidential_debate_plot.png" alt="Debate plot with coloured links. " width="40%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 14:</span> Try to make the link track look like this</figcaption></figure>
 
   <blockquote class="solution">
-    <div id="solution-6" class="box-title"><button type="button" aria-controls="solution-6-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-6"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-6-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <p>The full configuration  of the rules for the link tracks is:</p>
 
     <blockquote class="notranslate hands_on">
-      <div id="hands-on-hands-on-two-link-tracks-1" class="box-title" aria-label="hands-on box: Hands on: Two link tracks"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands on: Two link tracks</div>
+      <div class="box-title hands-on-title" id="hands-on-hands-on-two-link-tracks-1" aria-label="hands-on box: Hands on: Two link tracks"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands on: Two link tracks</div>
 
       <ol>
         <li>
-          <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
+          <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
         </li>
         <li>
           <p>Add rules to the link track:</p>
@@ -2565,12 +2573,12 @@ huckabee	525	525	clinton	750	750
 
 <!-- TODO(hxr): document it all -->
 
-<p>The Circos <span class="notranslate">Galaxy</span> tool mostly accepts <code class="language-plaintext highlighter-rouge">tabular</code> files. These always have at least three columns <code class="language-plaintext highlighter-rouge">chromosome start end</code>.</p>
+<p>The Circos Galaxy tool mostly accepts <code class="language-plaintext highlighter-rouge">tabular</code> files. These always have at least three columns <code class="language-plaintext highlighter-rouge">chromosome start end</code>.</p>
 
 <h2 id="get-data-1">Get data</h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-data-upload" class="box-title" aria-label="hands-on box: Data upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Data upload</div>
+  <div class="box-title hands-on-title" id="hands-on-data-upload" aria-label="hands-on box: Data upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Data upload</div>
 
   <ol>
     <li>Create a new history for this tutorial</li>
@@ -2581,14 +2589,14 @@ huckabee	525	525	clinton	750	750
 https://zenodo.org/record/4494146/files/highlights.tab
 </code></pre></div>      </div>
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-via-links-2" class="box-title"><button type="button" aria-controls="tip-importing-via-links-2-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links-2"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-2-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
     </li>
     <li>Rename the datasets</li>
     <li>
       <p>Check that the datatype is <code class="language-plaintext highlighter-rouge">tabular</code> for both files</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-changing-the-datatype" class="box-title"><button type="button" aria-controls="tip-changing-the-datatype-contents" aria-expanded="true" aria-label="Toggle tip box: Changing the datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">tabular</code>    <ul>      <li>tip: you can start typing the datatype into the field to filter the dropdown menu</li>    </ul>  </li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-changing-the-datatype"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-changing-the-datatype-contents" aria-expanded="true" aria-label="Toggle tip box: Changing the datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>   <li>In the central panel, click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden">galaxy-gear</span> <strong>Convert</strong> tab on the top</li>   <li>In the lower part <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden">galaxy-chart-select-data</span> <strong>Datatypes</strong>, select <code class="language-plaintext highlighter-rouge">tabular</code>     <ul>       <li>tip: you can start typing the datatype into the field to filter the dropdown menu</li>     </ul>   </li>   <li>Click the <strong>Save</strong> button</li> </ul> </blockquote>
     </li>
   </ol>
 
@@ -2599,15 +2607,15 @@ https://zenodo.org/record/4494146/files/highlights.tab
 <p>We will now create the plot all at once. Normally, this would be a more iterative step-by-step process. The previous examples show how this stepwise approach is normally used, here we just give you all the configuration to create this plot all at once.</p>
 
 <blockquote class="tip">
-  <div id="tip-interface-complexity" class="box-title"><button type="button" aria-controls="tip-interface-complexity-contents" aria-expanded="true" aria-label="Toggle tip box: Interface Complexity"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Interface Complexity<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+  <div class="box-title tip-title" id="tip-interface-complexity"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-interface-complexity-contents" aria-expanded="true" aria-label="Toggle tip box: Interface Complexity"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Interface Complexity<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
   <p>The interface looks deceptively simple when all of the sections are collapsed, but as you start adding tracks it can be easy to get lost and become overwhelmed, so just go slowly. Do not worry if your plot does not look exactly like the expected output.</p>
 </blockquote>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-circos" class="box-title" aria-label="hands-on box: Circos"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Circos</div>
+  <div class="box-title hands-on-title" id="hands-on-circos" aria-label="hands-on box: Circos"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Circos</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7"><strong>Circos</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+<span class="notranslate">galaxy</span>7</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7"><strong>Circos</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7</span></span>  with the following parameters:
       <ul>
         <li>In <em>“Karyotype”</em>:
           <ul>
@@ -2825,7 +2833,7 @@ https://zenodo.org/record/4494146/files/highlights.tab
         </li>
       </ul>
     </li>
-    <li>View <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> the output PNG file</li>
+    <li>View <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">galaxy-eye</span> the output PNG file</li>
   </ol>
 
 </blockquote>
@@ -2851,7 +2859,7 @@ https://zenodo.org/record/4494146/files/highlights.tab
     ├── conf
     │   ├── circos.conf
     │   ├── data.conf
-    │   ├── <span class="notranslate">galaxy</span>_test_case.json
+    │   ├── galaxy_test_case.json
     │   ├── highlight.conf
     │   ├── ideogram.conf
     │   ├── karyotype-colors.conf
@@ -2910,11 +2918,11 @@ https://zenodo.org/record/4494146/files/highlights.tab
     max         = 1.0
 </code></pre></div></div>
 
-<p>Hopefully this helps you take your Circos plots from 90% to 100% publication ready! If there are any changes you find yourself making manually very often, please <a href="https://github.com/galaxyproject/tools-iuc/issues/new">let the tool authors know</a> and maybe they can add that configuration to the <span class="notranslate">Galaxy</span> tool.</p>
+<p>Hopefully this helps you take your Circos plots from 90% to 100% publication ready! If there are any changes you find yourself making manually very often, please <a href="https://github.com/galaxyproject/tools-iuc/issues/new">let the tool authors know</a> and maybe they can add that configuration to the Galaxy tool.</p>
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p>Congratulations on finishing this tutorial! You have now seen how you can create Circos plots within <span class="notranslate">Galaxy</span>. Circos is a very flexible tool, but this flexibility also comes with a certain degree of complexity and a steep learning curve. When you are making your own plots, remember that Circos is an iterative process, don’t try to do too much at once, but build your plot up step by step, and check the output often.</p>
+<p>Congratulations on finishing this tutorial! You have now seen how you can create Circos plots within Galaxy. Circos is a very flexible tool, but this flexibility also comes with a certain degree of complexity and a steep learning curve. When you are making your own plots, remember that Circos is an iterative process, don’t try to do too much at once, but build your plot up step by step, and check the output often.</p>
 
 
                 
@@ -3019,19 +3027,21 @@ day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/visualisation/tutorials/circos/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
                    </pre></div></div>
                    </p>
                 </blockquote>
@@ -3069,8 +3079,6 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

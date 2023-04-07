@@ -2,6 +2,7 @@
   "name": "synthetic-biology",
   "type": "use",
   "title": "Synthetic Biology",
+  "edam_ontology": "topic_3895",
   "summary": "Synthetic Biology is the engineering of biology : the deliberate (re)design and construction of novel biological and biologically based parts, devices and systems to perform new functions for useful purposes, that draws on principles elucidated from biology and engineering.\nBy applying these principles to living systems, Synthetic Biology overcomes mimicry and optimisation-led research and introduces a rationale and systematic approach to the construction and (re)design.\nSynthetic Biology is at the intersection of engineering, bioscience, chemistry, and information technology.\nThe goal of synthetic biology is to extend or modify the behavior of organisms and engineer them to perform new tasks. \nIn this section, the tutorials shows how to design metabolic pathways for producing the desired chemical targets.\n",
   "requirements": [
     {
@@ -18,7 +19,8 @@
       "gitter": "kenza12",
       "joined": "2022-03",
       "id": "kenza12",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/kenza12.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/kenza12.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/kenza12/"
     },
     {
       "name": "Thomas Duigou",
@@ -27,7 +29,8 @@
       "linkedin": "thomas-duigou-ba281730",
       "joined": "2022-03",
       "id": "tduigou",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/tduigou.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/tduigou.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/tduigou/"
     },
     {
       "name": "Joan Hérisson",
@@ -37,7 +40,8 @@
       "linkedin": "joanherisson",
       "joined": "2022-03",
       "id": "breakthewall",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/breakthewall.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/breakthewall.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/breakthewall/"
     },
     {
       "name": "Guillaume Gricourt",
@@ -46,83 +50,11 @@
       "linkedin": "guillaume-gricourt",
       "joined": "2022-03",
       "id": "guillaume-gricourt",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/guillaume-gricourt.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/guillaume-gricourt.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/guillaume-gricourt/"
     }
   ],
   "materials": [
-    {
-      "layout": "introduction_slides",
-      "logo": "GTN",
-      "title": "Introduction to Synthetic Biology",
-      "type": "introduction",
-      "contributors": [
-        {
-          "name": "Kenza Bazi-Kabbaj",
-          "email": "kenza.bazi-kabbaj@inrae.fr",
-          "orcid": "0000-0002-4319-5616",
-          "gitter": "kenza12",
-          "joined": "2022-03",
-          "id": "kenza12",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/kenza12.json"
-        },
-        {
-          "name": "Thomas Duigou",
-          "email": "thomas.duigou@inrae.fr",
-          "orcid": "0000-0002-2649-2950",
-          "linkedin": "thomas-duigou-ba281730",
-          "joined": "2022-03",
-          "id": "tduigou",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/tduigou.json"
-        },
-        {
-          "name": "Joan Hérisson",
-          "email": "joan.herisson@univ-evry.fr",
-          "orcid": "0000-0001-9741-0847",
-          "gitter": "breakthewall",
-          "linkedin": "joanherisson",
-          "joined": "2022-03",
-          "id": "breakthewall",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/breakthewall.json"
-        },
-        {
-          "name": "Guillaume Gricourt",
-          "email": "guillaume.gricourt@inrae.fr",
-          "orcid": "0000-0003-0143-5535",
-          "linkedin": "guillaume-gricourt",
-          "joined": "2022-03",
-          "id": "guillaume-gricourt",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/guillaume-gricourt.json"
-        },
-        {
-          "name": "Ioana Popescu",
-          "email": "ioana.popescu@univ-evry.fr",
-          "orcid": "0000-0003-2547-8935",
-          "twitter": "ioanagrig",
-          "linkedin": "ioana-popescu-8207a026",
-          "joined": "2022-03",
-          "id": "ioanagry",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/ioanagry.json"
-        },
-        {
-          "name": "Jean-Loup Faulon",
-          "email": "Jean-loup.Faulon@inrae.fr",
-          "orcid": "0000-0003-4274-2953",
-          "linkedin": "jean-loup-faulon-6b85976",
-          "twitter": "jeanloupfaulon",
-          "joined": "2022-03",
-          "elixir_node": "fr",
-          "id": "jfaulon",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/jfaulon.json"
-        }
-      ],
-      "url": "/topics/synthetic-biology/slides/introduction.html",
-      "topic_name": "synthetic-biology",
-      "tutorial_name": "introduction",
-      "slides": true,
-      "urls": {
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//synthetic-biology/slides/introduction.json"
-      }
-    },
     {
       "layout": "tutorial_hands_on",
       "title": "Designing plasmids encoding predicted pathways by using the BASIC assembly method",
@@ -150,7 +82,8 @@
           "gitter": "kenza12",
           "joined": "2022-03",
           "id": "kenza12",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/kenza12.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/kenza12.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/kenza12/"
         },
         {
           "name": "Thomas Duigou",
@@ -159,7 +92,8 @@
           "linkedin": "thomas-duigou-ba281730",
           "joined": "2022-03",
           "id": "tduigou",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/tduigou.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/tduigou.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/tduigou/"
         },
         {
           "name": "Joan Hérisson",
@@ -169,7 +103,8 @@
           "linkedin": "joanherisson",
           "joined": "2022-03",
           "id": "breakthewall",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/breakthewall.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/breakthewall.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/breakthewall/"
         },
         {
           "name": "Guillaume Gricourt",
@@ -178,7 +113,8 @@
           "linkedin": "guillaume-gricourt",
           "joined": "2022-03",
           "id": "guillaume-gricourt",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/guillaume-gricourt.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/guillaume-gricourt.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/guillaume-gricourt/"
         },
         {
           "name": "Ioana Popescu",
@@ -188,7 +124,8 @@
           "linkedin": "ioana-popescu-8207a026",
           "joined": "2022-03",
           "id": "ioanagry",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/ioanagry.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/ioanagry.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/ioanagry/"
         },
         {
           "name": "Jean-Loup Faulon",
@@ -199,18 +136,64 @@
           "joined": "2022-03",
           "elixir_node": "fr",
           "id": "jfaulon",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/jfaulon.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/jfaulon.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/jfaulon/"
         }
       ],
       "url": "/topics/synthetic-biology/tutorials/basic_assembly_analysis/tutorial.html",
       "topic_name": "synthetic-biology",
       "tutorial_name": "basic_assembly_analysis",
+      "dir": "topics/synthetic-biology/tutorials/basic_assembly_analysis",
+      "id": "synthetic-biology/basic_assembly_analysis",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": {
+          "materials": [
+            {
+              "link": "topics/synthetic-biology/tutorials/basic_assembly_analysis/tutorial.html",
+              "type": "Tutorial"
+            }
+          ],
+          "tags": [
+            "synthetic-biology"
+          ],
+          "title": "Designing plasmids encoding predicted pathways by using the BASIC assembly method",
+          "type": "Demo",
+          "versions": [
+            {
+              "captions": [
+                "kenza12"
+              ],
+              "date": "2022-05-11",
+              "length": "3M",
+              "link": "0ItpHuSM7t0",
+              "speakers": [
+                "breakthewall"
+              ]
+            }
+          ],
+          "gtn_id": "synthetic-biology/basic_assembly_analysis",
+          "captioned": true
+        },
+        "both": null,
+        "session": null
+      },
       "hands_on": true,
       "slides": false,
       "workflows": [
         {
           "workflow": "Genetic_Design_BASIC_Assembly.ga",
-          "tests": false
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/synthetic-biology/tutorials/basic_assembly_analysis/workflows/Genetic_Design_BASIC_Assembly.ga",
+          "path": "topics/synthetic-biology/tutorials/basic_assembly_analysis/workflows/Genetic_Design_BASIC_Assembly.ga",
+          "wfid": "synthetic-biology-basic_assembly_analysis",
+          "wfname": "genetic_design_basic_assembly",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/synthetic-biology-basic_assembly_analysis/versions/genetic_design_basic_assembly",
+          "license": null,
+          "creators": [
+
+          ]
         }
       ],
       "tools": [
@@ -237,114 +220,6 @@
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Evaluating and ranking a set of pathways based on multiple metrics",
-      "zenodo_link": "https://zenodo.org/record/6628296",
-      "questions": [
-        "How to evaluate a set of heterologous pathways ?"
-      ],
-      "objectives": [
-        "Calculate the production flux of the lycopene target molecule using _Flux Balance Analysis_ tool.",
-        "Compute thermodynamics values to optimize the yield of the reaction producing the lycopene using _Thermo_ tool.",
-        "Compute the global score for the previous annotated pathways.",
-        "Rank the computed heterologous pathways depending on their score."
-      ],
-      "time_estimation": "20M",
-      "contributors": [
-        {
-          "name": "Kenza Bazi-Kabbaj",
-          "email": "kenza.bazi-kabbaj@inrae.fr",
-          "orcid": "0000-0002-4319-5616",
-          "gitter": "kenza12",
-          "joined": "2022-03",
-          "id": "kenza12",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/kenza12.json"
-        },
-        {
-          "name": "Thomas Duigou",
-          "email": "thomas.duigou@inrae.fr",
-          "orcid": "0000-0002-2649-2950",
-          "linkedin": "thomas-duigou-ba281730",
-          "joined": "2022-03",
-          "id": "tduigou",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/tduigou.json"
-        },
-        {
-          "name": "Joan Hérisson",
-          "email": "joan.herisson@univ-evry.fr",
-          "orcid": "0000-0001-9741-0847",
-          "gitter": "breakthewall",
-          "linkedin": "joanherisson",
-          "joined": "2022-03",
-          "id": "breakthewall",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/breakthewall.json"
-        },
-        {
-          "name": "Guillaume Gricourt",
-          "email": "guillaume.gricourt@inrae.fr",
-          "orcid": "0000-0003-0143-5535",
-          "linkedin": "guillaume-gricourt",
-          "joined": "2022-03",
-          "id": "guillaume-gricourt",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/guillaume-gricourt.json"
-        },
-        {
-          "name": "Ioana Popescu",
-          "email": "ioana.popescu@univ-evry.fr",
-          "orcid": "0000-0003-2547-8935",
-          "twitter": "ioanagrig",
-          "linkedin": "ioana-popescu-8207a026",
-          "joined": "2022-03",
-          "id": "ioanagry",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/ioanagry.json"
-        },
-        {
-          "name": "Jean-Loup Faulon",
-          "email": "Jean-loup.Faulon@inrae.fr",
-          "orcid": "0000-0003-4274-2953",
-          "linkedin": "jean-loup-faulon-6b85976",
-          "twitter": "jeanloupfaulon",
-          "joined": "2022-03",
-          "elixir_node": "fr",
-          "id": "jfaulon",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/jfaulon.json"
-        }
-      ],
-      "url": "/topics/synthetic-biology/tutorials/pathway_analysis/tutorial.html",
-      "topic_name": "synthetic-biology",
-      "tutorial_name": "pathway_analysis",
-      "hands_on": true,
-      "slides": false,
-      "workflows": [
-        {
-          "workflow": "main_workflow.ga",
-          "tests": false
-        }
-      ],
-      "tools": [
-        "toolshed.g2.bx.psu.edu/repos/iuc/rpfba/rpfba/5.12.1",
-        "toolshed.g2.bx.psu.edu/repos/tduigou/rpranker/rpranker/5.12.1",
-        "toolshed.g2.bx.psu.edu/repos/tduigou/rpscore/rpscore/5.12.1",
-        "toolshed.g2.bx.psu.edu/repos/tduigou/rpthermo/rpthermo/5.12.1"
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//synthetic-biology/tutorials/pathway_analysis/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//synthetic-biology/tutorials/pathway_analysis/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
       "title": "Generating theoretical possible pathways for the production of Lycopene in E.Coli using Retrosynthesis tools",
       "zenodo_link": "",
       "questions": [
@@ -366,7 +241,8 @@
           "linkedin": "guillaume-gricourt",
           "joined": "2022-03",
           "id": "guillaume-gricourt",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/guillaume-gricourt.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/guillaume-gricourt.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/guillaume-gricourt/"
         },
         {
           "name": "Thomas Duigou",
@@ -375,7 +251,8 @@
           "linkedin": "thomas-duigou-ba281730",
           "joined": "2022-03",
           "id": "tduigou",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/tduigou.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/tduigou.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/tduigou/"
         },
         {
           "name": "Kenza Bazi-Kabbaj",
@@ -384,7 +261,8 @@
           "gitter": "kenza12",
           "joined": "2022-03",
           "id": "kenza12",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/kenza12.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/kenza12.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/kenza12/"
         },
         {
           "name": "Joan Hérisson",
@@ -394,7 +272,8 @@
           "linkedin": "joanherisson",
           "joined": "2022-03",
           "id": "breakthewall",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/breakthewall.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/breakthewall.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/breakthewall/"
         },
         {
           "name": "Ioana Popescu",
@@ -404,7 +283,8 @@
           "linkedin": "ioana-popescu-8207a026",
           "joined": "2022-03",
           "id": "ioanagry",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/ioanagry.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/ioanagry.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/ioanagry/"
         },
         {
           "name": "Jean-Loup Faulon",
@@ -415,18 +295,64 @@
           "joined": "2022-03",
           "elixir_node": "fr",
           "id": "jfaulon",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/jfaulon.json"
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/jfaulon.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/jfaulon/"
         }
       ],
       "url": "/topics/synthetic-biology/tutorials/retrosynthesis_analysis/tutorial.html",
       "topic_name": "synthetic-biology",
       "tutorial_name": "retrosynthesis_analysis",
+      "dir": "topics/synthetic-biology/tutorials/retrosynthesis_analysis",
+      "id": "synthetic-biology/retrosynthesis_analysis",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": {
+          "materials": [
+            {
+              "link": "topics/synthetic-biology/tutorials/retrosynthesis_analysis/tutorial.html",
+              "type": "Tutorial"
+            }
+          ],
+          "tags": [
+            "synthetic-biology"
+          ],
+          "title": "Generating theoretical possible pathways for the production of Lycopene in E.Coli using Retrosynthesis tools.",
+          "type": "Demo",
+          "versions": [
+            {
+              "captions": [
+                "kenza12"
+              ],
+              "date": "2022-06-23",
+              "length": "5M",
+              "link": "nnE3Ip94D8I",
+              "speakers": [
+                "breakthewall"
+              ]
+            }
+          ],
+          "gtn_id": "synthetic-biology/retrosynthesis_analysis",
+          "captioned": true
+        },
+        "both": null,
+        "session": null
+      },
       "hands_on": true,
       "slides": false,
       "workflows": [
         {
           "workflow": "RetroSynthesis.ga",
-          "tests": false
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/synthetic-biology/tutorials/retrosynthesis_analysis/workflows/RetroSynthesis.ga",
+          "path": "topics/synthetic-biology/tutorials/retrosynthesis_analysis/workflows/RetroSynthesis.ga",
+          "wfid": "synthetic-biology-retrosynthesis_analysis",
+          "wfname": "retrosynthesis",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/synthetic-biology-retrosynthesis_analysis/versions/retrosynthesis",
+          "license": null,
+          "creators": [
+
+          ]
         }
       ],
       "tools": [
@@ -452,6 +378,165 @@
       "urls": {
         "hands_on": "https://training.galaxyproject.org/training-material/api/topics//synthetic-biology/tutorials/retrosynthesis_analysis/tutorial.json",
         "slides": "https://training.galaxyproject.org/training-material/api/topics//synthetic-biology/tutorials/retrosynthesis_analysis/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Evaluating and ranking a set of pathways based on multiple metrics",
+      "zenodo_link": "https://zenodo.org/record/6628296",
+      "questions": [
+        "How to evaluate a set of heterologous pathways ?"
+      ],
+      "objectives": [
+        "Calculate the production flux of the lycopene target molecule using _Flux Balance Analysis_ tool.",
+        "Compute thermodynamics values to optimize the yield of the reaction producing the lycopene using _Thermo_ tool.",
+        "Compute the global score for the previous annotated pathways.",
+        "Rank the computed heterologous pathways depending on their score."
+      ],
+      "time_estimation": "20M",
+      "contributors": [
+        {
+          "name": "Kenza Bazi-Kabbaj",
+          "email": "kenza.bazi-kabbaj@inrae.fr",
+          "orcid": "0000-0002-4319-5616",
+          "gitter": "kenza12",
+          "joined": "2022-03",
+          "id": "kenza12",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/kenza12.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/kenza12/"
+        },
+        {
+          "name": "Thomas Duigou",
+          "email": "thomas.duigou@inrae.fr",
+          "orcid": "0000-0002-2649-2950",
+          "linkedin": "thomas-duigou-ba281730",
+          "joined": "2022-03",
+          "id": "tduigou",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/tduigou.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/tduigou/"
+        },
+        {
+          "name": "Joan Hérisson",
+          "email": "joan.herisson@univ-evry.fr",
+          "orcid": "0000-0001-9741-0847",
+          "gitter": "breakthewall",
+          "linkedin": "joanherisson",
+          "joined": "2022-03",
+          "id": "breakthewall",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/breakthewall.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/breakthewall/"
+        },
+        {
+          "name": "Guillaume Gricourt",
+          "email": "guillaume.gricourt@inrae.fr",
+          "orcid": "0000-0003-0143-5535",
+          "linkedin": "guillaume-gricourt",
+          "joined": "2022-03",
+          "id": "guillaume-gricourt",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/guillaume-gricourt.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/guillaume-gricourt/"
+        },
+        {
+          "name": "Ioana Popescu",
+          "email": "ioana.popescu@univ-evry.fr",
+          "orcid": "0000-0003-2547-8935",
+          "twitter": "ioanagrig",
+          "linkedin": "ioana-popescu-8207a026",
+          "joined": "2022-03",
+          "id": "ioanagry",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/ioanagry.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/ioanagry/"
+        },
+        {
+          "name": "Jean-Loup Faulon",
+          "email": "Jean-loup.Faulon@inrae.fr",
+          "orcid": "0000-0003-4274-2953",
+          "linkedin": "jean-loup-faulon-6b85976",
+          "twitter": "jeanloupfaulon",
+          "joined": "2022-03",
+          "elixir_node": "fr",
+          "id": "jfaulon",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/jfaulon.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/jfaulon/"
+        }
+      ],
+      "url": "/topics/synthetic-biology/tutorials/pathway_analysis/tutorial.html",
+      "topic_name": "synthetic-biology",
+      "tutorial_name": "pathway_analysis",
+      "dir": "topics/synthetic-biology/tutorials/pathway_analysis",
+      "id": "synthetic-biology/pathway_analysis",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": {
+          "materials": [
+            {
+              "link": "topics/synthetic-biology/tutorials/pathway_analysis/tutorial.html",
+              "type": "Tutorial"
+            }
+          ],
+          "tags": [
+            "synthetic-biology"
+          ],
+          "title": "Evaluating and ranking a set of pathways based on multiple metrics",
+          "type": "Demo",
+          "versions": [
+            {
+              "captions": [
+                "kenza12"
+              ],
+              "date": "2022-09-26",
+              "length": "5M",
+              "link": "240oxe8unnU",
+              "speakers": [
+                "breakthewall"
+              ]
+            }
+          ],
+          "gtn_id": "synthetic-biology/pathway_analysis",
+          "captioned": true
+        },
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "workflows": [
+        {
+          "workflow": "main_workflow.ga",
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/synthetic-biology/tutorials/pathway_analysis/workflows/main_workflow.ga",
+          "path": "topics/synthetic-biology/tutorials/pathway_analysis/workflows/main_workflow.ga",
+          "wfid": "synthetic-biology-pathway_analysis",
+          "wfname": "main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/synthetic-biology-pathway_analysis/versions/main_workflow",
+          "license": null,
+          "creators": [
+
+          ]
+        }
+      ],
+      "tools": [
+        "toolshed.g2.bx.psu.edu/repos/iuc/rpfba/rpfba/5.12.1",
+        "toolshed.g2.bx.psu.edu/repos/tduigou/rpranker/rpranker/5.12.1",
+        "toolshed.g2.bx.psu.edu/repos/tduigou/rpscore/rpscore/5.12.1",
+        "toolshed.g2.bx.psu.edu/repos/tduigou/rpthermo/rpthermo/5.12.1"
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//synthetic-biology/tutorials/pathway_analysis/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics//synthetic-biology/tutorials/pathway_analysis/tutorial.json"
       }
     }
   ]

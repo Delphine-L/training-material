@@ -2,7 +2,7 @@
   "layout": "tutorial_hands_on",
   "title": "Teaching online",
   "subtopic": "practises",
-  "enable": false,
+  "draft": true,
   "time_estimation": "1h",
   "questions": [
     "What are the different ways of teaching online?",
@@ -27,6 +27,35 @@
   "url": "/topics/teaching/tutorials/teaching-online/tutorial.html",
   "topic_name": "teaching",
   "tutorial_name": "teaching-online",
+  "dir": "topics/teaching/tutorials/teaching-online",
+  "id": "teaching/teaching-online",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": true,
+  "slides": false,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial",
+  "tags": [
+    "work-in-progress"
+  ],
   "contributors": [
     {
       "name": "Bérénice Batut",
@@ -37,8 +66,16 @@
       "orcid": "0000-0001-9852-1987",
       "joined": "2017-09",
       "elixir_node": "de",
+      "contact_for_training": true,
+      "location": {
+        "country": "FR",
+        "lat": 45.77,
+        "lon": 3.08
+      },
+      "fediverse": "bebatut@piaille.fr",
       "id": "bebatut",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
     },
     {
       "name": "Fotis E. Psomopoulos",
@@ -50,7 +87,8 @@
       "joined": "2019-03",
       "elixir_node": "gr",
       "id": "fpsom",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/fpsom.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/fpsom.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/fpsom/"
     },
     {
       "name": "Erasmus+ Programme",
@@ -61,7 +99,12 @@
       "funding_id": "2020-1-NL01-KA203-064717",
       "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
       "id": "erasmusplus",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
     }
-  ]
+  ],
+  "urls": {
+    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/teaching-online/tutorial.json",
+    "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/teaching-online/tutorial.json"
+  }
 }

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/assembly-quality-control/slides-plain.html" />
@@ -24,7 +23,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Genome assembly quality control." />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2023-04-06 00:03:40 +0000" />
+<meta name="DC.date" content="2023-04-07 00:03:50 +0000" />
 <meta name="DC.creator" content="Anthony Bretaudeau" />
 <meta name="DC.creator" content="Alexandre Cormier" />
 <meta name="DC.creator" content="Stéphanie Robin" />
@@ -36,21 +35,25 @@
         
         
         
-        
-        <meta name="description" content="DNA sequence data has become an indispensable tool for Mo..." />
+        <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Genome assembly quality control." />
-        <meta property="og:description" content="DNA sequence data has become an indispensable tool for Mo..." />
+        <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,10 +121,6 @@
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
         
-        <a class="dropdown-item" href="/training-material/topics/assembly/faqs/" title="Check our FAQs for the Assembly topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
             <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
@@ -164,27 +163,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -223,6 +209,7 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         <section class="tutorial">
 	<a href="https://github.com/galaxyproject/training-material/blob/main//topics/assembly/tutorials/assembly-quality-control/slides.html">View markdown source on GitHub</a>
@@ -254,7 +241,7 @@
 
 		
 
-		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Apr 6, 2023 </div>
+		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Apr 7, 2023 </div>
 
 	<hr />
 
@@ -265,13 +252,13 @@
 <br /></p>
 
 <p>.image-100[
-  <img src="../../images/genome-qc/3C.png" alt="The 3C for genome assembly quality control. " loading="lazy" />
+  <img src="../../images/genome-qc/3C.png" alt="The 3C for genome assembly quality control" />
 ]</p>
 
 <hr />
 
 <p>.image-30[
-  <img src="../../images/genome-qc/contiguity.png" alt="Illustration of genome assembly contiguity. " loading="lazy" />
+  <img src="../../images/genome-qc/contiguity.png" alt="Illustration of genome assembly contiguity" />
 ]</p>
 
 <hr />
@@ -329,7 +316,7 @@ Example:</p>
 </ul>
 
 <p>.image-100[
-  <img src="../../images/genome-qc/N50.png" alt="Schematic explanation of N50. " loading="lazy" />
+  <img src="../../images/genome-qc/N50.png" alt="Schematic explanation of N50" />
 ]</p>
 
 <p><strong>N50 = 8</strong> and <strong>L50 = 4</strong></p>
@@ -344,7 +331,7 @@ Example:</p>
 If we connect two sequences longer than N50 or connect two sequences shorter than N50, N50 is not changed. N50 is only improved if we connect a sequence shorter than N50 and a sequence longer than N50.</p>
 
 <p>.image-40[
-<img src="../../images/genome-qc/N50-limitation.png" alt="Schematic explanation of N50 and it limits. " loading="lazy" />
+<img src="../../images/genome-qc/N50-limitation.png" alt="Schematic explanation of N50 and it limits" />
 ]</p>
 
 <hr />
@@ -354,11 +341,11 @@ If we connect two sequences longer than N50 or connect two sequences shorter tha
 <p>« 50 » is a single point on the Nx curve. The entire Nx curve in fact gives us a better sense of contiguity.</p>
 
 <p>.pull-left[
-<img src="../../images/genome-qc/Nx-curve.png" alt="Example of Nx graph for Drosophila assemblies. " loading="lazy" />
+<img src="../../images/genome-qc/Nx-curve.png" alt="Example of Nx graph for Drosophila assemblies" />
 ]</p>
 
 <p>.pull-right[
-<img src="../../images/genome-qc/cumulative-length.png" alt="Example of cumulative sequence length graph for Drosophila assemblies. " loading="lazy" />
+<img src="../../images/genome-qc/cumulative-length.png" alt="Example of cumulative sequence length graph for Drosophila assemblies" />
 ]</p>
 
 <hr />
@@ -384,7 +371,7 @@ If we connect two sequences longer than N50 or connect two sequences shorter tha
 <hr />
 
 <p>.image-30[
-  <img src="../../images/genome-qc/completeness.png" alt="Illustration of genome assembly completeness. " loading="lazy" />
+  <img src="../../images/genome-qc/completeness.png" alt="Illustration of genome assembly completeness" />
 ]</p>
 
 <hr />
@@ -406,10 +393,10 @@ If we connect two sequences longer than N50 or connect two sequences shorter tha
 <p>Proportion of the original genome represented by the assembly:</p>
 
 <p>.image-100[
-<img src="../../images/genome-qc/assembly-size-qc-formula.png" alt="Formula to estimate assembly size completeness. " loading="lazy" />
+<img src="../../images/genome-qc/assembly-size-qc-formula.png" alt="Formula to estimate assembly size completeness" />
 ]</p>
 
-<p>“*” it’s an estimation, so not perfect. See <img src="/training-material/topics/assembly/tutorials/get-started-genome-assembly/slides.html" alt="An introduction to get started in genome assembly and annotation. " loading="lazy" /> to find methods to determine the genome size.</p>
+<p>“*” it’s an estimation, so not perfect. See <img src="/training-material/topics/assembly/tutorials/get-started-genome-assembly/slides.html" alt="An introduction to get started in genome assembly and annotation" /> to find methods to determine the genome size.</p>
 
 <hr />
 
@@ -424,12 +411,12 @@ If we connect two sequences longer than N50 or connect two sequences shorter tha
 <p>.pull-left[
 Quantitative assessment of genome assembly based on evolutionarily informed expectations of gene content from near-universal single-copy orthologs.
 .image-70[
-<img src="../../images/genome-qc/busco-formula.png" alt="Formula to estimate assembly completeness for core genes. " loading="lazy" />
+<img src="../../images/genome-qc/busco-formula.png" alt="Formula to estimate assembly completeness for core genes" />
 ]
 ]
 .pull-right[
 .image-70[
-<img src="../../images/genome-qc/BUSCO-scores.png" alt="Example of BUSCO plot for Nosema species (Microsporidia) . " loading="lazy" />
+<img src="../../images/genome-qc/BUSCO-scores.png" alt="Example of BUSCO plot for Nosema species (Microsporidia) " />
 ]]</p>
 
 <p>.footnote[Tips: Reference databases are constructed using known genomes. Species with few/no close genomes available can have very bad scores.]</p>
@@ -442,12 +429,12 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 
 <p>.pull-left[
 .image-70[
-<img src="../../images/genome-qc/busco_sampling_universality.png" alt="Explanation of orthology classification for creation of BUSCO sets - Universality. " loading="lazy" />
+<img src="../../images/genome-qc/busco_sampling_universality.png" alt="Explanation of orthology classification for creation of BUSCO sets - Universality" />
 ]]</p>
 
 <p>.pull-right[
 .image-60[
-<img src="../../images/genome-qc/busco_sampling_duplicability.png" alt="Explanation of orthology classification for creation of BUSCO sets - Duplicability. " loading="lazy" />
+<img src="../../images/genome-qc/busco_sampling_duplicability.png" alt="Explanation of orthology classification for creation of BUSCO sets - Duplicability" />
 ]]</p>
 
 <p>Eukaryota: 255 single copy from 70 species; Arthropoda: 1013 single copy from 90 species; Fungi: 758 single copy from 549 species</p>
@@ -464,11 +451,11 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 <p>Example with BUSCO Eukaryotic set:
 .pull-left[
 .image-70[
-<img src="../../images/genome-qc/BUSCO_limitations_A.png" alt="Limitation of BUSCO orthoDB for eukaOrthoDB - part A. " loading="lazy" />
+<img src="../../images/genome-qc/BUSCO_limitations_A.png" alt="Limitation of BUSCO orthoDB for eukaOrthoDB - part A" />
 ]]
 .pull-right[
 .image-70[
-<img src="../../images/genome-qc/BUSCO_limitations_B.png" alt="Limitation of BUSCO orthoDB for eukaOrthoDB - part B. " loading="lazy" />
+<img src="../../images/genome-qc/BUSCO_limitations_B.png" alt="Limitation of BUSCO orthoDB for eukaOrthoDB - part B" />
 ]]</p>
 
 <p>.footnote[Saary, P., Mitchell, A. L. &amp; Finn, R. D. Estimating the quality of eukaryotic genomes recovered from metagenomic analysis with EukCC. Genome Biol 21, 244 (2020).]</p>
@@ -498,11 +485,11 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 
 <p>.pull-left[
 .image-70[
-<img src="../../images/genome-qc/kmer-spectrum-reads.png" alt="How to read kmer spectrum of reads. " loading="lazy" />
+<img src="../../images/genome-qc/kmer-spectrum-reads.png" alt="How to read kmer spectrum of reads" />
 ]]
 .pull-right[
 .image-70[
-<img src="../../images/genome-qc/kmer-spectrum-assembly.png" alt="How to read kmer spectrum of an assembly using reads. " loading="lazy" />
+<img src="../../images/genome-qc/kmer-spectrum-assembly.png" alt="How to read kmer spectrum of an assembly using reads" />
 ]]</p>
 
 <p>.footnote[Rhie, A., Walenz, B. P., Koren, S. &amp; Phillippy, A. M. Merqury: reference-free quality, completeness, and phasing assessment for genome assemblies. Genome Biol 21, 245 (2020).]</p>
@@ -512,7 +499,7 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 <h3 id="assembly-kmer-content---homozygous-genomes">Assembly kmer content - Homozygous genomes</h3>
 
 <p>.image-70[
-<img src="../../images/genome-qc/kmer-spectra-merqury-homozygous-good.png" alt="Merqury spectra-cn plot for S.cerevesiae S288C assembly. " loading="lazy" />
+<img src="../../images/genome-qc/kmer-spectra-merqury-homozygous-good.png" alt="Merqury spectra-cn plot for S.cerevesiae S288C assembly" />
 ]</p>
 
 <p><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Good kmer representation of reads in the assembly</p>
@@ -522,7 +509,7 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 <h3 id="assembly-kmer-content---homozygous-genomes-1">Assembly kmer content - Homozygous genomes</h3>
 
 <p>.image-70[
-<img src="../../images/genome-qc/kmer-spectra-merqury-homozygous-bad.png" alt="Merqury spectra-cn plot for S.cerevesiae S288C assembly in case of missing contigs. " loading="lazy" />
+<img src="../../images/genome-qc/kmer-spectra-merqury-homozygous-bad.png" alt="Merqury spectra-cn plot for S.cerevesiae S288C assembly in case of missing contigs" />
 ]</p>
 
 <p><i class="fa fa-thumbs-down"></i> Bad kmer representation of reads in the assembly</p>
@@ -533,7 +520,7 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 <p><br /></p>
 
 <p>.image-70[
-<img src="../../images/genome-qc/kmer-spectra-merqury-heterozygous-good.png" alt="Merqury spectra-cn plot for highly heterozygous assembly and for which haplotig were purged or collapsed." loading="lazy" />
+<img src="../../images/genome-qc/kmer-spectra-merqury-heterozygous-good.png" alt="Merqury spectra-cn plot for highly heterozygous assembly and for which haplotig were purged or collapsed." />
 ]</p>
 
 <p><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Good kmer representation of reads in the assembly</p>
@@ -545,7 +532,7 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 <h3 id="assembly-kmer-content---heterozygous-genomes-1">Assembly kmer content - Heterozygous genomes</h3>
 
 <p>.image-80[
-<img src="../../images/genome-qc/kmer-spectra-merqury-c.gigas-hap2.png" alt="Merqury spectra-cn plot for second haplotype of C. gigas." loading="lazy" />
+<img src="../../images/genome-qc/kmer-spectra-merqury-c.gigas-hap2.png" alt="Merqury spectra-cn plot for second haplotype of C. gigas." />
 ]</p>
 
 <p><i class="fa fa-thumbs-down"></i> Bad kmer representation of reads in the assembly</p>
@@ -562,13 +549,13 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 </ul>
 
 <p>.image-60[
-  <img src="../../images/genome-qc/read-coverage.gif" alt="Illustration of genome assembly correctness. " loading="lazy" />
+  <img src="../../images/genome-qc/read-coverage.gif" alt="Illustration of genome assembly correctness" />
 ]</p>
 
 <hr />
 
 <p>.image-30[
-  <img src="../../images/genome-qc/correctness.png" alt="Illustration of genome assembly correctness. " loading="lazy" />
+  <img src="../../images/genome-qc/correctness.png" alt="Illustration of genome assembly correctness" />
 ]</p>
 
 <hr />
@@ -594,7 +581,7 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 <h3 id="snp--indels-errors">SNP / indels errors</h3>
 
 <p>.image-80[
-<img src="../../images/genome-qc/snp-indels_errors.png" alt="Illustration of SNP errors in a genome assembly." loading="lazy" />
+<img src="../../images/genome-qc/snp-indels_errors.png" alt="Illustration of SNP errors in a genome assembly." />
 ]</p>
 
 <hr />
@@ -602,7 +589,7 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 <h3 id="other-mis-assemblies">Other mis-assemblies</h3>
 
 <p>.image-80[
-<img src="../../images/genome-qc/misassemblies_1.png" alt="Illustration of rearrangements inversions assembly errors." loading="lazy" />
+<img src="../../images/genome-qc/misassemblies_1.png" alt="Illustration of rearrangements inversions assembly errors." />
 ]</p>
 
 <hr />
@@ -610,7 +597,7 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 <h3 id="other-mis-assemblies-1">Other mis-assemblies</h3>
 
 <p>.image-80[
-<img src="../../images/genome-qc/misassemblies_2.png" alt="Illustration of collapsed and expanded repeats assembly errors." loading="lazy" />
+<img src="../../images/genome-qc/misassemblies_2.png" alt="Illustration of collapsed and expanded repeats assembly errors." />
 ]</p>
 
 <hr />
@@ -619,7 +606,7 @@ Quantitative assessment of genome assembly based on evolutionarily informed expe
 
 <p>.pull-left[
 .image-70[
-<img src="../../images/genome-qc/switch-hamming-errors.png" alt="Illustration of switch and hamming errors in phased genome assembly." loading="lazy" />
+<img src="../../images/genome-qc/switch-hamming-errors.png" alt="Illustration of switch and hamming errors in phased genome assembly." />
 ]
 In red, heterozygous locus from second haplotype. In blue, heterozygous locus from first haplotype.
 ]</p>
@@ -638,7 +625,7 @@ In red, heterozygous locus from second haplotype. In blue, heterozygous locus fr
 <h1 id="evaluation-against-reference-genome">Evaluation against reference genome</h1>
 
 <p>.image-30[
-<img src="../../images/genome-qc/dotplot-dgenies.png" alt="Example of a dot plot between 2 genomes." loading="lazy" />
+<img src="../../images/genome-qc/dotplot-dgenies.png" alt="Example of a dot plot between 2 genomes." />
 ]</p>
 
 <hr />
@@ -656,7 +643,7 @@ Dot plots are widely used to quickly compare 2 sequence sets. They provide a syn
 <p>&lt;/br&gt;</p>
 
 <p>.image-50[
-<img src="../../images/genome-qc/dotplot-dgenies.png" alt="Example of a dot plot between 2 genomes." loading="lazy" />
+<img src="../../images/genome-qc/dotplot-dgenies.png" alt="Example of a dot plot between 2 genomes." />
 ]
 ]</p>
 
@@ -675,7 +662,7 @@ A non-exhaustive list of tools for making dot plots:</p>
 &lt;/br&gt;</p>
 
 <p>.image-50[
-<img src="../../images/dotplot.png" alt="Interpret Dot Plots here based on great explanation by Michael Schatz." loading="lazy" />
+<img src="../../images/dotplot.png" alt="Interpret Dot Plots here based on great explanation by Michael Schatz." />
 ]
 ]</p>
 
@@ -749,7 +736,7 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
         </p>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/bf603e8fe230f5085d78111456044319ff76cb0a">bf603e8fe230f5085d78111456044319ff76cb0a</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/7ea653060476a45e3ea7aed76c459f7e447264fc">7ea653060476a45e3ea7aed76c459f7e447264fc</a></p>
     </div>
 </footer>
 
@@ -761,8 +748,6 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

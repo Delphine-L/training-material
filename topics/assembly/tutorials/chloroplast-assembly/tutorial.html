@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/chloroplast-assembly/tutorial.html" />
@@ -31,222 +30,16 @@
         
         
         
-        
         <meta name="description" content="DNA sequence data has become an indispensable tool for Mo..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Chloroplast genome assembly" />
         <meta property="og:description" content="DNA sequence data has become an indispensable tool for Mo..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/assembly" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Assembly
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
+        
+        <script type="application/ld+json">
             
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
-        
-        <a class="dropdown-item" href="/training-material/topics/assembly/faqs/" title="Check our FAQs for the Assembly topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/assembly/tutorials/chloroplast-assembly/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/assembly/tutorials/chloroplast-assembly/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        <!-- link to feedback -->
-        
-            
-            
-                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-                </a>
-            
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -396,7 +189,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-9906-0673",
+      "orcid": "https://orcid.org/0000-0002-9906-0673"
     }
   ],
   "contributor": [
@@ -419,7 +214,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-9906-0673",
+      "orcid": "https://orcid.org/0000-0002-9906-0673"
     }
   ],
   "about": [
@@ -428,10 +225,219 @@
       "name": "Assembly",
       "description": "DNA sequence data has become an indispensable tool for Molecular Biology & Evolutionary Biology. Study in these fields now require a genome sequence to work from. We call this a 'Reference Sequence.' We need to build a reference for each species. We do this by Genome Assembly. De novo Genome Assembly is the process of reconstructing the original DNA sequence from the fragment reads alone.",
       "url": "https://training.galaxyproject.org/training-material/topics/assembly/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "http://edamontology.org/topic_0196",
+      "inDefinedTermSet": "http://edamontology.org",
+      "termCode": "topic_0196",
+      "url": "https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=http%3A%2F%2Fedamontology.org%2Ftopic_0196"
     }
   ]
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/assembly" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Assembly
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/chloroplast-assembly/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/assembly/faqs/" title="Check our FAQs for the Assembly topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/assembly/tutorials/chloroplast-assembly/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/assembly/tutorials/chloroplast-assembly/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-assembly">
     <h1 data-toc-skip>Chloroplast genome assembly</h1>
@@ -440,7 +446,7 @@
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/annasyme/" class="contributor-badge contributor-annasyme"><img src="https://avatars.githubusercontent.com/annasyme?s=27" alt="Avatar">Anna Syme</a>
+		Authors: <a href="/training-material/hall-of-fame/annasyme/" class="contributor-badge contributor-annasyme"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/annasyme?s=27" alt="Avatar">Anna Syme</a>
 	</div>
 
 </div>
@@ -517,6 +523,8 @@
                     
                         
                     
+                        
+                    
                 
             </ul>
         
@@ -546,7 +554,7 @@
 
 
 <a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="http://doi.org/10.5281/zenodo.3567224">
-    <i class="far fa-copy" aria-hidden="true"></i> Datasets
+    <i class="far fa-copy" aria-hidden="true"></i>&nbsp;Datasets
 </a>
 
 </li>
@@ -557,7 +565,7 @@
 
 
     <a class="btn btn-default topic-icon" href="/training-material/topics/assembly/tutorials/chloroplast-assembly/workflows/" title="Workflows" alt="Chloroplast genome assembly workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
+        <i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Workflows
     </a>
 
 </li>
@@ -637,6 +645,8 @@
             </a>
         </li>
     
+    
+        
     
         
     
@@ -808,14 +818,14 @@
 
 <h2 id="what-is-genome-assembly">What is genome assembly?</h2>
 
-<p>Genome assembly is the process of joining together <span class="notranslate">DNA</span> sequencing fragments into longer pieces, ideally up to chromosome lengths.The <span class="notranslate">DNA</span> fragments are produced by <span class="notranslate">DNA</span> sequencing machines, and are called “<span class="notranslate">reads</span>”. These are in lengths of about 150 nucleotides (base pairs), to up to a million+ nucleotides, depending on the sequencing technology used. Currently, most <span class="notranslate">reads</span> are from Illumina (short), PacBio (long) or Oxford Nanopore (long and extra-long).</p>
+<p>Genome assembly is the process of joining together DNA sequencing fragments into longer pieces, ideally up to chromosome lengths.The DNA fragments are produced by DNA sequencing machines, and are called “reads”. These are in lengths of about 150 nucleotides (base pairs), to up to a million+ nucleotides, depending on the sequencing technology used. Currently, most reads are from Illumina (short), PacBio (long) or Oxford Nanopore (long and extra-long).</p>
 
 <p>It is difficult to assemble plant genomes as they are often large (for example, 3,000,000,000 base pairs), have many repeat regions (such as transposons), and may be polyploid. This tutorial shows genome assembly for a smaller data set - the plant chloroplast genome - a single circular chromosome which is typically about 160,000 base pairs. It is thought that the the chloroplast evolved from a cyanobacteria that was living in plant cells.</p>
 
 <p>In this tutorial, we will use a subset of a real data set from sweet potato, from the paper <span class="citation"><a href="#Zhou2018">Zhou <i>et al.</i> 2018</a></span>. To find out more about each of the tools used here, see the tool panel page for a summary and links to more information.</p>
 
 <blockquote class="agenda">
-  <div id="agenda" class="box-title" aria-label="agenda box: ">Agenda</div>
+  <div class="box-title agenda-title" id="agenda" aria-label="agenda box: ">Agenda</div>
   <p>In this tutorial we will deal with:</p>
 
 <ol id="markdown-toc">
@@ -825,10 +835,10 @@
   </li>
   <li><a href="#upload-data" id="markdown-toc-upload-data">Upload data</a></li>
   <li><a href="#check-read-quality" id="markdown-toc-check-read-quality">Check read quality</a></li>
-  <li><a href="#assemble-reads" id="markdown-toc-assemble-reads">Assemble <span class="notranslate">reads</span></a></li>
+  <li><a href="#assemble-reads" id="markdown-toc-assemble-reads">Assemble reads</a></li>
   <li><a href="#polish-assembly" id="markdown-toc-polish-assembly">Polish assembly</a></li>
   <li><a href="#annotate-the-assembly" id="markdown-toc-annotate-the-assembly">Annotate the assembly</a></li>
-  <li><a href="#view-reads" id="markdown-toc-view-reads">View <span class="notranslate">reads</span></a></li>
+  <li><a href="#view-reads" id="markdown-toc-view-reads">View reads</a></li>
   <li><a href="#repeat-with-new-data" id="markdown-toc-repeat-with-new-data">Repeat with new data</a></li>
   <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
 </ol>
@@ -840,21 +850,21 @@
 <p>Let’s start with uploading the data.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-import-the-data" class="box-title" aria-label="hands-on box: Import the data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Import the data</div>
+  <div class="box-title hands-on-title" id="hands-on-import-the-data" aria-label="hands-on box: Import the data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Import the data</div>
   <ol>
     <li>
       <p>Create a new history for this tutorial and give it a proper name</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-creating-a-new-history" class="box-title"><button type="button" aria-controls="tip-creating-a-new-history-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-creating-a-new-history"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-creating-a-new-history-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>   <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>   <ol>   <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden">galaxy-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>   <li>Select the option <strong>Create New</strong> from the menu</li> </ol> </blockquote>
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-renaming-a-history" class="box-title"><button type="button" aria-controls="tip-renaming-a-history-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ol>  <li>Click on <strong>Unnamed history</strong> (or the current name of the history) (<strong>Click to rename history</strong>) at the top of your history panel</li>  <li>Type the new name</li>  <li>Press <kbd>Enter</kbd></li></ol></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-renaming-a-history"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-renaming-a-history-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ol>   <li>Click on <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> (<strong>Edit</strong>) next to the history name (which by default is “Unnamed history”)</li>   <li>Type the new name</li>   <li>Click on <strong>Save</strong></li> </ol>   <p>If you do not have the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> (<strong>Edit</strong>) next to the history name:</p>   <ol>   <li>Click on <strong>Unnamed history</strong> (or the current name of the history) (<strong>Click to rename history</strong>) at the top of your history panel</li>   <li>Type the new name</li>   <li>Press <kbd>Enter</kbd></li> </ol> </blockquote>
     </li>
     <li>
       <p>Import from <a href="https://zenodo.org/record/3567224">Zenodo</a> or a data library (ask your instructor):</p>
       <ul>
-        <li>FASTQ file with illumina <span class="notranslate">reads</span>: <code class="language-plaintext highlighter-rouge">sweet-potato-chloroplast-illumina-reduced.fastq</code></li>
-        <li>FASTQ file with nanopore <span class="notranslate">reads</span>: <code class="language-plaintext highlighter-rouge">sweet-potato-chloroplast-nanopore-reduced.fastq</code></li>
+        <li>FASTQ file with illumina reads: <code class="language-plaintext highlighter-rouge">sweet-potato-chloroplast-illumina-reduced.fastq</code></li>
+        <li>FASTQ file with nanopore reads: <code class="language-plaintext highlighter-rouge">sweet-potato-chloroplast-nanopore-reduced.fastq</code></li>
         <li>Note: make sure to import the files with “reduced” in the names, not the ones with “tiny” in the names.
           <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-illumina-reduced.fastq
 https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduced.fastq
@@ -863,22 +873,22 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
       </ul>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-via-links" class="box-title"><button type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-data-from-a-data-library" class="box-title"><button type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-data-from-a-data-library"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>As an alternative to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>   <ul>   <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>   <li>Navigate to  the correct folder as indicated by your instructor</li>   <li>Select the desired files</li>   <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>   <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>   <li>Click on <strong>Import</strong></li> </ul> </blockquote>
     </li>
   </ol>
 </blockquote>
 
 <h1 id="check-read-quality">Check read quality</h1>
 
-<p>We will look at the quality of the nanopore <span class="notranslate">reads</span>.</p>
+<p>We will look at the quality of the nanopore reads.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-check-read-quality" class="box-title" aria-label="hands-on box: Check read quality"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Check read quality</div>
+  <div class="box-title hands-on-title" id="hands-on-check-read-quality" aria-label="hands-on box: Check read quality"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Check read quality</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.28.2+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.28.2+galaxy1"><strong>Nanoplot</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.28.2+<span class="notranslate">galaxy</span>1</span></span> :
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.28.2+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.28.2+galaxy1"><strong>Nanoplot</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.28.2+galaxy1</span></span> :
       <ul>
         <li><em>“Select multifile mode”</em>: <code class="language-plaintext highlighter-rouge">batch</code></li>
         <li><em>“Type of file to work on”</em>: <code class="language-plaintext highlighter-rouge">fastq</code></li>
@@ -895,39 +905,39 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
 </blockquote>
 
 <blockquote class="question">
-  <div id="question" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
   <p>What summary statistics would be useful to look at?</p>
 
   <blockquote class="solution">
-    <div id="solution" class="box-title"><button type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
     <p>This will depend on the aim of your analysis, but usually:</p>
     <ul>
-      <li><strong>Sequencing depth</strong> (the number of <span class="notranslate">reads</span> covering each base position; also called “coverage”). Higher depth is usually better, but at very high depths it may be better to subsample the <span class="notranslate">reads</span>, as errors can swamp the assembly graph.</li>
-      <li><strong>Sequencing quality</strong> (the quality score indicates probability of base call being correct). You may trim or filter <span class="notranslate">reads</span> on quality. Phred quality scores are logarithmic: phred quality 10 = 90% chance of base call being correct; phred quality 20 = 99% chance of base call being correct. More detail <a href="https://en.wikipedia.org/wiki/Phred_quality_score">here</a>.</li>
-      <li><strong>Read lengths</strong> (read lengths histogram, and <span class="notranslate">reads</span> lengths vs. quality plots). Your analysis or assembly may need <span class="notranslate">reads</span> of a certain length.</li>
+      <li><strong>Sequencing depth</strong> (the number of reads covering each base position; also called “coverage”). Higher depth is usually better, but at very high depths it may be better to subsample the reads, as errors can swamp the assembly graph.</li>
+      <li><strong>Sequencing quality</strong> (the quality score indicates probability of base call being correct). You may trim or filter reads on quality. Phred quality scores are logarithmic: phred quality 10 = 90% chance of base call being correct; phred quality 20 = 99% chance of base call being correct. More detail <a href="https://en.wikipedia.org/wiki/Phred_quality_score">here</a>.</li>
+      <li><strong>Read lengths</strong> (read lengths histogram, and reads lengths vs. quality plots). Your analysis or assembly may need reads of a certain length.</li>
     </ul>
   </blockquote>
 </blockquote>
 
 <p><em>Optional further steps:</em></p>
 <ul>
-  <li>Find out the quality of your <span class="notranslate">reads</span> using other tools such as fastp or FastQC.</li>
+  <li>Find out the quality of your reads using other tools such as fastp or FastQC.</li>
   <li>To visualize base quality using emoji you can also use FASTQE.</li>
-  <li>Run FASTQE for the illumina <span class="notranslate">reads</span>. In the output, look at the mean values (the middle row)</li>
-  <li>Repeat FASTQE for the nanopore <span class="notranslate">reads</span>. In the tool settings, increase the maximum read length to 30000.</li>
+  <li>Run FASTQE for the illumina reads. In the output, look at the mean values (the middle row)</li>
+  <li>Repeat FASTQE for the nanopore reads. In the tool settings, increase the maximum read length to 30000.</li>
   <li>To learn more, see the <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html">Quality Control tutorial</a></li>
 </ul>
 
-<h1 id="assemble-reads">Assemble <span class="notranslate">reads</span></h1>
+<h1 id="assemble-reads">Assemble reads</h1>
 
-<p>We will assemble the long nanopore <span class="notranslate">reads</span>.</p>
+<p>We will assemble the long nanopore reads.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-assemble-reads" class="box-title" aria-label="hands-on box: Assemble reads"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Assemble <span class="notranslate">reads</span></div>
+  <div class="box-title hands-on-title" id="hands-on-assemble-reads" aria-label="hands-on box: Assemble reads"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Assemble reads</div>
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye/2.6+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye/2.6+galaxy0"><strong>Flye</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/bgruening/flye/flye/2.6+<span class="notranslate">galaxy</span>0</span></span> :
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye/2.6+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye/2.6+galaxy0"><strong>Flye</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye/2.6+galaxy0</span></span> :
       <ul>
-        <li><em>“Input <span class="notranslate">reads</span>”</em>: <code class="language-plaintext highlighter-rouge">sweet-potato-chloroplast-nanopore-reduced.fastq</code></li>
+        <li><em>“Input reads”</em>: <code class="language-plaintext highlighter-rouge">sweet-potato-chloroplast-nanopore-reduced.fastq</code></li>
         <li><em>“Estimated genome size”</em>: <code class="language-plaintext highlighter-rouge">160000</code></li>
         <li><em>Leave other settings as default</em></li>
       </ul>
@@ -936,7 +946,7 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
       <p>Re-name the <code class="language-plaintext highlighter-rouge">consensus</code> output file to <code class="language-plaintext highlighter-rouge">flye-assembly.fasta</code></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-renaming-a-dataset" class="box-title"><button type="button" aria-controls="tip-renaming-a-dataset-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field  to <code class="language-plaintext highlighter-rouge">flye-assembly.fasta</code></li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-renaming-a-dataset"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-renaming-a-dataset-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>   <li>In the central panel, change the <strong>Name</strong> field  to <code class="language-plaintext highlighter-rouge">flye-assembly.fasta</code></li>   <li>Click the <strong>Save</strong> button</li> </ul> </blockquote>
     </li>
     <li><strong>View output</strong>:
       <ul>
@@ -950,15 +960,15 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
 </blockquote>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-view-the-assembly" class="box-title" aria-label="hands-on box: View the assembly"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: View the assembly</div>
+  <div class="box-title hands-on-title" id="hands-on-view-the-assembly" aria-label="hands-on box: View the assembly"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: View the assembly</div>
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy1"><strong>Bandage Info</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+<span class="notranslate">galaxy</span>1</span></span>
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy1"><strong>Bandage Info</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy1</span></span>
       <ul>
         <li><em>“Graphical Fragment Assembly”</em>: the Flye output file <code class="language-plaintext highlighter-rouge">Graphical Fragment Assembly</code> (not the “assembly_graph” file)</li>
         <li><em>Leave other settings as default</em></li>
       </ul>
     </li>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy2" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy2"><strong>Bandage Image</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+<span class="notranslate">galaxy</span>2</span></span>
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy2" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy2"><strong>Bandage Image</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy2</span></span>
       <ul>
         <li><em>“Graphical Fragment Assembly”</em>: the Flye output file <code class="language-plaintext highlighter-rouge">Graphical Fragment Assembly</code> (not the “assembly_graph” file)</li>
         <li><em>“Node length labels”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
@@ -970,43 +980,43 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
 
 <p>Your assembly graph may look like this:</p>
 
-<figure id="figure-1"><img src="../../images/sweet-potato-assembly-graph.png" alt="assembly graph. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Assembly graph of the nanopore <span class="notranslate">reads</span>, for the sweet potato chloroplast genome. In your image, some of the labels may be truncated; this is a known bug under investigation.</figcaption></figure>
+<figure id="figure-1"><img src="../../images/sweet-potato-assembly-graph.png" alt="assembly graph. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Assembly graph of the nanopore reads, for the sweet potato chloroplast genome. In your image, some of the labels may be truncated; this is a known bug under investigation.</figcaption></figure>
 
 <p><em>Note: a newer version of the Flye assembly tool now resolves this assembly into a single circle.</em></p>
 
 <blockquote class="question">
-  <div id="question-1" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-1" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
   <p>What is your interpretation of this assembly graph?</p>
   <blockquote class="solution">
-    <div id="solution-1" class="box-title"><button type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-1"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
     <p>One interpretation is that this represents the typical circular chloroplast structure: There is a long single-copy region (the node of around 78,000 bp), connected to the inverted repeat (a node of around 28,000 bp), connected to the short single-copy region (of around 11,000 bp). In the graph, each end loop is a single-copy region (either long or short) and the centre bar is the collapsed inverted repeat which should have about twice the sequencing depth.</p>
   </blockquote>
 </blockquote>
 
 <blockquote class="comment">
-  <div id="comment-further-learning" class="box-title" aria-label="comment box: Further Learning"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Further Learning</div>
+  <div class="box-title comment-title" id="comment-further-learning" aria-label="comment box: Further Learning"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Further Learning</div>
   <ul>
     <li>Repeat the Flye assembly with different parameters, and/or a filtered read set.</li>
     <li>You can also try repeating the Flye assembly with an earlier version of the tool, to see the difference it makes. In the tool panel for Flye, click on the ‘Versions’ button at the top to change.</li>
-    <li>Try an alte<span class="notranslate">rna</span>tive assembly tool, such as Canu or Unicycler.</li>
+    <li>Try an alternative assembly tool, such as Canu or Unicycler.</li>
   </ul>
 </blockquote>
 
 <h1 id="polish-assembly">Polish assembly</h1>
 
-<p>Short illumina <span class="notranslate">reads</span> are more accurate the nanopore <span class="notranslate">reads</span>. We will use them to correct errors in the nanopore assembly.</p>
+<p>Short illumina reads are more accurate the nanopore reads. We will use them to correct errors in the nanopore assembly.</p>
 
-<p>First, we will map the short <span class="notranslate">reads</span> to the assembly and create an alignment file.</p>
+<p>First, we will map the short reads to the assembly and create an alignment file.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-map-reads" class="box-title" aria-label="hands-on box: Map reads"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Map <span class="notranslate">reads</span></div>
+  <div class="box-title hands-on-title" id="hands-on-map-reads" aria-label="hands-on box: Map reads"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Map reads</div>
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1"><strong>Map with BWA-MEM</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1</span></span> :
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1"><strong>Map with BWA-MEM</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1</span></span> :
       <ul>
         <li><em>“Will you select a reference genome from your history”</em>: <code class="language-plaintext highlighter-rouge">Use a genome from history</code></li>
         <li><em>“Use the following dataset as the reference sequence”</em>: <code class="language-plaintext highlighter-rouge">flye-assembly.fasta</code></li>
         <li><em>“Algorithm for constructing the BWT index”</em>: <code class="language-plaintext highlighter-rouge">Auto. Let BWA decide</code></li>
-        <li><em>“Single or Paired-end <span class="notranslate">reads</span>”</em>: <code class="language-plaintext highlighter-rouge">Single</code></li>
+        <li><em>“Single or Paired-end reads”</em>: <code class="language-plaintext highlighter-rouge">Single</code></li>
         <li><em>“Select fastq dataset”</em>: <code class="language-plaintext highlighter-rouge">sweet-potato-illumina-reduced.fastq</code></li>
         <li><em>“Set read groups information?”</em>: <code class="language-plaintext highlighter-rouge">Do not set</code></li>
         <li><em>“Select analysis mode”</em>: <code class="language-plaintext highlighter-rouge">Simple Illumina mode</code></li>
@@ -1020,12 +1030,12 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
   </ol>
 </blockquote>
 
-<p>Next, we will compare the short <span class="notranslate">reads</span> to the assembly, and create a polished (corrected) assembly file.</p>
+<p>Next, we will compare the short reads to the assembly, and create a polished (corrected) assembly file.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-polish" class="box-title" aria-label="hands-on box: Polish"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Polish</div>
+  <div class="box-title hands-on-title" id="hands-on-polish" aria-label="hands-on box: Polish"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Polish</div>
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/pilon/pilon/1.20.1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/pilon/pilon/1.20.1"><strong>pilon</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/pilon/pilon/1.20.1</span></span> :
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/pilon/pilon/1.20.1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/pilon/pilon/1.20.1"><strong>pilon</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/pilon/pilon/1.20.1</span></span> :
       <ul>
         <li><em>“Source for reference genome used for BAM alignments”</em>: <code class="language-plaintext highlighter-rouge">Use a genome from history</code></li>
         <li><em>“Select a reference genome”</em>: <code class="language-plaintext highlighter-rouge">flye-assembly.fasta</code></li>
@@ -1042,9 +1052,9 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
       </ul>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-renaming-a-dataset-1" class="box-title"><button type="button" aria-controls="tip-renaming-a-dataset-1-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field  to <code class="language-plaintext highlighter-rouge">polished-assembly.fasta</code></li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-renaming-a-dataset-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-renaming-a-dataset-1-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>   <li>In the central panel, change the <strong>Name</strong> field  to <code class="language-plaintext highlighter-rouge">polished-assembly.fasta</code></li>   <li>Click the <strong>Save</strong> button</li> </ul> </blockquote>
     </li>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats/1.0.1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats/1.0.1"><strong>Fasta Statistics</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats/1.0.1</span></span>
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats/1.0.1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats/1.0.1"><strong>Fasta Statistics</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats/1.0.1</span></span>
       <ul>
         <li>Find and run the tool called “Fasta statistics” on both the original flye assembly and the polished version.</li>
       </ul>
@@ -1053,18 +1063,18 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
 </blockquote>
 
 <blockquote class="question">
-  <div id="question-2" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-2" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
   <p>How does the polished assembly compare to the unpolished assembly?</p>
   <blockquote class="solution">
-    <div id="solution-2" class="box-title"><button type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
-    <p>This will depend on the settings, but as an example: your polished assembly might be about 10-15 Kbp longer. Nanopore <span class="notranslate">reads</span> can have homopolymer deletions - a run of AAAA may be interpreted as AAA - so the more accurate illumina <span class="notranslate">reads</span> may correct these parts of the long-read assembly. In the changes file, there may be a lot of cases showing a supposed deletion (represented by a dot) being corrected to a base.</p>
+    <div class="box-title solution-title" id="solution-2"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <p>This will depend on the settings, but as an example: your polished assembly might be about 10-15 Kbp longer. Nanopore reads can have homopolymer deletions - a run of AAAA may be interpreted as AAA - so the more accurate illumina reads may correct these parts of the long-read assembly. In the changes file, there may be a lot of cases showing a supposed deletion (represented by a dot) being corrected to a base.</p>
   </blockquote>
 </blockquote>
 
 <p><em>Optional further steps:</em></p>
 <ul>
   <li>Run a second round (or more) of Pilon polishing. Keep track of file naming; you will need to generate a new bam file first before each round of Pilon.</li>
-  <li>Run an alte<span class="notranslate">rna</span>tive polishing tool, such as Racon. This uses the long <span class="notranslate">reads</span> themselves to correct the long-read (Flye) assembly. It would be better to run this tool on the Flye assembly before running Pilon, rather than after Pilon.</li>
+  <li>Run an alternative polishing tool, such as Racon. This uses the long reads themselves to correct the long-read (Flye) assembly. It would be better to run this tool on the Flye assembly before running Pilon, rather than after Pilon.</li>
 </ul>
 
 <h1 id="annotate-the-assembly">Annotate the assembly</h1>
@@ -1072,14 +1082,14 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
 <p>We can now annotate our assembled genome with information about genomic features.</p>
 
 <ul>
-  <li>A chloroplast genome annotation tool is not yet available in <span class="notranslate">Galaxy</span>; for an approximation, here we can use the tool for bacterial genome annotation, Prokka.</li>
+  <li>A chloroplast genome annotation tool is not yet available in Galaxy; for an approximation, here we can use the tool for bacterial genome annotation, Prokka.</li>
 </ul>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-annotate-with-prokka" class="box-title" aria-label="hands-on box: Annotate with Prokka"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Annotate with Prokka</div>
+  <div class="box-title hands-on-title" id="hands-on-annotate-with-prokka" aria-label="hands-on box: Annotate with Prokka"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Annotate with Prokka</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/crs4/prokka/prokka/1.14.5+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/crs4/prokka/prokka/1.14.5+galaxy0"><strong>Prokka</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/crs4/prokka/prokka/1.14.5+<span class="notranslate">galaxy</span>0</span></span>  with the following parameters (leave everything else unchanged)
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/crs4/prokka/prokka/1.14.5+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/crs4/prokka/prokka/1.14.5+galaxy0"><strong>Prokka</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/crs4/prokka/prokka/1.14.5+galaxy0</span></span>  with the following parameters (leave everything else unchanged)
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“contigs to annotate”</em>: <code class="language-plaintext highlighter-rouge">polished-assembly.fasta</code></li>
       </ul>
@@ -1095,29 +1105,29 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
   </ol>
 </blockquote>
 
-<p>Alte<span class="notranslate">rna</span>tively, you might want to use a web-based tool designed for chloroplast genomes.</p>
+<p>Alternatively, you might want to use a web-based tool designed for chloroplast genomes.</p>
 
 <ul>
   <li>One option is the GeSeq tool, described here. Skip this step if you have already used Prokka above.</li>
 </ul>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-annotate-with-geseq" class="box-title" aria-label="hands-on box: Annotate with GeSeq"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Annotate with GeSeq</div>
+  <div class="box-title hands-on-title" id="hands-on-annotate-with-geseq" aria-label="hands-on box: Annotate with GeSeq"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Annotate with GeSeq</div>
   <ul>
     <li>Download <code class="language-plaintext highlighter-rouge">polished-assembly.fasta</code> to your computer (click on the file in your history; then click on the disk icon).</li>
     <li>In a new browser tab, go to <a href="https://chlorobox.mpimp-golm.mpg.de/geseq.html">Chlorobox</a> where we will use the GeSeq tool (<span class="citation"><a href="#Tillich_2017">Tillich <i>et al.</i> 2017</a></span>) to annotate our sequence.</li>
     <li>Upload the <code class="language-plaintext highlighter-rouge">fasta</code> file there. Information about how to use the tool is available on the page.</li>
     <li>Once the annotation is completed, download the required files.</li>
-    <li>In <span class="notranslate">Galaxy</span>, import the annotation <code class="language-plaintext highlighter-rouge">GFF3</code> file.</li>
+    <li>In Galaxy, import the annotation <code class="language-plaintext highlighter-rouge">GFF3</code> file.</li>
   </ul>
 </blockquote>
 
 <p>Now make a JBrowse file to view the annotations (the GFF3 file - produced from either Prokka or GeSeq) under the assembly (the polished-assembly.fasta file).</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-view-annotations" class="box-title" aria-label="hands-on box: View annotations"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: View annotations</div>
+  <div class="box-title hands-on-title" id="hands-on-view-annotations" aria-label="hands-on box: View annotations"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: View annotations</div>
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+galaxy3" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+galaxy3"><strong>JBrowse genome browser</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+<span class="notranslate">galaxy</span>3</span></span> :
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+galaxy3" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+galaxy3"><strong>JBrowse genome browser</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+galaxy3</span></span> :
       <ul>
         <li><em>“Reference genome to display”</em>: <code class="language-plaintext highlighter-rouge">Use a genome from history</code>
           <ul>
@@ -1126,13 +1136,13 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
         </li>
         <li><em>“Produce Standalone Instance”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
         <li><em>“Genetic Code”</em>: <code class="language-plaintext highlighter-rouge">11. The Bacterial, Archaeal and Plant Plastid Code</code></li>
-        <li><em>“JBrowse-in-<span class="notranslate">Galaxy</span> Action”</em>: <code class="language-plaintext highlighter-rouge">New JBrowse instance</code></li>
+        <li><em>“JBrowse-in-Galaxy Action”</em>: <code class="language-plaintext highlighter-rouge">New JBrowse instance</code></li>
         <li><em>“Insert Track Group”</em>
           <ul>
             <li><em>“Insert Annotation Track”</em>
               <ul>
-                <li><em>“Track Type”</em>: <code class="language-plaintext highlighter-rouge">GFF/GFF3/<span class="notranslate">BED</span> Features</code></li>
-                <li><em>“GFF/GFF3/<span class="notranslate">BED</span> Track Data”</em>: the <code class="language-plaintext highlighter-rouge">GFF3</code> file</li>
+                <li><em>“Track Type”</em>: <code class="language-plaintext highlighter-rouge">GFF/GFF3/BED Features</code></li>
+                <li><em>“GFF/GFF3/BED Track Data”</em>: the <code class="language-plaintext highlighter-rouge">GFF3</code> file</li>
                 <li><em>Leave the other track features as default</em></li>
               </ul>
             </li>
@@ -1161,17 +1171,17 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-reduce
 <iframe id="embedded_jbrowse" src="/training-material/assets/jbrowse/index.html?data=/training-material/topics/assembly/tutorials/chloroplast-assembly/data2&amp;trackList=0" border="0" width="100%" height="500px"></iframe>
 <p><a href="/training-material/assets/jbrowse/index.html?data=/training-material/topics/assembly/tutorials/chloroplast-assembly/data2" target="_blank" style="padding: 0.5rem 1rem; background-color: #dfe5f9;border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">Open JBrowse in a new tab</a></p>
 
-<h1 id="view-reads">View <span class="notranslate">reads</span></h1>
+<h1 id="view-reads">View reads</h1>
 
-<p>We will look at the original sequencing <span class="notranslate">reads</span> mapped to the genome assembly. In this tutorial, we will import very cut-down read sets so that they are easier to view.</p>
+<p>We will look at the original sequencing reads mapped to the genome assembly. In this tutorial, we will import very cut-down read sets so that they are easier to view.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-import-cut-down-read-sets" class="box-title" aria-label="hands-on box: Import cut-down read sets"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Import cut-down read sets</div>
+  <div class="box-title hands-on-title" id="hands-on-import-cut-down-read-sets" aria-label="hands-on box: Import cut-down read sets"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Import cut-down read sets</div>
   <ol>
     <li><span class="tool" data-tool="upload1" title="Tested with upload1"><strong>Import</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: upload1</span></span>  from <a href="https://zenodo.org/record/3567224">Zenodo</a> or a data library (ask your instructor):
       <ul>
-        <li>FASTQ file with illumina <span class="notranslate">reads</span>: <code class="language-plaintext highlighter-rouge">sweet-potato-chloroplast-illumina-tiny.fastq</code></li>
-        <li>FASTQ file with nanopore <span class="notranslate">reads</span>: <code class="language-plaintext highlighter-rouge">sweet-potato-chloroplast-nanopore-tiny.fastq</code></li>
+        <li>FASTQ file with illumina reads: <code class="language-plaintext highlighter-rouge">sweet-potato-chloroplast-illumina-tiny.fastq</code></li>
+        <li>FASTQ file with nanopore reads: <code class="language-plaintext highlighter-rouge">sweet-potato-chloroplast-nanopore-tiny.fastq</code></li>
         <li>Note: these are the “tiny” files, not the “reduced” files we imported earlier.
           <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-illumina-tiny.fastq
 https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-tiny.fastq
@@ -1183,19 +1193,19 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-tiny.f
 </blockquote>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-map-the-reads-to-the-assembly" class="box-title" aria-label="hands-on box: Map the reads to the assembly"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Map the <span class="notranslate">reads</span> to the assembly</div>
+  <div class="box-title hands-on-title" id="hands-on-map-the-reads-to-the-assembly" aria-label="hands-on box: Map the reads to the assembly"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Map the reads to the assembly</div>
   <ul>
-    <li>Map the Illumina <span class="notranslate">reads</span> (the new “tiny” dataset) to the <code class="language-plaintext highlighter-rouge">polished-assembly.fasta</code>, the same way we did before, using bwa mem.</li>
+    <li>Map the Illumina reads (the new “tiny” dataset) to the <code class="language-plaintext highlighter-rouge">polished-assembly.fasta</code>, the same way we did before, using bwa mem.</li>
     <li>This creates one output file: re-name it <code class="language-plaintext highlighter-rouge">illumina-tiny.bam</code></li>
-    <li>Map the Nanopore <span class="notranslate">reads</span> (the new “tiny” dataset) to the <code class="language-plaintext highlighter-rouge">polished-assembly.fasta</code>. The settings will be the same, except <code class="language-plaintext highlighter-rouge">Select analysis mode</code> should be <code class="language-plaintext highlighter-rouge">Nanopore</code></li>
+    <li>Map the Nanopore reads (the new “tiny” dataset) to the <code class="language-plaintext highlighter-rouge">polished-assembly.fasta</code>. The settings will be the same, except <code class="language-plaintext highlighter-rouge">Select analysis mode</code> should be <code class="language-plaintext highlighter-rouge">Nanopore</code></li>
     <li>This creates one output file: re-name it <code class="language-plaintext highlighter-rouge">nanopore-tiny.bam</code></li>
   </ul>
 </blockquote>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-visualise-mapped-reads" class="box-title" aria-label="hands-on box: Visualise mapped reads"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Visualise mapped <span class="notranslate">reads</span></div>
+  <div class="box-title hands-on-title" id="hands-on-visualise-mapped-reads" aria-label="hands-on box: Visualise mapped reads"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Visualise mapped reads</div>
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+galaxy3" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+galaxy3"><strong>JBrowse genome browser</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+<span class="notranslate">galaxy</span>3</span></span> :
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+galaxy3" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+galaxy3"><strong>JBrowse genome browser</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.4+galaxy3</span></span> :
       <ul>
         <li><em>“Reference genome to display”</em>: <code class="language-plaintext highlighter-rouge">Use a genome from history</code>
           <ul>
@@ -1204,7 +1214,7 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-tiny.f
         </li>
         <li><em>“Produce Standalone Instance”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
         <li><em>“Genetic Code”</em>: <code class="language-plaintext highlighter-rouge">11. The Bacterial, Archaeal and Plant Plastid Code</code></li>
-        <li><em>“JBrowse-in-<span class="notranslate">Galaxy</span> Action”</em>: <code class="language-plaintext highlighter-rouge">New JBrowse instance</code></li>
+        <li><em>“JBrowse-in-Galaxy Action”</em>: <code class="language-plaintext highlighter-rouge">New JBrowse instance</code></li>
         <li><em>“Insert Track Group”</em>
           <ul>
             <li><em>“Insert Annotation Track”</em>
@@ -1229,12 +1239,12 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-tiny.f
     </li>
     <li><strong>Re-name output file</strong>:
       <ul>
-        <li>JBrowse may take a few minutes to run. There is one output file: re-name it <code class="language-plaintext highlighter-rouge">assembly-and-<span class="notranslate">reads</span></code></li>
+        <li>JBrowse may take a few minutes to run. There is one output file: re-name it <code class="language-plaintext highlighter-rouge">assembly-and-reads</code></li>
       </ul>
     </li>
     <li><strong>View output</strong>:
       <ul>
-        <li>Click on the eye icon to view. (For more room, collapse <span class="notranslate">Galaxy</span> side menus with corner &lt; &gt; signs).</li>
+        <li>Click on the eye icon to view. (For more room, collapse Galaxy side menus with corner &lt; &gt; signs).</li>
         <li>Make sure the bam files are ticked in the left hand panel.</li>
         <li>Choose a contig in the drop down menu. Zoom in and out with + and - buttons.</li>
       </ul>
@@ -1242,24 +1252,24 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-tiny.f
   </ol>
 </blockquote>
 
-<p>Here is an embedded snippet showing JBrowse and the mapped <span class="notranslate">reads</span>:</p>
+<p>Here is an embedded snippet showing JBrowse and the mapped reads:</p>
 
 <!--SNIPPET-->
 <iframe id="embedded_jbrowse" src="/training-material/assets/jbrowse/index.html?data=/training-material/topics/assembly/tutorials/chloroplast-assembly/data&amp;trackList=0" border="0" width="100%" height="500px"></iframe>
 <p><a href="/training-material/assets/jbrowse/index.html?data=/training-material/topics/assembly/tutorials/chloroplast-assembly/data" target="_blank" style="padding: 0.5rem 1rem; background-color: #dfe5f9;border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">Open JBrowse in a new tab</a></p>
 
 <blockquote class="question">
-  <div id="question-3" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-3" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
-    <li>What are the differences between the nanopore and the illumina <span class="notranslate">reads</span>?</li>
+    <li>What are the differences between the nanopore and the illumina reads?</li>
     <li>What are some reasons that the read coverage may vary across the reference genome?</li>
   </ol>
 
   <blockquote class="solution">
-    <div id="solution-3" class="box-title"><button type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-3"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
     <ol>
-      <li>Nanopore <span class="notranslate">reads</span> are longer and have a higher error rate.</li>
+      <li>Nanopore reads are longer and have a higher error rate.</li>
       <li>There may be lots of reasons for varying read coverage. Some possibilities: In areas of high read coverage: this region may be a collapsed repeat. In areas of low or no coverage: this region may be difficult to sequence; or, this region may be a misassembly.</li>
     </ol>
   </blockquote>
@@ -1276,13 +1286,13 @@ https://zenodo.org/record/3567224/files/sweet-potato-chloroplast-nanopore-tiny.f
 <p>We can assemble another chloroplast genome using sequence data from a different plant species: the snow gum, <em>Eucalyptus pauciflora</em>. This data is from <span class="citation"><a href="#Wang_etal_2018">Wang <i>et al.</i> 2018</a></span>. It is a subset of the original FASTQ read files (Illumina - SRR7153063, Nanopore - SRR7153095).</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-assembly-and-annotation" class="box-title" aria-label="hands-on box: Assembly and annotation"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Assembly and annotation</div>
+  <div class="box-title hands-on-title" id="hands-on-assembly-and-annotation" aria-label="hands-on box: Assembly and annotation"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Assembly and annotation</div>
   <ul>
-    <li>Get data: at this <a href="https://doi.org/10.5281/zenodo.3600662">Zenodo link</a>, then upload to <span class="notranslate">Galaxy</span>.</li>
-    <li>Check <span class="notranslate">reads</span>: Run Nanoplot on the nanopore <span class="notranslate">reads</span>.</li>
-    <li>Assemble: Use Flye to assemble the nanopore <span class="notranslate">reads</span>, then get Fasta statistics <em>Note: this may take several hours.</em></li>
-    <li>Polish assembly: Use Pilon to polish the assembly with short Illumina <span class="notranslate">reads</span>. <em>Note: Don’t forget to map these Illumina <span class="notranslate">reads</span> to the assembly first using bwa-mem, then use the resulting <code class="language-plaintext highlighter-rouge">bam</code> file as input to Pilon.</em></li>
-    <li>Annotate: Use the GeSeq tool at <a href="https://chlorobox.mpimp-golm.mpg.de/geseq.html">Chlorobox</a> or the Prokka tool within <span class="notranslate">Galaxy</span>.</li>
+    <li>Get data: at this <a href="https://doi.org/10.5281/zenodo.3600662">Zenodo link</a>, then upload to Galaxy.</li>
+    <li>Check reads: Run Nanoplot on the nanopore reads.</li>
+    <li>Assemble: Use Flye to assemble the nanopore reads, then get Fasta statistics <em>Note: this may take several hours.</em></li>
+    <li>Polish assembly: Use Pilon to polish the assembly with short Illumina reads. <em>Note: Don’t forget to map these Illumina reads to the assembly first using bwa-mem, then use the resulting <code class="language-plaintext highlighter-rouge">bam</code> file as input to Pilon.</em></li>
+    <li>Annotate: Use the GeSeq tool at <a href="https://chlorobox.mpimp-golm.mpg.de/geseq.html">Chlorobox</a> or the Prokka tool within Galaxy.</li>
     <li>View annotations:Use JBrowse to view the assembled, annotated genome.</li>
   </ul>
 </blockquote>
@@ -1399,19 +1409,21 @@ day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/assembly/tutorials/chloroplast-assembly/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
                    </pre></div></div>
                    </p>
                 </blockquote>
@@ -1449,8 +1461,6 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

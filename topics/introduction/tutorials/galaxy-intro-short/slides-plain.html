@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/slides-plain.html" />
@@ -24,7 +23,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="A Short Introduction to Galaxy" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2023-04-06 00:03:42 +0000" />
+<meta name="DC.date" content="2023-04-07 00:03:52 +0000" />
 <meta name="DC.creator" content="Saskia Hiltemann" />
 <meta name="DC.creator" content="Helena Rasche" />
 <meta name="DC.creator" content="Nicola Soranzo" />
@@ -33,21 +32,25 @@
         
         
         
-        
-        <meta name="description" content="Galaxy is a scientific workflow, data integration, and da..." />
+        <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: A Short Introduction to Galaxy" />
-        <meta property="og:description" content="Galaxy is a scientific workflow, data integration, and da..." />
+        <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -125,10 +128,6 @@
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
         
-        <a class="dropdown-item" href="/training-material/topics/introduction/faqs/" title="Check our FAQs for the Introduction to Galaxy Analyses topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
             <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
@@ -171,27 +170,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -230,6 +216,7 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         <section class="tutorial">
 	<a href="https://github.com/galaxyproject/training-material/blob/main//topics/introduction/tutorials/galaxy-intro-short/slides.html">View markdown source on GitHub</a>
@@ -267,7 +254,7 @@
 
 		
 
-		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Apr 6, 2023 </div>
+		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Apr 7, 2023 </div>
 
 	<hr />
 
@@ -280,7 +267,7 @@
 
 <hr />
 
-<p><img src="/training-material/shared/images/galaxy_logo_25percent_transparent.png" alt="Galaxy Logo. " loading="lazy" /></p>
+<p><img src="/training-material/shared/images/galaxy_logo_25percent_transparent.png" alt="Galaxy Logo" /></p>
 
 <p><strong>Data Intensive <em>analysis</em> for everyone</strong></p>
 
@@ -292,15 +279,15 @@
   <li>
     <p><strong>Free</strong> and Open Source</p>
   </li>
-  <li>Many tools (~8000)</li>
-  <li>Popular (&gt;10.000 <a href="https://www.zotero.org/groups/1732893/galaxy">publications</a>)</li>
+  <li>Many tools (~9400<a href="https://toolshed.g2.bx.psu.edu/">Galaxy Tool Shed</a>)</li>
+  <li>Popular (&gt;11.900 <a href="https://www.zotero.org/groups/1732893/galaxy">publications</a>)</li>
   <li>Extensive <a href="https://training.galaxyproject.org">tutorials</a> available</li>
 </ul>
 
 <p>]</p>
 
 <p>.pull-right[
-<img src="/training-material/topics/introduction/images/data_science.jpg" alt="data science infographic. " loading="lazy" /> <!-- https://pixy.org/3013900/ CC0 license-->
+<img src="/training-material/topics/introduction/images/data_science.jpg" alt="data science infographic" /> <!-- https://pixy.org/3013900/ CC0 license-->
 ]</p>
 
 <p>.footnote[Homepage: <a href="https://galaxyproject.org">galaxyproject.org</a>]</p>
@@ -333,7 +320,7 @@
   <li><strong>Cross-domain</strong>: bioinformatics, chemistry, ecology, climate science, ..</li>
 </ul>
 
-<p><img src="/training-material/topics/introduction/images/titleless-use-resource-banner.png" alt="Galaxy resource banner. " loading="lazy" /></p>
+<p><img src="/training-material/topics/introduction/images/titleless-use-resource-banner.png" alt="Galaxy resource banner" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -364,10 +351,10 @@
   <li>
     <p><strong>The Big Three</strong>: Galaxy Main (<a href="https://usegalaxy.org">usegalaxy.org</a>), Galaxy Europe (<a href="https://usegalaxy.eu">usegalaxy.eu</a>), Galaxy Australia (<a href="https://usegalaxy.org.au">usegalaxy.org.au</a>)</p>
 
-    <p>.image-50[<img src="/training-material/shared/images/usegalaxy_servers.png" alt="usegalaxy.* servers. " loading="lazy" />]</p>
+    <p>.image-50[<img src="/training-material/shared/images/usegalaxy_servers.png" alt="usegalaxy.* servers" />]</p>
   </li>
   <li>Many other smaller, often domain-specific Galaxies available</li>
-  <li>List of all public Galaxies (125+): <a href="https://galaxyproject.org/use/">galaxyproject.org/use</a></li>
+  <li>List of all public Galaxies (135+): <a href="https://galaxyproject.org/use/">galaxyproject.org/use</a></li>
 </ul>
 
 <p><span>Speaker Notes</span></p>
@@ -395,7 +382,7 @@
   </li>
 </ul>
 
-<p><img src="/training-material/topics/introduction/images/galaxy_interface.png" alt="Galaxy user interface. " loading="lazy" /></p>
+<p><img src="/training-material/topics/introduction/images/galaxy_interface.png" alt="Galaxy user interface" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -429,7 +416,7 @@
 <p>]</p>
 
 <p>.pull-right[
-<img src="/training-material/topics/introduction/images/upload-data.png" alt="Galaxy upload button. " loading="lazy" />
+<img src="/training-material/topics/introduction/images/upload-data.png" alt="Galaxy upload button" />
 ]</p>
 
 <p><span>Speaker Notes</span></p>
@@ -459,7 +446,7 @@
           <li>e.g. change name</li>
         </ul>
       </li>
-      <li><i class="fas fa-times" aria-hidden="true"></i><span class="visually-hidden">galaxy-cross</span> <strong>Delete file</strong></li>
+      <li><i class="fas fa-trash" aria-hidden="true"></i><span class="visually-hidden">galaxy-delete</span> <strong>Delete file</strong></li>
     </ul>
   </li>
   <li>Click to <strong>expand</strong>
@@ -482,7 +469,7 @@
 <p>]</p>
 
 <p>.pull-right[
-<img src="/training-material/topics/introduction/images/galaxy_history_dataset_expand.gif" alt="expanding a dataset. " loading="lazy" />
+<img src="/training-material/topics/introduction/images/galaxy_history_dataset_expand.gif" alt="expanding a dataset" />
 ]</p>
 
 <p><span>Speaker Notes</span></p>
@@ -509,7 +496,7 @@
 </ul>
 
 <p>.pull-right[
-<img src="/training-material/topics/introduction/images/tool_search.png" alt="tool search box. " loading="lazy" />
+<img src="/training-material/topics/introduction/images/tool_search.png" alt="tool search box" />
 ]</p>
 
 <p><br /></p>
@@ -518,7 +505,7 @@
   <li><i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> <strong>Star</strong> you favorite tools to make them easier to find</li>
 </ul>
 
-<p><img src="/training-material/topics/introduction/images/tool_favorite.png" alt="add a tool to your favorites by clicking on the star icon. " loading="lazy" /></p>
+<p><img src="/training-material/topics/introduction/images/tool_favorite.png" alt="add a tool to your favorites by clicking on the star icon" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -551,7 +538,7 @@
 <p>]</p>
 
 <p>.pull-right[
-<img src="/training-material/topics/introduction/images/galaxy_tool.png" alt="tool interface. " loading="lazy" />
+<img src="/training-material/topics/introduction/images/galaxy_tool.png" alt="tool interface" />
 ]</p>
 
 <p><span>Speaker Notes</span></p>
@@ -599,7 +586,7 @@
 </ul>
 
 <p>.pull-right[
-<img src="/training-material/topics/introduction/images/tool_run.gif" alt="example tool run. " loading="lazy" />
+<img src="/training-material/topics/introduction/images/tool_run.gif" alt="example tool run" />
 ]</p>
 
 <p><span>Speaker Notes</span></p>
@@ -626,7 +613,7 @@
   <li>Galaxy has many options to visualize data</li>
 </ul>
 
-<p><img src="/training-material/topics/dev/images/charts_examples2.png" alt="Examples of 6 different visualisations in galaxy features an MSA, a couple graphs, RNA structure, and 3d visualisations of proteins. " loading="lazy" /></p>
+<p><img src="/training-material/topics/dev/images/charts_examples2.png" alt="Examples of 6 different visualisations in galaxy features an MSA, a couple graphs, RNA structure, and 3d visualisations of proteins" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -646,7 +633,7 @@
   <li>Good names for your histories help to keep track of your analyses</li>
 </ul>
 
-<p><img src="/training-material/topics/introduction/images/galaxy_interface_multiple_histories.png" alt="multiple history view. " loading="lazy" /></p>
+<p><img src="/training-material/topics/introduction/images/galaxy_interface_multiple_histories.png" alt="multiple history view" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -666,7 +653,7 @@
   <li>Run <strong>end-to-end analyses</strong> with one click</li>
 </ul>
 
-<p><img src="/training-material/topics/introduction/images/101_28.png" alt="Workflow interface. " loading="lazy" /></p>
+<p><img src="/training-material/topics/introduction/images/101_28.png" alt="Workflow interface" /></p>
 
 <ul>
   <li><strong>Extract</strong> from a history</li>
@@ -704,7 +691,7 @@
   </li>
 </ul>
 
-<p><img src="/training-material/topics/introduction/images/shared_data.png" alt="shared data menu. " loading="lazy" /></p>
+<p><img src="/training-material/topics/introduction/images/shared_data.png" alt="shared data menu" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -726,8 +713,7 @@
 </ul>
 
 <!--SNIPPET-->
-<!-- tutorial stats -->
-<div class="row"><div class="col-md-4"> <div class="gtn-card color-agenda">   <div class="card-title">30</div>   <div class="card-text">Topics</div> </div></div><div class="col-md-4"> <div class="gtn-card color-tip">   <div class="card-title">302</div>   <div class="card-text">Tutorials</div> </div></div><div class="col-md-4"> <div class="gtn-card color-details">   <div class="card-title">356</div>   <div class="card-text"><abbr title="Frequently Asked Questions">FAQs</abbr></div> </div></div><div class="col-md-6"> <div class="gtn-card color-comment">   <div class="card-title">280</div>   <div class="card-text">Contributors</div> </div></div><div class="col-md-6"> <div class="gtn-card color-handson">   <div class="card-title">7.8</div>   <div class="card-text">Years</div> </div></div></div>
+<p><!-- tutorial stats --> &lt;div class="row" style="color: var(--text-color-boxtitle)"&gt; &lt;div class="col-md-4"&gt;  &lt;div class="gtn-card color-agenda"&gt;    &lt;div class="card-title"&gt;33&lt;/div&gt;    &lt;div class="card-text"&gt;Topics&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-4"&gt;  &lt;div class="gtn-card color-tip"&gt;    &lt;div class="card-title"&gt;328&lt;/div&gt;    &lt;div class="card-text"&gt;Tutorials&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-4"&gt;  &lt;div class="gtn-card color-details"&gt;    &lt;div class="card-title"&gt;362&lt;/div&gt;    &lt;div class="card-text"&gt;<abbr title="Frequently Asked Questions">FAQs</abbr>&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-6"&gt;  &lt;div class="gtn-card color-comment"&gt;    &lt;div class="card-title"&gt;287&lt;/div&gt;    &lt;div class="card-text"&gt;Contributors&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-6"&gt;  &lt;div class="gtn-card color-handson"&gt;    &lt;div class="card-title"&gt;7.8&lt;/div&gt;    &lt;div class="card-text"&gt;Years&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -744,7 +730,7 @@
   <li>
     <p><strong>Help Forum</strong> (<a href="https://help.galaxyproject.org">help.galaxyproject.org</a>)</p>
 
-    <p><img src="/training-material/topics/introduction/images/galaxy_help.png" alt="Galaxy Help. " loading="lazy" /></p>
+    <p><img src="/training-material/topics/introduction/images/galaxy_help.png" alt="Galaxy Help" /></p>
   </li>
   <li>
     <p><strong>Chat on Matrix</strong></p>
@@ -773,7 +759,7 @@
   <li>Event Horizon: <a href="https://galaxyproject.org/events">galaxyproject.org/events</a></li>
 </ul>
 
-<p><img src="/training-material/topics/introduction/images/event_horizon.png" alt="Event schedule. " loading="lazy" /></p>
+<p><img src="/training-material/topics/introduction/images/event_horizon.png" alt="Event schedule" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -834,7 +820,7 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
         </p>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/bf603e8fe230f5085d78111456044319ff76cb0a">bf603e8fe230f5085d78111456044319ff76cb0a</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/7ea653060476a45e3ea7aed76c459f7e447264fc">7ea653060476a45e3ea7aed76c459f7e447264fc</a></p>
     </div>
 </footer>
 
@@ -846,8 +832,6 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

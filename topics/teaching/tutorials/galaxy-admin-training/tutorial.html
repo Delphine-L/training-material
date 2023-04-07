@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/teaching/tutorials/galaxy-admin-training/tutorial.html" />
@@ -31,222 +30,16 @@
         
         
         
-        
         <meta name="description" content="Galaxy is a great solution to train the bioinformatics co..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Galaxy Admin Training" />
         <meta property="og:description" content="Galaxy is a great solution to train the bioinformatics co..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/teaching" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Teaching and Hosting Galaxy training
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
+        
+        <script type="application/ld+json">
             
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
-        
-        <a class="dropdown-item" href="/training-material/topics/teaching/faqs/" title="Check our FAQs for the Teaching and Hosting Galaxy training topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/teaching/tutorials/galaxy-admin-training/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/teaching/tutorials/galaxy-admin-training/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        <!-- link to feedback -->
-        
-            
-            
-                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-                </a>
-            
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -452,7 +245,209 @@
     }
   ]
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/teaching" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Teaching and Hosting Galaxy training
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/teaching/tutorials/galaxy-admin-training/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/teaching/faqs/" title="Check our FAQs for the Teaching and Hosting Galaxy training topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/teaching/tutorials/galaxy-admin-training/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/teaching/tutorials/galaxy-admin-training/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-teaching">
     <h1 data-toc-skip>Galaxy Admin Training</h1>
@@ -510,6 +505,44 @@
         
             <ul>
                 
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                     
                         
                     
@@ -574,45 +607,79 @@
                     
                         
                     
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
                 
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                     
                         
                     
@@ -641,78 +708,6 @@
                                 
                             
                             </li>
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
                         
                     
                 
@@ -757,12 +752,12 @@
 
 <p><img src="../../images/gat.png" alt="GAT logo is the GTN logo over a space background and text reading galaxy admin traiing." loading="lazy" /></p>
 
-<p>Setting up and running a <span class="notranslate">Galaxy</span> Admin Training is not a very complicated process thanks to a significant amount of work that has been put into making it easy and quick.</p>
+<p>Setting up and running a Galaxy Admin Training is not a very complicated process thanks to a significant amount of work that has been put into making it easy and quick.</p>
 
 <p>This tutorial has multiple audiences who are all adressed within this one tutorial. We encourage everyone involved in hosting a GAT event to read this, so you are aware of all of the moving parts which are required for such an event.</p>
 
 <blockquote class="agenda">
-  <div id="agenda" class="box-title" aria-label="agenda box: ">Agenda</div>
+  <div class="box-title agenda-title" id="agenda" aria-label="agenda box: ">Agenda</div>
 
   <p>In this tutorial, we will see:</p>
 
@@ -810,7 +805,7 @@
   <li>expose ports 20, 80, 443 (optional), 8080 (optional but nice)</li>
 </ul>
 
-<p>Then consider <a href="mailto:galaxy@informatik.uni-freiburg.de?subject=Hosting%20a%20GAT">contacting Use<span class="notranslate">Galaxy</span>.eu</a> and let us know you’d like to host a GAT event. Tell us the number of students and dates of the event.</p>
+<p>Then consider <a href="mailto:galaxy@informatik.uni-freiburg.de?subject=Hosting%20a%20GAT">contacting UseGalaxy.eu</a> and let us know you’d like to host a GAT event. Tell us the number of students and dates of the event.</p>
 
 <h1 id="provisioning-the-infrastructure">Provisioning the Infrastructure</h1>
 
@@ -819,7 +814,7 @@
 <h2 id="eu-admins-setting-up-vms">[EU admins] Setting up VMs</h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-eu-setting-up-vms" class="box-title" aria-label="hands-on box: EU: Setting up VMs"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: EU: Setting up VMs</div>
+  <div class="box-title hands-on-title" id="hands-on-eu-setting-up-vms" aria-label="hands-on box: EU: Setting up VMs"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: EU: Setting up VMs</div>
 
   <ol>
     <li>
@@ -832,12 +827,12 @@
       <p>Once deployed, clone/pull the repository locally and run <code class="language-plaintext highlighter-rouge">./bin/process-training-output.sh</code></p>
 
       <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./bin/process-training-output.sh
-ubuntu  gat-0.training.<span class="notranslate">galaxy</span>project.eu ...
-ubuntu  gat-1.training.<span class="notranslate">galaxy</span>project.eu ...
+ubuntu  gat-0.training.galaxyproject.eu ...
+ubuntu  gat-1.training.galaxyproject.eu ...
 </code></pre></div>      </div>
     </li>
     <li>
-      <p>Place this in the <a href="http://gxy.io/gatmachines">GAT Machines</a> sp<span class="notranslate">reads</span>heet in the correct tab.</p>
+      <p>Place this in the <a href="http://gxy.io/gatmachines">GAT Machines</a> spreadsheet in the correct tab.</p>
     </li>
   </ol>
 
@@ -846,7 +841,7 @@ ubuntu  gat-1.training.<span class="notranslate">galaxy</span>project.eu ...
 <h2 id="non-eu-admins-setting-up-the-vms">[Non-EU admins] Setting up the VMs</h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-non-eu-setting-up-vms" class="box-title" aria-label="hands-on box: Non-EU: Setting up VMs"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Non-EU: Setting up VMs</div>
+  <div class="box-title hands-on-title" id="hands-on-non-eu-setting-up-vms" aria-label="hands-on box: Non-EU: Setting up VMs"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Non-EU: Setting up VMs</div>
 
   <ol>
     <li>
@@ -858,10 +853,10 @@ ubuntu  gat-1.training.<span class="notranslate">galaxy</span>project.eu ...
         <li>2 VCPUs</li>
       </ul>
 
-      <p>If you’re using terraform, you can take inspiration from <a href="https://github.com/usegalaxy-eu/infrastructure/blob/master/gat.tf">Use<span class="notranslate">Galaxy</span>.eu’s terraform configuration</a></p>
+      <p>If you’re using terraform, you can take inspiration from <a href="https://github.com/usegalaxy-eu/infrastructure/blob/master/gat.tf">UseGalaxy.eu’s terraform configuration</a></p>
     </li>
     <li>
-      <p>Place the list of use<span class="notranslate">rna</span>mes and IPs and passwords in the <a href="http://gxy.io/gatmachines">GAT Machines</a> sp<span class="notranslate">reads</span>heet in the correct tab.</p>
+      <p>Place the list of usernames and IPs and passwords in the <a href="http://gxy.io/gatmachines">GAT Machines</a> spreadsheet in the correct tab.</p>
     </li>
   </ol>
 
@@ -892,11 +887,11 @@ set_password = true      # Generate a random password
 </code></pre></div></div>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-everyone-setting-up-vms" class="box-title" aria-label="hands-on box: Everyone: Setting up VMs"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Everyone: Setting up VMs</div>
+  <div class="box-title hands-on-title" id="hands-on-everyone-setting-up-vms" aria-label="hands-on box: Everyone: Setting up VMs"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Everyone: Setting up VMs</div>
 
   <ol>
     <li>
-      <p><code class="language-plaintext highlighter-rouge">git clone https://github.com/<span class="notranslate">galaxy</span>project/admin-training/</code> and change into that repo</p>
+      <p><code class="language-plaintext highlighter-rouge">git clone https://github.com/galaxyproject/admin-training/</code> and change into that repo</p>
     </li>
     <li>
       <p><code class="language-plaintext highlighter-rouge">cd bootstrap-instances</code></p>
@@ -904,12 +899,12 @@ set_password = true      # Generate a random password
     <li>
       <p>In the <code class="language-plaintext highlighter-rouge">hosts</code> file, edit the <code class="language-plaintext highlighter-rouge">[workshop_eu]</code> section to list all of your IPs or DNS entries.</p>
 
-      <p>You can specify <code class="language-plaintext highlighter-rouge">ansible_user=something</code> if it uses a different use<span class="notranslate">rna</span>me, and <code class="language-plaintext highlighter-rouge">ansible_password=password</code> for each machine. E.g.</p>
+      <p>You can specify <code class="language-plaintext highlighter-rouge">ansible_user=something</code> if it uses a different username, and <code class="language-plaintext highlighter-rouge">ansible_password=password</code> for each machine. E.g.</p>
 
       <p>A range of DNS entries (<code class="language-plaintext highlighter-rouge">gat-0</code> to <code class="language-plaintext highlighter-rouge">gat-39</code>)</p>
 
       <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[workshop_]
-gat-[0:39].training.<span class="notranslate">galaxy</span>project.eu
+gat-[0:39].training.galaxyproject.eu
 </code></pre></div>      </div>
 
       <p>Some IPs</p>
@@ -955,7 +950,7 @@ ansible_user = myuser
   <li>(Generates if needed) and copies an SSH key to all of the machines to make login easier (this is stored in <code class="language-plaintext highlighter-rouge">id_rsa</code> and <code class="language-plaintext highlighter-rouge">id_rsa.pub</code> in the same directory as the makefile.)</li>
   <li>This key is set as the ubuntu user’s key, and added to their authorized_keys, to permit them to run ansible easily on that machine (if they don’t configure the local connection correctly.)
     <ul>
-      <li>(When pulsar is in use) the pulsar machines are provisioned identically to the ones where <span class="notranslate">Galaxy</span> is setup, so the students can login passwordlessly to their pulsar machine.</li>
+      <li>(When pulsar is in use) the pulsar machines are provisioned identically to the ones where Galaxy is setup, so the students can login passwordlessly to their pulsar machine.</li>
     </ul>
   </li>
   <li>Updates packages (slow)</li>
@@ -972,7 +967,7 @@ ansible_user = myuser
 
 <h1 id="testing">Testing</h1>
 
-<p>Once your VMs are ready, you should test ALL of the lessons you intend to teach. Most of the training should be fine, but sometimes changes in e.g. <span class="notranslate">Galaxy</span> versions or the availability of newer versions of some ansible modules will indicate you should test the training as you plan to teach it, and update the training materials where relevant.</p>
+<p>Once your VMs are ready, you should test ALL of the lessons you intend to teach. Most of the training should be fine, but sometimes changes in e.g. Galaxy versions or the availability of newer versions of some ansible modules will indicate you should test the training as you plan to teach it, and update the training materials where relevant.</p>
 
 <h1 id="starting-your-training">Starting Your Training</h1>
 
@@ -987,7 +982,7 @@ ansible_user = myuser
     </ul>
   </li>
   <li><strong>Chat</strong> pointing to <code class="language-plaintext highlighter-rouge">https://gxy.io/gatchat</code> (or your preferred channel)</li>
-  <li><strong>VM List</strong> pointing to <code class="language-plaintext highlighter-rouge">https://gxy.io/gatmachines</code> (or your own sp<span class="notranslate">reads</span>heet)</li>
+  <li><strong>VM List</strong> pointing to <code class="language-plaintext highlighter-rouge">https://gxy.io/gatmachines</code> (or your own spreadsheet)</li>
   <li>The slides and tutorials for your training.</li>
 </ul>
 
@@ -996,34 +991,34 @@ ansible_user = myuser
 <p>During planning for BCC2020 we found that monitoring student progress would be extremely difficult, it was not a situation we had encountered before as this was the first remote GAT during the pandemic. So we developed a small utility, the <code class="language-plaintext highlighter-rouge">gat-cli</code>, which assists in monitoring students’ progress.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gat
-<span class="notranslate">Galaxy</span> Admin Training (gat) tool:
+Galaxy Admin Training (gat) tool:
 
   gat status-ansible     [Admin] Check status of ansible training
-  gat status-<span class="notranslate">galaxy</span>      [Admin] Check status of ansible-<span class="notranslate">galaxy</span> training
+  gat status-galaxy      [Admin] Check status of ansible-galaxy training
   gat status-cvmfs       [Admin] Check status of cvmfs training
   gat status-pulsar      [Admin] Check status of pulsar training
 </code></pre></div></div>
 
-<p>Each of these commands run a couple checks on their local machine. For example the <code class="language-plaintext highlighter-rouge">status-<span class="notranslate">galaxy</span></code> command checks:</p>
+<p>Each of these commands run a couple checks on their local machine. For example the <code class="language-plaintext highlighter-rouge">status-galaxy</code> command checks:</p>
 
 <ul>
   <li>Check that the <code class="language-plaintext highlighter-rouge">postgresql</code> service is running</li>
-  <li>Does a db named <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span></code> exist</li>
+  <li>Does a db named <code class="language-plaintext highlighter-rouge">galaxy</code> exist</li>
   <li>Does http://localhost:8080/api/version respond with <em>some</em> content</li>
-  <li>Check that the <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span></code> service is running</li>
+  <li>Check that the <code class="language-plaintext highlighter-rouge">galaxy</code> service is running</li>
   <li>Check that the <code class="language-plaintext highlighter-rouge">nginx</code> service is running</li>
   <li>Does https://localhost:443/api/version respond with <em>some</em> content</li>
 </ul>
 
 <p>However, the <code class="language-plaintext highlighter-rouge">gat</code> command is only available on the VMs, so we’ve written an ansible task (wrapped in the Makefile) which SSHs into every machine, and runs the gat command for you:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ make check-<span class="notranslate">galaxy</span>-eu
-gat-19    postgres ✘ ✘ <span class="notranslate">galaxy</span>(http) ✘ SysD-gxy ✘ SysD-nginx ✘ <span class="notranslate">galaxy</span>(ssl) ✘
-gat-22    postgres ✔ ✘ <span class="notranslate">galaxy</span>(http) ✘ SysD-gxy ✘ SysD-nginx ✘ <span class="notranslate">galaxy</span>(ssl) ✘
-gat-2     postgres ✔ ✔ <span class="notranslate">galaxy</span>(http) ✔ SysD-gxy ✘ SysD-nginx ✘ <span class="notranslate">galaxy</span>(ssl) ✘
-gat-15    postgres ✔ ✘ <span class="notranslate">galaxy</span>(http) ✘ SysD-gxy ✘ SysD-nginx ✘ <span class="notranslate">galaxy</span>(ssl) ✘
-gat-24    postgres ✔ ✘ <span class="notranslate">galaxy</span>(http) ✘ SysD-gxy ✘ SysD-nginx ✘ <span class="notranslate">galaxy</span>(ssl) ✘
-gat-6     postgres ✘ ✘ <span class="notranslate">galaxy</span>(http) ✘ SysD-gxy ✘ SysD-nginx ✘ <span class="notranslate">galaxy</span>(ssl) ✘
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ make check-galaxy-eu
+gat-19    postgres ✘ ✘ galaxy(http) ✘ SysD-gxy ✘ SysD-nginx ✘ galaxy(ssl) ✘
+gat-22    postgres ✔ ✘ galaxy(http) ✘ SysD-gxy ✘ SysD-nginx ✘ galaxy(ssl) ✘
+gat-2     postgres ✔ ✔ galaxy(http) ✔ SysD-gxy ✘ SysD-nginx ✘ galaxy(ssl) ✘
+gat-15    postgres ✔ ✘ galaxy(http) ✘ SysD-gxy ✘ SysD-nginx ✘ galaxy(ssl) ✘
+gat-24    postgres ✔ ✘ galaxy(http) ✘ SysD-gxy ✘ SysD-nginx ✘ galaxy(ssl) ✘
+gat-6     postgres ✘ ✘ galaxy(http) ✘ SysD-gxy ✘ SysD-nginx ✘ galaxy(ssl) ✘
 </code></pre></div></div>
 
 <p>You can see a checkmark reported for every step completed by students, giving you a nice overview of how many students have completed each step, and if you’re ready to move on. Additionally you know precisely which students you should reach out to check in with, if they aren’t progressing. The <code class="language-plaintext highlighter-rouge">-eu</code> again refers to the specific pool of machines, and if you’re using a different hosts file, with different group names, you may need to edit the Makefile accordingly.</p>
@@ -1138,19 +1133,21 @@ day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/teaching/tutorials/galaxy-admin-training/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
                    </pre></div></div>
                    </p>
                 </blockquote>
@@ -1188,8 +1185,6 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

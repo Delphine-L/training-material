@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html" />
@@ -35,222 +34,16 @@
         
         
         
-        
         <meta name="description" content="Learn to analyse Ecological data through Galaxy." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Metabarcoding/eDNA through Obitools" />
         <meta property="og:description" content="Learn to analyse Ecological data through Galaxy." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/ecology" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Ecology
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
+        
+        <script type="application/ld+json">
             
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
-        
-        <a class="dropdown-item" href="/training-material/topics/ecology/faqs/" title="Check our FAQs for the Ecology topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        <!-- link to feedback -->
-        
-            
-            
-                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-                </a>
-            
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -588,7 +381,209 @@
     }
   ]
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/ecology" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Ecology
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/ecology/faqs/" title="Check our FAQs for the Ecology topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-ecology">
     <h1 data-toc-skip>Metabarcoding/eDNA through Obitools</h1>
@@ -663,7 +658,7 @@
 
 
 <a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/5932108/files/wolf_tutorial.zip?download=1">
-    <i class="far fa-copy" aria-hidden="true"></i> Datasets
+    <i class="far fa-copy" aria-hidden="true"></i>&nbsp;Datasets
 </a>
 
 </li>
@@ -674,7 +669,7 @@
 
 
     <a class="btn btn-default topic-icon" href="/training-material/topics/ecology/tutorials/Obitools-metabarcoding/workflows/" title="Workflows" alt="Metabarcoding/eDNA through Obitools workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
+        <i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Workflows
     </a>
 
 </li>
@@ -746,6 +741,8 @@
             </a>
         </li>
     
+    
+        
     
         
     
@@ -931,13 +928,13 @@
 
                 <h1 id="introduction">Introduction</h1>
 
-<p>Based on this <a href="https://pythonhosted.org/OBITools/wolves.html">OBITools official tutorial</a>, you will learn here how to analyze <span class="notranslate">DNA</span> metabarcoding data produced on Illumina sequencers using:</p>
+<p>Based on this <a href="https://pythonhosted.org/OBITools/wolves.html">OBITools official tutorial</a>, you will learn here how to analyze DNA metabarcoding data produced on Illumina sequencers using:</p>
 <ul>
-  <li>the OBITools on <span class="notranslate">Galaxy</span></li>
-  <li>some classical <span class="notranslate">Galaxy</span> tools</li>
+  <li>the OBITools on Galaxy</li>
+  <li>some classical Galaxy tools</li>
 </ul>
 
-<p>The data used in this tutorial correspond to the analysis of four wolf scats, using the protocol published in <span class="citation"><a href="#Shehzad2012">SHEHZAD <i>et al.</i> 2012</a></span> for assessing carnivore diet. After extracting <span class="notranslate">DNA</span> from the faeces, the <span class="notranslate">DNA</span> amplifications were carried out using the primers TTAGATACCCCACTATGC and TAGAACAGGCTCCTCTAG amplifying the 12S-V5 region (<span class="citation"><a href="#Riaz2011">Riaz <i>et al.</i> 2011</a></span>), together with a wolf blocking oligonucleotide.</p>
+<p>The data used in this tutorial correspond to the analysis of four wolf scats, using the protocol published in <span class="citation"><a href="#Shehzad2012">SHEHZAD <i>et al.</i> 2012</a></span> for assessing carnivore diet. After extracting DNA from the faeces, the DNA amplifications were carried out using the primers TTAGATACCCCACTATGC and TAGAACAGGCTCCTCTAG amplifying the 12S-V5 region (<span class="citation"><a href="#Riaz2011">Riaz <i>et al.</i> 2011</a></span>), together with a wolf blocking oligonucleotide.</p>
 
 <p>It is always a good idea to have a look at the intermediate results or to evaluate the best parameter for each step. Some commands are designed for that purpose, for example you can use :</p>
 
@@ -945,7 +942,7 @@
   <li>obicount to count the number of sequence records in a file</li>
   <li>obihead and obitail to view the first or last sequence records of a file</li>
   <li>obistat to get some basic statistics (count, mean, standard deviation) on the attributes (key=value combinations) in the header of each sequence record (see The <a href="https://pythonhosted.org/OBITools/fasta.html">extended OBITools fasta format in the fasta format description</a>)</li>
-  <li>any <span class="notranslate">Galaxy</span> tools corresponding to classical unix command such as less, awk, sort, wc to check your files.</li>
+  <li>any Galaxy tools corresponding to classical unix command such as less, awk, sort, wc to check your files.</li>
 </ul>
 
 <p>The OBITools programs imitate Unix standard programs because they usually act as filters. The main difference with classical Unix programs is that text files are not analyzed line per line but sequence record per sequence record (see below for a detailed description of a sequence record). Compared to packages for similar purposes like mothur (<span class="citation"><a href="#Schloss2009">Schloss <i>et al.</i> 2009</a></span>) or QIIME (<span class="citation"><a href="#Caporaso2010">Caporaso <i>et al.</i> 2010</a></span>), the OBITools mainly rely on filtering and sorting algorithms. This allows users to set up versatile data analysis pipelines</p>
@@ -957,7 +954,7 @@
 <p><img src="../../images/Obitools/fig-Record.png" alt="OBITools attributes records. " loading="lazy" /></p>
 
 <blockquote class="agenda">
-  <div id="agenda" class="box-title" aria-label="agenda box: ">Agenda</div>
+  <div class="box-title agenda-title" id="agenda" aria-label="agenda box: ">Agenda</div>
 
   <p>In this tutorial, we will cover:</p>
 
@@ -972,7 +969,7 @@
       <li><a href="#micro-assembly-of-paired-end-sequences-with-illuminapairedend" id="markdown-toc-micro-assembly-of-paired-end-sequences-with-illuminapairedend">Micro assembly of paired-end sequences with <strong>illuminapairedend</strong></a></li>
       <li><a href="#remove-unaligned-sequence-records-with-obigrep" id="markdown-toc-remove-unaligned-sequence-records-with-obigrep">Remove unaligned sequence records with <strong>obigrep</strong></a></li>
       <li><a href="#assign-each-sequence-record-to-the-corresponding-samplemarker-combination-with-ngsfilter" id="markdown-toc-assign-each-sequence-record-to-the-corresponding-samplemarker-combination-with-ngsfilter">Assign each sequence record to the corresponding sample/marker combination with <strong>NGSfilter</strong></a></li>
-      <li><a href="#dereplicate-reads-into-uniq-sequences-with-obiuniq" id="markdown-toc-dereplicate-reads-into-uniq-sequences-with-obiuniq">Dereplicate <span class="notranslate">reads</span> into uniq sequences with <strong>obiuniq</strong></a></li>
+      <li><a href="#dereplicate-reads-into-uniq-sequences-with-obiuniq" id="markdown-toc-dereplicate-reads-into-uniq-sequences-with-obiuniq">Dereplicate reads into uniq sequences with <strong>obiuniq</strong></a></li>
       <li><a href="#limit-number-of-informations-with-obiannotate" id="markdown-toc-limit-number-of-informations-with-obiannotate">Limit number of informations with <strong>obiannotate</strong></a></li>
       <li><a href="#computes-basic-statistics-for-attribute-values-with-obistat" id="markdown-toc-computes-basic-statistics-for-attribute-values-with-obistat">Computes basic statistics for attribute values with <strong>obistat</strong></a></li>
       <li><a href="#filtering-sequances-by-count-and-length-with-obigrep" id="markdown-toc-filtering-sequances-by-count-and-length-with-obigrep">Filtering sequances by count and length with <strong>obigrep</strong></a></li>
@@ -992,7 +989,7 @@
 <p>The data needed to run the tutorial are the following:</p>
 
 <ul>
-  <li>FASTQ files resulting from a GA IIx (Illumina) paired-end (2 x 108 bp) sequencing assay of <span class="notranslate">DNA</span> extracted and amplified from four wolf faeces:
+  <li>FASTQ files resulting from a GA IIx (Illumina) paired-end (2 x 108 bp) sequencing assay of DNA extracted and amplified from four wolf faeces:
     <ul>
       <li>wolf_F.fastq</li>
       <li>wolf_R.fastq</li>
@@ -1011,7 +1008,7 @@
 <h2 id="get-data">Get data</h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-data-upload" class="box-title" aria-label="hands-on box: Data upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Data upload</div>
+  <div class="box-title hands-on-title" id="hands-on-data-upload" aria-label="hands-on box: Data upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Data upload</div>
 
   <ol>
     <li>Create a new history for this tutorial</li>
@@ -1022,17 +1019,17 @@
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-via-links" class="box-title"><button type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-importing-data-from-a-data-library" class="box-title"><button type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-data-from-a-data-library"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>As an alternative to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>   <ul>   <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>   <li>Navigate to  the correct folder as indicated by your instructor</li>   <li>Select the desired files</li>   <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>   <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>   <li>Click on <strong>Import</strong></li> </ul> </blockquote>
     </li>
     <li>Rename the dataset, here a zip archive, if needed</li>
     <li>
       <p>Check that the datatype is <code class="language-plaintext highlighter-rouge">zip</code></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-changing-the-datatype" class="box-title"><button type="button" aria-controls="tip-changing-the-datatype-contents" aria-expanded="true" aria-label="Toggle tip box: Changing the datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">datatypes</code>    <ul>      <li>tip: you can start typing the datatype into the field to filter the dropdown menu</li>    </ul>  </li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-changing-the-datatype"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-changing-the-datatype-contents" aria-expanded="true" aria-label="Toggle tip box: Changing the datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>   <li>In the central panel, click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden">galaxy-gear</span> <strong>Convert</strong> tab on the top</li>   <li>In the lower part <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden">galaxy-chart-select-data</span> <strong>Datatypes</strong>, select <code class="language-plaintext highlighter-rouge">datatypes</code>     <ul>       <li>tip: you can start typing the datatype into the field to filter the dropdown menu</li>     </ul>   </li>   <li>Click the <strong>Save</strong> button</li> </ul> </blockquote>
     </li>
   </ol>
 
@@ -1041,25 +1038,25 @@
 <h2 id="unzip-the-downloaded-archive"><strong>Unzip</strong> the downloaded archive</h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-unzip-the-downladed-zip-archive-and-prepare-unzipped-files-to-be-used-by-obitools" class="box-title" aria-label="hands-on box: Unzip the downladed .zip archive and prepare unzipped files to be used by OBITools"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Unzip the downladed .zip archive and prepare unzipped files to be used by OBITools</div>
+  <div class="box-title hands-on-title" id="hands-on-unzip-the-downladed-zip-archive-and-prepare-unzipped-files-to-be-used-by-obitools" aria-label="hands-on box: Unzip the downladed .zip archive and prepare unzipped files to be used by OBITools"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Unzip the downladed .zip archive and prepare unzipped files to be used by OBITools</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/imgteam/unzip/unzip/0.2" title="Tested with toolshed.g2.bx.psu.edu/repos/imgteam/unzip/unzip/0.2"><strong>Unzip</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/imgteam/unzip/unzip/0.2</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/imgteam/unzip/unzip/0.2" title="Tested with toolshed.g2.bx.psu.edu/repos/imgteam/unzip/unzip/0.2"><strong>Unzip</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/imgteam/unzip/unzip/0.2</span></span>  with the following parameters:
       <ul>
         <li><em>“Extract single file”</em>: <code class="language-plaintext highlighter-rouge">All files</code></li>
       </ul>
 
       <blockquote class="comment">
-        <div id="comment" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+        <div class="box-title comment-title" id="comment" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
-        <p>To work properly, this unzip <span class="notranslate">Galaxy</span> tool is waiting “simple” archive as input, this means without sub directory.</p>
+        <p>To work properly, this unzip Galaxy tool is waiting “simple” archive as input, this means without sub directory.</p>
       </blockquote>
     </li>
     <li>
       <p>Add to each datafile a tag and/or modify names (<em>optional</em>)</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <div id="tip-adding-a-tag" class="box-title"><button type="button" aria-controls="tip-adding-a-tag-contents" aria-expanded="true" aria-label="Toggle tip box: Adding a tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Adding a tag<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <ul>  <li>Click on the dataset</li>  <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-tags</span> <strong>Edit dataset tags</strong></li>  <li>    <p>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code></p>    <p>Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</p>  </li>  <li>Check that the tag is appearing below the dataset name</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-adding-a-tag"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-adding-a-tag-contents" aria-expanded="true" aria-label="Toggle tip box: Adding a tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Adding a tag<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the dataset</li>   <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden">galaxy-tags</span> <strong>Add Tags</strong></li>   <li>     <p>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code></p>     <p>Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</p>   </li>   <li>Check that the tag is appearing below the dataset name</li> </ul> </blockquote>
     </li>
     <li>
       <p>Unhide all dataset from the resulting data collection so you can use these files independently.</p>
@@ -1069,14 +1066,14 @@
 </blockquote>
 
 <blockquote class="question">
-  <div id="question" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
     <li>Why do we need to unhide manually datasets from the data collection?</li>
   </ol>
 
   <blockquote class="solution">
-    <div id="solution" class="box-title"><button type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
       <li>Data collection is a functionality often used to deal with multiple datasets on the same format who can be analysed in batch mode. Here, the data collection is populated with heterogenous datafiles, coming from an archive. We thus need to treat separately each dataset of the collection, and to do so, we need to unhide corresponding datasets from the history, as datasets inside collections are just like “symbolic link” to “classical” history datasets hidden by default.</li>
@@ -1088,21 +1085,21 @@
 
 <h1 id="use-obitools">Use OBITools</h1>
 
-<p>OBITools (<span class="citation"><a href="#Boyer2015">Boyer <i>et al.</i> 2015</a></span>) is a set of programs specifically designed for analyzing NGS data in a <span class="notranslate">DNA</span> metabarcoding context, taking into account taxonomic information. It is distributed as an open source software available on the following website: <a href="http://metabarcoding.org/obitools">http://metabarcoding.org/obitools</a>.</p>
+<p>OBITools (<span class="citation"><a href="#Boyer2015">Boyer <i>et al.</i> 2015</a></span>) is a set of programs specifically designed for analyzing NGS data in a DNA metabarcoding context, taking into account taxonomic information. It is distributed as an open source software available on the following website: <a href="http://metabarcoding.org/obitools">http://metabarcoding.org/obitools</a>.</p>
 
-<p>The OBITools commands consider a sequence record as an entity composed of five distinct elements. Two of them are mandatory, the identifier (id) and the <span class="notranslate">DNA</span> or protein sequence itself. The id is a single word composed of characters, digits, and other symbols like dots or underscores excluding spaces. Formally, the ids should be unique within a dataset and should identify each sequence record unambiguously, but only a few OBITools actually rely on this property. The three other elements composing a sequence record are optional. They consist in a sequence definition, a quality vector, and a set of attributes. The last element is a set of attributes qualifying the sequence, each attribute being described by a key=value pair. The set of attributes is the central concept of the OBITools system. When an OBITools command is run on the sequence records included in a dataset, the result of the computation often consist in the addition of new attributes completing the annotation of each sequence record. This strategy of sequence annotation allows the OBITools to return their results as a new sequence record file that can be used as the input of another OBITools program, ultimately creating complex pipelines (source: <a href="https://pythonhosted.org/OBITools/welcome.html">OBITools Welcome</a>).</p>
+<p>The OBITools commands consider a sequence record as an entity composed of five distinct elements. Two of them are mandatory, the identifier (id) and the DNA or protein sequence itself. The id is a single word composed of characters, digits, and other symbols like dots or underscores excluding spaces. Formally, the ids should be unique within a dataset and should identify each sequence record unambiguously, but only a few OBITools actually rely on this property. The three other elements composing a sequence record are optional. They consist in a sequence definition, a quality vector, and a set of attributes. The last element is a set of attributes qualifying the sequence, each attribute being described by a key=value pair. The set of attributes is the central concept of the OBITools system. When an OBITools command is run on the sequence records included in a dataset, the result of the computation often consist in the addition of new attributes completing the annotation of each sequence record. This strategy of sequence annotation allows the OBITools to return their results as a new sequence record file that can be used as the input of another OBITools program, ultimately creating complex pipelines (source: <a href="https://pythonhosted.org/OBITools/welcome.html">OBITools Welcome</a>).</p>
 
 <h2 id="micro-assembly-of-paired-end-sequences-with-illuminapairedend">Micro assembly of paired-end sequences with <strong>illuminapairedend</strong></h2>
 
-<p>When using the result of a paired-end sequencing assay with supposedly overlapping forward and reverse <span class="notranslate">reads</span>, the first step is to recover the assembled sequence.</p>
+<p>When using the result of a paired-end sequencing assay with supposedly overlapping forward and reverse reads, the first step is to recover the assembled sequence.</p>
 
-<p>The forward and reverse <span class="notranslate">reads</span> of the same fragment are at the same line position in the two FASTQ files obtained after sequencing. Based on these two files, the assembly of the forward and reverse <span class="notranslate">reads</span> is done with the <strong>illuminapairedend</strong> utility that aligns the two <span class="notranslate">reads</span> and returns the reconstructed sequence.</p>
+<p>The forward and reverse reads of the same fragment are at the same line position in the two FASTQ files obtained after sequencing. Based on these two files, the assembly of the forward and reverse reads is done with the <strong>illuminapairedend</strong> utility that aligns the two reads and returns the reconstructed sequence.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-recover-consensus-sequences-from-overlapping-forward-and-reverse-reads" class="box-title" aria-label="hands-on box: Recover consensus sequences from overlapping forward and reverse reads."><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Recover consensus sequences from overlapping forward and reverse <span class="notranslate">reads</span>.</div>
+  <div class="box-title hands-on-title" id="hands-on-recover-consensus-sequences-from-overlapping-forward-and-reverse-reads" aria-label="hands-on box: Recover consensus sequences from overlapping forward and reverse reads."><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Recover consensus sequences from overlapping forward and reverse reads.</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_illumina_pairend/obi_illumina_pairend/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_illumina_pairend/obi_illumina_pairend/1.2.13"><strong>illuminapairedend</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/obi_illumina_pairend/obi_illumina_pairend/1.2.13</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_illumina_pairend/obi_illumina_pairend/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_illumina_pairend/obi_illumina_pairend/1.2.13"><strong>illuminapairedend</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/obi_illumina_pairend/obi_illumina_pairend/1.2.13</span></span>  with the following parameters:
       <ul>
         <li><em>“Read from file”</em>: <code class="language-plaintext highlighter-rouge">wolf_F</code> for the 3p file</li>
         <li><em>“Read from file”</em>: <code class="language-plaintext highlighter-rouge">wolf_R</code> for the 5p file</li>
@@ -1110,11 +1107,11 @@
       </ul>
 
       <blockquote class="comment">
-        <div id="comment-1" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+        <div class="box-title comment-title" id="comment-1" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
         <p>Sequence records corresponding to the same read pair must be in the same order in the two files !</p>
 
-        <p>If the alignment score is below the defined score, here 40, the forward and reverse <span class="notranslate">reads</span> are not aligned but concatenated, and the value of the mode attribute in the sequence header is set to joined instead of alignment</p>
+        <p>If the alignment score is below the defined score, here 40, the forward and reverse reads are not aligned but concatenated, and the value of the mode attribute in the sequence header is set to joined instead of alignment</p>
       </blockquote>
     </li>
   </ol>
@@ -1126,30 +1123,30 @@
 <p>In this step we are going to use the value of the mode attribute in the sequence header of the illuminapairedend output file to discard sequences indicated as “joined”, so not assembled (“alignment”) (see explanation about this mode on the previous step)</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-remove-unaligned-sequence-records" class="box-title" aria-label="hands-on box: Remove unaligned sequence records"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Remove unaligned sequence records</div>
+  <div class="box-title hands-on-title" id="hands-on-remove-unaligned-sequence-records" aria-label="hands-on box: Remove unaligned sequence records"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Remove unaligned sequence records</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13"><strong>obigrep</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13"><strong>obigrep</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13</span></span>  with the following parameters:
       <ul>
         <li><em>“Input sequences file”</em>: <code class="language-plaintext highlighter-rouge">ilumimnapairedend fastq groomer output file</code></li>
         <li><em>“Choose the sequence record selection option”</em>: <code class="language-plaintext highlighter-rouge">predicat</code>
           <ul>
-            <li><em>“Python boolean <span class="notranslate">expression</span> to be evaluated for each sequence record.”</em>: <code class="language-plaintext highlighter-rouge">mode!="joined"</code></li>
+            <li><em>“Python boolean expression to be evaluated for each sequence record.”</em>: <code class="language-plaintext highlighter-rouge">mode!="joined"</code></li>
           </ul>
         </li>
       </ul>
 
       <blockquote class="tip">
-        <div id="tip-verifying-fastq-format-and-converting-it" class="box-title"><button type="button" aria-controls="tip-verifying-fastq-format-and-converting-it-contents" aria-expanded="true" aria-label="Toggle tip box: Verifying FastQ format and converting it"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Verifying FastQ format and converting it<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+        <div class="box-title tip-title" id="tip-verifying-fastq-format-and-converting-it"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-verifying-fastq-format-and-converting-it-contents" aria-expanded="true" aria-label="Toggle tip box: Verifying FastQ format and converting it"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Verifying FastQ format and converting it<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
         <ul>
-          <li>You can use <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0"><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+<span class="notranslate">galaxy</span>0</span></span>  to look at the format of the sequencing encoding score then <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/fastq_groomer/fastq_groomer/1.1.5" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/fastq_groomer/fastq_groomer/1.1.5"><strong>FASTQ GROOMER</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/fastq_groomer/fastq_groomer/1.1.5</span></span>  to specify the guessed sequencing encoding score and create a fastqsanger file.</li>
+          <li>You can use <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0"><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0</span></span>  to look at the format of the sequencing encoding score then <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/fastq_groomer/fastq_groomer/1.1.5" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/fastq_groomer/fastq_groomer/1.1.5"><strong>FASTQ GROOMER</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/devteam/fastq_groomer/fastq_groomer/1.1.5</span></span>  to specify the guessed sequencing encoding score and create a fastqsanger file.</li>
         </ul>
 
       </blockquote>
 
       <blockquote class="comment">
-        <div id="comment-2" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+        <div class="box-title comment-title" id="comment-2" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
         <p>The obigrep command is in some way analog to the standard Unix grep command. It selects a subset of sequence records from a sequence file.</p>
 
@@ -1165,7 +1162,7 @@
 </blockquote>
 
 <blockquote class="question">
-  <div id="question-1" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-1" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
     <li>How do you verify the operation is successful?</li>
@@ -1173,11 +1170,11 @@
   </ol>
 
   <blockquote class="solution">
-    <div id="solution-1" class="box-title"><button type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-1"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
-      <li>you can search in the input file content the presence of <code class="language-plaintext highlighter-rouge">mode=joined</code> and same on the output file (just clicking the eye to visualize the content of each file and typing CTRL+C for example to search <code class="language-plaintext highlighter-rouge">mode=joined</code> in the file, or using a regex <span class="notranslate">Galaxy</span> tool for example). You can also at least look at the size of the output file, if smaller than input file, this is a first good indication.</li>
-      <li>You can use a <span class="notranslate">Galaxy</span> tool like <code class="language-plaintext highlighter-rouge">Line/Word/Character count of a dataset</code> to count the number of lines of each dataset (input and output of obigrep) and divided by 4 (as in a FastQ file, each sequence is represented by a block of 4 lines). 45 276 sequences for input file. 44 717 for output file. Thus 559 sequences discarded.</li>
+      <li>you can search in the input file content the presence of <code class="language-plaintext highlighter-rouge">mode=joined</code> and same on the output file (just clicking the eye to visualize the content of each file and typing CTRL+C for example to search <code class="language-plaintext highlighter-rouge">mode=joined</code> in the file, or using a regex Galaxy tool for example). You can also at least look at the size of the output file, if smaller than input file, this is a first good indication.</li>
+      <li>You can use a Galaxy tool like <code class="language-plaintext highlighter-rouge">Line/Word/Character count of a dataset</code> to count the number of lines of each dataset (input and output of obigrep) and divided by 4 (as in a FastQ file, each sequence is represented by a block of 4 lines). 45 276 sequences for input file. 44 717 for output file. Thus 559 sequences discarded.</li>
     </ol>
 
   </blockquote>
@@ -1187,16 +1184,16 @@
 <h2 id="assign-each-sequence-record-to-the-corresponding-samplemarker-combination-with-ngsfilter">Assign each sequence record to the corresponding sample/marker combination with <strong>NGSfilter</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-assigns-sequence-records-to-the-corresponding-experiment-sample-based-on-dna-tags-and-primers" class="box-title" aria-label="hands-on box: Assigns sequence records to the corresponding experiment/sample based on DNA tags and primers"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Assigns sequence records to the corresponding experiment/sample based on <span class="notranslate">DNA</span> tags and primers</div>
+  <div class="box-title hands-on-title" id="hands-on-assigns-sequence-records-to-the-corresponding-experiment-sample-based-on-dna-tags-and-primers" aria-label="hands-on box: Assigns sequence records to the corresponding experiment/sample based on DNA tags and primers"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Assigns sequence records to the corresponding experiment/sample based on DNA tags and primers</div>
 
   <blockquote class="comment">
-    <div id="comment-3" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+    <div class="box-title comment-title" id="comment-3" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
     <p>Each sequence record is assigned to its corresponding sample and marker using the data provided in a text file (here wolf_diet_ngsfilter.txt). This text file contains one line per sample, with the name of the experiment (several experiments can be included in the same file), the name of the tags (for example: aattaac if the same tag has been used on each extremity of the PCR products, or aattaac:gaagtag if the tags were different), the sequence of the forward primer, the sequence of the reverse primer, the letter T or F for sample identification using the forward primer and tag only or using both primers and both tags, respectively.</p>
   </blockquote>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_ngsfilter/obi_ngsfilter/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_ngsfilter/obi_ngsfilter/1.2.13"><strong>NGSfilter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/obi_ngsfilter/obi_ngsfilter/1.2.13</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_ngsfilter/obi_ngsfilter/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_ngsfilter/obi_ngsfilter/1.2.13"><strong>NGSfilter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/obi_ngsfilter/obi_ngsfilter/1.2.13</span></span>  with the following parameters:
       <ul>
         <li><em>“Parameter file”</em>: <code class="language-plaintext highlighter-rouge">wolf_diet_ngsfilter</code></li>
         <li><em>“Read from file”</em>: <code class="language-plaintext highlighter-rouge">obigrep output</code></li>
@@ -1205,7 +1202,7 @@
       </ul>
 
       <blockquote class="tip">
-        <div id="tip-be-sure-the-text-file-is-in-tabular-datatype" class="box-title"><button type="button" aria-controls="tip-be-sure-the-text-file-is-in-tabular-datatype-contents" aria-expanded="true" aria-label="Toggle tip box: Be sure the text file is in tabular datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Be sure the text file is in tabular datatype<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+        <div class="box-title tip-title" id="tip-be-sure-the-text-file-is-in-tabular-datatype"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-be-sure-the-text-file-is-in-tabular-datatype-contents" aria-expanded="true" aria-label="Toggle tip box: Be sure the text file is in tabular datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Be sure the text file is in tabular datatype<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
         <ul>
           <li>If you are sure the format is compatible with a tabular datatype, as this is the case here ;), you can manually change it, clicking on the eye of the “wolf_diet_ngsfilter.txt” dataset, then selecting the “Datatypes” section then affecting manually tabular and saving the operation</li>
@@ -1218,14 +1215,14 @@
 </blockquote>
 
 <blockquote class="question">
-  <div id="question-2" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-2" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
     <li>How many sequences are not assigned?</li>
   </ol>
 
   <blockquote class="solution">
-    <div id="solution-2" class="box-title"><button type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-2"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
       <li>1391</li>
@@ -1235,26 +1232,26 @@
 
 </blockquote>
 
-<h2 id="dereplicate-reads-into-uniq-sequences-with-obiuniq">Dereplicate <span class="notranslate">reads</span> into uniq sequences with <strong>obiuniq</strong></h2>
+<h2 id="dereplicate-reads-into-uniq-sequences-with-obiuniq">Dereplicate reads into uniq sequences with <strong>obiuniq</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-groups-together-sequence-records" class="box-title" aria-label="hands-on box: Groups together sequence records"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Groups together sequence records</div>
+  <div class="box-title hands-on-title" id="hands-on-groups-together-sequence-records" aria-label="hands-on box: Groups together sequence records"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Groups together sequence records</div>
 
   <blockquote class="comment">
-    <div id="comment-4" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+    <div class="box-title comment-title" id="comment-4" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
-    <p>The same <span class="notranslate">DNA</span> molecule can be sequenced several times. In order to reduce both file size and computations time, and to get easier interpretable results, it is convenient to work with unique sequences instead of <span class="notranslate">reads</span>. To dereplicate such <span class="notranslate">reads</span> into unique sequences, we use the obiuniq command.
-Definition: Dereplicate <span class="notranslate">reads</span> into unique sequences</p>
+    <p>The same DNA molecule can be sequenced several times. In order to reduce both file size and computations time, and to get easier interpretable results, it is convenient to work with unique sequences instead of reads. To dereplicate such reads into unique sequences, we use the obiuniq command.
+Definition: Dereplicate reads into unique sequences</p>
     <ul>
-      <li>compare all the <span class="notranslate">reads</span> in a data set to each other</li>
-      <li>group strictly identical <span class="notranslate">reads</span> together</li>
-      <li>output the sequence for each group and its count in the original dataset (in this way, all duplicated <span class="notranslate">reads</span> are removed)
+      <li>compare all the reads in a data set to each other</li>
+      <li>group strictly identical reads together</li>
+      <li>output the sequence for each group and its count in the original dataset (in this way, all duplicated reads are removed)
 <em>Definition adapted from Seguritan and Rohwer (2001)</em></li>
     </ul>
   </blockquote>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/1.2.13"><strong>obiuniq</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/1.2.13</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/1.2.13"><strong>obiuniq</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/1.2.13</span></span>  with the following parameters:
       <ul>
         <li><em>“Input sequences file”</em>: <code class="language-plaintext highlighter-rouge">Trimmed and annotated file by NGSfilter</code></li>
         <li><em>“Attribute to merge”</em>: <code class="language-plaintext highlighter-rouge">sample</code></li>
@@ -1266,14 +1263,14 @@ Definition: Dereplicate <span class="notranslate">reads</span> into unique seque
 </blockquote>
 
 <blockquote class="question">
-  <div id="question-3" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-3" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
     <li>How many sequences you had and how many you finally obtain?</li>
   </ol>
 
   <blockquote class="solution">
-    <div id="solution-3" class="box-title"><button type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-3"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
       <li>From 43 326 to 3 962</li>
@@ -1286,10 +1283,10 @@ Definition: Dereplicate <span class="notranslate">reads</span> into unique seque
 <h2 id="limit-number-of-informations-with-obiannotate">Limit number of informations with <strong>obiannotate</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-adds-edits-sequence-record-annotations" class="box-title" aria-label="hands-on box: Adds/Edits sequence record annotations"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Adds/Edits sequence record annotations</div>
+  <div class="box-title hands-on-title" id="hands-on-adds-edits-sequence-record-annotations" aria-label="hands-on box: Adds/Edits sequence record annotations"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Adds/Edits sequence record annotations</div>
 
   <blockquote class="comment">
-    <div id="comment-5" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+    <div class="box-title comment-title" id="comment-5" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
     <p>obiannotate is the command that allows adding/modifying/removing annotation attributes attached to sequence records.
 Once such attributes are added, they can be used by the other OBITools commands for filtering purposes or for statistics computing.</p>
@@ -1298,7 +1295,7 @@ Once such attributes are added, they can be used by the other OBITools commands 
   </blockquote>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/1.2.13"><strong>obiannotate</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/1.2.13</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/1.2.13"><strong>obiannotate</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/1.2.13</span></span>  with the following parameters:
       <ul>
         <li><em>“Input sequences file”</em>: <code class="language-plaintext highlighter-rouge">obiuniq output file</code></li>
         <li>In <em>“Keep only attribute with key”</em>:
@@ -1316,10 +1313,10 @@ Once such attributes are added, they can be used by the other OBITools commands 
 <h2 id="computes-basic-statistics-for-attribute-values-with-obistat">Computes basic statistics for attribute values with <strong>obistat</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-computes-basic-statistics-for-attribute-values" class="box-title" aria-label="hands-on box: Computes basic statistics for attribute values"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Computes basic statistics for attribute values</div>
+  <div class="box-title hands-on-title" id="hands-on-computes-basic-statistics-for-attribute-values" aria-label="hands-on box: Computes basic statistics for attribute values"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Computes basic statistics for attribute values</div>
 
   <blockquote class="comment">
-    <div id="comment-6" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+    <div class="box-title comment-title" id="comment-6" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
     <p>stats computes basic statistics for attribute values of sequence records. The sequence records can be categorized or not using one or several -c options. By default, only the number of sequence records and the total count are computed for each category. Additional statistics can be computed for attribute values in each category, like:</p>
     <ul>
@@ -1334,7 +1331,7 @@ Once such attributes are added, they can be used by the other OBITools commands 
   </blockquote>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_stat/obi_stat/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_stat/obi_stat/1.2.13"><strong>obistat</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/obi_stat/obi_stat/1.2.13</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_stat/obi_stat/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_stat/obi_stat/1.2.13"><strong>obistat</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/obi_stat/obi_stat/1.2.13</span></span>  with the following parameters:
       <ul>
         <li><em>“Input sequences file”</em>: <code class="language-plaintext highlighter-rouge">obiannotate output file</code></li>
         <li>In <em>“Category attribute”</em>:
@@ -1358,14 +1355,14 @@ Once such attributes are added, they can be used by the other OBITools commands 
 </blockquote>
 
 <blockquote class="question">
-  <div id="question-4" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-4" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
-    <li>Can you use this result to say how many sequences occuring only once? You would need to use <span class="notranslate">Galaxy</span> tools like <code class="language-plaintext highlighter-rouge">Sort data in ascending or descending order</code> and ` Select first lines from a dataset` to answer the question</li>
+    <li>Can you use this result to say how many sequences occuring only once? You would need to use Galaxy tools like <code class="language-plaintext highlighter-rouge">Sort data in ascending or descending order</code> and ` Select first lines from a dataset` to answer the question</li>
   </ol>
 
   <blockquote class="solution">
-    <div id="solution-4" class="box-title"><button type="button" aria-controls="solution-4-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-4"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-4-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
       <li>3131 sequences are occuring once.</li>
@@ -1380,20 +1377,20 @@ Once such attributes are added, they can be used by the other OBITools commands 
 <p>In this step, we are going to use <em>obigrep</em> in order to keep only the sequences having a count greater or equal to 10 and a length shorter than 80 bp.</p>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-filter-sequences-with-b-obigrep-b" class="box-title" aria-label="hands-on box: filter sequences with &lt;b&gt;obigrep&lt;/b&gt;"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: filter sequences with <b>obigrep</b></div>
+  <div class="box-title hands-on-title" id="hands-on-filter-sequences-with-b-obigrep-b" aria-label="hands-on box: filter sequences with &lt;b&gt;obigrep&lt;/b&gt;"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: filter sequences with <b>obigrep</b></div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13"><strong>obigrep</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13"><strong>obigrep</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13</span></span>  with the following parameters:
       <ul>
         <li><em>“Input sequences file”</em>: <code class="language-plaintext highlighter-rouge">obiannotate output file</code></li>
         <li><em>“Choose the sequence record selection option”</em>: <code class="language-plaintext highlighter-rouge">predicat</code>
           <ul>
-            <li><em>“Python boolean <span class="notranslate">expression</span> to be evaluated for each sequence record.”</em>: <code class="language-plaintext highlighter-rouge">count&gt;=10</code></li>
+            <li><em>“Python boolean expression to be evaluated for each sequence record.”</em>: <code class="language-plaintext highlighter-rouge">count&gt;=10</code></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13"><strong>obigrep</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13"><strong>obigrep</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13</span></span>  with the following parameters:
       <ul>
         <li><em>“Input sequences file”</em>: <code class="language-plaintext highlighter-rouge">obigrep output file</code></li>
         <li><em>“Choose the sequence record selection option”</em>: <code class="language-plaintext highlighter-rouge">lmin</code>
@@ -1404,7 +1401,7 @@ Once such attributes are added, they can be used by the other OBITools commands 
       </ul>
 
       <blockquote class="comment">
-        <div id="comment-7" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+        <div class="box-title comment-title" id="comment-7" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
         <p>Based on the previous observation, we set the cut-off for keeping sequences for further analysis to a count of 10
 Based on previous knowledge we also remove sequences with a length shorter than 80 bp (option -l) as we know that the amplified 12S-V5 barcode for vertebrates must have a length around 100bp</p>
       </blockquote>
@@ -1414,7 +1411,7 @@ Based on previous knowledge we also remove sequences with a length shorter than 
 </blockquote>
 
 <blockquote class="question">
-  <div id="question-5" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-5" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
     <li>How many sequences are kept following the “count” filter?</li>
@@ -1422,7 +1419,7 @@ Based on previous knowledge we also remove sequences with a length shorter than 
   </ol>
 
   <blockquote class="solution">
-    <div id="solution-5" class="box-title"><button type="button" aria-controls="solution-5-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-5"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-5-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
       <li>178</li>
@@ -1436,12 +1433,12 @@ Based on previous knowledge we also remove sequences with a length shorter than 
 <h2 id="clean-the-sequences-for-pcrsequencing-errors-sequence-variants-with-obiclean">Clean the sequences for PCR/sequencing errors (sequence variants) with <strong>obiclean</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-clean-the-sequences-for-pcr-sequencing-errors-sequence-variants" class="box-title" aria-label="hands-on box: Clean the sequences for PCR/sequencing errors (sequence variants)"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Clean the sequences for PCR/sequencing errors (sequence variants)</div>
+  <div class="box-title hands-on-title" id="hands-on-clean-the-sequences-for-pcr-sequencing-errors-sequence-variants" aria-label="hands-on box: Clean the sequences for PCR/sequencing errors (sequence variants)"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Clean the sequences for PCR/sequencing errors (sequence variants)</div>
 
   <p>As a final denoising step, using the obiclean program, we keep the head sequences that are sequences with no variants with a count greater than 5% of their own count</p>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/1.2.13"><strong>obiclean</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/1.2.13</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/1.2.13"><strong>obiclean</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/1.2.13</span></span>  with the following parameters:
       <ul>
         <li><em>“Input sequences file”</em>: <code class="language-plaintext highlighter-rouge">obigrep output file</code></li>
         <li><em>“attribute containing sample definition”</em>: <code class="language-plaintext highlighter-rouge">merged_sample</code></li>
@@ -1457,12 +1454,12 @@ Based on previous knowledge we also remove sequences with a length shorter than 
 <h2 id="taxonomic-assignment-of-sequences-with-ncbi-blast-blastn">Taxonomic assignment of sequences with <strong>NCBI BLAST+ blastn</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-search-nucleotide-database-with-nucleotide-query-sequence-s-from-obitools-treatments" class="box-title" aria-label="hands-on box: Search nucleotide database with nucleotide query sequence(s) from OBITools treatments"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Search nucleotide database with nucleotide query sequence(s) from OBITools treatments</div>
+  <div class="box-title hands-on-title" id="hands-on-search-nucleotide-database-with-nucleotide-query-sequence-s-from-obitools-treatments" aria-label="hands-on box: Search nucleotide database with nucleotide query sequence(s) from OBITools treatments"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Search nucleotide database with nucleotide query sequence(s) from OBITools treatments</div>
 
   <p>Once denoising has been done, the next step in diet analysis is to assign the barcodes to the corresponding species in order to get the complete list of species associated to each sample. Taxonomic assignment of sequences requires a reference database compiling all possible species to be identified in the sample. Assignment is then done based on sequence comparison between sample sequences and reference sequences. We here propose to use BLAST+ blastn.</p>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/2.10.1+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/2.10.1+galaxy0"><strong>NCBI BLAST+ blastn</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/2.10.1+<span class="notranslate">galaxy</span>0</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/2.10.1+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/2.10.1+galaxy0"><strong>NCBI BLAST+ blastn</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/2.10.1+galaxy0</span></span>  with the following parameters:
       <ul>
         <li><em>“Nucleotide query sequence(s)”</em>: <code class="language-plaintext highlighter-rouge">obiclean output file</code></li>
         <li><em>“Subject database/sequences”</em>: <code class="language-plaintext highlighter-rouge">FASTA file from your history</code></li>
@@ -1474,9 +1471,9 @@ Based on previous knowledge we also remove sequences with a length shorter than 
       </ul>
 
       <blockquote class="comment">
-        <div id="comment-8" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+        <div class="box-title comment-title" id="comment-8" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
-        <p>Here we directly use the <code class="language-plaintext highlighter-rouge">db_v05_r117</code> fasta file proposed on the <a href="https://pythonhosted.org/OBITools/wolves.html#step-by-step-analysis">original obitools tutorial</a>. One can mention you can create such a fasta file using same obitools <span class="notranslate">workflow</span> describe before (using obigrep/obiuniq/obigrep/obiannotate) on downloaded EMBL datrabases and taxonomy treated by obitools ecoPCR tool.</p>
+        <p>Here we directly use the <code class="language-plaintext highlighter-rouge">db_v05_r117</code> fasta file proposed on the <a href="https://pythonhosted.org/OBITools/wolves.html#step-by-step-analysis">original obitools tutorial</a>. One can mention you can create such a fasta file using same obitools workflow describe before (using obigrep/obiuniq/obigrep/obiannotate) on downloaded EMBL datrabases and taxonomy treated by obitools ecoPCR tool.</p>
       </blockquote>
     </li>
   </ol>
@@ -1486,17 +1483,17 @@ Based on previous knowledge we also remove sequences with a length shorter than 
 <h2 id="filter-database-and-query-sequences-by-id-to-re-associate-informations-with-filter-sequences-by-id">Filter database and query sequences by ID to re associate informations with <strong>Filter sequences by ID</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-filter-blast-results" class="box-title" aria-label="hands-on box: Filter Blast results"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Filter Blast results</div>
+  <div class="box-title hands-on-title" id="hands-on-filter-blast-results" aria-label="hands-on box: Filter Blast results"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Filter Blast results</div>
 
   <blockquote class="comment">
-    <div id="comment-9" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+    <div class="box-title comment-title" id="comment-9" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
     <p>This tool allows you to re-associate all the reference sequences information, notably the <code class="language-plaintext highlighter-rouge">species_name</code> one so you can see which species are potentially seen on the sample.
 We will also use it to re-associate all the query sequences information, notably the <code class="language-plaintext highlighter-rouge">merged_sample</code> and <code class="language-plaintext highlighter-rouge">obiclean_count</code> attributes so we can better evaluate quality of the results.</p>
   </blockquote>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7" title="Tested with toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7"><strong>Filter sequences by ID</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7" title="Tested with toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7"><strong>Filter sequences by ID</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7</span></span>  with the following parameters:
       <ul>
         <li><em>“Sequence file to be filtered”</em>: <code class="language-plaintext highlighter-rouge">db_v05_r117</code></li>
         <li><em>“Filter using the ID list from”</em>: <code class="language-plaintext highlighter-rouge">tabular file</code></li>
@@ -1505,7 +1502,7 @@ We will also use it to re-associate all the query sequences information, notably
         <li><em>“Output positive matches, negative matches, or both?”</em>: <code class="language-plaintext highlighter-rouge">just positive match</code></li>
       </ul>
     </li>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7" title="Tested with toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7"><strong>Filter sequences by ID</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7" title="Tested with toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7"><strong>Filter sequences by ID</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id/0.2.7</span></span>  with the following parameters:
       <ul>
         <li><em>“Sequence file to be filtered”</em>: <code class="language-plaintext highlighter-rouge">obiclean output data</code></li>
         <li><em>“Filter using the ID list from”</em>: <code class="language-plaintext highlighter-rouge">tabular file</code></li>
@@ -1521,21 +1518,21 @@ We will also use it to re-associate all the query sequences information, notably
 <h2 id="from-fasta-to-tabular-with-obitab">From FASTA to tabular with <strong>Obitab</strong></h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-convert-fasta-filtered-files-in-tabular-ones" class="box-title" aria-label="hands-on box: Convert fasta filtered files in tabular ones"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Convert fasta filtered files in tabular ones</div>
+  <div class="box-title hands-on-title" id="hands-on-convert-fasta-filtered-files-in-tabular-ones" aria-label="hands-on box: Convert fasta filtered files in tabular ones"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Convert fasta filtered files in tabular ones</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13"><strong>obitab</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13"><strong>obitab</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13</span></span>  with the following parameters:
       <ul>
         <li><em>“Input sequences file”</em>: <code class="language-plaintext highlighter-rouge">db_v05_r117 with matched ID</code></li>
       </ul>
 
       <blockquote class="comment">
-        <div id="comment-10" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+        <div class="box-title comment-title" id="comment-10" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
         <p>This tool allows you to convert a fasta file into a tabular one so it is easier to read sequences definitions.</p>
       </blockquote>
     </li>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13"><strong>obitab</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13"><strong>obitab</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/iuc/obi_tab/obi_tab/1.2.13</span></span>  with the following parameters:
       <ul>
         <li><em>“Input sequences file”</em>: <code class="language-plaintext highlighter-rouge">obiclean on data 61 with matched ID</code></li>
       </ul>
@@ -1547,7 +1544,7 @@ We will also use it to re-associate all the query sequences information, notably
 <h2 id="create-a-final-synthesis-as-a-tabular-file">create a final synthesis as a tabular file</h2>
 
 <blockquote class="notranslate hands_on">
-  <div id="hands-on-join-blast-and-obitab-files-then-cut-relevant-column-and-apply-filters" class="box-title" aria-label="hands-on box: Join blast and obitab files then cut relevant column and apply filters"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Join blast and obitab files then cut relevant column and apply filters</div>
+  <div class="box-title hands-on-title" id="hands-on-join-blast-and-obitab-files-then-cut-relevant-column-and-apply-filters" aria-label="hands-on box: Join blast and obitab files then cut relevant column and apply filters"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Join blast and obitab files then cut relevant column and apply filters</div>
 
   <ol>
     <li><span class="tool" data-tool="join1" title="Tested with join1"><strong>Join two datasets side by side on a specified field</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: join1</span></span>  with the following parameters:
@@ -1573,7 +1570,7 @@ We will also use it to re-associate all the query sequences information, notably
       </ul>
 
       <blockquote class="comment">
-        <div id="comment-11" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+        <div class="box-title comment-title" id="comment-11" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
         <p>To have something easier to read and understand, we create a tabular file containing only columns with important informations (c1: query sequences names / c3-7: query counts / c50: reference sequences names / c54: family / c59: genus / c51: reference annotations).</p>
       </blockquote>
@@ -1584,7 +1581,7 @@ We will also use it to re-associate all the query sequences information, notably
         <li><em>“From”</em>: last <code class="language-plaintext highlighter-rouge">Join two Datasets output file</code></li>
       </ul>
     </li>
-    <li><span class="tool" data-tool="Filter1" title="Tested with Filter1"><strong>Filter data on any column using simple <span class="notranslate">expression</span>s</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Filter1</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="Filter1" title="Tested with Filter1"><strong>Filter data on any column using simple expressions</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Filter1</span></span>  with the following parameters:
       <ul>
         <li><em>“Filter”</em>: <code class="language-plaintext highlighter-rouge">Cut output file</code></li>
         <li><em>“With following condition”</em>: <code class="language-plaintext highlighter-rouge">c3&gt;1000 or c4&gt;1000 or c5&gt;1000 or c6&gt;1000</code></li>
@@ -1592,7 +1589,7 @@ We will also use it to re-associate all the query sequences information, notably
       </ul>
 
       <blockquote class="comment">
-        <div id="comment-12" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
+        <div class="box-title comment-title" id="comment-12" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
         <p>To keep only data with significative counts.</p>
       </blockquote>
@@ -1601,7 +1598,7 @@ We will also use it to re-associate all the query sequences information, notably
 </blockquote>
 
 <blockquote class="question">
-  <div id="question-6" class="box-title" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
+  <div class="box-title question-title" id="question-6" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
   <ol>
     <li>How many species are identified? You can use <code class="language-plaintext highlighter-rouge">Cut columns from a table</code> and <code class="language-plaintext highlighter-rouge">unique occurences of each record</code> to isolate the <code class="language-plaintext highlighter-rouge">species name</code> column of obitab results.</li>
@@ -1609,7 +1606,7 @@ We will also use it to re-associate all the query sequences information, notably
   </ol>
 
   <blockquote class="solution">
-    <div id="solution-6" class="box-title"><button type="button" aria-controls="solution-6-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title solution-title" id="solution-6"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-6-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <ol>
       <li>1O</li>
@@ -1622,7 +1619,7 @@ We will also use it to re-associate all the query sequences information, notably
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p>You just did a ecological analysis, finding diet from wolves faeces ! So now you know how to preprocess metabarcoding data on <span class="notranslate">Galaxy</span>, producing quantitative informations with quality checks and filtering results to interpret it and to have a synthesis table you can share broadly!</p>
+<p>You just did a ecological analysis, finding diet from wolves faeces ! So now you know how to preprocess metabarcoding data on Galaxy, producing quantitative informations with quality checks and filtering results to interpret it and to have a synthesis table you can share broadly!</p>
 
 
                 
@@ -1730,19 +1727,21 @@ day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/ecology/tutorials/Obitools-metabarcoding/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
                    </pre></div></div>
                    </p>
                 </blockquote>
@@ -1780,8 +1779,6 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');

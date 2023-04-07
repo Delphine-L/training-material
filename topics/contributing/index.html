@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/contributing/" />
@@ -30,21 +29,25 @@
         
         
         
-        
         <meta name="description" content="Galaxy is a great solution to train the bioinformatics co..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Contributing to the Galaxy Training Material" />
         <meta property="og:description" content="Galaxy is a great solution to train the bioinformatics co..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,9 +115,11 @@
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
         
+        
         <a class="dropdown-item" href="/training-material/topics/contributing/faqs/" title="Check our FAQs for the Contributing to the Galaxy Training Material topic">
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
         </a>
+        
         
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
             <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
@@ -161,27 +166,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -220,9 +212,9 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         
-
 
 
 
@@ -240,20 +232,23 @@
 
 <section class="tutorials-list contributing topic-type-instructors">
     <h1>Contributing to the Galaxy Training Material</h1>
-    <p>Galaxy is a great solution to train the bioinformatics concepts: numerous bioinformatics tools are available (more than 7,000 in the ToolShed), it can be used by people without any computer science skills, it trains to use technology, outlining available resources and efforts that have made them accessible to researchers, it is scalable.<br> In 2016, the Galaxy Training Network decided to set up a new infrastructure for delivering easily Galaxy related training material. The idea was to develop something open and online based on a community effort, as always in Galaxy.</p>
+    <p><p>Galaxy is a great solution to train the bioinformatics concepts: numerous bioinformatics tools are available (more than 7,000 in the ToolShed), it can be used by people without any computer science skills, it trains to use technology, outlining available resources and efforts that have made them accessible to researchers, it is scalable.<br /> In 2016, the Galaxy Training Network decided to set up a new infrastructure for delivering easily Galaxy related training material. The idea was to develop something open and online based on a community effort, as always in Galaxy.</p>
+</p>
     <i>You can view the tutorial materials in different languages by clicking the dropdown icon next to the slides (<i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span>) and tutorial (<i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>) buttons below. </i>
 
     
 
+    <h2 id="material">Material</h2>
     
-        <h2 id="material">Material</h2>
+    
+        <!-- subtopic = [pedagogy, {subtopic => {"id"=>"pedagogy", "title"=>"Pedagogical aspects", "description"=>"These will guide you on the pedagogy to create impactful training material"}, materials => [ ... ]} ] -->
+
         
+        <h3 id="st-pedagogy">Pedagogical aspects</h3>
+        <p>These will guide you on the pedagogy to create impactful training material</p>
         
-          
-            
-              <h3 id="st-pedagogical-aspects">Pedagogical aspects</h3>
-              These will guide you on the pedagogy to create impactful training material </br></br>
-              <table class="table table-responsive table-striped">
+
+        <table class="table table-responsive table-striped">
   <thead>
     <tr>
       <th>Lesson</th>
@@ -272,47 +267,8 @@
 
   
   
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
+        <!-- MAT: contributing/design -->
       
-        
 
         <tr>
           <td class="tutorial_title">
@@ -324,15 +280,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -343,7 +298,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/design/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -383,44 +338,37 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -431,7 +379,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/design/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -471,7 +419,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -486,37 +434,22 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
+        <!-- MAT: contributing/learning-principles -->
       
-        
 
         <tr>
           <td class="tutorial_title">
@@ -528,15 +461,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -547,7 +479,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/learning-principles/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -587,44 +519,37 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -635,7 +560,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/learning-principles/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -675,7 +600,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -690,51 +615,35 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
     
   </tbody>
 </table>
 
 
 
-            
-          
-            
-              <h3 id="st-writing-tutorials-in-gtn">Writing Tutorials in GTN</h3>
-              These will take you from zero to hero in writing Galaxy Training Materials. </br></br>
-              <table class="table table-responsive table-striped">
+
+    
+        <!-- subtopic = [writing, {subtopic => {"id"=>"writing", "title"=>"Writing Tutorials in GTN", "description"=>"These will take you from zero to hero in writing Galaxy Training Materials."}, materials => [ ... ]} ] -->
+
+        
+        <h3 id="st-writing">Writing Tutorials in GTN</h3>
+        <p>These will take you from zero to hero in writing Galaxy Training Materials.</p>
+        
+
+        <table class="table table-responsive table-striped">
   <thead>
     <tr>
       <th>Lesson</th>
@@ -753,15 +662,8 @@
 
   
   
-    
-
-    
-    
-    
-
-    
+        <!-- MAT: contributing/slides-with-video -->
       
-        
 
         <tr>
           <td class="tutorial_title">
@@ -773,15 +675,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -792,7 +693,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -832,7 +733,7 @@
     </span>
 
 
-            
+              
 
 
 
@@ -848,28 +749,21 @@
 
   
 
-            
 
-
-
-            
-
-
-
-            
               
 
+              
+                  
 
 
 
-            
+
+              
+              </div>
             </div>
-          
-          </div>
-
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -880,7 +774,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -920,7 +814,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -935,757 +829,22 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
+        <!-- MAT: contributing/create-new-tutorial-slides -->
       
-        
-
-        <tr>
-          <td class="tutorial_title">
-            
-            
-            <a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html">
-                Creating a new tutorial
-            </a>
-            
-
-
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
-            
-
-
-    </span>
-
-<!-- video slides -->
-
-
-</span>
-</span>
-
-            
-    <span class="btn-group">
-        <a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html" class="btn btn-default" title="Follow the tutorial">
-            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
-        </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
-            <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu">
-        
-        
-         <div class="dropdown-item"><strong>Automatic translations</strong></div>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-                Français
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-                日本語
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-                Español
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-                Português
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-                العربية
-            </a>
-        
-        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-            More Languages
-        </a>
-        </ul>
-    </span>
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <li class="btn btn-default supporting_material">
-    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
-        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
-    </a>
-    <ul class="dropdown-menu">
-        
-        
-
-        
-        
-        
-
-        <li>
-            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial/tutorial" title="View GTN Video Library for this Tutorial">
-                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
-            </a>
-        </li>
-        
-        
-        
-        
-    </ul>
-   </li>
-   
-
-            
-
-
-
-            
-
-
-    <a class="btn btn-default topic-icon" href="/training-material/topics/contributing/tutorials/create-new-tutorial/workflows/" title="Workflows" alt="Creating a new tutorial workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i>
-    </a>
-
-
-            
-              
-
-
-    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
-    </a>
-    <ul class="dropdown-menu">
-    
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
-            Galaxy@GenOuest
-        </a>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
-            UseGalaxy.org.au
-        </a>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    </ul>
-
-
-
-            
-            </div>
-          
-          </div>
-
-          </td>
-          
-            <td> 
-
-
-    </span>
-
-<!-- video slides -->
-
-
-</span>
-</span>
- </td>
-            <td> 
-    <span class="btn-group">
-        <a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html" class="btn btn-default" title="Follow the tutorial">
-            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
-        </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
-            <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu">
-        
-        
-         <div class="dropdown-item"><strong>Automatic translations</strong></div>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-                Français
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-                日本語
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-                Español
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-                Português
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-                العربية
-            </a>
-        
-        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
-            More Languages
-        </a>
-        </ul>
-    </span>
-
- </td>
-            <td> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <li class="btn btn-default supporting_material">
-    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
-        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
-    </a>
-    <ul class="dropdown-menu">
-        
-        
-
-        
-        
-        
-
-        <li>
-            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial/tutorial" title="View GTN Video Library for this Tutorial">
-                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
-            </a>
-        </li>
-        
-        
-        
-        
-    </ul>
-   </li>
-   
-</td>
-            
-            
-              <td> 
-
-
-    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
-    </a>
-    <ul class="dropdown-menu">
-    
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
-            Galaxy@GenOuest
-        </a>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
-            UseGalaxy.org.au
-        </a>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    </ul>
-
-
- </td>
-            
-          
-         </tr>
-         
-       
-    
-    
-
-    
-      
-        
-
-        <tr>
-          <td class="tutorial_title">
-            
-            
-            <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">
-                Creating content in Markdown
-            </a>
-            
-
-
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
-            
-
-
-    </span>
-
-<!-- video slides -->
-
-
-</span>
-</span>
-
-            
-    <span class="btn-group">
-        <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html" class="btn btn-default" title="Follow the tutorial">
-            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
-        </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
-            <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu">
-        
-        
-         <div class="dropdown-item"><strong>Automatic translations</strong></div>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                Français
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                日本語
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                Español
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                Português
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                العربية
-            </a>
-        
-        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-            More Languages
-        </a>
-        </ul>
-    </span>
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
-              
-
-
-
-
-            
-            </div>
-          
-          </div>
-
-          </td>
-          
-            <td> 
-
-
-    </span>
-
-<!-- video slides -->
-
-
-</span>
-</span>
- </td>
-            <td> 
-    <span class="btn-group">
-        <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html" class="btn btn-default" title="Follow the tutorial">
-            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
-        </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
-            <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu">
-        
-        
-         <div class="dropdown-item"><strong>Automatic translations</strong></div>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                Français
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                日本語
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                Español
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                Português
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                العربية
-            </a>
-        
-        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-            More Languages
-        </a>
-        </ul>
-    </span>
-
- </td>
-            <td> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-</td>
-            
-            
-              <td> 
-
-
-
- </td>
-            
-          
-         </tr>
-         
-       
-    
-    
-
-    
-    
-    
-
-    
-      
-        
 
         <tr>
           <td class="tutorial_title">
@@ -1697,15 +856,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     <span class="btn-group">
@@ -1771,101 +929,94 @@
 </span>
 </span>
 
-            
+              
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <li class="btn btn-default supporting_material">
-    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
-        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
-    </a>
-    <ul class="dropdown-menu">
-        
-        
-        
-        
-
-        <li>
-
-            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial-slides/slides" title="View GTN Video Library for this Tutorial">
-                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture & Tutorial (February 2021)
-            </a>
-        </li>
-        
-        
-
-        
-        
-        
-
-        <li>
-            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial-slides/slides" title="View GTN Video Library for this Tutorial">
-                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
-            </a>
-        </li>
-        
-        
-          
-          
-          
-
-        <li>
-            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial-slides/slides" title="View GTN Video Library for these Slides">
-                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture (February 2021)
-            </a>
-        </li>
-        
-        
-          
-          
-          
-
-        <li>
-            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial-slides/slides" title="View GTN Video Library for these Slides">
-                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Demo (February 2021)
-            </a>
-        </li>
-        
-        
-    </ul>
-   </li>
-   
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
-          </td>
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+        
+        
+
+        <li>
+
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial-slides/slides" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture & Tutorial (February 2021)
+            </a>
+        </li>
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial-slides/slides" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
+            </a>
+        </li>
+        
+        
           
-            <td> 
+          
+          
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial-slides/slides" title="View GTN Video Library for these Slides">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture (February 2021)
+            </a>
+        </li>
+        
+        
+          
+          
+          
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial-slides/slides" title="View GTN Video Library for these Slides">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Demo (February 2021)
+            </a>
+        </li>
+        
+        
+    </ul>
+   </li>
+   
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
+          </td>
+
+          <td> 
 
 
     <span class="btn-group">
@@ -1931,9 +1082,9 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -2003,45 +1154,716 @@
     </ul>
    </li>
    
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
+        <!-- MAT: contributing/create-new-tutorial -->
       
+
+        <tr>
+          <td class="tutorial_title">
+            
+            
+            <a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html">
+                Creating a new tutorial
+            </a>
+            
+
+
+            <div class="extra">
+            
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
+
+
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+
+              
+    <span class="btn-group">
+        <a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
         
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+        </ul>
+    </span>
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
+            </a>
+        </li>
+        
+        
+        
+        
+    </ul>
+   </li>
+   
+
+
+              
+
+              
+                  
+
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
+    </a>
+    <ul class="dropdown-menu">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </ul>
+
+
+
+              
+              </div>
+            </div>
+          </td>
+
+          <td> 
+
+
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+ </td>
+          <td> 
+    <span class="btn-group">
+        <a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+        </ul>
+    </span>
+
+ </td>
+          <td> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/create-new-tutorial/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
+            </a>
+        </li>
+        
+        
+        
+        
+    </ul>
+   </li>
+   
+ </td>
+
+          
+
+          
+          <td> 
+
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
+    </a>
+    <ul class="dropdown-menu">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </ul>
+
+
+ </td>
+          
+         </tr>
+       
+    
+        <!-- MAT: contributing/create-new-tutorial-content -->
+      
+
+        <tr>
+          <td class="tutorial_title">
+            
+            
+            <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">
+                Creating content in Markdown
+            </a>
+            
+
+
+            <div class="extra">
+            
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
+
+
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+
+              
+    <span class="btn-group">
+        <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+        </ul>
+    </span>
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
+          </td>
+
+          <td> 
+
+
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+ </td>
+          <td> 
+    <span class="btn-group">
+        <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+        </ul>
+    </span>
+
+ </td>
+          <td> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ </td>
+
+          
+
+          
+          <td> 
+
+
+
+ </td>
+          
+         </tr>
+       
+    
+        <!-- MAT: contributing/running-jekyll -->
+      
 
         <tr>
           <td class="tutorial_title">
@@ -2053,15 +1875,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -2072,7 +1893,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/running-jekyll/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -2112,44 +1933,37 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -2160,7 +1974,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/running-jekyll/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -2200,7 +2014,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -2215,25 +2029,22 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
-    
-
-    
+        <!-- MAT: contributing/gitpod -->
       
-        
 
         <tr>
           <td class="tutorial_title">
@@ -2245,15 +2056,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -2264,7 +2074,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/gitpod/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -2304,68 +2114,61 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <li class="btn btn-default supporting_material">
-    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
-        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
-    </a>
-    <ul class="dropdown-menu">
-        
-        
-
-        
-        
-        
-
-        <li>
-            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/gitpod/tutorial" title="View GTN Video Library for this Tutorial">
-                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
-            </a>
-        </li>
-        
-        
-        
-        
-    </ul>
-   </li>
-   
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/contributing/gitpod/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
+            </a>
+        </li>
+        
+        
+        
+        
+    </ul>
+   </li>
+   
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -2376,7 +2179,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/gitpod/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -2416,7 +2219,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -2455,25 +2258,22 @@
     </ul>
    </li>
    
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
-    
-
-    
+        <!-- MAT: contributing/python -->
       
-        
 
         <tr>
           <td class="tutorial_title">
@@ -2485,15 +2285,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -2504,7 +2303,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/python/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -2544,44 +2343,37 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -2592,7 +2384,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/python/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -2632,7 +2424,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -2647,25 +2439,22 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
-    
-
-    
+        <!-- MAT: contributing/create-new-tutorial-technical -->
       
-        
 
         <tr>
           <td class="tutorial_title">
@@ -2677,15 +2466,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -2696,7 +2484,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-technical/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -2736,44 +2524,37 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -2784,7 +2565,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-technical/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -2824,7 +2605,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -2839,35 +2620,35 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
-    
-    
-
-    
     
   </tbody>
 </table>
 
 
 
-            
-          
-            
-              <h3 id="st-contributing-through-github">Contributing through GitHub</h3>
-              How to collaborate with the GTN </br></br>
-              <table class="table table-responsive table-striped">
+
+    
+        <!-- subtopic = [contribute, {subtopic => {"id"=>"contribute", "title"=>"Contributing through GitHub", "description"=>"How to collaborate with the GTN"}, materials => [ ... ]} ] -->
+
+        
+        <h3 id="st-contribute">Contributing through GitHub</h3>
+        <p>How to collaborate with the GTN</p>
+        
+
+        <table class="table table-responsive table-striped">
   <thead>
     <tr>
       <th>Lesson</th>
@@ -2886,23 +2667,8 @@
 
   
   
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
+        <!-- MAT: contributing/github-command-line-contribution -->
       
-        
 
         <tr>
           <td class="tutorial_title">
@@ -2914,15 +2680,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     <span class="btn-group">
@@ -2977,7 +2742,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/github-command-line-contribution/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -3017,44 +2782,37 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     <span class="btn-group">
@@ -3109,7 +2867,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/github-command-line-contribution/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -3149,7 +2907,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -3164,25 +2922,22 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
-    
-
-    
+        <!-- MAT: contributing/github-interface-contribution -->
       
-        
 
         <tr>
           <td class="tutorial_title">
@@ -3194,15 +2949,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -3213,7 +2967,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/github-interface-contribution/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -3253,44 +3007,37 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -3301,7 +3048,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/github-interface-contribution/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -3341,7 +3088,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -3356,102 +3103,35 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
     
   </tbody>
 </table>
 
 
 
-            
-          
 
-          <!--  show the catch-all "other" subtopic if there are (enabled) tutorials not assigned to any subtoppic -->
-          
-          
-          
-          
-          
+    
+        <!-- subtopic = [__OTHER__, {subtopic => {"title"=>"Other", "description"=>"Assorted Tutorials", "id"=>"other"}, materials => [ ... ]} ] -->
 
-          
-          </br>
-          <div id="tutorial_list">
-          <h3> Other </h3>
-          <div class="search_box">
-            <i class="fas fa fa-search" aria-hidden="true"></i><span class="visually-hidden">search</span>
-            <input data-search-type="tutorial_title" class="search" id="tutorial_search" placeholder="Search" />
-            <span id="clear_search" title="Clear filters"> <i class="fas fa-times" aria-hidden="true"></i><span class="visually-hidden">galaxy-cross</span> </span>
-          </div></br>
-          Assorted tutorials </br></br>
-          <table class="table table-responsive table-striped">
+        
+        <h3 id="st-other">Other</h3>
+        <p>Assorted Tutorials</p>
+        
+
+        <table class="table table-responsive table-striped">
   <thead>
     <tr>
       <th>Lesson</th>
@@ -3470,170 +3150,8 @@
 
   
   
-    
-
-    
+        <!-- MAT: contributing/create-new-tutorial-quiz -->
       
-        
-
-        <tr>
-          <td class="tutorial_title">
-            
-            
-            <a href="/training-material/topics/contributing/slides/introduction.html">
-                Overview of the Galaxy Training Material
-            </a>
-            
-
-
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            
-              
-
-
-    <span class="btn-group">
-	<a class="visually-hidden" href="/training-material/topics/contributing/slides/slides-plain.html" aria-label="more accessible, plain text slides">plain text</a>
-    <span class="btn-group">
-        <a class="btn btn-default topic-icon" href="/training-material/topics/contributing/slides/introduction.html" title="Slides">
-            <i class="fab fa-slideshare" aria-hidden="true"></i>
-        </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="View slides in different languages">
-            <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu">
-        
-        
-
-        <div class="dropdown-item"><strong>Automatic translations</strong></div>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction.html&edit-text=&act=url" title="">
-                Français
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction.html&edit-text=&act=url" title="">
-                日本語
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction.html&edit-text=&act=url" title="">
-                Español
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction.html&edit-text=&act=url" title="">
-                Português
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction.html&edit-text=&act=url" title="">
-                العربية
-            </a>
-        
-        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
-            More Languages
-        </a>
-
-	<a class="btn btn-default topic-icon" href="/training-material/topics/contributing/slides/slides-plain.html" aria-label="more accessible, plain text slides">
-		<i class="fas fa-file-alt" aria-hidden="true"></i> Plain text slides
-	</a>
-    </ul>
-    
-    </span>
-
-<!-- video slides -->
-
-
-</span>
-</span>
-
-            
-          
-          </div>
-
-          </td>
-          
-            <td>
-            
-              
-
-
-    <span class="btn-group">
-	<a class="visually-hidden" href="/training-material/topics/contributing/slides/slides-plain.html" aria-label="more accessible, plain text slides">plain text</a>
-    <span class="btn-group">
-        <a class="btn btn-default topic-icon" href="/training-material/topics/contributing/slides/introduction.html" title="Slides">
-            <i class="fab fa-slideshare" aria-hidden="true"></i>
-        </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="View slides in different languages">
-            <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu">
-        
-        
-
-        <div class="dropdown-item"><strong>Automatic translations</strong></div>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction.html&edit-text=&act=url" title="">
-                Français
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction.html&edit-text=&act=url" title="">
-                日本語
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction.html&edit-text=&act=url" title="">
-                Español
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction.html&edit-text=&act=url" title="">
-                Português
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction.html&edit-text=&act=url" title="">
-                العربية
-            </a>
-        
-        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Fslides%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
-            More Languages
-        </a>
-
-	<a class="btn btn-default topic-icon" href="/training-material/topics/contributing/slides/slides-plain.html" aria-label="more accessible, plain text slides">
-		<i class="fas fa-file-alt" aria-hidden="true"></i> Plain text slides
-	</a>
-    </ul>
-    
-    </span>
-
-<!-- video slides -->
-
-
-</span>
-</span>
-
-            
-            </td>
-            <td></td>
-            <td></td>
-            
-            
-              <td></td>
-            
-          
-         </tr>
-         
-       
-    
-    
-
-    
-    
-    
-
-    
-      
-        
 
         <tr>
           <td class="tutorial_title">
@@ -3645,15 +3163,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -3664,7 +3181,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-quiz/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -3704,44 +3221,37 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -3752,7 +3262,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-quiz/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -3792,7 +3302,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -3807,41 +3317,22 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
+        <!-- MAT: contributing/create-new-tutorial-tours -->
       
-        
 
         <tr>
           <td class="tutorial_title">
@@ -3853,15 +3344,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -3872,7 +3362,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-tours/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -3912,7 +3402,7 @@
     </span>
 
 
-            
+              
 
 
 
@@ -3928,28 +3418,21 @@
 
   
 
-            
 
-
-
-            
-
-
-
-            
               
 
+              
+                  
 
 
 
-            
+
+              
+              </div>
             </div>
-          
-          </div>
-
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -3960,7 +3443,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-tours/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -4000,7 +3483,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -4015,225 +3498,22 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
+        <!-- MAT: contributing/schemas -->
       
-        
-
-        <tr>
-          <td class="tutorial_title">
-            
-            
-            <a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html">
-                Generating PDF artefacts of the website
-            </a>
-            
-
-
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
-            
-
-
-    </span>
-
-<!-- video slides -->
-
-
-</span>
-</span>
-
-            
-    <span class="btn-group">
-        <a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html" class="btn btn-default" title="Follow the tutorial">
-            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
-        </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
-            <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu">
-        
-        
-         <div class="dropdown-item"><strong>Automatic translations</strong></div>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-                Français
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-                日本語
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-                Español
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-                Português
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-                العربية
-            </a>
-        
-        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-            More Languages
-        </a>
-        </ul>
-    </span>
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
-              
-
-
-
-
-            
-            </div>
-          
-          </div>
-
-          </td>
-          
-            <td> 
-
-
-    </span>
-
-<!-- video slides -->
-
-
-</span>
-</span>
- </td>
-            <td> 
-    <span class="btn-group">
-        <a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html" class="btn btn-default" title="Follow the tutorial">
-            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
-        </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
-            <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu">
-        
-        
-         <div class="dropdown-item"><strong>Automatic translations</strong></div>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-                Français
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-                日本語
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-                Español
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-                Português
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-                العربية
-            </a>
-        
-        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
-            More Languages
-        </a>
-        </ul>
-    </span>
-
- </td>
-            <td> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-</td>
-            
-            
-              <td> 
-
-
-
- </td>
-            
-          
-         </tr>
-         
-       
-    
-    
-
-    
-      
-        
 
         <tr>
           <td class="tutorial_title">
@@ -4245,15 +3525,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -4264,7 +3543,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/schemas/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -4304,44 +3583,37 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -4352,7 +3624,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/schemas/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -4392,7 +3664,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -4407,25 +3679,203 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
-    
-
-    
+        <!-- MAT: contributing/generating-pdf -->
       
+
+        <tr>
+          <td class="tutorial_title">
+            
+            
+            <a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html">
+                Generating PDF artefacts of the website
+            </a>
+            
+
+
+            <div class="extra">
+            
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
+
+
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+
+              
+    <span class="btn-group">
+        <a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
         
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+        </ul>
+    </span>
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
+          </td>
+
+          <td> 
+
+
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+ </td>
+          <td> 
+    <span class="btn-group">
+        <a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fgenerating-pdf%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+        </ul>
+    </span>
+
+ </td>
+          <td> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ </td>
+
+          
+
+          
+          <td> 
+
+
+
+ </td>
+          
+         </tr>
+       
+    
+        <!-- MAT: contributing/create-new-topic -->
+      
 
         <tr>
           <td class="tutorial_title">
@@ -4437,15 +3887,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -4456,7 +3905,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/create-new-topic/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -4496,44 +3945,37 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -4544,7 +3986,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/create-new-topic/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -4584,7 +4026,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -4599,45 +4041,215 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
+        <!-- MAT: contributing/introduction -->
       
+
+        <tr>
+          <td class="tutorial_title">
+            
+            
+            <a href="/training-material/topics/contributing/tutorials/introduction/slides.html">
+                Overview of the Galaxy Training Material
+            </a>
+            
+
+
+            <div class="extra">
+            
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
+
+
+    <span class="btn-group">
+	<a class="visually-hidden" href="/training-material/topics/contributing/tutorials/introduction/slides-plain.html" aria-label="more accessible, plain text slides">plain text</a>
+    <span class="btn-group">
+        <a class="btn btn-default topic-icon" href="/training-material/topics/contributing/tutorials/introduction/slides.html" title="Slides">
+            <i class="fab fa-slideshare" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="View slides in different languages">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
         
+        
+
+        <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+
+	<a class="btn btn-default topic-icon" href="/training-material/topics/contributing/tutorials/introduction/slides-plain.html" aria-label="more accessible, plain text slides">
+		<i class="fas fa-file-alt" aria-hidden="true"></i> Plain text slides
+	</a>
+    </ul>
+    
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+
+              
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
+          </td>
+
+          <td> 
+
+
+    <span class="btn-group">
+	<a class="visually-hidden" href="/training-material/topics/contributing/tutorials/introduction/slides-plain.html" aria-label="more accessible, plain text slides">plain text</a>
+    <span class="btn-group">
+        <a class="btn btn-default topic-icon" href="/training-material/topics/contributing/tutorials/introduction/slides.html" title="Slides">
+            <i class="fab fa-slideshare" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="View slides in different languages">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+
+        <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fintroduction%2Fslides.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+
+	<a class="btn btn-default topic-icon" href="/training-material/topics/contributing/tutorials/introduction/slides-plain.html" aria-label="more accessible, plain text slides">
+		<i class="fas fa-file-alt" aria-hidden="true"></i> Plain text slides
+	</a>
+    </ul>
+    
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+ </td>
+          <td> 
+ </td>
+          <td> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ </td>
+
+          
+
+          
+          <td> 
+
+
+
+ </td>
+          
+         </tr>
+       
+    
+        <!-- MAT: contributing/admin-knitting -->
+      
 
         <tr>
           <td class="tutorial_title">
@@ -4649,15 +4261,14 @@
             
 
 
-          <div class="">
-          
-          
-          </div>
-
-          <div class="duplicate">
-          
-            <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+            <div class="extra">
             
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
     </span>
@@ -4668,7 +4279,7 @@
 </span>
 </span>
 
-            
+              
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/admin-knitting/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -4708,44 +4319,37 @@
     </span>
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-            
-
-
-
-            
-
-
-
-            
               
 
 
 
 
-            
-            </div>
-          
-          </div>
 
+
+
+
+
+
+
+
+
+  
+
+
+              
+
+              
+                  
+
+
+
+
+              
+              </div>
+            </div>
           </td>
-          
-            <td> 
+
+          <td> 
 
 
     </span>
@@ -4756,7 +4360,7 @@
 </span>
 </span>
  </td>
-            <td> 
+          <td> 
     <span class="btn-group">
         <a href="/training-material/topics/contributing/tutorials/admin-knitting/tutorial.html" class="btn btn-default" title="Follow the tutorial">
             <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
@@ -4796,7 +4400,7 @@
     </span>
 
  </td>
-            <td> 
+          <td> 
 
 
 
@@ -4811,18 +4415,18 @@
 
 
   
-</td>
-            
-            
-              <td> 
+ </td>
+
+          
+
+          
+          <td> 
 
 
 
  </td>
-            
           
          </tr>
-         
        
     
   </tbody>
@@ -4830,15 +4434,16 @@
 
 
 
-          </div>
-          
-
-        
 
     
 
+
+    
+
+    
     <h2 id="topic-faq">Frequently Asked Questions</h2>
     Common questions regarding this topic have been collected on a <a href="faqs/">dedicated FAQ page </a>. Common questions related to specific tutorials can be accessed from the tutorials themselves.
+    
 
     <h2 id="maintainers">Maintainers</h2>
     <p>This material is maintained by:</p>
@@ -4852,9 +4457,7 @@
     <h2 id="contributors">Contributors</h2>
     <p>This material was contributed to by:</p>
     
-    
-    
-    <a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge contributor-bebatut"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bebatut?s=27" alt="Avatar">Bérénice Batut</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a><a href="/training-material/hall-of-fame/cmonjeau/" class="contributor-badge contributor-cmonjeau"><img src="https://avatars.githubusercontent.com/cmonjeau?s=27" alt="Avatar">Cyril Monjeaud</a><a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a><a href="/training-material/hall-of-fame/lldelisle/" class="contributor-badge contributor-lldelisle"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/lldelisle?s=27" alt="Avatar">Lucille Delisle</a><a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
+    <a href="/training-material/hall-of-fame/cmonjeau/" class="contributor-badge contributor-cmonjeau"><img src="https://avatars.githubusercontent.com/cmonjeau?s=27" alt="Avatar">Cyril Monjeaud</a><a href="/training-material/hall-of-fame/fpsom/" class="contributor-badge contributor-fpsom"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/fpsom?s=27" alt="Avatar">Fotis E. Psomopoulos</a><a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a><a href="/training-material/hall-of-fame/dirowa/" class="contributor-badge contributor-dirowa"><img src="https://avatars.githubusercontent.com/dirowa?s=27" alt="Avatar">Donny Vrins</a><a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge contributor-bebatut"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bebatut?s=27" alt="Avatar">Bérénice Batut</a><a href="/training-material/hall-of-fame/lldelisle/" class="contributor-badge contributor-lldelisle"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/lldelisle?s=27" alt="Avatar">Lucille Delisle</a><a href="/training-material/hall-of-fame/elixir-goblet-ttt/" class="contributor-badge contributor-elixir-goblet-ttt"><img src="https://avatars.githubusercontent.com/elixir-goblet-ttt?s=27" alt="Avatar">ELIXIR Goblet Train the Trainers</a><a href="/training-material/hall-of-fame/erasmusplus/" class="contributor-badge contributor-erasmusplus"><img src="https://avatars.githubusercontent.com/erasmusplus?s=27" alt="Avatar">Erasmus+ Programme</a><a href="/training-material/hall-of-fame/ppalagi/" class="contributor-badge contributor-ppalagi"><img src="https://avatars.githubusercontent.com/ppalagi?s=27" alt="Avatar">Patricia Palagi</a><a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a><a href="/training-material/hall-of-fame/bazante1/" class="contributor-badge contributor-bazante1"><img src="https://avatars.githubusercontent.com/bazante1?s=27" alt="Avatar">Bazante Sanders</a><a href="/training-material/hall-of-fame/allegravia/" class="contributor-badge contributor-allegravia"><img src="https://avatars.githubusercontent.com/allegravia?s=27" alt="Avatar">Allegra Via</a>
 
     
 </section>
@@ -4872,7 +4475,7 @@
         The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
         </p>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/bf603e8fe230f5085d78111456044319ff76cb0a">bf603e8fe230f5085d78111456044319ff76cb0a</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/7ea653060476a45e3ea7aed76c459f7e447264fc">7ea653060476a45e3ea7aed76c459f7e447264fc</a></p>
     </div>
 </footer>
 
@@ -4884,8 +4487,6 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');
