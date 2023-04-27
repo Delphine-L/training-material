@@ -120,6 +120,19 @@
   "slides": false,
   "workflows": [
     {
+      "workflow": "workflow4_mock_otu_clustering.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow4_mock_otu_clustering.ga",
+      "path": "topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow4_mock_otu_clustering.ga",
+      "wfid": "metagenomics-mothur-miseq-sop-short",
+      "wfname": "workflow4_mock_otu_clustering",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow4_mock_otu_clustering",
+      "license": null,
+      "creators": [
+
+      ]
+    },
+    {
       "workflow": "workflow5_otu_clustering.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow5_otu_clustering.ga",
@@ -127,6 +140,19 @@
       "wfid": "metagenomics-mothur-miseq-sop-short",
       "wfname": "workflow5_otu_clustering",
       "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow5_otu_clustering",
+      "license": null,
+      "creators": [
+
+      ]
+    },
+    {
+      "workflow": "workflow2_data_cleaning.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow2_data_cleaning.ga",
+      "path": "topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow2_data_cleaning.ga",
+      "wfid": "metagenomics-mothur-miseq-sop-short",
+      "wfname": "workflow2_data_cleaning",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow2_data_cleaning",
       "license": null,
       "creators": [
 
@@ -153,32 +179,6 @@
       "wfid": "metagenomics-mothur-miseq-sop-short",
       "wfname": "workflow1_quality_control",
       "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow1_quality_control",
-      "license": null,
-      "creators": [
-
-      ]
-    },
-    {
-      "workflow": "workflow2_data_cleaning.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow2_data_cleaning.ga",
-      "path": "topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow2_data_cleaning.ga",
-      "wfid": "metagenomics-mothur-miseq-sop-short",
-      "wfname": "workflow2_data_cleaning",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow2_data_cleaning",
-      "license": null,
-      "creators": [
-
-      ]
-    },
-    {
-      "workflow": "workflow4_mock_otu_clustering.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow4_mock_otu_clustering.ga",
-      "path": "topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow4_mock_otu_clustering.ga",
-      "wfid": "metagenomics-mothur-miseq-sop-short",
-      "wfname": "workflow4_mock_otu_clustering",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow4_mock_otu_clustering",
       "license": null,
       "creators": [
 
