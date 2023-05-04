@@ -1,11 +1,13 @@
 {
   "layout": "tutorial_hands_on",
-  "title": "Trajectory Analysis using Monocle3 ",
+  "title": "Trajectory Analysis using Monocle3",
   "subtopic": "single-cell-CS",
   "priority": 5,
   "zenodo_link": "https://zenodo.org/record/7078524",
   "redirect_from": [
-    "/topics/transcriptomics/tutorials/scrna-case_monocle3-trajectories/tutorial"
+    "/topics/transcriptomics/tutorials/scrna-case_monocle3-trajectories/tutorial",
+    "/short/single-cell/scrna-case_monocle3-trajectories",
+    "/short/T00249"
   ],
   "questions": [
     "How can I prepare input files for Monocle starting from an AnnData object?",
@@ -93,7 +95,7 @@
         }
       ],
       "gtn_id": "single-cell/scrna-case_monocle3-trajectories",
-      "title": "Trajectory Analysis using Monocle3 ",
+      "title": "Trajectory Analysis using Monocle3",
       "captioned": true
     },
     "session": null
@@ -102,13 +104,13 @@
   "slides": true,
   "workflows": [
     {
-      "workflow": "Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
+      "workflow": "Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
-      "path": "topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
+      "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
+      "path": "topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
       "wfid": "single-cell-scrna-case_monocle3-trajectories",
-      "wfname": "galaxy-workflow-trajectory_analysis_using_monocle3-full_tutorial_workflow",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-case_monocle3-trajectories/versions/galaxy-workflow-trajectory_analysis_using_monocle3-full_tutorial_workflow",
+      "wfname": "galaxy-workflow-anndata_object_to_monocle_input_files",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-case_monocle3-trajectories/versions/galaxy-workflow-anndata_object_to_monocle_input_files",
       "license": null,
       "creators": [
 
@@ -128,13 +130,13 @@
       ]
     },
     {
-      "workflow": "Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
+      "workflow": "Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
-      "path": "topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
+      "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
+      "path": "topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
       "wfid": "single-cell-scrna-case_monocle3-trajectories",
-      "wfname": "galaxy-workflow-anndata_object_to_monocle_input_files",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-case_monocle3-trajectories/versions/galaxy-workflow-anndata_object_to_monocle_input_files",
+      "wfname": "galaxy-workflow-trajectory_analysis_using_monocle3-full_tutorial_workflow",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-case_monocle3-trajectories/versions/galaxy-workflow-trajectory_analysis_using_monocle3-full_tutorial_workflow",
       "license": null,
       "creators": [
 
@@ -188,6 +190,7 @@
       "gitter": "hexylena",
       "joined": "2017-09",
       "elixir_node": "nl",
+      "fediverse": "https://galaxians.garden/hexylena",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -233,9 +236,5 @@
       "url": "https://training.galaxyproject.org/training-material/api/contributors/epsrc-training-grant.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/epsrc-training-grant/"
     }
-  ],
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.json"
-  }
+  ]
 }

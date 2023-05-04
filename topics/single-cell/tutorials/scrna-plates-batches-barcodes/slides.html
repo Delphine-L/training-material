@@ -19,14 +19,14 @@
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-plates-batches-barcodes/slides.html" />
         <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
-        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
-<meta name="DC.type" content="text" />
-<meta name="DC.title" content="Plates, Batches, and Barcodes" />
-<meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2022-11-12 21:26:33 +0000" />
-<meta name="DC.creator" content="Wendi Bacon" />
-<meta name="DC.creator" content="Mehmet Tekman" />
-<meta name="DC.creator" content="Alex Ostrovsky" />
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
+<meta name="DC.type" content="text">
+<meta name="DC.title" content="Plates, Batches, and Barcodes">
+<meta name="DC.publisher" content="Galaxy Training Network">
+<meta name="DC.date" content="2022-11-12 21:26:33 +0000">
+<meta name="DC.creator" content="Wendi Bacon">
+<meta name="DC.creator" content="Mehmet Tekman">
+<meta name="DC.creator" content="Alex Ostrovsky">
 
         
         
@@ -36,7 +36,8 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Plates, Batches, and Barcodes" />
         <meta property="og:description" content="Training material and practicals for all kinds of single ..." />
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+        
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         <script type="application/ld+json">
             
@@ -203,7 +204,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-7901-7109",
+      "orcid": "https://orcid.org/0000-0002-7901-7109"
     }
   ],
   "contributor": [
@@ -270,7 +273,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-7901-7109",
+      "orcid": "https://orcid.org/0000-0002-7901-7109"
     }
   ],
   "about": [
@@ -319,7 +324,7 @@ class: center, middle, inverse
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/nomadscientist/" class="contributor-badge contributor-nomadscientist"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/nomadscientist?s=27" alt="Avatar">Wendi Bacon</a><a href="/training-material/hall-of-fame/mtekman/" class="contributor-badge contributor-mtekman"><img src="https://avatars.githubusercontent.com/mtekman?s=27" alt="Avatar">Mehmet Tekman</a><a href="/training-material/hall-of-fame/astrovsky01/" class="contributor-badge contributor-astrovsky01"><img src="https://avatars.githubusercontent.com/astrovsky01?s=27" alt="Avatar">Alex Ostrovsky</a>
+		Authors: <a href="/training-material/hall-of-fame/nomadscientist/" class="contributor-badge contributor-nomadscientist"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/nomadscientist?s=27" alt="Avatar">Wendi Bacon</a><a href="/training-material/hall-of-fame/mtekman/" class="contributor-badge contributor-mtekman"><img src="https://avatars.githubusercontent.com/mtekman?s=27" alt="Avatar">Mehmet Tekman</a><a href="/training-material/hall-of-fame/astrovsky01/" class="contributor-badge contributor-astrovsky01"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/astrovsky01?s=27" alt="Avatar">Alex Ostrovsky</a>
 	</div>
 
 </div>
@@ -484,7 +489,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 .image-90[![slide7](../../images/scrna-intro/wabreplicates.png)]
 
-.center[Can't mix samples on plates? Separate replicates evenly and process together.]
+.center[Can&apos;t mix samples on plates? Separate replicates evenly and process together.]
 
 ???
 - If putting multiple treatments on the same plate is not an option, then having enough separated replicates will also allow for batch correction.
@@ -494,14 +499,14 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ### What about sequencing lanes?
 
-.center[So now it's time to sequence our samples! How do we combine samples into sequencing lanes?]
+.center[So now it&apos;s time to sequence our samples! How do we combine samples into sequencing lanes?]
 
 .image-90[![slide7](../../images/scrna-intro/wabseqlane.png)]
 
 .center[This works well, but what if you have too many samples for one lane?]
 
 ???
-- So now it's time to sequence our samples! How do we combine samples into sequencing lanes?
+- So now it&apos;s time to sequence our samples! How do we combine samples into sequencing lanes?
 - In many cases, it is enough to sequence 1 or 2 plates together in a single sequencing lane.
 - But what if we wish to sequence 8 plates?
 
@@ -509,7 +514,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ### What about sequencing lanes?
 
-.center[So now it's time to sequence our samples! How do we combine samples into sequencing lanes?]
+.center[So now it&apos;s time to sequence our samples! How do we combine samples into sequencing lanes?]
 
 .image-90[![slide7](../../images/scrna-intro/wablanesbad.png)]
 
@@ -523,10 +528,10 @@ Before diving into this slide deck, we recommend you to have a look at:
 --
 
 
-.center[No! You've turned each treatment (A &amp; B) into a batch!]
+.center[No! You&apos;ve turned each treatment (A &amp; B) into a batch!]
 
 ???
-- No, because you've turned Treatment A and Treatment B into separate batches.
+- No, because you&apos;ve turned Treatment A and Treatment B into separate batches.
 - This gives us the same unbalanced design we saw with the sorting plates.
 
 ---
@@ -917,7 +922,7 @@ This material is the result of a collaborative work. Thanks to the [Galaxy Train
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/nomadscientist/" class="contributor-badge contributor-nomadscientist"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/nomadscientist?s=27" alt="Avatar">Wendi Bacon</a><a href="/training-material/hall-of-fame/mtekman/" class="contributor-badge contributor-mtekman"><img src="https://avatars.githubusercontent.com/mtekman?s=27" alt="Avatar">Mehmet Tekman</a><a href="/training-material/hall-of-fame/astrovsky01/" class="contributor-badge contributor-astrovsky01"><img src="https://avatars.githubusercontent.com/astrovsky01?s=27" alt="Avatar">Alex Ostrovsky</a>
+		Authors: <a href="/training-material/hall-of-fame/nomadscientist/" class="contributor-badge contributor-nomadscientist"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/nomadscientist?s=27" alt="Avatar">Wendi Bacon</a><a href="/training-material/hall-of-fame/mtekman/" class="contributor-badge contributor-mtekman"><img src="https://avatars.githubusercontent.com/mtekman?s=27" alt="Avatar">Mehmet Tekman</a><a href="/training-material/hall-of-fame/astrovsky01/" class="contributor-badge contributor-astrovsky01"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/astrovsky01?s=27" alt="Avatar">Alex Ostrovsky</a>
 	</div>
 
 </div>
@@ -935,9 +940,10 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
 
 
     </textarea>
-	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
+	<script src="/training-material/assets/js/remark-latest.min.js"></script>
+    <script src="/training-material/assets/js/theme.js"></script>
+    <script src="/training-material/assets/js/clipboard.min.js"></script>
+    <script>
       var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
       var snippets = document.querySelectorAll('code.remark-code');
@@ -949,7 +955,7 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
       }});
     </script>
 
-    <script type="text/javascript">
+    <script>
         if(window.location.hostname === "galaxyproject.github.io") {
             // Redirect
             var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;

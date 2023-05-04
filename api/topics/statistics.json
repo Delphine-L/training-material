@@ -92,7 +92,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -114,19 +114,6 @@
       "slides": false,
       "workflows": [
         {
-          "workflow": "regression_GradientBoosting.ga",
-          "tests": true,
-          "url": "https://training.galaxyproject.org/training-material/topics/statistics/tutorials/classification_regression/workflows/regression_GradientBoosting.ga",
-          "path": "topics/statistics/tutorials/classification_regression/workflows/regression_GradientBoosting.ga",
-          "wfid": "statistics-classification_regression",
-          "wfname": "regression_gradientboosting",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/statistics-classification_regression/versions/regression_gradientboosting",
-          "license": null,
-          "creators": [
-
-          ]
-        },
-        {
           "workflow": "classification_LSVC.ga",
           "tests": true,
           "url": "https://training.galaxyproject.org/training-material/topics/statistics/tutorials/classification_regression/workflows/classification_LSVC.ga",
@@ -134,6 +121,19 @@
           "wfid": "statistics-classification_regression",
           "wfname": "classification_lsvc",
           "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/statistics-classification_regression/versions/classification_lsvc",
+          "license": null,
+          "creators": [
+
+          ]
+        },
+        {
+          "workflow": "regression_GradientBoosting.ga",
+          "tests": true,
+          "url": "https://training.galaxyproject.org/training-material/topics/statistics/tutorials/classification_regression/workflows/regression_GradientBoosting.ga",
+          "path": "topics/statistics/tutorials/classification_regression/workflows/regression_GradientBoosting.ga",
+          "wfid": "statistics-classification_regression",
+          "wfname": "regression_gradientboosting",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/statistics-classification_regression/versions/regression_gradientboosting",
           "license": null,
           "creators": [
 
@@ -159,8 +159,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/classification_regression/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/classification_regression/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/classification_regression/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/classification_regression/tutorial.json"
       }
     },
     {
@@ -251,8 +251,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/clustering_machinelearning/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/clustering_machinelearning/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/clustering_machinelearning/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/clustering_machinelearning/tutorial.json"
       }
     },
     {
@@ -354,8 +354,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/gpu_jupyter_lab/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/gpu_jupyter_lab/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/gpu_jupyter_lab/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/gpu_jupyter_lab/tutorial.json"
       }
     },
     {
@@ -411,19 +411,6 @@
       "slides": false,
       "workflows": [
         {
-          "workflow": "age-prediction-rna.ga",
-          "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/statistics/tutorials/age-prediction-with-ml/workflows/age-prediction-rna.ga",
-          "path": "topics/statistics/tutorials/age-prediction-with-ml/workflows/age-prediction-rna.ga",
-          "wfid": "statistics-age-prediction-with-ml",
-          "wfname": "age-prediction-rna",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/statistics-age-prediction-with-ml/versions/age-prediction-rna",
-          "license": null,
-          "creators": [
-
-          ]
-        },
-        {
           "workflow": "age-prediction-dnam.ga",
           "tests": false,
           "url": "https://training.galaxyproject.org/training-material/topics/statistics/tutorials/age-prediction-with-ml/workflows/age-prediction-dnam.ga",
@@ -431,6 +418,19 @@
           "wfid": "statistics-age-prediction-with-ml",
           "wfname": "age-prediction-dnam",
           "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/statistics-age-prediction-with-ml/versions/age-prediction-dnam",
+          "license": null,
+          "creators": [
+
+          ]
+        },
+        {
+          "workflow": "age-prediction-rna.ga",
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/statistics/tutorials/age-prediction-with-ml/workflows/age-prediction-rna.ga",
+          "path": "topics/statistics/tutorials/age-prediction-with-ml/workflows/age-prediction-rna.ga",
+          "wfid": "statistics-age-prediction-with-ml",
+          "wfname": "age-prediction-rna",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/statistics-age-prediction-with-ml/versions/age-prediction-rna",
           "license": null,
           "creators": [
 
@@ -457,8 +457,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/age-prediction-with-ml/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/age-prediction-with-ml/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/age-prediction-with-ml/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/age-prediction-with-ml/tutorial.json"
       }
     },
     {
@@ -564,8 +564,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/text-mining_simtext/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/text-mining_simtext/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/text-mining_simtext/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/text-mining_simtext/tutorial.json"
       }
     },
     {
@@ -649,8 +649,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/machinelearning/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/machinelearning/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/machinelearning/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/machinelearning/tutorial.json"
       }
     },
     {
@@ -743,8 +743,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/intro_deep_learning/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/intro_deep_learning/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/intro_deep_learning/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/intro_deep_learning/tutorial.json"
       }
     },
     {
@@ -868,8 +868,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/fruit_360/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/fruit_360/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/fruit_360/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/fruit_360/tutorial.json"
       }
     },
     {
@@ -1011,8 +1011,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/classification_machinelearning/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/classification_machinelearning/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/classification_machinelearning/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/classification_machinelearning/tutorial.json"
       }
     },
     {
@@ -1112,8 +1112,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/aberrant_pi3k_pathway_analysis/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/aberrant_pi3k_pathway_analysis/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/aberrant_pi3k_pathway_analysis/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/aberrant_pi3k_pathway_analysis/tutorial.json"
       }
     },
     {
@@ -1248,8 +1248,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/regression_machinelearning/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/regression_machinelearning/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/regression_machinelearning/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/regression_machinelearning/tutorial.json"
       }
     },
     {
@@ -1373,8 +1373,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/CNN/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/CNN/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/CNN/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/CNN/tutorial.json"
       }
     },
     {
@@ -1505,8 +1505,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/FNN/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/FNN/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/FNN/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/FNN/tutorial.json"
       }
     },
     {
@@ -1603,8 +1603,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/iwtomics/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/iwtomics/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/iwtomics/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/iwtomics/tutorial.json"
       }
     },
     {
@@ -1735,8 +1735,79 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/RNN/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/RNN/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/RNN/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/RNN/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Supervised Learning with Hyperdimensional Computing",
+      "zenodo_link": "https://doi.org/10.5281/zenodo.6467875",
+      "questions": [
+        "How to encode data into vectors in a high-dimensional space?",
+        "What kind of operations can be performed on these vectors?",
+        "What is a vector-symbolic architecture?",
+        "How to build a classification model out of this architecture?"
+      ],
+      "objectives": [
+        "Learn how to encode data into high-dimensional vectors",
+        "Build a vector-symbolic architecture",
+        "Use the architecture to build a classification model"
+      ],
+      "requirements": null,
+      "time_estimation": "30m",
+      "level": "Intermediate",
+      "key_points": [
+        "Every kind of data can be encoded into high-dimensional vectors",
+        "A vector-symbolic architecture is composed of vectors and a limited set of arithmetic operators",
+        "Classification models build according to the hyperdimensional computing paradigm can scale on datasets with massive amounts of features and data points"
+      ],
+      "contributors": [
+        {
+          "name": "Fabio Cumbo",
+          "email": "fabio.cumbo@gmail.com",
+          "twitter": "cumbofabio",
+          "linkedin": "fabiocumbo",
+          "gitter": "cumbof",
+          "orcid": "0000-0003-2920-5838",
+          "joined": "2018-02",
+          "id": "cumbof",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/cumbof.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/cumbof/"
+        }
+      ],
+      "url": "/topics/statistics/tutorials/hyperdimensional_computing/tutorial.html",
+      "topic_name": "statistics",
+      "tutorial_name": "hyperdimensional_computing",
+      "dir": "topics/statistics/tutorials/hyperdimensional_computing",
+      "id": "statistics/hyperdimensional_computing",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+        "toolshed.g2.bx.psu.edu/repos/iuc/chopin2/chopin2/1.0.7+galaxy1"
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/hyperdimensional_computing/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/hyperdimensional_computing/tutorial.json"
       }
     },
     {
@@ -1879,8 +1950,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/intro-to-ml-with-r/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//statistics/tutorials/intro-to-ml-with-r/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/intro-to-ml-with-r/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/statistics/tutorials/intro-to-ml-with-r/tutorial.json"
       }
     }
   ]

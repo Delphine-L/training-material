@@ -34,6 +34,7 @@
     {
       "name": "Alex Ostrovsky",
       "email": "a.ostrovsky@mac.com",
+      "orcid": "0000-0002-7901-7109",
       "joined": "2019-06",
       "id": "astrovsky01",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/astrovsky01.json",
@@ -63,6 +64,19 @@
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abueg/"
     }
   ],
+  "abbreviations": {
+    "primary assembly": "homozygous regions of the genome plus one set of alleles for the heterozygous loci",
+    "alternate assembly": "alternate loci not represented in the primary assembly",
+    "QV": "assembly consensus quality",
+    "unitig": null,
+    "contigs": "contiguous sequences in an assembly",
+    "scaffolds": "one or more contigs joined by gap sequence",
+    "Hi-C": "all-versus-all chromatin conformation capture",
+    "HiFi": "high fidelity reads",
+    "GWS": "Galaxy Workflow System",
+    "VGP": "Vertebrate Genome Project",
+    "G10K": "Genome 10K"
+  },
   "url": "/topics/assembly/tutorials/vgp_workflow_training/tutorial.html",
   "topic_name": "assembly",
   "tutorial_name": "vgp_workflow_training",
@@ -131,9 +145,5 @@
     ],
     "video": false
   },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//assembly/tutorials/vgp_workflow_training/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//assembly/tutorials/vgp_workflow_training/tutorial.json"
-  }
+  "type": "tutorial"
 }

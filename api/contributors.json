@@ -37,7 +37,7 @@
       "lat": 48.11,
       "lon": -1.64
     },
-    "fediverse": "abretaud@genomic.social",
+    "fediverse": "https://genomic.social/@abretaud",
     "id": "abretaud",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
     "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -212,6 +212,7 @@
   {
     "name": "Alex Ostrovsky",
     "email": "a.ostrovsky@mac.com",
+    "orcid": "0000-0002-7901-7109",
     "joined": "2019-06",
     "id": "astrovsky01",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/astrovsky01.json",
@@ -285,7 +286,7 @@
       "lat": 45.77,
       "lon": 3.08
     },
-    "fediverse": "bebatut@piaille.fr",
+    "fediverse": "https://piaille.fr/@bebatut",
     "id": "bebatut",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
     "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -356,6 +357,7 @@
   {
     "name": "Clemens Blank",
     "email": "blankclemens@gmail.com",
+    "orcid": "0000-0002-1726-2256",
     "joined": "2017-09",
     "elixir_node": "de",
     "id": "blankclemens",
@@ -429,6 +431,18 @@
     "id": "cecilecanlet",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/cecilecanlet.json",
     "page": "https://training.galaxyproject.org/training-material/hall-of-fame/cecilecanlet/"
+  },
+  {
+    "name": "Caterina Fuster-Barceló",
+    "joined": "2023-03",
+    "email": "cafuster@pa.uc3m.es",
+    "twitter": "cfusterbarcelo",
+    "linkedin": "caterinafusterb",
+    "orcid": "0000-0002-4784-6957",
+    "bio": "Post-doctoral researcher at UC3M",
+    "id": "cfusterbarcelo",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/cfusterbarcelo.json",
+    "page": "https://training.galaxyproject.org/training-material/hall-of-fame/cfusterbarcelo/"
   },
   {
     "name": "Charity Law",
@@ -656,6 +670,15 @@
     "id": "eancelet",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/eancelet.json",
     "page": "https://training.galaxyproject.org/training-material/hall-of-fame/eancelet/"
+  },
+  {
+    "name": "Laila Los",
+    "joined": "2023-04",
+    "elixir_node": "de",
+    "orcid": "0000-0002-2362-9720",
+    "id": "ElectronicBlueberry",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/ElectronicBlueberry.json",
+    "page": "https://training.galaxyproject.org/training-material/hall-of-fame/ElectronicBlueberry/"
   },
   {
     "name": "Emma Leith",
@@ -900,6 +923,7 @@
     "gitter": "hexylena",
     "joined": "2017-09",
     "elixir_node": "nl",
+    "fediverse": "https://galaxians.garden/hexylena",
     "contact_for_training": false,
     "location": {
       "country": "NL",
@@ -1347,6 +1371,7 @@
   },
   {
     "name": "Mallory Freeberg",
+    "orcid": "0000-0003-2949-3921",
     "joined": "2017-09",
     "id": "malloryfreeberg",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/malloryfreeberg.json",
@@ -1394,6 +1419,16 @@
   {
     "name": "Martin Čech",
     "email": "marten@bx.psu.edu",
+    "gitter": "martenson",
+    "orcid": "0000-0002-9318-1781",
+    "elixir_node": "cz",
+    "contact_for_training": true,
+    "location": {
+      "country": "USA",
+      "lat": 37.0,
+      "lon": -122.0
+    },
+    "fediverse": "https://mastodon.world/@martenson",
     "joined": "2017-09",
     "id": "martenson",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/martenson.json",
@@ -1510,7 +1545,11 @@
   },
   {
     "name": "Mira Kuntz",
+    "orcid": "0000-0003-4302-5091",
+    "gitter": "mira-miracoli:matrix.org",
+    "email": "kuntzm@informatik.uni-freiburg.de",
     "joined": "2022-07",
+    "elixir_node": "de",
     "id": "mira-miracoli",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/mira-miracoli.json",
     "page": "https://training.galaxyproject.org/training-material/hall-of-fame/mira-miracoli/"
@@ -1534,6 +1573,7 @@
   {
     "name": "Mo Heydarian",
     "email": "mheydarian@gmail.com",
+    "orcid": "0000-0001-9449-9364",
     "joined": "2017-09",
     "id": "moheydarian",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/moheydarian.json",
@@ -1774,6 +1814,7 @@
   },
   {
     "name": "Pavankumar Videm",
+    "orcid": "0000-0002-5192-126X",
     "joined": "2017-09",
     "id": "pavanvidem",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/pavanvidem.json",
@@ -2410,6 +2451,15 @@
     "page": "https://training.galaxyproject.org/training-material/hall-of-fame/elixir-europe/"
   },
   {
+    "name": "Common Infrastructure for National Cohorts in Europe, Canada, and Africa",
+    "joined": "2023-03",
+    "funder": true,
+    "funding_statement": "<a href=\"https://www.cineca-project.eu/\">https://www.cineca-project.eu/</a>",
+    "id": "CINECA-Project",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/CINECA-Project.json",
+    "page": "https://training.galaxyproject.org/training-material/hall-of-fame/CINECA-Project/"
+  },
+  {
     "name": "EPSRC Training Grant DTP 2020-2021 Open University",
     "joined": "2022-09",
     "funder": true,
@@ -2424,5 +2474,15 @@
     "id": "elixir-goblet-ttt",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/elixir-goblet-ttt.json",
     "page": "https://training.galaxyproject.org/training-material/hall-of-fame/elixir-goblet-ttt/"
+  },
+  {
+    "name": "EOSC-Life",
+    "joined": "2023-04",
+    "avatar": "https://www.eosc-life.eu/wp-content/themes/eosc-life-v2/assets/images/eosclogo.png",
+    "funder": true,
+    "funding_statement": "EOSC-Life has received funding from the European Union’s Horizon 2020 programme under grant agreement number 824087",
+    "id": "eosc-life",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/eosc-life.json",
+    "page": "https://training.galaxyproject.org/training-material/hall-of-fame/eosc-life/"
   }
 ]

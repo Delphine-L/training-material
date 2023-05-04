@@ -39,6 +39,7 @@
       "gitter": "hexylena",
       "joined": "2017-09",
       "elixir_node": "nl",
+      "fediverse": "https://galaxians.garden/hexylena",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -77,8 +78,7 @@
   },
   "priority": 3,
   "tags": [
-    "R",
-    "rmarkdown-notebook"
+    "R"
   ],
   "license": "MIT",
   "url": "/topics/data-science/tutorials/r-dplyr/tutorial.html",
@@ -109,9 +109,5 @@
     ],
     "video": false
   },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/r-dplyr/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/r-dplyr/tutorial.json"
-  }
+  "type": "tutorial"
 }

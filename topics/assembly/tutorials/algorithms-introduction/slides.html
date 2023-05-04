@@ -19,15 +19,15 @@
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/algorithms-introduction/slides.html" />
         <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
-        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
-<meta name="DC.type" content="text" />
-<meta name="DC.title" content="Deeper look into Genome Assembly algorithms" />
-<meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2020-12-28 16:29:36 +0000" />
-<meta name="DC.creator" content="Anthony Bretaudeau" />
-<meta name="DC.creator" content="Simon Gladman" />
-<meta name="DC.creator" content="Anton Nekrutenko" />
-<meta name="DC.creator" content="Delphine Lariviere" />
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
+<meta name="DC.type" content="text">
+<meta name="DC.title" content="Deeper look into Genome Assembly algorithms">
+<meta name="DC.publisher" content="Galaxy Training Network">
+<meta name="DC.date" content="2020-12-28 16:29:36 +0000">
+<meta name="DC.creator" content="Anthony Bretaudeau">
+<meta name="DC.creator" content="Simon Gladman">
+<meta name="DC.creator" content="Anton Nekrutenko">
+<meta name="DC.creator" content="Delphine Lariviere">
 
         
         
@@ -37,7 +37,8 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Deeper look into Genome Assembly algorithms" />
         <meta property="og:description" content="DNA sequence data has become an indispensable tool for Mo..." />
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+        
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         <script type="application/ld+json">
             
@@ -563,7 +564,7 @@ For example, consider these 15 three letter reads:
 
 TAA AAT ATG TGC GCC CCA CAT ATG TGG GGG GGA GAT ATG TGT GTT
 
-We're lucky, we know the corresponding genome sequence is TAATGCCATGGGATGTT
+We&apos;re lucky, we know the corresponding genome sequence is TAATGCCATGGGATGTT
 
 So the 15 reads can be represented as the following directed graph:
 
@@ -571,7 +572,7 @@ So the 15 reads can be represented as the following directed graph:
 
 ---
 
-**However**, in real life we do not know the actual genome! All we have is a collection of reads. Let's first build an overlap graph by connecting two 3-mers if suffix of one is equal to the prefix of the other:
+**However**, in real life we do not know the actual genome! All we have is a collection of reads. Let&apos;s first build an overlap graph by connecting two 3-mers if suffix of one is equal to the prefix of the other:
 
 
 &gt;![All possible overlap connections for our 3-mer collection](../../images/4.7.png)
@@ -598,7 +599,7 @@ The reason for this &quot;duality&quot; is the fact that we have a *repeat*: 3-m
 # Limits of OLC
 
 * Computationally intensive
-* Doesn't perform well with Illumina (massive amount of short reads)
+* Doesn&apos;t perform well with Illumina (massive amount of short reads)
 
 =&gt; deBruijn Graphs
 
@@ -724,7 +725,7 @@ Source: [Wikimedia](https://commons.wikimedia.org/wiki/File:Read,_read_length_an
 ---
 # **More coverage**
 
-* Errors won't be duplicated in every read
+* Errors won&apos;t be duplicated in every read
 * Most reads will be error free
 * We can count the frequency of each k-mer
 * Annotate the graph with the frequencies
@@ -759,7 +760,7 @@ Source: [Wikimedia](https://commons.wikimedia.org/wiki/File:Read,_read_length_an
 
 # Assembly in real life
 
-In this topic we've learned about two ways of representing the relationship between reads derived from a genome we are trying to assemble:
+In this topic we&apos;ve learned about two ways of representing the relationship between reads derived from a genome we are trying to assemble:
 
 1. **Overlap graphs** - nodes are reads, edges are overlaps between reads.
 2. **De Bruijn graphs** - nodes are overlaps, edges are reads.
@@ -811,7 +812,7 @@ As we discussed earlier humans are diploid and there are multiple differences be
 
 **Repeats**
 
-As we've seen the third law of assembly is unbeatable. As a result some regions of the genome simply cannot be resolved and are reported in segments called *contigs*:
+As we&apos;ve seen the third law of assembly is unbeatable. As a result some regions of the genome simply cannot be resolved and are reported in segments called *contigs*:
 
 &gt;![Impact of repeats on graphs](../../images/t12_contigs.png)
 &gt;
@@ -893,9 +894,10 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
 
 
     </textarea>
-	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
+	<script src="/training-material/assets/js/remark-latest.min.js"></script>
+    <script src="/training-material/assets/js/theme.js"></script>
+    <script src="/training-material/assets/js/clipboard.min.js"></script>
+    <script>
       var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
       var snippets = document.querySelectorAll('code.remark-code');
@@ -907,7 +909,7 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
       }});
     </script>
 
-    <script type="text/javascript">
+    <script>
         if(window.location.hostname === "galaxyproject.github.io") {
             // Redirect
             var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;

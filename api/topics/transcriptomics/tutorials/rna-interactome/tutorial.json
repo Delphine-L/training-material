@@ -21,6 +21,7 @@
   "contributors": [
     {
       "name": "Pavankumar Videm",
+      "orcid": "0000-0002-5192-126X",
       "joined": "2017-09",
       "id": "pavanvidem",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/pavanvidem.json",
@@ -77,9 +78,5 @@
     ],
     "video": false
   },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-interactome/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-interactome/tutorial.json"
-  }
+  "type": "tutorial"
 }

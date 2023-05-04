@@ -19,16 +19,16 @@
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/mapping/slides.html" />
         <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
-        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
-<meta name="DC.type" content="text" />
-<meta name="DC.title" content="Mapping" />
-<meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2022-02-25 11:39:14 +0000" />
-<meta name="DC.creator" content="Joachim Wolff" />
-<meta name="DC.creator" content="Saskia Hiltemann" />
-<meta name="DC.creator" content="Engy Nasr" />
-<meta name="DC.creator" content="Cristóbal Gallardo" />
-<meta name="DC.creator" content="Erasmus+ Programme" />
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
+<meta name="DC.type" content="text">
+<meta name="DC.title" content="Mapping">
+<meta name="DC.publisher" content="Galaxy Training Network">
+<meta name="DC.date" content="2022-02-25 11:39:14 +0000">
+<meta name="DC.creator" content="Joachim Wolff">
+<meta name="DC.creator" content="Saskia Hiltemann">
+<meta name="DC.creator" content="Engy Nasr">
+<meta name="DC.creator" content="Cristóbal Gallardo">
+<meta name="DC.creator" content="Erasmus+ Programme">
 
         
         
@@ -38,7 +38,8 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Mapping" />
         <meta property="og:description" content="Analyses of sequences" />
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+        
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         <script type="application/ld+json">
             
@@ -573,7 +574,7 @@ class: top
 ???
 - Consider situation where we must map this (short) read to this (long) reference
   - e.g. human genome ~ 3.2 billion base pairs
-- We scan the reference genome until we find an area that's similar to our read
+- We scan the reference genome until we find an area that&apos;s similar to our read
 - This area looks pretty similar, but not quite identical..
 
 ---
@@ -903,7 +904,7 @@ AAA------TCTCTGAA
 
 
 ???
-We didn't just make these up, these real aligners gave these different results
+We didn&apos;t just make these up, these real aligners gave these different results
 
 ---
 class: top
@@ -1155,7 +1156,7 @@ GGGTGATGGCCGCTGCCGATGGCGTCAAAT
 @PAIR-2 forward
 GATTTGGGGTTCAAAGCAGTATCGATCAA
 +
-!''3((((^^d+))%%%++)(%%%%).1)
+!&apos;&apos;3((((^^d+))%%%++)(%%%%).1)
 ```
 ]
 .blue[
@@ -1237,7 +1238,7 @@ GGGTGATGGCCGCTGCCGATGGCGTCAAAT
 @PAIR-2 forward
 GATTTGGGGTTCAAAGCAGTATCGATCAA
 +
-!''3((((^^d+))%%%++)(%%%%).1)
+!&apos;&apos;3((((^^d+))%%%++)(%%%%).1)
 ```
 ]
 &lt;i class=&quot;fa fa-arrows-h&quot; style=&quot;position:absolute;font-size:3em;left:8em;&quot;&gt;&lt;/i&gt;
@@ -1283,7 +1284,7 @@ AATCCATTTGTTCAACTCACAGTTTACCGT
 ???
 
 - Important to always provide both files to trimming and filtering tools together
-- If a read in one file gets removed (e.g. because it is below quality threshold), but it's mate is not, the pairing between the two files is no longer correct.
+- If a read in one file gets removed (e.g. because it is below quality threshold), but it&apos;s mate is not, the pairing between the two files is no longer correct.
 
 - If one half of pair is trimmed, the other
  - also removed, or
@@ -1599,9 +1600,10 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
 
 
     </textarea>
-	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
+	<script src="/training-material/assets/js/remark-latest.min.js"></script>
+    <script src="/training-material/assets/js/theme.js"></script>
+    <script src="/training-material/assets/js/clipboard.min.js"></script>
+    <script>
       var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
       var snippets = document.querySelectorAll('code.remark-code');
@@ -1613,7 +1615,7 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
       }});
     </script>
 
-    <script type="text/javascript">
+    <script>
         if(window.location.hostname === "galaxyproject.github.io") {
             // Redirect
             var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;

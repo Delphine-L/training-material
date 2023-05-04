@@ -45,6 +45,7 @@
       "gitter": "hexylena",
       "joined": "2017-09",
       "elixir_node": "nl",
+      "fediverse": "https://galaxians.garden/hexylena",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -104,7 +105,7 @@
         "lat": 45.77,
         "lon": 3.08
       },
-      "fediverse": "bebatut@piaille.fr",
+      "fediverse": "https://piaille.fr/@bebatut",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -170,6 +171,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -240,8 +242,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/snakemake/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/snakemake/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/snakemake/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/snakemake/tutorial.json"
       }
     },
     {
@@ -335,6 +337,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -407,8 +410,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/cli-advanced/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/cli-advanced/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-advanced/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-advanced/tutorial.json"
       }
     },
     {
@@ -469,6 +472,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -495,8 +499,7 @@
       },
       "tags": [
         "SQL",
-        "R",
-        "rmarkdown-notebook"
+        "R"
       ],
       "url": "/topics/data-science/tutorials/sql-r/tutorial.html",
       "topic_name": "data-science",
@@ -528,8 +531,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/sql-r/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/sql-r/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-r/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-r/tutorial.json"
       }
     },
     {
@@ -581,6 +584,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -639,8 +643,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/sql-python/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/sql-python/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-python/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-python/tutorial.json"
       }
     },
     {
@@ -782,6 +786,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -813,8 +818,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/bash-git/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/bash-git/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/bash-git/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/bash-git/tutorial.json"
       }
     },
     {
@@ -923,8 +928,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-basics/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-basics/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-basics/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-basics/tutorial.json"
       }
     },
     {
@@ -996,6 +1001,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1044,8 +1050,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/bash-variant-calling/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/bash-variant-calling/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/bash-variant-calling/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/bash-variant-calling/tutorial.json"
       }
     },
     {
@@ -1090,6 +1096,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1163,8 +1170,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/sql-game/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/sql-game/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-game/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-game/tutorial.json"
       }
     },
     {
@@ -1213,6 +1220,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1270,8 +1278,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/cli-bashcrawl/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/cli-bashcrawl/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-bashcrawl/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-bashcrawl/tutorial.json"
       }
     },
     {
@@ -1346,6 +1354,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1358,8 +1367,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/git-cli/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/git-cli/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/git-cli/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/git-cli/tutorial.json"
       }
     },
     {
@@ -1461,6 +1470,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1531,8 +1541,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/sql-advanced/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/sql-advanced/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-advanced/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-advanced/tutorial.json"
       }
     },
     {
@@ -1623,6 +1633,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1695,8 +1706,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/cli-basics/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/cli-basics/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-basics/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-basics/tutorial.json"
       }
     },
     {
@@ -1732,6 +1743,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1794,8 +1806,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-math/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-math/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-math/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-math/tutorial.json"
       }
     },
     {
@@ -1872,6 +1884,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1958,14 +1971,16 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/sql-basic/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/sql-basic/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-basic/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-basic/tutorial.json"
       }
     },
     {
       "layout": "tutorial_hands_on",
       "redirect_from": [
-        "/topics/introduction/tutorials/r-basics/tutorial"
+        "/topics/introduction/tutorials/r-basics/tutorial",
+        "/short/data-science/r-basics",
+        "/short/T00103"
       ],
       "title": "R basics in Galaxy",
       "level": "Introductory",
@@ -2103,7 +2118,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -2145,14 +2160,16 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/r-basics/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/r-basics/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-basics/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-basics/tutorial.json"
       }
     },
     {
       "layout": "tutorial_hands_on",
       "redirect_from": [
-        "/topics/introduction/tutorials/r-advanced/tutorial"
+        "/topics/introduction/tutorials/r-advanced/tutorial",
+        "/short/data-science/r-advanced",
+        "/short/T00102"
       ],
       "title": "Advanced R in Galaxy",
       "level": "Intermediate",
@@ -2224,7 +2241,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -2329,8 +2346,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/r-advanced/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/r-advanced/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-advanced/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-advanced/tutorial.json"
       }
     },
     {
@@ -2440,8 +2457,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-advanced-np-pd/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-advanced-np-pd/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-advanced-np-pd/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-advanced-np-pd/tutorial.json"
       }
     },
     {
@@ -2493,6 +2510,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -2558,8 +2576,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-functions/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-functions/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-functions/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-functions/tutorial.json"
       }
     },
     {
@@ -2603,6 +2621,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -2641,8 +2660,7 @@
       },
       "priority": 3,
       "tags": [
-        "R",
-        "rmarkdown-notebook"
+        "R"
       ],
       "license": "MIT",
       "url": "/topics/data-science/tutorials/r-dplyr/tutorial.html",
@@ -2675,8 +2693,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/r-dplyr/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/r-dplyr/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-dplyr/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-dplyr/tutorial.json"
       }
     },
     {
@@ -2726,6 +2744,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -2788,8 +2807,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-types/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-types/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-types/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-types/tutorial.json"
       }
     },
     {
@@ -2898,8 +2917,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-plotting/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-plotting/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-plotting/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-plotting/tutorial.json"
       }
     },
     {
@@ -2949,6 +2968,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3011,8 +3031,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-iterables/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-iterables/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-iterables/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-iterables/tutorial.json"
       }
     },
     {
@@ -3060,6 +3080,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3122,8 +3143,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-flow/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-flow/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-flow/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-flow/tutorial.json"
       }
     },
     {
@@ -3179,6 +3200,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3241,8 +3263,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-loops/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-loops/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-loops/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-loops/tutorial.json"
       }
     },
     {
@@ -3283,6 +3305,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3345,8 +3368,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-files/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-files/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-files/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-files/tutorial.json"
       }
     },
     {
@@ -3385,6 +3408,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3447,8 +3471,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-exceptions/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-exceptions/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-exceptions/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-exceptions/tutorial.json"
       }
     },
     {
@@ -3495,6 +3519,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3560,8 +3585,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-basics-recap/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-basics-recap/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-basics-recap/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-basics-recap/tutorial.json"
       }
     },
     {
@@ -3655,6 +3680,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3683,8 +3709,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-conda/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-conda/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-conda/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-conda/tutorial.json"
       }
     },
     {
@@ -3781,6 +3807,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3825,8 +3852,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-testing/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-testing/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-testing/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-testing/tutorial.json"
       }
     },
     {
@@ -3911,6 +3938,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3965,8 +3993,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-typing/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-typing/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-typing/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-typing/tutorial.json"
       }
     },
     {
@@ -4051,6 +4079,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -4088,8 +4117,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-argparse/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-argparse/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-argparse/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-argparse/tutorial.json"
       }
     },
     {
@@ -4180,6 +4209,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -4208,8 +4238,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-venv/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-venv/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-venv/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-venv/tutorial.json"
       }
     },
     {
@@ -4243,6 +4273,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -4305,8 +4336,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-glob/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-glob/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-glob/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-glob/tutorial.json"
       }
     },
     {
@@ -4345,6 +4376,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -4407,8 +4439,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-subprocess/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-subprocess/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-subprocess/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-subprocess/tutorial.json"
       }
     },
     {
@@ -4505,6 +4537,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -4533,8 +4566,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-linting/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-linting/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-linting/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-linting/tutorial.json"
       }
     },
     {
@@ -4618,6 +4651,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -4655,8 +4689,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-multiprocessing/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//data-science/tutorials/python-multiprocessing/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-multiprocessing/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-multiprocessing/tutorial.json"
       }
     }
   ]

@@ -38,7 +38,7 @@
         "lat": 45.77,
         "lon": 3.08
       },
-      "fediverse": "bebatut@piaille.fr",
+      "fediverse": "https://piaille.fr/@bebatut",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -93,7 +93,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -106,6 +106,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -259,8 +260,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial/tutorial.json"
       }
     },
     {
@@ -269,7 +270,9 @@
       "priority": 1,
       "title": "Overview of the Galaxy Training Material",
       "redirect_from": [
-        "/topics/contributing/slides/introduction"
+        "/topics/contributing/slides/introduction",
+        "/short/contributing/introduction/slides",
+        "/short/S00042"
       ],
       "contributors": [
         {
@@ -287,7 +290,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -323,8 +326,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/introduction/slides.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/introduction/slides.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/introduction/slides.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/introduction/slides.json"
       }
     },
     {
@@ -375,7 +378,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -411,8 +414,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/github-command-line-contribution/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/github-command-line-contribution/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/github-command-line-contribution/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/github-command-line-contribution/tutorial.json"
       }
     },
     {
@@ -445,6 +448,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -470,7 +474,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -556,8 +560,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial-slides/slides.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial-slides/slides.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial-slides/slides.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial-slides/slides.json"
       }
     },
     {
@@ -592,7 +596,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -662,8 +666,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/running-jekyll/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/running-jekyll/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/running-jekyll/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/running-jekyll/tutorial.json"
       }
     },
     {
@@ -735,6 +739,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -763,8 +768,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/python/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/python/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/python/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/python/tutorial.json"
       }
     },
     {
@@ -865,8 +870,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/gitpod/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/gitpod/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/gitpod/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/gitpod/tutorial.json"
       }
     },
     {
@@ -918,14 +923,6 @@
       "slides": false,
       "quiz": [
         {
-          "id": "short_term_memory.yaml",
-          "path": "topics/contributing/tutorials/learning-principles/quiz/short_term_memory.yaml",
-          "title": "How short is your short term memory?",
-          "contributors": [
-            "bebatut"
-          ]
-        },
-        {
           "id": "learning_metaphors.yaml",
           "path": "topics/contributing/tutorials/learning-principles/quiz/learning_metaphors.yaml",
           "title": "Learning metaphors",
@@ -937,6 +934,14 @@
           "id": "overloading_short_term_memory.yaml",
           "path": "topics/contributing/tutorials/learning-principles/quiz/overloading_short_term_memory.yaml",
           "title": "How can you avoid to overload learners working memory?",
+          "contributors": [
+            "bebatut"
+          ]
+        },
+        {
+          "id": "short_term_memory.yaml",
+          "path": "topics/contributing/tutorials/learning-principles/quiz/short_term_memory.yaml",
+          "title": "How short is your short term memory?",
           "contributors": [
             "bebatut"
           ]
@@ -989,7 +994,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1042,8 +1047,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/learning-principles/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/learning-principles/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/learning-principles/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/learning-principles/tutorial.json"
       }
     },
     {
@@ -1071,6 +1076,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1112,8 +1118,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/admin-knitting/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/admin-knitting/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/admin-knitting/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/admin-knitting/tutorial.json"
       }
     },
     {
@@ -1183,14 +1189,6 @@
       "slides": false,
       "quiz": [
         {
-          "id": "effectiveness_GTN_tutorials.yaml",
-          "path": "topics/contributing/tutorials/design/quiz/effectiveness_GTN_tutorials.yaml",
-          "title": "Evaluate effectiveness in GTN tutorials",
-          "contributors": [
-            "bebatut"
-          ]
-        },
-        {
           "id": "LEs_GTN_tutorials.yaml",
           "path": "topics/contributing/tutorials/design/quiz/LEs_GTN_tutorials.yaml",
           "title": "LEs in GTN tutorials",
@@ -1202,6 +1200,14 @@
           "id": "assessments_GTN_tutorials.yaml",
           "path": "topics/contributing/tutorials/design/quiz/assessments_GTN_tutorials.yaml",
           "title": "Evaluate assessment in GTN tutorials",
+          "contributors": [
+            "bebatut"
+          ]
+        },
+        {
+          "id": "effectiveness_GTN_tutorials.yaml",
+          "path": "topics/contributing/tutorials/design/quiz/effectiveness_GTN_tutorials.yaml",
+          "title": "Evaluate effectiveness in GTN tutorials",
           "contributors": [
             "bebatut"
           ]
@@ -1246,7 +1252,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1299,8 +1305,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/design/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/design/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/design/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/design/tutorial.json"
       }
     },
     {
@@ -1322,6 +1328,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1363,8 +1370,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/schemas/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/schemas/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/schemas/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/schemas/tutorial.json"
       }
     },
     {
@@ -1445,7 +1452,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1458,6 +1465,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1504,8 +1512,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial-content/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial-content/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial-content/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial-content/tutorial.json"
       }
     },
     {
@@ -1540,7 +1548,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1610,8 +1618,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial-tours/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial-tours/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial-tours/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial-tours/tutorial.json"
       }
     },
     {
@@ -1648,7 +1656,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1684,8 +1692,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/github-interface-contribution/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/github-interface-contribution/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/github-interface-contribution/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/github-interface-contribution/tutorial.json"
       }
     },
     {
@@ -1710,6 +1718,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1761,8 +1770,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial-quiz/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial-quiz/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial-quiz/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial-quiz/tutorial.json"
       }
     },
     {
@@ -1805,7 +1814,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1852,6 +1861,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1893,8 +1903,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial-technical/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-tutorial-technical/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial-technical/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-tutorial-technical/tutorial.json"
       }
     },
     {
@@ -1965,7 +1975,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1978,6 +1988,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1990,8 +2001,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-topic/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-topic/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-topic/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/create-new-topic/tutorial.json"
       }
     },
     {
@@ -2020,6 +2031,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -2061,8 +2073,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/slides-with-video/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/slides-with-video/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/slides-with-video/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/slides-with-video/tutorial.json"
       }
     },
     {
@@ -2094,7 +2106,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -2130,8 +2142,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/generating-pdf/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/generating-pdf/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/generating-pdf/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/contributing/tutorials/generating-pdf/tutorial.json"
       }
     }
   ]

@@ -19,15 +19,15 @@
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/dev/tutorials/bioblend-api/slides.html" />
         <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
-        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
-<meta name="DC.type" content="text" />
-<meta name="DC.title" content="Scripting Galaxy using the API and BioBlend" />
-<meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2022-07-14 01:30:28 +0000" />
-<meta name="DC.creator" content="Olivia Doppelt-Azeroual" />
-<meta name="DC.creator" content="Fabien Mareuil" />
-<meta name="DC.creator" content="Nicola Soranzo" />
-<meta name="DC.creator" content="Dannon Baker" />
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
+<meta name="DC.type" content="text">
+<meta name="DC.title" content="Scripting Galaxy using the API and BioBlend">
+<meta name="DC.publisher" content="Galaxy Training Network">
+<meta name="DC.date" content="2023-04-17 13:15:53 +0000">
+<meta name="DC.creator" content="Olivia Doppelt-Azeroual">
+<meta name="DC.creator" content="Fabien Mareuil">
+<meta name="DC.creator" content="Nicola Soranzo">
+<meta name="DC.creator" content="Dannon Baker">
 
         
         
@@ -37,7 +37,8 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Scripting Galaxy using the API and BioBlend" />
         <meta property="og:description" content="Galaxy is an open-source project. Everyone can contribute..." />
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+        
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         <script type="application/ld+json">
             
@@ -65,7 +66,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "2022-07-14 01:30:28 +0000",
+  "dateModified": "2023-04-17 13:15:53 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Scripting Galaxy using the API and BioBlend",
   "interactivityType": "mixed",
@@ -473,7 +474,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 ???
 
 - The Galaxy user interface is a better choice for explorative analysis, visualising data and drawing workflows.
-- The API instead allows you to automate tasks using Galaxy's capabilities programmatically.
+- The API instead allows you to automate tasks using Galaxy&apos;s capabilities programmatically.
 - A typical use case is to upload FASTQ files as soon as your sequencer finishes writing them, and running a quality control workflow.
 - Importantly, however you interact with Galaxy, you can equally benefit from features like reproducibility of the analysis and data sharing.
 - In fact, all the work done via the API is still accessible when you return to the UI.
@@ -489,7 +490,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 - Admins can also manage:
   - data libraries
-  - Tool Shed repositories
+  - tools and dependencies
   - users, quotas, roles...
 
 - Source code lives at https://github.com/galaxyproject/galaxy/tree/dev/lib/galaxy/webapps/galaxy/api/
@@ -534,7 +535,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ???
 
-- Let's see some examples of possible API requests to a Galaxy server.
+- Let&apos;s see some examples of possible API requests to a Galaxy server.
 - In the first example we use the GET method to retrieve a resource, in this case the list of histories.
 - The URI starts with the protocol and address of the server, followed by the resource we are interested in: the histories.
 - A URI may then include an optional query, preceded by a question mark, containing a sequence of request parameters specified as key-equal-value and separated by ampersands.
@@ -621,7 +622,7 @@ Before diving into this slide deck, we recommend you to have a look at:
   - [RESTClient](https://addons.mozilla.org/firefox/addon/restclient/) add-on for Firefox
   - [Advanced REST Client](https://advancedrestclient.com/)
 - Software libraries:
-  - General HTTP libraries (e.g. *requests* for Python)
+  - General HTTP libraries (e.g. [requests](https://requests.readthedocs.io/) for Python)
   - Service-specific libraries (e.g. *BioBlend* to access Galaxy using Python)
 
 ???
@@ -675,14 +676,16 @@ Before diving into this slide deck, we recommend you to have a look at:
   # if you need to bootstrap Galaxy, in particular to create a real
   # admin user account via API. You should probably not set this on a
   # production server.
-  master_api_key: MASTERLOCK
+  bootstrap_admin_api_key: MASTERLOCK
   ```
+
+  This option was called ``master_api_key`` in Galaxy 22.05 and earlier.
 
 ???
 
 - There are 2 options in the Galaxy configuration file that are relevant for the API.
 - api_allow_run_as allows the specified user to impersonate any other user on the Galaxy instance.
-- master_api_key instead is an optional special API key that can be used to bootstrap a Galaxy instance, in particular to create an initial admin account.
+- bootstrap_admin_api_key instead is an optional special API key that can be used to bootstrap a Galaxy instance, in particular to create an initial admin account.
 
 ---
 
@@ -695,8 +698,7 @@ Before diving into this slide deck, we recommend you to have a look at:
   - Subscriptions via [websockets](https://fastapi.tiangolo.com/advanced/websockets/)
   - Integrated [OpenAPI](https://spec.openapis.org/oas/v3.1.0) interactive documentation, e.g. https://usegalaxy.org/api/docs
   - Reduce maintenance burden
-- Challenges:
-  - Need to refactor over 200 endpoints
+  - Simplify client code generation
 
 ???
 
@@ -720,7 +722,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 ???
 
 - To summarise this first part, Galaxy has an extensive REST API that allows users and admins to interact programmatically with a server.
-- It can be accessed with any programming language, but it's also very low level.
+- It can be accessed with any programming language, but it&apos;s also very low level.
 - For example, you need to construct complex URIs, encode payloads and decode returned data.
 
 ---
@@ -772,9 +774,9 @@ Before diving into this slide deck, we recommend you to have a look at:
 ???
 
 - Although easier to use than the Galaxy API, BioBlend has some limitations.
-- First of all, it's only available for Python.
+- First of all, it&apos;s only available for Python.
 - There are alternative libraries for Java and PHP, but they are less complete.
-- Another limitation of BioBlend is that it doesn't shield the caller from possible changes in responses from the Galaxy API.
+- Another limitation of BioBlend is that it doesn&apos;t shield the caller from possible changes in responses from the Galaxy API.
 - It can also be annoying to have to constantly keep track of entity IDs.
 - This happens because BioBlend does not try to model Galaxy entities and how they are connected.
 
@@ -818,7 +820,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 ### &lt;i class=&quot;fas fa-key&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;keypoints&lt;/span&gt; Key points
 
 
-- The API allows you to use Galaxy's capabilities programmatically.
+- The API allows you to use Galaxy&apos;s capabilities programmatically.
 
 - BioBlend makes using the Galaxy API from Python easier.
 
@@ -857,9 +859,10 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
 
 
     </textarea>
-	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
+	<script src="/training-material/assets/js/remark-latest.min.js"></script>
+    <script src="/training-material/assets/js/theme.js"></script>
+    <script src="/training-material/assets/js/clipboard.min.js"></script>
+    <script>
       var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
       var snippets = document.querySelectorAll('code.remark-code');
@@ -871,7 +874,7 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
       }});
     </script>
 
-    <script type="text/javascript">
+    <script>
         if(window.location.hostname === "galaxyproject.github.io") {
             // Redirect
             var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;

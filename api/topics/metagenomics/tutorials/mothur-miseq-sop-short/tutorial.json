@@ -54,7 +54,7 @@
         "lat": 45.77,
         "lon": 3.08
       },
-      "fediverse": "bebatut@piaille.fr",
+      "fediverse": "https://piaille.fr/@bebatut",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -120,6 +120,45 @@
   "slides": false,
   "workflows": [
     {
+      "workflow": "workflow1_quality_control.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow1_quality_control.ga",
+      "path": "topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow1_quality_control.ga",
+      "wfid": "metagenomics-mothur-miseq-sop-short",
+      "wfname": "workflow1_quality_control",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow1_quality_control",
+      "license": null,
+      "creators": [
+
+      ]
+    },
+    {
+      "workflow": "workflow2_data_cleaning.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow2_data_cleaning.ga",
+      "path": "topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow2_data_cleaning.ga",
+      "wfid": "metagenomics-mothur-miseq-sop-short",
+      "wfname": "workflow2_data_cleaning",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow2_data_cleaning",
+      "license": null,
+      "creators": [
+
+      ]
+    },
+    {
+      "workflow": "workflow3_classification.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow3_classification.ga",
+      "path": "topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow3_classification.ga",
+      "wfid": "metagenomics-mothur-miseq-sop-short",
+      "wfname": "workflow3_classification",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow3_classification",
+      "license": null,
+      "creators": [
+
+      ]
+    },
+    {
       "workflow": "workflow4_mock_otu_clustering.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow4_mock_otu_clustering.ga",
@@ -146,19 +185,6 @@
       ]
     },
     {
-      "workflow": "workflow2_data_cleaning.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow2_data_cleaning.ga",
-      "path": "topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow2_data_cleaning.ga",
-      "wfid": "metagenomics-mothur-miseq-sop-short",
-      "wfname": "workflow2_data_cleaning",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow2_data_cleaning",
-      "license": null,
-      "creators": [
-
-      ]
-    },
-    {
       "workflow": "workflow6_alpha_diversity.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow6_alpha_diversity.ga",
@@ -166,32 +192,6 @@
       "wfid": "metagenomics-mothur-miseq-sop-short",
       "wfname": "workflow6_alpha_diversity",
       "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow6_alpha_diversity",
-      "license": null,
-      "creators": [
-
-      ]
-    },
-    {
-      "workflow": "workflow1_quality_control.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow1_quality_control.ga",
-      "path": "topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow1_quality_control.ga",
-      "wfid": "metagenomics-mothur-miseq-sop-short",
-      "wfname": "workflow1_quality_control",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow1_quality_control",
-      "license": null,
-      "creators": [
-
-      ]
-    },
-    {
-      "workflow": "workflow3_classification.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow3_classification.ga",
-      "path": "topics/metagenomics/tutorials/mothur-miseq-sop-short/workflows/workflow3_classification.ga",
-      "wfid": "metagenomics-mothur-miseq-sop-short",
-      "wfname": "workflow3_classification",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-mothur-miseq-sop-short/versions/workflow3_classification",
       "license": null,
       "creators": [
 
@@ -251,9 +251,5 @@
     ],
     "video": false
   },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//metagenomics/tutorials/mothur-miseq-sop-short/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//metagenomics/tutorials/mothur-miseq-sop-short/tutorial.json"
-  }
+  "type": "tutorial"
 }

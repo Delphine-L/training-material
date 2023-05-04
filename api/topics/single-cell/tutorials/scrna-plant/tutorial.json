@@ -4,7 +4,9 @@
   "subtopic": "end-to-end",
   "priority": 5,
   "redirect_from": [
-    "/topics/transcriptomics/tutorials/scrna-plant/tutorial"
+    "/topics/transcriptomics/tutorials/scrna-plant/tutorial",
+    "/short/single-cell/scrna-plant",
+    "/short/T00250"
   ],
   "zenodo_link": "https://zenodo.org/record/4597857",
   "tags": [
@@ -68,6 +70,7 @@
     },
     {
       "name": "Pavankumar Videm",
+      "orcid": "0000-0002-5192-126X",
       "joined": "2017-09",
       "id": "pavanvidem",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/pavanvidem.json",
@@ -155,9 +158,5 @@
     ],
     "video": false
   },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-plant/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-plant/tutorial.json"
-  }
+  "type": "tutorial"
 }

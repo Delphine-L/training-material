@@ -65,7 +65,7 @@
         "lat": 45.77,
         "lon": 3.08
       },
-      "fediverse": "bebatut@piaille.fr",
+      "fediverse": "https://piaille.fr/@bebatut",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -97,32 +97,6 @@
   "slides": false,
   "workflows": [
     {
-      "workflow": "Galaxy-Workflow-Tutorial_training_regionalGAM_complete_workflow.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/ecology/tutorials/regionalGAM/workflows/Galaxy-Workflow-Tutorial_training_regionalGAM_complete_workflow.ga",
-      "path": "topics/ecology/tutorials/regionalGAM/workflows/Galaxy-Workflow-Tutorial_training_regionalGAM_complete_workflow.ga",
-      "wfid": "ecology-regionalGAM",
-      "wfname": "galaxy-workflow-tutorial_training_regionalgam_complete_workflow",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/ecology-regionalGAM/versions/galaxy-workflow-tutorial_training_regionalgam_complete_workflow",
-      "license": null,
-      "creators": [
-
-      ]
-    },
-    {
-      "workflow": "Galaxy-Workflow-Tutorial_regionalGAM_complete_Multispecies.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/ecology/tutorials/regionalGAM/workflows/Galaxy-Workflow-Tutorial_regionalGAM_complete_Multispecies.ga",
-      "path": "topics/ecology/tutorials/regionalGAM/workflows/Galaxy-Workflow-Tutorial_regionalGAM_complete_Multispecies.ga",
-      "wfid": "ecology-regionalGAM",
-      "wfname": "galaxy-workflow-tutorial_regionalgam_complete_multispecies",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/ecology-regionalGAM/versions/galaxy-workflow-tutorial_regionalgam_complete_multispecies",
-      "license": null,
-      "creators": [
-
-      ]
-    },
-    {
       "workflow": "Galaxy-Workflow-Abundance_index__stacked__visualization_creation.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/ecology/tutorials/regionalGAM/workflows/Galaxy-Workflow-Abundance_index__stacked__visualization_creation.ga",
@@ -143,6 +117,32 @@
       "wfid": "ecology-regionalGAM",
       "wfname": "galaxy-workflow-phenology__stacked__visualization_creation",
       "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/ecology-regionalGAM/versions/galaxy-workflow-phenology__stacked__visualization_creation",
+      "license": null,
+      "creators": [
+
+      ]
+    },
+    {
+      "workflow": "Galaxy-Workflow-Tutorial_regionalGAM_complete_Multispecies.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/ecology/tutorials/regionalGAM/workflows/Galaxy-Workflow-Tutorial_regionalGAM_complete_Multispecies.ga",
+      "path": "topics/ecology/tutorials/regionalGAM/workflows/Galaxy-Workflow-Tutorial_regionalGAM_complete_Multispecies.ga",
+      "wfid": "ecology-regionalGAM",
+      "wfname": "galaxy-workflow-tutorial_regionalgam_complete_multispecies",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/ecology-regionalGAM/versions/galaxy-workflow-tutorial_regionalgam_complete_multispecies",
+      "license": null,
+      "creators": [
+
+      ]
+    },
+    {
+      "workflow": "Galaxy-Workflow-Tutorial_training_regionalGAM_complete_workflow.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/ecology/tutorials/regionalGAM/workflows/Galaxy-Workflow-Tutorial_training_regionalGAM_complete_workflow.ga",
+      "path": "topics/ecology/tutorials/regionalGAM/workflows/Galaxy-Workflow-Tutorial_training_regionalGAM_complete_workflow.ga",
+      "wfid": "ecology-regionalGAM",
+      "wfname": "galaxy-workflow-tutorial_training_regionalgam_complete_workflow",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/ecology-regionalGAM/versions/galaxy-workflow-tutorial_training_regionalgam_complete_workflow",
       "license": null,
       "creators": [
 
@@ -179,9 +179,5 @@
     ],
     "video": false
   },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//ecology/tutorials/regionalGAM/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//ecology/tutorials/regionalGAM/tutorial.json"
-  }
+  "type": "tutorial"
 }

@@ -19,15 +19,15 @@
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/slides.html" />
         <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
-        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
-<meta name="DC.type" content="text" />
-<meta name="DC.title" content="Storage Management" />
-<meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2021-04-06 11:50:17 +0000" />
-<meta name="DC.creator" content="Nate Coraor" />
-<meta name="DC.creator" content="Martin Čech" />
-<meta name="DC.creator" content="Helena Rasche" />
-<meta name="DC.creator" content="Saskia Hiltemann" />
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
+<meta name="DC.type" content="text">
+<meta name="DC.title" content="Storage Management">
+<meta name="DC.publisher" content="Galaxy Training Network">
+<meta name="DC.date" content="2023-04-18 10:40:37 +0000">
+<meta name="DC.creator" content="Nate Coraor">
+<meta name="DC.creator" content="Martin Čech">
+<meta name="DC.creator" content="Helena Rasche">
+<meta name="DC.creator" content="Saskia Hiltemann">
 
         
         
@@ -37,7 +37,8 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Storage Management" />
         <meta property="og:description" content="Resources related to configuration and maintenance of Gal..." />
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+        
+        <meta property="og:image" content="/training-material/assets/images/gat.png">
 
         <script type="application/ld+json">
             
@@ -65,7 +66,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "2021-04-06 11:50:17 +0000",
+  "dateModified": "2023-04-18 10:40:37 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Storage Management",
   "interactivityType": "mixed",
@@ -167,7 +168,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-9318-1781",
+      "orcid": "https://orcid.org/0000-0002-9318-1781"
     },
     {
       "@context": "https://schema.org",
@@ -259,7 +262,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-9318-1781",
+      "orcid": "https://orcid.org/0000-0002-9318-1781"
     },
     {
       "@context": "https://schema.org",
@@ -358,7 +363,7 @@ class: center, middle, inverse
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a><a href="/training-material/hall-of-fame/martenson/" class="contributor-badge contributor-martenson"><img src="https://avatars.githubusercontent.com/martenson?s=27" alt="Avatar">Martin Čech</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a><a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a>
+		Authors: <a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a><a href="/training-material/hall-of-fame/martenson/" class="contributor-badge contributor-martenson"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/martenson?s=27" alt="Avatar">Martin Čech</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a><a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a>
 	</div>
 
 </div>
@@ -441,7 +446,7 @@ Useful when presenting.
 # Advantages of data libraries
 
 - **Avoid duplication** of data
-- Does not count towards user's **quota**
+- Does not count towards user&apos;s **quota**
 - Libraries can be shared with all users, or specific groups
 - **Manage permissions** on library/dataset level using roles and groups.
   - Admins can *create* libraries.
@@ -465,18 +470,18 @@ Useful when presenting.
 - There are multiple ways to add data to libraries:
   - From history
   - From user directory
-  - From import directory (admins only)
-  - From remote source
+  - From import directory and/or path (admins only)
+  - From remote source (via API/BioBlend/ephemeris)
 
 ![import menu](/training-material/topics/admin/images/data/import-menu.png)
 
 ???
 
 - Galaxy provides many options for importing data.
-- You can import data from a history, or from disk.
-- Importing data on disk is convenient, as Galaxy can recreate the folder structure that is on disk.
+- You can import data from a history, or from a server directory.
+- Importing data from a server directory is convenient, as Galaxy can recreate the folder structure that is on disk.
 - Additionally Galaxy can store library data as a symlink.
-- This prevents needing to copy large shared datasets into Galaxy's own data store.
+- This prevents needing to copy large shared datasets into Galaxy&apos;s own data store.
 
 ---
 
@@ -486,15 +491,17 @@ In `galaxy.yml`:
 
 * `user_library_import_dir`
   * Allows authorized non-administrators to upload a directory of files.
-  * Directory must contain sub-directories named the same as user's email.
+  * Directory must contain sub-directories named the same as user&apos;s email.
   * Works well in combination with `ftp_upload_dir`.
+* `library_import_dir`
+  * Allows administrators to upload a directory of files.
 * `allow_path_paste`
-  * Admin-only, allows importing from any path that the Galaxy's user has access to.
+  * Admin-only, allows importing from any path that the Galaxy&apos;s user has access to.
 
 ???
 
-- If you use old library interface you can also set library_import_dir.
-- It specifies which folder admins may browse and import from.
+- The path of the server directories that users and admins can use to import files can be configured in galaxy.yml .
+- For admins, it is also possible to enable import from any server path.
 
 
 ---
@@ -506,7 +513,7 @@ This material is the result of a collaborative work. Thanks to the [Galaxy Train
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a><a href="/training-material/hall-of-fame/martenson/" class="contributor-badge contributor-martenson"><img src="https://avatars.githubusercontent.com/martenson?s=27" alt="Avatar">Martin Čech</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a><a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a>
+		Authors: <a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a><a href="/training-material/hall-of-fame/martenson/" class="contributor-badge contributor-martenson"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/martenson?s=27" alt="Avatar">Martin Čech</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a><a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a>
 	</div>
 
 </div>
@@ -528,9 +535,10 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
 .footnote[Found a typo? Something is wrong in this tutorial? <br/>Edit it on [GitHub](https://github.com/galaxyproject/training-material/tree/main/topics/admin/tutorials/data-library/slides.html)]
 
     </textarea>
-	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
+	<script src="/training-material/assets/js/remark-latest.min.js"></script>
+    <script src="/training-material/assets/js/theme.js"></script>
+    <script src="/training-material/assets/js/clipboard.min.js"></script>
+    <script>
       var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
       var snippets = document.querySelectorAll('code.remark-code');
@@ -542,7 +550,7 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
       }});
     </script>
 
-    <script type="text/javascript">
+    <script>
         if(window.location.hostname === "galaxyproject.github.io") {
             // Redirect
             var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;

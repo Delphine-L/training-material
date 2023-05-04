@@ -19,13 +19,13 @@
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/mirna-target-finder/slides.html" />
         <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
-        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
-<meta name="DC.type" content="text" />
-<meta name="DC.title" content="Whole transcriptome analysis of Arabidopsis thaliana" />
-<meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2022-11-17 11:37:55 +0000" />
-<meta name="DC.creator" content="Cristóbal Gallardo" />
-<meta name="DC.creator" content="Pavankumar Videm" />
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
+<meta name="DC.type" content="text">
+<meta name="DC.title" content="Whole transcriptome analysis of Arabidopsis thaliana">
+<meta name="DC.publisher" content="Galaxy Training Network">
+<meta name="DC.date" content="2022-11-17 11:37:55 +0000">
+<meta name="DC.creator" content="Cristóbal Gallardo">
+<meta name="DC.creator" content="Pavankumar Videm">
 
         
         
@@ -35,7 +35,8 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Whole transcriptome analysis of Arabidopsis thaliana" />
         <meta property="og:description" content="Training material for all kinds of transcriptomics analysis." />
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+        
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         <script type="application/ld+json">
             
@@ -240,7 +241,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-5192-126X",
+      "orcid": "https://orcid.org/0000-0002-5192-126X"
     }
   ],
   "contributor": [
@@ -286,7 +289,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-5192-126X",
+      "orcid": "https://orcid.org/0000-0002-5192-126X"
     }
   ],
   "about": [
@@ -342,7 +347,7 @@ class: center, middle, inverse
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a><a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
+		Authors: <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a><a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
 	</div>
 
 </div>
@@ -427,7 +432,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 # Introduction
 
 ???
-- Let's start with the introduction.
+- Let&apos;s start with the introduction.
 
 ---
 
@@ -592,9 +597,9 @@ Before diving into this slide deck, we recommend you to have a look at:
 - This figure is an illustration of the quasi-mapping of a read using k=3. Hash table lookup of k-mer A T T returns the suffix array interval b and e.
 - The current k-mer and its matching suffix intervals are colored in green.
 - The base G at position 6 has a mismatch with the C on reference transcripts, representing a possible sequencing error.
-- Hence, the first five bases A T T G A is the maximal mappable prefix and the suffix array interval of this maximal mappable prefix is b' and e'.
-- A T T G A C T A which is in the red colored box is the longest common prefix of the suffix array interval c and e'. So the next informative position on the read is the 9th base T.
-- In the end, the read in the above example most likely map to the suffix array at e'.
+- Hence, the first five bases A T T G A is the maximal mappable prefix and the suffix array interval of this maximal mappable prefix is b&apos; and e&apos;.
+- A T T G A C T A which is in the red colored box is the longest common prefix of the suffix array interval c and e&apos;. So the next informative position on the read is the 9th base T.
+- In the end, the read in the above example most likely map to the suffix array at e&apos;.
 
 ---
 
@@ -625,7 +630,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 - Uses Smith-Waterman algorithm to align query small RNA sequence to the target sequence database
 - Penalty of 1 for mismatches, single-nucleotide gaps, or single-nucleotide bulges
 - Penalty of 0.5 G U base pairs
-- Doubled penalty scores at positions 2-13 relative to the 5' end of the small RNA query sequence
+- Doubled penalty scores at positions 2-13 relative to the 5&apos; end of the small RNA query sequence
 - Duplexes with the following characteristics are rejected:
     - more than one single-nucleotide bulge or gap
     - more than seven total mismatches, G:U base pairs, bulges and gaps
@@ -662,7 +667,7 @@ This material is the result of a collaborative work. Thanks to the [Galaxy Train
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a><a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
+		Authors: <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a><a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
 	</div>
 
 </div>
@@ -680,9 +685,10 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
 
 
     </textarea>
-	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
+	<script src="/training-material/assets/js/remark-latest.min.js"></script>
+    <script src="/training-material/assets/js/theme.js"></script>
+    <script src="/training-material/assets/js/clipboard.min.js"></script>
+    <script>
       var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
       var snippets = document.querySelectorAll('code.remark-code');
@@ -694,7 +700,7 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
       }});
     </script>
 
-    <script type="text/javascript">
+    <script>
         if(window.location.hostname === "galaxyproject.github.io") {
             // Redirect
             var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;

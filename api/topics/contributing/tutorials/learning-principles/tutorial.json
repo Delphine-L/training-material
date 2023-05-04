@@ -47,14 +47,6 @@
   "slides": false,
   "quiz": [
     {
-      "id": "short_term_memory.yaml",
-      "path": "topics/contributing/tutorials/learning-principles/quiz/short_term_memory.yaml",
-      "title": "How short is your short term memory?",
-      "contributors": [
-        "bebatut"
-      ]
-    },
-    {
       "id": "learning_metaphors.yaml",
       "path": "topics/contributing/tutorials/learning-principles/quiz/learning_metaphors.yaml",
       "title": "Learning metaphors",
@@ -66,6 +58,14 @@
       "id": "overloading_short_term_memory.yaml",
       "path": "topics/contributing/tutorials/learning-principles/quiz/overloading_short_term_memory.yaml",
       "title": "How can you avoid to overload learners working memory?",
+      "contributors": [
+        "bebatut"
+      ]
+    },
+    {
+      "id": "short_term_memory.yaml",
+      "path": "topics/contributing/tutorials/learning-principles/quiz/short_term_memory.yaml",
+      "title": "How short is your short term memory?",
       "contributors": [
         "bebatut"
       ]
@@ -118,7 +118,7 @@
         "lat": 45.77,
         "lon": 3.08
       },
-      "fediverse": "bebatut@piaille.fr",
+      "fediverse": "https://piaille.fr/@bebatut",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -169,9 +169,5 @@
       "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
     }
-  ],
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/learning-principles/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/learning-principles/tutorial.json"
-  }
+  ]
 }

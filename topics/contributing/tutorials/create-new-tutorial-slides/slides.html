@@ -19,14 +19,14 @@
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/contributing/tutorials/create-new-tutorial-slides/slides.html" />
         <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
-        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
-<meta name="DC.type" content="text" />
-<meta name="DC.title" content="Creating Slides" />
-<meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2022-09-20 08:18:53 +0000" />
-<meta name="DC.creator" content="Helena Rasche" />
-<meta name="DC.creator" content="Bérénice Batut" />
-<meta name="DC.creator" content="Saskia Hiltemann" />
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
+<meta name="DC.type" content="text">
+<meta name="DC.title" content="Creating Slides">
+<meta name="DC.publisher" content="Galaxy Training Network">
+<meta name="DC.date" content="2022-09-20 08:18:53 +0000">
+<meta name="DC.creator" content="Helena Rasche">
+<meta name="DC.creator" content="Bérénice Batut">
+<meta name="DC.creator" content="Saskia Hiltemann">
 
         
         
@@ -36,7 +36,8 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Creating Slides" />
         <meta property="og:description" content="Galaxy is a great solution to train the bioinformatics co..." />
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+        
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         <script type="application/ld+json">
             
@@ -396,7 +397,7 @@ Useful when presenting.
 ???
 
 - Slides a great way to introduce an audience to your subject.
-- They're best to use for a quick overview, not a detailed look at the subject.
+- They&apos;re best to use for a quick overview, not a detailed look at the subject.
 - Lots of images can be a good choice to communicate information, and avoid slides full of text when possible as learners can get bored or distracted.
 
 ---
@@ -415,7 +416,7 @@ Useful when presenting.
 
 - If your slides are attached to a tutorial, then they can be a good place to provide learners with motivation for the tutorial.
 - If you can provide examples that are relevant to your audience, this will encourage them to follow the tutorial.
-- Try to avoid dry text and links to external resources whenever possible, those can be best in the tutorial which a learner would read at their own pace, rather than slides which are presented at the presenter's pace.
+- Try to avoid dry text and links to external resources whenever possible, those can be best in the tutorial which a learner would read at their own pace, rather than slides which are presented at the presenter&apos;s pace.
 
 ---
 
@@ -423,7 +424,7 @@ Useful when presenting.
 ## Formatting: Basic
 
 .pull-left[
-&lt;span style=&quot;font-size: 35px;font-family: 'Yanone Kaffeesatz';font-weight: normal;text-align: center;&quot;&gt;Slide Title&lt;/span&gt;
+&lt;span style=&quot;font-size: 35px;font-family: &apos;Yanone Kaffeesatz&apos;;font-weight: normal;text-align: center;&quot;&gt;Slide Title&lt;/span&gt;
 
 A list
 
@@ -467,8 +468,8 @@ Slides begin with a title `### ...` and should end with a `---`
 
 - Slides are written with standard markdown, and begin with a header, and end with three dashes.
 - Lists, links, and images are all written with their normal syntax.
-- If you're familiar with markdown and already writing your tutorial in it, this should be an easy addition.
-- The only differences are the dashes to separate slides, and speaker notes which we'll cover later.
+- If you&apos;re familiar with markdown and already writing your tutorial in it, this should be an easy addition.
+- The only differences are the dashes to separate slides, and speaker notes which we&apos;ll cover later.
 
 ---
 
@@ -576,7 +577,7 @@ There are [other CSS classes available](https://github.com/galaxyproject/trainin
 
 - There are a number of CSS classes available to use for styling the content you show on your slides.
 - Here you can see images scaled to 10% and 50%.
-- There are a number of other classes that you can find in the GTN's codebase.
+- There are a number of other classes that you can find in the GTN&apos;s codebase.
 
 
 ---
@@ -790,7 +791,7 @@ presenter view. Press `p` to bring this up
 
 ???
 
-- The key to close the help isn't shown in the keyboard shortcuts, but it is the escape key.
+- The key to close the help isn&apos;t shown in the keyboard shortcuts, but it is the escape key.
 - There are a number of other shortcuts which can be useful to know about.
 - The clone window function creates a popup with a copy of the slides, this can be used to show the presenter notes on one screen, and the actual slides on another screen that learners can see.
 
@@ -867,9 +868,10 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
 
 
     </textarea>
-	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
+	<script src="/training-material/assets/js/remark-latest.min.js"></script>
+    <script src="/training-material/assets/js/theme.js"></script>
+    <script src="/training-material/assets/js/clipboard.min.js"></script>
+    <script>
       var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
       var snippets = document.querySelectorAll('code.remark-code');
@@ -881,7 +883,7 @@ This material is licensed under the Creative Commons Attribution 4.0 Internation
       }});
     </script>
 
-    <script type="text/javascript">
+    <script>
         if(window.location.hostname === "galaxyproject.github.io") {
             // Redirect
             var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;

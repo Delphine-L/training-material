@@ -79,7 +79,9 @@
       "layout": "tutorial_hands_on",
       "redirect_from": [
         "/topics/transcriptomics/tutorials/scrna_preprocessing/tutorial",
-        "/topics/transcriptomics/tutorials/scrna-preprocessing/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-preprocessing/tutorial",
+        "/short/single-cell/scrna-preprocessing",
+        "/short/T00251"
       ],
       "title": "Pre-processing of Single-Cell RNA Data",
       "subtopic": "end-to-end",
@@ -150,7 +152,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -192,19 +194,6 @@
       "slides": true,
       "workflows": [
         {
-          "workflow": "scrna_pp_celseq.ga",
-          "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-preprocessing/workflows/scrna_pp_celseq.ga",
-          "path": "topics/single-cell/tutorials/scrna-preprocessing/workflows/scrna_pp_celseq.ga",
-          "wfid": "single-cell-scrna-preprocessing",
-          "wfname": "scrna_pp_celseq",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-preprocessing/versions/scrna_pp_celseq",
-          "license": null,
-          "creators": [
-
-          ]
-        },
-        {
           "workflow": "scrna_mp_celseq.ga",
           "tests": false,
           "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-preprocessing/workflows/scrna_mp_celseq.ga",
@@ -212,6 +201,19 @@
           "wfid": "single-cell-scrna-preprocessing",
           "wfname": "scrna_mp_celseq",
           "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-preprocessing/versions/scrna_mp_celseq",
+          "license": null,
+          "creators": [
+
+          ]
+        },
+        {
+          "workflow": "scrna_pp_celseq.ga",
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-preprocessing/workflows/scrna_pp_celseq.ga",
+          "path": "topics/single-cell/tutorials/scrna-preprocessing/workflows/scrna_pp_celseq.ga",
+          "wfid": "single-cell-scrna-preprocessing",
+          "wfname": "scrna_pp_celseq",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-preprocessing/versions/scrna_pp_celseq",
           "license": null,
           "creators": [
 
@@ -248,8 +250,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-preprocessing/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-preprocessing/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-preprocessing/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-preprocessing/tutorial.json"
       }
     },
     {
@@ -257,7 +259,9 @@
       "title": "Bulk RNA Deconvolution with MuSiC",
       "subtopic": "deconvo",
       "redirect_from": [
-        "/topics/transcriptomics/tutorials/bulk-music/tutorial"
+        "/topics/transcriptomics/tutorials/bulk-music/tutorial",
+        "/short/single-cell/bulk-music",
+        "/short/T00240"
       ],
       "priority": 1,
       "zenodo_link": "https://zenodo.org/record/5719228",
@@ -407,8 +411,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/bulk-music/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/bulk-music/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/bulk-music/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/bulk-music/tutorial.json"
       }
     },
     {
@@ -419,7 +423,9 @@
       "zenodo_link": "https://zenodo.org/record/4574153",
       "redirect_from": [
         "/topics/transcriptomics/tutorials/droplet-quantification-preprocessing/tutorial",
-        "/topics/transcriptomics/tutorials/scrna-case_alevin/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-case_alevin/tutorial",
+        "/short/single-cell/scrna-case_alevin",
+        "/short/T00245"
       ],
       "questions": [
         "I have some single cell FASTQ files I want to analyse. Where do I start?"
@@ -588,6 +594,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -608,8 +615,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_alevin/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_alevin/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_alevin/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_alevin/tutorial.json"
       }
     },
     {
@@ -618,7 +625,9 @@
       "subtopic": "tricks",
       "priority": 1,
       "redirect_from": [
-        "/topics/transcriptomics/tutorials/scrna-scater-qc/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-scater-qc/tutorial",
+        "/short/single-cell/scrna-scater-qc",
+        "/short/T00255"
       ],
       "zenodo_link": "https://zenodo.org/record/3386291",
       "tags": [
@@ -726,8 +735,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-scater-qc/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-scater-qc/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-scater-qc/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-scater-qc/tutorial.json"
       }
     },
     {
@@ -740,7 +749,9 @@
       "video": true,
       "zenodo_link": "",
       "redirect_from": [
-        "/topics/transcriptomics/tutorials/scrna-intro/slides"
+        "/topics/transcriptomics/tutorials/scrna-intro/slides",
+        "/short/single-cell/scrna-intro/slides",
+        "/short/S00084"
       ],
       "tags": [
         "single-cell",
@@ -852,8 +863,8 @@
       "tours": false,
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-intro/slides.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-intro/slides.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-intro/slides.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-intro/slides.json"
       }
     },
     {
@@ -903,7 +914,24 @@
       "dir": "topics/single-cell/tutorials/scrna-case_cell-cycle",
       "id": "single-cell/scrna-case_cell-cycle",
       "video_library": {
-        "tutorial": null,
+        "tutorial": {
+          "description": "Single-cell RNA sequencing can be sensitive to both biological and technical variation,   i\nwhich is why preparing your data carefully is an important part of the analysis. You want\nthe results to reflect the interesting differences in expression between cells that relate\nto their type or state. Other sources of variation can conceal or confound this, making it\nharder for you to see what is going on.\n\nOne common biological confounder is the cell cycle. Cells express\ndifferent genes during different parts of the cell cycle, depending on whether they are in\ntheir growing phase (G1), duplicating their DNA (the S or Synthesis phase), or dividing in\ntwo (G2/M or Mitosis phase). If these cell cycle genes are having a big impact on your\ndata, then you could end up with separate clusters that actually represent cells of the\nsame type that are just at different stages of the cycle.\n\nIn this tutorial, we will identify the genes whose expression is known to vary during the\ncell cycle so that we can use them to regress out (or remove) the effects of the cell cycle\non the clustering.\n",
+          "materials": [
+            {
+              "link": "topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.html",
+              "type": "Tutorial"
+            }
+          ],
+          "tags": [
+            "single-cell",
+            "transcriptomics"
+          ],
+          "versions": [
+
+          ],
+          "gtn_id": "single-cell/scrna-case_cell-cycle",
+          "title": "Removing the effects of the cell cycle"
+        },
         "slides": null,
         "demo": null,
         "both": null,
@@ -986,8 +1014,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_cell-cycle/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_cell-cycle/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.json"
       }
     },
     {
@@ -996,7 +1024,9 @@
       "subtopic": "end-to-end",
       "priority": 2,
       "redirect_from": [
-        "/topics/transcriptomics/tutorials/scrna-raceid/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-raceid/tutorial",
+        "/short/single-cell/scrna-raceid",
+        "/short/T00253"
       ],
       "zenodo_link": "https://zenodo.org/record/1511582",
       "tags": [
@@ -1055,6 +1085,7 @@
         {
           "name": "Alex Ostrovsky",
           "email": "a.ostrovsky@mac.com",
+          "orcid": "0000-0002-7901-7109",
           "joined": "2019-06",
           "id": "astrovsky01",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/astrovsky01.json",
@@ -1120,8 +1151,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-raceid/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-raceid/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-raceid/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-raceid/tutorial.json"
       }
     },
     {
@@ -1134,7 +1165,9 @@
         "I have some AnnData files from different samples that I want to combine into a single file. How can I combine these and label them within the object?"
       ],
       "redirect_from": [
-        "/topics/transcriptomics/tutorials/scrna-case_alevin-combine-datasets/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-case_alevin-combine-datasets/tutorial",
+        "/short/single-cell/scrna-case_alevin-combine-datasets",
+        "/short/T00246"
       ],
       "objectives": [
         "Combine data matrices from different samples in the same experiment",
@@ -1296,6 +1329,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1316,8 +1350,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_alevin-combine-datasets/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_alevin-combine-datasets/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_alevin-combine-datasets/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_alevin-combine-datasets/tutorial.json"
       }
     },
     {
@@ -1501,8 +1535,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/bulk-music-2-preparescref/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/bulk-music-2-preparescref/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/bulk-music-2-preparescref/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/bulk-music-2-preparescref/tutorial.json"
       }
     },
     {
@@ -1511,7 +1545,9 @@
       "subtopic": "scintroduction",
       "priority": 2,
       "redirect_from": [
-        "/topics/transcriptomics/tutorials/scrna-umis/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-umis/tutorial",
+        "/short/single-cell/scrna-umis",
+        "/short/T00256"
       ],
       "zenodo_link": "https://zenodo.org/record/2573177",
       "tags": [
@@ -1605,8 +1641,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-umis/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-umis/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-umis/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-umis/tutorial.json"
       }
     },
     {
@@ -1763,8 +1799,149 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/bulk-music-3-preparebulk/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/bulk-music-3-preparebulk/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/bulk-music-3-preparebulk/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/bulk-music-3-preparebulk/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+      "subtopic": "end-to-end",
+      "priority": 3,
+      "redirect_from": [
+        "/topics/transcriptomics/tutorials/satac-preprocessing-tenx/tutorial",
+        "/short/single-cell/scatac-preprocessing-tenx",
+        "/short/T00335"
+      ],
+      "zenodo_link": "https://zenodo.org/record/7855968",
+      "tags": [
+        "single-cell",
+        "10x"
+      ],
+      "questions": [
+        "What is 10X?",
+        "What are single-cell ATAC fragments and MTX files?",
+        "What is an Anndata file, and why is it important?"
+      ],
+      "objectives": [
+        "Demultiplex single-cell FASTQ data from 10X Genomics",
+        "Learn about transparent matrix formats",
+        "Create a high-quality count matrix starting from scATAC-seq FASTQ files"
+      ],
+      "time_estimation": "1h",
+      "key_points": [
+        "Bulk ATAC-seq like mapping and peak calling",
+        "Creating a scATAC-seq count matrix requires positions of open chromatin regions"
+      ],
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "single-cell",
+          "tutorials": [
+            "scrna-preprocessing-tenx"
+          ]
+        }
+      ],
+      "follow_up_training": [
+        {
+          "type": "internal",
+          "topic_name": "single-cell",
+          "tutorials": [
+            "scrna-scanpy-pbmc3k"
+          ]
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Pavankumar Videm",
+          "orcid": "0000-0002-5192-126X",
+          "joined": "2017-09",
+          "id": "pavanvidem",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/pavanvidem.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/"
+        }
+      ],
+      "gitter": "Galaxy-Training-Network/galaxy-single-cell",
+      "url": "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html",
+      "topic_name": "single-cell",
+      "tutorial_name": "scatac-preprocessing-tenx",
+      "dir": "topics/single-cell/tutorials/scatac-preprocessing-tenx",
+      "id": "single-cell/scatac-preprocessing-tenx",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "workflows": [
+        {
+          "workflow": "scATAC-seq-Count-Matrix-Filtering.ga",
+          "tests": true,
+          "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scatac-preprocessing-tenx/workflows/scATAC-seq-Count-Matrix-Filtering.ga",
+          "path": "topics/single-cell/tutorials/scatac-preprocessing-tenx/workflows/scATAC-seq-Count-Matrix-Filtering.ga",
+          "wfid": "single-cell-scatac-preprocessing-tenx",
+          "wfname": "scatac-seq-count-matrix-filtering",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scatac-preprocessing-tenx/versions/scatac-seq-count-matrix-filtering",
+          "license": "CC-BY-4.0",
+          "creators": [
+            {
+              "class": "Person",
+              "identifier": "0000-0002-5192-126X",
+              "name": "Pavankumar Videm"
+            }
+          ]
+        },
+        {
+          "workflow": "scATAC-seq-FASTQ-to-Count-Matrix.ga",
+          "tests": true,
+          "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scatac-preprocessing-tenx/workflows/scATAC-seq-FASTQ-to-Count-Matrix.ga",
+          "path": "topics/single-cell/tutorials/scatac-preprocessing-tenx/workflows/scATAC-seq-FASTQ-to-Count-Matrix.ga",
+          "wfid": "single-cell-scatac-preprocessing-tenx",
+          "wfname": "scatac-seq-fastq-to-count-matrix",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scatac-preprocessing-tenx/versions/scatac-seq-fastq-to-count-matrix",
+          "license": "CC-BY-4.0",
+          "creators": [
+            {
+              "class": "Person",
+              "identifier": "0000-0002-5192-126X",
+              "name": "Pavankumar Videm"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/1.1.0",
+        "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.2",
+        "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect/0.7.5+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_sortbed/2.30.0+galaxy2",
+        "toolshed.g2.bx.psu.edu/repos/iuc/episcanpy_build_matrix/episcanpy_build_matrix/0.3.2+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/episcanpy_preprocess/episcanpy_preprocess/0.3.2+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.6",
+        "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.2.7.1+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.7.1+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.7.1+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/sinto_barcode/sinto_barcode/0.9.0+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/sinto_fragments/sinto_fragments/0.9.0+galaxy1"
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.json"
       }
     },
     {
@@ -1773,7 +1950,9 @@
       "subtopic": "end-to-end",
       "priority": 3,
       "redirect_from": [
-        "/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial",
+        "/short/single-cell/scrna-preprocessing-tenx",
+        "/short/T00252"
       ],
       "zenodo_link": "https://zenodo.org/record/3457880",
       "tags": [
@@ -1945,8 +2124,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-preprocessing-tenx/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-preprocessing-tenx/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-preprocessing-tenx/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-preprocessing-tenx/tutorial.json"
       }
     },
     {
@@ -1957,7 +2136,9 @@
       "zenodo_link": "https://zenodo.org/record/7053673",
       "redirect_from": [
         "/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial",
-        "/topics/transcriptomics/tutorials/scrna-case_basic-pipeline/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-case_basic-pipeline/tutorial",
+        "/short/single-cell/scrna-case_basic-pipeline",
+        "/short/T00247"
       ],
       "questions": [
         "Is my single cell dataset a quality dataset?",
@@ -2128,6 +2309,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -2148,8 +2330,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_basic-pipeline/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_basic-pipeline/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.json"
       }
     },
     {
@@ -2159,7 +2341,9 @@
       "subtopic": "scintroduction",
       "priority": 3,
       "redirect_from": [
-        "/topics/transcriptomics/tutorials/scrna-plates-batches-barcodes/slides"
+        "/topics/transcriptomics/tutorials/scrna-plates-batches-barcodes/slides",
+        "/short/single-cell/scrna-plates-batches-barcodes/slides",
+        "/short/S00085"
       ],
       "video": true,
       "zenodo_link": "",
@@ -2207,6 +2391,7 @@
         {
           "name": "Alex Ostrovsky",
           "email": "a.ostrovsky@mac.com",
+          "orcid": "0000-0002-7901-7109",
           "joined": "2019-06",
           "id": "astrovsky01",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/astrovsky01.json",
@@ -2242,8 +2427,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-plates-batches-barcodes/slides.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-plates-batches-barcodes/slides.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-plates-batches-barcodes/slides.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-plates-batches-barcodes/slides.json"
       }
     },
     {
@@ -2380,8 +2565,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/bulk-music-4-compare/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/bulk-music-4-compare/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/bulk-music-4-compare/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/bulk-music-4-compare/tutorial.json"
       }
     },
     {
@@ -2390,7 +2575,9 @@
       "subtopic": "end-to-end",
       "priority": 4,
       "redirect_from": [
-        "/topics/transcriptomics/tutorials/scrna-scanpy-pbmc3k/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-scanpy-pbmc3k/tutorial",
+        "/short/single-cell/scrna-scanpy-pbmc3k",
+        "/short/T00254"
       ],
       "zenodo_link": "https://zenodo.org/record/3581213",
       "questions": [
@@ -2444,7 +2631,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -2571,19 +2758,21 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-scanpy-pbmc3k/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-scanpy-pbmc3k/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-scanpy-pbmc3k/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-scanpy-pbmc3k/tutorial.json"
       }
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Inferring Trajectories using Scanpy - Jupyter Notebook",
+      "title": "Inferring Trajectories using Scanpy (Python)",
       "subtopic": "single-cell-CS",
       "priority": 4,
       "zenodo_link": "https://zenodo.org/record/7075718",
       "redirect_from": [
         "/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial",
-        "/topics/transcriptomics/tutorials/scrna-case_JUPYTER-trajectories/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-case_JUPYTER-trajectories/tutorial",
+        "/short/single-cell/scrna-case_JUPYTER-trajectories",
+        "/short/T00244"
       ],
       "questions": [
         "How can I infer lineage relationships between single cells based on their RNA, without a time series?"
@@ -2671,7 +2860,7 @@
             }
           ],
           "gtn_id": "single-cell/scrna-case_JUPYTER-trajectories",
-          "title": "Inferring Trajectories using Python (Jupyter Notebook) in Galaxy",
+          "title": "Inferring Trajectories using Scanpy (Python)",
           "captioned": true
         },
         "slides": null,
@@ -2735,6 +2924,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -2747,8 +2937,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_JUPYTER-trajectories/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_JUPYTER-trajectories/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_JUPYTER-trajectories/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_JUPYTER-trajectories/tutorial.json"
       }
     },
     {
@@ -2757,7 +2947,9 @@
       "subtopic": "end-to-end",
       "priority": 5,
       "redirect_from": [
-        "/topics/transcriptomics/tutorials/scrna-plant/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-plant/tutorial",
+        "/short/single-cell/scrna-plant",
+        "/short/T00250"
       ],
       "zenodo_link": "https://zenodo.org/record/4597857",
       "tags": [
@@ -2821,6 +3013,7 @@
         },
         {
           "name": "Pavankumar Videm",
+          "orcid": "0000-0002-5192-126X",
           "joined": "2017-09",
           "id": "pavanvidem",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/pavanvidem.json",
@@ -2910,18 +3103,20 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-plant/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-plant/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-plant/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-plant/tutorial.json"
       }
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Trajectory Analysis using Monocle3 ",
+      "title": "Trajectory Analysis using Monocle3",
       "subtopic": "single-cell-CS",
       "priority": 5,
       "zenodo_link": "https://zenodo.org/record/7078524",
       "redirect_from": [
-        "/topics/transcriptomics/tutorials/scrna-case_monocle3-trajectories/tutorial"
+        "/topics/transcriptomics/tutorials/scrna-case_monocle3-trajectories/tutorial",
+        "/short/single-cell/scrna-case_monocle3-trajectories",
+        "/short/T00249"
       ],
       "questions": [
         "How can I prepare input files for Monocle starting from an AnnData object?",
@@ -3009,7 +3204,7 @@
             }
           ],
           "gtn_id": "single-cell/scrna-case_monocle3-trajectories",
-          "title": "Trajectory Analysis using Monocle3 ",
+          "title": "Trajectory Analysis using Monocle3",
           "captioned": true
         },
         "session": null
@@ -3018,13 +3213,13 @@
       "slides": true,
       "workflows": [
         {
-          "workflow": "Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
+          "workflow": "Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
-          "path": "topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
+          "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
+          "path": "topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
           "wfid": "single-cell-scrna-case_monocle3-trajectories",
-          "wfname": "galaxy-workflow-trajectory_analysis_using_monocle3-full_tutorial_workflow",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-case_monocle3-trajectories/versions/galaxy-workflow-trajectory_analysis_using_monocle3-full_tutorial_workflow",
+          "wfname": "galaxy-workflow-anndata_object_to_monocle_input_files",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-case_monocle3-trajectories/versions/galaxy-workflow-anndata_object_to_monocle_input_files",
           "license": null,
           "creators": [
 
@@ -3044,13 +3239,13 @@
           ]
         },
         {
-          "workflow": "Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
+          "workflow": "Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
-          "path": "topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
+          "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
+          "path": "topics/single-cell/tutorials/scrna-case_monocle3-trajectories/workflows/Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
           "wfid": "single-cell-scrna-case_monocle3-trajectories",
-          "wfname": "galaxy-workflow-anndata_object_to_monocle_input_files",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-case_monocle3-trajectories/versions/galaxy-workflow-anndata_object_to_monocle_input_files",
+          "wfname": "galaxy-workflow-trajectory_analysis_using_monocle3-full_tutorial_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-case_monocle3-trajectories/versions/galaxy-workflow-trajectory_analysis_using_monocle3-full_tutorial_workflow",
           "license": null,
           "creators": [
 
@@ -3104,6 +3299,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3151,8 +3347,163 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Trajectory Analysis: Monocle3 in R",
+      "subtopic": "single-cell-CS",
+      "priority": 6,
+      "zenodo_link": "https://zenodo.org/record/7455590",
+      "questions": [
+        "How do I perform a trajectory analysis using Monocle3 in R?",
+        "What should I do when Galaxy's Monocle tools are not enough?",
+        "How do I assign cell types to the clusters?",
+        "How do I infer lineage relationships between clusters, without a time series?",
+        "How do I perform batch correction and differential expression analysis in Monocle?"
+      ],
+      "objectives": [
+        "Identify which operations are necessary to transform an AnnData object into the files needed for Monocle",
+        "Describe the Monocle3 functions in R",
+        "Execute tools and functions to switch between Galaxy and R fluently",
+        "Recognise steps that can only be performed in R, but not with Galaxy tools",
+        "Repeat the Monocle3 workflow and choose the right parameter values",
+        "Compare the outputs from Scanpy, Monocle in Galaxy and Monocle in R",
+        "Describe differential expression analysis methods"
+      ],
+      "time_estimation": "2H",
+      "key_points": [
+        "Being able to switch between Galaxy and R when using Monocle is useful, particularly when you need to modify the CDS object manually.",
+        "Monocle3 in R gives more flexibility when it comes to differential expression analysis and plotting, but Galaxy offers great reproducibility and ease of analysis.",
+        "Comparing the output of several different methods applied on the same dataset might be useful to confirm the results, to ensure that the findings are reliable and even sometimes to find a new piece of information."
+      ],
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "single-cell",
+          "tutorials": [
+            "scrna-case_alevin",
+            "scrna-case_alevin-combine-datasets",
+            "scrna-case_basic-pipeline"
+          ]
+        }
+      ],
+      "tags": [
+        "single-cell",
+        "trajectory-analysis",
+        "paper-replication"
+      ],
+      "contributions": {
+        "authorship": [
+          "wee-snufkin"
+        ],
+        "editing": [
+          "hexylena",
+          "pavanvidem",
+          "nomadscientist"
+        ],
+        "funding": [
+          "eosc-life"
+        ]
+      },
+      "notebook": {
+        "language": "r",
+        "snippet": "topics/single-cell/tutorials/scrna-case_monocle3-rstudio/preamble.md"
+      },
+      "url": "/topics/single-cell/tutorials/scrna-case_monocle3-rstudio/tutorial.html",
+      "topic_name": "single-cell",
+      "tutorial_name": "scrna-case_monocle3-rstudio",
+      "dir": "topics/single-cell/tutorials/scrna-case_monocle3-rstudio",
+      "id": "single-cell/scrna-case_monocle3-rstudio",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "contributors": [
+        {
+          "name": "Julia Jakiela",
+          "email": "juliajot36@gmail.com",
+          "joined": "2022-06",
+          "id": "wee-snufkin",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/wee-snufkin.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wee-snufkin/"
+        },
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        },
+        {
+          "name": "Pavankumar Videm",
+          "orcid": "0000-0002-5192-126X",
+          "joined": "2017-09",
+          "id": "pavanvidem",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/pavanvidem.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/"
+        },
+        {
+          "name": "Wendi Bacon",
+          "email": "wendi.bacon@open.ac.uk",
+          "twitter": "WendiBacon1",
+          "gitter": "nomadscientist",
+          "joined": "2020-03",
+          "elixir_node": "uk",
+          "orcid": "0000-0002-8170-8806",
+          "bio": "Lecturer at The Open University",
+          "id": "nomadscientist",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/nomadscientist.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/nomadscientist/"
+        },
+        {
+          "name": "EOSC-Life",
+          "joined": "2023-04",
+          "avatar": "https://www.eosc-life.eu/wp-content/themes/eosc-life-v2/assets/images/eosclogo.png",
+          "funder": true,
+          "funding_statement": "EOSC-Life has received funding from the European Union’s Horizon 2020 programme under grant agreement number 824087",
+          "id": "eosc-life",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/eosc-life.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/eosc-life/"
+        }
+      ],
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_monocle3-rstudio/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_monocle3-rstudio/tutorial.json"
       }
     }
   ]

@@ -39,7 +39,7 @@
         "lat": 45.77,
         "lon": 3.08
       },
-      "fediverse": "bebatut@piaille.fr",
+      "fediverse": "https://piaille.fr/@bebatut",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -300,7 +300,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -337,7 +337,7 @@
             "lat": 48.11,
             "lon": -1.64
           },
-          "fediverse": "abretaud@genomic.social",
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -506,8 +506,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//sequence-analysis/tutorials/quality-control/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//sequence-analysis/tutorials/quality-control/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/quality-control/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/quality-control/tutorial.json"
       }
     },
     {
@@ -634,8 +634,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//sequence-analysis/tutorials/human-reads-removal/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//sequence-analysis/tutorials/human-reads-removal/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.json"
       }
     },
     {
@@ -707,7 +707,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -720,6 +720,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -865,8 +866,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//sequence-analysis/tutorials/mapping/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//sequence-analysis/tutorials/mapping/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/mapping/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/mapping/tutorial.json"
       }
     },
     {
@@ -928,8 +929,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//sequence-analysis/tutorials/ncbi-blast-against-the-madland/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//sequence-analysis/tutorials/ncbi-blast-against-the-madland/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/ncbi-blast-against-the-madland/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/ncbi-blast-against-the-madland/tutorial.json"
       }
     }
   ]

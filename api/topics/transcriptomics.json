@@ -35,7 +35,7 @@
         "lat": 45.77,
         "lon": 3.08
       },
-      "fediverse": "bebatut@piaille.fr",
+      "fediverse": "https://piaille.fr/@bebatut",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -229,8 +229,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-viz-with-heatmap2/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-viz-with-heatmap2/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-viz-with-heatmap2/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-viz-with-heatmap2/tutorial.json"
       }
     },
     {
@@ -314,8 +314,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/goenrichment/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/goenrichment/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/goenrichment/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/goenrichment/tutorial.json"
       }
     },
     {
@@ -408,8 +408,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-genes-to-pathways/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-genes-to-pathways/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-genes-to-pathways/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-genes-to-pathways/tutorial.json"
       }
     },
     {
@@ -434,6 +434,7 @@
       "contributors": [
         {
           "name": "Mallory Freeberg",
+          "orcid": "0000-0003-2949-3921",
           "joined": "2017-09",
           "id": "malloryfreeberg",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/malloryfreeberg.json",
@@ -456,19 +457,6 @@
       "slides": false,
       "workflows": [
         {
-          "workflow": "sRNA_seq_Step_2_Salmon_and_DESeq2.ga",
-          "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/srna/workflows/sRNA_seq_Step_2_Salmon_and_DESeq2.ga",
-          "path": "topics/transcriptomics/tutorials/srna/workflows/sRNA_seq_Step_2_Salmon_and_DESeq2.ga",
-          "wfid": "transcriptomics-srna",
-          "wfname": "srna_seq_step_2_salmon_and_deseq2",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/transcriptomics-srna/versions/srna_seq_step_2_salmon_and_deseq2",
-          "license": null,
-          "creators": [
-
-          ]
-        },
-        {
           "workflow": "sRNA_seq_Step_1_Read_preprocessing_and_removal_of_artifacts.ga",
           "tests": false,
           "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/srna/workflows/sRNA_seq_Step_1_Read_preprocessing_and_removal_of_artifacts.ga",
@@ -476,6 +464,19 @@
           "wfid": "transcriptomics-srna",
           "wfname": "srna_seq_step_1_read_preprocessing_and_removal_of_artifacts",
           "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/transcriptomics-srna/versions/srna_seq_step_1_read_preprocessing_and_removal_of_artifacts",
+          "license": null,
+          "creators": [
+
+          ]
+        },
+        {
+          "workflow": "sRNA_seq_Step_2_Salmon_and_DESeq2.ga",
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/srna/workflows/sRNA_seq_Step_2_Salmon_and_DESeq2.ga",
+          "path": "topics/transcriptomics/tutorials/srna/workflows/sRNA_seq_Step_2_Salmon_and_DESeq2.ga",
+          "wfid": "transcriptomics-srna",
+          "wfname": "srna_seq_step_2_salmon_and_deseq2",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/transcriptomics-srna/versions/srna_seq_step_2_salmon_and_deseq2",
           "license": null,
           "creators": [
 
@@ -506,8 +507,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/srna/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/srna/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/srna/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/srna/tutorial.json"
       }
     },
     {
@@ -533,6 +534,7 @@
       "contributors": [
         {
           "name": "Pavankumar Videm",
+          "orcid": "0000-0002-5192-126X",
           "joined": "2017-09",
           "id": "pavanvidem",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/pavanvidem.json",
@@ -591,8 +593,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-interactome/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-interactome/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-interactome/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-interactome/tutorial.json"
       }
     },
     {
@@ -715,8 +717,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-viz-with-volcanoplot/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-viz-with-volcanoplot/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot/tutorial.json"
       }
     },
     {
@@ -816,19 +818,6 @@
       "slides": false,
       "workflows": [
         {
-          "workflow": "rna-seq-reads-to-counts.ga",
-          "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/workflows/rna-seq-reads-to-counts.ga",
-          "path": "topics/transcriptomics/tutorials/rna-seq-reads-to-counts/workflows/rna-seq-reads-to-counts.ga",
-          "wfid": "transcriptomics-rna-seq-reads-to-counts",
-          "wfname": "rna-seq-reads-to-counts",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/transcriptomics-rna-seq-reads-to-counts/versions/rna-seq-reads-to-counts",
-          "license": null,
-          "creators": [
-
-          ]
-        },
-        {
           "workflow": "qc_report.ga",
           "tests": false,
           "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/workflows/qc_report.ga",
@@ -836,6 +825,19 @@
           "wfid": "transcriptomics-rna-seq-reads-to-counts",
           "wfname": "qc_report",
           "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/transcriptomics-rna-seq-reads-to-counts/versions/qc_report",
+          "license": null,
+          "creators": [
+
+          ]
+        },
+        {
+          "workflow": "rna-seq-reads-to-counts.ga",
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/workflows/rna-seq-reads-to-counts.ga",
+          "path": "topics/transcriptomics/tutorials/rna-seq-reads-to-counts/workflows/rna-seq-reads-to-counts.ga",
+          "wfid": "transcriptomics-rna-seq-reads-to-counts",
+          "wfname": "rna-seq-reads-to-counts",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/transcriptomics-rna-seq-reads-to-counts/versions/rna-seq-reads-to-counts",
           "license": null,
           "creators": [
 
@@ -876,8 +878,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.json"
       }
     },
     {
@@ -902,6 +904,7 @@
       "contributors": [
         {
           "name": "Pavankumar Videm",
+          "orcid": "0000-0002-5192-126X",
           "joined": "2017-09",
           "id": "pavanvidem",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/pavanvidem.json",
@@ -956,8 +959,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/small_ncrna_clustering/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/small_ncrna_clustering/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/small_ncrna_clustering/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/small_ncrna_clustering/tutorial.json"
       }
     },
     {
@@ -995,7 +998,7 @@
             "lat": 48.11,
             "lon": -1.64
           },
-          "fediverse": "abretaud@genomic.social",
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -1089,8 +1092,8 @@
         "work-in-progress"
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/full-de-novo/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/full-de-novo/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/full-de-novo/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/full-de-novo/tutorial.json"
       }
     },
     {
@@ -1149,7 +1152,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1219,8 +1222,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/clipseq/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/clipseq/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/clipseq/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/clipseq/tutorial.json"
       }
     },
     {
@@ -1380,8 +1383,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-counts-to-genes/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-counts-to-genes/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-counts-to-genes/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-counts-to-genes/tutorial.json"
       }
     },
     {
@@ -1466,8 +1469,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/network-analysis-with-heinz/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/network-analysis-with-heinz/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/network-analysis-with-heinz/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/network-analysis-with-heinz/tutorial.json"
       }
     },
     {
@@ -1506,6 +1509,7 @@
         },
         {
           "name": "Pavankumar Videm",
+          "orcid": "0000-0002-5192-126X",
           "joined": "2017-09",
           "id": "pavanvidem",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/pavanvidem.json",
@@ -1659,8 +1663,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/mirna-target-finder/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/mirna-target-finder/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.json"
       }
     },
     {
@@ -1670,7 +1674,9 @@
       "priority": 1,
       "title": "Introduction to Transcriptomics",
       "redirect_from": [
-        "/topics/transcriptomics/slides/introduction"
+        "/topics/transcriptomics/slides/introduction",
+        "/short/transcriptomics/introduction/slides",
+        "/short/S00094"
       ],
       "contributors": [
         {
@@ -1688,7 +1694,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1772,8 +1778,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/introduction/slides.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/introduction/slides.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/introduction/slides.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/introduction/slides.json"
       }
     },
     {
@@ -1837,8 +1843,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-viz-with-cummerbund/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-viz-with-cummerbund/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-viz-with-cummerbund/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-viz-with-cummerbund/tutorial.json"
       }
     },
     {
@@ -1894,7 +1900,7 @@
             "lat": 48.11,
             "lon": -1.64
           },
-          "fediverse": "abretaud@genomic.social",
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -1954,8 +1960,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-analysis-with-askomics-it/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-analysis-with-askomics-it/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-analysis-with-askomics-it/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-analysis-with-askomics-it/tutorial.json"
       }
     },
     {
@@ -2014,8 +2020,8 @@
         "work-in-progress"
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rb-rnaseq/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rb-rnaseq/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rb-rnaseq/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rb-rnaseq/tutorial.json"
       }
     },
     {
@@ -2077,7 +2083,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -2180,8 +2186,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-counts-to-viz-in-r/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-counts-to-viz-in-r/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-counts-to-viz-in-r/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-counts-to-viz-in-r/tutorial.json"
       }
     },
     {
@@ -2302,8 +2308,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-viz-with-volcanoplot-r/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/rna-seq-viz-with-volcanoplot-r/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot-r/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot-r/tutorial.json"
       }
     },
     {
@@ -2432,19 +2438,6 @@
           ]
         },
         {
-          "workflow": "qc-mapping-counting.ga",
-          "tests": true,
-          "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/ref-based/workflows/qc-mapping-counting.ga",
-          "path": "topics/transcriptomics/tutorials/ref-based/workflows/qc-mapping-counting.ga",
-          "wfid": "transcriptomics-ref-based",
-          "wfname": "qc-mapping-counting",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/transcriptomics-ref-based/versions/qc-mapping-counting",
-          "license": null,
-          "creators": [
-
-          ]
-        },
-        {
           "workflow": "qc-mapping-counting-paired-and-single.ga",
           "tests": false,
           "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/ref-based/workflows/qc-mapping-counting-paired-and-single.ga",
@@ -2452,6 +2445,19 @@
           "wfid": "transcriptomics-ref-based",
           "wfname": "qc-mapping-counting-paired-and-single",
           "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/transcriptomics-ref-based/versions/qc-mapping-counting-paired-and-single",
+          "license": null,
+          "creators": [
+
+          ]
+        },
+        {
+          "workflow": "qc-mapping-counting.ga",
+          "tests": true,
+          "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/ref-based/workflows/qc-mapping-counting.ga",
+          "path": "topics/transcriptomics/tutorials/ref-based/workflows/qc-mapping-counting.ga",
+          "wfid": "transcriptomics-ref-based",
+          "wfname": "qc-mapping-counting",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/transcriptomics-ref-based/versions/qc-mapping-counting",
           "license": null,
           "creators": [
 
@@ -2526,13 +2532,14 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
         },
         {
           "name": "Mallory Freeberg",
+          "orcid": "0000-0003-2949-3921",
           "joined": "2017-09",
           "id": "malloryfreeberg",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/malloryfreeberg.json",
@@ -2541,6 +2548,7 @@
         {
           "name": "Mo Heydarian",
           "email": "mheydarian@gmail.com",
+          "orcid": "0000-0001-9449-9364",
           "joined": "2017-09",
           "id": "moheydarian",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/moheydarian.json",
@@ -2558,6 +2566,7 @@
         },
         {
           "name": "Pavankumar Videm",
+          "orcid": "0000-0002-5192-126X",
           "joined": "2017-09",
           "id": "pavanvidem",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/pavanvidem.json",
@@ -2566,6 +2575,7 @@
         {
           "name": "Clemens Blank",
           "email": "blankclemens@gmail.com",
+          "orcid": "0000-0002-1726-2256",
           "joined": "2017-09",
           "elixir_node": "de",
           "id": "blankclemens",
@@ -2625,6 +2635,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -2637,8 +2648,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/ref-based/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/ref-based/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/ref-based/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/ref-based/tutorial.json"
       }
     },
     {
@@ -2768,6 +2779,7 @@
       "contributors": [
         {
           "name": "Mallory Freeberg",
+          "orcid": "0000-0003-2949-3921",
           "joined": "2017-09",
           "id": "malloryfreeberg",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/malloryfreeberg.json",
@@ -2776,6 +2788,7 @@
         {
           "name": "Mo Heydarian",
           "email": "mheydarian@gmail.com",
+          "orcid": "0000-0001-9449-9364",
           "joined": "2017-09",
           "id": "moheydarian",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/moheydarian.json",
@@ -2791,8 +2804,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/de-novo/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//transcriptomics/tutorials/de-novo/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/de-novo/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/transcriptomics/tutorials/de-novo/tutorial.json"
       }
     }
   ]
