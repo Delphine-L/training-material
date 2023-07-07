@@ -3,12 +3,6 @@ install_repository_dependencies: True
 install_resolver_dependencies: True
 
 tools:
-- name: meryl
-  owner: iuc
-  revisions:
-  - eadfd71dde37
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: genomescope
   owner: iuc
   revisions:
@@ -21,16 +15,16 @@ tools:
   - edbb6c5028f5
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: fastqc
-  owner: devteam
-  revisions:
-  - e7b2202befea
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: multiqc
   owner: iuc
   revisions:
   - 75c93c70d094
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastp
+  owner: iuc
+  revisions:
+  - 1d8fe9bc4cb0
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: flye
@@ -75,33 +69,39 @@ tools:
   - 0d243f458b53
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: fastp
-  owner: iuc
-  revisions:
-  - 1d8fe9bc4cb0
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: meryl
   owner: iuc
   revisions:
   - eadfd71dde37
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: racon
+  owner: bgruening
+  revisions:
+  - a199cd7ac344
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: racon
+  owner: bgruening
+  revisions:
+  - a199cd7ac344
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fasta_stats
+  owner: iuc
+  revisions:
+  - 56022eb50bbd
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastp
+  owner: iuc
+  revisions:
+  - 1d8fe9bc4cb0
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: fastqc
   owner: devteam
   revisions:
   - e7b2202befea
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: racon
-  owner: bgruening
-  revisions:
-  - a199cd7ac344
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: racon
-  owner: bgruening
-  revisions:
-  - a199cd7ac344
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
