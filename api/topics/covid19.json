@@ -19,37 +19,30 @@
   "materials": [
     {
       "layout": "tutorial_hands_on",
-      "title": "Removal of human reads from SARS-CoV-2 sequencing data",
+      "title": "Virtual screening of the SARS-CoV-2 main protease with rxDock and pose scoring",
+      "level": "Intermediate",
+      "zenodo_link": "https://zenodo.org/record/3730474",
       "questions": [
-        "How can you remove traces of human sequence data from a sequenced viral sample?"
+        "How can candidate ligands be generated and docked to a protein in Galaxy?",
+        "How can the poses of the docked ligands be evaluated?",
+        "How can a workflow for drug virtual screening be constructed in Galaxy?"
       ],
       "objectives": [
-        "Obtain viral (SARS-CoV-2) sequencing data with contaminating human reads from public sources",
-        "Organize the data into a collection",
-        "Preprocess and map the data against the human reference genome",
-        "Eliminate reads/read pairs that map to the human genome from the original data"
+        "Understand how Galaxy was used to perform docking and pose scoring on the SARS-CoV-2 main protease (MPro).",
+        "Replicate the study on a (very) small scale",
+        "Gain familiarity with the docking and scoring techniques involved."
       ],
-      "time_estimation": "1h",
-      "level": "Intermediate",
+      "time_estimation": "2H",
       "key_points": [
-        "Before submitting raw viral sequencing data to public databases you will want to remove human sequence traces",
-        "Human reads can be identified by mapping the data to the human reference genome",
-        "After mapping, you can extract the read identifiers of the non-human reads and use these to extract just the desired original sequenced reads from the input data"
+        "Galaxy can support large, rapid studies in computational chemistry",
+        "Protein-ligand docking contributes to the discovery of new drugs"
       ],
       "requirements": [
         {
           "type": "internal",
-          "topic_name": "sequence-analysis",
+          "topic_name": "computational-chemistry",
           "tutorials": [
-            "quality-control",
-            "mapping"
-          ]
-        },
-        {
-          "type": "internal",
-          "topic_name": "galaxy-interface",
-          "tutorials": [
-            "collections"
+            "cheminformatics"
           ]
         }
       ],
@@ -58,197 +51,21 @@
       ],
       "contributors": [
         {
-          "name": "Wolfgang Maier",
-          "orcid": "0000-0002-9464-6640",
-          "joined": "2017-09",
+          "name": "Simon Bray",
+          "joined": "2019-05",
           "elixir_node": "de",
-          "id": "wm75",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/"
+          "id": "simonbray",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/simonbray.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/simonbray/"
         }
       ],
-      "url": "/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html",
-      "topic_name": "sequence-analysis",
-      "tutorial_name": "human-reads-removal",
-      "dir": "topics/sequence-analysis/tutorials/human-reads-removal",
-      "id": "sequence-analysis/human-reads-removal",
+      "url": "/topics/computational-chemistry/tutorials/covid19-docking/tutorial.html",
+      "topic_name": "computational-chemistry",
+      "tutorial_name": "covid19-docking",
+      "dir": "topics/computational-chemistry/tutorials/covid19-docking",
+      "id": "computational-chemistry/covid19-docking",
       "video_library": {
         "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": {
-          "description": null,
-          "materials": [
-            {
-              "link": "topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html",
-              "title": "Removal of human reads from SARS-CoV-2 sequencing data",
-              "type": "Tutorial"
-            },
-            {
-              "external": true,
-              "link": "https://usegalaxy.eu/u/wolfgang-maier/h/removal-of-human-reads-from-sars-cov-2-sequencing-data",
-              "title": "Example History",
-              "type": "Example History"
-            }
-          ],
-          "tags": [
-            "sequence-analysis"
-          ],
-          "type": "Tutorial",
-          "gtn_id": "sequence-analysis/human-reads-removal",
-          "title": "Removal of human reads from SARS-CoV-2 sequencing data"
-        },
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "workflows": [
-        {
-          "workflow": "human-reads-removal.ga",
-          "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/human-reads-removal/workflows/human-reads-removal.ga",
-          "path": "topics/sequence-analysis/tutorials/human-reads-removal/workflows/human-reads-removal.ga",
-          "wfid": "sequence-analysis-human-reads-removal",
-          "wfname": "human-reads-removal",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/sequence-analysis-human-reads-removal/versions/human-reads-removal",
-          "license": null,
-          "creators": [
-
-          ]
-        }
-      ],
-      "tools": [
-        "Grep1",
-        "__UNZIP_COLLECTION__",
-        "__ZIP_COLLECTION__",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2",
-        "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.2",
-        "toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx/1.9+galaxy1",
-        "toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_subseq/1.3.1",
-        "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
-        "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1"
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "Mutation calling, viral genome reconstruction and lineage/clade assignment from SARS-CoV-2 sequencing data",
-      "subtopic": "one-health",
-      "level": "Intermediate",
-      "zenodo_link": "https://zenodo.org/record/5036687",
-      "questions": [
-        "How can we extract annotated allelic variants in SARS-Cov-2 sequences in Galaxy?",
-        "Which tools and workflows can we use to identify SARS-CoV-2 lineages in Galaxy?"
-      ],
-      "objectives": [
-        "Repeat SARS-CoV-2 data preparation",
-        "Select and run workflow to extract annotated allelic variants from FASTQ files",
-        "Run workflow to summarize and generate report for previously called allelic variants",
-        "Interpret summaries for annotated allelic variants",
-        "Run workflow to extract consensus sequences",
-        "Select and run tools to assign clades/lineages"
-      ],
-      "time_estimation": "3H",
-      "key_points": [
-        "4 specialized, best-practice variant calling workflows are available for the identification of annotated allelic variants from raw sequencing data depending on the exact type of input",
-        "Data from batches of samples can be processed in parallel using collections",
-        "Annotated allelic variants can be used to build consensus sequences for and assign each sample to known viral clades/lineages"
-      ],
-      "contributors": [
-        {
-          "name": "Wolfgang Maier",
-          "orcid": "0000-0002-9464-6640",
-          "joined": "2017-09",
-          "elixir_node": "de",
-          "id": "wm75",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/"
-        },
-        {
-          "name": "Bérénice Batut",
-          "email": "berenice.batut@gmail.com",
-          "twitter": "bebatut",
-          "linkedin": "berenicebatut",
-          "gitter": "bebatut",
-          "orcid": "0000-0001-9852-1987",
-          "joined": "2017-09",
-          "elixir_node": "de",
-          "contact_for_training": true,
-          "location": {
-            "country": "FR",
-            "lat": 45.77,
-            "lon": 3.08
-          },
-          "fediverse": "https://piaille.fr/@bebatut",
-          "id": "bebatut",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
-        }
-      ],
-      "tags": [
-        "covid19",
-        "virology"
-      ],
-      "url": "/topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.html",
-      "topic_name": "variant-analysis",
-      "tutorial_name": "sars-cov-2-variant-discovery",
-      "dir": "topics/variant-analysis/tutorials/sars-cov-2-variant-discovery",
-      "id": "variant-analysis/sars-cov-2-variant-discovery",
-      "video_library": {
-        "tutorial": {
-          "materials": [
-            {
-              "link": "topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.html",
-              "type": "Tutorial"
-            }
-          ],
-          "tags": [
-            "variant-analysis"
-          ],
-          "type": "Tutorial",
-          "versions": [
-            {
-              "link": "hjlmCWQhBvI",
-              "date": "2023-05-10",
-              "speakers": [
-                "wm75"
-              ],
-              "captions": [
-                "wm75"
-              ],
-              "length": "55M"
-            },
-            {
-              "captions": [
-                "hexylena"
-              ],
-              "date": "2021-08-09",
-              "length": "1H30M",
-              "link": "vnFQ2fR_fzw",
-              "speakers": [
-                "wm75"
-              ]
-            }
-          ],
-          "gtn_id": "variant-analysis/sars-cov-2-variant-discovery",
-          "title": "Mutation calling, viral genome reconstruction and lineage/clade assignment from SARS-CoV-2 sequencing data",
-          "captioned": true
-        },
         "slides": null,
         "demo": null,
         "both": null,
@@ -256,13 +73,39 @@
       },
       "hands_on": true,
       "slides": false,
+      "workflows": [
+        {
+          "workflow": "workflow.ga",
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/computational-chemistry/tutorials/covid19-docking/workflows/workflow.ga",
+          "path": "topics/computational-chemistry/tutorials/covid19-docking/workflows/workflow.ga",
+          "wfid": "computational-chemistry-covid19-docking",
+          "wfname": "workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/computational-chemistry-covid19-docking/versions/workflow",
+          "license": null,
+          "creators": [
+
+          ]
+        }
+      ],
       "tools": [
-        "Cut1",
-        "Filter1",
-        "Grouping1",
-        "join1",
-        "toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/0.14.4+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/3.1.4+galaxy0"
+        "toolshed.g2.bx.psu.edu/repos/bgruening/ctb_frankenstein_ligand/ctb_frankenstein_ligand/0.1.1",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/ctb_frankenstein_ligand/ctb_frankenstein_ligand/2013.1-0+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/0.1",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/2020.03.4+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_compound_convert/openbabel_compound_convert/2.4.2.2.0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_compound_convert/openbabel_compound_convert/3.1.1+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/rdock_rbcavity/rdock_rbcavity/0.1",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/rdock_rbdock/rdock_rbdock/0.1.4",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/rxdock_rbcavity/rxdock_rbcavity/0.1.5",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/rxdock_rbdock/rxdock_rbdock/0.1.5",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.4.0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.5.0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/sucos_max_score/sucos_max_score/0.2.3",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/sucos_max_score/sucos_max_score/2020.03.4+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/xchem_transfs_scoring/xchem_transfs_scoring/0.4.0",
+        "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2",
+        "xchem_pose_scoring"
       ],
       "tours": false,
       "video": false,
@@ -277,8 +120,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/computational-chemistry/tutorials/covid19-docking/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/computational-chemistry/tutorials/covid19-docking/tutorial.json"
       }
     },
     {
@@ -426,53 +269,108 @@
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Virtual screening of the SARS-CoV-2 main protease with rxDock and pose scoring",
+      "title": "Mutation calling, viral genome reconstruction and lineage/clade assignment from SARS-CoV-2 sequencing data",
+      "subtopic": "one-health",
       "level": "Intermediate",
-      "zenodo_link": "https://zenodo.org/record/3730474",
+      "zenodo_link": "https://zenodo.org/record/5036687",
       "questions": [
-        "How can candidate ligands be generated and docked to a protein in Galaxy?",
-        "How can the poses of the docked ligands be evaluated?",
-        "How can a workflow for drug virtual screening be constructed in Galaxy?"
+        "How can we extract annotated allelic variants in SARS-Cov-2 sequences in Galaxy?",
+        "Which tools and workflows can we use to identify SARS-CoV-2 lineages in Galaxy?"
       ],
       "objectives": [
-        "Understand how Galaxy was used to perform docking and pose scoring on the SARS-CoV-2 main protease (MPro).",
-        "Replicate the study on a (very) small scale",
-        "Gain familiarity with the docking and scoring techniques involved."
+        "Repeat SARS-CoV-2 data preparation",
+        "Select and run workflow to extract annotated allelic variants from FASTQ files",
+        "Run workflow to summarize and generate report for previously called allelic variants",
+        "Interpret summaries for annotated allelic variants",
+        "Run workflow to extract consensus sequences",
+        "Select and run tools to assign clades/lineages"
       ],
-      "time_estimation": "2H",
+      "time_estimation": "3H",
       "key_points": [
-        "Galaxy can support large, rapid studies in computational chemistry",
-        "Protein-ligand docking contributes to the discovery of new drugs"
-      ],
-      "requirements": [
-        {
-          "type": "internal",
-          "topic_name": "computational-chemistry",
-          "tutorials": [
-            "cheminformatics"
-          ]
-        }
-      ],
-      "tags": [
-        "covid19"
+        "4 specialized, best-practice variant calling workflows are available for the identification of annotated allelic variants from raw sequencing data depending on the exact type of input",
+        "Data from batches of samples can be processed in parallel using collections",
+        "Annotated allelic variants can be used to build consensus sequences for and assign each sample to known viral clades/lineages"
       ],
       "contributors": [
         {
-          "name": "Simon Bray",
-          "joined": "2019-05",
+          "name": "Wolfgang Maier",
+          "orcid": "0000-0002-9464-6640",
+          "joined": "2017-09",
           "elixir_node": "de",
-          "id": "simonbray",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/simonbray.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/simonbray/"
+          "id": "wm75",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/"
+        },
+        {
+          "name": "Bérénice Batut",
+          "email": "berenice.batut@gmail.com",
+          "twitter": "bebatut",
+          "linkedin": "berenicebatut",
+          "gitter": "bebatut",
+          "orcid": "0000-0001-9852-1987",
+          "joined": "2017-09",
+          "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
+          "id": "bebatut",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
         }
       ],
-      "url": "/topics/computational-chemistry/tutorials/covid19-docking/tutorial.html",
-      "topic_name": "computational-chemistry",
-      "tutorial_name": "covid19-docking",
-      "dir": "topics/computational-chemistry/tutorials/covid19-docking",
-      "id": "computational-chemistry/covid19-docking",
+      "tags": [
+        "covid19",
+        "virology"
+      ],
+      "url": "/topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.html",
+      "topic_name": "variant-analysis",
+      "tutorial_name": "sars-cov-2-variant-discovery",
+      "dir": "topics/variant-analysis/tutorials/sars-cov-2-variant-discovery",
+      "id": "variant-analysis/sars-cov-2-variant-discovery",
       "video_library": {
-        "tutorial": null,
+        "tutorial": {
+          "materials": [
+            {
+              "link": "topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.html",
+              "type": "Tutorial"
+            }
+          ],
+          "tags": [
+            "variant-analysis"
+          ],
+          "type": "Tutorial",
+          "versions": [
+            {
+              "link": "hjlmCWQhBvI",
+              "date": "2023-05-10",
+              "speakers": [
+                "wm75"
+              ],
+              "captions": [
+                "wm75"
+              ],
+              "length": "55M"
+            },
+            {
+              "captions": [
+                "hexylena"
+              ],
+              "date": "2021-08-09",
+              "length": "1H30M",
+              "link": "vnFQ2fR_fzw",
+              "speakers": [
+                "wm75"
+              ]
+            }
+          ],
+          "gtn_id": "variant-analysis/sars-cov-2-variant-discovery",
+          "title": "Mutation calling, viral genome reconstruction and lineage/clade assignment from SARS-CoV-2 sequencing data",
+          "captioned": true
+        },
         "slides": null,
         "demo": null,
         "both": null,
@@ -480,39 +378,13 @@
       },
       "hands_on": true,
       "slides": false,
-      "workflows": [
-        {
-          "workflow": "workflow.ga",
-          "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/computational-chemistry/tutorials/covid19-docking/workflows/workflow.ga",
-          "path": "topics/computational-chemistry/tutorials/covid19-docking/workflows/workflow.ga",
-          "wfid": "computational-chemistry-covid19-docking",
-          "wfname": "workflow",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/computational-chemistry-covid19-docking/versions/workflow",
-          "license": null,
-          "creators": [
-
-          ]
-        }
-      ],
       "tools": [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/ctb_frankenstein_ligand/ctb_frankenstein_ligand/0.1.1",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/ctb_frankenstein_ligand/ctb_frankenstein_ligand/2013.1-0+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/0.1",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/2020.03.4+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_compound_convert/openbabel_compound_convert/2.4.2.2.0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_compound_convert/openbabel_compound_convert/3.1.1+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/rdock_rbcavity/rdock_rbcavity/0.1",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/rdock_rbdock/rdock_rbdock/0.1.4",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/rxdock_rbcavity/rxdock_rbcavity/0.1.5",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/rxdock_rbdock/rxdock_rbdock/0.1.5",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.4.0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.5.0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/sucos_max_score/sucos_max_score/0.2.3",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/sucos_max_score/sucos_max_score/2020.03.4+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/xchem_transfs_scoring/xchem_transfs_scoring/0.4.0",
-        "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2",
-        "xchem_pose_scoring"
+        "Cut1",
+        "Filter1",
+        "Grouping1",
+        "join1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/0.14.4+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/3.1.4+galaxy0"
       ],
       "tours": false,
       "video": false,
@@ -527,8 +399,304 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/computational-chemistry/tutorials/covid19-docking/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/computational-chemistry/tutorials/covid19-docking/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads",
+      "zenodo_link": "https://doi.org/10.5281/zenodo.3732358",
+      "questions": [
+        "How can a genome of interest be assembled against a background of contaminating reads from other genomes?",
+        "How can sequencing data from public sources be turned into assembly-ready polished datasets?"
+      ],
+      "objectives": [
+        "Obtain viral (SARS-CoV-2) sequencing data with contaminating human reads from public sources",
+        "Organize the data into collections and check its quality",
+        "Detect and remove human reads",
+        "Assemble retained reads and explore the results"
+      ],
+      "time_estimation": "4h",
+      "level": "Intermediate",
+      "key_points": [
+        "Certain types of NGS samples can be heavily contaminated with sequences from other genomes",
+        "Reads from known/expected contaminating sources can be identified by mapping to the respective genomes",
+        "After mapping, use filtering tools to remove identified contaminating reads, and use conversion tools to convert remaining mapped reads back into raw sequenced reads expected by most downstream tools"
+      ],
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "assembly",
+          "tutorials": [
+            "unicycler-assembly"
+          ]
+        },
+        {
+          "type": "internal",
+          "topic_name": "sequence-analysis",
+          "tutorials": [
+            "mapping"
+          ]
+        },
+        {
+          "type": "internal",
+          "topic_name": "galaxy-interface",
+          "tutorials": [
+            "collections"
+          ]
+        }
+      ],
+      "tags": [
+        "covid19"
+      ],
+      "contributors": [
+        {
+          "name": "Wolfgang Maier",
+          "orcid": "0000-0002-9464-6640",
+          "joined": "2017-09",
+          "elixir_node": "de",
+          "id": "wm75",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/"
+        }
+      ],
+      "url": "/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html",
+      "topic_name": "assembly",
+      "tutorial_name": "assembly-with-preprocessing",
+      "dir": "topics/assembly/tutorials/assembly-with-preprocessing",
+      "id": "assembly/assembly-with-preprocessing",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": {
+          "description": "This tutorial guides you through the preprocessing of sequencing data of bronchoalveolar lavage fluid (BALF) samples obtained from early COVID-19 patients in China. Since such samples are expected to be contaminated signficantly with human sequenced reads, the goal is to enrich the data for SARS-CoV-2 reads by identifying and discarding reads of human origin before trying to assemble the viral genome sequence.",
+          "materials": [
+            {
+              "link": "topics/assembly/tutorials/assembly-with-preprocessing/slides.html",
+              "type": "Slides"
+            },
+            {
+              "link": "topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html",
+              "type": "Tutorial"
+            }
+          ],
+          "tags": [
+            "assembly"
+          ],
+          "type": "Tutorial",
+          "versions": [
+            {
+              "captions": [
+                "mtekman"
+              ],
+              "date": "2021-02-15",
+              "galaxy_version": "21.01",
+              "length": "25M",
+              "link": "jNFLYhjgJPs",
+              "speakers": [
+                "gallardoalba"
+              ]
+            }
+          ],
+          "gtn_id": "assembly/assembly-with-preprocessing",
+          "title": "Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads",
+          "captioned": true
+        },
+        "session": null
+      },
+      "hands_on": true,
+      "slides": true,
+      "workflows": [
+        {
+          "workflow": "assembly_with_preprocessing.ga",
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/assembly-with-preprocessing/workflows/assembly_with_preprocessing.ga",
+          "path": "topics/assembly/tutorials/assembly-with-preprocessing/workflows/assembly_with_preprocessing.ga",
+          "wfid": "assembly-assembly-with-preprocessing",
+          "wfname": "assembly_with_preprocessing",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-assembly-with-preprocessing/versions/assembly_with_preprocessing",
+          "license": null,
+          "creators": [
+
+          ]
+        },
+        {
+          "workflow": "assembly_with_preprocessing_and_sra_download.ga",
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/assembly-with-preprocessing/workflows/assembly_with_preprocessing_and_sra_download.ga",
+          "path": "topics/assembly/tutorials/assembly-with-preprocessing/workflows/assembly_with_preprocessing_and_sra_download.ga",
+          "wfid": "assembly-assembly-with-preprocessing",
+          "wfname": "assembly_with_preprocessing_and_sra_download",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-assembly-with-preprocessing/versions/assembly_with_preprocessing_and_sra_download",
+          "license": null,
+          "creators": [
+
+          ]
+        }
+      ],
+      "tools": [
+        "__ZIP_COLLECTION__",
+        "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.4.3+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/devteam/fasta_filter_by_length/fasta_filter_by_length/1.2",
+        "toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.2+galaxy2",
+        "toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy2",
+        "toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.19.5+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.17+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7",
+        "toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.25.0+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx/1.9+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.9+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_sample/1.3.2",
+        "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/2.10.4+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/unicycler/unicycler/0.4.8.0",
+        "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2"
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Removal of human reads from SARS-CoV-2 sequencing data",
+      "questions": [
+        "How can you remove traces of human sequence data from a sequenced viral sample?"
+      ],
+      "objectives": [
+        "Obtain viral (SARS-CoV-2) sequencing data with contaminating human reads from public sources",
+        "Organize the data into a collection",
+        "Preprocess and map the data against the human reference genome",
+        "Eliminate reads/read pairs that map to the human genome from the original data"
+      ],
+      "time_estimation": "1h",
+      "level": "Intermediate",
+      "key_points": [
+        "Before submitting raw viral sequencing data to public databases you will want to remove human sequence traces",
+        "Human reads can be identified by mapping the data to the human reference genome",
+        "After mapping, you can extract the read identifiers of the non-human reads and use these to extract just the desired original sequenced reads from the input data"
+      ],
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "sequence-analysis",
+          "tutorials": [
+            "quality-control",
+            "mapping"
+          ]
+        },
+        {
+          "type": "internal",
+          "topic_name": "galaxy-interface",
+          "tutorials": [
+            "collections"
+          ]
+        }
+      ],
+      "tags": [
+        "covid19"
+      ],
+      "contributors": [
+        {
+          "name": "Wolfgang Maier",
+          "orcid": "0000-0002-9464-6640",
+          "joined": "2017-09",
+          "elixir_node": "de",
+          "id": "wm75",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/"
+        }
+      ],
+      "url": "/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html",
+      "topic_name": "sequence-analysis",
+      "tutorial_name": "human-reads-removal",
+      "dir": "topics/sequence-analysis/tutorials/human-reads-removal",
+      "id": "sequence-analysis/human-reads-removal",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": {
+          "description": null,
+          "materials": [
+            {
+              "link": "topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html",
+              "title": "Removal of human reads from SARS-CoV-2 sequencing data",
+              "type": "Tutorial"
+            },
+            {
+              "external": true,
+              "link": "https://usegalaxy.eu/u/wolfgang-maier/h/removal-of-human-reads-from-sars-cov-2-sequencing-data",
+              "title": "Example History",
+              "type": "Example History"
+            }
+          ],
+          "tags": [
+            "sequence-analysis"
+          ],
+          "type": "Tutorial",
+          "gtn_id": "sequence-analysis/human-reads-removal",
+          "title": "Removal of human reads from SARS-CoV-2 sequencing data"
+        },
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "workflows": [
+        {
+          "workflow": "human-reads-removal.ga",
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/human-reads-removal/workflows/human-reads-removal.ga",
+          "path": "topics/sequence-analysis/tutorials/human-reads-removal/workflows/human-reads-removal.ga",
+          "wfid": "sequence-analysis-human-reads-removal",
+          "wfname": "human-reads-removal",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/sequence-analysis-human-reads-removal/versions/human-reads-removal",
+          "license": null,
+          "creators": [
+
+          ]
+        }
+      ],
+      "tools": [
+        "Grep1",
+        "__UNZIP_COLLECTION__",
+        "__ZIP_COLLECTION__",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2",
+        "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.2",
+        "toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx/1.9+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_subseq/1.3.1",
+        "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+        "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.1"
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.json"
       }
     },
     {
@@ -785,174 +953,6 @@
       "urls": {
         "hands_on": "https://training.galaxyproject.org/training-material/api/topics/galaxy-interface/tutorials/workflow-automation/tutorial.json",
         "slides": "https://training.galaxyproject.org/training-material/api/topics/galaxy-interface/tutorials/workflow-automation/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads",
-      "zenodo_link": "https://doi.org/10.5281/zenodo.3732358",
-      "questions": [
-        "How can a genome of interest be assembled against a background of contaminating reads from other genomes?",
-        "How can sequencing data from public sources be turned into assembly-ready polished datasets?"
-      ],
-      "objectives": [
-        "Obtain viral (SARS-CoV-2) sequencing data with contaminating human reads from public sources",
-        "Organize the data into collections and check its quality",
-        "Detect and remove human reads",
-        "Assemble retained reads and explore the results"
-      ],
-      "time_estimation": "4h",
-      "level": "Intermediate",
-      "key_points": [
-        "Certain types of NGS samples can be heavily contaminated with sequences from other genomes",
-        "Reads from known/expected contaminating sources can be identified by mapping to the respective genomes",
-        "After mapping, use filtering tools to remove identified contaminating reads, and use conversion tools to convert remaining mapped reads back into raw sequenced reads expected by most downstream tools"
-      ],
-      "requirements": [
-        {
-          "type": "internal",
-          "topic_name": "assembly",
-          "tutorials": [
-            "unicycler-assembly"
-          ]
-        },
-        {
-          "type": "internal",
-          "topic_name": "sequence-analysis",
-          "tutorials": [
-            "mapping"
-          ]
-        },
-        {
-          "type": "internal",
-          "topic_name": "galaxy-interface",
-          "tutorials": [
-            "collections"
-          ]
-        }
-      ],
-      "tags": [
-        "covid19"
-      ],
-      "contributors": [
-        {
-          "name": "Wolfgang Maier",
-          "orcid": "0000-0002-9464-6640",
-          "joined": "2017-09",
-          "elixir_node": "de",
-          "id": "wm75",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/"
-        }
-      ],
-      "url": "/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html",
-      "topic_name": "assembly",
-      "tutorial_name": "assembly-with-preprocessing",
-      "dir": "topics/assembly/tutorials/assembly-with-preprocessing",
-      "id": "assembly/assembly-with-preprocessing",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": {
-          "description": "This tutorial guides you through the preprocessing of sequencing data of bronchoalveolar lavage fluid (BALF) samples obtained from early COVID-19 patients in China. Since such samples are expected to be contaminated signficantly with human sequenced reads, the goal is to enrich the data for SARS-CoV-2 reads by identifying and discarding reads of human origin before trying to assemble the viral genome sequence.",
-          "materials": [
-            {
-              "link": "topics/assembly/tutorials/assembly-with-preprocessing/slides.html",
-              "type": "Slides"
-            },
-            {
-              "link": "topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html",
-              "type": "Tutorial"
-            }
-          ],
-          "tags": [
-            "assembly"
-          ],
-          "type": "Tutorial",
-          "versions": [
-            {
-              "captions": [
-                "mtekman"
-              ],
-              "date": "2021-02-15",
-              "galaxy_version": "21.01",
-              "length": "25M",
-              "link": "jNFLYhjgJPs",
-              "speakers": [
-                "gallardoalba"
-              ]
-            }
-          ],
-          "gtn_id": "assembly/assembly-with-preprocessing",
-          "title": "Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads",
-          "captioned": true
-        },
-        "session": null
-      },
-      "hands_on": true,
-      "slides": true,
-      "workflows": [
-        {
-          "workflow": "assembly_with_preprocessing.ga",
-          "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/assembly-with-preprocessing/workflows/assembly_with_preprocessing.ga",
-          "path": "topics/assembly/tutorials/assembly-with-preprocessing/workflows/assembly_with_preprocessing.ga",
-          "wfid": "assembly-assembly-with-preprocessing",
-          "wfname": "assembly_with_preprocessing",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-assembly-with-preprocessing/versions/assembly_with_preprocessing",
-          "license": null,
-          "creators": [
-
-          ]
-        },
-        {
-          "workflow": "assembly_with_preprocessing_and_sra_download.ga",
-          "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/assembly-with-preprocessing/workflows/assembly_with_preprocessing_and_sra_download.ga",
-          "path": "topics/assembly/tutorials/assembly-with-preprocessing/workflows/assembly_with_preprocessing_and_sra_download.ga",
-          "wfid": "assembly-assembly-with-preprocessing",
-          "wfname": "assembly_with_preprocessing_and_sra_download",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-assembly-with-preprocessing/versions/assembly_with_preprocessing_and_sra_download",
-          "license": null,
-          "creators": [
-
-          ]
-        }
-      ],
-      "tools": [
-        "__ZIP_COLLECTION__",
-        "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.4.3+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/devteam/fasta_filter_by_length/fasta_filter_by_length/1.2",
-        "toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.2+galaxy2",
-        "toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_image/0.8.1+galaxy2",
-        "toolshed.g2.bx.psu.edu/repos/iuc/bandage/bandage_info/0.8.1+galaxy1",
-        "toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.19.5+galaxy1",
-        "toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.17+galaxy1",
-        "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7",
-        "toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.25.0+galaxy1",
-        "toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx/1.9+galaxy1",
-        "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.9+galaxy1",
-        "toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_sample/1.3.2",
-        "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/2.10.4+galaxy1",
-        "toolshed.g2.bx.psu.edu/repos/iuc/unicycler/unicycler/0.4.8.0",
-        "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2"
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.json"
       }
     },
     {
