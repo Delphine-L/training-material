@@ -60,44 +60,24 @@
                                
                        
                                
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
 			{
 				"id": "admin/tutorials/connect-to-compute-cluster/slides",
 				"topic": "Galaxy Server administration",
 				"title": "Connecting Galaxy to a compute cluster"
 			},
 								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/database/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galactic Database"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/interactive-tools/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galaxy Interactive Tools"
-			},
-								
-                               
-                       
                                
                        
                                
@@ -119,6 +99,10 @@
                                
                        
                                
+                       
+                               
+                       
+                               
 			{
 				"id": "admin/tutorials/ansible-galaxy/slides",
 				"topic": "Galaxy Server administration",
@@ -129,11 +113,55 @@
                        
                                
 			{
+				"id": "admin/tutorials/backup-cleanup/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Server Maintenance: Cleanup, Backup, and Restoration"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+			{
 				"id": "admin/tutorials/gxadmin/slides",
 				"topic": "Galaxy Server administration",
 				"title": "Galaxy Monitoring with gxadmin"
 			},
 								
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/database/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Galactic Database"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/data-library/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Data Libraries"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/monitoring/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Galaxy Monitoring with Telegraf and Grafana"
+			},
+								
+                               
+                       
                                
                        
                                
@@ -148,16 +176,10 @@
                                
                        
                                
-                       
-                               
-                       
-                               
-                       
-                               
 			{
-				"id": "admin/tutorials/backup-cleanup/slides",
+				"id": "admin/tutorials/interactive-tools/slides",
 				"topic": "Galaxy Server administration",
-				"title": "Server Maintenance: Cleanup, Backup, and Restoration"
+				"title": "Galaxy Interactive Tools"
 			},
 								
                                
@@ -180,28 +202,6 @@
 								
                                
                        
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/data-library/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Data Libraries"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/monitoring/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galaxy Monitoring with Telegraf and Grafana"
-			},
-								
                                
                        
                                
@@ -311,8 +311,6 @@
                        
                        
                                
-                       
-                               
 			{
 				"id": "climate/tutorials/fates/slides",
 				"topic": "Climate",
@@ -323,18 +321,20 @@
                        
                                
 			{
-				"id": "climate/tutorials/pangeo/slides",
+				"id": "climate/tutorials/pangeo-notebook/slides",
 				"topic": "Climate",
-				"title": "Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools"
+				"title": "Pangeo Notebook in Galaxy - Introduction to Xarray"
 			},
 								
                                
                        
                                
+                       
+                               
 			{
-				"id": "climate/tutorials/pangeo-notebook/slides",
+				"id": "climate/tutorials/pangeo/slides",
 				"topic": "Climate",
-				"title": "Pangeo Notebook in Galaxy - Introduction to Xarray"
+				"title": "Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools"
 			},
 								
                                
@@ -383,6 +383,8 @@
                                
                        
                                
+                       
+                               
 			{
 				"id": "contributing/tutorials/create-new-tutorial-slides/slides",
 				"topic": "Contributing to the Galaxy Training Material",
@@ -421,8 +423,6 @@
                        
                                
                        
-                               
-                       
                
 					
                        
@@ -531,6 +531,19 @@
                        
                        
                        
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "dev/tutorials/bioblend-api/slides",
+				"topic": "Development in Galaxy",
+				"title": "Scripting Galaxy using the API and BioBlend"
+			},
+								
                                
                        
                                
@@ -561,19 +574,6 @@
                                
                        
                                
-			{
-				"id": "dev/tutorials/bioblend-api/slides",
-				"topic": "Development in Galaxy",
-				"title": "Scripting Galaxy using the API and BioBlend"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
                        
                                
                        
@@ -626,6 +626,10 @@
 					
                        
                        
+                       
+                               
+                       
+                               
                        
                                
                        
@@ -638,10 +642,6 @@
 				"title": "ATAC-Seq data analysis"
 			},
 								
-                               
-                       
-                               
-                       
                                
                        
                                
@@ -1091,14 +1091,14 @@
                        
                        
                                
-                       
-                               
 			{
 				"id": "teaching/tutorials/gtn-for-instructors/slides",
 				"topic": "Teaching and Hosting Galaxy training",
 				"title": "Overview of the Galaxy Training Material for Instructors"
 			},
 								
+                               
+                       
                                
                        
                                
