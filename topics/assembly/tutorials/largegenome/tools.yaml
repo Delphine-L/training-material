@@ -3,46 +3,28 @@ install_repository_dependencies: True
 install_resolver_dependencies: True
 
 tools:
-- name: nanoplot
-  owner: iuc
-  revisions:
-  - edbb6c5028f5
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: multiqc
-  owner: iuc
-  revisions:
-  - 75c93c70d094
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: meryl
-  owner: iuc
-  revisions:
-  - eadfd71dde37
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: genomescope
   owner: iuc
   revisions:
   - 3169a38c2656
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: minimap2
+- name: nanoplot
   owner: iuc
   revisions:
-  - 09b53c1d4ab1
+  - edbb6c5028f5
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: medaka_consensus_pipeline
-  owner: iuc
+- name: fastqc
+  owner: devteam
   revisions:
-  - 0e9e7fcdd543
+  - e7b2202befea
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: fastp
+- name: multiqc
   owner: iuc
   revisions:
-  - 1d8fe9bc4cb0
+  - 75c93c70d094
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: meryl
@@ -69,6 +51,12 @@ tools:
   - 8d4f03b5fe9d
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fasta_stats
+  owner: iuc
+  revisions:
+  - 56022eb50bbd
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: bandage
   owner: iuc
   revisions:
@@ -81,16 +69,16 @@ tools:
   - ebb0dcdb621a
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: racon
-  owner: bgruening
+- name: minimap2
+  owner: iuc
   revisions:
-  - a199cd7ac344
+  - 09b53c1d4ab1
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: racon
-  owner: bgruening
+- name: medaka_consensus_pipeline
+  owner: iuc
   revisions:
-  - a199cd7ac344
+  - 0e9e7fcdd543
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: busco
@@ -99,9 +87,21 @@ tools:
   - 0d243f458b53
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: fasta_stats
+- name: racon
+  owner: bgruening
+  revisions:
+  - a199cd7ac344
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: racon
+  owner: bgruening
+  revisions:
+  - a199cd7ac344
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastp
   owner: iuc
   revisions:
-  - 56022eb50bbd
+  - 1d8fe9bc4cb0
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
