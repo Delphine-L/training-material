@@ -2350,3 +2350,5 @@
 2348,4,Very clear.  Most of it worked. ,"""Pose scoring with TransFS"" crashed for me.  Error message said ""No score found for record xxxx"" for every molecule",,Virtual screening of the SARS-CoV-2 main protease with rxDock and pose scoring,Computational chemistry,2023-09,2023-09-05
 2349,5,,,,A short introduction to Galaxy,Introduction to Galaxy Analyses,2023-09,2023-09-06
 2350,5,,,,A short introduction to Galaxy,Introduction to Galaxy Analyses,2023-09,2023-09-06
+2351,4,,,,Mapping,Sequence analysis,2023-09,2023-09-07
+2352,5,"it was well-structured, rich in details and understandable. Thank you for it!",,,Reference-based RNA-Seq data analysis,Transcriptomics,2023-09,2023-09-07
