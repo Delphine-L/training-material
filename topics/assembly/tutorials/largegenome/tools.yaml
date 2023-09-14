@@ -3,46 +3,22 @@ install_repository_dependencies: True
 install_resolver_dependencies: True
 
 tools:
-- name: genomescope
-  owner: iuc
-  revisions:
-  - 3169a38c2656
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: nanoplot
-  owner: iuc
-  revisions:
-  - edbb6c5028f5
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: fastqc
-  owner: devteam
-  revisions:
-  - e7b2202befea
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: multiqc
-  owner: iuc
-  revisions:
-  - 75c93c70d094
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: meryl
-  owner: iuc
-  revisions:
-  - eadfd71dde37
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: fastqc
-  owner: devteam
-  revisions:
-  - e7b2202befea
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: fastp
   owner: iuc
   revisions:
   - 1d8fe9bc4cb0
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: busco
+  owner: iuc
+  revisions:
+  - 0d243f458b53
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: quast
+  owner: iuc
+  revisions:
+  - ebb0dcdb621a
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: flye
@@ -63,12 +39,6 @@ tools:
   - 94fe43e75ddc
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: quast
-  owner: iuc
-  revisions:
-  - ebb0dcdb621a
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: minimap2
   owner: iuc
   revisions:
@@ -81,27 +51,51 @@ tools:
   - 0e9e7fcdd543
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: busco
+- name: nanoplot
   owner: iuc
   revisions:
-  - 0d243f458b53
+  - edbb6c5028f5
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: racon
-  owner: bgruening
+- name: multiqc
+  owner: iuc
   revisions:
-  - a199cd7ac344
+  - 75c93c70d094
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: racon
-  owner: bgruening
+- name: genomescope
+  owner: iuc
   revisions:
-  - a199cd7ac344
+  - 3169a38c2656
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastqc
+  owner: devteam
+  revisions:
+  - e7b2202befea
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: fastp
   owner: iuc
   revisions:
   - 1d8fe9bc4cb0
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: meryl
+  owner: iuc
+  revisions:
+  - eadfd71dde37
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: racon
+  owner: bgruening
+  revisions:
+  - a199cd7ac344
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: racon
+  owner: bgruening
+  revisions:
+  - a199cd7ac344
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
