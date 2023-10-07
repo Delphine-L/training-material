@@ -26233,5 +26233,27 @@
     "topic": "Sequence analysis",
     "month": "2023-10",
     "date": "2023-10-04"
+  },
+  {
+    "": "2385",
+    "note": "5",
+    "pro": null,
+    "con": null,
+    "anonymous": null,
+    "tutorial": "A short introduction to Galaxy",
+    "topic": "Introduction to Galaxy Analyses",
+    "month": "2023-10",
+    "date": "2023-10-06"
+  },
+  {
+    "": "2386",
+    "note": "5",
+    "pro": null,
+    "con": null,
+    "anonymous": null,
+    "tutorial": "JupyterLab in Galaxy",
+    "topic": "Using Galaxy and Managing your Data",
+    "month": "2023-10",
+    "date": "2023-10-06"
   }
 ]
