@@ -2386,3 +2386,4 @@
 2384,5,At the end I see the SNPs in different colours.,The steps should contain more explanatory steps.,,Mapping,Sequence analysis,2023-10,2023-10-04
 2385,5,,,,A short introduction to Galaxy,Introduction to Galaxy Analyses,2023-10,2023-10-06
 2386,5,,,,JupyterLab in Galaxy,Using Galaxy and Managing your Data,2023-10,2023-10-06
+2387,3,,"The url for one of the datasets is incorrect. The correct url is ""https://zenodo.org/records/1489208/files/Trimmed_ref_5000_uniprot_cRAP.fasta""",,Proteogenomics 1: Database Creation,Proteomics,2023-10,2023-10-13
