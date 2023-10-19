@@ -57,36 +57,6 @@ tools:
   - 3d059e9c2fba
   tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: minimap2
-  owner: iuc
-  revisions:
-  - 11a0d50a54e6
-  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: clair3
-  owner: iuc
-  revisions:
-  - 63e02ef6e153
-  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: bcftools_norm
-  owner: iuc
-  revisions:
-  - da6fc9f4a367
-  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: snpsift
-  owner: iuc
-  revisions:
-  - 5fab4f81391d
-  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: bcftools_consensus
-  owner: iuc
-  revisions:
-  - f867422772d6
-  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: kraken2
   owner: iuc
   revisions:
@@ -200,5 +170,35 @@ tools:
   owner: devteam
   revisions:
   - 0a7799698fe5
+  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: minimap2
+  owner: iuc
+  revisions:
+  - 11a0d50a54e6
+  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: clair3
+  owner: iuc
+  revisions:
+  - 63e02ef6e153
+  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: bcftools_norm
+  owner: iuc
+  revisions:
+  - da6fc9f4a367
+  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: snpsift
+  owner: iuc
+  revisions:
+  - 5fab4f81391d
+  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: bcftools_consensus
+  owner: iuc
+  revisions:
+  - f867422772d6
   tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
   tool_shed_url: https://toolshed.g2.bx.psu.edu/

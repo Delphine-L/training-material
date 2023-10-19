@@ -38,6 +38,8 @@
                                
                        
                                
+                       
+                               
 			{
 				"id": "introduction/tutorials/options-for-using-galaxy/slides",
 				"topic": "Introduction to Galaxy Analyses",
@@ -50,12 +52,52 @@
                        
                                
                        
-                               
-                       
                
 					
                        
                        
+                       
+                               
+			{
+				"id": "admin/tutorials/cvmfs/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Reference Data with CVMFS"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/connect-to-compute-cluster/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Connecting Galaxy to a compute cluster"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/production/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Gearing towards production"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/data-library/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Data Libraries"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+                       
+                               
                        
                                
                        
@@ -72,6 +114,26 @@
                        
                                
 			{
+				"id": "admin/tutorials/ansible/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Ansible"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/users-groups-quotas/slides",
+				"topic": "Galaxy Server administration",
+				"title": "User, Role, Group, Quota, and Authentication managment"
+			},
+								
+                               
+                       
+                               
+			{
 				"id": "admin/tutorials/backup-cleanup/slides",
 				"topic": "Galaxy Server administration",
 				"title": "Server Maintenance: Cleanup, Backup, and Restoration"
@@ -84,12 +146,7 @@
                                
                        
                                
-			{
-				"id": "admin/tutorials/gxadmin/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galaxy Monitoring with gxadmin"
-			},
-								
+                       
                                
                        
                                
@@ -102,30 +159,9 @@
                                
                        
                                
-			{
-				"id": "admin/tutorials/data-library/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Data Libraries"
-			},
-								
-                               
                        
                                
-			{
-				"id": "admin/tutorials/database/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galactic Database"
-			},
-								
-                               
                        
-                               
-			{
-				"id": "admin/tutorials/users-groups-quotas/slides",
-				"topic": "Galaxy Server administration",
-				"title": "User, Role, Group, Quota, and Authentication managment"
-			},
-								
                                
                        
                                
@@ -140,8 +176,6 @@
                                
                        
                                
-                       
-                               
 			{
 				"id": "admin/tutorials/ansible-galaxy/slides",
 				"topic": "Galaxy Server administration",
@@ -152,56 +186,22 @@
                        
                                
 			{
-				"id": "admin/tutorials/cvmfs/slides",
+				"id": "admin/tutorials/gxadmin/slides",
 				"topic": "Galaxy Server administration",
-				"title": "Reference Data with CVMFS"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/production/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Gearing towards production"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/ansible/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Ansible"
+				"title": "Galaxy Monitoring with gxadmin"
 			},
 								
                                
                        
                                
 			{
-				"id": "admin/tutorials/connect-to-compute-cluster/slides",
+				"id": "admin/tutorials/database/slides",
 				"topic": "Galaxy Server administration",
-				"title": "Connecting Galaxy to a compute cluster"
+				"title": "Galactic Database"
 			},
 								
+                               
+                       
                                
                        
                                
@@ -311,17 +311,6 @@
                        
                        
                                
-                       
-                               
-			{
-				"id": "climate/tutorials/fates/slides",
-				"topic": "Climate",
-				"title": "Functionally Assembled Terrestrial Ecosystem Simulator (FATES)"
-			},
-								
-                               
-                       
-                               
 			{
 				"id": "climate/tutorials/pangeo/slides",
 				"topic": "Climate",
@@ -335,6 +324,17 @@
 				"id": "climate/tutorials/pangeo-notebook/slides",
 				"topic": "Climate",
 				"title": "Pangeo Notebook in Galaxy - Introduction to Xarray"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "climate/tutorials/fates/slides",
+				"topic": "Climate",
+				"title": "Functionally Assembled Terrestrial Ecosystem Simulator (FATES)"
 			},
 								
                                
@@ -383,6 +383,8 @@
                                
                        
                                
+                       
+                               
 			{
 				"id": "contributing/tutorials/create-new-tutorial-slides/slides",
 				"topic": "Contributing to the Galaxy Training Material",
@@ -421,8 +423,6 @@
                        
                                
                        
-                               
-                       
                
 					
                        
@@ -531,15 +531,6 @@
                        
                        
                        
-                               
-                       
-                               
-			{
-				"id": "dev/tutorials/tool-generators/slides",
-				"topic": "Development in Galaxy",
-				"title": "ToolFactory: Generating Tools From Simple Scripts"
-			},
-								
                                
                        
                                
@@ -566,74 +557,10 @@
                                
                        
                                
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-               
-					
-                       
-                       
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-               
-					
-                       
-                       
-                       
-                               
-                       
-                               
 			{
-				"id": "epigenetics/tutorials/atac-seq/slides",
-				"topic": "Epigenetics",
-				"title": "ATAC-Seq data analysis"
+				"id": "dev/tutorials/tool-generators/slides",
+				"topic": "Development in Galaxy",
+				"title": "ToolFactory: Generating Tools From Simple Scripts"
 			},
 								
                                
@@ -644,6 +571,79 @@
                        
                                
                        
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+               
+					
+                       
+                       
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+               
+					
+                       
+                       
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "epigenetics/tutorials/atac-seq/slides",
+				"topic": "Epigenetics",
+				"title": "ATAC-Seq data analysis"
+			},
+								
                                
                        
                                
@@ -1151,16 +1151,16 @@
                                
                        
                                
-                       
-                               
-                       
-                               
 			{
 				"id": "transcriptomics/tutorials/mirna-target-finder/slides",
 				"topic": "Transcriptomics",
 				"title": "Whole transcriptome analysis of Arabidopsis thaliana"
 			},
 								
+                               
+                       
+                               
+                       
                                
                        
                                
