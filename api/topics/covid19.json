@@ -19,36 +19,35 @@
   "materials": [
     {
       "layout": "tutorial_hands_on",
-      "title": "Automating Galaxy workflows using the command line",
-      "tags": [
-        "workflows",
-        "variant-analysis",
-        "covid19"
-      ],
-      "zenodo_link": "",
+      "title": "Virtual screening of the SARS-CoV-2 main protease with rxDock and pose scoring",
+      "level": "Intermediate",
+      "zenodo_link": "https://zenodo.org/record/3730474",
       "questions": [
-        "How can I schedule and run tens or hundreds of Galaxy workflows easily?",
-        "How can I automate my analyses when large amounts of data are being produced daily?"
+        "How can candidate ligands be generated and docked to a protein in Galaxy?",
+        "How can the poses of the docked ligands be evaluated?",
+        "How can a workflow for drug virtual screening be constructed in Galaxy?"
       ],
       "objectives": [
-        "Learn to use the `planemo run` subcommand to run workflows from the command line.",
-        "Be able to write simple shell scripts for running multiple workflows concurrently or sequentially.",
-        "Learn how to use Pangolin to assign annotated variants to lineages."
+        "Understand how Galaxy was used to perform docking and pose scoring on the SARS-CoV-2 main protease (MPro).",
+        "Replicate the study on a (very) small scale",
+        "Gain familiarity with the docking and scoring techniques involved."
       ],
-      "time_estimation": "2h",
+      "time_estimation": "2H",
       "key_points": [
-        "Workflows can be executed not only through the web browser, but also via the command line.",
-        "Executing workflows programmatically allows automation of analyses."
+        "Galaxy can support large, rapid studies in computational chemistry",
+        "Protein-ligand docking contributes to the discovery of new drugs"
       ],
       "requirements": [
         {
-          "title": "Familiarity with Galaxy and basic associated concepts, in particular workflows",
-          "type": "none"
-        },
-        {
-          "title": "Basic knowledge of the command line",
-          "type": "none"
+          "type": "internal",
+          "topic_name": "computational-chemistry",
+          "tutorials": [
+            "cheminformatics"
+          ]
         }
+      ],
+      "tags": [
+        "covid19"
       ],
       "contributors": [
         {
@@ -58,175 +57,13 @@
           "id": "simonbray",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/simonbray.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/simonbray/"
-        },
-        {
-          "name": "Wolfgang Maier",
-          "orcid": "0000-0002-9464-6640",
-          "joined": "2017-09",
-          "elixir_node": "de",
-          "id": "wm75",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/"
         }
       ],
-      "subtopic": "workflows",
-      "url": "/topics/galaxy-interface/tutorials/workflow-automation/tutorial.html",
-      "topic_name": "galaxy-interface",
-      "tutorial_name": "workflow-automation",
-      "dir": "topics/galaxy-interface/tutorials/workflow-automation",
-      "id": "galaxy-interface/workflow-automation",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": {
-          "description": "This is a more technical tutorial which will teach you how to run workflows from the command line and scale your analyses. If you are on Windows, you will need WSL/WSL2 setup before this session.",
-          "materials": [
-            {
-              "external": true,
-              "link": "https://docs.microsoft.com/en-us/windows/wsl/install-win10",
-              "title": "Installing WSL on Windows",
-              "type": "Get Set Up (Windows)"
-            },
-            {
-              "link": "topics/galaxy-interface/tutorials/workflow-automation/tutorial.html",
-              "type": "Tutorial"
-            }
-          ],
-          "tags": [
-            "galaxy-interface"
-          ],
-          "type": "Tutorial",
-          "versions": [
-            {
-              "captions": [
-                "simonbray"
-              ],
-              "date": "2021-02-15",
-              "galaxy_version": "21.01",
-              "length": "30M",
-              "link": "o39QjVnLG68",
-              "speakers": [
-                "simonbray"
-              ]
-            }
-          ],
-          "gtn_id": "galaxy-interface/workflow-automation",
-          "title": "Automating Galaxy workflows using the command line",
-          "captioned": true
-        },
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "workflows": [
-        {
-          "workflow": "main_workflow.ga",
-          "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/workflow-automation/workflows/main_workflow.ga",
-          "path": "topics/galaxy-interface/tutorials/workflow-automation/workflows/main_workflow.ga",
-          "wfid": "galaxy-interface-workflow-automation",
-          "wfname": "main_workflow",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/galaxy-interface-workflow-automation/versions/main_workflow",
-          "license": "MIT",
-          "creators": [
-            {
-              "class": "Person",
-              "identifier": "https://orcid.org/0000-0002-9464-6640",
-              "name": "Wolfgang Maier"
-            }
-          ]
-        }
-      ],
-      "tools": [
-        "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10",
-        "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-        "toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/2.3.8",
-        "toolshed.g2.bx.psu.edu/repos/iuc/snpsift/snpSift_filter/4.3+t.galaxy1",
-        "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2"
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/galaxy-interface/tutorials/workflow-automation/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/galaxy-interface/tutorials/workflow-automation/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "Submitting sequence data to ENA",
-      "zenodo_link": "https://doi.org/10.5281/zenodo.5163611",
-      "questions": [
-        "How do you submit raw sequence reads and assembled genomes to the European Nucleotide Archive?"
-      ],
-      "objectives": [
-        "Submit raw sequencing reads and metadata to ENA's test server",
-        "Submit consensus sequence and metadata to ENA's test server"
-      ],
-      "time_estimation": "1h",
-      "level": "Intermediate",
-      "key_points": [
-        "Use Galaxy's 'ENA Upload tool' to submit raw reads to ENA",
-        "Use Galaxy's 'Submit consensus sequence to ENA' tool",
-        "You need to include your ENA Webin credentials in Galaxy",
-        "For small submission use 'ENA Upload tool' interactive metadata forms feature",
-        "For bulk submissions use a spreadsheet metadata template"
-      ],
-      "requirements": [
-        {
-          "type": "internal",
-          "topic_name": "sequence-analysis",
-          "tutorials": [
-            "human-reads-removal"
-          ]
-        },
-        {
-          "type": "internal",
-          "topic_name": "galaxy-interface",
-          "tutorials": [
-            "collections"
-          ]
-        }
-      ],
-      "tags": [
-        "covid19"
-      ],
-      "contributors": [
-        {
-          "name": "Miguel Roncoroni",
-          "joined": "2021-08",
-          "email": "miguel.roncoroni@elixir-belgium.org",
-          "id": "roncoronimiguel",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/roncoronimiguel.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/roncoronimiguel/"
-        },
-        {
-          "name": "Bert Droesbeke",
-          "email": "bedro@psb.ugent.be",
-          "gitter": "bedroesb",
-          "orcid": "0000-0003-0522-5674",
-          "joined": "2019-12",
-          "elixir_node": "be",
-          "id": "bedroesb",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/bedroesb.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bedroesb/"
-        }
-      ],
-      "url": "/topics/galaxy-interface/tutorials/upload-data-to-ena/tutorial.html",
-      "topic_name": "galaxy-interface",
-      "tutorial_name": "upload-data-to-ena",
-      "dir": "topics/galaxy-interface/tutorials/upload-data-to-ena",
-      "id": "galaxy-interface/upload-data-to-ena",
+      "url": "/topics/computational-chemistry/tutorials/covid19-docking/tutorial.html",
+      "topic_name": "computational-chemistry",
+      "tutorial_name": "covid19-docking",
+      "dir": "topics/computational-chemistry/tutorials/covid19-docking",
+      "id": "computational-chemistry/covid19-docking",
       "video_library": {
         "tutorial": null,
         "slides": null,
@@ -235,16 +72,16 @@
         "session": null
       },
       "hands_on": true,
-      "slides": true,
+      "slides": false,
       "workflows": [
         {
-          "workflow": "main_workflow.ga",
+          "workflow": "workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/upload-data-to-ena/workflows/main_workflow.ga",
-          "path": "topics/galaxy-interface/tutorials/upload-data-to-ena/workflows/main_workflow.ga",
-          "wfid": "galaxy-interface-upload-data-to-ena",
-          "wfname": "main_workflow",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/galaxy-interface-upload-data-to-ena/versions/main_workflow",
+          "url": "https://training.galaxyproject.org/training-material/topics/computational-chemistry/tutorials/covid19-docking/workflows/workflow.ga",
+          "path": "topics/computational-chemistry/tutorials/covid19-docking/workflows/workflow.ga",
+          "wfid": "computational-chemistry-covid19-docking",
+          "wfname": "workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/computational-chemistry-covid19-docking/versions/workflow",
           "license": null,
           "creators": [
 
@@ -252,9 +89,23 @@
         }
       ],
       "tools": [
-        "toolshed.g2.bx.psu.edu/repos/ieguinoa/ena_webin_cli/ena_webin_cli/7d751b5943b0",
-        "toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.3.2",
-        "toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.6.1"
+        "toolshed.g2.bx.psu.edu/repos/bgruening/ctb_frankenstein_ligand/ctb_frankenstein_ligand/0.1.1",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/ctb_frankenstein_ligand/ctb_frankenstein_ligand/2013.1-0+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/0.1",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/2020.03.4+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_compound_convert/openbabel_compound_convert/2.4.2.2.0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_compound_convert/openbabel_compound_convert/3.1.1+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/rdock_rbcavity/rdock_rbcavity/0.1",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/rdock_rbdock/rdock_rbdock/0.1.4",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/rxdock_rbcavity/rxdock_rbcavity/0.1.5",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/rxdock_rbdock/rxdock_rbdock/0.1.5",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.4.0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.5.0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/sucos_max_score/sucos_max_score/0.2.3",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/sucos_max_score/sucos_max_score/2020.03.4+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/xchem_transfs_scoring/xchem_transfs_scoring/0.4.0",
+        "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2",
+        "xchem_pose_scoring"
       ],
       "tours": false,
       "video": false,
@@ -269,8 +120,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/galaxy-interface/tutorials/upload-data-to-ena/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/galaxy-interface/tutorials/upload-data-to-ena/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/computational-chemistry/tutorials/covid19-docking/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/computational-chemistry/tutorials/covid19-docking/tutorial.json"
       }
     },
     {
@@ -722,113 +573,6 @@
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Virtual screening of the SARS-CoV-2 main protease with rxDock and pose scoring",
-      "level": "Intermediate",
-      "zenodo_link": "https://zenodo.org/record/3730474",
-      "questions": [
-        "How can candidate ligands be generated and docked to a protein in Galaxy?",
-        "How can the poses of the docked ligands be evaluated?",
-        "How can a workflow for drug virtual screening be constructed in Galaxy?"
-      ],
-      "objectives": [
-        "Understand how Galaxy was used to perform docking and pose scoring on the SARS-CoV-2 main protease (MPro).",
-        "Replicate the study on a (very) small scale",
-        "Gain familiarity with the docking and scoring techniques involved."
-      ],
-      "time_estimation": "2H",
-      "key_points": [
-        "Galaxy can support large, rapid studies in computational chemistry",
-        "Protein-ligand docking contributes to the discovery of new drugs"
-      ],
-      "requirements": [
-        {
-          "type": "internal",
-          "topic_name": "computational-chemistry",
-          "tutorials": [
-            "cheminformatics"
-          ]
-        }
-      ],
-      "tags": [
-        "covid19"
-      ],
-      "contributors": [
-        {
-          "name": "Simon Bray",
-          "joined": "2019-05",
-          "elixir_node": "de",
-          "id": "simonbray",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/simonbray.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/simonbray/"
-        }
-      ],
-      "url": "/topics/computational-chemistry/tutorials/covid19-docking/tutorial.html",
-      "topic_name": "computational-chemistry",
-      "tutorial_name": "covid19-docking",
-      "dir": "topics/computational-chemistry/tutorials/covid19-docking",
-      "id": "computational-chemistry/covid19-docking",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "workflows": [
-        {
-          "workflow": "workflow.ga",
-          "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/computational-chemistry/tutorials/covid19-docking/workflows/workflow.ga",
-          "path": "topics/computational-chemistry/tutorials/covid19-docking/workflows/workflow.ga",
-          "wfid": "computational-chemistry-covid19-docking",
-          "wfname": "workflow",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/computational-chemistry-covid19-docking/versions/workflow",
-          "license": null,
-          "creators": [
-
-          ]
-        }
-      ],
-      "tools": [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/ctb_frankenstein_ligand/ctb_frankenstein_ligand/0.1.1",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/ctb_frankenstein_ligand/ctb_frankenstein_ligand/2013.1-0+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/0.1",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/2020.03.4+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_compound_convert/openbabel_compound_convert/2.4.2.2.0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_compound_convert/openbabel_compound_convert/3.1.1+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/rdock_rbcavity/rdock_rbcavity/0.1",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/rdock_rbdock/rdock_rbdock/0.1.4",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/rxdock_rbcavity/rxdock_rbcavity/0.1.5",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/rxdock_rbdock/rxdock_rbdock/0.1.5",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.4.0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.5.0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/sucos_max_score/sucos_max_score/0.2.3",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/sucos_max_score/sucos_max_score/2020.03.4+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/xchem_transfs_scoring/xchem_transfs_scoring/0.4.0",
-        "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2",
-        "xchem_pose_scoring"
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/computational-chemistry/tutorials/covid19-docking/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/computational-chemistry/tutorials/covid19-docking/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
       "title": "Removal of human reads from SARS-CoV-2 sequencing data",
       "questions": [
         "How can you remove traces of human sequence data from a sequenced viral sample?"
@@ -953,6 +697,262 @@
       "urls": {
         "hands_on": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.json",
         "slides": "https://training.galaxyproject.org/training-material/api/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Submitting sequence data to ENA",
+      "zenodo_link": "https://doi.org/10.5281/zenodo.5163611",
+      "questions": [
+        "How do you submit raw sequence reads and assembled genomes to the European Nucleotide Archive?"
+      ],
+      "objectives": [
+        "Submit raw sequencing reads and metadata to ENA's test server",
+        "Submit consensus sequence and metadata to ENA's test server"
+      ],
+      "time_estimation": "1h",
+      "level": "Intermediate",
+      "key_points": [
+        "Use Galaxy's 'ENA Upload tool' to submit raw reads to ENA",
+        "Use Galaxy's 'Submit consensus sequence to ENA' tool",
+        "You need to include your ENA Webin credentials in Galaxy",
+        "For small submission use 'ENA Upload tool' interactive metadata forms feature",
+        "For bulk submissions use a spreadsheet metadata template"
+      ],
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "sequence-analysis",
+          "tutorials": [
+            "human-reads-removal"
+          ]
+        },
+        {
+          "type": "internal",
+          "topic_name": "galaxy-interface",
+          "tutorials": [
+            "collections"
+          ]
+        }
+      ],
+      "tags": [
+        "covid19"
+      ],
+      "contributors": [
+        {
+          "name": "Miguel Roncoroni",
+          "joined": "2021-08",
+          "email": "miguel.roncoroni@elixir-belgium.org",
+          "id": "roncoronimiguel",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/roncoronimiguel.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/roncoronimiguel/"
+        },
+        {
+          "name": "Bert Droesbeke",
+          "email": "bedro@psb.ugent.be",
+          "gitter": "bedroesb",
+          "orcid": "0000-0003-0522-5674",
+          "joined": "2019-12",
+          "elixir_node": "be",
+          "id": "bedroesb",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/bedroesb.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bedroesb/"
+        }
+      ],
+      "url": "/topics/galaxy-interface/tutorials/upload-data-to-ena/tutorial.html",
+      "topic_name": "galaxy-interface",
+      "tutorial_name": "upload-data-to-ena",
+      "dir": "topics/galaxy-interface/tutorials/upload-data-to-ena",
+      "id": "galaxy-interface/upload-data-to-ena",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": true,
+      "workflows": [
+        {
+          "workflow": "main_workflow.ga",
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/upload-data-to-ena/workflows/main_workflow.ga",
+          "path": "topics/galaxy-interface/tutorials/upload-data-to-ena/workflows/main_workflow.ga",
+          "wfid": "galaxy-interface-upload-data-to-ena",
+          "wfname": "main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/galaxy-interface-upload-data-to-ena/versions/main_workflow",
+          "license": null,
+          "creators": [
+
+          ]
+        }
+      ],
+      "tools": [
+        "toolshed.g2.bx.psu.edu/repos/ieguinoa/ena_webin_cli/ena_webin_cli/7d751b5943b0",
+        "toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.3.2",
+        "toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.6.1"
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/galaxy-interface/tutorials/upload-data-to-ena/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/galaxy-interface/tutorials/upload-data-to-ena/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Automating Galaxy workflows using the command line",
+      "tags": [
+        "workflows",
+        "variant-analysis",
+        "covid19"
+      ],
+      "zenodo_link": "",
+      "questions": [
+        "How can I schedule and run tens or hundreds of Galaxy workflows easily?",
+        "How can I automate my analyses when large amounts of data are being produced daily?"
+      ],
+      "objectives": [
+        "Learn to use the `planemo run` subcommand to run workflows from the command line.",
+        "Be able to write simple shell scripts for running multiple workflows concurrently or sequentially.",
+        "Learn how to use Pangolin to assign annotated variants to lineages."
+      ],
+      "time_estimation": "2h",
+      "key_points": [
+        "Workflows can be executed not only through the web browser, but also via the command line.",
+        "Executing workflows programmatically allows automation of analyses."
+      ],
+      "requirements": [
+        {
+          "title": "Familiarity with Galaxy and basic associated concepts, in particular workflows",
+          "type": "none"
+        },
+        {
+          "title": "Basic knowledge of the command line",
+          "type": "none"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Simon Bray",
+          "joined": "2019-05",
+          "elixir_node": "de",
+          "id": "simonbray",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/simonbray.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/simonbray/"
+        },
+        {
+          "name": "Wolfgang Maier",
+          "orcid": "0000-0002-9464-6640",
+          "joined": "2017-09",
+          "elixir_node": "de",
+          "id": "wm75",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/"
+        }
+      ],
+      "subtopic": "workflows",
+      "url": "/topics/galaxy-interface/tutorials/workflow-automation/tutorial.html",
+      "topic_name": "galaxy-interface",
+      "tutorial_name": "workflow-automation",
+      "dir": "topics/galaxy-interface/tutorials/workflow-automation",
+      "id": "galaxy-interface/workflow-automation",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": {
+          "description": "This is a more technical tutorial which will teach you how to run workflows from the command line and scale your analyses. If you are on Windows, you will need WSL/WSL2 setup before this session.",
+          "materials": [
+            {
+              "external": true,
+              "link": "https://docs.microsoft.com/en-us/windows/wsl/install-win10",
+              "title": "Installing WSL on Windows",
+              "type": "Get Set Up (Windows)"
+            },
+            {
+              "link": "topics/galaxy-interface/tutorials/workflow-automation/tutorial.html",
+              "type": "Tutorial"
+            }
+          ],
+          "tags": [
+            "galaxy-interface"
+          ],
+          "type": "Tutorial",
+          "versions": [
+            {
+              "captions": [
+                "simonbray"
+              ],
+              "date": "2021-02-15",
+              "galaxy_version": "21.01",
+              "length": "30M",
+              "link": "o39QjVnLG68",
+              "speakers": [
+                "simonbray"
+              ]
+            }
+          ],
+          "gtn_id": "galaxy-interface/workflow-automation",
+          "title": "Automating Galaxy workflows using the command line",
+          "captioned": true
+        },
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "workflows": [
+        {
+          "workflow": "main_workflow.ga",
+          "tests": false,
+          "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/workflow-automation/workflows/main_workflow.ga",
+          "path": "topics/galaxy-interface/tutorials/workflow-automation/workflows/main_workflow.ga",
+          "wfid": "galaxy-interface-workflow-automation",
+          "wfname": "main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/galaxy-interface-workflow-automation/versions/main_workflow",
+          "license": "MIT",
+          "creators": [
+            {
+              "class": "Person",
+              "identifier": "https://orcid.org/0000-0002-9464-6640",
+              "name": "Wolfgang Maier"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.10",
+        "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/2.3.8",
+        "toolshed.g2.bx.psu.edu/repos/iuc/snpsift/snpSift_filter/4.3+t.galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2"
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/galaxy-interface/tutorials/workflow-automation/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/galaxy-interface/tutorials/workflow-automation/tutorial.json"
       }
     },
     {
