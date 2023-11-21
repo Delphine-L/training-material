@@ -126,6 +126,181 @@
   "materials": [
     {
       "layout": "tutorial_hands_on",
+      "title": "Version Control with Git",
+      "time_estimation": "65M",
+      "questions": [
+        "What is version control and why should I use it?",
+        "How do I get set up to use Git?",
+        "Where does Git store information?",
+        "How do I record changes in Git?",
+        "How do I check the status of my version control repository?",
+        "How do I record notes about what changes I made and why?",
+        "How can I identify old versions of files?",
+        "How do I review my changes?",
+        "How can I recover old versions of files?"
+      ],
+      "objectives": [
+        "Understand the benefits of an automated version control system.",
+        "Understand the basics of how automated version control systems work.",
+        "Configure `git` the first time it is used on a computer.",
+        "Understand the meaning of the `--global` configuration flag.",
+        "Create a local Git repository.",
+        "Describe the purpose of the `.git` directory.",
+        "Go through the modify-add-commit cycle for one or more files.",
+        "Explain where information is stored at each stage of that cycle.",
+        "Distinguish between descriptive and non-descriptive commit messages.",
+        "Explain what the HEAD of a repository is and how to use it.",
+        "Identify and use Git commit numbers.",
+        "Compare various versions of tracked files.",
+        "Restore old versions of files."
+      ],
+      "key_points": [
+        "Version control is like an unlimited 'undo'.",
+        "Version control also allows many people to work in parallel.",
+        "Use `git config` with the `--global` option to configure a user name, email address, editor, and other preferences once per machine.",
+        "`git init` initializes a repository.",
+        "Git stores all of its repository data in the `.git` directory.",
+        "`git status` shows the status of a repository.",
+        "Files can be stored in a project's working directory (which users see), the staging area (where the next commit is being built up) and the local repository (where commits are permanently recorded).",
+        "`git add` puts files in the staging area.",
+        "`git commit` saves the staged content as a new commit in the local repository.",
+        "Write a commit message that accurately describes your changes.",
+        "`git diff` displays differences between commits.",
+        "`git checkout` recovers old versions of files."
+      ],
+      "contributions": {
+        "authorship": [
+          "Sofokli5"
+        ],
+        "editing": [
+          "fpsom",
+          "shiltemann",
+          "hexylena"
+        ],
+        "funding": [
+          "carpentries",
+          "erasmusplus"
+        ]
+      },
+      "url": "/topics/data-science/tutorials/bash-git/tutorial.html",
+      "topic_name": "data-science",
+      "tutorial_name": "bash-git",
+      "dir": "topics/data-science/tutorials/bash-git",
+      "id": "data-science/bash-git",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+        "interactive_tool_rstudio"
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "contributors": [
+        {
+          "name": "Sofoklis Keisaris",
+          "email": "sofoskeisaris@gmail.com",
+          "orcid": "0000-0002-4833-4726",
+          "joined": "2022-05",
+          "id": "Sofokli5",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/Sofokli5.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/Sofokli5/"
+        },
+        {
+          "name": "Fotis E. Psomopoulos",
+          "email": "fpsom@certh.gr",
+          "twitter": "fopsom",
+          "gitter": "fpsom",
+          "orcid": "0000-0002-0222-4273",
+          "linkedin": "fpsom",
+          "joined": "2019-03",
+          "elixir_node": "gr",
+          "id": "fpsom",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/fpsom.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/fpsom/"
+        },
+        {
+          "name": "Saskia Hiltemann",
+          "maintainer_contact": "gitter",
+          "email": "saskia.hiltemann@gmail.com",
+          "twitter": "shiltemann",
+          "linkedin": "shiltemann",
+          "gitter": "shiltemann",
+          "orcid": "0000-0003-3803-468X",
+          "joined": "2017-09",
+          "bio": "Researcher at Erasmus Medical Center",
+          "elixir_node": "nl",
+          "contact_for_training": true,
+          "location": {
+            "country": "NL",
+            "lat": 51.912,
+            "lon": 4.462
+          },
+          "id": "shiltemann",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/"
+        },
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        },
+        {
+          "name": "The Carpentries",
+          "joined": "2021-09",
+          "id": "carpentries",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
+        },
+        {
+          "name": "Erasmus+ Programme",
+          "joined": "2020-09",
+          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
+          "github": false,
+          "funder": true,
+          "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
+          "id": "erasmusplus",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
+        }
+      ],
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/bash-git/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/bash-git/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
       "title": "SQL with R",
       "level": "Intermediate",
       "zenodo_link": null,
@@ -243,391 +418,6 @@
       "urls": {
         "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-r/tutorial.json",
         "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-r/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "Python - Math",
-      "level": "Introductory",
-      "requirements": [
-
-      ],
-      "follow_up_training": [
-
-      ],
-      "questions": [
-        "How do I do math in Python?"
-      ],
-      "objectives": [
-        "Understand the fundamentals of object assignment and math in python and can write simple statements and execute calcualtions in order to be able to summarize the results of calculations and classify valid and invalid statements.",
-        "Translate some known math functions (e.g. euclidean distance, root algorithm) into python to transfer concepts from mathematics lessons directly into Python."
-      ],
-      "time_estimation": "30M",
-      "key_points": [
-        "Converting mathematics equation to python is pretty easy!",
-        "In real life you'll occasionally need to do this, either converting from a formula you read in a paper, or a description of an algorithm, into code that you'll re-use.",
-        "Did you forget how a particular module or function works? Try `help()`"
-      ],
-      "subtopic": "python-modular",
-      "contributors": [
-        {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "gitter": "hexylena",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-        },
-        {
-          "name": "Donny Vrins",
-          "joined": "2021-10",
-          "linkedin": "Donny Vrins",
-          "email": "D.vrins@live.nl",
-          "id": "dirowa",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/dirowa.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/dirowa/"
-        },
-        {
-          "name": "Bazante Sanders",
-          "joined": "2020-12",
-          "id": "bazante1",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/bazante1.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bazante1/"
-        }
-      ],
-      "priority": 1,
-      "notebook": {
-        "language": "python",
-        "pyolite": true
-      },
-      "url": "/topics/data-science/tutorials/python-math/tutorial.html",
-      "topic_name": "data-science",
-      "tutorial_name": "python-math",
-      "dir": "topics/data-science/tutorials/python-math",
-      "id": "data-science/python-math",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "tools": [
-
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-math/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-math/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "Introduction to SQL",
-      "level": "Introductory",
-      "zenodo_link": null,
-      "requirements": [
-
-      ],
-      "follow_up_training": [
-        {
-          "type": "internal",
-          "topic_name": "data-science",
-          "tutorials": [
-            "sql-advanced"
-          ]
-        }
-      ],
-      "questions": [
-        "How can I get data from a database?",
-        "How can I sort a query's results?",
-        "How can I remove duplicate values from a query's results?",
-        "How can I select subsets of data?",
-        "How can I calculate new values on the fly?",
-        "How do databases represent missing information?",
-        "What special handling does missing information require?"
-      ],
-      "objectives": [
-        "Explain the difference between a table, a record, and a field.",
-        "Explain the difference between a database and a database manager.",
-        "Write a query to select all values for specific fields from a single table.",
-        "Write queries that display results in a particular order.",
-        "Write queries that eliminate duplicate values from data.",
-        "Write queries that select records that satisfy user-specified conditions.",
-        "Explain the order in which the clauses in a query are executed.",
-        "Write queries that calculate new values for each selected record.",
-        "Explain how databases represent missing information.",
-        "Explain the three-valued logic databases use when manipulating missing information.",
-        "Write queries that handle missing information correctly."
-      ],
-      "time_estimation": "3H",
-      "key_points": [
-        "A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records.",
-        "A database manager is a program that manipulates information stored in a database.",
-        "We write queries in a specialized language called SQL to extract information from databases.",
-        "Use SELECT... FROM... to get values from a database table.",
-        "SQL is case-insensitive (but data is case-sensitive).",
-        "The records in a database table are not intrinsically ordered: if we want to display them in some order, we must specify that explicitly with ORDER BY.",
-        "The values in a database are not guaranteed to be unique: if we want to eliminate duplicates, we must specify that explicitly as well using DISTINCT.",
-        "Use WHERE to specify conditions that records must meet in order to be included in a query's results.",
-        "Use AND, OR, and NOT to combine tests.",
-        "Filtering is done on whole records, so conditions can use fields that are not actually displayed.",
-        "Write queries incrementally.",
-        "Queries can do the usual arithmetic operations on values.",
-        "Use UNION to combine the results of two or more queries.",
-        "Databases use a special value called NULL to represent missing information.",
-        "Almost all operations on NULL produce NULL.",
-        "Queries can test for NULLs using IS NULL and IS NOT NULL."
-      ],
-      "contributors": [
-        {
-          "name": "The Carpentries",
-          "joined": "2021-09",
-          "id": "carpentries",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
-        },
-        {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "gitter": "hexylena",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-        },
-        {
-          "name": "Donny Vrins",
-          "joined": "2021-10",
-          "linkedin": "Donny Vrins",
-          "email": "D.vrins@live.nl",
-          "id": "dirowa",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/dirowa.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/dirowa/"
-        },
-        {
-          "name": "Bazante Sanders",
-          "joined": "2020-12",
-          "id": "bazante1",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/bazante1.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bazante1/"
-        },
-        {
-          "name": "Avans Hogeschool",
-          "joined": "2020-11",
-          "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
-        }
-      ],
-      "subtopic": "sql",
-      "notebook": {
-        "language": "sql"
-      },
-      "abbreviations": {
-        "SQL": "Structured Query Language"
-      },
-      "tags": [
-        "SQL"
-      ],
-      "url": "/topics/data-science/tutorials/sql-basic/tutorial.html",
-      "topic_name": "data-science",
-      "tutorial_name": "sql-basic",
-      "dir": "topics/data-science/tutorials/sql-basic",
-      "id": "data-science/sql-basic",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "quiz": [
-        {
-          "id": "recap.yml",
-          "path": "topics/data-science/tutorials/sql-basic/quiz/recap.yml",
-          "title": "SQL Basics Recap",
-          "contributors": [
-            "hexylena"
-          ]
-        }
-      ],
-      "tools": [
-
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-basic/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-basic/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "SQL Educational Game - Murder Mystery",
-      "level": "Intermediate",
-      "zenodo_link": "",
-      "requirements": [
-        {
-          "type": "internal",
-          "topic_name": "data-science",
-          "tutorials": [
-            "sql-basic",
-            "sql-advanced"
-          ]
-        }
-      ],
-      "follow_up_training": [
-
-      ],
-      "questions": [
-        "Who did the crime?"
-      ],
-      "objectives": [
-        "Explore SQL City and discover who committed the murder",
-        "Reinforce your experiences with SQL such as querying, filtering, and joining data."
-      ],
-      "time_estimation": "2H",
-      "key_points": [
-        "Learning SQL can be fun!"
-      ],
-      "notebook": {
-        "language": "python"
-      },
-      "subtopic": "sql",
-      "contributors": [
-        {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "gitter": "hexylena",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-        },
-        {
-          "name": "NU Knight Lab",
-          "joined": "2021-10",
-          "id": "NUKnightLab",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/NUKnightLab.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/NUKnightLab/"
-        },
-        {
-          "name": "Erasmus+ Programme",
-          "joined": "2020-09",
-          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
-          "github": false,
-          "funder": true,
-          "funding_id": "2020-1-NL01-KA203-064717",
-          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
-          "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
-        },
-        {
-          "name": "Avans Hogeschool",
-          "joined": "2020-11",
-          "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
-        }
-      ],
-      "tags": [
-        "game",
-        "SQL"
-      ],
-      "url": "/topics/data-science/tutorials/sql-game/tutorial.html",
-      "topic_name": "data-science",
-      "tutorial_name": "sql-game",
-      "dir": "topics/data-science/tutorials/sql-game",
-      "id": "data-science/sql-game",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "tools": [
-
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-game/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-game/tutorial.json"
       }
     },
     {
@@ -806,500 +596,6 @@
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Version Control with Git",
-      "time_estimation": "65M",
-      "questions": [
-        "What is version control and why should I use it?",
-        "How do I get set up to use Git?",
-        "Where does Git store information?",
-        "How do I record changes in Git?",
-        "How do I check the status of my version control repository?",
-        "How do I record notes about what changes I made and why?",
-        "How can I identify old versions of files?",
-        "How do I review my changes?",
-        "How can I recover old versions of files?"
-      ],
-      "objectives": [
-        "Understand the benefits of an automated version control system.",
-        "Understand the basics of how automated version control systems work.",
-        "Configure `git` the first time it is used on a computer.",
-        "Understand the meaning of the `--global` configuration flag.",
-        "Create a local Git repository.",
-        "Describe the purpose of the `.git` directory.",
-        "Go through the modify-add-commit cycle for one or more files.",
-        "Explain where information is stored at each stage of that cycle.",
-        "Distinguish between descriptive and non-descriptive commit messages.",
-        "Explain what the HEAD of a repository is and how to use it.",
-        "Identify and use Git commit numbers.",
-        "Compare various versions of tracked files.",
-        "Restore old versions of files."
-      ],
-      "key_points": [
-        "Version control is like an unlimited 'undo'.",
-        "Version control also allows many people to work in parallel.",
-        "Use `git config` with the `--global` option to configure a user name, email address, editor, and other preferences once per machine.",
-        "`git init` initializes a repository.",
-        "Git stores all of its repository data in the `.git` directory.",
-        "`git status` shows the status of a repository.",
-        "Files can be stored in a project's working directory (which users see), the staging area (where the next commit is being built up) and the local repository (where commits are permanently recorded).",
-        "`git add` puts files in the staging area.",
-        "`git commit` saves the staged content as a new commit in the local repository.",
-        "Write a commit message that accurately describes your changes.",
-        "`git diff` displays differences between commits.",
-        "`git checkout` recovers old versions of files."
-      ],
-      "contributions": {
-        "authorship": [
-          "Sofokli5"
-        ],
-        "editing": [
-          "fpsom",
-          "shiltemann",
-          "hexylena"
-        ],
-        "funding": [
-          "carpentries",
-          "erasmusplus"
-        ]
-      },
-      "url": "/topics/data-science/tutorials/bash-git/tutorial.html",
-      "topic_name": "data-science",
-      "tutorial_name": "bash-git",
-      "dir": "topics/data-science/tutorials/bash-git",
-      "id": "data-science/bash-git",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "tools": [
-        "interactive_tool_rstudio"
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "contributors": [
-        {
-          "name": "Sofoklis Keisaris",
-          "email": "sofoskeisaris@gmail.com",
-          "orcid": "0000-0002-4833-4726",
-          "joined": "2022-05",
-          "id": "Sofokli5",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/Sofokli5.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/Sofokli5/"
-        },
-        {
-          "name": "Fotis E. Psomopoulos",
-          "email": "fpsom@certh.gr",
-          "twitter": "fopsom",
-          "gitter": "fpsom",
-          "orcid": "0000-0002-0222-4273",
-          "linkedin": "fpsom",
-          "joined": "2019-03",
-          "elixir_node": "gr",
-          "id": "fpsom",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/fpsom.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/fpsom/"
-        },
-        {
-          "name": "Saskia Hiltemann",
-          "maintainer_contact": "gitter",
-          "email": "saskia.hiltemann@gmail.com",
-          "twitter": "shiltemann",
-          "linkedin": "shiltemann",
-          "gitter": "shiltemann",
-          "orcid": "0000-0003-3803-468X",
-          "joined": "2017-09",
-          "bio": "Researcher at Erasmus Medical Center",
-          "elixir_node": "nl",
-          "contact_for_training": true,
-          "location": {
-            "country": "NL",
-            "lat": 51.912,
-            "lon": 4.462
-          },
-          "id": "shiltemann",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/"
-        },
-        {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "gitter": "hexylena",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-        },
-        {
-          "name": "The Carpentries",
-          "joined": "2021-09",
-          "id": "carpentries",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
-        },
-        {
-          "name": "Erasmus+ Programme",
-          "joined": "2020-09",
-          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
-          "github": false,
-          "funder": true,
-          "funding_id": "2020-1-NL01-KA203-064717",
-          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
-          "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
-        }
-      ],
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/bash-git/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/bash-git/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "CLI Educational Game - Bashcrawl",
-      "level": "Intermediate",
-      "zenodo_link": "",
-      "requirements": [
-        {
-          "type": "internal",
-          "topic_name": "data-science",
-          "tutorials": [
-            "cli-basics",
-            "cli-advanced"
-          ]
-        }
-      ],
-      "follow_up_training": [
-
-      ],
-      "questions": [
-        "How can I move around on my computer?",
-        "How can I see what files and directories I have?",
-        "How can I specify the location of a file or directory on my computer?",
-        "How can I create, copy, and delete files and directories?",
-        "How can I edit files?"
-      ],
-      "objectives": [
-        "Explore the bash dungeon and fight monsters",
-        "Reinforce the learning of CLI basics such as how to change directories, move around, find things, and symlinkings"
-      ],
-      "time_estimation": "2H",
-      "key_points": [
-        "Learning linux can be fun!"
-      ],
-      "notebook": {
-        "language": "bash"
-      },
-      "subtopic": "bash",
-      "contributors": [
-        {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "gitter": "hexylena",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-        },
-        {
-          "name": "Erasmus+ Programme",
-          "joined": "2020-09",
-          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
-          "github": false,
-          "funder": true,
-          "funding_id": "2020-1-NL01-KA203-064717",
-          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
-          "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
-        }
-      ],
-      "tags": [
-        "game",
-        "bash"
-      ],
-      "url": "/topics/data-science/tutorials/cli-bashcrawl/tutorial.html",
-      "topic_name": "data-science",
-      "tutorial_name": "cli-bashcrawl",
-      "dir": "topics/data-science/tutorials/cli-bashcrawl",
-      "id": "data-science/cli-bashcrawl",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "tools": [
-
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-bashcrawl/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-bashcrawl/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "Make & Snakemake",
-      "level": "Intermediate",
-      "zenodo_link": "https://zenodo.org/record/5562251",
-      "requirements": [
-        {
-          "type": "internal",
-          "topic_name": "data-science",
-          "tutorials": [
-            "cli-basics",
-            "cli-advanced"
-          ]
-        }
-      ],
-      "follow_up_training": [
-
-      ],
-      "questions": [
-        "What is Make & Snakemake",
-        "What is a Makefile/Snakefile",
-        "How do these improve pipelines over simple scripts?",
-        "Why is Snakemake better for scientific research and how can I use it",
-        "How do I use conda envs with Snakemake?"
-      ],
-      "objectives": [
-        "Write a snakefile that does a simple QC and Mapping workflow"
-      ],
-      "time_estimation": "3H",
-      "key_points": [
-        "Make and Snakemake are ways to write pipelines in a declarative format",
-        "Instead of writing individual actions you wish to take, you describe how to produce each file you need, and the system executes those steps only if they're needed",
-        "If you're doing scientific research you should use Snakemake",
-        "Snakemake can significantly speed up your command line pipelines by providing automatic detection of inputs, and not re-creating them if they don't need",
-        "Snakemake also provides very easy access to paralellisation without complexity.",
-        "But it is more complex than using Galaxy"
-      ],
-      "subtopic": "sciwms",
-      "contributors": [
-        {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "gitter": "hexylena",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-        },
-        {
-          "name": "Bazante Sanders",
-          "joined": "2020-12",
-          "id": "bazante1",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/bazante1.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bazante1/"
-        },
-        {
-          "name": "Donny Vrins",
-          "joined": "2021-10",
-          "linkedin": "Donny Vrins",
-          "email": "D.vrins@live.nl",
-          "id": "dirowa",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/dirowa.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/dirowa/"
-        },
-        {
-          "name": "Avans Hogeschool",
-          "joined": "2020-11",
-          "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
-        }
-      ],
-      "abbreviations": {
-        "SciWMS": "Scientific Workflow Management System",
-        "DAG": "Directed Acyclic Graph"
-      },
-      "url": "/topics/data-science/tutorials/snakemake/tutorial.html",
-      "topic_name": "data-science",
-      "tutorial_name": "snakemake",
-      "dir": "topics/data-science/tutorials/snakemake",
-      "id": "data-science/snakemake",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "tools": [
-
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/snakemake/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/snakemake/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "Basics of using Git from the Command Line",
-      "questions": [
-        "How can I start tracking my changes with git?",
-        "How do I commit changes?",
-        "How can I undo a mistake?"
-      ],
-      "objectives": [
-        "Create a repository",
-        "Commit a file",
-        "Make some changes",
-        "Use the log to view the diff",
-        "Undo a bad change"
-      ],
-      "time_estimation": "30m",
-      "key_points": [
-        "While git is extremely powerful, just using it for tracking changes is quite easy!",
-        "This does not take advantage of any advanced features, nor collaboration, but it is easy to expand into doing that."
-      ],
-      "contributions": {
-        "authorship": [
-          "hexylena"
-        ]
-      },
-      "requirements": [
-        {
-          "type": "internal",
-          "topic_name": "data-science",
-          "tutorials": [
-            "cli-basics"
-          ]
-        }
-      ],
-      "url": "/topics/data-science/tutorials/git-cli/tutorial.html",
-      "topic_name": "data-science",
-      "tutorial_name": "git-cli",
-      "dir": "topics/data-science/tutorials/git-cli",
-      "id": "data-science/git-cli",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "tools": [
-
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "contributors": [
-        {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "gitter": "hexylena",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-        }
-      ],
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/git-cli/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/git-cli/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
       "title": "CLI basics",
       "level": "Introductory",
       "zenodo_link": "",
@@ -1465,6 +761,401 @@
     },
     {
       "layout": "tutorial_hands_on",
+      "title": "CLI Educational Game - Bashcrawl",
+      "level": "Intermediate",
+      "zenodo_link": "",
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "data-science",
+          "tutorials": [
+            "cli-basics",
+            "cli-advanced"
+          ]
+        }
+      ],
+      "follow_up_training": [
+
+      ],
+      "questions": [
+        "How can I move around on my computer?",
+        "How can I see what files and directories I have?",
+        "How can I specify the location of a file or directory on my computer?",
+        "How can I create, copy, and delete files and directories?",
+        "How can I edit files?"
+      ],
+      "objectives": [
+        "Explore the bash dungeon and fight monsters",
+        "Reinforce the learning of CLI basics such as how to change directories, move around, find things, and symlinkings"
+      ],
+      "time_estimation": "2H",
+      "key_points": [
+        "Learning linux can be fun!"
+      ],
+      "notebook": {
+        "language": "bash"
+      },
+      "subtopic": "bash",
+      "contributors": [
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        },
+        {
+          "name": "Erasmus+ Programme",
+          "joined": "2020-09",
+          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
+          "github": false,
+          "funder": true,
+          "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
+          "id": "erasmusplus",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
+        }
+      ],
+      "tags": [
+        "game",
+        "bash"
+      ],
+      "url": "/topics/data-science/tutorials/cli-bashcrawl/tutorial.html",
+      "topic_name": "data-science",
+      "tutorial_name": "cli-bashcrawl",
+      "dir": "topics/data-science/tutorials/cli-bashcrawl",
+      "id": "data-science/cli-bashcrawl",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-bashcrawl/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-bashcrawl/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Introduction to SQL",
+      "level": "Introductory",
+      "zenodo_link": null,
+      "requirements": [
+
+      ],
+      "follow_up_training": [
+        {
+          "type": "internal",
+          "topic_name": "data-science",
+          "tutorials": [
+            "sql-advanced"
+          ]
+        }
+      ],
+      "questions": [
+        "How can I get data from a database?",
+        "How can I sort a query's results?",
+        "How can I remove duplicate values from a query's results?",
+        "How can I select subsets of data?",
+        "How can I calculate new values on the fly?",
+        "How do databases represent missing information?",
+        "What special handling does missing information require?"
+      ],
+      "objectives": [
+        "Explain the difference between a table, a record, and a field.",
+        "Explain the difference between a database and a database manager.",
+        "Write a query to select all values for specific fields from a single table.",
+        "Write queries that display results in a particular order.",
+        "Write queries that eliminate duplicate values from data.",
+        "Write queries that select records that satisfy user-specified conditions.",
+        "Explain the order in which the clauses in a query are executed.",
+        "Write queries that calculate new values for each selected record.",
+        "Explain how databases represent missing information.",
+        "Explain the three-valued logic databases use when manipulating missing information.",
+        "Write queries that handle missing information correctly."
+      ],
+      "time_estimation": "3H",
+      "key_points": [
+        "A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records.",
+        "A database manager is a program that manipulates information stored in a database.",
+        "We write queries in a specialized language called SQL to extract information from databases.",
+        "Use SELECT... FROM... to get values from a database table.",
+        "SQL is case-insensitive (but data is case-sensitive).",
+        "The records in a database table are not intrinsically ordered: if we want to display them in some order, we must specify that explicitly with ORDER BY.",
+        "The values in a database are not guaranteed to be unique: if we want to eliminate duplicates, we must specify that explicitly as well using DISTINCT.",
+        "Use WHERE to specify conditions that records must meet in order to be included in a query's results.",
+        "Use AND, OR, and NOT to combine tests.",
+        "Filtering is done on whole records, so conditions can use fields that are not actually displayed.",
+        "Write queries incrementally.",
+        "Queries can do the usual arithmetic operations on values.",
+        "Use UNION to combine the results of two or more queries.",
+        "Databases use a special value called NULL to represent missing information.",
+        "Almost all operations on NULL produce NULL.",
+        "Queries can test for NULLs using IS NULL and IS NOT NULL."
+      ],
+      "contributors": [
+        {
+          "name": "The Carpentries",
+          "joined": "2021-09",
+          "id": "carpentries",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
+        },
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        },
+        {
+          "name": "Donny Vrins",
+          "joined": "2021-10",
+          "linkedin": "Donny Vrins",
+          "email": "D.vrins@live.nl",
+          "id": "dirowa",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/dirowa.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/dirowa/"
+        },
+        {
+          "name": "Bazante Sanders",
+          "joined": "2020-12",
+          "id": "bazante1",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/bazante1.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bazante1/"
+        },
+        {
+          "name": "Avans Hogeschool",
+          "joined": "2020-11",
+          "funder": true,
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
+          "id": "avans-atgm",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
+        }
+      ],
+      "subtopic": "sql",
+      "notebook": {
+        "language": "sql"
+      },
+      "abbreviations": {
+        "SQL": "Structured Query Language"
+      },
+      "tags": [
+        "SQL"
+      ],
+      "url": "/topics/data-science/tutorials/sql-basic/tutorial.html",
+      "topic_name": "data-science",
+      "tutorial_name": "sql-basic",
+      "dir": "topics/data-science/tutorials/sql-basic",
+      "id": "data-science/sql-basic",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "quiz": [
+        {
+          "id": "recap.yml",
+          "path": "topics/data-science/tutorials/sql-basic/quiz/recap.yml",
+          "title": "SQL Basics Recap",
+          "contributors": [
+            "hexylena"
+          ]
+        }
+      ],
+      "tools": [
+
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-basic/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-basic/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Make & Snakemake",
+      "level": "Intermediate",
+      "zenodo_link": "https://zenodo.org/record/5562251",
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "data-science",
+          "tutorials": [
+            "cli-basics",
+            "cli-advanced"
+          ]
+        }
+      ],
+      "follow_up_training": [
+
+      ],
+      "questions": [
+        "What is Make & Snakemake",
+        "What is a Makefile/Snakefile",
+        "How do these improve pipelines over simple scripts?",
+        "Why is Snakemake better for scientific research and how can I use it",
+        "How do I use conda envs with Snakemake?"
+      ],
+      "objectives": [
+        "Write a snakefile that does a simple QC and Mapping workflow"
+      ],
+      "time_estimation": "3H",
+      "key_points": [
+        "Make and Snakemake are ways to write pipelines in a declarative format",
+        "Instead of writing individual actions you wish to take, you describe how to produce each file you need, and the system executes those steps only if they're needed",
+        "If you're doing scientific research you should use Snakemake",
+        "Snakemake can significantly speed up your command line pipelines by providing automatic detection of inputs, and not re-creating them if they don't need",
+        "Snakemake also provides very easy access to paralellisation without complexity.",
+        "But it is more complex than using Galaxy"
+      ],
+      "subtopic": "sciwms",
+      "contributors": [
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        },
+        {
+          "name": "Bazante Sanders",
+          "joined": "2020-12",
+          "id": "bazante1",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/bazante1.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bazante1/"
+        },
+        {
+          "name": "Donny Vrins",
+          "joined": "2021-10",
+          "linkedin": "Donny Vrins",
+          "email": "D.vrins@live.nl",
+          "id": "dirowa",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/dirowa.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/dirowa/"
+        },
+        {
+          "name": "Avans Hogeschool",
+          "joined": "2020-11",
+          "funder": true,
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
+          "id": "avans-atgm",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
+        }
+      ],
+      "abbreviations": {
+        "SciWMS": "Scientific Workflow Management System",
+        "DAG": "Directed Acyclic Graph"
+      },
+      "url": "/topics/data-science/tutorials/snakemake/tutorial.html",
+      "topic_name": "data-science",
+      "tutorial_name": "snakemake",
+      "dir": "topics/data-science/tutorials/snakemake",
+      "id": "data-science/snakemake",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/snakemake/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/snakemake/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
       "title": "Variant Calling Workflow",
       "questions": [
         "How do I find sequence variants between my sample and a reference genome?"
@@ -1587,85 +1278,43 @@
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Introduction to Python",
-      "level": "Introductory",
-      "requirements": [
-
+      "title": "Basics of using Git from the Command Line",
+      "questions": [
+        "How can I start tracking my changes with git?",
+        "How do I commit changes?",
+        "How can I undo a mistake?"
       ],
-      "follow_up_training": [
+      "objectives": [
+        "Create a repository",
+        "Commit a file",
+        "Make some changes",
+        "Use the log to view the diff",
+        "Undo a bad change"
+      ],
+      "time_estimation": "30m",
+      "key_points": [
+        "While git is extremely powerful, just using it for tracking changes is quite easy!",
+        "This does not take advantage of any advanced features, nor collaboration, but it is easy to expand into doing that."
+      ],
+      "contributions": {
+        "authorship": [
+          "hexylena"
+        ]
+      },
+      "requirements": [
         {
           "type": "internal",
           "topic_name": "data-science",
           "tutorials": [
-            "python-plotting",
-            "python-advanced-np-pd"
+            "cli-basics"
           ]
         }
       ],
-      "questions": [
-        "How can I run Python programs?"
-      ],
-      "objectives": [
-        "Learn the fundamentals of programming in Python"
-      ],
-      "time_estimation": "5H",
-      "key_points": [
-        "Python is a fairly easy programming language to learn and use, but be mindful of the indexing.",
-        "Python has many libraries offering a variety of capabilities, which makes it popular for beginners, as well as, more experienced users"
-      ],
-      "subtopic": "python",
-      "contributors": [
-        {
-          "name": "Maria Christina Maniou",
-          "joined": "2021-09",
-          "elixir_node": "gr",
-          "id": "mcmaniou",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/mcmaniou.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/mcmaniou/"
-        },
-        {
-          "name": "Fotis E. Psomopoulos",
-          "email": "fpsom@certh.gr",
-          "twitter": "fopsom",
-          "gitter": "fpsom",
-          "orcid": "0000-0002-0222-4273",
-          "linkedin": "fpsom",
-          "joined": "2019-03",
-          "elixir_node": "gr",
-          "id": "fpsom",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/fpsom.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/fpsom/"
-        },
-        {
-          "name": "The Carpentries",
-          "joined": "2021-09",
-          "id": "carpentries",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
-        },
-        {
-          "name": "Erasmus+ Programme",
-          "joined": "2020-09",
-          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
-          "github": false,
-          "funder": true,
-          "funding_id": "2020-1-NL01-KA203-064717",
-          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
-          "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
-        }
-      ],
-      "priority": 1,
-      "notebook": {
-        "language": "python",
-        "pyolite": true
-      },
-      "url": "/topics/data-science/tutorials/python-basics/tutorial.html",
+      "url": "/topics/data-science/tutorials/git-cli/tutorial.html",
       "topic_name": "data-science",
-      "tutorial_name": "python-basics",
-      "dir": "topics/data-science/tutorials/python-basics",
-      "id": "data-science/python-basics",
+      "tutorial_name": "git-cli",
+      "dir": "topics/data-science/tutorials/git-cli",
+      "id": "data-science/git-cli",
       "video_library": {
         "tutorial": null,
         "slides": null,
@@ -1690,9 +1339,30 @@
         "video": false
       },
       "type": "tutorial",
+      "contributors": [
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        }
+      ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-basics/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-basics/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/git-cli/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/git-cli/tutorial.json"
       }
     },
     {
@@ -1805,6 +1475,384 @@
       "urls": {
         "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-python/tutorial.json",
         "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-python/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Introduction to Python",
+      "level": "Introductory",
+      "requirements": [
+
+      ],
+      "follow_up_training": [
+        {
+          "type": "internal",
+          "topic_name": "data-science",
+          "tutorials": [
+            "python-plotting",
+            "python-advanced-np-pd"
+          ]
+        }
+      ],
+      "questions": [
+        "How can I run Python programs?"
+      ],
+      "objectives": [
+        "Learn the fundamentals of programming in Python"
+      ],
+      "time_estimation": "5H",
+      "key_points": [
+        "Python is a fairly easy programming language to learn and use, but be mindful of the indexing.",
+        "Python has many libraries offering a variety of capabilities, which makes it popular for beginners, as well as, more experienced users"
+      ],
+      "subtopic": "python",
+      "contributors": [
+        {
+          "name": "Maria Christina Maniou",
+          "joined": "2021-09",
+          "elixir_node": "gr",
+          "id": "mcmaniou",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/mcmaniou.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/mcmaniou/"
+        },
+        {
+          "name": "Fotis E. Psomopoulos",
+          "email": "fpsom@certh.gr",
+          "twitter": "fopsom",
+          "gitter": "fpsom",
+          "orcid": "0000-0002-0222-4273",
+          "linkedin": "fpsom",
+          "joined": "2019-03",
+          "elixir_node": "gr",
+          "id": "fpsom",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/fpsom.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/fpsom/"
+        },
+        {
+          "name": "The Carpentries",
+          "joined": "2021-09",
+          "id": "carpentries",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
+        },
+        {
+          "name": "Erasmus+ Programme",
+          "joined": "2020-09",
+          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
+          "github": false,
+          "funder": true,
+          "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
+          "id": "erasmusplus",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
+        }
+      ],
+      "priority": 1,
+      "notebook": {
+        "language": "python",
+        "pyolite": true
+      },
+      "url": "/topics/data-science/tutorials/python-basics/tutorial.html",
+      "topic_name": "data-science",
+      "tutorial_name": "python-basics",
+      "dir": "topics/data-science/tutorials/python-basics",
+      "id": "data-science/python-basics",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-basics/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-basics/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Advanced CLI in Galaxy",
+      "level": "Intermediate",
+      "zenodo_link": "",
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "data-science",
+          "tutorials": [
+            "cli-basics"
+          ]
+        }
+      ],
+      "follow_up_training": [
+        {
+          "type": "internal",
+          "topic_name": "data-science",
+          "tutorials": [
+            "cli-bashcrawl"
+          ]
+        }
+      ],
+      "questions": [
+        "How can I combine existing commands to do new things?",
+        "How can I perform the same actions on many different files?",
+        "How can I find files?",
+        "How can I find things in files?"
+      ],
+      "objectives": [
+        "Redirect a command's output to a file.",
+        "Process a file instead of keyboard input using redirection.",
+        "Construct command pipelines with two or more stages.",
+        "Explain what usually happens if a program or pipeline isn't given any input to process.",
+        "Explain Unix's 'small pieces, loosely joined' philosophy.",
+        "Write a loop that applies one or more commands separately to each file in a set of files.",
+        "Trace the values taken on by a loop variable during execution of the loop.",
+        "Explain the difference between a variable's name and its value.",
+        "Explain why spaces and some punctuation characters shouldn't be used in file names.",
+        "Demonstrate how to see what commands have recently been executed.",
+        "Re-run recently executed commands without retyping them.",
+        "Use `grep` to select lines from text files that match simple patterns.",
+        "Use `find` to find files and directories whose names match simple patterns.",
+        "Use the output of one command as the command-line argument(s) to another command.",
+        "Explain what is meant by 'text' and 'binary' files, and why many common tools don't handle the latter well."
+      ],
+      "time_estimation": "2H",
+      "key_points": [
+        "`wc` counts lines, words, and characters in its inputs.",
+        "`cat` displays the contents of its inputs.",
+        "`sort` sorts its inputs.",
+        "`head` displays the first 10 lines of its input.",
+        "`tail` displays the last 10 lines of its input.",
+        "`command > [file]` redirects a command's output to a file (overwriting any existing content).",
+        "`command >> [file]` appends a command's output to a file.",
+        "`[first] | [second]` is a pipeline: the output of the first command is used as the input to the second.",
+        "The best way to use the shell is to use pipes to combine simple single-purpose programs (filters).",
+        "A `for` loop repeats commands once for every thing in a list.",
+        "Every `for` loop needs a variable to refer to the thing it is currently operating on.",
+        "Use `$name` to expand a variable (i.e., get its value). `${name}` can also be used.",
+        "Do not use spaces, quotes, or wildcard characters such as '*' or '?' in filenames, as it complicates variable expansion.",
+        "Give files consistent names that are easy to match with wildcard patterns to make it easy to select them for looping.",
+        "Use the up-arrow key to scroll up through previous commands to edit and repeat them.",
+        "Use <kbd>Ctrl</kbd>+<kbd>R</kbd> to search through the previously entered commands.",
+        "Use `history` to display recent commands, and `![number]` to repeat a command by number.",
+        "`find` finds files with specific properties that match patterns.",
+        "`grep` selects lines in files that match patterns.",
+        "`--help` is an option supported by many bash commands, and programs that can be run from within Bash, to display more information on how to use these commands or programs.",
+        "`man [command]` displays the manual page for a given command.",
+        "`$([command])` inserts a command's output in place."
+      ],
+      "notebook": {
+        "language": "bash"
+      },
+      "subtopic": "bash",
+      "contributors": [
+        {
+          "name": "The Carpentries",
+          "joined": "2021-09",
+          "id": "carpentries",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
+        },
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        },
+        {
+          "name": "Bazante Sanders",
+          "joined": "2020-12",
+          "id": "bazante1",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/bazante1.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bazante1/"
+        },
+        {
+          "name": "Erasmus+ Programme",
+          "joined": "2020-09",
+          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
+          "github": false,
+          "funder": true,
+          "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
+          "id": "erasmusplus",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
+        },
+        {
+          "name": "Avans Hogeschool",
+          "joined": "2020-11",
+          "funder": true,
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
+          "id": "avans-atgm",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
+        }
+      ],
+      "tags": [
+        "bash"
+      ],
+      "url": "/topics/data-science/tutorials/cli-advanced/tutorial.html",
+      "topic_name": "data-science",
+      "tutorial_name": "cli-advanced",
+      "dir": "topics/data-science/tutorials/cli-advanced",
+      "id": "data-science/cli-advanced",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-advanced/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-advanced/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Python - Math",
+      "level": "Introductory",
+      "requirements": [
+
+      ],
+      "follow_up_training": [
+
+      ],
+      "questions": [
+        "How do I do math in Python?"
+      ],
+      "objectives": [
+        "Understand the fundamentals of object assignment and math in python and can write simple statements and execute calcualtions in order to be able to summarize the results of calculations and classify valid and invalid statements.",
+        "Translate some known math functions (e.g. euclidean distance, root algorithm) into python to transfer concepts from mathematics lessons directly into Python."
+      ],
+      "time_estimation": "30M",
+      "key_points": [
+        "Converting mathematics equation to python is pretty easy!",
+        "In real life you'll occasionally need to do this, either converting from a formula you read in a paper, or a description of an algorithm, into code that you'll re-use.",
+        "Did you forget how a particular module or function works? Try `help()`"
+      ],
+      "subtopic": "python-modular",
+      "contributors": [
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        },
+        {
+          "name": "Donny Vrins",
+          "joined": "2021-10",
+          "linkedin": "Donny Vrins",
+          "email": "D.vrins@live.nl",
+          "id": "dirowa",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/dirowa.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/dirowa/"
+        },
+        {
+          "name": "Bazante Sanders",
+          "joined": "2020-12",
+          "id": "bazante1",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/bazante1.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bazante1/"
+        }
+      ],
+      "priority": 1,
+      "notebook": {
+        "language": "python",
+        "pyolite": true
+      },
+      "url": "/topics/data-science/tutorials/python-math/tutorial.html",
+      "topic_name": "data-science",
+      "tutorial_name": "python-math",
+      "dir": "topics/data-science/tutorials/python-math",
+      "id": "data-science/python-math",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-math/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-math/tutorial.json"
       }
     },
     {
@@ -1998,7 +2046,7 @@
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Advanced CLI in Galaxy",
+      "title": "SQL Educational Game - Murder Mystery",
       "level": "Intermediate",
       "zenodo_link": "",
       "requirements": [
@@ -2006,79 +2054,30 @@
           "type": "internal",
           "topic_name": "data-science",
           "tutorials": [
-            "cli-basics"
+            "sql-basic",
+            "sql-advanced"
           ]
         }
       ],
       "follow_up_training": [
-        {
-          "type": "internal",
-          "topic_name": "data-science",
-          "tutorials": [
-            "cli-bashcrawl"
-          ]
-        }
+
       ],
       "questions": [
-        "How can I combine existing commands to do new things?",
-        "How can I perform the same actions on many different files?",
-        "How can I find files?",
-        "How can I find things in files?"
+        "Who did the crime?"
       ],
       "objectives": [
-        "Redirect a command's output to a file.",
-        "Process a file instead of keyboard input using redirection.",
-        "Construct command pipelines with two or more stages.",
-        "Explain what usually happens if a program or pipeline isn't given any input to process.",
-        "Explain Unix's 'small pieces, loosely joined' philosophy.",
-        "Write a loop that applies one or more commands separately to each file in a set of files.",
-        "Trace the values taken on by a loop variable during execution of the loop.",
-        "Explain the difference between a variable's name and its value.",
-        "Explain why spaces and some punctuation characters shouldn't be used in file names.",
-        "Demonstrate how to see what commands have recently been executed.",
-        "Re-run recently executed commands without retyping them.",
-        "Use `grep` to select lines from text files that match simple patterns.",
-        "Use `find` to find files and directories whose names match simple patterns.",
-        "Use the output of one command as the command-line argument(s) to another command.",
-        "Explain what is meant by 'text' and 'binary' files, and why many common tools don't handle the latter well."
+        "Explore SQL City and discover who committed the murder",
+        "Reinforce your experiences with SQL such as querying, filtering, and joining data."
       ],
       "time_estimation": "2H",
       "key_points": [
-        "`wc` counts lines, words, and characters in its inputs.",
-        "`cat` displays the contents of its inputs.",
-        "`sort` sorts its inputs.",
-        "`head` displays the first 10 lines of its input.",
-        "`tail` displays the last 10 lines of its input.",
-        "`command > [file]` redirects a command's output to a file (overwriting any existing content).",
-        "`command >> [file]` appends a command's output to a file.",
-        "`[first] | [second]` is a pipeline: the output of the first command is used as the input to the second.",
-        "The best way to use the shell is to use pipes to combine simple single-purpose programs (filters).",
-        "A `for` loop repeats commands once for every thing in a list.",
-        "Every `for` loop needs a variable to refer to the thing it is currently operating on.",
-        "Use `$name` to expand a variable (i.e., get its value). `${name}` can also be used.",
-        "Do not use spaces, quotes, or wildcard characters such as '*' or '?' in filenames, as it complicates variable expansion.",
-        "Give files consistent names that are easy to match with wildcard patterns to make it easy to select them for looping.",
-        "Use the up-arrow key to scroll up through previous commands to edit and repeat them.",
-        "Use <kbd>Ctrl</kbd>+<kbd>R</kbd> to search through the previously entered commands.",
-        "Use `history` to display recent commands, and `![number]` to repeat a command by number.",
-        "`find` finds files with specific properties that match patterns.",
-        "`grep` selects lines in files that match patterns.",
-        "`--help` is an option supported by many bash commands, and programs that can be run from within Bash, to display more information on how to use these commands or programs.",
-        "`man [command]` displays the manual page for a given command.",
-        "`$([command])` inserts a command's output in place."
+        "Learning SQL can be fun!"
       ],
       "notebook": {
-        "language": "bash"
+        "language": "python"
       },
-      "subtopic": "bash",
+      "subtopic": "sql",
       "contributors": [
-        {
-          "name": "The Carpentries",
-          "joined": "2021-09",
-          "id": "carpentries",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
-        },
         {
           "name": "Helena Rasche",
           "email": "hexylena@galaxians.org",
@@ -2099,11 +2098,11 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
         },
         {
-          "name": "Bazante Sanders",
-          "joined": "2020-12",
-          "id": "bazante1",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/bazante1.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bazante1/"
+          "name": "NU Knight Lab",
+          "joined": "2021-10",
+          "id": "NUKnightLab",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/NUKnightLab.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/NUKnightLab/"
         },
         {
           "name": "Erasmus+ Programme",
@@ -2128,13 +2127,14 @@
         }
       ],
       "tags": [
-        "bash"
+        "game",
+        "SQL"
       ],
-      "url": "/topics/data-science/tutorials/cli-advanced/tutorial.html",
+      "url": "/topics/data-science/tutorials/sql-game/tutorial.html",
       "topic_name": "data-science",
-      "tutorial_name": "cli-advanced",
-      "dir": "topics/data-science/tutorials/cli-advanced",
-      "id": "data-science/cli-advanced",
+      "tutorial_name": "sql-game",
+      "dir": "topics/data-science/tutorials/sql-game",
+      "id": "data-science/sql-game",
       "video_library": {
         "tutorial": null,
         "slides": null,
@@ -2160,20 +2160,21 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-advanced/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-advanced/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-game/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-game/tutorial.json"
       }
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Python - Functions",
-      "level": "Introductory",
+      "title": "Advanced Python",
+      "level": "Intermediate",
+      "zenodo_link": "https://zenodo.org/record/3477564",
       "requirements": [
         {
           "type": "internal",
           "topic_name": "data-science",
           "tutorials": [
-            "python-math"
+            "python-basics"
           ]
         }
       ],
@@ -2181,23 +2182,40 @@
 
       ],
       "questions": [
-        "How do I write functions in Python?",
-        "What is a function?",
-        "What do they look like?",
-        "Fill in the missing part of a function"
+        "How can I analyze data using Python with Numpy and Pandas?"
       ],
       "objectives": [
-        "Understand the structure of a \"function\" in order to be able to construct their own functions and predict which functions will not work."
+        "Use the scientific libraries pandas and numpy to explore tabular datasets",
+        "Calculate basic statistics about datasets and columns"
       ],
-      "time_estimation": "30M",
+      "time_estimation": "3H",
       "key_points": [
-        "Functions are foundational in Python",
-        "Everything you do will require functions",
-        "Functions keep your code DRY (don't repeat yourself), reducing your copying and pasting or rewriting the same block of code.",
-        "Deciding what part of your code should, or should not be, a function is something that will come with practice."
+        "Python has many libraries offering a variety of capabilities, which makes it popular for beginners, as well as, more experienced users",
+        "You can use scientific libraries like Numpy and Pandas to perform data analysis."
       ],
-      "subtopic": "python-modular",
+      "subtopic": "python",
       "contributors": [
+        {
+          "name": "Maria Christina Maniou",
+          "joined": "2021-09",
+          "elixir_node": "gr",
+          "id": "mcmaniou",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/mcmaniou.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/mcmaniou/"
+        },
+        {
+          "name": "Fotis E. Psomopoulos",
+          "email": "fpsom@certh.gr",
+          "twitter": "fopsom",
+          "gitter": "fpsom",
+          "orcid": "0000-0002-0222-4273",
+          "linkedin": "fpsom",
+          "joined": "2019-03",
+          "elixir_node": "gr",
+          "id": "fpsom",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/fpsom.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/fpsom/"
+        },
         {
           "name": "The Carpentries",
           "joined": "2021-09",
@@ -2206,39 +2224,16 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
         },
         {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "gitter": "hexylena",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-        },
-        {
-          "name": "Donny Vrins",
-          "joined": "2021-10",
-          "linkedin": "Donny Vrins",
-          "email": "D.vrins@live.nl",
-          "id": "dirowa",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/dirowa.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/dirowa/"
-        },
-        {
-          "name": "Bazante Sanders",
-          "joined": "2020-12",
-          "id": "bazante1",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/bazante1.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bazante1/"
+          "name": "Erasmus+ Programme",
+          "joined": "2020-09",
+          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
+          "github": false,
+          "funder": true,
+          "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
+          "id": "erasmusplus",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         }
       ],
       "priority": 2,
@@ -2246,14 +2241,11 @@
         "language": "python",
         "pyolite": true
       },
-      "abbreviations": {
-        "DRY": "Don't Repeat Yourself"
-      },
-      "url": "/topics/data-science/tutorials/python-functions/tutorial.html",
+      "url": "/topics/data-science/tutorials/python-advanced-np-pd/tutorial.html",
       "topic_name": "data-science",
-      "tutorial_name": "python-functions",
-      "dir": "topics/data-science/tutorials/python-functions",
-      "id": "data-science/python-functions",
+      "tutorial_name": "python-advanced-np-pd",
+      "dir": "topics/data-science/tutorials/python-advanced-np-pd",
+      "id": "data-science/python-advanced-np-pd",
       "video_library": {
         "tutorial": null,
         "slides": null,
@@ -2279,8 +2271,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-functions/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-functions/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-advanced-np-pd/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-advanced-np-pd/tutorial.json"
       }
     },
     {
@@ -2471,7 +2463,126 @@
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Advanced Python",
+      "title": "Python - Functions",
+      "level": "Introductory",
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "data-science",
+          "tutorials": [
+            "python-math"
+          ]
+        }
+      ],
+      "follow_up_training": [
+
+      ],
+      "questions": [
+        "How do I write functions in Python?",
+        "What is a function?",
+        "What do they look like?",
+        "Fill in the missing part of a function"
+      ],
+      "objectives": [
+        "Understand the structure of a \"function\" in order to be able to construct their own functions and predict which functions will not work."
+      ],
+      "time_estimation": "30M",
+      "key_points": [
+        "Functions are foundational in Python",
+        "Everything you do will require functions",
+        "Functions keep your code DRY (don't repeat yourself), reducing your copying and pasting or rewriting the same block of code.",
+        "Deciding what part of your code should, or should not be, a function is something that will come with practice."
+      ],
+      "subtopic": "python-modular",
+      "contributors": [
+        {
+          "name": "The Carpentries",
+          "joined": "2021-09",
+          "id": "carpentries",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
+        },
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        },
+        {
+          "name": "Donny Vrins",
+          "joined": "2021-10",
+          "linkedin": "Donny Vrins",
+          "email": "D.vrins@live.nl",
+          "id": "dirowa",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/dirowa.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/dirowa/"
+        },
+        {
+          "name": "Bazante Sanders",
+          "joined": "2020-12",
+          "id": "bazante1",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/bazante1.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bazante1/"
+        }
+      ],
+      "priority": 2,
+      "notebook": {
+        "language": "python",
+        "pyolite": true
+      },
+      "abbreviations": {
+        "DRY": "Don't Repeat Yourself"
+      },
+      "url": "/topics/data-science/tutorials/python-functions/tutorial.html",
+      "topic_name": "data-science",
+      "tutorial_name": "python-functions",
+      "dir": "topics/data-science/tutorials/python-functions",
+      "id": "data-science/python-functions",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-functions/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-functions/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Plotting in Python",
       "level": "Intermediate",
       "zenodo_link": "https://zenodo.org/record/3477564",
       "requirements": [
@@ -2487,16 +2598,15 @@
 
       ],
       "questions": [
-        "How can I analyze data using Python with Numpy and Pandas?"
+        "How can I create plots using Python in Galaxy?"
       ],
       "objectives": [
-        "Use the scientific libraries pandas and numpy to explore tabular datasets",
-        "Calculate basic statistics about datasets and columns"
+        "Use the scientific library matplolib to explore tabular datasets"
       ],
-      "time_estimation": "3H",
+      "time_estimation": "1H",
       "key_points": [
         "Python has many libraries offering a variety of capabilities, which makes it popular for beginners, as well as, more experienced users",
-        "You can use scientific libraries like Numpy and Pandas to perform data analysis."
+        "You can use scientific libraries like Matplotlib to perform exploratory data analysis."
       ],
       "subtopic": "python",
       "contributors": [
@@ -2541,16 +2651,16 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         }
       ],
-      "priority": 2,
+      "priority": 3,
       "notebook": {
         "language": "python",
         "pyolite": true
       },
-      "url": "/topics/data-science/tutorials/python-advanced-np-pd/tutorial.html",
+      "url": "/topics/data-science/tutorials/python-plotting/tutorial.html",
       "topic_name": "data-science",
-      "tutorial_name": "python-advanced-np-pd",
-      "dir": "topics/data-science/tutorials/python-advanced-np-pd",
-      "id": "data-science/python-advanced-np-pd",
+      "tutorial_name": "python-plotting",
+      "dir": "topics/data-science/tutorials/python-plotting",
+      "id": "data-science/python-plotting",
       "video_library": {
         "tutorial": null,
         "slides": null,
@@ -2576,125 +2686,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-advanced-np-pd/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-advanced-np-pd/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "dplyr & tidyverse for data processing",
-      "level": "Advanced",
-      "zenodo_link": null,
-      "requirements": [
-        {
-          "type": "internal",
-          "topic_name": "data-science",
-          "tutorials": [
-            "r-basics",
-            "r-advanced"
-          ]
-        }
-      ],
-      "follow_up_training": [
-
-      ],
-      "questions": [
-        "How can I load tabular data into R?",
-        "How can I slice and dice the data to ask questions?"
-      ],
-      "objectives": [
-        "Read data with the built-in `read.csv`",
-        "Read data with dplyr's `read_csv`",
-        "Use dplyr and tidyverse functions to cleanup data."
-      ],
-      "time_estimation": "1H",
-      "key_points": [
-        "Dplyr and tidyverse make it a lot easier to process data",
-        "The functions for selecting data are a lot easier to understand than R's built in alternatives."
-      ],
-      "contributors": [
-        {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "gitter": "hexylena",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-        },
-        {
-          "name": "Erasmus+ Programme",
-          "joined": "2020-09",
-          "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
-          "github": false,
-          "funder": true,
-          "funding_id": "2020-1-NL01-KA203-064717",
-          "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
-          "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
-        },
-        {
-          "name": "Avans Hogeschool",
-          "joined": "2020-11",
-          "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
-        }
-      ],
-      "subtopic": "r",
-      "notebook": {
-        "language": "r"
-      },
-      "priority": 3,
-      "tags": [
-        "R"
-      ],
-      "license": "MIT",
-      "url": "/topics/data-science/tutorials/r-dplyr/tutorial.html",
-      "topic_name": "data-science",
-      "tutorial_name": "r-dplyr",
-      "dir": "topics/data-science/tutorials/r-dplyr",
-      "id": "data-science/r-dplyr",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "tools": [
-
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-dplyr/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-dplyr/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-plotting/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-plotting/tutorial.json"
       }
     },
     {
@@ -2813,15 +2806,16 @@
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Plotting in Python",
-      "level": "Intermediate",
-      "zenodo_link": "https://zenodo.org/record/3477564",
+      "title": "dplyr & tidyverse for data processing",
+      "level": "Advanced",
+      "zenodo_link": null,
       "requirements": [
         {
           "type": "internal",
           "topic_name": "data-science",
           "tutorials": [
-            "python-basics"
+            "r-basics",
+            "r-advanced"
           ]
         }
       ],
@@ -2829,45 +2823,38 @@
 
       ],
       "questions": [
-        "How can I create plots using Python in Galaxy?"
+        "How can I load tabular data into R?",
+        "How can I slice and dice the data to ask questions?"
       ],
       "objectives": [
-        "Use the scientific library matplolib to explore tabular datasets"
+        "Read data with the built-in `read.csv`",
+        "Read data with dplyr's `read_csv`",
+        "Use dplyr and tidyverse functions to cleanup data."
       ],
       "time_estimation": "1H",
       "key_points": [
-        "Python has many libraries offering a variety of capabilities, which makes it popular for beginners, as well as, more experienced users",
-        "You can use scientific libraries like Matplotlib to perform exploratory data analysis."
+        "Dplyr and tidyverse make it a lot easier to process data",
+        "The functions for selecting data are a lot easier to understand than R's built in alternatives."
       ],
-      "subtopic": "python",
       "contributors": [
         {
-          "name": "Maria Christina Maniou",
-          "joined": "2021-09",
-          "elixir_node": "gr",
-          "id": "mcmaniou",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/mcmaniou.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/mcmaniou/"
-        },
-        {
-          "name": "Fotis E. Psomopoulos",
-          "email": "fpsom@certh.gr",
-          "twitter": "fopsom",
-          "gitter": "fpsom",
-          "orcid": "0000-0002-0222-4273",
-          "linkedin": "fpsom",
-          "joined": "2019-03",
-          "elixir_node": "gr",
-          "id": "fpsom",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/fpsom.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/fpsom/"
-        },
-        {
-          "name": "The Carpentries",
-          "joined": "2021-09",
-          "id": "carpentries",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
         },
         {
           "name": "Erasmus+ Programme",
@@ -2880,18 +2867,31 @@
           "id": "erasmusplus",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
+        },
+        {
+          "name": "Avans Hogeschool",
+          "joined": "2020-11",
+          "funder": true,
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
+          "id": "avans-atgm",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
-      "priority": 3,
+      "subtopic": "r",
       "notebook": {
-        "language": "python",
-        "pyolite": true
+        "language": "r"
       },
-      "url": "/topics/data-science/tutorials/python-plotting/tutorial.html",
+      "priority": 3,
+      "tags": [
+        "R"
+      ],
+      "license": "MIT",
+      "url": "/topics/data-science/tutorials/r-dplyr/tutorial.html",
       "topic_name": "data-science",
-      "tutorial_name": "python-plotting",
-      "dir": "topics/data-science/tutorials/python-plotting",
-      "id": "data-science/python-plotting",
+      "tutorial_name": "r-dplyr",
+      "dir": "topics/data-science/tutorials/r-dplyr",
+      "id": "data-science/r-dplyr",
       "video_library": {
         "tutorial": null,
         "slides": null,
@@ -2917,8 +2917,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-plotting/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-plotting/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-dplyr/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-dplyr/tutorial.json"
       }
     },
     {
@@ -3858,6 +3858,130 @@
     },
     {
       "layout": "tutorial_hands_on",
+      "title": "Conda Environments For Software Development",
+      "level": "Intermediate",
+      "requirements": [
+
+      ],
+      "follow_up_training": [
+
+      ],
+      "time_estimation": "30M",
+      "questions": [
+        "What are Conda environments in software development and why you should use them?",
+        "How can we manage Conda environments and external (third-party) libraries via Conda?"
+      ],
+      "objectives": [
+        "Set up a Conda environment for our software project using `conda`.",
+        "Run our software from the command line."
+      ],
+      "key_points": [
+        "Environments keep Python versions and dependencies required by different projects separate.",
+        "An environment is itself a directory structure of software and libraries",
+        "Use `conda create -n <name>` to create and manage environments.",
+        "Use `conda install` to install and manage additional external (third-party) libraries.",
+        "Conda allows you to declare all dependencies for a project in a separate file (by convention called `environment.yml`) which can be shared with collaborators/users and used to replicate an environment.",
+        "Use `conda env export > environment.yml` to take snapshot of your project's dependencies.",
+        "Use `conda env create -f environment.yml` to replicate someone else's environment on your machine from the `environment.yml` file."
+      ],
+      "subtopic": "python-modular",
+      "contributions": {
+        "authorship": [
+          "carpentries",
+          "hexylena"
+        ],
+        "funding": [
+          "carpentries",
+          "avans-atgm"
+        ]
+      },
+      "tags": [
+        "conda"
+      ],
+      "priority": 10,
+      "notebook": {
+        "language": "bash"
+      },
+      "url": "/topics/data-science/tutorials/python-conda/tutorial.html",
+      "topic_name": "data-science",
+      "tutorial_name": "python-conda",
+      "dir": "topics/data-science/tutorials/python-conda",
+      "id": "data-science/python-conda",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "contributors": [
+        {
+          "name": "The Carpentries",
+          "joined": "2021-09",
+          "id": "carpentries",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
+        },
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        },
+        {
+          "name": "The Carpentries",
+          "joined": "2021-09",
+          "id": "carpentries",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
+        },
+        {
+          "name": "Avans Hogeschool",
+          "joined": "2020-11",
+          "funder": true,
+          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
+          "id": "avans-atgm",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
+        }
+      ],
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-conda/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-conda/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
       "title": "Virtual Environments For Software Development",
       "level": "Intermediate",
       "requirements": [
@@ -4116,130 +4240,6 @@
       "urls": {
         "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-typing/tutorial.json",
         "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-typing/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "Conda Environments For Software Development",
-      "level": "Intermediate",
-      "requirements": [
-
-      ],
-      "follow_up_training": [
-
-      ],
-      "time_estimation": "30M",
-      "questions": [
-        "What are Conda environments in software development and why you should use them?",
-        "How can we manage Conda environments and external (third-party) libraries via Conda?"
-      ],
-      "objectives": [
-        "Set up a Conda environment for our software project using `conda`.",
-        "Run our software from the command line."
-      ],
-      "key_points": [
-        "Environments keep Python versions and dependencies required by different projects separate.",
-        "An environment is itself a directory structure of software and libraries",
-        "Use `conda create -n <name>` to create and manage environments.",
-        "Use `conda install` to install and manage additional external (third-party) libraries.",
-        "Conda allows you to declare all dependencies for a project in a separate file (by convention called `environment.yml`) which can be shared with collaborators/users and used to replicate an environment.",
-        "Use `conda env export > environment.yml` to take snapshot of your project's dependencies.",
-        "Use `conda env create -f environment.yml` to replicate someone else's environment on your machine from the `environment.yml` file."
-      ],
-      "subtopic": "python-modular",
-      "contributions": {
-        "authorship": [
-          "carpentries",
-          "hexylena"
-        ],
-        "funding": [
-          "carpentries",
-          "avans-atgm"
-        ]
-      },
-      "tags": [
-        "conda"
-      ],
-      "priority": 10,
-      "notebook": {
-        "language": "bash"
-      },
-      "url": "/topics/data-science/tutorials/python-conda/tutorial.html",
-      "topic_name": "data-science",
-      "tutorial_name": "python-conda",
-      "dir": "topics/data-science/tutorials/python-conda",
-      "id": "data-science/python-conda",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "tools": [
-
-      ],
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "contributors": [
-        {
-          "name": "The Carpentries",
-          "joined": "2021-09",
-          "id": "carpentries",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
-        },
-        {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "gitter": "hexylena",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-        },
-        {
-          "name": "The Carpentries",
-          "joined": "2021-09",
-          "id": "carpentries",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/carpentries.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/carpentries/"
-        },
-        {
-          "name": "Avans Hogeschool",
-          "joined": "2020-11",
-          "funder": true,
-          "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
-        }
-      ],
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-conda/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-conda/tutorial.json"
       }
     },
     {
