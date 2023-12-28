@@ -2442,3 +2442,4 @@
 2440,5,,,,A short introduction to Galaxy,Introduction to Galaxy Analyses,2023-12,2023-12-19
 2441,5,explanation of process,more theory,,Label-free data analysis using MaxQuant,Proteomics,2023-12,2023-12-19
 2442,5,,,,Removal of human reads from SARS-CoV-2 sequencing data,Sequence analysis,2023-12,2023-12-23
+2443,5,,,,"Inferring single cell trajectories (Scanpy, Python)",Single Cell,2023-12,2023-12-27
