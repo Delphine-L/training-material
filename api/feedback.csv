@@ -2443,3 +2443,5 @@
 2441,5,explanation of process,more theory,,Label-free data analysis using MaxQuant,Proteomics,2023-12,2023-12-19
 2442,5,,,,Removal of human reads from SARS-CoV-2 sequencing data,Sequence analysis,2023-12,2023-12-23
 2443,5,,,,"Inferring single cell trajectories (Scanpy, Python)",Single Cell,2023-12,2023-12-27
+2444,4,Easy to understand,Please use simple explanation ,,Mapping,Sequence analysis,2023-12,2023-12-29
+2445,5,,,,Exome sequencing data analysis for diagnosing a genetic disease,Variant Analysis,2023-12,2023-12-29
