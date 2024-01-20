@@ -26992,5 +26992,38 @@
     "topic": "Introduction to Galaxy Analyses",
     "month": "2024-01",
     "date": "2024-01-18"
+  },
+  {
+    "": "2454",
+    "note": "5",
+    "pro": null,
+    "con": null,
+    "anonymous": null,
+    "tutorial": "A short introduction to Galaxy",
+    "topic": "Introduction to Galaxy Analyses",
+    "month": "2024-01",
+    "date": "2024-01-19"
+  },
+  {
+    "": "2455",
+    "note": "4",
+    "pro": "Its easy to understand",
+    "con": "Some videos would be more useful",
+    "anonymous": null,
+    "tutorial": "Python - Math",
+    "topic": "Foundations of Data Science",
+    "month": "2024-01",
+    "date": "2024-01-19"
+  },
+  {
+    "": "2456",
+    "note": "5",
+    "pro": "step by step demos and the scientifc background behind each step ",
+    "con": null,
+    "anonymous": null,
+    "tutorial": "Protein-ligand docking",
+    "topic": "Computational chemistry",
+    "month": "2024-01",
+    "date": "2024-01-19"
   }
 ]
