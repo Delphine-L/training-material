@@ -58,21 +58,6 @@
                        
                        
                                
-			{
-				"id": "admin/tutorials/interactive-tools/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galaxy Interactive Tools"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
                        
                                
                        
@@ -81,6 +66,26 @@
 				"id": "admin/tutorials/data-library/slides",
 				"topic": "Galaxy Server administration",
 				"title": "Data Libraries"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/ansible/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Ansible"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/production/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Gearing towards production"
 			},
 								
                                
@@ -109,22 +114,11 @@
                        
                                
 			{
-				"id": "admin/tutorials/users-groups-quotas/slides",
-				"topic": "Galaxy Server administration",
-				"title": "User, Role, Group, Quota, and Authentication managment"
-			},
-								
-                               
-                       
-                               
-			{
 				"id": "admin/tutorials/monitoring/slides",
 				"topic": "Galaxy Server administration",
 				"title": "Galaxy Monitoring with Telegraf and Grafana"
 			},
 								
-                               
-                       
                                
                        
                                
@@ -137,56 +131,22 @@
                                
                        
                                
-			{
-				"id": "admin/tutorials/cvmfs/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Reference Data with CVMFS"
-			},
-								
+                       
                                
                        
                                
-			{
-				"id": "admin/tutorials/systemd-supervisor/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Controlling Galaxy with systemd or Supervisor"
-			},
-								
+                       
                                
                        
                                
                        
                                
 			{
-				"id": "admin/tutorials/gxadmin/slides",
+				"id": "admin/tutorials/users-groups-quotas/slides",
 				"topic": "Galaxy Server administration",
-				"title": "Galaxy Monitoring with gxadmin"
+				"title": "User, Role, Group, Quota, and Authentication managment"
 			},
 								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/ansible/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Ansible"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/production/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Gearing towards production"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
                                
                        
                                
@@ -202,6 +162,46 @@
                        
                                
                        
+                               
+			{
+				"id": "admin/tutorials/cvmfs/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Reference Data with CVMFS"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/gxadmin/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Galaxy Monitoring with gxadmin"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/interactive-tools/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Galaxy Interactive Tools"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/systemd-supervisor/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Controlling Galaxy with systemd or Supervisor"
+			},
+								
                                
                        
                                
@@ -312,6 +312,17 @@
                        
                                
 			{
+				"id": "climate/tutorials/pangeo/slides",
+				"topic": "Climate",
+				"title": "Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+			{
 				"id": "climate/tutorials/fates/slides",
 				"topic": "Climate",
 				"title": "Functionally Assembled Terrestrial Ecosystem Simulator (FATES)"
@@ -320,21 +331,10 @@
                                
                        
                                
-                       
-                               
 			{
 				"id": "climate/tutorials/pangeo-notebook/slides",
 				"topic": "Climate",
 				"title": "Pangeo Notebook in Galaxy - Introduction to Xarray"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "climate/tutorials/pangeo/slides",
-				"topic": "Climate",
-				"title": "Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools"
 			},
 								
                                
@@ -381,10 +381,6 @@
                                
                        
                                
-                       
-                               
-                       
-                               
 			{
 				"id": "contributing/tutorials/create-new-tutorial-slides/slides",
 				"topic": "Contributing to the Galaxy Training Material",
@@ -423,28 +419,6 @@
                        
                                
                        
-               
-					
-                       
-                       
-                       
-               
-					
-                       
-                       
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
                                
                        
                                
@@ -454,61 +428,10 @@
                        
                        
                        
-                               
+               
+					
                        
-                               
                        
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
                        
                                
                        
@@ -533,6 +456,104 @@
                        
                                
                        
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+               
+					
+                       
+                       
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "dev/tutorials/tool-generators/slides",
+				"topic": "Development in Galaxy",
+				"title": "ToolFactory: Generating Tools From Simple Scripts"
+			},
+								
                                
                        
                                
@@ -563,27 +584,6 @@
                                
                        
                                
-			{
-				"id": "dev/tutorials/tool-generators/slides",
-				"topic": "Development in Galaxy",
-				"title": "ToolFactory: Generating Tools From Simple Scripts"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
                        
                                
                        
@@ -626,6 +626,8 @@
 					
                        
                        
+                       
+                               
                        
                                
                        
@@ -638,8 +640,6 @@
 				"title": "ATAC-Seq data analysis"
 			},
 								
-                               
-                       
                                
                        
                                
@@ -1137,18 +1137,18 @@
                                
                        
                                
-                       
-                               
-                       
-                               
-                       
-                               
 			{
 				"id": "transcriptomics/tutorials/mirna-target-finder/slides",
 				"topic": "Transcriptomics",
 				"title": "Whole transcriptome analysis of Arabidopsis thaliana"
 			},
 								
+                               
+                       
+                               
+                       
+                               
+                       
                                
                        
                                
