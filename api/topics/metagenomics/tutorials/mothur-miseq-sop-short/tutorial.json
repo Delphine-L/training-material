@@ -113,7 +113,7 @@
         }
       ],
       "gtn_id": "metagenomics/mothur-miseq-sop-short",
-      "title": "16S Microbial Analysis with mothur (short)",
+      "title": "metagenomics/mothur-miseq-sop-short/tutorial",
       "captioned": true
     },
     "slides": null,

@@ -66,7 +66,7 @@
         }
       ],
       "gtn_id": "metagenomics/pathogen-detection-from-nanopore-foodborne-data",
-      "title": "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition",
+      "title": "metagenomics/pathogen-detection-from-nanopore-foodborne-data/tutorial",
       "captioned": true
     },
     "slides": null,

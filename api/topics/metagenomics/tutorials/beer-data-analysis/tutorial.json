@@ -67,7 +67,7 @@
         }
       ],
       "gtn_id": "metagenomics/beer-data-analysis",
-      "title": "Identification of the micro-organisms in a beer using Nanopore sequencing",
+      "title": "metagenomics/beer-data-analysis/tutorial",
       "captioned": true
     },
     "slides": null,

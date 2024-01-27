@@ -64,7 +64,7 @@
         }
       ],
       "gtn_id": "metagenomics/taxonomic-profiling",
-      "title": "Taxonomic Profiling and Visualization of Metagenomic Data",
+      "title": "metagenomics/taxonomic-profiling/tutorial",
       "captioned": true
     },
     "slides": null,

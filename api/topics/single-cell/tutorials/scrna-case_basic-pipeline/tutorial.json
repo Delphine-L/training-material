@@ -108,7 +108,7 @@
         }
       ],
       "gtn_id": "single-cell/scrna-case_basic-pipeline",
-      "title": "Filter, Plot and Explore Single-cell RNA-seq Data",
+      "title": "Filter, plot and explore single-cell RNA-seq data (Scanpy)",
       "captioned": true
     },
     "slides": null,

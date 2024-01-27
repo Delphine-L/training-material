@@ -174,7 +174,7 @@
         }
       ],
       "gtn_id": "metagenomics/metatranscriptomics",
-      "title": "Metatranscriptomics analysis using microbiome RNA-seq data",
+      "title": "metagenomics/metatranscriptomics",
       "captioned": true
     },
     "session": null

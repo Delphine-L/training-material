@@ -97,7 +97,7 @@
         }
       ],
       "gtn_id": "metagenomics/plasmid-metagenomics-nanopore",
-      "title": "Antibiotic resistance detection",
+      "title": "metagenomics/plasmid-metagenomics-nanopore/tutorial",
       "captioned": true
     },
     "slides": null,
