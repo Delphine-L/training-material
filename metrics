@@ -34,7 +34,7 @@ gtn_faqs_total 372
 
 # HELP gtn_project_years_total Total years of project lifetime
 # TYPE gtn_project_years_total counter
-gtn_project_years_total 8.594520547945205
+gtn_project_years_total 8.597260273972603
 
 # HELP tutorial_update_age_days How recently was every single Hands-on Tutorial touched within the GTN, grouped by days since last edited.
 # TYPE tutorial_update_age_days histogram
@@ -42,8 +42,8 @@ tutorial_update_age_days{le="1"} 1
 tutorial_update_age_days{le="7"} 0
 tutorial_update_age_days{le="28"} 0
 tutorial_update_age_days{le="90"} 0
-tutorial_update_age_days{le="365"} 136
-tutorial_update_age_days{le="730"} 200
+tutorial_update_age_days{le="365"} 135
+tutorial_update_age_days{le="730"} 201
 tutorial_update_age_days{le="1095"} 2
 tutorial_update_age_days{le="+Inf"} 1
 
@@ -56,4 +56,4 @@ contributor_join_age_days{le="90"} 0
 contributor_join_age_days{le="365"} 8
 contributor_join_age_days{le="730"} 48
 contributor_join_age_days{le="1095"} 58
-contributor_join_age_days{le="+Inf"} 69
+contributor_join_age_days{le="+Inf"} 68

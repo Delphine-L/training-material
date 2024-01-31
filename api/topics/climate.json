@@ -25,33 +25,74 @@
   "materials": [
     {
       "layout": "tutorial_hands_on",
-      "title": "Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools",
+      "title": "Pangeo Notebook in Galaxy - Introduction to Xarray",
       "zenodo_link": "https://doi.org/10.5281/zenodo.5805953",
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "data-science",
+          "tutorials": [
+            "python-basics"
+          ]
+        },
+        {
+          "type": "internal",
+          "topic_name": "data-science",
+          "tutorials": [
+            "python-plotting",
+            "python-advanced-np-pd"
+          ]
+        },
+        {
+          "type": "external",
+          "title": "Data Carpentry Geospatial Workshop",
+          "link": "https://datacarpentry.org/geospatial-workshop/"
+        }
+      ],
+      "follow_up_training": [
+        {
+          "type": "external",
+          "title": "Pangeo Tutorial Gallery",
+          "link": "http://gallery.pangeo.io/repos/pangeo-data/pangeo-tutorial-gallery/index.html"
+        },
+        {
+          "type": "external",
+          "title": "Pangeo Gallery",
+          "link": "http://gallery.pangeo.io/index.html"
+        }
+      ],
       "questions": [
-        "What Xarray Galaxy Tools can I use in Galaxy and what for?",
-        "What is an Xarray?",
-        "How do I use Xarray in Galaxy?",
-        "How to get metadata information?",
+        "What is Pangeo notebook?",
+        "How to start Pangeo Notebook in Galaxy?",
+        "What are the main software components of the Pangeo ecosystem?",
+        "What is Xarray?",
+        "How to manipulate Xarrays?",
+        "How to print metadata information?",
         "How to make a selection?",
         "How to visualize?",
         "How to filter?",
         "How to make reduction operations (mean, max, min)?",
-        "How to resample my data?"
+        "How to resample my data?",
+        "Where to go next?"
       ],
       "objectives": [
-        "Understand what Pangeo and Xarray are",
         "Learn to get metadata information using Xarray Galaxy Tools",
         "Learn to select data",
-        "Learn to visualize geographical data on a map",
+        "Learn to visualize data",
         "Learn to filter, make reduction operations (mean, max, min)",
-        "Learn to resample my data"
+        "Learn to resample my data",
+        "Learn to cite and contribute to Pangeo"
       ],
       "time_estimation": "1H",
       "key_points": [
-        "Xarray Tools in Galaxy"
+        "Pangeo ecosystem enables big data analysis in geosciences",
+        "Xarray is an important Python package for big data analysis in geosciences",
+        "Xarray can be used to read, select, mask and plot netCDF data",
+        "Xarray can also be used to perform global operations such as mean, max, min or resampling data"
       ],
       "tags": [
-        "pangeo"
+        "pangeo",
+        "interactive-tools"
       ],
       "contributors": [
         {
@@ -65,18 +106,22 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/"
         }
       ],
-      "url": "/topics/climate/tutorials/pangeo/tutorial.html",
+      "notebook": {
+        "language": "python",
+        "snippet": "topics/climate/tutorials/pangeo-notebook/preamble.md"
+      },
+      "url": "/topics/climate/tutorials/pangeo-notebook/tutorial.html",
       "topic_name": "climate",
-      "tutorial_name": "pangeo",
-      "dir": "topics/climate/tutorials/pangeo",
-      "id": "climate/pangeo",
+      "tutorial_name": "pangeo-notebook",
+      "dir": "topics/climate/tutorials/pangeo-notebook",
+      "id": "climate/pangeo-notebook",
       "video_library": {
         "tutorial": {
-          "description": "In this tutorial, you will learn how to manipulate netCDF data files using Xarray Galaxy Tools. NetCDF stands for network Common Data Form and is one of the most popular file format in climate science. It is used for storing multidimensional scientific data variables such as temperature or humidity, and metadata can be added to facilitate sharing of netCDF data. netCDF is widely used outside the Climate Science community and each community has its own set of conventions, especially for metadata. The Climate and Forecast metadata convention, also called CF-convention is used by the Climate community and is designed to promote the processing and sharing of netCDF files.",
+          "description": "In this tutorial, we will learn about Xarray, one of the most used Python\nlibrary from the Pangeo ecosystem.\n\nWe will be using data from Copernicus Atmosphere Monitoring Service and\nmore precisely PM2.5 (Particle Matter < 2.5 μm) 4 days forecast from\nDecember, 22 2021. Parallel data analysis with Pangeo is not covered in\nthis tutorial.\n",
           "materials": [
             {
-              "link": "topics/climate/tutorials/pangeo/tutorial.html",
-              "title": "Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools",
+              "link": "topics/climate/tutorials/pangeo-notebook/tutorial.html",
+              "title": "Pangeo Notebook in Galaxy - Introduction to Xarray",
               "type": "Tutorial"
             }
           ],
@@ -91,15 +136,15 @@
               ],
               "date": "2022-03-03",
               "galaxy_version": "21.09",
-              "length": "1H20M",
-              "link": "V43jEJfa6hY",
+              "length": "17M",
+              "link": "XFF2yRcYGp0",
               "speakers": [
                 "annefou"
               ]
             }
           ],
-          "gtn_id": "climate/pangeo",
-          "title": "Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools",
+          "gtn_id": "climate/pangeo-notebook",
+          "title": "Pangeo Notebook in Galaxy - Introduction to Xarray",
           "captioned": true
         },
         "slides": null,
@@ -113,16 +158,16 @@
         {
           "workflow": "main_workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo/workflows/main_workflow.ga",
-          "path": "topics/climate/tutorials/pangeo/workflows/main_workflow.ga",
-          "wfid": "climate-pangeo",
+          "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/workflows/main_workflow.ga",
+          "path": "topics/climate/tutorials/pangeo-notebook/workflows/main_workflow.ga",
+          "wfid": "climate-pangeo-notebook",
           "wfname": "main_workflow",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/climate-pangeo/versions/main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/climate-pangeo-notebook/versions/main_workflow",
           "license": "MIT",
           "creators": [
             {
               "class": "Person",
-              "identifier": "0000-0002-1784-2920",
+              "identifier": "https://orcid.org/0000-0002-1784-2920",
               "name": "Anne Fouilloux",
               "url": "https://github.com/annefou"
             }
@@ -130,17 +175,7 @@
         }
       ],
       "tools": [
-        "__EXTRACT_DATASET__",
-        "__MERGE_COLLECTION__",
-        "toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_montage/graphicsmagick_image_montage/1.3.31+galaxy1",
-        "toolshed.g2.bx.psu.edu/repos/climate/climate_stripes/climate_stripes/1.0.1",
-        "toolshed.g2.bx.psu.edu/repos/ecology/xarray_coords_info/xarray_coords_info/0.18.2+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/ecology/xarray_mapplot/xarray_mapplot/0.18.2+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/ecology/xarray_metadata_info/xarray_metadata_info/0.15.1",
-        "toolshed.g2.bx.psu.edu/repos/ecology/xarray_netcdf2netcdf/xarray_netcdf2netcdf/0.18.2+galaxy0",
-        "toolshed.g2.bx.psu.edu/repos/ecology/xarray_select/xarray_select/0.15.1",
-        "toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regexColumn1/1.0.1",
-        "toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_point/ggplot2_point/2.2.1+galaxy2"
+        "interactive_tool_pangeo_notebook"
       ],
       "tours": false,
       "video": true,
@@ -155,8 +190,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/climate/tutorials/pangeo/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/climate/tutorials/pangeo/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/climate/tutorials/pangeo-notebook/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/climate/tutorials/pangeo-notebook/tutorial.json"
       }
     },
     {
@@ -442,74 +477,33 @@
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Pangeo Notebook in Galaxy - Introduction to Xarray",
+      "title": "Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools",
       "zenodo_link": "https://doi.org/10.5281/zenodo.5805953",
-      "requirements": [
-        {
-          "type": "internal",
-          "topic_name": "data-science",
-          "tutorials": [
-            "python-basics"
-          ]
-        },
-        {
-          "type": "internal",
-          "topic_name": "data-science",
-          "tutorials": [
-            "python-plotting",
-            "python-advanced-np-pd"
-          ]
-        },
-        {
-          "type": "external",
-          "title": "Data Carpentry Geospatial Workshop",
-          "link": "https://datacarpentry.org/geospatial-workshop/"
-        }
-      ],
-      "follow_up_training": [
-        {
-          "type": "external",
-          "title": "Pangeo Tutorial Gallery",
-          "link": "http://gallery.pangeo.io/repos/pangeo-data/pangeo-tutorial-gallery/index.html"
-        },
-        {
-          "type": "external",
-          "title": "Pangeo Gallery",
-          "link": "http://gallery.pangeo.io/index.html"
-        }
-      ],
       "questions": [
-        "What is Pangeo notebook?",
-        "How to start Pangeo Notebook in Galaxy?",
-        "What are the main software components of the Pangeo ecosystem?",
-        "What is Xarray?",
-        "How to manipulate Xarrays?",
-        "How to print metadata information?",
+        "What Xarray Galaxy Tools can I use in Galaxy and what for?",
+        "What is an Xarray?",
+        "How do I use Xarray in Galaxy?",
+        "How to get metadata information?",
         "How to make a selection?",
         "How to visualize?",
         "How to filter?",
         "How to make reduction operations (mean, max, min)?",
-        "How to resample my data?",
-        "Where to go next?"
+        "How to resample my data?"
       ],
       "objectives": [
+        "Understand what Pangeo and Xarray are",
         "Learn to get metadata information using Xarray Galaxy Tools",
         "Learn to select data",
-        "Learn to visualize data",
+        "Learn to visualize geographical data on a map",
         "Learn to filter, make reduction operations (mean, max, min)",
-        "Learn to resample my data",
-        "Learn to cite and contribute to Pangeo"
+        "Learn to resample my data"
       ],
       "time_estimation": "1H",
       "key_points": [
-        "Pangeo ecosystem enables big data analysis in geosciences",
-        "Xarray is an important Python package for big data analysis in geosciences",
-        "Xarray can be used to read, select, mask and plot netCDF data",
-        "Xarray can also be used to perform global operations such as mean, max, min or resampling data"
+        "Xarray Tools in Galaxy"
       ],
       "tags": [
-        "pangeo",
-        "interactive-tools"
+        "pangeo"
       ],
       "contributors": [
         {
@@ -523,22 +517,18 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/"
         }
       ],
-      "notebook": {
-        "language": "python",
-        "snippet": "topics/climate/tutorials/pangeo-notebook/preamble.md"
-      },
-      "url": "/topics/climate/tutorials/pangeo-notebook/tutorial.html",
+      "url": "/topics/climate/tutorials/pangeo/tutorial.html",
       "topic_name": "climate",
-      "tutorial_name": "pangeo-notebook",
-      "dir": "topics/climate/tutorials/pangeo-notebook",
-      "id": "climate/pangeo-notebook",
+      "tutorial_name": "pangeo",
+      "dir": "topics/climate/tutorials/pangeo",
+      "id": "climate/pangeo",
       "video_library": {
         "tutorial": {
-          "description": "In this tutorial, we will learn about Xarray, one of the most used Python\nlibrary from the Pangeo ecosystem.\n\nWe will be using data from Copernicus Atmosphere Monitoring Service and\nmore precisely PM2.5 (Particle Matter < 2.5 μm) 4 days forecast from\nDecember, 22 2021. Parallel data analysis with Pangeo is not covered in\nthis tutorial.\n",
+          "description": "In this tutorial, you will learn how to manipulate netCDF data files using Xarray Galaxy Tools. NetCDF stands for network Common Data Form and is one of the most popular file format in climate science. It is used for storing multidimensional scientific data variables such as temperature or humidity, and metadata can be added to facilitate sharing of netCDF data. netCDF is widely used outside the Climate Science community and each community has its own set of conventions, especially for metadata. The Climate and Forecast metadata convention, also called CF-convention is used by the Climate community and is designed to promote the processing and sharing of netCDF files.",
           "materials": [
             {
-              "link": "topics/climate/tutorials/pangeo-notebook/tutorial.html",
-              "title": "Pangeo Notebook in Galaxy - Introduction to Xarray",
+              "link": "topics/climate/tutorials/pangeo/tutorial.html",
+              "title": "Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools",
               "type": "Tutorial"
             }
           ],
@@ -553,15 +543,15 @@
               ],
               "date": "2022-03-03",
               "galaxy_version": "21.09",
-              "length": "17M",
-              "link": "XFF2yRcYGp0",
+              "length": "1H20M",
+              "link": "V43jEJfa6hY",
               "speakers": [
                 "annefou"
               ]
             }
           ],
-          "gtn_id": "climate/pangeo-notebook",
-          "title": "Pangeo Notebook in Galaxy - Introduction to Xarray",
+          "gtn_id": "climate/pangeo",
+          "title": "Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools",
           "captioned": true
         },
         "slides": null,
@@ -575,16 +565,16 @@
         {
           "workflow": "main_workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/workflows/main_workflow.ga",
-          "path": "topics/climate/tutorials/pangeo-notebook/workflows/main_workflow.ga",
-          "wfid": "climate-pangeo-notebook",
+          "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo/workflows/main_workflow.ga",
+          "path": "topics/climate/tutorials/pangeo/workflows/main_workflow.ga",
+          "wfid": "climate-pangeo",
           "wfname": "main_workflow",
-          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/climate-pangeo-notebook/versions/main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/climate-pangeo/versions/main_workflow",
           "license": "MIT",
           "creators": [
             {
               "class": "Person",
-              "identifier": "https://orcid.org/0000-0002-1784-2920",
+              "identifier": "0000-0002-1784-2920",
               "name": "Anne Fouilloux",
               "url": "https://github.com/annefou"
             }
@@ -592,7 +582,17 @@
         }
       ],
       "tools": [
-        "interactive_tool_pangeo_notebook"
+        "__EXTRACT_DATASET__",
+        "__MERGE_COLLECTION__",
+        "toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_montage/graphicsmagick_image_montage/1.3.31+galaxy1",
+        "toolshed.g2.bx.psu.edu/repos/climate/climate_stripes/climate_stripes/1.0.1",
+        "toolshed.g2.bx.psu.edu/repos/ecology/xarray_coords_info/xarray_coords_info/0.18.2+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/ecology/xarray_mapplot/xarray_mapplot/0.18.2+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/ecology/xarray_metadata_info/xarray_metadata_info/0.15.1",
+        "toolshed.g2.bx.psu.edu/repos/ecology/xarray_netcdf2netcdf/xarray_netcdf2netcdf/0.18.2+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/ecology/xarray_select/xarray_select/0.15.1",
+        "toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regexColumn1/1.0.1",
+        "toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_point/ggplot2_point/2.2.1+galaxy2"
       ],
       "tours": false,
       "video": true,
@@ -607,8 +607,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/climate/tutorials/pangeo-notebook/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/climate/tutorials/pangeo-notebook/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/climate/tutorials/pangeo/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/climate/tutorials/pangeo/tutorial.json"
       }
     },
     {
