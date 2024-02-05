@@ -27091,5 +27091,16 @@
     "topic": "Epigenetics",
     "month": "2024-02",
     "date": "2024-02-03"
+  },
+  {
+    "": "2463",
+    "note": "5",
+    "pro": "It looks really useful, clearly explained. I still didn`t get it to work with my own data, but I am just learning.",
+    "con": "I believe the link to the workflow is incorrect, it links to something else",
+    "anonymous": null,
+    "tutorial": "Ploting a Microbial Genome with Circos",
+    "topic": "Visualisation",
+    "month": "2024-02",
+    "date": "2024-02-05"
   }
 ]
