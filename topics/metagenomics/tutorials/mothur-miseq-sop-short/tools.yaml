@@ -3,24 +3,6 @@ install_repository_dependencies: True
 install_resolver_dependencies: True
 
 tools:
-- name: mothur_rarefaction_single
-  owner: iuc
-  revisions:
-  - af521db77c56
-  tool_panel_section_label: mothur-miseq-sop-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: mothur_summary_single
-  owner: iuc
-  revisions:
-  - 2344ed181ae6
-  tool_panel_section_label: mothur-miseq-sop-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: xy_plot
-  owner: devteam
-  revisions:
-  - ecb437f1d298
-  tool_panel_section_label: mothur-miseq-sop-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: mothur_remove_groups
   owner: iuc
   revisions:
@@ -57,16 +39,10 @@ tools:
   - 67cb43432196
   tool_panel_section_label: mothur-miseq-sop-short
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: mothur_classify_seqs
+- name: mothur_summary_seqs
   owner: iuc
   revisions:
-  - 09bf9e496c64
-  tool_panel_section_label: mothur-miseq-sop-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: mothur_remove_lineage
-  owner: iuc
-  revisions:
-  - 947faa8b3205
+  - 609770e516fa
   tool_panel_section_label: mothur-miseq-sop-short
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: mothur_screen_seqs
@@ -75,16 +51,52 @@ tools:
   - 63b74bfc8052
   tool_panel_section_label: mothur-miseq-sop-short
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: mothur_filter_seqs
-  owner: iuc
-  revisions:
-  - 3524ca06478e
-  tool_panel_section_label: mothur-miseq-sop-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: mothur_unique_seqs
   owner: iuc
   revisions:
   - d466580cd706
+  tool_panel_section_label: mothur-miseq-sop-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: mothur_count_seqs
+  owner: iuc
+  revisions:
+  - 7a6f9c899221
+  tool_panel_section_label: mothur-miseq-sop-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: mothur_dist_seqs
+  owner: iuc
+  revisions:
+  - 0554c9338ca0
+  tool_panel_section_label: mothur-miseq-sop-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: mothur_cluster
+  owner: iuc
+  revisions:
+  - 528f950d1044
+  tool_panel_section_label: mothur-miseq-sop-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: mothur_rarefaction_single
+  owner: iuc
+  revisions:
+  - af521db77c56
+  tool_panel_section_label: mothur-miseq-sop-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: mothur_summary_single
+  owner: iuc
+  revisions:
+  - 2344ed181ae6
+  tool_panel_section_label: mothur-miseq-sop-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: xy_plot
+  owner: devteam
+  revisions:
+  - ecb437f1d298
+  tool_panel_section_label: mothur-miseq-sop-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: mothur_filter_seqs
+  owner: iuc
+  revisions:
+  - 3524ca06478e
   tool_panel_section_label: mothur-miseq-sop-short
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: mothur_pre_cluster
@@ -105,28 +117,16 @@ tools:
   - 5097ac2cbfc3
   tool_panel_section_label: mothur-miseq-sop-short
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: mothur_summary_seqs
+- name: mothur_classify_seqs
   owner: iuc
   revisions:
-  - 609770e516fa
+  - 09bf9e496c64
   tool_panel_section_label: mothur-miseq-sop-short
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: mothur_count_seqs
+- name: mothur_remove_lineage
   owner: iuc
   revisions:
-  - 7a6f9c899221
-  tool_panel_section_label: mothur-miseq-sop-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: mothur_dist_seqs
-  owner: iuc
-  revisions:
-  - 0554c9338ca0
-  tool_panel_section_label: mothur-miseq-sop-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: mothur_cluster
-  owner: iuc
-  revisions:
-  - 528f950d1044
+  - 947faa8b3205
   tool_panel_section_label: mothur-miseq-sop-short
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: mothur_dist_shared
