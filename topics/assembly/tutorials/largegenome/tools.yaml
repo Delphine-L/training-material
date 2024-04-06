@@ -3,22 +3,28 @@ install_repository_dependencies: True
 install_resolver_dependencies: True
 
 tools:
-- name: busco
+- name: genomescope
   owner: iuc
   revisions:
-  - 0d243f458b53
+  - 3169a38c2656
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: quast
+- name: meryl
   owner: iuc
   revisions:
-  - ebb0dcdb621a
+  - eadfd71dde37
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: nanoplot
   owner: iuc
   revisions:
   - edbb6c5028f5
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastqc
+  owner: devteam
+  revisions:
+  - e7b2202befea
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: multiqc
@@ -57,40 +63,40 @@ tools:
   - 0e9e7fcdd543
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: genomescope
+- name: busco
   owner: iuc
   revisions:
-  - 3169a38c2656
+  - 0d243f458b53
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: meryl
+- name: quast
   owner: iuc
   revisions:
-  - eadfd71dde37
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: genomescope
-  owner: iuc
-  revisions:
-  - 3169a38c2656
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: fastqc
-  owner: devteam
-  revisions:
-  - e7b2202befea
-  tool_panel_section_label: largegenome
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: fastp
-  owner: iuc
-  revisions:
-  - 1d8fe9bc4cb0
+  - ebb0dcdb621a
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: racon
   owner: bgruening
   revisions:
   - a199cd7ac344
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: racon
+  owner: bgruening
+  revisions:
+  - a199cd7ac344
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: nanoplot
+  owner: iuc
+  revisions:
+  - edbb6c5028f5
+  tool_panel_section_label: largegenome
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastqc
+  owner: devteam
+  revisions:
+  - e7b2202befea
   tool_panel_section_label: largegenome
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: fastp
